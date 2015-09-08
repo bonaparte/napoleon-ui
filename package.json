@@ -7,6 +7,9 @@
     "bonaparte-panel" :"git://github.dowjones.net/bonaparte/bonaparte-panel.git#gh-pages",
     "bonaparte-scroll" :"file:../bonaparte-scroll",
     "bonaparte-button" :"file:../bonaparte-button",
+    "bonaparte-sidebar" :"file:../bonaparte-sidebar",
+    "bonaparte-toolbar" :"file:../bonaparte-toolbar",
+    "bonaparte-draggable" :"file:../bonaparte-draggable",
     "mousetrap" : "^1.5.3"
   },
   
