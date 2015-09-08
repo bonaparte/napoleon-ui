@@ -29,7 +29,7 @@ function toolbar(tag){
     }
 
     for(var i = 0; i< buttons.length; i++){
-      require("./button-bonaparte").initialize(buttons[i]);
+      require("bonaparte-button").initialize(buttons[i]);
     }
 
 

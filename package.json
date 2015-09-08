@@ -5,6 +5,8 @@
   "dependencies" : {
     "bonaparte" : "git://github.dowjones.net/bonaparte/bonaparte.git#gh-pages",
     "bonaparte-panel" :"git://github.dowjones.net/bonaparte/bonaparte-panel.git#gh-pages",
+    "bonaparte-scroll" :"file:../bonaparte-scroll",
+    "bonaparte-button" :"file:../bonaparte-button",
     "mousetrap" : "^1.5.3"
   },
   

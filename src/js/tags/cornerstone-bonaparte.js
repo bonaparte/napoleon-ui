@@ -4,7 +4,7 @@ var bp = require("bonaparte");
 // Public
 
 module.exports = bp.tag.create("cornerstone", [
-  require("./button-bonaparte.js"),
+  require("bonaparte-button"),
   cornerstone
 ]);
 

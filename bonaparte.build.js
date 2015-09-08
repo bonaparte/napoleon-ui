@@ -1,15 +1,17 @@
 require("bonaparte-panel/bonaparte.build");
+require("bonaparte-scroll/bonaparte.build");
+require("bonaparte-button/bonaparte.build");
 
 
 
 // JS
 
 // var panel = require("./src/js/tags/panel-bonaparte");
-var scroll = require("./src/js/tags/scroll-bonaparte");
+// var scroll = require("./src/js/tags/scroll-bonaparte");
 var sidebar = require("./src/js/tags/sidebar-bonaparte");
 var toolbar = require("./src/js/tags/toolbar-bonaparte");
 var cornerstone = require("./src/js/tags/cornerstone-bonaparte");
-var button = require("./src/js/tags/button-bonaparte");
+// var button = require("./src/js/tags/button-bonaparte");
 var draggable = require("./src/js/tags/draggable-bonaparte");
 
 // toolbar.mixin({
@@ -19,14 +21,14 @@ var draggable = require("./src/js/tags/draggable-bonaparte");
 // });
 
 // panel.register();
-scroll.register();
+// scroll.register();
 sidebar.register();
 cornerstone.register();
 toolbar.register();
-button.register();
+// button.register();
 draggable.register();
 
-document.registerElement('content-bonaparte');
+// document.registerElement('content-bonaparte');
 
 
 // CSS
@@ -34,6 +36,6 @@ document.registerElement('content-bonaparte');
 require("./src/less/DJ-design/sidebar-bonaparte.less");
 require("./src/less/DJ-design/toolbar-bonaparte.less");
 // require("./src/less/DJ-design/panel-bonaparte.less");
-require("./src/less/DJ-design/scroll-bonaparte.less");
-require("./src/less/DJ-design/content-bonaparte.less");
-require("./src/less/DJ-design/button-bonaparte.less");
+// require("./src/less/DJ-design/scroll-bonaparte.less");
+// require("./src/less/DJ-design/content-bonaparte.less");
+// require("./src/less/DJ-design/button-bonaparte.less");
