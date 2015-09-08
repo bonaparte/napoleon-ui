@@ -1,4 +1,4 @@
-var bp = require("../core");
+var bp = require("bonaparte");
 
 var scrollBarWidth = false;
 
