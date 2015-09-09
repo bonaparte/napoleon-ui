@@ -39,7 +39,7 @@
 
     "include-loader" : "file:../include-loader",
     "includePath-loader" : "file:../includePath-loader",
-    "importStyle-loader" : "file:../importStyle-loader",
+    "importStyle-loader" : "file:../importStyle-loader"
 
   },
 
