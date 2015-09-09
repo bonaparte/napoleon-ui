@@ -3,8 +3,8 @@
   "version": "0.0.1",
   
   "dependencies" : {
-    "bonaparte" : "git://github.dowjones.net/bonaparte/bonaparte.git#gh-pages",
-    "bonaparte-panel" :"git://github.dowjones.net/bonaparte/bonaparte-panel.git#gh-pages",
+    "bonaparte" : "file:../bonaparte",
+    "bonaparte-panel" :"file:../bonaparte-panel",
     "bonaparte-scroll" :"file:../bonaparte-scroll",
     "bonaparte-button" :"file:../bonaparte-button",
     "bonaparte-sidebar" :"file:../bonaparte-sidebar",
@@ -36,8 +36,11 @@
     "node-sass" : "^3.3.2",
     "extract-text-webpack-plugin" : "0.8.2",
     "autoprefixer-loader" : "^2.0.0",
-    "include-loader" : "file:../include-loader"
- 
+
+    "include-loader" : "file:../include-loader",
+    "includePath-loader" : "file:../includePath-loader",
+    "importStyle-loader" : "file:../importStyle-loader",
+
   },
 
   "scripts": {
