@@ -11,18 +11,10 @@ module.exports = function(name){
         },
         module: {
             preLoaders : [
-                // {
-                //     test: /.*/,
-                //     loader : "include-loader"
-                // },
                 {
                     test: /.*/,
                     loader : "import-style-loader"
                 }
-                // {
-                //     test: /.*/,
-                //     loader : "includePath-loader"
-                // }
             ],
             loaders: [
                 {
