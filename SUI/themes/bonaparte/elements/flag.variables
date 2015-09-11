@@ -6,7 +6,7 @@
        Element
 --------------------*/
 
-@spritePath: "@{imagePath}/flags.png";
+@spritePath: "../../themes/bonaparte/assets/images/flags.png";
 @width: 18px;
 @height: 12px;
 @verticalAlign: baseline;

@@ -3,7 +3,7 @@
 *******************************/
 
 .grid .ui.container {
-  background-image:url("@{assetsPath}/site/images/grid.png"); 
+  background-image:url("@{assetsPath}/images/grid.png"); 
 
 }
 .ui.container {

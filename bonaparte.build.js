@@ -1,3 +1,6 @@
+require("./src/wsj-fonts.css");
+require("./SUI/semantic.less");
+
 require("bonaparte-panel").register();
 require("./src/less/panel-bonaparte.less");
 

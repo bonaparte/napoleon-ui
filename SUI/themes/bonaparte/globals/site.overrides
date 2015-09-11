@@ -17,7 +17,7 @@ body > toolbar-bonaparte {
 }
 
 /*Import Fonts*/
-@import url("@{assetsPath}/site/fonts/wsj-fonts.css"); 
+/*@import url("@{assetsPath}/site/fonts/wsj-fonts.css"); */
 
 p {
   font-weight: @text-book;    

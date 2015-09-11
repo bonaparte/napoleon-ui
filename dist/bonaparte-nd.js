@@ -44,26 +44,29 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(12).register();
-	__webpack_require__(26);
+	__webpack_require__(168);
+	__webpack_require__(169);
 
-	__webpack_require__(28).register();
-	__webpack_require__(39);
+	__webpack_require__(181).register();
+	__webpack_require__(195);
 
-	__webpack_require__(40).register();
-	__webpack_require__(51);
+	__webpack_require__(196).register();
+	__webpack_require__(206);
 
-	__webpack_require__(52).register();
-	__webpack_require__(63);
+	__webpack_require__(207).register();
+	__webpack_require__(217);
 
-	__webpack_require__(64).register();
-	__webpack_require__(75);
+	__webpack_require__(218).register();
+	__webpack_require__(228);
+
+	__webpack_require__(229).register();
+	__webpack_require__(239);
 
 
 
-	__webpack_require__(76);
+	__webpack_require__(240);
 
-	__webpack_require__(88);
+	__webpack_require__(251);
 
 
 	// JS
@@ -115,7 +118,186 @@
 /* 9 */,
 /* 10 */,
 /* 11 */,
-/* 12 */
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */,
+/* 83 */,
+/* 84 */,
+/* 85 */,
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */,
+/* 90 */,
+/* 91 */,
+/* 92 */,
+/* 93 */,
+/* 94 */,
+/* 95 */,
+/* 96 */,
+/* 97 */,
+/* 98 */,
+/* 99 */,
+/* 100 */,
+/* 101 */,
+/* 102 */,
+/* 103 */,
+/* 104 */,
+/* 105 */,
+/* 106 */,
+/* 107 */,
+/* 108 */,
+/* 109 */,
+/* 110 */,
+/* 111 */,
+/* 112 */,
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */,
+/* 117 */,
+/* 118 */,
+/* 119 */,
+/* 120 */,
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */,
+/* 125 */,
+/* 126 */,
+/* 127 */,
+/* 128 */,
+/* 129 */,
+/* 130 */,
+/* 131 */,
+/* 132 */,
+/* 133 */,
+/* 134 */,
+/* 135 */,
+/* 136 */,
+/* 137 */,
+/* 138 */,
+/* 139 */,
+/* 140 */,
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
+/* 146 */,
+/* 147 */,
+/* 148 */,
+/* 149 */,
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */,
+/* 155 */,
+/* 156 */,
+/* 157 */,
+/* 158 */,
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 169 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -125,20 +307,20 @@
 	 * require("bonaparte").mixin.create()
 	 */
 
-	module.exports = __webpack_require__(13);
+	module.exports = __webpack_require__(182);
 
 /***/ },
-/* 13 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(14);
-	var mousetrap = __webpack_require__(24);
+	var bp = __webpack_require__(183);
+	var mousetrap = __webpack_require__(193);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
 
 	module.exports = bp.tag.create("panel", [
-	  __webpack_require__(25),
+	  __webpack_require__(194),
 	  panel
 	]);
 
@@ -216,13 +398,13 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 14 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public 
 
-	module.exports = __webpack_require__(15);
+	module.exports = __webpack_require__(184);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Polyfills
@@ -230,10 +412,10 @@
 	if(typeof document.addEventListener === "function") { // no polyfills for IE8 -> silently fail.
 	  
 	  if(!("MutationObserver" in document)) {
-	    MutationObserver = __webpack_require__(21);
+	    MutationObserver = __webpack_require__(190);
 	  };
-	  __webpack_require__(22);
-	  __webpack_require__(23);
+	  __webpack_require__(191);
+	  __webpack_require__(192);
 
 
 	  if (Element && !Element.prototype.matches) {
@@ -246,10 +428,10 @@
 
 
 /***/ },
-/* 15 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var objct = __webpack_require__(16);
+	var objct = __webpack_require__(185);
 	// var easing = require("./easing");
 
 	///////////////////////////////////////////////////////////////////////////////
@@ -257,7 +439,7 @@
 
 	module.exports = {
 	  tag : {
-	    create : __webpack_require__(18),
+	    create : __webpack_require__(187),
 	    contains : nodeContains,
 	    observe : observe,
 	    triggerEvent : triggerEvent,
@@ -418,7 +600,7 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 16 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {/*! 
@@ -679,10 +861,10 @@
 
 	////////////////////////////////////////////////////////////////////////////////
 	})( false? {} : module);
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(186)(module)))
 
 /***/ },
-/* 17 */
+/* 186 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -698,11 +880,11 @@
 
 
 /***/ },
-/* 18 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var objct = __webpack_require__(16);
-	var bp = __webpack_require__(15);
+	var objct = __webpack_require__(185);
+	var bp = __webpack_require__(184);
 
 	///////////////////////////////////////////////////////////////////////////////
 
@@ -792,9 +974,9 @@
 
 	  function apply(element) {
 	    var modules = [
-	      __webpack_require__(19),
+	      __webpack_require__(188),
 	      definition, 
-	      __webpack_require__(20)
+	      __webpack_require__(189)
 	    ];
 
 	    // Create bonaparte namespace
@@ -843,10 +1025,10 @@
 
 
 /***/ },
-/* 19 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(14);
+	var bp = __webpack_require__(183);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
@@ -874,10 +1056,10 @@
 	}
 
 /***/ },
-/* 20 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var objct = __webpack_require__(16);
+	var objct = __webpack_require__(185);
 
 	var registeredMixins = {};
 
@@ -916,7 +1098,7 @@
 	}
 
 /***/ },
-/* 21 */
+/* 190 */
 /***/ function(module, exports) {
 
 	var MutationObserver = window.MutationObserver
@@ -1507,14 +1689,14 @@
 
 
 /***/ },
-/* 22 */
+/* 191 */
 /***/ function(module, exports) {
 
 	/*! (C) WebReflection Mit Style License */
 	(function(e,t,n,r){"use strict";function rt(e,t){for(var n=0,r=e.length;n<r;n++)dt(e[n],t)}function it(e){for(var t=0,n=e.length,r;t<n;t++)r=e[t],nt(r,b[ot(r)])}function st(e){return function(t){j(t)&&(dt(t,e),rt(t.querySelectorAll(w),e))}}function ot(e){var t=e.getAttribute("is"),n=e.nodeName.toUpperCase(),r=S.call(y,t?v+t.toUpperCase():d+n);return t&&-1<r&&!ut(n,t)?-1:r}function ut(e,t){return-1<w.indexOf(e+'[is="'+t+'"]')}function at(e){var t=e.currentTarget,n=e.attrChange,r=e.prevValue,i=e.newValue;Q&&t.attributeChangedCallback&&e.attrName!=="style"&&t.attributeChangedCallback(e.attrName,n===e[a]?null:r,n===e[l]?null:i)}function ft(e){var t=st(e);return function(e){X.push(t,e.target)}}function lt(e){K&&(K=!1,e.currentTarget.removeEventListener(h,lt)),rt((e.target||t).querySelectorAll(w),e.detail===o?o:s),B&&pt()}function ct(e,t){var n=this;q.call(n,e,t),G.call(n,{target:n})}function ht(e,t){D(e,t),et?et.observe(e,z):(J&&(e.setAttribute=ct,e[i]=Z(e),e.addEventListener(p,G)),e.addEventListener(c,at)),e.createdCallback&&Q&&(e.created=!0,e.createdCallback(),e.created=!1)}function pt(){for(var e,t=0,n=F.length;t<n;t++)e=F[t],E.contains(e)||(F.splice(t,1),dt(e,o))}function dt(e,t){var n,r=ot(e);-1<r&&(tt(e,b[r]),r=0,t===s&&!e[s]?(e[o]=!1,e[s]=!0,r=1,B&&S.call(F,e)<0&&F.push(e)):t===o&&!e[o]&&(e[s]=!1,e[o]=!0,r=1),r&&(n=e[t+"Callback"])&&n.call(e))}if(r in t)return;var i="__"+r+(Math.random()*1e5>>0),s="attached",o="detached",u="extends",a="ADDITION",f="MODIFICATION",l="REMOVAL",c="DOMAttrModified",h="DOMContentLoaded",p="DOMSubtreeModified",d="<",v="=",m=/^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$/,g=["ANNOTATION-XML","COLOR-PROFILE","FONT-FACE","FONT-FACE-SRC","FONT-FACE-URI","FONT-FACE-FORMAT","FONT-FACE-NAME","MISSING-GLYPH"],y=[],b=[],w="",E=t.documentElement,S=y.indexOf||function(e){for(var t=this.length;t--&&this[t]!==e;);return t},x=n.prototype,T=x.hasOwnProperty,N=x.isPrototypeOf,C=n.defineProperty,k=n.getOwnPropertyDescriptor,L=n.getOwnPropertyNames,A=n.getPrototypeOf,O=n.setPrototypeOf,M=!!n.__proto__,_=n.create||function vt(e){return e?(vt.prototype=e,new vt):this},D=O||(M?function(e,t){return e.__proto__=t,e}:L&&k?function(){function e(e,t){for(var n,r=L(t),i=0,s=r.length;i<s;i++)n=r[i],T.call(e,n)||C(e,n,k(t,n))}return function(t,n){do e(t,n);while((n=A(n))&&!N.call(n,t));return t}}():function(e,t){for(var n in t)e[n]=t[n];return e}),P=e.MutationObserver||e.WebKitMutationObserver,H=(e.HTMLElement||e.Element||e.Node).prototype,B=!N.call(H,E),j=B?function(e){return e.nodeType===1}:function(e){return N.call(H,e)},F=B&&[],I=H.cloneNode,q=H.setAttribute,R=H.removeAttribute,U=t.createElement,z=P&&{attributes:!0,characterData:!0,attributeOldValue:!0},W=P||function(e){J=!1,E.removeEventListener(c,W)},X,V=e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,10)},$=!1,J=!0,K=!0,Q=!0,G,Y,Z,et,tt,nt;O||M?(tt=function(e,t){N.call(t,e)||ht(e,t)},nt=ht):(tt=function(e,t){e[i]||(e[i]=n(!0),ht(e,t))},nt=tt),B?(J=!1,function(){var e=k(H,"addEventListener"),t=e.value,n=function(e){var t=new CustomEvent(c,{bubbles:!0});t.attrName=e,t.prevValue=this.getAttribute(e),t.newValue=null,t[l]=t.attrChange=2,R.call(this,e),this.dispatchEvent(t)},r=function(e,t){var n=this.hasAttribute(e),r=n&&this.getAttribute(e),i=new CustomEvent(c,{bubbles:!0});q.call(this,e,t),i.attrName=e,i.prevValue=n?r:null,i.newValue=t,n?i[f]=i.attrChange=1:i[a]=i.attrChange=0,this.dispatchEvent(i)},s=function(e){var t=e.currentTarget,n=t[i],r=e.propertyName,s;n.hasOwnProperty(r)&&(n=n[r],s=new CustomEvent(c,{bubbles:!0}),s.attrName=n.name,s.prevValue=n.value||null,s.newValue=n.value=t[r]||null,s.prevValue==null?s[a]=s.attrChange=0:s[f]=s.attrChange=1,t.dispatchEvent(s))};e.value=function(e,o,u){e===c&&this.attributeChangedCallback&&this.setAttribute!==r&&(this[i]={className:{name:"class",value:this.className}},this.setAttribute=r,this.removeAttribute=n,t.call(this,"propertychange",s)),t.call(this,e,o,u)},C(H,"addEventListener",e)}()):P||(E.addEventListener(c,W),E.setAttribute(i,1),E.removeAttribute(i),J&&(G=function(e){var t=this,n,r,s;if(t===e.target){n=t[i],t[i]=r=Z(t);for(s in r){if(!(s in n))return Y(0,t,s,n[s],r[s],a);if(r[s]!==n[s])return Y(1,t,s,n[s],r[s],f)}for(s in n)if(!(s in r))return Y(2,t,s,n[s],r[s],l)}},Y=function(e,t,n,r,i,s){var o={attrChange:e,currentTarget:t,attrName:n,prevValue:r,newValue:i};o[s]=e,at(o)},Z=function(e){for(var t,n,r={},i=e.attributes,s=0,o=i.length;s<o;s++)t=i[s],n=t.name,n!=="setAttribute"&&(r[n]=t.value);return r})),t[r]=function(n,r){p=n.toUpperCase(),$||($=!0,P?(et=function(e,t){function n(e,t){for(var n=0,r=e.length;n<r;t(e[n++]));}return new P(function(r){for(var i,s,o=0,u=r.length;o<u;o++)i=r[o],i.type==="childList"?(n(i.addedNodes,e),n(i.removedNodes,t)):(s=i.target,Q&&s.attributeChangedCallback&&i.attributeName!=="style"&&s.attributeChangedCallback(i.attributeName,i.oldValue,s.getAttribute(i.attributeName)))})}(st(s),st(o)),et.observe(t,{childList:!0,subtree:!0})):(X=[],V(function E(){while(X.length)X.shift().call(null,X.shift());V(E)}),t.addEventListener("DOMNodeInserted",ft(s)),t.addEventListener("DOMNodeRemoved",ft(o))),t.addEventListener(h,lt),t.addEventListener("readystatechange",lt),t.createElement=function(e,n){var r=U.apply(t,arguments),i=""+e,s=S.call(y,(n?v:d)+(n||i).toUpperCase()),o=-1<s;return n&&(r.setAttribute("is",n=n.toLowerCase()),o&&(o=ut(i.toUpperCase(),n))),Q=!t.createElement.innerHTMLHelper,o&&nt(r,b[s]),r},H.cloneNode=function(e){var t=I.call(this,!!e),n=ot(t);return-1<n&&nt(t,b[n]),e&&it(t.querySelectorAll(w)),t});if(-2<S.call(y,v+p)+S.call(y,d+p))throw new Error("A "+n+" type is already registered");if(!m.test(p)||-1<S.call(g,p))throw new Error("The type "+n+" is invalid");var i=function(){return f?t.createElement(l,p):t.createElement(l)},a=r||x,f=T.call(a,u),l=f?r[u].toUpperCase():p,c=y.push((f?v:d)+p)-1,p;return w=w.concat(w.length?",":"",f?l+'[is="'+n.toLowerCase()+'"]':l),i.prototype=b[c]=T.call(a,"prototype")?a.prototype:_(H),rt(t.querySelectorAll(w),s),i}})(window,document,Object,"registerElement");
 
 /***/ },
-/* 23 */
+/* 192 */
 /***/ function(module, exports) {
 
 	// Polyfill for creating CustomEvents on IE9/10/11
@@ -1544,7 +1726,7 @@
 	}
 
 /***/ },
-/* 24 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*global define:false */
@@ -2571,10 +2753,10 @@
 
 
 /***/ },
-/* 25 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(14);
+	var bp = __webpack_require__(183);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public 
@@ -2598,14 +2780,13 @@
 
 
 /***/ },
-/* 26 */
+/* 195 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 27 */,
-/* 28 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -2615,13 +2796,13 @@
 	 * require("bonaparte").mixin.create()
 	 */
 
-	module.exports = __webpack_require__(29);
+	module.exports = __webpack_require__(197);
 
 /***/ },
-/* 29 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(30);
+	var bp = __webpack_require__(198);
 
 	var scrollBarWidth = false;
 
@@ -2746,13 +2927,13 @@
 	}
 
 /***/ },
-/* 30 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public 
 
-	module.exports = __webpack_require__(31);
+	module.exports = __webpack_require__(199);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Polyfills
@@ -2760,10 +2941,10 @@
 	if(typeof document.addEventListener === "function") { // no polyfills for IE8 -> silently fail.
 	  
 	  if(!("MutationObserver" in document)) {
-	    MutationObserver = __webpack_require__(36);
+	    MutationObserver = __webpack_require__(203);
 	  };
-	  __webpack_require__(37);
-	  __webpack_require__(38);
+	  __webpack_require__(204);
+	  __webpack_require__(205);
 
 
 	  if (Element && !Element.prototype.matches) {
@@ -2776,10 +2957,10 @@
 
 
 /***/ },
-/* 31 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var objct = __webpack_require__(32);
+	var objct = __webpack_require__(185);
 	// var easing = require("./easing");
 
 	///////////////////////////////////////////////////////////////////////////////
@@ -2787,7 +2968,7 @@
 
 	module.exports = {
 	  tag : {
-	    create : __webpack_require__(33),
+	    create : __webpack_require__(200),
 	    contains : nodeContains,
 	    observe : observe,
 	    triggerEvent : triggerEvent,
@@ -2948,275 +3129,11 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 32 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {/*! 
-	 * objct - v0.x (https://github.com/greenish/js-objct)
-	 * 
-	 * Copyright (c) 2015 Philipp Adrian (www.philippadrian.com)
-	 *
-	 * The MIT Licence (http://opensource.org/licenses/MIT)
-	 */
-	////////////////////////////////////////////////////////////////////////////////
-	(function(commonJSmodule, undefined){
-	"use strict";
-
-	////////////////////////////////////////////////////////////////////////////////
-	var Objct = function(){};
-	var NewObj = function(){return {};};
-	var hash = "jmuMMRs6AUUG293HXcs8Z0ofQlkG0hqiNAJlZq2hHYakBQmyfnRuCsh2yf-d7n";
-	var testExecutable = new RegExp("\\b"+hash+"\\b");
-	var strFunction = "function";
-	var strObject = "object";
-	var strArray = Array.toString();
-	var objectKeys = Object.keys || Objct;
-	////////////////////////////////////////////////////////////////////////////////
-	var checkType = function(value){
-		var	type = typeof value;
-		return type === strFunction || (type === strObject && !factory.isArray(value));
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var instantiateFunction = function(fn, args){
-		Objct.prototype = fn.prototype;
-		var f = new Objct();
-		Objct.prototype = null;
-		var r = fn.apply(f, args);
-		if(checkType(r)) return r;
-		return f;		
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var decoratedProperty = function(target, source, k, data) {
-		target[k] = typeof source[k] === strFunction && source[k].hash === hash?
-			source[k].call(data.i, {
-				args:data.a, 
-				modules:data.m, 
-				target:target,
-				key:k
-			}):
-			source[k];
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var decoratedModule = function(module, data, instance) {
-		return typeof module === strFunction && module.hash === hash ?
-			module.call(instance, {
-				args:data.a, 
-				modules:data.m
-			}):
-			module;
-	}
-	////////////////////////////////////////////////////////////////////////////////
-	var mixinObject = function(target, source, data, keys) {
-		var k = -1, length;
-		keys = keys || objectKeys(source);
-		if(typeof keys === strObject) {
-			length = keys.length;	
-			if(data.d) 
-				while(++k < length) 
-					decoratedProperty(target, source, keys[k], data);
-			else 
-				while(++k < length) 
-					target[keys[k]]=source[keys[k]];
-		}
-		else {
-			if(data.d) 
-				for(k in source) 
-					decoratedProperty(target, source, k, data);
-			else 
-				for(k in source) 
-					target[k]=source[k];
-		}
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var mixinFunction = function(target, fn, data){
-		var proto = fn.prototype;
-		var instance, keys;
-
-		mixinObject(target, proto, data);
-
-		if(!data.d) {
-			fn.apply(target, data.a);
-			return;
-		}
-
-		fn.prototype = target;
-		instance = instantiateFunction(fn, data.a);
-		fn.prototype = proto;
-
-		keys = typeof Object.getOwnPropertyNames === strFunction ?
-			Object.getOwnPropertyNames(instance):
-			undefined;
-		
-		mixinObject(target, instance, data, keys);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var build = function(modules, data){
-		var isFunction, i=-1;
-		var instance, obj, length = modules.length;
-
-		while(++i<length) {
-			obj = data.d ?
-				decoratedModule(modules[i].obj, data, data.i):
-				modules[i].obj;
-
-			// first Module
-			if(i === 0) {
-				// very first module
-				if(data.i === null) {
-					data.i = obj === NewObj ? 
-						NewObj():
-						typeof obj === strFunction ?
-							instantiateFunction(obj, data.a):
-							obj;
-					// call first modules decorators
-					data.d && mixinObject(data.i, data.i, data);
-					continue;
-				}
-				else if(obj === NewObj) continue;
-			} 
-
-			//module is factory? -> call it
-			modules[i].isFactory ?
-				obj.call({hash:hash}, modules[i], data):
-				// module is function?
-				typeof obj === strFunction ?
-					mixinFunction(data.i, obj, data):
-					// module is object
-					mixinObject(data.i, obj, data);
-		}
-
-		return data.i;
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	//////////////////////////////////////////////////////////////////////////////
-	var factory = function(){
-		Array.prototype.unshift.call(arguments, NewObj);
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory,
-			d : false,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.e = function(){
-		Array.prototype.unshift.call(arguments, NewObj);
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory.e,
-			d : true,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.e.extend = function(){
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory.e.extend,
-			d : true,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.extend = function(){
-		////////////////////////////////////////////////////////////////////////
-		var Executable = function Executable(module, data){
-			"jmuMMRs6AUUG293HXcs8Z0ofQlkG0hqiNAJlZq2hHYakBQmyfnRuCsh2yf-d7n";
-			var that = this || {};
-
-			//////////////////////////
-			// Continue building process
-			//////////////////////////
-			if(that && typeof that.hash === "string" && that.hash === hash) {
-				// pass up modules
-				module.m = thisData.m;
-				return build(thisData.m, data);
-			}
-			//////////////////////////
-			// Start building process
-			//////////////////////////
-			
-			thisData.a = arguments;
-			return build(thisData.m, thisData);
-		};
-		////////////////////////////////////////////////////////////////////////
-		var that = this || {};
-		var thisData = {
-			a : [], // args
-			m : [], // modules
-			i : null, // instance
-			d : that.hash === hash ? that.d : false // decorated
-		};
-		var type;
-		var args = arguments.length > 0 ? arguments : that.arguments;
-		var instant = this instanceof factory.extend || that.i;
-
-		//setup modules
-		var i=-1;
-		while(++i < args.length) {
-			type = typeof args[i];
-			if(!checkType(args[i])) {
-				if(type !== strObject) {
-					throw("objct: Unexpected '"+type+"'! Only 'functions' and 'objects' can be used with objct.");
-				}
-				else {
-					Array.prototype.splice.apply(args, [i,1].concat(args[i]));
-					i--;
-					continue;
-				}
-			}
-
-			thisData.m.push({ 
-				obj : args[i],
-				isFactory : type === strFunction && testExecutable.test(args[i])
-			});
-
-			// if module is a function and not a decorator, copy static properties to Executable
-			if(!instant && type === strFunction && args[i].hash !== hash)
-				mixinObject(Executable, args[i], thisData);
-		}	
-		return instant ? new Executable() : Executable;
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	factory.e.decorator = function(fn){
-		var type = typeof fn;
-		if(type !== strFunction) 
-			throw("objct.decorator: Unexpected '"+type+"'! Objct.decorator only takes one function as argument.");
-		return function(){
-			var args = Array.prototype.slice.call(arguments);
-			var f = function(decoratorData){
-				return fn.apply(this, [decoratorData].concat(args));
-			};
-			f.hash=hash;
-			return f;
-		};
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	factory.isObjct = function(obj){
-	  return testExecutable.test(obj);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	// isArray fallback for ie<9
-	factory.isArray = Array.isArray || function (obj) {
-		return (typeof obj == strObject 
-			&& Object.prototype.toString.call(obj) === "[object Array]")
-			|| ("constructor" in obj && String(obj.constructor) === strArray);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-
-	// Connect to Environment 
-	commonJSmodule.exports = factory;
-
-	////////////////////////////////////////////////////////////////////////////////
-	})( false? {} : module);
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)(module)))
-
-/***/ },
-/* 33 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var objct = __webpack_require__(32);
-	var bp = __webpack_require__(31);
+	var objct = __webpack_require__(185);
+	var bp = __webpack_require__(199);
 
 	///////////////////////////////////////////////////////////////////////////////
 
@@ -3306,9 +3223,9 @@
 
 	  function apply(element) {
 	    var modules = [
-	      __webpack_require__(34),
+	      __webpack_require__(201),
 	      definition, 
-	      __webpack_require__(35)
+	      __webpack_require__(202)
 	    ];
 
 	    // Create bonaparte namespace
@@ -3357,10 +3274,10 @@
 
 
 /***/ },
-/* 34 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(30);
+	var bp = __webpack_require__(198);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
@@ -3388,10 +3305,10 @@
 	}
 
 /***/ },
-/* 35 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var objct = __webpack_require__(32);
+	var objct = __webpack_require__(185);
 
 	var registeredMixins = {};
 
@@ -3430,7 +3347,7 @@
 	}
 
 /***/ },
-/* 36 */
+/* 203 */
 /***/ function(module, exports) {
 
 	var MutationObserver = window.MutationObserver
@@ -4021,14 +3938,14 @@
 
 
 /***/ },
-/* 37 */
+/* 204 */
 /***/ function(module, exports) {
 
 	/*! (C) WebReflection Mit Style License */
 	(function(e,t,n,r){"use strict";function rt(e,t){for(var n=0,r=e.length;n<r;n++)dt(e[n],t)}function it(e){for(var t=0,n=e.length,r;t<n;t++)r=e[t],nt(r,b[ot(r)])}function st(e){return function(t){j(t)&&(dt(t,e),rt(t.querySelectorAll(w),e))}}function ot(e){var t=e.getAttribute("is"),n=e.nodeName.toUpperCase(),r=S.call(y,t?v+t.toUpperCase():d+n);return t&&-1<r&&!ut(n,t)?-1:r}function ut(e,t){return-1<w.indexOf(e+'[is="'+t+'"]')}function at(e){var t=e.currentTarget,n=e.attrChange,r=e.prevValue,i=e.newValue;Q&&t.attributeChangedCallback&&e.attrName!=="style"&&t.attributeChangedCallback(e.attrName,n===e[a]?null:r,n===e[l]?null:i)}function ft(e){var t=st(e);return function(e){X.push(t,e.target)}}function lt(e){K&&(K=!1,e.currentTarget.removeEventListener(h,lt)),rt((e.target||t).querySelectorAll(w),e.detail===o?o:s),B&&pt()}function ct(e,t){var n=this;q.call(n,e,t),G.call(n,{target:n})}function ht(e,t){D(e,t),et?et.observe(e,z):(J&&(e.setAttribute=ct,e[i]=Z(e),e.addEventListener(p,G)),e.addEventListener(c,at)),e.createdCallback&&Q&&(e.created=!0,e.createdCallback(),e.created=!1)}function pt(){for(var e,t=0,n=F.length;t<n;t++)e=F[t],E.contains(e)||(F.splice(t,1),dt(e,o))}function dt(e,t){var n,r=ot(e);-1<r&&(tt(e,b[r]),r=0,t===s&&!e[s]?(e[o]=!1,e[s]=!0,r=1,B&&S.call(F,e)<0&&F.push(e)):t===o&&!e[o]&&(e[s]=!1,e[o]=!0,r=1),r&&(n=e[t+"Callback"])&&n.call(e))}if(r in t)return;var i="__"+r+(Math.random()*1e5>>0),s="attached",o="detached",u="extends",a="ADDITION",f="MODIFICATION",l="REMOVAL",c="DOMAttrModified",h="DOMContentLoaded",p="DOMSubtreeModified",d="<",v="=",m=/^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$/,g=["ANNOTATION-XML","COLOR-PROFILE","FONT-FACE","FONT-FACE-SRC","FONT-FACE-URI","FONT-FACE-FORMAT","FONT-FACE-NAME","MISSING-GLYPH"],y=[],b=[],w="",E=t.documentElement,S=y.indexOf||function(e){for(var t=this.length;t--&&this[t]!==e;);return t},x=n.prototype,T=x.hasOwnProperty,N=x.isPrototypeOf,C=n.defineProperty,k=n.getOwnPropertyDescriptor,L=n.getOwnPropertyNames,A=n.getPrototypeOf,O=n.setPrototypeOf,M=!!n.__proto__,_=n.create||function vt(e){return e?(vt.prototype=e,new vt):this},D=O||(M?function(e,t){return e.__proto__=t,e}:L&&k?function(){function e(e,t){for(var n,r=L(t),i=0,s=r.length;i<s;i++)n=r[i],T.call(e,n)||C(e,n,k(t,n))}return function(t,n){do e(t,n);while((n=A(n))&&!N.call(n,t));return t}}():function(e,t){for(var n in t)e[n]=t[n];return e}),P=e.MutationObserver||e.WebKitMutationObserver,H=(e.HTMLElement||e.Element||e.Node).prototype,B=!N.call(H,E),j=B?function(e){return e.nodeType===1}:function(e){return N.call(H,e)},F=B&&[],I=H.cloneNode,q=H.setAttribute,R=H.removeAttribute,U=t.createElement,z=P&&{attributes:!0,characterData:!0,attributeOldValue:!0},W=P||function(e){J=!1,E.removeEventListener(c,W)},X,V=e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,10)},$=!1,J=!0,K=!0,Q=!0,G,Y,Z,et,tt,nt;O||M?(tt=function(e,t){N.call(t,e)||ht(e,t)},nt=ht):(tt=function(e,t){e[i]||(e[i]=n(!0),ht(e,t))},nt=tt),B?(J=!1,function(){var e=k(H,"addEventListener"),t=e.value,n=function(e){var t=new CustomEvent(c,{bubbles:!0});t.attrName=e,t.prevValue=this.getAttribute(e),t.newValue=null,t[l]=t.attrChange=2,R.call(this,e),this.dispatchEvent(t)},r=function(e,t){var n=this.hasAttribute(e),r=n&&this.getAttribute(e),i=new CustomEvent(c,{bubbles:!0});q.call(this,e,t),i.attrName=e,i.prevValue=n?r:null,i.newValue=t,n?i[f]=i.attrChange=1:i[a]=i.attrChange=0,this.dispatchEvent(i)},s=function(e){var t=e.currentTarget,n=t[i],r=e.propertyName,s;n.hasOwnProperty(r)&&(n=n[r],s=new CustomEvent(c,{bubbles:!0}),s.attrName=n.name,s.prevValue=n.value||null,s.newValue=n.value=t[r]||null,s.prevValue==null?s[a]=s.attrChange=0:s[f]=s.attrChange=1,t.dispatchEvent(s))};e.value=function(e,o,u){e===c&&this.attributeChangedCallback&&this.setAttribute!==r&&(this[i]={className:{name:"class",value:this.className}},this.setAttribute=r,this.removeAttribute=n,t.call(this,"propertychange",s)),t.call(this,e,o,u)},C(H,"addEventListener",e)}()):P||(E.addEventListener(c,W),E.setAttribute(i,1),E.removeAttribute(i),J&&(G=function(e){var t=this,n,r,s;if(t===e.target){n=t[i],t[i]=r=Z(t);for(s in r){if(!(s in n))return Y(0,t,s,n[s],r[s],a);if(r[s]!==n[s])return Y(1,t,s,n[s],r[s],f)}for(s in n)if(!(s in r))return Y(2,t,s,n[s],r[s],l)}},Y=function(e,t,n,r,i,s){var o={attrChange:e,currentTarget:t,attrName:n,prevValue:r,newValue:i};o[s]=e,at(o)},Z=function(e){for(var t,n,r={},i=e.attributes,s=0,o=i.length;s<o;s++)t=i[s],n=t.name,n!=="setAttribute"&&(r[n]=t.value);return r})),t[r]=function(n,r){p=n.toUpperCase(),$||($=!0,P?(et=function(e,t){function n(e,t){for(var n=0,r=e.length;n<r;t(e[n++]));}return new P(function(r){for(var i,s,o=0,u=r.length;o<u;o++)i=r[o],i.type==="childList"?(n(i.addedNodes,e),n(i.removedNodes,t)):(s=i.target,Q&&s.attributeChangedCallback&&i.attributeName!=="style"&&s.attributeChangedCallback(i.attributeName,i.oldValue,s.getAttribute(i.attributeName)))})}(st(s),st(o)),et.observe(t,{childList:!0,subtree:!0})):(X=[],V(function E(){while(X.length)X.shift().call(null,X.shift());V(E)}),t.addEventListener("DOMNodeInserted",ft(s)),t.addEventListener("DOMNodeRemoved",ft(o))),t.addEventListener(h,lt),t.addEventListener("readystatechange",lt),t.createElement=function(e,n){var r=U.apply(t,arguments),i=""+e,s=S.call(y,(n?v:d)+(n||i).toUpperCase()),o=-1<s;return n&&(r.setAttribute("is",n=n.toLowerCase()),o&&(o=ut(i.toUpperCase(),n))),Q=!t.createElement.innerHTMLHelper,o&&nt(r,b[s]),r},H.cloneNode=function(e){var t=I.call(this,!!e),n=ot(t);return-1<n&&nt(t,b[n]),e&&it(t.querySelectorAll(w)),t});if(-2<S.call(y,v+p)+S.call(y,d+p))throw new Error("A "+n+" type is already registered");if(!m.test(p)||-1<S.call(g,p))throw new Error("The type "+n+" is invalid");var i=function(){return f?t.createElement(l,p):t.createElement(l)},a=r||x,f=T.call(a,u),l=f?r[u].toUpperCase():p,c=y.push((f?v:d)+p)-1,p;return w=w.concat(w.length?",":"",f?l+'[is="'+n.toLowerCase()+'"]':l),i.prototype=b[c]=T.call(a,"prototype")?a.prototype:_(H),rt(t.querySelectorAll(w),s),i}})(window,document,Object,"registerElement");
 
 /***/ },
-/* 38 */
+/* 205 */
 /***/ function(module, exports) {
 
 	// Polyfill for creating CustomEvents on IE9/10/11
@@ -4058,13 +3975,13 @@
 	}
 
 /***/ },
-/* 39 */
+/* 206 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 40 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -4074,14 +3991,14 @@
 	 * require("bonaparte").mixin.create()
 	 */
 
-	module.exports = __webpack_require__(41);
+	module.exports = __webpack_require__(208);
 
 /***/ },
-/* 41 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(42);
-	var mousetrap = __webpack_require__(24);
+	var bp = __webpack_require__(209);
+	var mousetrap = __webpack_require__(193);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
@@ -4357,13 +4274,13 @@
 	 ///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 42 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public 
 
-	module.exports = __webpack_require__(43);
+	module.exports = __webpack_require__(210);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Polyfills
@@ -4371,10 +4288,10 @@
 	if(typeof document.addEventListener === "function") { // no polyfills for IE8 -> silently fail.
 	  
 	  if(!("MutationObserver" in document)) {
-	    MutationObserver = __webpack_require__(48);
+	    MutationObserver = __webpack_require__(214);
 	  };
-	  __webpack_require__(49);
-	  __webpack_require__(50);
+	  __webpack_require__(215);
+	  __webpack_require__(216);
 
 
 	  if (Element && !Element.prototype.matches) {
@@ -4387,10 +4304,10 @@
 
 
 /***/ },
-/* 43 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var objct = __webpack_require__(44);
+	var objct = __webpack_require__(185);
 	// var easing = require("./easing");
 
 	///////////////////////////////////////////////////////////////////////////////
@@ -4398,7 +4315,7 @@
 
 	module.exports = {
 	  tag : {
-	    create : __webpack_require__(45),
+	    create : __webpack_require__(211),
 	    contains : nodeContains,
 	    observe : observe,
 	    triggerEvent : triggerEvent,
@@ -4559,275 +4476,11 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 44 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {/*! 
-	 * objct - v0.x (https://github.com/greenish/js-objct)
-	 * 
-	 * Copyright (c) 2015 Philipp Adrian (www.philippadrian.com)
-	 *
-	 * The MIT Licence (http://opensource.org/licenses/MIT)
-	 */
-	////////////////////////////////////////////////////////////////////////////////
-	(function(commonJSmodule, undefined){
-	"use strict";
-
-	////////////////////////////////////////////////////////////////////////////////
-	var Objct = function(){};
-	var NewObj = function(){return {};};
-	var hash = "jmuMMRs6AUUG293HXcs8Z0ofQlkG0hqiNAJlZq2hHYakBQmyfnRuCsh2yf-d7n";
-	var testExecutable = new RegExp("\\b"+hash+"\\b");
-	var strFunction = "function";
-	var strObject = "object";
-	var strArray = Array.toString();
-	var objectKeys = Object.keys || Objct;
-	////////////////////////////////////////////////////////////////////////////////
-	var checkType = function(value){
-		var	type = typeof value;
-		return type === strFunction || (type === strObject && !factory.isArray(value));
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var instantiateFunction = function(fn, args){
-		Objct.prototype = fn.prototype;
-		var f = new Objct();
-		Objct.prototype = null;
-		var r = fn.apply(f, args);
-		if(checkType(r)) return r;
-		return f;		
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var decoratedProperty = function(target, source, k, data) {
-		target[k] = typeof source[k] === strFunction && source[k].hash === hash?
-			source[k].call(data.i, {
-				args:data.a, 
-				modules:data.m, 
-				target:target,
-				key:k
-			}):
-			source[k];
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var decoratedModule = function(module, data, instance) {
-		return typeof module === strFunction && module.hash === hash ?
-			module.call(instance, {
-				args:data.a, 
-				modules:data.m
-			}):
-			module;
-	}
-	////////////////////////////////////////////////////////////////////////////////
-	var mixinObject = function(target, source, data, keys) {
-		var k = -1, length;
-		keys = keys || objectKeys(source);
-		if(typeof keys === strObject) {
-			length = keys.length;	
-			if(data.d) 
-				while(++k < length) 
-					decoratedProperty(target, source, keys[k], data);
-			else 
-				while(++k < length) 
-					target[keys[k]]=source[keys[k]];
-		}
-		else {
-			if(data.d) 
-				for(k in source) 
-					decoratedProperty(target, source, k, data);
-			else 
-				for(k in source) 
-					target[k]=source[k];
-		}
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var mixinFunction = function(target, fn, data){
-		var proto = fn.prototype;
-		var instance, keys;
-
-		mixinObject(target, proto, data);
-
-		if(!data.d) {
-			fn.apply(target, data.a);
-			return;
-		}
-
-		fn.prototype = target;
-		instance = instantiateFunction(fn, data.a);
-		fn.prototype = proto;
-
-		keys = typeof Object.getOwnPropertyNames === strFunction ?
-			Object.getOwnPropertyNames(instance):
-			undefined;
-		
-		mixinObject(target, instance, data, keys);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var build = function(modules, data){
-		var isFunction, i=-1;
-		var instance, obj, length = modules.length;
-
-		while(++i<length) {
-			obj = data.d ?
-				decoratedModule(modules[i].obj, data, data.i):
-				modules[i].obj;
-
-			// first Module
-			if(i === 0) {
-				// very first module
-				if(data.i === null) {
-					data.i = obj === NewObj ? 
-						NewObj():
-						typeof obj === strFunction ?
-							instantiateFunction(obj, data.a):
-							obj;
-					// call first modules decorators
-					data.d && mixinObject(data.i, data.i, data);
-					continue;
-				}
-				else if(obj === NewObj) continue;
-			} 
-
-			//module is factory? -> call it
-			modules[i].isFactory ?
-				obj.call({hash:hash}, modules[i], data):
-				// module is function?
-				typeof obj === strFunction ?
-					mixinFunction(data.i, obj, data):
-					// module is object
-					mixinObject(data.i, obj, data);
-		}
-
-		return data.i;
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	//////////////////////////////////////////////////////////////////////////////
-	var factory = function(){
-		Array.prototype.unshift.call(arguments, NewObj);
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory,
-			d : false,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.e = function(){
-		Array.prototype.unshift.call(arguments, NewObj);
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory.e,
-			d : true,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.e.extend = function(){
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory.e.extend,
-			d : true,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.extend = function(){
-		////////////////////////////////////////////////////////////////////////
-		var Executable = function Executable(module, data){
-			"jmuMMRs6AUUG293HXcs8Z0ofQlkG0hqiNAJlZq2hHYakBQmyfnRuCsh2yf-d7n";
-			var that = this || {};
-
-			//////////////////////////
-			// Continue building process
-			//////////////////////////
-			if(that && typeof that.hash === "string" && that.hash === hash) {
-				// pass up modules
-				module.m = thisData.m;
-				return build(thisData.m, data);
-			}
-			//////////////////////////
-			// Start building process
-			//////////////////////////
-			
-			thisData.a = arguments;
-			return build(thisData.m, thisData);
-		};
-		////////////////////////////////////////////////////////////////////////
-		var that = this || {};
-		var thisData = {
-			a : [], // args
-			m : [], // modules
-			i : null, // instance
-			d : that.hash === hash ? that.d : false // decorated
-		};
-		var type;
-		var args = arguments.length > 0 ? arguments : that.arguments;
-		var instant = this instanceof factory.extend || that.i;
-
-		//setup modules
-		var i=-1;
-		while(++i < args.length) {
-			type = typeof args[i];
-			if(!checkType(args[i])) {
-				if(type !== strObject) {
-					throw("objct: Unexpected '"+type+"'! Only 'functions' and 'objects' can be used with objct.");
-				}
-				else {
-					Array.prototype.splice.apply(args, [i,1].concat(args[i]));
-					i--;
-					continue;
-				}
-			}
-
-			thisData.m.push({ 
-				obj : args[i],
-				isFactory : type === strFunction && testExecutable.test(args[i])
-			});
-
-			// if module is a function and not a decorator, copy static properties to Executable
-			if(!instant && type === strFunction && args[i].hash !== hash)
-				mixinObject(Executable, args[i], thisData);
-		}	
-		return instant ? new Executable() : Executable;
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	factory.e.decorator = function(fn){
-		var type = typeof fn;
-		if(type !== strFunction) 
-			throw("objct.decorator: Unexpected '"+type+"'! Objct.decorator only takes one function as argument.");
-		return function(){
-			var args = Array.prototype.slice.call(arguments);
-			var f = function(decoratorData){
-				return fn.apply(this, [decoratorData].concat(args));
-			};
-			f.hash=hash;
-			return f;
-		};
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	factory.isObjct = function(obj){
-	  return testExecutable.test(obj);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	// isArray fallback for ie<9
-	factory.isArray = Array.isArray || function (obj) {
-		return (typeof obj == strObject 
-			&& Object.prototype.toString.call(obj) === "[object Array]")
-			|| ("constructor" in obj && String(obj.constructor) === strArray);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-
-	// Connect to Environment 
-	commonJSmodule.exports = factory;
-
-	////////////////////////////////////////////////////////////////////////////////
-	})( false? {} : module);
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)(module)))
-
-/***/ },
-/* 45 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var objct = __webpack_require__(44);
-	var bp = __webpack_require__(43);
+	var objct = __webpack_require__(185);
+	var bp = __webpack_require__(210);
 
 	///////////////////////////////////////////////////////////////////////////////
 
@@ -4917,9 +4570,9 @@
 
 	  function apply(element) {
 	    var modules = [
-	      __webpack_require__(46),
+	      __webpack_require__(212),
 	      definition, 
-	      __webpack_require__(47)
+	      __webpack_require__(213)
 	    ];
 
 	    // Create bonaparte namespace
@@ -4968,10 +4621,10 @@
 
 
 /***/ },
-/* 46 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(42);
+	var bp = __webpack_require__(209);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
@@ -4999,10 +4652,10 @@
 	}
 
 /***/ },
-/* 47 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var objct = __webpack_require__(44);
+	var objct = __webpack_require__(185);
 
 	var registeredMixins = {};
 
@@ -5041,7 +4694,7 @@
 	}
 
 /***/ },
-/* 48 */
+/* 214 */
 /***/ function(module, exports) {
 
 	var MutationObserver = window.MutationObserver
@@ -5632,14 +5285,14 @@
 
 
 /***/ },
-/* 49 */
+/* 215 */
 /***/ function(module, exports) {
 
 	/*! (C) WebReflection Mit Style License */
 	(function(e,t,n,r){"use strict";function rt(e,t){for(var n=0,r=e.length;n<r;n++)dt(e[n],t)}function it(e){for(var t=0,n=e.length,r;t<n;t++)r=e[t],nt(r,b[ot(r)])}function st(e){return function(t){j(t)&&(dt(t,e),rt(t.querySelectorAll(w),e))}}function ot(e){var t=e.getAttribute("is"),n=e.nodeName.toUpperCase(),r=S.call(y,t?v+t.toUpperCase():d+n);return t&&-1<r&&!ut(n,t)?-1:r}function ut(e,t){return-1<w.indexOf(e+'[is="'+t+'"]')}function at(e){var t=e.currentTarget,n=e.attrChange,r=e.prevValue,i=e.newValue;Q&&t.attributeChangedCallback&&e.attrName!=="style"&&t.attributeChangedCallback(e.attrName,n===e[a]?null:r,n===e[l]?null:i)}function ft(e){var t=st(e);return function(e){X.push(t,e.target)}}function lt(e){K&&(K=!1,e.currentTarget.removeEventListener(h,lt)),rt((e.target||t).querySelectorAll(w),e.detail===o?o:s),B&&pt()}function ct(e,t){var n=this;q.call(n,e,t),G.call(n,{target:n})}function ht(e,t){D(e,t),et?et.observe(e,z):(J&&(e.setAttribute=ct,e[i]=Z(e),e.addEventListener(p,G)),e.addEventListener(c,at)),e.createdCallback&&Q&&(e.created=!0,e.createdCallback(),e.created=!1)}function pt(){for(var e,t=0,n=F.length;t<n;t++)e=F[t],E.contains(e)||(F.splice(t,1),dt(e,o))}function dt(e,t){var n,r=ot(e);-1<r&&(tt(e,b[r]),r=0,t===s&&!e[s]?(e[o]=!1,e[s]=!0,r=1,B&&S.call(F,e)<0&&F.push(e)):t===o&&!e[o]&&(e[s]=!1,e[o]=!0,r=1),r&&(n=e[t+"Callback"])&&n.call(e))}if(r in t)return;var i="__"+r+(Math.random()*1e5>>0),s="attached",o="detached",u="extends",a="ADDITION",f="MODIFICATION",l="REMOVAL",c="DOMAttrModified",h="DOMContentLoaded",p="DOMSubtreeModified",d="<",v="=",m=/^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$/,g=["ANNOTATION-XML","COLOR-PROFILE","FONT-FACE","FONT-FACE-SRC","FONT-FACE-URI","FONT-FACE-FORMAT","FONT-FACE-NAME","MISSING-GLYPH"],y=[],b=[],w="",E=t.documentElement,S=y.indexOf||function(e){for(var t=this.length;t--&&this[t]!==e;);return t},x=n.prototype,T=x.hasOwnProperty,N=x.isPrototypeOf,C=n.defineProperty,k=n.getOwnPropertyDescriptor,L=n.getOwnPropertyNames,A=n.getPrototypeOf,O=n.setPrototypeOf,M=!!n.__proto__,_=n.create||function vt(e){return e?(vt.prototype=e,new vt):this},D=O||(M?function(e,t){return e.__proto__=t,e}:L&&k?function(){function e(e,t){for(var n,r=L(t),i=0,s=r.length;i<s;i++)n=r[i],T.call(e,n)||C(e,n,k(t,n))}return function(t,n){do e(t,n);while((n=A(n))&&!N.call(n,t));return t}}():function(e,t){for(var n in t)e[n]=t[n];return e}),P=e.MutationObserver||e.WebKitMutationObserver,H=(e.HTMLElement||e.Element||e.Node).prototype,B=!N.call(H,E),j=B?function(e){return e.nodeType===1}:function(e){return N.call(H,e)},F=B&&[],I=H.cloneNode,q=H.setAttribute,R=H.removeAttribute,U=t.createElement,z=P&&{attributes:!0,characterData:!0,attributeOldValue:!0},W=P||function(e){J=!1,E.removeEventListener(c,W)},X,V=e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,10)},$=!1,J=!0,K=!0,Q=!0,G,Y,Z,et,tt,nt;O||M?(tt=function(e,t){N.call(t,e)||ht(e,t)},nt=ht):(tt=function(e,t){e[i]||(e[i]=n(!0),ht(e,t))},nt=tt),B?(J=!1,function(){var e=k(H,"addEventListener"),t=e.value,n=function(e){var t=new CustomEvent(c,{bubbles:!0});t.attrName=e,t.prevValue=this.getAttribute(e),t.newValue=null,t[l]=t.attrChange=2,R.call(this,e),this.dispatchEvent(t)},r=function(e,t){var n=this.hasAttribute(e),r=n&&this.getAttribute(e),i=new CustomEvent(c,{bubbles:!0});q.call(this,e,t),i.attrName=e,i.prevValue=n?r:null,i.newValue=t,n?i[f]=i.attrChange=1:i[a]=i.attrChange=0,this.dispatchEvent(i)},s=function(e){var t=e.currentTarget,n=t[i],r=e.propertyName,s;n.hasOwnProperty(r)&&(n=n[r],s=new CustomEvent(c,{bubbles:!0}),s.attrName=n.name,s.prevValue=n.value||null,s.newValue=n.value=t[r]||null,s.prevValue==null?s[a]=s.attrChange=0:s[f]=s.attrChange=1,t.dispatchEvent(s))};e.value=function(e,o,u){e===c&&this.attributeChangedCallback&&this.setAttribute!==r&&(this[i]={className:{name:"class",value:this.className}},this.setAttribute=r,this.removeAttribute=n,t.call(this,"propertychange",s)),t.call(this,e,o,u)},C(H,"addEventListener",e)}()):P||(E.addEventListener(c,W),E.setAttribute(i,1),E.removeAttribute(i),J&&(G=function(e){var t=this,n,r,s;if(t===e.target){n=t[i],t[i]=r=Z(t);for(s in r){if(!(s in n))return Y(0,t,s,n[s],r[s],a);if(r[s]!==n[s])return Y(1,t,s,n[s],r[s],f)}for(s in n)if(!(s in r))return Y(2,t,s,n[s],r[s],l)}},Y=function(e,t,n,r,i,s){var o={attrChange:e,currentTarget:t,attrName:n,prevValue:r,newValue:i};o[s]=e,at(o)},Z=function(e){for(var t,n,r={},i=e.attributes,s=0,o=i.length;s<o;s++)t=i[s],n=t.name,n!=="setAttribute"&&(r[n]=t.value);return r})),t[r]=function(n,r){p=n.toUpperCase(),$||($=!0,P?(et=function(e,t){function n(e,t){for(var n=0,r=e.length;n<r;t(e[n++]));}return new P(function(r){for(var i,s,o=0,u=r.length;o<u;o++)i=r[o],i.type==="childList"?(n(i.addedNodes,e),n(i.removedNodes,t)):(s=i.target,Q&&s.attributeChangedCallback&&i.attributeName!=="style"&&s.attributeChangedCallback(i.attributeName,i.oldValue,s.getAttribute(i.attributeName)))})}(st(s),st(o)),et.observe(t,{childList:!0,subtree:!0})):(X=[],V(function E(){while(X.length)X.shift().call(null,X.shift());V(E)}),t.addEventListener("DOMNodeInserted",ft(s)),t.addEventListener("DOMNodeRemoved",ft(o))),t.addEventListener(h,lt),t.addEventListener("readystatechange",lt),t.createElement=function(e,n){var r=U.apply(t,arguments),i=""+e,s=S.call(y,(n?v:d)+(n||i).toUpperCase()),o=-1<s;return n&&(r.setAttribute("is",n=n.toLowerCase()),o&&(o=ut(i.toUpperCase(),n))),Q=!t.createElement.innerHTMLHelper,o&&nt(r,b[s]),r},H.cloneNode=function(e){var t=I.call(this,!!e),n=ot(t);return-1<n&&nt(t,b[n]),e&&it(t.querySelectorAll(w)),t});if(-2<S.call(y,v+p)+S.call(y,d+p))throw new Error("A "+n+" type is already registered");if(!m.test(p)||-1<S.call(g,p))throw new Error("The type "+n+" is invalid");var i=function(){return f?t.createElement(l,p):t.createElement(l)},a=r||x,f=T.call(a,u),l=f?r[u].toUpperCase():p,c=y.push((f?v:d)+p)-1,p;return w=w.concat(w.length?",":"",f?l+'[is="'+n.toLowerCase()+'"]':l),i.prototype=b[c]=T.call(a,"prototype")?a.prototype:_(H),rt(t.querySelectorAll(w),s),i}})(window,document,Object,"registerElement");
 
 /***/ },
-/* 50 */
+/* 216 */
 /***/ function(module, exports) {
 
 	// Polyfill for creating CustomEvents on IE9/10/11
@@ -5669,13 +5322,13 @@
 	}
 
 /***/ },
-/* 51 */
+/* 217 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 52 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -5685,15 +5338,15 @@
 	 * require("bonaparte").mixin.create()
 	 */
 
-	module.exports = __webpack_require__(53);
+	module.exports = __webpack_require__(219);
 
 /***/ },
-/* 53 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	///////////////////////////////////////////////////////////////////////////////
 
-	var bp = __webpack_require__(54);
+	var bp = __webpack_require__(220);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
@@ -5732,13 +5385,13 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 54 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public 
 
-	module.exports = __webpack_require__(55);
+	module.exports = __webpack_require__(221);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Polyfills
@@ -5746,10 +5399,10 @@
 	if(typeof document.addEventListener === "function") { // no polyfills for IE8 -> silently fail.
 	  
 	  if(!("MutationObserver" in document)) {
-	    MutationObserver = __webpack_require__(60);
+	    MutationObserver = __webpack_require__(225);
 	  };
-	  __webpack_require__(61);
-	  __webpack_require__(62);
+	  __webpack_require__(226);
+	  __webpack_require__(227);
 
 
 	  if (Element && !Element.prototype.matches) {
@@ -5762,10 +5415,10 @@
 
 
 /***/ },
-/* 55 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var objct = __webpack_require__(56);
+	var objct = __webpack_require__(185);
 	// var easing = require("./easing");
 
 	///////////////////////////////////////////////////////////////////////////////
@@ -5773,7 +5426,7 @@
 
 	module.exports = {
 	  tag : {
-	    create : __webpack_require__(57),
+	    create : __webpack_require__(222),
 	    contains : nodeContains,
 	    observe : observe,
 	    triggerEvent : triggerEvent,
@@ -5934,275 +5587,11 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 56 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {/*! 
-	 * objct - v0.x (https://github.com/greenish/js-objct)
-	 * 
-	 * Copyright (c) 2015 Philipp Adrian (www.philippadrian.com)
-	 *
-	 * The MIT Licence (http://opensource.org/licenses/MIT)
-	 */
-	////////////////////////////////////////////////////////////////////////////////
-	(function(commonJSmodule, undefined){
-	"use strict";
-
-	////////////////////////////////////////////////////////////////////////////////
-	var Objct = function(){};
-	var NewObj = function(){return {};};
-	var hash = "jmuMMRs6AUUG293HXcs8Z0ofQlkG0hqiNAJlZq2hHYakBQmyfnRuCsh2yf-d7n";
-	var testExecutable = new RegExp("\\b"+hash+"\\b");
-	var strFunction = "function";
-	var strObject = "object";
-	var strArray = Array.toString();
-	var objectKeys = Object.keys || Objct;
-	////////////////////////////////////////////////////////////////////////////////
-	var checkType = function(value){
-		var	type = typeof value;
-		return type === strFunction || (type === strObject && !factory.isArray(value));
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var instantiateFunction = function(fn, args){
-		Objct.prototype = fn.prototype;
-		var f = new Objct();
-		Objct.prototype = null;
-		var r = fn.apply(f, args);
-		if(checkType(r)) return r;
-		return f;		
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var decoratedProperty = function(target, source, k, data) {
-		target[k] = typeof source[k] === strFunction && source[k].hash === hash?
-			source[k].call(data.i, {
-				args:data.a, 
-				modules:data.m, 
-				target:target,
-				key:k
-			}):
-			source[k];
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var decoratedModule = function(module, data, instance) {
-		return typeof module === strFunction && module.hash === hash ?
-			module.call(instance, {
-				args:data.a, 
-				modules:data.m
-			}):
-			module;
-	}
-	////////////////////////////////////////////////////////////////////////////////
-	var mixinObject = function(target, source, data, keys) {
-		var k = -1, length;
-		keys = keys || objectKeys(source);
-		if(typeof keys === strObject) {
-			length = keys.length;	
-			if(data.d) 
-				while(++k < length) 
-					decoratedProperty(target, source, keys[k], data);
-			else 
-				while(++k < length) 
-					target[keys[k]]=source[keys[k]];
-		}
-		else {
-			if(data.d) 
-				for(k in source) 
-					decoratedProperty(target, source, k, data);
-			else 
-				for(k in source) 
-					target[k]=source[k];
-		}
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var mixinFunction = function(target, fn, data){
-		var proto = fn.prototype;
-		var instance, keys;
-
-		mixinObject(target, proto, data);
-
-		if(!data.d) {
-			fn.apply(target, data.a);
-			return;
-		}
-
-		fn.prototype = target;
-		instance = instantiateFunction(fn, data.a);
-		fn.prototype = proto;
-
-		keys = typeof Object.getOwnPropertyNames === strFunction ?
-			Object.getOwnPropertyNames(instance):
-			undefined;
-		
-		mixinObject(target, instance, data, keys);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var build = function(modules, data){
-		var isFunction, i=-1;
-		var instance, obj, length = modules.length;
-
-		while(++i<length) {
-			obj = data.d ?
-				decoratedModule(modules[i].obj, data, data.i):
-				modules[i].obj;
-
-			// first Module
-			if(i === 0) {
-				// very first module
-				if(data.i === null) {
-					data.i = obj === NewObj ? 
-						NewObj():
-						typeof obj === strFunction ?
-							instantiateFunction(obj, data.a):
-							obj;
-					// call first modules decorators
-					data.d && mixinObject(data.i, data.i, data);
-					continue;
-				}
-				else if(obj === NewObj) continue;
-			} 
-
-			//module is factory? -> call it
-			modules[i].isFactory ?
-				obj.call({hash:hash}, modules[i], data):
-				// module is function?
-				typeof obj === strFunction ?
-					mixinFunction(data.i, obj, data):
-					// module is object
-					mixinObject(data.i, obj, data);
-		}
-
-		return data.i;
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	//////////////////////////////////////////////////////////////////////////////
-	var factory = function(){
-		Array.prototype.unshift.call(arguments, NewObj);
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory,
-			d : false,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.e = function(){
-		Array.prototype.unshift.call(arguments, NewObj);
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory.e,
-			d : true,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.e.extend = function(){
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory.e.extend,
-			d : true,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.extend = function(){
-		////////////////////////////////////////////////////////////////////////
-		var Executable = function Executable(module, data){
-			"jmuMMRs6AUUG293HXcs8Z0ofQlkG0hqiNAJlZq2hHYakBQmyfnRuCsh2yf-d7n";
-			var that = this || {};
-
-			//////////////////////////
-			// Continue building process
-			//////////////////////////
-			if(that && typeof that.hash === "string" && that.hash === hash) {
-				// pass up modules
-				module.m = thisData.m;
-				return build(thisData.m, data);
-			}
-			//////////////////////////
-			// Start building process
-			//////////////////////////
-			
-			thisData.a = arguments;
-			return build(thisData.m, thisData);
-		};
-		////////////////////////////////////////////////////////////////////////
-		var that = this || {};
-		var thisData = {
-			a : [], // args
-			m : [], // modules
-			i : null, // instance
-			d : that.hash === hash ? that.d : false // decorated
-		};
-		var type;
-		var args = arguments.length > 0 ? arguments : that.arguments;
-		var instant = this instanceof factory.extend || that.i;
-
-		//setup modules
-		var i=-1;
-		while(++i < args.length) {
-			type = typeof args[i];
-			if(!checkType(args[i])) {
-				if(type !== strObject) {
-					throw("objct: Unexpected '"+type+"'! Only 'functions' and 'objects' can be used with objct.");
-				}
-				else {
-					Array.prototype.splice.apply(args, [i,1].concat(args[i]));
-					i--;
-					continue;
-				}
-			}
-
-			thisData.m.push({ 
-				obj : args[i],
-				isFactory : type === strFunction && testExecutable.test(args[i])
-			});
-
-			// if module is a function and not a decorator, copy static properties to Executable
-			if(!instant && type === strFunction && args[i].hash !== hash)
-				mixinObject(Executable, args[i], thisData);
-		}	
-		return instant ? new Executable() : Executable;
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	factory.e.decorator = function(fn){
-		var type = typeof fn;
-		if(type !== strFunction) 
-			throw("objct.decorator: Unexpected '"+type+"'! Objct.decorator only takes one function as argument.");
-		return function(){
-			var args = Array.prototype.slice.call(arguments);
-			var f = function(decoratorData){
-				return fn.apply(this, [decoratorData].concat(args));
-			};
-			f.hash=hash;
-			return f;
-		};
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	factory.isObjct = function(obj){
-	  return testExecutable.test(obj);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	// isArray fallback for ie<9
-	factory.isArray = Array.isArray || function (obj) {
-		return (typeof obj == strObject 
-			&& Object.prototype.toString.call(obj) === "[object Array]")
-			|| ("constructor" in obj && String(obj.constructor) === strArray);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-
-	// Connect to Environment 
-	commonJSmodule.exports = factory;
-
-	////////////////////////////////////////////////////////////////////////////////
-	})( false? {} : module);
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)(module)))
-
-/***/ },
-/* 57 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var objct = __webpack_require__(56);
-	var bp = __webpack_require__(55);
+	var objct = __webpack_require__(185);
+	var bp = __webpack_require__(221);
 
 	///////////////////////////////////////////////////////////////////////////////
 
@@ -6292,9 +5681,9 @@
 
 	  function apply(element) {
 	    var modules = [
-	      __webpack_require__(58),
+	      __webpack_require__(223),
 	      definition, 
-	      __webpack_require__(59)
+	      __webpack_require__(224)
 	    ];
 
 	    // Create bonaparte namespace
@@ -6343,10 +5732,10 @@
 
 
 /***/ },
-/* 58 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(54);
+	var bp = __webpack_require__(220);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
@@ -6374,10 +5763,10 @@
 	}
 
 /***/ },
-/* 59 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var objct = __webpack_require__(56);
+	var objct = __webpack_require__(185);
 
 	var registeredMixins = {};
 
@@ -6416,7 +5805,7 @@
 	}
 
 /***/ },
-/* 60 */
+/* 225 */
 /***/ function(module, exports) {
 
 	var MutationObserver = window.MutationObserver
@@ -7007,14 +6396,14 @@
 
 
 /***/ },
-/* 61 */
+/* 226 */
 /***/ function(module, exports) {
 
 	/*! (C) WebReflection Mit Style License */
 	(function(e,t,n,r){"use strict";function rt(e,t){for(var n=0,r=e.length;n<r;n++)dt(e[n],t)}function it(e){for(var t=0,n=e.length,r;t<n;t++)r=e[t],nt(r,b[ot(r)])}function st(e){return function(t){j(t)&&(dt(t,e),rt(t.querySelectorAll(w),e))}}function ot(e){var t=e.getAttribute("is"),n=e.nodeName.toUpperCase(),r=S.call(y,t?v+t.toUpperCase():d+n);return t&&-1<r&&!ut(n,t)?-1:r}function ut(e,t){return-1<w.indexOf(e+'[is="'+t+'"]')}function at(e){var t=e.currentTarget,n=e.attrChange,r=e.prevValue,i=e.newValue;Q&&t.attributeChangedCallback&&e.attrName!=="style"&&t.attributeChangedCallback(e.attrName,n===e[a]?null:r,n===e[l]?null:i)}function ft(e){var t=st(e);return function(e){X.push(t,e.target)}}function lt(e){K&&(K=!1,e.currentTarget.removeEventListener(h,lt)),rt((e.target||t).querySelectorAll(w),e.detail===o?o:s),B&&pt()}function ct(e,t){var n=this;q.call(n,e,t),G.call(n,{target:n})}function ht(e,t){D(e,t),et?et.observe(e,z):(J&&(e.setAttribute=ct,e[i]=Z(e),e.addEventListener(p,G)),e.addEventListener(c,at)),e.createdCallback&&Q&&(e.created=!0,e.createdCallback(),e.created=!1)}function pt(){for(var e,t=0,n=F.length;t<n;t++)e=F[t],E.contains(e)||(F.splice(t,1),dt(e,o))}function dt(e,t){var n,r=ot(e);-1<r&&(tt(e,b[r]),r=0,t===s&&!e[s]?(e[o]=!1,e[s]=!0,r=1,B&&S.call(F,e)<0&&F.push(e)):t===o&&!e[o]&&(e[s]=!1,e[o]=!0,r=1),r&&(n=e[t+"Callback"])&&n.call(e))}if(r in t)return;var i="__"+r+(Math.random()*1e5>>0),s="attached",o="detached",u="extends",a="ADDITION",f="MODIFICATION",l="REMOVAL",c="DOMAttrModified",h="DOMContentLoaded",p="DOMSubtreeModified",d="<",v="=",m=/^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$/,g=["ANNOTATION-XML","COLOR-PROFILE","FONT-FACE","FONT-FACE-SRC","FONT-FACE-URI","FONT-FACE-FORMAT","FONT-FACE-NAME","MISSING-GLYPH"],y=[],b=[],w="",E=t.documentElement,S=y.indexOf||function(e){for(var t=this.length;t--&&this[t]!==e;);return t},x=n.prototype,T=x.hasOwnProperty,N=x.isPrototypeOf,C=n.defineProperty,k=n.getOwnPropertyDescriptor,L=n.getOwnPropertyNames,A=n.getPrototypeOf,O=n.setPrototypeOf,M=!!n.__proto__,_=n.create||function vt(e){return e?(vt.prototype=e,new vt):this},D=O||(M?function(e,t){return e.__proto__=t,e}:L&&k?function(){function e(e,t){for(var n,r=L(t),i=0,s=r.length;i<s;i++)n=r[i],T.call(e,n)||C(e,n,k(t,n))}return function(t,n){do e(t,n);while((n=A(n))&&!N.call(n,t));return t}}():function(e,t){for(var n in t)e[n]=t[n];return e}),P=e.MutationObserver||e.WebKitMutationObserver,H=(e.HTMLElement||e.Element||e.Node).prototype,B=!N.call(H,E),j=B?function(e){return e.nodeType===1}:function(e){return N.call(H,e)},F=B&&[],I=H.cloneNode,q=H.setAttribute,R=H.removeAttribute,U=t.createElement,z=P&&{attributes:!0,characterData:!0,attributeOldValue:!0},W=P||function(e){J=!1,E.removeEventListener(c,W)},X,V=e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,10)},$=!1,J=!0,K=!0,Q=!0,G,Y,Z,et,tt,nt;O||M?(tt=function(e,t){N.call(t,e)||ht(e,t)},nt=ht):(tt=function(e,t){e[i]||(e[i]=n(!0),ht(e,t))},nt=tt),B?(J=!1,function(){var e=k(H,"addEventListener"),t=e.value,n=function(e){var t=new CustomEvent(c,{bubbles:!0});t.attrName=e,t.prevValue=this.getAttribute(e),t.newValue=null,t[l]=t.attrChange=2,R.call(this,e),this.dispatchEvent(t)},r=function(e,t){var n=this.hasAttribute(e),r=n&&this.getAttribute(e),i=new CustomEvent(c,{bubbles:!0});q.call(this,e,t),i.attrName=e,i.prevValue=n?r:null,i.newValue=t,n?i[f]=i.attrChange=1:i[a]=i.attrChange=0,this.dispatchEvent(i)},s=function(e){var t=e.currentTarget,n=t[i],r=e.propertyName,s;n.hasOwnProperty(r)&&(n=n[r],s=new CustomEvent(c,{bubbles:!0}),s.attrName=n.name,s.prevValue=n.value||null,s.newValue=n.value=t[r]||null,s.prevValue==null?s[a]=s.attrChange=0:s[f]=s.attrChange=1,t.dispatchEvent(s))};e.value=function(e,o,u){e===c&&this.attributeChangedCallback&&this.setAttribute!==r&&(this[i]={className:{name:"class",value:this.className}},this.setAttribute=r,this.removeAttribute=n,t.call(this,"propertychange",s)),t.call(this,e,o,u)},C(H,"addEventListener",e)}()):P||(E.addEventListener(c,W),E.setAttribute(i,1),E.removeAttribute(i),J&&(G=function(e){var t=this,n,r,s;if(t===e.target){n=t[i],t[i]=r=Z(t);for(s in r){if(!(s in n))return Y(0,t,s,n[s],r[s],a);if(r[s]!==n[s])return Y(1,t,s,n[s],r[s],f)}for(s in n)if(!(s in r))return Y(2,t,s,n[s],r[s],l)}},Y=function(e,t,n,r,i,s){var o={attrChange:e,currentTarget:t,attrName:n,prevValue:r,newValue:i};o[s]=e,at(o)},Z=function(e){for(var t,n,r={},i=e.attributes,s=0,o=i.length;s<o;s++)t=i[s],n=t.name,n!=="setAttribute"&&(r[n]=t.value);return r})),t[r]=function(n,r){p=n.toUpperCase(),$||($=!0,P?(et=function(e,t){function n(e,t){for(var n=0,r=e.length;n<r;t(e[n++]));}return new P(function(r){for(var i,s,o=0,u=r.length;o<u;o++)i=r[o],i.type==="childList"?(n(i.addedNodes,e),n(i.removedNodes,t)):(s=i.target,Q&&s.attributeChangedCallback&&i.attributeName!=="style"&&s.attributeChangedCallback(i.attributeName,i.oldValue,s.getAttribute(i.attributeName)))})}(st(s),st(o)),et.observe(t,{childList:!0,subtree:!0})):(X=[],V(function E(){while(X.length)X.shift().call(null,X.shift());V(E)}),t.addEventListener("DOMNodeInserted",ft(s)),t.addEventListener("DOMNodeRemoved",ft(o))),t.addEventListener(h,lt),t.addEventListener("readystatechange",lt),t.createElement=function(e,n){var r=U.apply(t,arguments),i=""+e,s=S.call(y,(n?v:d)+(n||i).toUpperCase()),o=-1<s;return n&&(r.setAttribute("is",n=n.toLowerCase()),o&&(o=ut(i.toUpperCase(),n))),Q=!t.createElement.innerHTMLHelper,o&&nt(r,b[s]),r},H.cloneNode=function(e){var t=I.call(this,!!e),n=ot(t);return-1<n&&nt(t,b[n]),e&&it(t.querySelectorAll(w)),t});if(-2<S.call(y,v+p)+S.call(y,d+p))throw new Error("A "+n+" type is already registered");if(!m.test(p)||-1<S.call(g,p))throw new Error("The type "+n+" is invalid");var i=function(){return f?t.createElement(l,p):t.createElement(l)},a=r||x,f=T.call(a,u),l=f?r[u].toUpperCase():p,c=y.push((f?v:d)+p)-1,p;return w=w.concat(w.length?",":"",f?l+'[is="'+n.toLowerCase()+'"]':l),i.prototype=b[c]=T.call(a,"prototype")?a.prototype:_(H),rt(t.querySelectorAll(w),s),i}})(window,document,Object,"registerElement");
 
 /***/ },
-/* 62 */
+/* 227 */
 /***/ function(module, exports) {
 
 	// Polyfill for creating CustomEvents on IE9/10/11
@@ -7044,13 +6433,13 @@
 	}
 
 /***/ },
-/* 63 */
+/* 228 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 64 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -7060,19 +6449,19 @@
 	 * require("bonaparte").mixin.create()
 	 */
 
-	module.exports = __webpack_require__(65);
+	module.exports = __webpack_require__(230);
 
 /***/ },
-/* 65 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(66);
+	var bp = __webpack_require__(231);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
 
 	module.exports = bp.tag.create("toolbar", [
-	  __webpack_require__(52),
+	  __webpack_require__(218),
 	  toolbar
 	]);
 
@@ -7097,7 +6486,7 @@
 	    }
 
 	    for(var i = 0; i< buttons.length; i++){
-	      __webpack_require__(40).initialize(buttons[i]);
+	      __webpack_require__(207).initialize(buttons[i]);
 	    }
 
 
@@ -7109,13 +6498,13 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 66 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public 
 
-	module.exports = __webpack_require__(67);
+	module.exports = __webpack_require__(232);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Polyfills
@@ -7123,10 +6512,10 @@
 	if(typeof document.addEventListener === "function") { // no polyfills for IE8 -> silently fail.
 	  
 	  if(!("MutationObserver" in document)) {
-	    MutationObserver = __webpack_require__(72);
+	    MutationObserver = __webpack_require__(236);
 	  };
-	  __webpack_require__(73);
-	  __webpack_require__(74);
+	  __webpack_require__(237);
+	  __webpack_require__(238);
 
 
 	  if (Element && !Element.prototype.matches) {
@@ -7139,10 +6528,10 @@
 
 
 /***/ },
-/* 67 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var objct = __webpack_require__(68);
+	var objct = __webpack_require__(185);
 	// var easing = require("./easing");
 
 	///////////////////////////////////////////////////////////////////////////////
@@ -7150,7 +6539,7 @@
 
 	module.exports = {
 	  tag : {
-	    create : __webpack_require__(69),
+	    create : __webpack_require__(233),
 	    contains : nodeContains,
 	    observe : observe,
 	    triggerEvent : triggerEvent,
@@ -7311,275 +6700,11 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 68 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {/*! 
-	 * objct - v0.x (https://github.com/greenish/js-objct)
-	 * 
-	 * Copyright (c) 2015 Philipp Adrian (www.philippadrian.com)
-	 *
-	 * The MIT Licence (http://opensource.org/licenses/MIT)
-	 */
-	////////////////////////////////////////////////////////////////////////////////
-	(function(commonJSmodule, undefined){
-	"use strict";
-
-	////////////////////////////////////////////////////////////////////////////////
-	var Objct = function(){};
-	var NewObj = function(){return {};};
-	var hash = "jmuMMRs6AUUG293HXcs8Z0ofQlkG0hqiNAJlZq2hHYakBQmyfnRuCsh2yf-d7n";
-	var testExecutable = new RegExp("\\b"+hash+"\\b");
-	var strFunction = "function";
-	var strObject = "object";
-	var strArray = Array.toString();
-	var objectKeys = Object.keys || Objct;
-	////////////////////////////////////////////////////////////////////////////////
-	var checkType = function(value){
-		var	type = typeof value;
-		return type === strFunction || (type === strObject && !factory.isArray(value));
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var instantiateFunction = function(fn, args){
-		Objct.prototype = fn.prototype;
-		var f = new Objct();
-		Objct.prototype = null;
-		var r = fn.apply(f, args);
-		if(checkType(r)) return r;
-		return f;		
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var decoratedProperty = function(target, source, k, data) {
-		target[k] = typeof source[k] === strFunction && source[k].hash === hash?
-			source[k].call(data.i, {
-				args:data.a, 
-				modules:data.m, 
-				target:target,
-				key:k
-			}):
-			source[k];
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var decoratedModule = function(module, data, instance) {
-		return typeof module === strFunction && module.hash === hash ?
-			module.call(instance, {
-				args:data.a, 
-				modules:data.m
-			}):
-			module;
-	}
-	////////////////////////////////////////////////////////////////////////////////
-	var mixinObject = function(target, source, data, keys) {
-		var k = -1, length;
-		keys = keys || objectKeys(source);
-		if(typeof keys === strObject) {
-			length = keys.length;	
-			if(data.d) 
-				while(++k < length) 
-					decoratedProperty(target, source, keys[k], data);
-			else 
-				while(++k < length) 
-					target[keys[k]]=source[keys[k]];
-		}
-		else {
-			if(data.d) 
-				for(k in source) 
-					decoratedProperty(target, source, k, data);
-			else 
-				for(k in source) 
-					target[k]=source[k];
-		}
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var mixinFunction = function(target, fn, data){
-		var proto = fn.prototype;
-		var instance, keys;
-
-		mixinObject(target, proto, data);
-
-		if(!data.d) {
-			fn.apply(target, data.a);
-			return;
-		}
-
-		fn.prototype = target;
-		instance = instantiateFunction(fn, data.a);
-		fn.prototype = proto;
-
-		keys = typeof Object.getOwnPropertyNames === strFunction ?
-			Object.getOwnPropertyNames(instance):
-			undefined;
-		
-		mixinObject(target, instance, data, keys);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var build = function(modules, data){
-		var isFunction, i=-1;
-		var instance, obj, length = modules.length;
-
-		while(++i<length) {
-			obj = data.d ?
-				decoratedModule(modules[i].obj, data, data.i):
-				modules[i].obj;
-
-			// first Module
-			if(i === 0) {
-				// very first module
-				if(data.i === null) {
-					data.i = obj === NewObj ? 
-						NewObj():
-						typeof obj === strFunction ?
-							instantiateFunction(obj, data.a):
-							obj;
-					// call first modules decorators
-					data.d && mixinObject(data.i, data.i, data);
-					continue;
-				}
-				else if(obj === NewObj) continue;
-			} 
-
-			//module is factory? -> call it
-			modules[i].isFactory ?
-				obj.call({hash:hash}, modules[i], data):
-				// module is function?
-				typeof obj === strFunction ?
-					mixinFunction(data.i, obj, data):
-					// module is object
-					mixinObject(data.i, obj, data);
-		}
-
-		return data.i;
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	//////////////////////////////////////////////////////////////////////////////
-	var factory = function(){
-		Array.prototype.unshift.call(arguments, NewObj);
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory,
-			d : false,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.e = function(){
-		Array.prototype.unshift.call(arguments, NewObj);
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory.e,
-			d : true,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.e.extend = function(){
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory.e.extend,
-			d : true,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.extend = function(){
-		////////////////////////////////////////////////////////////////////////
-		var Executable = function Executable(module, data){
-			"jmuMMRs6AUUG293HXcs8Z0ofQlkG0hqiNAJlZq2hHYakBQmyfnRuCsh2yf-d7n";
-			var that = this || {};
-
-			//////////////////////////
-			// Continue building process
-			//////////////////////////
-			if(that && typeof that.hash === "string" && that.hash === hash) {
-				// pass up modules
-				module.m = thisData.m;
-				return build(thisData.m, data);
-			}
-			//////////////////////////
-			// Start building process
-			//////////////////////////
-			
-			thisData.a = arguments;
-			return build(thisData.m, thisData);
-		};
-		////////////////////////////////////////////////////////////////////////
-		var that = this || {};
-		var thisData = {
-			a : [], // args
-			m : [], // modules
-			i : null, // instance
-			d : that.hash === hash ? that.d : false // decorated
-		};
-		var type;
-		var args = arguments.length > 0 ? arguments : that.arguments;
-		var instant = this instanceof factory.extend || that.i;
-
-		//setup modules
-		var i=-1;
-		while(++i < args.length) {
-			type = typeof args[i];
-			if(!checkType(args[i])) {
-				if(type !== strObject) {
-					throw("objct: Unexpected '"+type+"'! Only 'functions' and 'objects' can be used with objct.");
-				}
-				else {
-					Array.prototype.splice.apply(args, [i,1].concat(args[i]));
-					i--;
-					continue;
-				}
-			}
-
-			thisData.m.push({ 
-				obj : args[i],
-				isFactory : type === strFunction && testExecutable.test(args[i])
-			});
-
-			// if module is a function and not a decorator, copy static properties to Executable
-			if(!instant && type === strFunction && args[i].hash !== hash)
-				mixinObject(Executable, args[i], thisData);
-		}	
-		return instant ? new Executable() : Executable;
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	factory.e.decorator = function(fn){
-		var type = typeof fn;
-		if(type !== strFunction) 
-			throw("objct.decorator: Unexpected '"+type+"'! Objct.decorator only takes one function as argument.");
-		return function(){
-			var args = Array.prototype.slice.call(arguments);
-			var f = function(decoratorData){
-				return fn.apply(this, [decoratorData].concat(args));
-			};
-			f.hash=hash;
-			return f;
-		};
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	factory.isObjct = function(obj){
-	  return testExecutable.test(obj);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	// isArray fallback for ie<9
-	factory.isArray = Array.isArray || function (obj) {
-		return (typeof obj == strObject 
-			&& Object.prototype.toString.call(obj) === "[object Array]")
-			|| ("constructor" in obj && String(obj.constructor) === strArray);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-
-	// Connect to Environment 
-	commonJSmodule.exports = factory;
-
-	////////////////////////////////////////////////////////////////////////////////
-	})( false? {} : module);
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)(module)))
-
-/***/ },
-/* 69 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var objct = __webpack_require__(68);
-	var bp = __webpack_require__(67);
+	var objct = __webpack_require__(185);
+	var bp = __webpack_require__(232);
 
 	///////////////////////////////////////////////////////////////////////////////
 
@@ -7669,9 +6794,9 @@
 
 	  function apply(element) {
 	    var modules = [
-	      __webpack_require__(70),
+	      __webpack_require__(234),
 	      definition, 
-	      __webpack_require__(71)
+	      __webpack_require__(235)
 	    ];
 
 	    // Create bonaparte namespace
@@ -7720,10 +6845,10 @@
 
 
 /***/ },
-/* 70 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(66);
+	var bp = __webpack_require__(231);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
@@ -7751,10 +6876,10 @@
 	}
 
 /***/ },
-/* 71 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var objct = __webpack_require__(68);
+	var objct = __webpack_require__(185);
 
 	var registeredMixins = {};
 
@@ -7793,7 +6918,7 @@
 	}
 
 /***/ },
-/* 72 */
+/* 236 */
 /***/ function(module, exports) {
 
 	var MutationObserver = window.MutationObserver
@@ -8384,14 +7509,14 @@
 
 
 /***/ },
-/* 73 */
+/* 237 */
 /***/ function(module, exports) {
 
 	/*! (C) WebReflection Mit Style License */
 	(function(e,t,n,r){"use strict";function rt(e,t){for(var n=0,r=e.length;n<r;n++)dt(e[n],t)}function it(e){for(var t=0,n=e.length,r;t<n;t++)r=e[t],nt(r,b[ot(r)])}function st(e){return function(t){j(t)&&(dt(t,e),rt(t.querySelectorAll(w),e))}}function ot(e){var t=e.getAttribute("is"),n=e.nodeName.toUpperCase(),r=S.call(y,t?v+t.toUpperCase():d+n);return t&&-1<r&&!ut(n,t)?-1:r}function ut(e,t){return-1<w.indexOf(e+'[is="'+t+'"]')}function at(e){var t=e.currentTarget,n=e.attrChange,r=e.prevValue,i=e.newValue;Q&&t.attributeChangedCallback&&e.attrName!=="style"&&t.attributeChangedCallback(e.attrName,n===e[a]?null:r,n===e[l]?null:i)}function ft(e){var t=st(e);return function(e){X.push(t,e.target)}}function lt(e){K&&(K=!1,e.currentTarget.removeEventListener(h,lt)),rt((e.target||t).querySelectorAll(w),e.detail===o?o:s),B&&pt()}function ct(e,t){var n=this;q.call(n,e,t),G.call(n,{target:n})}function ht(e,t){D(e,t),et?et.observe(e,z):(J&&(e.setAttribute=ct,e[i]=Z(e),e.addEventListener(p,G)),e.addEventListener(c,at)),e.createdCallback&&Q&&(e.created=!0,e.createdCallback(),e.created=!1)}function pt(){for(var e,t=0,n=F.length;t<n;t++)e=F[t],E.contains(e)||(F.splice(t,1),dt(e,o))}function dt(e,t){var n,r=ot(e);-1<r&&(tt(e,b[r]),r=0,t===s&&!e[s]?(e[o]=!1,e[s]=!0,r=1,B&&S.call(F,e)<0&&F.push(e)):t===o&&!e[o]&&(e[s]=!1,e[o]=!0,r=1),r&&(n=e[t+"Callback"])&&n.call(e))}if(r in t)return;var i="__"+r+(Math.random()*1e5>>0),s="attached",o="detached",u="extends",a="ADDITION",f="MODIFICATION",l="REMOVAL",c="DOMAttrModified",h="DOMContentLoaded",p="DOMSubtreeModified",d="<",v="=",m=/^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$/,g=["ANNOTATION-XML","COLOR-PROFILE","FONT-FACE","FONT-FACE-SRC","FONT-FACE-URI","FONT-FACE-FORMAT","FONT-FACE-NAME","MISSING-GLYPH"],y=[],b=[],w="",E=t.documentElement,S=y.indexOf||function(e){for(var t=this.length;t--&&this[t]!==e;);return t},x=n.prototype,T=x.hasOwnProperty,N=x.isPrototypeOf,C=n.defineProperty,k=n.getOwnPropertyDescriptor,L=n.getOwnPropertyNames,A=n.getPrototypeOf,O=n.setPrototypeOf,M=!!n.__proto__,_=n.create||function vt(e){return e?(vt.prototype=e,new vt):this},D=O||(M?function(e,t){return e.__proto__=t,e}:L&&k?function(){function e(e,t){for(var n,r=L(t),i=0,s=r.length;i<s;i++)n=r[i],T.call(e,n)||C(e,n,k(t,n))}return function(t,n){do e(t,n);while((n=A(n))&&!N.call(n,t));return t}}():function(e,t){for(var n in t)e[n]=t[n];return e}),P=e.MutationObserver||e.WebKitMutationObserver,H=(e.HTMLElement||e.Element||e.Node).prototype,B=!N.call(H,E),j=B?function(e){return e.nodeType===1}:function(e){return N.call(H,e)},F=B&&[],I=H.cloneNode,q=H.setAttribute,R=H.removeAttribute,U=t.createElement,z=P&&{attributes:!0,characterData:!0,attributeOldValue:!0},W=P||function(e){J=!1,E.removeEventListener(c,W)},X,V=e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,10)},$=!1,J=!0,K=!0,Q=!0,G,Y,Z,et,tt,nt;O||M?(tt=function(e,t){N.call(t,e)||ht(e,t)},nt=ht):(tt=function(e,t){e[i]||(e[i]=n(!0),ht(e,t))},nt=tt),B?(J=!1,function(){var e=k(H,"addEventListener"),t=e.value,n=function(e){var t=new CustomEvent(c,{bubbles:!0});t.attrName=e,t.prevValue=this.getAttribute(e),t.newValue=null,t[l]=t.attrChange=2,R.call(this,e),this.dispatchEvent(t)},r=function(e,t){var n=this.hasAttribute(e),r=n&&this.getAttribute(e),i=new CustomEvent(c,{bubbles:!0});q.call(this,e,t),i.attrName=e,i.prevValue=n?r:null,i.newValue=t,n?i[f]=i.attrChange=1:i[a]=i.attrChange=0,this.dispatchEvent(i)},s=function(e){var t=e.currentTarget,n=t[i],r=e.propertyName,s;n.hasOwnProperty(r)&&(n=n[r],s=new CustomEvent(c,{bubbles:!0}),s.attrName=n.name,s.prevValue=n.value||null,s.newValue=n.value=t[r]||null,s.prevValue==null?s[a]=s.attrChange=0:s[f]=s.attrChange=1,t.dispatchEvent(s))};e.value=function(e,o,u){e===c&&this.attributeChangedCallback&&this.setAttribute!==r&&(this[i]={className:{name:"class",value:this.className}},this.setAttribute=r,this.removeAttribute=n,t.call(this,"propertychange",s)),t.call(this,e,o,u)},C(H,"addEventListener",e)}()):P||(E.addEventListener(c,W),E.setAttribute(i,1),E.removeAttribute(i),J&&(G=function(e){var t=this,n,r,s;if(t===e.target){n=t[i],t[i]=r=Z(t);for(s in r){if(!(s in n))return Y(0,t,s,n[s],r[s],a);if(r[s]!==n[s])return Y(1,t,s,n[s],r[s],f)}for(s in n)if(!(s in r))return Y(2,t,s,n[s],r[s],l)}},Y=function(e,t,n,r,i,s){var o={attrChange:e,currentTarget:t,attrName:n,prevValue:r,newValue:i};o[s]=e,at(o)},Z=function(e){for(var t,n,r={},i=e.attributes,s=0,o=i.length;s<o;s++)t=i[s],n=t.name,n!=="setAttribute"&&(r[n]=t.value);return r})),t[r]=function(n,r){p=n.toUpperCase(),$||($=!0,P?(et=function(e,t){function n(e,t){for(var n=0,r=e.length;n<r;t(e[n++]));}return new P(function(r){for(var i,s,o=0,u=r.length;o<u;o++)i=r[o],i.type==="childList"?(n(i.addedNodes,e),n(i.removedNodes,t)):(s=i.target,Q&&s.attributeChangedCallback&&i.attributeName!=="style"&&s.attributeChangedCallback(i.attributeName,i.oldValue,s.getAttribute(i.attributeName)))})}(st(s),st(o)),et.observe(t,{childList:!0,subtree:!0})):(X=[],V(function E(){while(X.length)X.shift().call(null,X.shift());V(E)}),t.addEventListener("DOMNodeInserted",ft(s)),t.addEventListener("DOMNodeRemoved",ft(o))),t.addEventListener(h,lt),t.addEventListener("readystatechange",lt),t.createElement=function(e,n){var r=U.apply(t,arguments),i=""+e,s=S.call(y,(n?v:d)+(n||i).toUpperCase()),o=-1<s;return n&&(r.setAttribute("is",n=n.toLowerCase()),o&&(o=ut(i.toUpperCase(),n))),Q=!t.createElement.innerHTMLHelper,o&&nt(r,b[s]),r},H.cloneNode=function(e){var t=I.call(this,!!e),n=ot(t);return-1<n&&nt(t,b[n]),e&&it(t.querySelectorAll(w)),t});if(-2<S.call(y,v+p)+S.call(y,d+p))throw new Error("A "+n+" type is already registered");if(!m.test(p)||-1<S.call(g,p))throw new Error("The type "+n+" is invalid");var i=function(){return f?t.createElement(l,p):t.createElement(l)},a=r||x,f=T.call(a,u),l=f?r[u].toUpperCase():p,c=y.push((f?v:d)+p)-1,p;return w=w.concat(w.length?",":"",f?l+'[is="'+n.toLowerCase()+'"]':l),i.prototype=b[c]=T.call(a,"prototype")?a.prototype:_(H),rt(t.querySelectorAll(w),s),i}})(window,document,Object,"registerElement");
 
 /***/ },
-/* 74 */
+/* 238 */
 /***/ function(module, exports) {
 
 	// Polyfill for creating CustomEvents on IE9/10/11
@@ -8421,19 +7546,19 @@
 	}
 
 /***/ },
-/* 75 */
+/* 239 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 76 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(77).register();
+	__webpack_require__(241).register();
 
 /***/ },
-/* 77 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -8443,13 +7568,13 @@
 	 * require("bonaparte").mixin.create()
 	 */
 
-	module.exports = __webpack_require__(78);
+	module.exports = __webpack_require__(242);
 
 /***/ },
-/* 78 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(79);
+	var bp = __webpack_require__(243);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
@@ -8651,13 +7776,13 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 79 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public 
 
-	module.exports = __webpack_require__(80);
+	module.exports = __webpack_require__(244);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Polyfills
@@ -8665,10 +7790,10 @@
 	if(typeof document.addEventListener === "function") { // no polyfills for IE8 -> silently fail.
 	  
 	  if(!("MutationObserver" in document)) {
-	    MutationObserver = __webpack_require__(85);
+	    MutationObserver = __webpack_require__(248);
 	  };
-	  __webpack_require__(86);
-	  __webpack_require__(87);
+	  __webpack_require__(249);
+	  __webpack_require__(250);
 
 
 	  if (Element && !Element.prototype.matches) {
@@ -8681,10 +7806,10 @@
 
 
 /***/ },
-/* 80 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var objct = __webpack_require__(81);
+	var objct = __webpack_require__(185);
 	// var easing = require("./easing");
 
 	///////////////////////////////////////////////////////////////////////////////
@@ -8692,7 +7817,7 @@
 
 	module.exports = {
 	  tag : {
-	    create : __webpack_require__(82),
+	    create : __webpack_require__(245),
 	    contains : nodeContains,
 	    observe : observe,
 	    triggerEvent : triggerEvent,
@@ -8853,275 +7978,11 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 81 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {/*! 
-	 * objct - v0.x (https://github.com/greenish/js-objct)
-	 * 
-	 * Copyright (c) 2015 Philipp Adrian (www.philippadrian.com)
-	 *
-	 * The MIT Licence (http://opensource.org/licenses/MIT)
-	 */
-	////////////////////////////////////////////////////////////////////////////////
-	(function(commonJSmodule, undefined){
-	"use strict";
-
-	////////////////////////////////////////////////////////////////////////////////
-	var Objct = function(){};
-	var NewObj = function(){return {};};
-	var hash = "jmuMMRs6AUUG293HXcs8Z0ofQlkG0hqiNAJlZq2hHYakBQmyfnRuCsh2yf-d7n";
-	var testExecutable = new RegExp("\\b"+hash+"\\b");
-	var strFunction = "function";
-	var strObject = "object";
-	var strArray = Array.toString();
-	var objectKeys = Object.keys || Objct;
-	////////////////////////////////////////////////////////////////////////////////
-	var checkType = function(value){
-		var	type = typeof value;
-		return type === strFunction || (type === strObject && !factory.isArray(value));
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var instantiateFunction = function(fn, args){
-		Objct.prototype = fn.prototype;
-		var f = new Objct();
-		Objct.prototype = null;
-		var r = fn.apply(f, args);
-		if(checkType(r)) return r;
-		return f;		
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var decoratedProperty = function(target, source, k, data) {
-		target[k] = typeof source[k] === strFunction && source[k].hash === hash?
-			source[k].call(data.i, {
-				args:data.a, 
-				modules:data.m, 
-				target:target,
-				key:k
-			}):
-			source[k];
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var decoratedModule = function(module, data, instance) {
-		return typeof module === strFunction && module.hash === hash ?
-			module.call(instance, {
-				args:data.a, 
-				modules:data.m
-			}):
-			module;
-	}
-	////////////////////////////////////////////////////////////////////////////////
-	var mixinObject = function(target, source, data, keys) {
-		var k = -1, length;
-		keys = keys || objectKeys(source);
-		if(typeof keys === strObject) {
-			length = keys.length;	
-			if(data.d) 
-				while(++k < length) 
-					decoratedProperty(target, source, keys[k], data);
-			else 
-				while(++k < length) 
-					target[keys[k]]=source[keys[k]];
-		}
-		else {
-			if(data.d) 
-				for(k in source) 
-					decoratedProperty(target, source, k, data);
-			else 
-				for(k in source) 
-					target[k]=source[k];
-		}
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var mixinFunction = function(target, fn, data){
-		var proto = fn.prototype;
-		var instance, keys;
-
-		mixinObject(target, proto, data);
-
-		if(!data.d) {
-			fn.apply(target, data.a);
-			return;
-		}
-
-		fn.prototype = target;
-		instance = instantiateFunction(fn, data.a);
-		fn.prototype = proto;
-
-		keys = typeof Object.getOwnPropertyNames === strFunction ?
-			Object.getOwnPropertyNames(instance):
-			undefined;
-		
-		mixinObject(target, instance, data, keys);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	var build = function(modules, data){
-		var isFunction, i=-1;
-		var instance, obj, length = modules.length;
-
-		while(++i<length) {
-			obj = data.d ?
-				decoratedModule(modules[i].obj, data, data.i):
-				modules[i].obj;
-
-			// first Module
-			if(i === 0) {
-				// very first module
-				if(data.i === null) {
-					data.i = obj === NewObj ? 
-						NewObj():
-						typeof obj === strFunction ?
-							instantiateFunction(obj, data.a):
-							obj;
-					// call first modules decorators
-					data.d && mixinObject(data.i, data.i, data);
-					continue;
-				}
-				else if(obj === NewObj) continue;
-			} 
-
-			//module is factory? -> call it
-			modules[i].isFactory ?
-				obj.call({hash:hash}, modules[i], data):
-				// module is function?
-				typeof obj === strFunction ?
-					mixinFunction(data.i, obj, data):
-					// module is object
-					mixinObject(data.i, obj, data);
-		}
-
-		return data.i;
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	//////////////////////////////////////////////////////////////////////////////
-	var factory = function(){
-		Array.prototype.unshift.call(arguments, NewObj);
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory,
-			d : false,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.e = function(){
-		Array.prototype.unshift.call(arguments, NewObj);
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory.e,
-			d : true,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.e.extend = function(){
-		return factory.extend.call({
-			hash:hash,
-			i : this instanceof factory.e.extend,
-			d : true,
-			arguments : arguments
-		});
-	};
-	//////////////////////////////////////////////////////////////////////////////
-	factory.extend = function(){
-		////////////////////////////////////////////////////////////////////////
-		var Executable = function Executable(module, data){
-			"jmuMMRs6AUUG293HXcs8Z0ofQlkG0hqiNAJlZq2hHYakBQmyfnRuCsh2yf-d7n";
-			var that = this || {};
-
-			//////////////////////////
-			// Continue building process
-			//////////////////////////
-			if(that && typeof that.hash === "string" && that.hash === hash) {
-				// pass up modules
-				module.m = thisData.m;
-				return build(thisData.m, data);
-			}
-			//////////////////////////
-			// Start building process
-			//////////////////////////
-			
-			thisData.a = arguments;
-			return build(thisData.m, thisData);
-		};
-		////////////////////////////////////////////////////////////////////////
-		var that = this || {};
-		var thisData = {
-			a : [], // args
-			m : [], // modules
-			i : null, // instance
-			d : that.hash === hash ? that.d : false // decorated
-		};
-		var type;
-		var args = arguments.length > 0 ? arguments : that.arguments;
-		var instant = this instanceof factory.extend || that.i;
-
-		//setup modules
-		var i=-1;
-		while(++i < args.length) {
-			type = typeof args[i];
-			if(!checkType(args[i])) {
-				if(type !== strObject) {
-					throw("objct: Unexpected '"+type+"'! Only 'functions' and 'objects' can be used with objct.");
-				}
-				else {
-					Array.prototype.splice.apply(args, [i,1].concat(args[i]));
-					i--;
-					continue;
-				}
-			}
-
-			thisData.m.push({ 
-				obj : args[i],
-				isFactory : type === strFunction && testExecutable.test(args[i])
-			});
-
-			// if module is a function and not a decorator, copy static properties to Executable
-			if(!instant && type === strFunction && args[i].hash !== hash)
-				mixinObject(Executable, args[i], thisData);
-		}	
-		return instant ? new Executable() : Executable;
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	factory.e.decorator = function(fn){
-		var type = typeof fn;
-		if(type !== strFunction) 
-			throw("objct.decorator: Unexpected '"+type+"'! Objct.decorator only takes one function as argument.");
-		return function(){
-			var args = Array.prototype.slice.call(arguments);
-			var f = function(decoratorData){
-				return fn.apply(this, [decoratorData].concat(args));
-			};
-			f.hash=hash;
-			return f;
-		};
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	factory.isObjct = function(obj){
-	  return testExecutable.test(obj);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-	// isArray fallback for ie<9
-	factory.isArray = Array.isArray || function (obj) {
-		return (typeof obj == strObject 
-			&& Object.prototype.toString.call(obj) === "[object Array]")
-			|| ("constructor" in obj && String(obj.constructor) === strArray);
-	};
-	////////////////////////////////////////////////////////////////////////////////
-
-	// Connect to Environment 
-	commonJSmodule.exports = factory;
-
-	////////////////////////////////////////////////////////////////////////////////
-	})( false? {} : module);
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)(module)))
-
-/***/ },
-/* 82 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var objct = __webpack_require__(81);
-	var bp = __webpack_require__(80);
+	var objct = __webpack_require__(185);
+	var bp = __webpack_require__(244);
 
 	///////////////////////////////////////////////////////////////////////////////
 
@@ -9211,9 +8072,9 @@
 
 	  function apply(element) {
 	    var modules = [
-	      __webpack_require__(83),
+	      __webpack_require__(246),
 	      definition, 
-	      __webpack_require__(84)
+	      __webpack_require__(247)
 	    ];
 
 	    // Create bonaparte namespace
@@ -9262,10 +8123,10 @@
 
 
 /***/ },
-/* 83 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(79);
+	var bp = __webpack_require__(243);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
@@ -9293,10 +8154,10 @@
 	}
 
 /***/ },
-/* 84 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var objct = __webpack_require__(81);
+	var objct = __webpack_require__(185);
 
 	var registeredMixins = {};
 
@@ -9335,7 +8196,7 @@
 	}
 
 /***/ },
-/* 85 */
+/* 248 */
 /***/ function(module, exports) {
 
 	var MutationObserver = window.MutationObserver
@@ -9926,14 +8787,14 @@
 
 
 /***/ },
-/* 86 */
+/* 249 */
 /***/ function(module, exports) {
 
 	/*! (C) WebReflection Mit Style License */
 	(function(e,t,n,r){"use strict";function rt(e,t){for(var n=0,r=e.length;n<r;n++)dt(e[n],t)}function it(e){for(var t=0,n=e.length,r;t<n;t++)r=e[t],nt(r,b[ot(r)])}function st(e){return function(t){j(t)&&(dt(t,e),rt(t.querySelectorAll(w),e))}}function ot(e){var t=e.getAttribute("is"),n=e.nodeName.toUpperCase(),r=S.call(y,t?v+t.toUpperCase():d+n);return t&&-1<r&&!ut(n,t)?-1:r}function ut(e,t){return-1<w.indexOf(e+'[is="'+t+'"]')}function at(e){var t=e.currentTarget,n=e.attrChange,r=e.prevValue,i=e.newValue;Q&&t.attributeChangedCallback&&e.attrName!=="style"&&t.attributeChangedCallback(e.attrName,n===e[a]?null:r,n===e[l]?null:i)}function ft(e){var t=st(e);return function(e){X.push(t,e.target)}}function lt(e){K&&(K=!1,e.currentTarget.removeEventListener(h,lt)),rt((e.target||t).querySelectorAll(w),e.detail===o?o:s),B&&pt()}function ct(e,t){var n=this;q.call(n,e,t),G.call(n,{target:n})}function ht(e,t){D(e,t),et?et.observe(e,z):(J&&(e.setAttribute=ct,e[i]=Z(e),e.addEventListener(p,G)),e.addEventListener(c,at)),e.createdCallback&&Q&&(e.created=!0,e.createdCallback(),e.created=!1)}function pt(){for(var e,t=0,n=F.length;t<n;t++)e=F[t],E.contains(e)||(F.splice(t,1),dt(e,o))}function dt(e,t){var n,r=ot(e);-1<r&&(tt(e,b[r]),r=0,t===s&&!e[s]?(e[o]=!1,e[s]=!0,r=1,B&&S.call(F,e)<0&&F.push(e)):t===o&&!e[o]&&(e[s]=!1,e[o]=!0,r=1),r&&(n=e[t+"Callback"])&&n.call(e))}if(r in t)return;var i="__"+r+(Math.random()*1e5>>0),s="attached",o="detached",u="extends",a="ADDITION",f="MODIFICATION",l="REMOVAL",c="DOMAttrModified",h="DOMContentLoaded",p="DOMSubtreeModified",d="<",v="=",m=/^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$/,g=["ANNOTATION-XML","COLOR-PROFILE","FONT-FACE","FONT-FACE-SRC","FONT-FACE-URI","FONT-FACE-FORMAT","FONT-FACE-NAME","MISSING-GLYPH"],y=[],b=[],w="",E=t.documentElement,S=y.indexOf||function(e){for(var t=this.length;t--&&this[t]!==e;);return t},x=n.prototype,T=x.hasOwnProperty,N=x.isPrototypeOf,C=n.defineProperty,k=n.getOwnPropertyDescriptor,L=n.getOwnPropertyNames,A=n.getPrototypeOf,O=n.setPrototypeOf,M=!!n.__proto__,_=n.create||function vt(e){return e?(vt.prototype=e,new vt):this},D=O||(M?function(e,t){return e.__proto__=t,e}:L&&k?function(){function e(e,t){for(var n,r=L(t),i=0,s=r.length;i<s;i++)n=r[i],T.call(e,n)||C(e,n,k(t,n))}return function(t,n){do e(t,n);while((n=A(n))&&!N.call(n,t));return t}}():function(e,t){for(var n in t)e[n]=t[n];return e}),P=e.MutationObserver||e.WebKitMutationObserver,H=(e.HTMLElement||e.Element||e.Node).prototype,B=!N.call(H,E),j=B?function(e){return e.nodeType===1}:function(e){return N.call(H,e)},F=B&&[],I=H.cloneNode,q=H.setAttribute,R=H.removeAttribute,U=t.createElement,z=P&&{attributes:!0,characterData:!0,attributeOldValue:!0},W=P||function(e){J=!1,E.removeEventListener(c,W)},X,V=e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,10)},$=!1,J=!0,K=!0,Q=!0,G,Y,Z,et,tt,nt;O||M?(tt=function(e,t){N.call(t,e)||ht(e,t)},nt=ht):(tt=function(e,t){e[i]||(e[i]=n(!0),ht(e,t))},nt=tt),B?(J=!1,function(){var e=k(H,"addEventListener"),t=e.value,n=function(e){var t=new CustomEvent(c,{bubbles:!0});t.attrName=e,t.prevValue=this.getAttribute(e),t.newValue=null,t[l]=t.attrChange=2,R.call(this,e),this.dispatchEvent(t)},r=function(e,t){var n=this.hasAttribute(e),r=n&&this.getAttribute(e),i=new CustomEvent(c,{bubbles:!0});q.call(this,e,t),i.attrName=e,i.prevValue=n?r:null,i.newValue=t,n?i[f]=i.attrChange=1:i[a]=i.attrChange=0,this.dispatchEvent(i)},s=function(e){var t=e.currentTarget,n=t[i],r=e.propertyName,s;n.hasOwnProperty(r)&&(n=n[r],s=new CustomEvent(c,{bubbles:!0}),s.attrName=n.name,s.prevValue=n.value||null,s.newValue=n.value=t[r]||null,s.prevValue==null?s[a]=s.attrChange=0:s[f]=s.attrChange=1,t.dispatchEvent(s))};e.value=function(e,o,u){e===c&&this.attributeChangedCallback&&this.setAttribute!==r&&(this[i]={className:{name:"class",value:this.className}},this.setAttribute=r,this.removeAttribute=n,t.call(this,"propertychange",s)),t.call(this,e,o,u)},C(H,"addEventListener",e)}()):P||(E.addEventListener(c,W),E.setAttribute(i,1),E.removeAttribute(i),J&&(G=function(e){var t=this,n,r,s;if(t===e.target){n=t[i],t[i]=r=Z(t);for(s in r){if(!(s in n))return Y(0,t,s,n[s],r[s],a);if(r[s]!==n[s])return Y(1,t,s,n[s],r[s],f)}for(s in n)if(!(s in r))return Y(2,t,s,n[s],r[s],l)}},Y=function(e,t,n,r,i,s){var o={attrChange:e,currentTarget:t,attrName:n,prevValue:r,newValue:i};o[s]=e,at(o)},Z=function(e){for(var t,n,r={},i=e.attributes,s=0,o=i.length;s<o;s++)t=i[s],n=t.name,n!=="setAttribute"&&(r[n]=t.value);return r})),t[r]=function(n,r){p=n.toUpperCase(),$||($=!0,P?(et=function(e,t){function n(e,t){for(var n=0,r=e.length;n<r;t(e[n++]));}return new P(function(r){for(var i,s,o=0,u=r.length;o<u;o++)i=r[o],i.type==="childList"?(n(i.addedNodes,e),n(i.removedNodes,t)):(s=i.target,Q&&s.attributeChangedCallback&&i.attributeName!=="style"&&s.attributeChangedCallback(i.attributeName,i.oldValue,s.getAttribute(i.attributeName)))})}(st(s),st(o)),et.observe(t,{childList:!0,subtree:!0})):(X=[],V(function E(){while(X.length)X.shift().call(null,X.shift());V(E)}),t.addEventListener("DOMNodeInserted",ft(s)),t.addEventListener("DOMNodeRemoved",ft(o))),t.addEventListener(h,lt),t.addEventListener("readystatechange",lt),t.createElement=function(e,n){var r=U.apply(t,arguments),i=""+e,s=S.call(y,(n?v:d)+(n||i).toUpperCase()),o=-1<s;return n&&(r.setAttribute("is",n=n.toLowerCase()),o&&(o=ut(i.toUpperCase(),n))),Q=!t.createElement.innerHTMLHelper,o&&nt(r,b[s]),r},H.cloneNode=function(e){var t=I.call(this,!!e),n=ot(t);return-1<n&&nt(t,b[n]),e&&it(t.querySelectorAll(w)),t});if(-2<S.call(y,v+p)+S.call(y,d+p))throw new Error("A "+n+" type is already registered");if(!m.test(p)||-1<S.call(g,p))throw new Error("The type "+n+" is invalid");var i=function(){return f?t.createElement(l,p):t.createElement(l)},a=r||x,f=T.call(a,u),l=f?r[u].toUpperCase():p,c=y.push((f?v:d)+p)-1,p;return w=w.concat(w.length?",":"",f?l+'[is="'+n.toLowerCase()+'"]':l),i.prototype=b[c]=T.call(a,"prototype")?a.prototype:_(H),rt(t.querySelectorAll(w),s),i}})(window,document,Object,"registerElement");
 
 /***/ },
-/* 87 */
+/* 250 */
 /***/ function(module, exports) {
 
 	// Polyfill for creating CustomEvents on IE9/10/11
@@ -9963,7 +8824,7 @@
 	}
 
 /***/ },
-/* 88 */
+/* 251 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
