@@ -2103,7 +2103,6 @@ body {
 body,
 body > toolbar-bonaparte {
   height: 100%;
-  background-color: blue;
 }
 /*Import Fonts*/
 /*@import url("@{assetsPath}/site/fonts/wsj-fonts.css"); */
