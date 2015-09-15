@@ -10,23 +10,6 @@
 
 Bonaparte-ND is a [Bonaparte](https://github.dowjones.net/bonaparte/bonaparte) build with a custom [Semantic UI](http://semantic-ui.com) theme developed for editorial tools at Dow Jones.
 
-## Basic Use
-
-- Download / Clone Repository.
-- Include files: 
-
-  ```
-  ./dist/bonaparte-nd.css
-  ./dist/bonaparte-nd.js
-  ```
-  
-  And if necessary:
-  ```
-  ./dist/SUI-js/semantic.min.js
-  ```
-  
-This makes bonaparte and the bonaparte Semantic UI theme available in your project.
-
 ## To Look At
 
 __Examples:__
@@ -45,6 +28,25 @@ __Designs:__
 [Narrator (Toolbars)](http://dowjones.github.io/bonaparte/designs/Narrator%20UI%20v0.1%20-%20toolbars.pdf)
 <br>
 [Xavier](http://dowjones.github.io/bonaparte/designs/Xavier%20UI%20v0.2.pdf)
+
+
+## Basic Use
+
+- Download / Clone Repository.
+- Include files: 
+
+  ```
+  ./dist/bonaparte-nd.css
+  ./dist/bonaparte-nd.js
+  ```
+  
+  And if necessary:
+  ```
+  ./dist/SUI-js/semantic.min.js
+  ```
+  
+This makes bonaparte and the bonaparte Semantic UI theme available in your project.
+
 
 ## Included Bonaparte Components
 
