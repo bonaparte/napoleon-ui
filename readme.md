@@ -69,5 +69,4 @@ npm run build
 and
 ```
 npm run watch
-
 ```
