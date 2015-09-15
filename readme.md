@@ -18,8 +18,10 @@ Bonaparte-ND is a [Bonaparte](https://github.dowjones.net/bonaparte/bonaparte) b
   ```
   ./dist/bonaparte-nd.css
   ./dist/bonaparte-nd.js
-
-  // + if necessary:
+  ```
+  
+  And if necessary:
+  ```
   ./dist/SUI-js/semantic.min.js
   ```
   
@@ -61,12 +63,13 @@ __Designs:__
 
 ## Development
 
-For development use the standard Bonaparte build process
+For development use the standard Bonaparte build process:
 
 ```
 npm run build
 ```
-and
+or
 ```
 npm run watch
 ```
+To rebuild/watch `bonaparte.build.js`
