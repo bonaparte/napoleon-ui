@@ -62085,7 +62085,6 @@ i.icon {
 sidebar-bonaparte {
   /*DEFINITION*/
   position: relative;
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -62183,7 +62182,6 @@ sidebar-bonaparte {
   /*////////////////////////////////*/
   /*DEFINITION*/
   position: relative;
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -62358,7 +62356,6 @@ i.icon {
 sidebar-bonaparte {
   /*DEFINITION*/
   position: relative;
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -62455,7 +62452,6 @@ sidebar-bonaparte[sidebar="bottom"][open="false"] > :nth-child(1) {
 toolbar-bonaparte {
   /*DEFINITION*/
   position: relative;
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -62549,6 +62545,12 @@ toolbar-bonaparte[data-sidebar="bottom"][open="false"] > :nth-child(1),
 toolbar-bonaparte[sidebar="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
 }
+toolbar-bonaparte[data-sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte[sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte[data-sidebar="bottom"] > :nth-child(1) *,
+toolbar-bonaparte[sidebar="bottom"] > :nth-child(1) * {
+  white-space: nowrap;
+}
 toolbar-bonaparte > cornerstone-bonaparte {
   position: absolute !important;
   display: -webkit-box;
@@ -62631,7 +62633,6 @@ toolbar-bonaparte {
   /*////////////////////////////////*/
   /*DEFINITION*/
   position: relative;
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -62727,6 +62728,12 @@ toolbar-bonaparte[sidebar="top"][open="false"] > :nth-child(1),
 toolbar-bonaparte[data-sidebar="bottom"][open="false"] > :nth-child(1),
 toolbar-bonaparte[sidebar="bottom"][open="false"] > :nth-child(1) {
   min-height: 4rem;
+}
+toolbar-bonaparte[data-sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte[sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte[data-sidebar="bottom"] > :nth-child(1) *,
+toolbar-bonaparte[sidebar="bottom"] > :nth-child(1) * {
+  white-space: nowrap;
 }
 toolbar-bonaparte > cornerstone-bonaparte {
   position: absolute !important;
@@ -62896,7 +62903,6 @@ toolbar-bonaparte.tiny,
 toolbar-bonaparte.mini {
   /*DEFINITION*/
   position: relative;
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -63024,6 +63030,16 @@ toolbar-bonaparte.tiny[sidebar="bottom"][open="false"] > :nth-child(1),
 toolbar-bonaparte.mini[sidebar="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
 }
+toolbar-bonaparte.tiny[data-sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte.mini[data-sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte.tiny[sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte.mini[sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte.tiny[data-sidebar="bottom"] > :nth-child(1) *,
+toolbar-bonaparte.mini[data-sidebar="bottom"] > :nth-child(1) *,
+toolbar-bonaparte.tiny[sidebar="bottom"] > :nth-child(1) *,
+toolbar-bonaparte.mini[sidebar="bottom"] > :nth-child(1) * {
+  white-space: nowrap;
+}
 toolbar-bonaparte.tiny > cornerstone-bonaparte,
 toolbar-bonaparte.mini > cornerstone-bonaparte {
   position: absolute !important;
@@ -63137,7 +63153,6 @@ toolbar-bonaparte.mini[cornerstone~="outside"][cornerstone~="bottom"][cornerston
 toolbar-bonaparte.small {
   /*DEFINITION*/
   position: relative;
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -63231,6 +63246,12 @@ toolbar-bonaparte.small[data-sidebar="bottom"][open="false"] > :nth-child(1),
 toolbar-bonaparte.small[sidebar="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
 }
+toolbar-bonaparte.small[data-sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte.small[sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte.small[data-sidebar="bottom"] > :nth-child(1) *,
+toolbar-bonaparte.small[sidebar="bottom"] > :nth-child(1) * {
+  white-space: nowrap;
+}
 toolbar-bonaparte.small > cornerstone-bonaparte {
   position: absolute !important;
   display: -webkit-box;
@@ -63312,7 +63333,6 @@ toolbar-bonaparte.large,
 toolbar-bonaparte.big {
   /*DEFINITION*/
   position: relative;
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -63440,6 +63460,16 @@ toolbar-bonaparte.large[sidebar="bottom"][open="false"] > :nth-child(1),
 toolbar-bonaparte.big[sidebar="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
 }
+toolbar-bonaparte.large[data-sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte.big[data-sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte.large[sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte.big[sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte.large[data-sidebar="bottom"] > :nth-child(1) *,
+toolbar-bonaparte.big[data-sidebar="bottom"] > :nth-child(1) *,
+toolbar-bonaparte.large[sidebar="bottom"] > :nth-child(1) *,
+toolbar-bonaparte.big[sidebar="bottom"] > :nth-child(1) * {
+  white-space: nowrap;
+}
 toolbar-bonaparte.large > cornerstone-bonaparte,
 toolbar-bonaparte.big > cornerstone-bonaparte {
   position: absolute !important;
@@ -63554,7 +63584,6 @@ toolbar-bonaparte.huge,
 toolbar-bonaparte.massive {
   /*DEFINITION*/
   position: relative;
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -63681,6 +63710,16 @@ toolbar-bonaparte.massive[data-sidebar="bottom"][open="false"] > :nth-child(1),
 toolbar-bonaparte.huge[sidebar="bottom"][open="false"] > :nth-child(1),
 toolbar-bonaparte.massive[sidebar="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
+}
+toolbar-bonaparte.huge[data-sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte.massive[data-sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte.huge[sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte.massive[sidebar="top"] > :nth-child(1) *,
+toolbar-bonaparte.huge[data-sidebar="bottom"] > :nth-child(1) *,
+toolbar-bonaparte.massive[data-sidebar="bottom"] > :nth-child(1) *,
+toolbar-bonaparte.huge[sidebar="bottom"] > :nth-child(1) *,
+toolbar-bonaparte.massive[sidebar="bottom"] > :nth-child(1) * {
+  white-space: nowrap;
 }
 toolbar-bonaparte.huge > cornerstone-bonaparte,
 toolbar-bonaparte.massive > cornerstone-bonaparte {

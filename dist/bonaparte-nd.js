@@ -47,11 +47,13 @@
 	__webpack_require__(170);
 	__webpack_require__(171);
 
+
 	__webpack_require__(183).register();
 	__webpack_require__(197);
 
 	__webpack_require__(198).register();
-	__webpack_require__(208);
+	__webpack_require__(198).register();
+	 __webpack_require__(208);
 
 	__webpack_require__(209).register();
 	__webpack_require__(219);
@@ -62,49 +64,9 @@
 	__webpack_require__(231).register();
 	__webpack_require__(261);
 
-
-
 	__webpack_require__(262);
 
 	__webpack_require__(273);
-
-
-	// JS
-
-	// var panel = require("./src/js/tags/panel-bonaparte");
-	// var scroll = require("./src/js/tags/scroll-bonaparte");
-	// var sidebar = require("./src/js/tags/sidebar-bonaparte");
-	// var toolbar = require("./src/js/tags/toolbar-bonaparte");
-	// var cornerstone = require("./src/js/tags/cornerstone-bonaparte");
-	// var button = require("./src/js/tags/button-bonaparte");
-	// var draggable = require("./src/js/tags/draggable-bonaparte");
-
-	// toolbar.mixin({
-	//   test:function(){
-	//     alert("test")
-	//   }
-	// });
-
-	// panel.register();
-	// scroll.register();
-	// sidebar.register();
-	// cornerstone.register();
-	// toolbar.register();
-	// button.register();
-	// draggable.register();
-
-	// document.registerElement('content-bonaparte');
-
-
-	// CSS
-
-	// require("./src/less/DJ-design/sidebar-bonaparte.less");
-	// require("./src/less/DJ-design/toolbar-bonaparte.less");
-	// require("./src/less/DJ-design/panel-bonaparte.less");
-	// require("./src/less/DJ-design/scroll-bonaparte.less");
-	// require("./src/less/DJ-design/content-bonaparte.less");
-	// require("./src/less/DJ-design/button-bonaparte.less");
-
 
 /***/ },
 /* 1 */,
@@ -908,8 +870,8 @@
 	  else if(modulesType !== "array")
 	    throw "Bonaparte - createTag: Unexpected "+modulesType+". Expected Function or Array."
 
-
 	  nativeBaseElement = nativeBaseElement || window.HTMLElement || window.Element;
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
 	  
@@ -929,7 +891,7 @@
 	  function register(){ 
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
 	      document.createElement(name+"-bonaparte");
-	      return;
+	      return definition;
 	    }
 	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
 	      registeredTags[name+"-bonaparte"]:
@@ -3157,8 +3119,8 @@
 	  else if(modulesType !== "array")
 	    throw "Bonaparte - createTag: Unexpected "+modulesType+". Expected Function or Array."
 
-
 	  nativeBaseElement = nativeBaseElement || window.HTMLElement || window.Element;
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
 	  
@@ -3178,7 +3140,7 @@
 	  function register(){ 
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
 	      document.createElement(name+"-bonaparte");
-	      return;
+	      return definition;
 	    }
 	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
 	      registeredTags[name+"-bonaparte"]:
@@ -4504,8 +4466,8 @@
 	  else if(modulesType !== "array")
 	    throw "Bonaparte - createTag: Unexpected "+modulesType+". Expected Function or Array."
 
-
 	  nativeBaseElement = nativeBaseElement || window.HTMLElement || window.Element;
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
 	  
@@ -4525,7 +4487,7 @@
 	  function register(){ 
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
 	      document.createElement(name+"-bonaparte");
-	      return;
+	      return definition;
 	    }
 	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
 	      registeredTags[name+"-bonaparte"]:
@@ -5615,8 +5577,8 @@
 	  else if(modulesType !== "array")
 	    throw "Bonaparte - createTag: Unexpected "+modulesType+". Expected Function or Array."
 
-
 	  nativeBaseElement = nativeBaseElement || window.HTMLElement || window.Element;
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
 	  
@@ -5636,7 +5598,7 @@
 	  function register(){ 
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
 	      document.createElement(name+"-bonaparte");
-	      return;
+	      return definition;
 	    }
 	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
 	      registeredTags[name+"-bonaparte"]:
@@ -6728,8 +6690,8 @@
 	  else if(modulesType !== "array")
 	    throw "Bonaparte - createTag: Unexpected "+modulesType+". Expected Function or Array."
 
-
 	  nativeBaseElement = nativeBaseElement || window.HTMLElement || window.Element;
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
 	  
@@ -6749,7 +6711,7 @@
 	  function register(){ 
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
 	      document.createElement(name+"-bonaparte");
-	      return;
+	      return definition;
 	    }
 	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
 	      registeredTags[name+"-bonaparte"]:
@@ -7833,8 +7795,8 @@
 	  else if(modulesType !== "array")
 	    throw "Bonaparte - createTag: Unexpected "+modulesType+". Expected Function or Array."
 
-
 	  nativeBaseElement = nativeBaseElement || window.HTMLElement || window.Element;
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
 	  
@@ -7854,7 +7816,7 @@
 	  function register(){ 
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
 	      document.createElement(name+"-bonaparte");
-	      return;
+	      return definition;
 	    }
 	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
 	      registeredTags[name+"-bonaparte"]:
@@ -9174,8 +9136,8 @@
 	  else if(modulesType !== "array")
 	    throw "Bonaparte - createTag: Unexpected "+modulesType+". Expected Function or Array."
 
-
 	  nativeBaseElement = nativeBaseElement || window.HTMLElement || window.Element;
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
 	  
@@ -9195,7 +9157,7 @@
 	  function register(){ 
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
 	      document.createElement(name+"-bonaparte");
-	      return;
+	      return definition;
 	    }
 	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
 	      registeredTags[name+"-bonaparte"]:
@@ -10452,8 +10414,8 @@
 	  else if(modulesType !== "array")
 	    throw "Bonaparte - createTag: Unexpected "+modulesType+". Expected Function or Array."
 
-
 	  nativeBaseElement = nativeBaseElement || window.HTMLElement || window.Element;
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
 	  
@@ -10473,7 +10435,7 @@
 	  function register(){ 
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
 	      document.createElement(name+"-bonaparte");
-	      return;
+	      return definition;
 	    }
 	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
 	      registeredTags[name+"-bonaparte"]:
