@@ -29,13 +29,6 @@ This makes bonaparte and the bonaparte Semantic UI theme available in your proje
 
 ## To Look At
 
-__Research/Proposal:__
-
-[Bonaparte Research/Proposal](https://docs.google.com/a/dowjones.com/document/d/1l0vsb8ZkeJjaNtEFa-49VCAalIajGf0l4zmKBbP95sI/edit?usp=sharing)
-<br>
-[Bonaparte Components](https://docs.google.com/a/dowjones.com/document/d/11ufSpZOKBbgdOJ5NUsfq_Yk-ziA9sWgTJiMd1G02IzA/edit?usp=sharing)
-
-
 __Examples:__
 
 [Kitchen-Sink](http://dowjones.github.io/bonaparte/examples/kitchen-sink.html)
