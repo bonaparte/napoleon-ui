@@ -65,9 +65,9 @@ For development use the standard Bonaparte build process
 
 ```
 npm run build
-
-//and
-
+```
+and
+```
 npm run watch
 
 ```
