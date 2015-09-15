@@ -1,16 +1,4 @@
-@import "css/wsj-fonts.css";/*
-
-███████╗███████╗███╗   ███╗ █████╗ ███╗   ██╗████████╗██╗ ██████╗    ██╗   ██╗██╗
-██╔════╝██╔════╝████╗ ████║██╔══██╗████╗  ██║╚══██╔══╝██║██╔════╝    ██║   ██║██║
-███████╗█████╗  ██╔████╔██║███████║██╔██╗ ██║   ██║   ██║██║         ██║   ██║██║
-╚════██║██╔══╝  ██║╚██╔╝██║██╔══██║██║╚██╗██║   ██║   ██║██║         ██║   ██║██║
-███████║███████╗██║ ╚═╝ ██║██║  ██║██║ ╚████║   ██║   ██║╚██████╗    ╚██████╔╝██║
-╚══════╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝ ╚═════╝     ╚═════╝ ╚═╝
-
-  Import this file into your LESS project to use Semantic UI without build tools
-*/
-/* Global */
-/*!
+@import "css/wsj-fonts.css";/*!
  * # Semantic UI - Reset
  * http://github.com/semantic-org/semantic-ui/
  *
@@ -2148,7 +2136,6 @@ strong {
   right: 0;
   margin: 1rem;
 }
-/* Elements */
 /*!
  * # Semantic UI - Button
  * http://github.com/semantic-org/semantic-ui/
@@ -27740,7 +27727,6 @@ ol.ui.horizontal.list li:before,
   content: '\E800';
   /* '' */
 }
-/* Collections */
 /*!
  * # Semantic UI - Breadcrumb
  * http://github.com/semantic-org/semantic-ui/
@@ -38000,7 +37986,6 @@ Floated Menu / Item
 .ui.large.table {
   font-size: 1.1em;
 }
-/* Views */
 /*!
  * # Semantic UI - Ad
  * http://github.com/semantic-org/semantic-ui/
@@ -44371,7 +44356,6 @@ a.ui.card:hover,
 /*******************************
          Theme Overrides
 *******************************/
-/* Modules */
 /*!
  * # Semantic UI - Accordion
  * http://github.com/semantic-org/semantic-ui/
