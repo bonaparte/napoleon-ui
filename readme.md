@@ -8,7 +8,7 @@
 
 ## About
 
-Bonapart-ND is a [Bonaparte](https://github.dowjones.net/bonaparte/bonaparte) build with a custom [Semantic UI](http://semantic-ui.com) theme developed for editorial tools at Dow Jones.
+Bonaparte-ND is a [Bonaparte](https://github.dowjones.net/bonaparte/bonaparte) build with a custom [Semantic UI](http://semantic-ui.com) theme developed for editorial tools at Dow Jones.
 
 ## Basic Use
 
