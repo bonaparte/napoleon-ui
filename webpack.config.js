@@ -10,12 +10,6 @@ module.exports = function(name){
             filename: name+".js"
         },
         module: {
-            preLoaders : [
-                {
-                    test: /.*/,
-                    loader : "import-style-loader"
-                }
-            ],
             loaders: [
                 {
                     test: /\.css$/i,
@@ -41,32 +35,9 @@ module.exports = function(name){
                 {
                     test : /wsj-fonts\.css$/i,
                     loader: ExtractCSS.extract("external-css-loader?name=css/[name].[ext]")
-                },
-                // {
-                //     test: /\.woff$/,   
-                //     loader: "url?limit=1000000" 
-                // },
-                // {
-                //     test: /\.woff2$/,   
-                //     loader: "url?limit=1000000" 
-                // },
-                // { 
-                //     test: /\.ttf$/,    
-                //     loader: "url?limit=1000000"
-                // },
-                // { 
-                //     test: /\.eot$/,    
-                //     loader: "url?limit=1000000" 
-                // },
-                // { 
-                //     test: /\.svg$/,    
-                //     loader: "url?limit=1000000" 
-                // }
+                }
             ],
-            // noParse : /\.(woff|woff2|eot|ttf)$/
-
         },
-        // Use the plugin to specify the resulting filename (and add needed behavior to the compiler)
         plugins: [
            ExtractCSS,
         ]
