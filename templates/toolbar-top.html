@@ -1,0 +1,50 @@
+<!DOCTYPE html><html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../dist/bonaparte-nd.css">
+    <script src="../dist/bonaparte-nd.js"></script>
+
+
+
+    <style>  
+      body, html {
+        margin:0;
+        padding:0;
+        height:100%;
+      }
+
+      body > bonaparte-toolbar {
+        height:100%;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+        
+    <bonaparte-toolbar data-sidebar="top">  
+      <aside>
+        <div>
+          <bonaparte-button class="ui icon button" target="#panel-left" action="click" target-open="true"><i class="skip-next icon left"></i></bonaparte-button><!--
+          --><div class="ui button"><i class="change-history icon left"></i>Start Button</div>
+        </div>
+        <div>
+          <bonaparte-button class="ui button" target="bonaparte-toolbar" toggle="true" target-size="200px" action="click"><i class="change-history icon left"></i>Middle Button</bonaparte-button>
+        </div>
+        <div>
+          <div class="ui button"><i class="change-history icon left"></i>End Button</div><!-- 
+       --><bonaparte-button class="ui icon button" target="#panel-right" action="click" target-open="true"><i class="skip-previous icon left"></i></bonaparte-button>
+        </div>
+      </aside>
+
+      <bonaparte-scroll>
+        <div></div>
+        <bonaparte-panel position="left" id="panel-left"></bonaparte-panel>
+        <bonaparte-panel position="right" id="panel-right"></bonaparte-panel>
+      </bonaparte-scroll>
+    </bonaparte-toolbar>
+
+
+
+  </body>
+</html> 

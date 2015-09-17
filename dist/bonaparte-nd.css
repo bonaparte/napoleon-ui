@@ -62527,11 +62527,43 @@ bonaparte-toolbar[data-sidebar="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar[sidebar="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
 }
+bonaparte-toolbar[data-sidebar="top"] > :nth-child(1),
+bonaparte-toolbar[sidebar="top"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="bottom"] > :nth-child(1),
+bonaparte-toolbar[sidebar="bottom"] > :nth-child(1) {
+  min-height: 0rem;
+}
 bonaparte-toolbar[data-sidebar="top"] > :nth-child(1) *,
 bonaparte-toolbar[sidebar="top"] > :nth-child(1) *,
 bonaparte-toolbar[data-sidebar="bottom"] > :nth-child(1) *,
 bonaparte-toolbar[sidebar="bottom"] > :nth-child(1) * {
   white-space: nowrap;
+}
+bonaparte-toolbar[data-sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="bottom"][open="true"] > :nth-child(1) {
+  min-height: 10rem;
+}
+bonaparte-toolbar[data-sidebar="left"] > :nth-child(1),
+bonaparte-toolbar[sidebar="left"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="right"] > :nth-child(1),
+bonaparte-toolbar[sidebar="right"] > :nth-child(1) {
+  min-width: 0rem;
+}
+bonaparte-toolbar[data-sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="right"][open="true"] > :nth-child(1) {
+  min-width: 10rem;
 }
 /*///////////////////////////////////////////////////////////////////////////*/
 /*SIZES*/
@@ -62633,11 +62665,43 @@ bonaparte-toolbar[data-sidebar="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar[sidebar="bottom"][open="false"] > :nth-child(1) {
   min-height: 4rem;
 }
+bonaparte-toolbar[data-sidebar="top"] > :nth-child(1),
+bonaparte-toolbar[sidebar="top"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="bottom"] > :nth-child(1),
+bonaparte-toolbar[sidebar="bottom"] > :nth-child(1) {
+  min-height: 4rem;
+}
 bonaparte-toolbar[data-sidebar="top"] > :nth-child(1) *,
 bonaparte-toolbar[sidebar="top"] > :nth-child(1) *,
 bonaparte-toolbar[data-sidebar="bottom"] > :nth-child(1) *,
 bonaparte-toolbar[sidebar="bottom"] > :nth-child(1) * {
   white-space: nowrap;
+}
+bonaparte-toolbar[data-sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="bottom"][open="true"] > :nth-child(1) {
+  min-height: 20rem;
+}
+bonaparte-toolbar[data-sidebar="left"] > :nth-child(1),
+bonaparte-toolbar[sidebar="left"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="right"] > :nth-child(1),
+bonaparte-toolbar[sidebar="right"] > :nth-child(1) {
+  min-width: 4rem;
+}
+bonaparte-toolbar[data-sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar[data-sidebar="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar[sidebar="right"][open="true"] > :nth-child(1) {
+  min-width: 20rem;
 }
 bonaparte-toolbar > cornerstone-bonaparte {
   background-color: #d9a000;
@@ -62856,6 +62920,16 @@ bonaparte-toolbar.tiny[sidebar="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar.mini[sidebar="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
 }
+bonaparte-toolbar.tiny[data-sidebar="top"] > :nth-child(1),
+bonaparte-toolbar.mini[data-sidebar="top"] > :nth-child(1),
+bonaparte-toolbar.tiny[sidebar="top"] > :nth-child(1),
+bonaparte-toolbar.mini[sidebar="top"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-sidebar="bottom"] > :nth-child(1),
+bonaparte-toolbar.mini[data-sidebar="bottom"] > :nth-child(1),
+bonaparte-toolbar.tiny[sidebar="bottom"] > :nth-child(1),
+bonaparte-toolbar.mini[sidebar="bottom"] > :nth-child(1) {
+  min-height: 0rem;
+}
 bonaparte-toolbar.tiny[data-sidebar="top"] > :nth-child(1) *,
 bonaparte-toolbar.mini[data-sidebar="top"] > :nth-child(1) *,
 bonaparte-toolbar.tiny[sidebar="top"] > :nth-child(1) *,
@@ -62865,6 +62939,52 @@ bonaparte-toolbar.mini[data-sidebar="bottom"] > :nth-child(1) *,
 bonaparte-toolbar.tiny[sidebar="bottom"] > :nth-child(1) *,
 bonaparte-toolbar.mini[sidebar="bottom"] > :nth-child(1) * {
   white-space: nowrap;
+}
+bonaparte-toolbar.tiny[data-sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-sidebar="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-sidebar="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[sidebar="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[sidebar="bottom"][open="true"] > :nth-child(1) {
+  min-height: 2rem;
+}
+bonaparte-toolbar.tiny[data-sidebar="left"] > :nth-child(1),
+bonaparte-toolbar.mini[data-sidebar="left"] > :nth-child(1),
+bonaparte-toolbar.tiny[sidebar="left"] > :nth-child(1),
+bonaparte-toolbar.mini[sidebar="left"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-sidebar="right"] > :nth-child(1),
+bonaparte-toolbar.mini[data-sidebar="right"] > :nth-child(1),
+bonaparte-toolbar.tiny[sidebar="right"] > :nth-child(1),
+bonaparte-toolbar.mini[sidebar="right"] > :nth-child(1) {
+  min-width: 0rem;
+}
+bonaparte-toolbar.tiny[data-sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-sidebar="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-sidebar="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[sidebar="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[sidebar="right"][open="true"] > :nth-child(1) {
+  min-width: 2rem;
 }
 /*////////////////////////////////*/
 bonaparte-toolbar.small {
@@ -62961,11 +63081,43 @@ bonaparte-toolbar.small[data-sidebar="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar.small[sidebar="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
 }
+bonaparte-toolbar.small[data-sidebar="top"] > :nth-child(1),
+bonaparte-toolbar.small[sidebar="top"] > :nth-child(1),
+bonaparte-toolbar.small[data-sidebar="bottom"] > :nth-child(1),
+bonaparte-toolbar.small[sidebar="bottom"] > :nth-child(1) {
+  min-height: 0rem;
+}
 bonaparte-toolbar.small[data-sidebar="top"] > :nth-child(1) *,
 bonaparte-toolbar.small[sidebar="top"] > :nth-child(1) *,
 bonaparte-toolbar.small[data-sidebar="bottom"] > :nth-child(1) *,
 bonaparte-toolbar.small[sidebar="bottom"] > :nth-child(1) * {
   white-space: nowrap;
+}
+bonaparte-toolbar.small[data-sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-sidebar="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[sidebar="bottom"][open="true"] > :nth-child(1) {
+  min-height: 3rem;
+}
+bonaparte-toolbar.small[data-sidebar="left"] > :nth-child(1),
+bonaparte-toolbar.small[sidebar="left"] > :nth-child(1),
+bonaparte-toolbar.small[data-sidebar="right"] > :nth-child(1),
+bonaparte-toolbar.small[sidebar="right"] > :nth-child(1) {
+  min-width: 0rem;
+}
+bonaparte-toolbar.small[data-sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-sidebar="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[sidebar="right"][open="true"] > :nth-child(1) {
+  min-width: 3rem;
 }
 /*////////////////////////////////*/
 bonaparte-toolbar.large,
@@ -63097,6 +63249,16 @@ bonaparte-toolbar.large[sidebar="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar.big[sidebar="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
 }
+bonaparte-toolbar.large[data-sidebar="top"] > :nth-child(1),
+bonaparte-toolbar.big[data-sidebar="top"] > :nth-child(1),
+bonaparte-toolbar.large[sidebar="top"] > :nth-child(1),
+bonaparte-toolbar.big[sidebar="top"] > :nth-child(1),
+bonaparte-toolbar.large[data-sidebar="bottom"] > :nth-child(1),
+bonaparte-toolbar.big[data-sidebar="bottom"] > :nth-child(1),
+bonaparte-toolbar.large[sidebar="bottom"] > :nth-child(1),
+bonaparte-toolbar.big[sidebar="bottom"] > :nth-child(1) {
+  min-height: 0rem;
+}
 bonaparte-toolbar.large[data-sidebar="top"] > :nth-child(1) *,
 bonaparte-toolbar.big[data-sidebar="top"] > :nth-child(1) *,
 bonaparte-toolbar.large[sidebar="top"] > :nth-child(1) *,
@@ -63106,6 +63268,52 @@ bonaparte-toolbar.big[data-sidebar="bottom"] > :nth-child(1) *,
 bonaparte-toolbar.large[sidebar="bottom"] > :nth-child(1) *,
 bonaparte-toolbar.big[sidebar="bottom"] > :nth-child(1) * {
   white-space: nowrap;
+}
+bonaparte-toolbar.large[data-sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-sidebar="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-sidebar="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[sidebar="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[sidebar="bottom"][open="true"] > :nth-child(1) {
+  min-height: 5rem;
+}
+bonaparte-toolbar.large[data-sidebar="left"] > :nth-child(1),
+bonaparte-toolbar.big[data-sidebar="left"] > :nth-child(1),
+bonaparte-toolbar.large[sidebar="left"] > :nth-child(1),
+bonaparte-toolbar.big[sidebar="left"] > :nth-child(1),
+bonaparte-toolbar.large[data-sidebar="right"] > :nth-child(1),
+bonaparte-toolbar.big[data-sidebar="right"] > :nth-child(1),
+bonaparte-toolbar.large[sidebar="right"] > :nth-child(1),
+bonaparte-toolbar.big[sidebar="right"] > :nth-child(1) {
+  min-width: 0rem;
+}
+bonaparte-toolbar.large[data-sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-sidebar="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-sidebar="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[sidebar="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[sidebar="right"][open="true"] > :nth-child(1) {
+  min-width: 5rem;
 }
 /*////////////////////////////////*/
 bonaparte-toolbar.huge,
@@ -63237,6 +63445,16 @@ bonaparte-toolbar.huge[sidebar="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar.massive[sidebar="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
 }
+bonaparte-toolbar.huge[data-sidebar="top"] > :nth-child(1),
+bonaparte-toolbar.massive[data-sidebar="top"] > :nth-child(1),
+bonaparte-toolbar.huge[sidebar="top"] > :nth-child(1),
+bonaparte-toolbar.massive[sidebar="top"] > :nth-child(1),
+bonaparte-toolbar.huge[data-sidebar="bottom"] > :nth-child(1),
+bonaparte-toolbar.massive[data-sidebar="bottom"] > :nth-child(1),
+bonaparte-toolbar.huge[sidebar="bottom"] > :nth-child(1),
+bonaparte-toolbar.massive[sidebar="bottom"] > :nth-child(1) {
+  min-height: 0rem;
+}
 bonaparte-toolbar.huge[data-sidebar="top"] > :nth-child(1) *,
 bonaparte-toolbar.massive[data-sidebar="top"] > :nth-child(1) *,
 bonaparte-toolbar.huge[sidebar="top"] > :nth-child(1) *,
@@ -63246,6 +63464,52 @@ bonaparte-toolbar.massive[data-sidebar="bottom"] > :nth-child(1) *,
 bonaparte-toolbar.huge[sidebar="bottom"] > :nth-child(1) *,
 bonaparte-toolbar.massive[sidebar="bottom"] > :nth-child(1) * {
   white-space: nowrap;
+}
+bonaparte-toolbar.huge[data-sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[sidebar="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[sidebar="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[sidebar="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-sidebar="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-sidebar="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[sidebar="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[sidebar="bottom"][open="true"] > :nth-child(1) {
+  min-height: 6rem;
+}
+bonaparte-toolbar.huge[data-sidebar="left"] > :nth-child(1),
+bonaparte-toolbar.massive[data-sidebar="left"] > :nth-child(1),
+bonaparte-toolbar.huge[sidebar="left"] > :nth-child(1),
+bonaparte-toolbar.massive[sidebar="left"] > :nth-child(1),
+bonaparte-toolbar.huge[data-sidebar="right"] > :nth-child(1),
+bonaparte-toolbar.massive[data-sidebar="right"] > :nth-child(1),
+bonaparte-toolbar.huge[sidebar="right"] > :nth-child(1),
+bonaparte-toolbar.massive[sidebar="right"] > :nth-child(1) {
+  min-width: 0rem;
+}
+bonaparte-toolbar.huge[data-sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[sidebar="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[sidebar="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[sidebar="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-sidebar="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-sidebar="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[sidebar="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[sidebar="right"][open="true"] > :nth-child(1) {
+  min-width: 6rem;
 }
 /*////////////////////////////////*/
 /*============================
