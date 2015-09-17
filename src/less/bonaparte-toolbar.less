@@ -2,11 +2,11 @@
 @import "~bonaparte-toolbar/bonaparte.less";
 
 /*SIZES*/
-toolbar-bonaparte {
+bonaparte-toolbar {
 
 
 /*////////////////////////////////*/  
-  .toolbar-bonaparte({
+  .bonaparte-toolbar({
     .variables(){
       @icon-size : 4rem;
       @default-open : 20rem;
@@ -57,10 +57,10 @@ toolbar-bonaparte {
       box-shadow: none !important;
     }
     > * > * {
-      &:extend(button-bonaparte);
+      &:extend(bonaparte-button);
     }    
     > * > .active {
-      &:extend(button-bonaparte.active);
+      &:extend(bonaparte-button.active);
     }
   }
 
@@ -110,9 +110,9 @@ toolbar-bonaparte {
 
 /*////////////////////////////////*/  
 
-toolbar-bonaparte.tiny,
-toolbar-bonaparte.mini {  
-  .toolbar-bonaparte({
+bonaparte-toolbar.tiny,
+bonaparte-toolbar.mini {  
+  .bonaparte-toolbar({
     .variables(){
       @icon-size : 2rem;
       @default-open : 2rem;
@@ -122,8 +122,8 @@ toolbar-bonaparte.mini {
 }
 /*////////////////////////////////*/  
 
-toolbar-bonaparte.small {  
-  .toolbar-bonaparte({
+bonaparte-toolbar.small {  
+  .bonaparte-toolbar({
     .variables(){
       @icon-size : 3rem;
       @default-open : 3rem;
@@ -133,9 +133,9 @@ toolbar-bonaparte.small {
 }
 /*////////////////////////////////*/  
 
-toolbar-bonaparte.large,
-toolbar-bonaparte.big {  
-  .toolbar-bonaparte({
+bonaparte-toolbar.large,
+bonaparte-toolbar.big {  
+  .bonaparte-toolbar({
     .variables(){
       @icon-size : 5rem;
       @default-open : 5rem;
@@ -145,9 +145,9 @@ toolbar-bonaparte.big {
 }
 /*////////////////////////////////*/  
 
-toolbar-bonaparte.huge,
-toolbar-bonaparte.massive {  
-  .toolbar-bonaparte({
+bonaparte-toolbar.huge,
+bonaparte-toolbar.massive {  
+  .bonaparte-toolbar({
     .variables(){
       @icon-size : 6rem;
       @default-open : 6rem;

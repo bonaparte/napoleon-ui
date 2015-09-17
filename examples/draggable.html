@@ -16,7 +16,7 @@
         background-color: blue;
       }
 
-      body > toolbar-bonaparte {
+      body > bonaparte-toolbar {
         height:100%;
       }
 
@@ -105,15 +105,15 @@ draggable-bonaparte > div.continuation .buttons .button i.icon {
 
   </head>
   <body>
-    <toolbar-bonaparte id="toolbar" data-sidebar="left">  
+    <bonaparte-toolbar id="toolbar" data-sidebar="left">  
       <aside>
       	<div class="buttons">
-          <button-bonaparte class="ui icon button" target="#panel" target-open="true" toggle="open" action="click"><i class="shop icon left"></i></button-bonaparte>
-          <button-bonaparte class="ui icon button"  target="#panel2" toggle="open" target-open="true" action="click"><i class="shop icon left"></i></button-bonaparte>
-          <button-bonaparte class="ui icon button"  target="#panel3" toggle="open" target-open="true" action="click"><i class="shop icon left"></i></button-bonaparte>
+          <bonaparte-button class="ui icon button" target="#panel" target-open="true" toggle="open" action="click"><i class="shop icon left"></i></bonaparte-button>
+          <bonaparte-button class="ui icon button"  target="#panel2" toggle="open" target-open="true" action="click"><i class="shop icon left"></i></bonaparte-button>
+          <bonaparte-button class="ui icon button"  target="#panel3" toggle="open" target-open="true" action="click"><i class="shop icon left"></i></bonaparte-button>
         </div>
       </aside>
-      <content-bonaparte>
+      <bonaparte-content>
         <h1> Content </h1>
 
 
@@ -133,9 +133,9 @@ draggable-bonaparte > div.continuation .buttons .button i.icon {
 
 
 
-        <panel-bonaparte id="panel" position="left">
-          <scroll-bonaparte resize="true">
-        		<content-bonaparte>
+        <bonaparte-panel id="panel" position="left">
+          <bonaparte-scroll resize="true">
+        		<bonaparte-content>
               <draggable-bonaparte sortable="true">
                 <h1> Content </h1>
                 <h2> Content </h2>
@@ -144,12 +144,12 @@ draggable-bonaparte > div.continuation .buttons .button i.icon {
                 <h5> Content </h5>
                 <h6> Content </h6>
               </draggable-bonaparte> 
-        		</content-bonaparte>
-          </scroll-bonaparte>
-        </panel-bonaparte>
-        <panel-bonaparte id="panel2" position="left">
-          <scroll-bonaparte resize="true">
-        		<content-bonaparte>
+        		</bonaparte-content>
+          </bonaparte-scroll>
+        </bonaparte-panel>
+        <bonaparte-panel id="panel2" position="left">
+          <bonaparte-scroll resize="true">
+        		<bonaparte-content>
               <draggable-bonaparte>
                 <div data-page="0" data-box="b1" data-sb="SB11148209685471614704404580536710479713270" class="article-list-item ui-draggable" data-reactid=".0.1.1.1.1.1.0.0.$SB11148209685471614704404580536710479713270" style="position: relative;"><div class="img" style="background-image:url(http://s.wsj.net/public/resources/images/BN-HO062_mag041_A_20150323171855.jpg);" data-reactid=".0.1.1.1.1.1.0.0.$SB11148209685471614704404580536710479713270.0"></div><div class="text" data-reactid=".0.1.1.1.1.1.0.0.$SB11148209685471614704404580536710479713270.1"><p class="headline" data-reactid=".0.1.1.1.1.1.0.0.$SB11148209685471614704404580536710479713270.1.0">The Real Fast-Food Revolution test</p><p class="deckline" data-reactid=".0.1.1.1.1.1.0.0.$SB11148209685471614704404580536710479713270.1.1">Two prominent California chefs have founded Loco’l, a new approach to fast food that provides nutritious and delicious fare in some of the country’s poorest neighborhoods</p></div><div class="buttons" data-reactid=".0.1.1.1.1.1.0.0.$SB11148209685471614704404580536710479713270.2"><div title="Drag to module" class="ui button icon drag-handle ui-draggable-handle" data-reactid=".0.1.1.1.1.1.0.0.$SB11148209685471614704404580536710479713270.2.0"><i class="icon view-headline" data-reactid=".0.1.1.1.1.1.0.0.$SB11148209685471614704404580536710479713270.2.0.0"></i></div></div></div>
                 <div data-page="0" data-box="deco" data-sb="SB10001424052702303373904579495624261686320" class="article-list-item ui-draggable" data-reactid=".0.1.1.1.1.1.0.0.$SB10001424052702303373904579495624261686320" style="position: relative;"><div class="img" style="background-image:url(http://s.wsj.net/public/resources/images/BN-HZ069_sample_Z120_20150420142440.jpg);" data-reactid=".0.1.1.1.1.1.0.0.$SB10001424052702303373904579495624261686320.0"></div><div class="text" data-reactid=".0.1.1.1.1.1.0.0.$SB10001424052702303373904579495624261686320.1"><p class="headline" data-reactid=".0.1.1.1.1.1.0.0.$SB10001424052702303373904579495624261686320.1.0">Greece Rattles Markets Ahead of Eurogroup Meeting</p><p class="deckline" data-reactid=".0.1.1.1.1.1.0.0.$SB10001424052702303373904579495624261686320.1.1"></p></div><div class="buttons" data-reactid=".0.1.1.1.1.1.0.0.$SB10001424052702303373904579495624261686320.2"><div title="Drag to module" class="ui button icon drag-handle ui-draggable-handle" data-reactid=".0.1.1.1.1.1.0.0.$SB10001424052702303373904579495624261686320.2.0"><i class="icon view-headline" data-reactid=".0.1.1.1.1.1.0.0.$SB10001424052702303373904579495624261686320.2.0.0"></i></div></div></div>
@@ -181,14 +181,14 @@ draggable-bonaparte > div.continuation .buttons .button i.icon {
                 <div data-page="3" data-box="b1" data-sb="SB11500025451638853982204581094152154231360" class="article-list-item continuation ui-draggable" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360" style="position: relative;"><div class="img" style="background-image:url(http://s.wsj.net/public/resources/images/BN-JG963_WIMBEL_OR_20150707174744.jpg);" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360.0"></div><div class="text" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360.1"><p class="headline" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360.1.0">Why You Won’t See Any Colorful Characters at Wimbledon</p><p class="deckline" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360.1.1">Tennis tournament enforces wearing white, from headbands to soles; cream is called out</p></div><div class="buttons" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360.2"><div title="Drag to module" class="ui button icon drag-handle ui-draggable-handle" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360.2.0"><i class="icon view-headline" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360.2.0.0"></i></div></div></div>
                 <div data-page="3" data-box="b2" data-sb="SB10647853898323594231504581098081738449112" class="article-list-item continuation ui-draggable" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112" style="position: relative;"><div class="img" style="background-image:url(http://s.wsj.net/public/resources/images/BN-JH730_botwt0_OR_20150709115305.jpg);" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112.0"></div><div class="text" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112.1"><p class="headline" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112.1.0">Opinion: Taranto’s Best of the Web</p><p class="deckline" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112.1.1">A newspaper’s bizarre Cuba coverage.</p></div><div class="buttons" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112.2"><div title="Drag to module" class="ui button icon drag-handle ui-draggable-handle" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112.2.0"><i class="icon view-headline" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112.2.0.0"></i></div></div></div>
               </draggable-bonaparte> 
-        		</content-bonaparte>
-          </scroll-bonaparte>
-        </panel-bonaparte>
+        		</bonaparte-content>
+          </bonaparte-scroll>
+        </bonaparte-panel>
 
 
-        <panel-bonaparte id="panel3" position="left">
-          <scroll-bonaparte resize="true">
-            <content-bonaparte>
+        <bonaparte-panel id="panel3" position="left">
+          <bonaparte-scroll resize="true">
+            <bonaparte-content>
               <draggable-bonaparte id="sortable" data-handler=".buttons .button">
                 <div data-page="0" data-box="b1" data-sb="SB11148209685471614704404580536710479713270" class="article-list-item ui-draggable" data-reactid=".0.1.1.1.1.1.0.0.$SB11148209685471614704404580536710479713270" style="position: relative;">
                   <div class="img" style="background-image:url(http://s.wsj.net/public/resources/images/BN-HO062_mag041_A_20150323171855.jpg);" data-reactid=".0.1.1.1.1.1.0.0.$SB11148209685471614704404580536710479713270.0"></div>
@@ -231,11 +231,11 @@ draggable-bonaparte > div.continuation .buttons .button i.icon {
                 <div data-page="3" data-box="b1" data-sb="SB11500025451638853982204581094152154231360" class="article-list-item continuation ui-draggable" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360" style="position: relative;"><div class="img" style="background-image:url(http://s.wsj.net/public/resources/images/BN-JG963_WIMBEL_OR_20150707174744.jpg);" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360.0"></div><div class="text" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360.1"><p class="headline" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360.1.0">Why You Won’t See Any Colorful Characters at Wimbledon</p><p class="deckline" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360.1.1">Tennis tournament enforces wearing white, from headbands to soles; cream is called out</p></div><div class="buttons" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360.2"><div title="Drag to module" class="ui button icon drag-handle ui-draggable-handle" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360.2.0"><i class="icon view-headline" data-reactid=".0.1.1.1.1.1.0.0.$SB11500025451638853982204581094152154231360.2.0.0"></i></div></div></div>
                 <div data-page="3" data-box="b2" data-sb="SB10647853898323594231504581098081738449112" class="article-list-item continuation ui-draggable" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112" style="position: relative;"><div class="img" style="background-image:url(http://s.wsj.net/public/resources/images/BN-JH730_botwt0_OR_20150709115305.jpg);" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112.0"></div><div class="text" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112.1"><p class="headline" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112.1.0">Opinion: Taranto’s Best of the Web</p><p class="deckline" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112.1.1">A newspaper’s bizarre Cuba coverage.</p></div><div class="buttons" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112.2"><div title="Drag to module" class="ui button icon drag-handle ui-draggable-handle" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112.2.0"><i class="icon view-headline" data-reactid=".0.1.1.1.1.1.0.0.$SB10647853898323594231504581098081738449112.2.0.0"></i></div></div></div>
               </draggable-bonaparte> 
-            </content-bonaparte>
-          </scroll-bonaparte>
-        </panel-bonaparte>
-      </content-bonaparte>
-    </toolbar-bonaparte>
+            </bonaparte-content>
+          </bonaparte-scroll>
+        </bonaparte-panel>
+      </bonaparte-content>
+    </bonaparte-toolbar>
 
 <script>
   document.getElementById("sortable").addEventListener("draggable.drop", function (e) {

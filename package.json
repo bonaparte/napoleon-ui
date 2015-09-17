@@ -29,8 +29,9 @@
     "external-css-loader" : "git://github.dowjones.net/bonaparte/external-css-loader.git#gh-pages",
 
 
-    "parse-loader" : "file:../parse-loader",
-    "optional-loader" : "file:../optional-loader"
+    "parse-loader" : "git://github.dowjones.net/bonaparte/parse-loader.git#gh-pages",
+    "include-loader" : "git://github.dowjones.net/bonaparte/include-loader.git#gh-pages",
+    "optional-loader" : "git://github.dowjones.net/bonaparte/optional-loader.git#gh-pages"
 
   },
 

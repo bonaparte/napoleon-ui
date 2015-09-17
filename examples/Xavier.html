@@ -20,13 +20,13 @@
         height:100%;
         background-color: blue;
       }
-      body > toolbar-bonaparte {
+      body > bonaparte-toolbar {
         height:100%;
       }
 
 
 
-toolbar-bonaparte:not([data-open="true"]) > aside button-bonaparte span.label {
+bonaparte-toolbar:not([data-open="true"]) > aside bonaparte-button span.label {
   display: none;
 }
 
@@ -68,7 +68,7 @@ toolbar-bonaparte:not([data-open="true"]) > aside button-bonaparte span.label {
   position: relative;
 }
 
-#templatesPanel .ui.list-item button-bonaparte {
+#templatesPanel .ui.list-item bonaparte-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -79,25 +79,25 @@ toolbar-bonaparte:not([data-open="true"]) > aside button-bonaparte span.label {
   transition: height 1s;
 }
 
-#templatesPanel button-bonaparte {
+#templatesPanel bonaparte-button {
   flex-direction: column;
   padding-left: 2rem !important;
   font-weight: 100;
 }
 
-#templatesPanel .ui.list-item button-bonaparte i.icon {
+#templatesPanel .ui.list-item bonaparte-button i.icon {
   margin: 0;
 }
-#templatesPanel .ui.list-item button-bonaparte i.icon:before {
+#templatesPanel .ui.list-item bonaparte-button i.icon:before {
   transition: transform 1s;
   color: #d9a000;
 }
-#templatesPanel .ui.list-item button-bonaparte.active{
+#templatesPanel .ui.list-item bonaparte-button.active{
   transform:rotate(0deg);
   background-color: transparent !important;
 }
 
-#templatesPanel .ui.list-item button-bonaparte.active i.icon:before {
+#templatesPanel .ui.list-item bonaparte-button.active i.icon:before {
   transform:rotate(180deg);
   color: #425CBD;
   background-color: transparent;
@@ -112,7 +112,7 @@ toolbar-bonaparte:not([data-open="true"]) > aside button-bonaparte span.label {
   padding: 0;
 }
 
-#templatesPanel .block-list button-bonaparte.list-item {
+#templatesPanel .block-list bonaparte-button.list-item {
   padding: 1rem;
   background-color: #fff;
 }
@@ -129,10 +129,10 @@ toolbar-bonaparte:not([data-open="true"]) > aside button-bonaparte span.label {
   margin-bottom: 0.2rem;
 }
 
-#templatesPanel .block-list button-bonaparte.list-item.active {
+#templatesPanel .block-list bonaparte-button.list-item.active {
   border-bottom: 0px solid #FFFFFF!important;
 }
-#templatesPanel content-bonaparte {
+#templatesPanel bonaparte-content {
   display: flex;
   flex-direction: column;
 }
@@ -182,12 +182,12 @@ toolbar-bonaparte:not([data-open="true"]) > aside button-bonaparte span.label {
 #saveTemplete label {padding-left: 1rem;}
 
 
-#saveTemplete button-bonaparte {
+#saveTemplete bonaparte-button {
   margin: 0;
   float: right;
 }
 
-.ui.block-list > button-bonaparte {
+.ui.block-list > bonaparte-button {
   margin: 0;
   border-bottom: 1px solid #E6E5E6;
 }
@@ -212,7 +212,7 @@ toolbar-bonaparte:not([data-open="true"]) > aside button-bonaparte span.label {
   </head>
   <body>
 
-    <toolbar-bonaparte display="cover" data-open="false" data-sidebar="top" cornerstone="top left">  
+    <bonaparte-toolbar display="cover" data-open="false" data-sidebar="top" cornerstone="top left">  
 
       <aside>
         <p>Section <select><option>TOP_NEWS</option></select></p>
@@ -223,39 +223,39 @@ toolbar-bonaparte:not([data-open="true"]) > aside button-bonaparte span.label {
       </aside>
 
       
-      <toolbar-bonaparte data-sidebar="left" data-open="false">  
+      <bonaparte-toolbar data-sidebar="left" data-open="false">  
         <aside id="displayTools">
           <div class="ui buttons vertical">
-            <button-bonaparte title="Close templates" class="ui button icon primary" target="#templatesPanel" data-toggle="open" action="click" data-bubbles="false">
+            <bonaparte-button title="Close templates" class="ui button icon primary" target="#templatesPanel" data-toggle="open" action="click" data-bubbles="false">
               <i class="icon view-quilt"></i>
               <span class="label">Show templates</span>
-            </button-bonaparte>
+            </bonaparte-button>
           </div>
           <div class="ui buttons vertical">
-            <button-bonaparte title="Rotate to landscape" class="ui button rotate secondary icon">
+            <bonaparte-button title="Rotate to landscape" class="ui button rotate secondary icon">
               <i class="icon screen-rotation portrait"></i>
               <span class="label">Rotate to landscape</span>
-            </button-bonaparte>
-            <button-bonaparte title="Hide frames" class="ui button secondary icon">
+            </bonaparte-button>
+            <bonaparte-button title="Hide frames" class="ui button secondary icon">
               <i class="icon border-clear"></i>
               <span class="label">Hide frames</span>
-            </button-bonaparte>
-            <button-bonaparte title="Unlock content" class="ui button secondary icon">
+            </bonaparte-button>
+            <bonaparte-button title="Unlock content" class="ui button secondary icon">
               <i class="icon lock-open"></i>
               <span class="label">Lock content</span>
-            </button-bonaparte>
+            </bonaparte-button>
           </div>
           <div class="ui buttons vertical">
-            <button-bonaparte title="Hide help" class="ui button white icon" action="click" target="[data-sidebar=left],[data-sidebar=right]" toggle="true">
+            <bonaparte-button title="Hide help" class="ui button white icon" action="click" target="[data-sidebar=left],[data-sidebar=right]" toggle="true">
 
               <i class="icon help"></i>
               <span class="label">Hide help</span>
-            </button-bonaparte>
+            </bonaparte-button>
           </div>
         </aside>
         
 
-        <toolbar-bonaparte data-sidebar="right" data-open="false">  
+        <bonaparte-toolbar data-sidebar="right" data-open="false">  
 
           <aside>
             <div class="ui buttons vertical">
@@ -273,22 +273,22 @@ toolbar-bonaparte:not([data-open="true"]) > aside button-bonaparte span.label {
                 <i class="icon left">B4</i></div>
             </div>
           </aside>
-          <scroll-bonaparte>
+          <bonaparte-scroll>
 
-            <content-bonaparte>
+            <bonaparte-content>
               <h1> Content </h1>
               <h2> Content </h2>
               <h3> Content </h3>
               <h4> Content </h4>
               <h5> Content </h5>
               <h6> Content </h6>
-            </content-bonaparte> 
+            </bonaparte-content> 
 
            
-            <panel-bonaparte id="list" position="right">
-            </panel-bonaparte>
+            <bonaparte-panel id="list" position="right">
+            </bonaparte-panel>
             
-            <panel-bonaparte id="right" position="right">
+            <bonaparte-panel id="right" position="right">
               <h1 class="ui dividing header">
                 Elements 
 
@@ -300,17 +300,17 @@ toolbar-bonaparte:not([data-open="true"]) > aside button-bonaparte span.label {
 
               <div class="ui primary button"><i class="edit icon left"></i>Edit full article </div>
 
-            </panel-bonaparte>
-          </scroll-bonaparte>
-        <panel-bonaparte id="templatesPanel" position="left">
-           <scroll-bonaparte>
+            </bonaparte-panel>
+          </bonaparte-scroll>
+        <bonaparte-panel id="templatesPanel" position="left">
+           <bonaparte-scroll>
 
-            <content-bonaparte>
+            <bonaparte-content>
               <div class="ui block-list">
                 <div class="ui list-item">
-                  <button-bonaparte class="ui button" action="click" data-target="ul.template_0" data-bubble="false" data-toggle="true" data-target-style="display: block">
+                  <bonaparte-button class="ui button" action="click" data-target="ul.template_0" data-bubble="false" data-toggle="true" data-target-style="display: block">
                     <i class="arrow-drop-down icon"></i>
-                  </button-bonaparte>
+                  </bonaparte-button>
                   <div data-has-styles="true" class="content" data-value="SECTION-9story_template.xml" data-pending="false">
                     <p>9 story - G photo</p>
                     <ul class="template_0">
@@ -325,10 +325,10 @@ toolbar-bonaparte:not([data-open="true"]) > aside button-bonaparte span.label {
                   </div>
                 </div>
 
-                  <button-bonaparte class="ui right labeled icon button fluid primary basic" action="click" data-target="#saveTemplete" data-bubble="false" data-toggle="true" data-target-class="active">
+                  <bonaparte-button class="ui right labeled icon button fluid primary basic" action="click" data-target="#saveTemplete" data-bubble="false" data-toggle="true" data-target-class="active">
                   <i class="save icon right"></i>
                   Save layout
-                  </button-bonaparte>
+                  </bonaparte-button>
                 </div>
 
                 <div id="saveTemplete">
@@ -359,19 +359,19 @@ toolbar-bonaparte:not([data-open="true"]) > aside button-bonaparte span.label {
                       <textarea name="saveNotes" id="saveNotes"></textarea>
                       <label for="saveNotes">Notes</label>
                     </div>
-                    <button-bonaparte class="ui button small secondary">Save <i class="save icon right"></i></button-bonaparte>
+                    <bonaparte-button class="ui button small secondary">Save <i class="save icon right"></i></bonaparte-button>
                   </div>
                 </div>
-              </content-bonaparte>
+              </bonaparte-content>
             
-          </scroll-bonaparte>
-        </panel-bonaparte>
-        </toolbar-bonaparte>
-      </toolbar-bonaparte>  
+          </bonaparte-scroll>
+        </bonaparte-panel>
+        </bonaparte-toolbar>
+      </bonaparte-toolbar>  
       <cornerstone-bonaparte>
         <i class="view-module icon"></i>
       </cornerstone-bonaparte>
-    </toolbar-bonaparte>
+    </bonaparte-toolbar>
 
 
 

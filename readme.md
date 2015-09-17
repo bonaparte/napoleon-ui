@@ -50,11 +50,11 @@ This makes bonaparte and the bonaparte Semantic UI theme available in your proje
 
 ## Included Bonaparte Components
 
-  - [< button-bonaparte >](https://github.dowjones.net/bonaparte/bonaparte-button)
-  - [< scroll-bonaparte >](https://github.dowjones.net/bonaparte/bonaparte-scroll)
-  - [< sidebar-bonaparte >](https://github.dowjones.net/bonaparte/bonaparte-sidebar)
-  - [< panel-bonaparte >](https://github.dowjones.net/bonaparte/bonaparte-panel)
-  - [< toolbar-bonaparte >](https://github.dowjones.net/bonaparte/bonaparte-toolbar)
+  - [< bonaparte-button >](https://github.dowjones.net/bonaparte/bonaparte-button)
+  - [< bonaparte-scroll >](https://github.dowjones.net/bonaparte/bonaparte-scroll)
+  - [< bonaparte-sidebar >](https://github.dowjones.net/bonaparte/bonaparte-sidebar)
+  - [< bonaparte-panel >](https://github.dowjones.net/bonaparte/bonaparte-panel)
+  - [< bonaparte-toolbar >](https://github.dowjones.net/bonaparte/bonaparte-toolbar)
 
 ## Development
 

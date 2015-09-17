@@ -46,8 +46,7 @@
 
 	__webpack_require__(125);
 
-
-	// SUI 
+	// SUI ////////////////////////////////////////////////////////////////////////
 
 	__webpack_require__(126);
 	__webpack_require__(128);
@@ -105,7 +104,7 @@
 	__webpack_require__(181);
 
 
-	// Bonaparte 
+	// Bonaparte //////////////////////////////////////////////////////////////////
 
 	__webpack_require__(182).register();
 	__webpack_require__(196);
@@ -1166,13 +1165,14 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 	  function register(){ 
+
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
-	      document.createElement(name+"-bonaparte");
+	      document.createElement("bonaparte-"+name);
 	      return definition;
 	    }
-	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
-	      registeredTags[name+"-bonaparte"]:
-	      document.registerElement(name+"-bonaparte", {
+	    registeredTags[name] = registeredTags[name] !== undefined ?
+	      registeredTags[name]:
+	      document.registerElement("bonaparte-"+name, {
 	        prototype : Object.create( nativeBaseElement.prototype , {
 	          createdCallback : { value: createdCallback },
 	          attachedCallback : { value: attachedCallback },
@@ -3415,13 +3415,14 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 	  function register(){ 
+
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
-	      document.createElement(name+"-bonaparte");
+	      document.createElement("bonaparte-"+name);
 	      return definition;
 	    }
-	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
-	      registeredTags[name+"-bonaparte"]:
-	      document.registerElement(name+"-bonaparte", {
+	    registeredTags[name] = registeredTags[name] !== undefined ?
+	      registeredTags[name]:
+	      document.registerElement("bonaparte-"+name, {
 	        prototype : Object.create( nativeBaseElement.prototype , {
 	          createdCallback : { value: createdCallback },
 	          attachedCallback : { value: attachedCallback },
@@ -4762,13 +4763,14 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 	  function register(){ 
+
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
-	      document.createElement(name+"-bonaparte");
+	      document.createElement("bonaparte-"+name);
 	      return definition;
 	    }
-	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
-	      registeredTags[name+"-bonaparte"]:
-	      document.registerElement(name+"-bonaparte", {
+	    registeredTags[name] = registeredTags[name] !== undefined ?
+	      registeredTags[name]:
+	      document.registerElement("bonaparte-"+name, {
 	        prototype : Object.create( nativeBaseElement.prototype , {
 	          createdCallback : { value: createdCallback },
 	          attachedCallback : { value: attachedCallback },
@@ -5873,13 +5875,14 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 	  function register(){ 
+
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
-	      document.createElement(name+"-bonaparte");
+	      document.createElement("bonaparte-"+name);
 	      return definition;
 	    }
-	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
-	      registeredTags[name+"-bonaparte"]:
-	      document.registerElement(name+"-bonaparte", {
+	    registeredTags[name] = registeredTags[name] !== undefined ?
+	      registeredTags[name]:
+	      document.registerElement("bonaparte-"+name, {
 	        prototype : Object.create( nativeBaseElement.prototype , {
 	          createdCallback : { value: createdCallback },
 	          attachedCallback : { value: attachedCallback },
@@ -6720,7 +6723,7 @@
 	    for(var i=0; i<  groups.length; i++) {
 	      for(var k=0; k<groups[i].children.length; k++) {
 
-	        if(groups[i].children[k].nodeName.toUpperCase() !== "BUTTON-BONAPARTE")
+	        if(groups[i].children[k].nodeName.toUpperCase() !== "BONAPARTE-BUTTON")
 	          buttons.push(groups[i].children[k]);
 	      }
 
@@ -6986,13 +6989,14 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 	  function register(){ 
+
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
-	      document.createElement(name+"-bonaparte");
+	      document.createElement("bonaparte-"+name);
 	      return definition;
 	    }
-	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
-	      registeredTags[name+"-bonaparte"]:
-	      document.registerElement(name+"-bonaparte", {
+	    registeredTags[name] = registeredTags[name] !== undefined ?
+	      registeredTags[name]:
+	      document.registerElement("bonaparte-"+name, {
 	        prototype : Object.create( nativeBaseElement.prototype , {
 	          createdCallback : { value: createdCallback },
 	          attachedCallback : { value: attachedCallback },
@@ -8091,13 +8095,14 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 	  function register(){ 
+
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
-	      document.createElement(name+"-bonaparte");
+	      document.createElement("bonaparte-"+name);
 	      return definition;
 	    }
-	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
-	      registeredTags[name+"-bonaparte"]:
-	      document.registerElement(name+"-bonaparte", {
+	    registeredTags[name] = registeredTags[name] !== undefined ?
+	      registeredTags[name]:
+	      document.registerElement("bonaparte-"+name, {
 	        prototype : Object.create( nativeBaseElement.prototype , {
 	          createdCallback : { value: createdCallback },
 	          attachedCallback : { value: attachedCallback },
@@ -9432,13 +9437,14 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 	  function register(){ 
+
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
-	      document.createElement(name+"-bonaparte");
+	      document.createElement("bonaparte-"+name);
 	      return definition;
 	    }
-	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
-	      registeredTags[name+"-bonaparte"]:
-	      document.registerElement(name+"-bonaparte", {
+	    registeredTags[name] = registeredTags[name] !== undefined ?
+	      registeredTags[name]:
+	      document.registerElement("bonaparte-"+name, {
 	        prototype : Object.create( nativeBaseElement.prototype , {
 	          createdCallback : { value: createdCallback },
 	          attachedCallback : { value: attachedCallback },
@@ -10710,13 +10716,14 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 	  function register(){ 
+
 	    if(typeof document.registerElement === "undefined") { // If IE8 make tag stylable but otherwise do nothing.
-	      document.createElement(name+"-bonaparte");
+	      document.createElement("bonaparte-"+name);
 	      return definition;
 	    }
-	    registeredTags[name+"-bonaparte"] = registeredTags[name+"-bonaparte"] !== undefined ?
-	      registeredTags[name+"-bonaparte"]:
-	      document.registerElement(name+"-bonaparte", {
+	    registeredTags[name] = registeredTags[name] !== undefined ?
+	      registeredTags[name]:
+	      document.registerElement("bonaparte-"+name, {
 	        prototype : Object.create( nativeBaseElement.prototype , {
 	          createdCallback : { value: createdCallback },
 	          attachedCallback : { value: attachedCallback },

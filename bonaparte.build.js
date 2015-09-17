@@ -1,7 +1,6 @@
 require("./src/wsj-fonts.css");
 
-
-// SUI 
+// SUI ////////////////////////////////////////////////////////////////////////
 
 require("./SUI/definitions/globals/reset.less");
 require("./SUI/definitions/globals/site.less");
@@ -59,23 +58,23 @@ require("./SUI/definitions/modules/tab.less");
 require("./SUI/definitions/modules/transition.less");
 
 
-// Bonaparte 
+// Bonaparte //////////////////////////////////////////////////////////////////
 
 require("bonaparte-panel").register();
-require("./src/less/panel-bonaparte.less");
+require("./src/less/bonaparte-panel.less");
 
 require("bonaparte-scroll").register();
-require("./src/less/scroll-bonaparte.less");
+require("./src/less/bonaparte-scroll.less");
 
 require("bonaparte-button").register();
-require("./src/less/button-bonaparte.less");
+require("./src/less/bonaparte-button.less");
 
 require("bonaparte-sidebar").register();
-require("./src/less/sidebar-bonaparte.less");
+require("./src/less/bonaparte-sidebar.less");
 
 require("bonaparte-toolbar").register();
-require("./src/less/toolbar-bonaparte.less");
+require("./src/less/bonaparte-toolbar.less");
 
 require("bonaparte-draggable/bonaparte.build");
 
-require("./src/less/content-bonaparte.less");
+require("./src/less/bonaparte-content.less");

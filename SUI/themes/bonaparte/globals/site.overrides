@@ -12,7 +12,7 @@ html, body {
 }
 
 body,
-body > toolbar-bonaparte {
+body > bonaparte-toolbar {
   height:100%;
 }
 
