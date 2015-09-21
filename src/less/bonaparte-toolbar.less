@@ -53,8 +53,8 @@ bonaparte-toolbar {
 
     > *,
     > * > * {
-      margin:0px !important;
-      box-shadow: none !important;
+      margin:0px;
+      box-shadow: none;
     }
     > * > * {
       &:extend(bonaparte-button);
@@ -115,7 +115,7 @@ bonaparte-toolbar.mini {
   .bonaparte-toolbar({
     .variables(){
       @icon-size : 2rem;
-      @default-open : 2rem;
+      @default-closed : 2rem;
     }
   });
 
@@ -126,7 +126,7 @@ bonaparte-toolbar.small {
   .bonaparte-toolbar({
     .variables(){
       @icon-size : 3rem;
-      @default-open : 3rem;
+      @default-closed : 3rem;
     }
   });
 
@@ -138,7 +138,7 @@ bonaparte-toolbar.big {
   .bonaparte-toolbar({
     .variables(){
       @icon-size : 5rem;
-      @default-open : 5rem;
+      @default-closed : 5rem;
     }
   });
 
@@ -150,7 +150,7 @@ bonaparte-toolbar.massive {
   .bonaparte-toolbar({
     .variables(){
       @icon-size : 6rem;
-      @default-open : 6rem;
+      @default-closed : 6rem;
     }
   });
 
