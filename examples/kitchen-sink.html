@@ -19,25 +19,29 @@
     <script>
       $(function(){
       
-        $("body").on("click",function(){
-          $(this).toggleClass("grid");
-        });
+        // $("body").on("click",function(){
+        //   $(this).toggleClass("grid");
+        // });
       
       });
       
     </script>
-    <style type="text/css">
-      cornerstone-bonaparte.ui.button.icon {
-          background-color: #d9a000;
-          color: #ffffff;
-          box-shadow: none;
-      }
-    </style>
+
   </head>
   <body class="">
     <bonaparte-toolbar id="toolbar" data-sidebar="top" data-cornerstone="top left" open="false">  
       <aside class="dark">
-        <div class="header">Bonaparte</div>
+        <div>
+          <div class="header">Bonaparte</div>
+        </div>
+        <div>
+          <div class="ui primary small button transparent"><i class="shopping-cart icon left"></i>Add to Cart</div>
+        </div>        
+        <div>
+          <div class="ui mini button transparent">
+            View
+          </div>
+        </div>
       </aside>
       <bonaparte-scroll scrollbar="visible" resize="true">
         <bonaparte-content>
@@ -70,43 +74,43 @@
                         <a href="/elements/button.html">Button</a>
                       </h4>
                       <div class="button demo">
-                        <div class="ui mini button">
+                        <div class="ui mini button transparent">
                           View
                         </div>
-                        <div class="ui primary mini button"><i class="shopping-cart icon left"></i>Add to Cart</div>
-                        <div class="ui secondary mini button">Save for Later <i class="save icon right"></i></div>
-                        <div class="ui labeled icon mini button">
-                          <i class="star icon left"></i>
+                        <div class="ui mini button transparent"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui mini button transparent">Save for Later <i class="save icon right"></i></div>
+                        <div class="ui labeled icon mini button transparent">
+                          <i class="star icon left transparent"></i>
                           Rate
                         </div>
-                        <div class="ui right labeled icon mini button">
+                        <div class="ui right labeled icon mini button transparent">
                           <i class="star icon right"></i>
                           Rate
                         </div>
-                        <div class="ui basic button mini ">Basic</div>
-                        <div class="ui icon button mini"><i class="format-align-left icon"></i></div>
+                        <div class="ui basic button mini  transparent">Basic</div>
+                        <div class="ui icon button mini transparent"><i class="format-align-left icon"></i></div>
                         <div class="ui hidden divider"></div>
-                        <div class="ui small button">
+                        <div class="ui small button monochrome">
                           View
                         </div>
-                        <div class="ui primary small button"><i class="shopping-cart icon left"></i>Add to Cart</div>
-                        <div class="ui secondary small button">Save for Later <i class="save icon right"></i></div>
-                        <div class="ui labeled icon small button">
-                          <i class="star icon left"></i>
+                        <div class="ui small button monochrome"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui small button monochrome">Save for Later <i class="save icon right"></i></div>
+                        <div class="ui labeled icon small button monochrome">
+                          <i class="star icon left monochrome"></i>
                           Rate
                         </div>
-                        <div class="ui right labeled icon small button">
+                        <div class="ui right labeled icon small button monochrome">
                           <i class="star icon right"></i>
                           Rate
                         </div>
-                        <div class="ui basic button small ">Basic</div>
-                        <div class="ui icon button small"><i class="format-align-left icon"></i></div>
+                        <div class="ui basic button small monochrome">Basic</div>
+                        <div class="ui icon button small monochrome"><i class="format-align-left icon"></i></div>
                         <div class="ui hidden divider"></div>
                         <div class="ui button">
                           View
                         </div>
-                        <div class="ui primary  button"><i class="shopping-cart icon left"></i>Add to Cart</div>
-                        <div class="ui secondary  button">Save for Later <i class="save icon right"></i></div>
+                        <div class="ui  button"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui  button">Save for Later <i class="save icon right"></i></div>
                         <div class="ui labeled icon  button">
                           <i class="star icon left"></i>
                           Rate
@@ -118,37 +122,37 @@
                         <div class="ui basic button  ">Basic</div>
                         <div class="ui icon button"><i class="format-align-left icon"></i></div>
                         <div class="ui hidden divider"></div>
-                        <div class="ui large button">
+                        <div class="ui large button monochrome inverted">
                           View
                         </div>
-                        <div class="ui primary large button"><i class="shopping-cart icon left"></i>Add to Cart</div>
-                        <div class="ui secondary large button">Save for Later <i class="save icon right"></i></div>
-                        <div class="ui labeled icon large button">
+                        <div class="ui large button monochrome inverted"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui large button monochrome inverted">Save for Later <i class="save icon right"></i></div>
+                        <div class="ui labeled icon large button monochrome inverted">
                           <i class="star icon left"></i>
                           Rate
                         </div>
-                        <div class="ui right labeled icon large button">
+                        <div class="ui right labeled icon large button monochrome inverted">
                           <i class="star icon right"></i>
                           Rate
                         </div>
-                        <div class="ui basic button large ">Basic</div>
-                        <div class="ui icon button large"><i class="format-align-left icon"></i></div>
+                        <div class="ui basic button large  monochrome inverted">Basic</div>
+                        <div class="ui icon button large monochrome inverted"><i class="format-align-left icon"></i></div>
                         <div class="ui hidden divider"></div>
-                        <div class="ui huge button">
+                        <div class="ui huge button dark">
                           View
                         </div>
-                        <div class="ui primary huge button"><i class="shopping-cart icon left"></i>Add to Cart</div>
-                        <div class="ui secondary huge button">Save for Later <i class="save icon right"></i></div>
-                        <div class="ui labeled icon huge button">
+                        <div class="ui huge button dark"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui huge button dark">Save for Later <i class="save icon right"></i></div>
+                        <div class="ui labeled icon huge button dark">
                           <i class="star icon left"></i>
                           Rate
                         </div>
-                        <div class="ui right labeled icon huge button">
+                        <div class="ui right labeled icon huge button dark">
                           <i class="star icon right"></i>
                           Rate
                         </div>
-                        <div class="ui basic button huge ">Basic</div>
-                        <div class="ui icon button huge"><i class="format-align-left icon"></i></div>
+                        <div class="ui basic button huge  dark">Basic</div>
+                        <div class="ui icon button huge dark"><i class="format-align-left icon"></i></div>
                         <div class="ui divider"></div>
                         <div class="ui animated massive button">
                           <div class="visible content">Horizontal</div>
@@ -197,14 +201,11 @@
                           <i class="google plus icon"></i>Google Plus
                         </div>
                         <div class="ui hidden divider"></div>
-                        <div class="ui facebook massive  button">
-                          <i class="facebook icon"></i>Facebook
+                        <div class="ui  massive primary button">
+                          <i class="twitter icon"></i>Primary
                         </div>
-                        <div class="ui twitter massive button">
-                          <i class="twitter icon"></i>Twitter
-                        </div>
-                        <div class="ui google plus massive button">
-                          <i class="google plus icon"></i>Google Plus
+                        <div class="ui  massive  secondary button">
+                          <i class="google plus icon"></i>Secondary
                         </div>
                         <div class="ui hidden divider"></div>
                         <div class="ui buttons massive conditional">
@@ -292,7 +293,7 @@
                           <div class="ui button"><i class="format-align-justify icon"></i></div>
                         </div>
                         <div class="ui hidden divider"></div>
-                        <div class="ui buttons">
+                        <div class="ui buttons fluid">
                           <div class="ui blue button">Blue</div>
                           <div class="ui red button">Red</div>
                           <div class="ui teal button">Teal</div>
@@ -326,7 +327,7 @@
                           <div class="ui button"><i class="format-align-right icon"></i></div>
                           <div class="ui button"><i class="format-align-justify icon"></i></div>
                         </div>
-                        <div class="ui vertical buttons small">
+                        <div class="ui vertical buttons">
                           <div class="ui blue button">Blue</div>
                           <div class="ui red button">Red</div>
                           <div class="ui teal button">Teal</div>
@@ -5892,9 +5893,6 @@
           </div>
         </bonaparte-content>
       </bonaparte-scroll>
-      <cornerstone-bonaparte target="#cornerstoneContent" target-class="open" toggle="true" action="click" class="ui button icon">
-        <i class="extension icon left"></i>
-      </cornerstone-bonaparte>
     </bonaparte-toolbar>
   </body>
 </html>

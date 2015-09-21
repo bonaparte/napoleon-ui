@@ -1,0 +1,620 @@
+@import "./variables.less";
+
+.ui.button,
+button.ui {
+
+  & {
+    color:@color-interactive;
+    background-color:@color-light-1;
+    outline:1px solid @color-light-3;
+    position:relative;
+    display:inline-block;
+    margin:0.5rem 0rem;
+    vertical-align: middle; /* "baseline" does not align with line grid */  
+    cursor:pointer;
+    user-select: none;
+    text-align:center;
+  }
+  
+  & + & {
+    margin-left:1rem;
+  }
+
+  &:hover,
+  &:focus {
+    background-color:darken(@color-light-1, 2);
+  }
+
+  &:active {
+    background-color:darken(@color-light-1, 5);
+  }
+
+
+
+  &.dark {
+    background-color:@color-dark-2;
+    color:@color-interactive-light;
+  }
+
+  &.dark:hover,
+  &.dark:focus {
+    background-color:darken(@color-dark-2, 10);
+  }
+
+  &.dark:active {
+    background-color:lighten(@color-dark-2, 7);
+  }
+
+  &.monochrome {
+    color:@color-text-dark;
+
+    &.dark {
+      color:@color-text-light;
+    }
+    &.inverted {
+      &:extend(.ui.button.dark all, .ui.button.monochrome.dark all);
+    }
+
+  }
+
+
+  &.transparent {
+    background-color: transparent;
+    outline:0px;
+  }
+  
+  &.transparent:hover,
+  &.transparent:focus {
+    outline-bottom:1px solid @color-interactive !important;
+  }
+
+  &.primary {
+    background-color: @color-interactive;
+    color:@color-light-1;
+  }
+
+  &.primary:hover,
+  &.primary:focus {
+    background-color:lighten(@color-interactive,4%);
+  }
+
+  &.primary:active {
+    background-color:darken(@color-interactive,2%);
+  }
+
+  &.secondary {
+    background-color: @color-active;
+    color:@color-light-1;
+  }  
+  &.secondary:hover, 
+  &.secondary:focus {
+    background-color:lighten(@color-active,4%);
+  }
+
+  &.secondary:active {
+    background-color:darken(@color-active,2%);
+  }
+
+  &.fluid {
+    display:block;
+    text-align:center;
+  }
+
+  &.fluid + &.fluid {
+      margin:0.5rem 0;
+  }
+
+  &.icon {
+    text-align:center;
+
+    > i.icon {
+      margin:0px;
+    }  
+  }
+
+  &.labeled.icon {
+    > i.icon {
+      position:absolute;
+      left:0px;
+      right:auto;
+    }
+  }
+
+  &.right.labeled.icon {
+    > i.icon {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  > i.icon {
+    height:auto;
+    margin:0 1rem 0 0;
+    opacity:1;
+  }  
+  > i.icon.right {
+    margin:0 0 0 1rem;
+  }
+
+  /*-------------------
+         Animated
+  --------------------*/
+
+  &.animated {
+    position: relative;
+    overflow: hidden;
+
+    .content {
+      will-change: transform, opacity;
+    }
+    .visible.content,
+    .hidden.content {
+      transition: right 0.3s ease;
+      top: 50%;
+      left: auto;
+      right: -100%;
+      text-align:center;
+    }
+
+    .hidden.content {
+      margin:0px;
+      position: absolute;
+      width: 100%;
+    }
+
+    .visible.content {
+      left: auto;
+      right: 0%;
+      position: relative;
+    }
+
+    &:focus .visible.content,
+    &:hover .visible.content {
+      left: auto;
+      right: 200%;
+    }
+
+    &:focus .hidden.content,
+    &:hover .hidden.content {
+      left: auto;
+      right: 0%;
+    }
+
+    &.vertical .visible.content,
+    &.vertical .hidden.content {
+      transition: top 0.3s ease, transform 0.3s ease;
+    }
+
+    &.vertical .visible.content {
+      transform: translateY(0%);
+      right: auto;
+    }
+    &.vertical .hidden.content {
+      top: -50%;
+      left: 0%;
+      right: auto;
+    }
+
+    &.vertical:focus .visible.content,
+    &.vertical:hover .visible.content {
+      transform: translateY(200%);
+      right: auto;
+    }
+
+    &.vertical:focus .hidden.content,
+    &.vertical:hover .hidden.content {
+      top: 50%;
+      right: auto;
+    }
+
+    &.fade .visible.content,
+    &.fade .hidden.content {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    &.fade .visible.content {
+      left: auto;
+      right: auto;
+      opacity: 1;
+      transform: scale(1);
+    }
+    &.fade .hidden.content {
+      opacity: 0;
+      left: 0%;
+      right: auto;
+      transform: scale(1.5);
+    }
+    &.fade:focus .visible.content,
+    &.fade:hover .visible.content {
+      left: auto;
+      right: auto;
+      opacity: 0;
+      transform: scale(0.75);
+    }
+    &.fade:focus .hidden.content,
+    &.fade:hover .hidden.content {
+      left: 0%;
+      right: auto;
+      opacity: 1;
+      transform: scale(1);
+    }
+
+  }
+
+  .buttonSizes();
+}
+
+.ui.buttons {
+
+  & {
+    display: inline-flex;
+    flex-direction: row;
+    padding:0;
+    margin:0.5rem 0rem;
+    vertical-align: middle; /* "baseline" does not align with line grid */  
+
+
+    .ui.button,
+    button.ui {
+      display:inline-block;
+      flex: 1 0 auto;
+      margin:0;
+    }
+  }
+
+  &.vertical {
+      display: inline-flex;
+      flex-direction: column;
+
+      .ui.button,
+      button.ui {
+        display:block;
+      }
+  }
+
+
+  & + & {
+    margin-left:1rem;
+  }
+
+  &.fluid {
+    display:flex;
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.fluid all);   
+    }
+  }
+
+  &.icon {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.icon all);   
+    }
+  }
+
+  &.labeled.icon {
+
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.labeled.icon all);   
+    }
+
+  } 
+  &.right.labeled.icon {
+
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.right.labeled.icon all);   
+    }
+
+
+  }
+  &.conditional {
+
+    .or {
+      position: relative;
+      z-index:1000;
+    }
+    .or:before {
+      position: absolute;
+      text-align: center;
+
+      content: "or";
+      top: 50%;
+      left: 50%;
+
+    
+      color:@color-text-light;
+
+      background-color:@color-interactive;
+    }
+    .or[data-text]:before {
+      content: attr(data-text);
+    }
+
+  }
+
+
+    /* Fluid Or */
+  &.fluid .or {
+    width: 0em !important;
+  }
+  &.fluid .or:after {
+    display: none;
+  }
+
+  .groupSizes(); 
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+
+.groupSizes(
+  @overrides:{.variables(){}},
+  @iconSize : 4rem,
+  @fontSize : @h5,
+  @orLineHeight : 3rem,
+  @orPadding : 2rem
+){  
+
+  @overrides();
+  .variables();
+
+
+  &.conditional {
+
+    button.ui,
+    .ui.button {
+
+      &:first-child,
+      &:first-child {
+        padding-right:@orPadding;
+      }
+
+      &:not(:first-child):not(:last-child),
+      &:not(:first-child):not(:last-child) {
+        padding-left:@orPadding;
+        padding-right:@orPadding;
+      }
+  
+      &:last-child,
+      &:last-child {
+        padding-left:@orPadding;
+      }
+    }
+
+    .or {
+      height:@iconSize;
+      width: @orLineHeight/4;
+    }
+    .or:before {      
+      border-radius: @orLineHeight/2;
+      height:@orLineHeight;
+      width:@orLineHeight;
+      margin-left:-@orLineHeight/2;
+      margin-top:-@orLineHeight/2;
+      line-height:@orLineHeight;
+      font-size:@fontSize;
+    }
+  }
+
+}
+
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+
+.buttonSizes(
+  @overrides:{.variables(){}},
+  @fontSize:  @mediumSize,
+  @lineHeight: 2rem,
+  @padding : 1.0833333rem 1rem 0.9188888rem 1rem,
+  @iconSize : 4rem
+){  
+
+  @overrides();
+  .variables();
+
+  &, .hidden.content {
+    font-size:@fontSize;
+    line-height:@lineHeight;
+    padding:@padding;
+    min-width:@iconSize;  
+    min-height:@iconSize;
+  }
+
+
+  &.animated {
+   .hidden.content {
+     position:absolute;
+     font-size:1em;
+     height:@iconSize;
+     margin-top:-@iconSize/2;
+   }
+  }
+
+
+  &.labeled.icon {
+    padding-left:@iconSize+1em;
+    padding-right:1rem;
+
+    > .icon {
+      width:@iconSize;
+    }
+  }
+
+  &.right.labeled.icon {
+    padding-left:1rem;
+    padding-right:@iconSize+1em;
+  }
+}
+
+
+
+/*--------------
+     Toggle
+---------------*/
+
+/* Toggle (Modifies active state to give affordances) */
+/*.ui.toggle.buttons .active.button,
+.ui.buttons .button.toggle.active,
+.ui.button.toggle.active {
+  background-color: @color-light-1;
+  box-shadow: none;
+  text-shadow: none;
+  color: @color-active;
+}
+.ui.button.toggle.active:hover {
+  background-color: transparent;
+  text-shadow: none;
+  color: @color-active;
+}
+
+*/
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+
+@miniVariables : {
+  .variables(){
+
+    @iconSize : 2rem;
+    @fontSize:  @h6;
+    @lineHeight: @h6Lineheight;
+    @padding : 0.25rem 1rem;
+    @orPadding : 1.5rem;
+    @orLineHeight : @h6Lineheight;
+
+  }
+};
+
+@smallVariables : {
+  .variables(){
+
+    @iconSize : 3rem;
+    @fontSize:  @smallSize;
+    @lineHeight: @h5Lineheight;
+    @padding : 0.5rem 1rem;
+    @orPadding : 1.5rem;
+    @orLineHeight : @h5Lineheight;
+
+  }
+};
+
+
+@largeVariables : {
+  .variables(){
+
+    @iconSize : 5rem;
+    @fontSize:  @largeSize;
+    @lineHeight: @h5Lineheight;
+    @padding : 1.5rem 1rem;
+    @orPadding : 2.5rem;
+    @orLineHeight : 3.5rem;
+
+  }
+};
+
+
+@hugeVariables : {
+  .variables(){
+
+    @iconSize : 6rem;
+    @fontSize:  @hugeSize;
+    @lineHeight: @h2Lineheight;
+    @padding : 0.5rem 1rem;
+    @orPadding : 3rem;
+    @orLineHeight : 4rem;
+
+  }
+};
+
+
+/*////////////////////////////////////////////////////////////////////*/
+
+
+bonaparte-toolbar.mini > *:first-child button.ui,
+bonaparte-toolbar.mini > *:first-child .ui.button,
+button.ui.mini,
+.ui.mini.buttons .button, 
+.ui.mini.button,
+bonaparte-toolbar.tiny > *:first-child button.ui,
+bonaparte-toolbar.tiny > *:first-child .ui.button,
+button.ui.tiny,
+.ui.tiny.buttons .button, 
+.ui.tiny.button {
+  .buttonSizes(@miniVariables);
+}
+
+bonaparte-toolbar.tiny > *:first-child .ui.buttons,
+bonaparte-toolbar.mini > *:first-child .ui.buttons,
+.ui.tiny.buttons,
+.ui.mini.buttons {
+  .groupSizes(@miniVariables);
+}
+
+
+bonaparte-toolbar.small > *:first-child button.ui,
+bonaparte-toolbar.small > *:first-child .ui.button,
+button.ui.small,
+.ui.small.buttons .button, 
+.ui.small.button {
+
+  .buttonSizes(@smallVariables);
+}
+
+bonaparte-toolbar.small > *:first-child .ui.buttons,
+.ui.small.buttons {
+  .groupSizes(@smallVariables);
+}
+
+
+bonaparte-toolbar.large > *:first-child button.ui,
+bonaparte-toolbar.large > *:first-child .ui.button,
+button.ui.large,
+.ui.large.buttons .button, 
+.ui.large.button,
+bonaparte-toolbar.big > *:first-child button.ui,
+bonaparte-toolbar.big > *:first-child .ui.button,
+button.ui.big,
+.ui.big.buttons .button, 
+.ui.big.button {
+
+  .buttonSizes(@largeVariables);
+}
+
+bonaparte-toolbar.large > *:first-child .ui.buttons,
+bonaparte-toolbar.big > *:first-child .ui.buttons,
+.ui.large.buttons,
+.ui.big.buttons {
+  .groupSizes(@largeVariables);
+}
+
+
+bonaparte-toolbar.huge > *:first-child button.ui,
+bonaparte-toolbar.huge > *:first-child .ui.button,
+button.ui.huge,
+.ui.huge.buttons .button, 
+.ui.huge.button,
+bonaparte-toolbar.massive > *:first-child button.ui,
+bonaparte-toolbar.massive > *:first-child .ui.button,
+button.ui.massive,
+.ui.massive.buttons .button, 
+.ui.massive.button{
+
+  .buttonSizes(@hugeVariables);
+}
+
+bonaparte-toolbar.huge > *:first-child .ui.buttons,
+bonaparte-toolbar.massive > *:first-child .ui.buttons,
+.ui.huge.buttons,
+.ui.massive.buttons {
+  .groupSizes(@hugeVariables);
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+
