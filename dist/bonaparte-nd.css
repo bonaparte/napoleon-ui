@@ -2631,6 +2631,10 @@ button.ui.monochrome.dark,
 button.ui.monochrome.inverted {
   color: #ffffff;
 }
+.ui.button.marginless,
+button.ui.marginless {
+  margin: 0;
+}
 .ui.button.transparent,
 button.ui.transparent {
   background-color: transparent;
