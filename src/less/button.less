@@ -2,100 +2,37 @@
 
 .ui.button,
 button.ui {
+  /***********************
+    STRUCTURE
+  ************************/
+
 
   & {
-    color:@color-interactive;
-    background-color:@color-light-1;
-    outline:1px solid @color-light-3;
     position:relative;
     display:inline-block;
     margin:0.5rem 0rem;
-    vertical-align: middle; /* "baseline" does not align with line grid */  
+    vertical-align: top; /* "baseline" does not align with line grid and "middle" doesn't fit in toolbar */  
     cursor:pointer;
     user-select: none;
     text-align:center;
   }
   
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid;
+  }  
+
   & + & {
     margin-left:1rem;
   }
 
-  &:hover,
-  &:focus {
-    background-color:darken(@color-light-1, 2);
-  }
-
-  &:active {
-    background-color:darken(@color-light-1, 5);
-  }
-
-
-
-  &.dark {
-    background-color:@color-dark-2;
-    color:@color-interactive-light;
-  }
-
-  &.dark:hover,
-  &.dark:focus {
-    background-color:darken(@color-dark-2, 10);
-  }
-
-  &.dark:active {
-    background-color:lighten(@color-dark-2, 7);
-  }
-
-  &.monochrome {
-    color:@color-text-dark;
-
-    &.dark {
-      color:@color-text-light;
-    }
-    &.inverted {
-      &:extend(.ui.button.dark all, .ui.button.monochrome.dark all);
-    }
-
-  }
-
   &.marginless {
     margin:0;
-  }
-
-  &.transparent {
-    background-color: transparent;
-    outline:0px;
-  }
-  
-  &.transparent:hover,
-  &.transparent:focus {
-    outline-bottom:1px solid @color-interactive !important;
-  }
-
-  &.primary {
-    background-color: @color-interactive;
-    color:@color-light-1;
-  }
-
-  &.primary:hover,
-  &.primary:focus {
-    background-color:lighten(@color-interactive,4%);
-  }
-
-  &.primary:active {
-    background-color:darken(@color-interactive,2%);
-  }
-
-  &.secondary {
-    background-color: @color-active;
-    color:@color-light-1;
-  }  
-  &.secondary:hover, 
-  &.secondary:focus {
-    background-color:lighten(@color-active,4%);
-  }
-
-  &.secondary:active {
-    background-color:darken(@color-active,2%);
   }
 
   &.fluid {
@@ -116,6 +53,10 @@ button.ui {
   }
 
   &.labeled.icon {
+    &.fluid {
+      text-align:left;
+    }
+
     > i.icon {
       position:absolute;
       left:0px;
@@ -124,6 +65,10 @@ button.ui {
   }
 
   &.right.labeled.icon {
+    &.fluid {
+      text-align:right;
+    }
+
     > i.icon {
       left: auto;
       right: 0;
@@ -133,7 +78,6 @@ button.ui {
   > i.icon {
     height:auto;
     margin:0 1rem 0 0;
-    opacity:1;
   }  
   > i.icon.right {
     margin:0 0 0 1rem;
@@ -245,6 +189,50 @@ button.ui {
   }
 
   .buttonSizes();
+  .buttonColors();
+
+
+
+  &.active {
+
+    .buttonColors({
+      .variables(){
+
+        @color_bg : @color-active;
+        @light_bg : @color-light-1;
+        @dark_bg : @color-dark-3;
+        @color_text : @color-active;
+        @light_text : @color-text-light;
+        @dark_text : @color-text-dark;
+
+      }
+    });
+
+
+
+  }
+
+
+
+  &.disabled {
+
+    .buttonColors({
+      .variables(){
+
+        @color_bg : @color-dark-5;
+        @light_bg : @color-light-4;
+        @dark_bg : @color-dark-5;
+        @color_text : @color-text-medium-dark;
+        @light_text : @color-text-medium-light;
+        @dark_text : @color-text-medium-dark;
+
+      }
+    });
+
+    pointer-events: none;
+    cursor:disabled;
+  }
+
 }
 
 .ui.buttons {
@@ -349,6 +337,166 @@ button.ui {
   .groupSizes(); 
 }
 
+
+.buttonColors(
+  @overrides:{.variables(){}},
+  @color_bg : @color-interactive,
+  @light_bg : @color-light-1,
+  @dark_bg : @color-dark-3,
+  @color_text : @color-interactive,
+  @light_text : @color-text-light,
+  @dark_text : @color-text-dark,
+){
+
+  @overrides();
+  .variables();
+
+  /***********************
+    COLORS VARIATIONS
+  ************************/
+
+  & {
+    & {
+      color:@color_text;
+      background-color:@light_bg;
+    }
+    
+    &::after {
+      border-color:darken(@light_bg, 2);
+    }
+
+    &:hover,
+    &:focus {
+      background-color:darken(@light_bg, 2);
+      color:lighten(@color_text, 5);
+    }
+
+    &:active {
+      background-color:darken(@light_bg,5);
+    }
+  }
+
+
+  &.inverted {
+    & {
+      background-color: @color_bg;
+      color:@light_text;
+    }
+    &::after {
+      border-color:lighten(@color_bg, 2);
+    }
+
+    &:hover,
+    &:focus {
+      background-color:lighten(@color_bg, 5);
+    }
+
+    &:active {
+      background-color:multiply(@color_bg, #eee);
+    }
+  }
+
+  &.transparent {
+    & {
+      background-color:transparent;
+    }
+    &::after {
+      border:0;
+    }
+
+    &:hover,
+    &:focus {
+      color:lighten(@color_text, 10);
+    }
+
+    &:active {
+      color:darken(@color_text, 2);
+    }
+  }
+
+  &.monochrome {
+    & {
+      color:lighten(@dark_text, 10);
+    }
+    &:hover,
+    &:focus {
+      color:darken(@dark_text, 20);
+    }
+    &:active {
+      color:darken(@dark_text, 20);
+    }
+  }
+
+  &.inverted.transparent {
+    & {
+      background:transparent;
+    }
+  }
+
+  &.monochrome.inverted {
+    & {
+      color:darken(@light_text, 5);
+      background-color:@dark_bg;
+    }
+    &::after {
+      border-color:lighten(@dark_bg, 7);
+    }
+
+    &:hover,
+    &:focus {
+      color:lighten(@light_text, 20);
+      background-color:lighten(@dark_bg, 7);
+    }
+
+    &:active {
+      color:lighten(@light_text, 20);
+      background-color:lighten(@dark_bg, 2);
+    }
+  }
+
+  &.monochrome.transparent {
+    &:hover,
+    &:focus {
+      &::after {
+        border:0;
+        border-bottom:1px solid darken(@dark_text, 20);
+      }
+    }   
+
+    &:active {
+      color:lighten(darken(@dark_text, 20),50);
+      &::after {
+        border-color:lighten(darken(@dark_text, 20),50);
+      }
+    }
+
+  }
+
+  &.monochrome.transparent.inverted {
+    & {
+      color:@light_text;
+      background-color:transparent;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        border-color:lighten(@light_text, 20);
+      }
+    }
+
+    &:active {
+      color:darken(lighten(@light_text, 20),10);
+      
+      &::after {
+         border-color:darken(lighten(@light_text, 20),10);
+      }
+    }
+  }       
+
+
+}
+
 /*////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
 
@@ -451,6 +599,13 @@ button.ui {
   &.right.labeled.icon {
     padding-left:1rem;
     padding-right:@iconSize+1em;
+  }
+
+  &.transparent::after {
+    bottom:-2px;
+    margin:@padding;
+    margin-right:1rem;
+    margin-left:1rem;
   }
 }
 

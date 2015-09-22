@@ -26,19 +26,23 @@
       });
       
     </script>
-
+    <style>
+      .article {
+        background-color: #efefef;
+      }
+    </style>
   </head>
   <body class="">
     <bonaparte-toolbar id="toolbar" data-sidebar="top" data-cornerstone="top left" open="false">  
       <aside class="dark">
         <div>
-          <div class="header">Bonaparte</div>
+          <div class="header">Bonaparte</div><div class="ui button transparent marginless"><i class="shopping-cart icon left"></i>Add to Cart</div>
         </div>
         <div>
-          <div class="ui primary small button transparent"><i class="shopping-cart icon left"></i>Add to Cart</div>
+          <div class="ui primary small button monochrome"><i class="shopping-cart icon left"></i>Add to Cart</div>
         </div>        
         <div>
-          <div class="ui button marginless transparent">
+          <div class="ui button marginless transparent monochrome inverted">
             View
           </div>
         </div>
@@ -74,10 +78,10 @@
                         <a href="/elements/button.html">Button</a>
                       </h4>
                       <div class="button demo">
-                        <div class="ui mini button transparent">
+                        <div class="ui mini button transparent active">
                           View
                         </div>
-                        <div class="ui mini button transparent"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui mini button transparent disabled"><i class="shopping-cart icon left"></i>Add to Cart</div>
                         <div class="ui mini button transparent">Save for Later <i class="save icon right"></i></div>
                         <div class="ui labeled icon mini button transparent">
                           <i class="star icon left transparent"></i>
@@ -88,12 +92,32 @@
                           Rate
                         </div>
                         <div class="ui basic button mini  transparent">Basic</div>
-                        <div class="ui icon button mini transparent"><i class="format-align-left icon"></i></div>
-                        <div class="ui hidden divider"></div>
-                        <div class="ui small button monochrome">
+                        <div class="ui icon button mini transparent active"><i class="format-align-left icon"></i></div>
+                       
+                        <div class="ui hidden divider"></div>  <!-- ////////////////////////////////////////////// -->
+                       
+                        <div class="ui mini button transparent inverted active">
                           View
                         </div>
-                        <div class="ui small button monochrome"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui mini button transparent inverted disabled"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui mini button transparent inverted">Save for Later <i class="save icon right"></i></div>
+                        <div class="ui labeled icon mini button transparent inverted">
+                          <i class="star icon left transparent inverted"></i>
+                          Rate
+                        </div>
+                        <div class="ui right labeled icon mini button transparent inverted">
+                          <i class="star icon right"></i>
+                          Rate
+                        </div>
+                        <div class="ui basic button mini  transparent inverted">Basic</div>
+                        <div class="ui icon button mini transparent inverted active"><i class="format-align-left icon"></i></div>
+                        
+                        <div class="ui hidden divider"></div>  <!-- ////////////////////////////////////////////// -->
+
+                        <div class="ui small button monochrome active">
+                          View
+                        </div>
+                        <div class="ui small button monochrome disabled"><i class="shopping-cart icon left"></i>Add to Cart</div>
                         <div class="ui small button monochrome">Save for Later <i class="save icon right"></i></div>
                         <div class="ui labeled icon small button monochrome">
                           <i class="star icon left monochrome"></i>
@@ -104,13 +128,33 @@
                           Rate
                         </div>
                         <div class="ui basic button small monochrome">Basic</div>
-                        <div class="ui icon button small monochrome"><i class="format-align-left icon"></i></div>
-                        <div class="ui hidden divider"></div>
-                        <div class="ui button">
+                        <div class="ui icon button small monochrome active"><i class="format-align-left icon"></i></div>
+                        
+                        <div class="ui hidden divider"></div>  <!-- ////////////////////////////////////////////// -->
+
+                        <div class="ui small button monochrome inverted active">
                           View
                         </div>
-                        <div class="ui  button"><i class="shopping-cart icon left"></i>Add to Cart</div>
-                        <div class="ui  button">Save for Later <i class="save icon right"></i></div>
+                        <div class="ui small button monochrome inverted disabled"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui small button monochrome inverted">Save for Later <i class="save icon right"></i></div>
+                        <div class="ui labeled icon small button monochrome inverted">
+                          <i class="star icon left monochrome"></i>
+                          Rate
+                        </div>
+                        <div class="ui right labeled icon small button monochrome inverted">
+                          <i class="star icon right"></i>
+                          Rate
+                        </div>
+                        <div class="ui basic button small monochrome inverted">Basic</div>
+                        <div class="ui icon button small monochrome inverted active"><i class="format-align-left icon"></i></div>
+                       
+                        <div class="ui hidden divider"></div>  <!-- ////////////////////////////////////////////// -->
+                       
+                        <div class="ui button active">
+                          View
+                        </div>
+                        <div class="ui button disabled"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui button">Save for Later <i class="save icon right"></i></div>
                         <div class="ui labeled icon  button">
                           <i class="star icon left"></i>
                           Rate
@@ -120,28 +164,86 @@
                           Rate
                         </div>
                         <div class="ui basic button  ">Basic</div>
-                        <div class="ui icon button"><i class="format-align-left icon"></i></div>
-                        <div class="ui hidden divider"></div>
-                        <div class="ui large button monochrome inverted">
+                        <div class="ui icon button active"><i class="format-align-left icon"></i></div>
+                       
+                        <div class="ui hidden divider"></div>  <!-- ////////////////////////////////////////////// -->
+                       
+                        <div class="ui button inverted active">
                           View
                         </div>
-                        <div class="ui large button monochrome inverted"><i class="shopping-cart icon left"></i>Add to Cart</div>
-                        <div class="ui large button monochrome inverted">Save for Later <i class="save icon right"></i></div>
-                        <div class="ui labeled icon large button monochrome inverted">
+                        <div class="ui  button inverted disabled"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui  button inverted">Save for Later <i class="save icon right"></i></div>
+                        <div class="ui labeled icon  button inverted">
                           <i class="star icon left"></i>
                           Rate
                         </div>
-                        <div class="ui right labeled icon large button monochrome inverted">
+                        <div class="ui right labeled icon button inverted">
                           <i class="star icon right"></i>
                           Rate
                         </div>
-                        <div class="ui basic button large  monochrome inverted">Basic</div>
-                        <div class="ui icon button large monochrome inverted"><i class="format-align-left icon"></i></div>
-                        <div class="ui hidden divider"></div>
-                        <div class="ui huge button dark">
+                        <div class="ui basic button inverted">Basic</div>
+                        <div class="ui icon button inverted active"><i class="format-align-left icon"></i></div>
+                       
+                        <div class="ui hidden divider"></div>  <!-- ////////////////////////////////////////////// -->
+                       
+                        <div class="ui large button monochrome transparent active">
                           View
                         </div>
-                        <div class="ui huge button dark"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui large button monochrome transparent disabled"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui large button monochrome transparent">Save for Later <i class="save icon right"></i></div>
+                        <div class="ui labeled icon large button monochrome transparent">
+                          <i class="star icon left"></i>
+                          Rate
+                        </div>
+                        <div class="ui right labeled icon large button monochrome transparent">
+                          <i class="star icon right"></i>
+                          Rate
+                        </div>
+                        <div class="ui basic button large  monochrome transparent">Basic</div>
+                        <div class="ui icon button large monochrome transparent active"><i class="format-align-left icon"></i></div>
+                       
+                        <div class="ui hidden divider"></div>  <!-- ////////////////////////////////////////////// -->
+                       
+                        <div class="ui large button monochrome transparent inverted active">
+                          View
+                        </div>
+                        <div class="ui large button monochrome transparent inverted disabled"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui large button monochrome transparent inverted">Save for Later <i class="save icon right"></i></div>
+                        <div class="ui labeled icon large button monochrome transparent inverted">
+                          <i class="star icon left"></i>
+                          Rate
+                        </div>
+                        <div class="ui right labeled icon large button monochrome transparent inverted">
+                          <i class="star icon right"></i>
+                          Rate
+                        </div>
+                        <div class="ui basic button large  monochrome transparent inverted">Basic</div>
+                        <div class="ui icon button large monochrome transparent inverted active"><i class="format-align-left icon"></i></div>
+                       
+                        <div class="ui hidden divider"></div>  <!-- ////////////////////////////////////////////// -->
+                       
+                        <div class="ui mini button monochrome transparent active">
+                          View
+                        </div>
+                        <div class="ui mini button monochrome transparent disabled"><i class="shopping-cart icon left"></i>Add to Cart</div>
+                        <div class="ui mini button monochrome transparent ">Save for Later <i class="save icon right"></i></div>
+                        <div class="ui labeled icon mini button monochrome transparent ">
+                          <i class="star icon left"></i>
+                          Rate
+                        </div>
+                        <div class="ui right labeled icon mini button monochrome transparent ">
+                          <i class="star icon right"></i>
+                          Rate
+                        </div>
+                        <div class="ui basic button mini  monochrome transparent ">Basic</div>
+                        <div class="ui icon button mini monochrome transparent  active"><i class="format-align-left icon"></i></div>
+                       
+                        <div class="ui hidden divider"></div>  <!-- ////////////////////////////////////////////// -->
+                       
+                        <div class="ui huge button dark active">
+                          View
+                        </div>
+                        <div class="ui huge button dark disabled"><i class="shopping-cart icon left"></i>Add to Cart</div>
                         <div class="ui huge button dark">Save for Later <i class="save icon right"></i></div>
                         <div class="ui labeled icon huge button dark">
                           <i class="star icon left"></i>
@@ -152,7 +254,7 @@
                           Rate
                         </div>
                         <div class="ui basic button huge  dark">Basic</div>
-                        <div class="ui icon button huge dark"><i class="format-align-left icon"></i></div>
+                        <div class="ui icon button huge dark active"><i class="format-align-left icon"></i></div>
                         <div class="ui divider"></div>
                         <div class="ui animated massive button">
                           <div class="visible content">Horizontal</div>
@@ -185,10 +287,10 @@
                           </div>
                         </div>
                         <div class="ui hidden divider"></div>
-                        <div class="ui fluid google plus massive button">
+                        <div class="ui fluid google plus massive labled icon button">
                           <i class="google plus icon"></i>Google Plus
                         </div>
-                        <div class="ui fluid facebook large button">
+                        <div class="ui fluid facebook large labled icon button right">
                           <i class="facebook icon"></i>Facebook
                         </div>
                         <div class="ui fluid google plus  button">
