@@ -2446,10 +2446,8 @@ button.ui.right.labeled.icon,
 }
 .ui.button.transparent::after,
 button.ui.transparent::after {
-  bottom: -2px;
-  margin: 1.0833333rem 1rem 0.9188888rem 1rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  border: 0;
+  border-bottom: 0.25rem solid transparent;
 }
 .ui.button::after,
 button.ui::after {
@@ -2491,7 +2489,7 @@ button.ui.transparent {
 }
 .ui.button.transparent::after,
 button.ui.transparent::after {
-  border: 0;
+  border-color: transparent;
 }
 .ui.button.transparent:hover,
 button.ui.transparent:hover,
@@ -2542,12 +2540,17 @@ button.ui.monochrome.inverted:active {
   color: #ffffff;
   background-color: #2b2b2b;
 }
+.ui.button.monochrome.transparent::after,
+button.ui.monochrome.transparent::after {
+  border-color: transparent;
+}
+.ui.button.monochrome.transparent.active::after,
+button.ui.monochrome.transparent.active::after,
 .ui.button.monochrome.transparent:hover::after,
 button.ui.monochrome.transparent:hover::after,
 .ui.button.monochrome.transparent:focus::after,
 button.ui.monochrome.transparent:focus::after {
-  border: 0;
-  border-bottom: 1px solid #000000;
+  border-color: #000000;
 }
 .ui.button.monochrome.transparent:active,
 button.ui.monochrome.transparent:active {
@@ -2562,6 +2565,8 @@ button.ui.monochrome.transparent.inverted {
   color: #ffffff;
   background-color: transparent;
 }
+.ui.button.monochrome.transparent.inverted.active::after,
+button.ui.monochrome.transparent.inverted.active::after,
 .ui.button.monochrome.transparent.inverted:hover::after,
 button.ui.monochrome.transparent.inverted:hover::after,
 .ui.button.monochrome.transparent.inverted:focus::after,
@@ -2624,7 +2629,7 @@ button.ui.active.transparent {
 }
 .ui.button.active.transparent::after,
 button.ui.active.transparent::after {
-  border: 0;
+  border-color: transparent;
 }
 .ui.button.active.transparent:hover,
 button.ui.active.transparent:hover,
@@ -2675,12 +2680,17 @@ button.ui.active.monochrome.inverted:active {
   color: #ffffff;
   background-color: #2b2b2b;
 }
+.ui.button.active.monochrome.transparent::after,
+button.ui.active.monochrome.transparent::after {
+  border-color: transparent;
+}
+.ui.button.active.monochrome.transparent.active::after,
+button.ui.active.monochrome.transparent.active::after,
 .ui.button.active.monochrome.transparent:hover::after,
 button.ui.active.monochrome.transparent:hover::after,
 .ui.button.active.monochrome.transparent:focus::after,
 button.ui.active.monochrome.transparent:focus::after {
-  border: 0;
-  border-bottom: 1px solid #000000;
+  border-color: #000000;
 }
 .ui.button.active.monochrome.transparent:active,
 button.ui.active.monochrome.transparent:active {
@@ -2695,6 +2705,8 @@ button.ui.active.monochrome.transparent.inverted {
   color: #ffffff;
   background-color: transparent;
 }
+.ui.button.active.monochrome.transparent.inverted.active::after,
+button.ui.active.monochrome.transparent.inverted.active::after,
 .ui.button.active.monochrome.transparent.inverted:hover::after,
 button.ui.active.monochrome.transparent.inverted:hover::after,
 .ui.button.active.monochrome.transparent.inverted:focus::after,
@@ -2759,7 +2771,7 @@ button.ui.disabled.transparent {
 }
 .ui.button.disabled.transparent::after,
 button.ui.disabled.transparent::after {
-  border: 0;
+  border-color: transparent;
 }
 .ui.button.disabled.transparent:hover,
 button.ui.disabled.transparent:hover,
@@ -2810,12 +2822,17 @@ button.ui.disabled.monochrome.inverted:active {
   color: #cccccc;
   background-color: #696969;
 }
+.ui.button.disabled.monochrome.transparent::after,
+button.ui.disabled.monochrome.transparent::after {
+  border-color: transparent;
+}
+.ui.button.disabled.monochrome.transparent.active::after,
+button.ui.disabled.monochrome.transparent.active::after,
 .ui.button.disabled.monochrome.transparent:hover::after,
 button.ui.disabled.monochrome.transparent:hover::after,
 .ui.button.disabled.monochrome.transparent:focus::after,
 button.ui.disabled.monochrome.transparent:focus::after {
-  border: 0;
-  border-bottom: 1px solid #333333;
+  border-color: #333333;
 }
 .ui.button.disabled.monochrome.transparent:active,
 button.ui.disabled.monochrome.transparent:active {
@@ -2830,6 +2847,8 @@ button.ui.disabled.monochrome.transparent.inverted {
   color: #999999;
   background-color: transparent;
 }
+.ui.button.disabled.monochrome.transparent.inverted.active::after,
+button.ui.disabled.monochrome.transparent.inverted.active::after,
 .ui.button.disabled.monochrome.transparent.inverted:hover::after,
 button.ui.disabled.monochrome.transparent.inverted:hover::after,
 .ui.button.disabled.monochrome.transparent.inverted:focus::after,
@@ -3075,10 +3094,8 @@ bonaparte-toolbar.tiny > *:first-child .ui.button.transparent::after,
 button.ui.tiny.transparent::after,
 .ui.tiny.buttons .button.transparent::after,
 .ui.tiny.button.transparent::after {
-  bottom: -2px;
-  margin: 0.25rem 1rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  border: 0;
+  border-bottom: 1px solid transparent;
 }
 bonaparte-toolbar.tiny > *:first-child .ui.buttons.conditional button.ui:first-child,
 bonaparte-toolbar.mini > *:first-child .ui.buttons.conditional button.ui:first-child,
@@ -3214,10 +3231,8 @@ bonaparte-toolbar.small > *:first-child .ui.button.transparent::after,
 button.ui.small.transparent::after,
 .ui.small.buttons .button.transparent::after,
 .ui.small.button.transparent::after {
-  bottom: -2px;
-  margin: 0.5rem 1rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  border: 0;
+  border-bottom: 2px solid transparent;
 }
 bonaparte-toolbar.small > *:first-child .ui.buttons.conditional button.ui:first-child,
 .ui.small.buttons.conditional button.ui:first-child,
@@ -3366,10 +3381,8 @@ bonaparte-toolbar.big > *:first-child .ui.button.transparent::after,
 button.ui.big.transparent::after,
 .ui.big.buttons .button.transparent::after,
 .ui.big.button.transparent::after {
-  bottom: -2px;
-  margin: 1.5rem 1rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  border: 0;
+  border-bottom: 0.4rem solid transparent;
 }
 bonaparte-toolbar.large > *:first-child .ui.buttons.conditional button.ui:first-child,
 bonaparte-toolbar.big > *:first-child .ui.buttons.conditional button.ui:first-child,
@@ -3546,10 +3559,8 @@ bonaparte-toolbar.massive > *:first-child .ui.button.transparent::after,
 button.ui.massive.transparent::after,
 .ui.massive.buttons .button.transparent::after,
 .ui.massive.button.transparent::after {
-  bottom: -2px;
-  margin: 0.5rem 1rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  border: 0;
+  border-bottom: 0.5rem solid transparent;
 }
 bonaparte-toolbar.huge > *:first-child .ui.buttons.conditional button.ui:first-child,
 bonaparte-toolbar.massive > *:first-child .ui.buttons.conditional button.ui:first-child,

@@ -401,7 +401,7 @@ button.ui {
       background-color:transparent;
     }
     &::after {
-      border:0;
+      border-color:transparent;
     }
 
     &:hover,
@@ -431,6 +431,7 @@ button.ui {
     & {
       background:transparent;
     }
+
   }
 
   &.monochrome.inverted {
@@ -454,12 +455,18 @@ button.ui {
     }
   }
 
+
   &.monochrome.transparent {
+
+
+    &::after {
+      border-color:transparent;
+    }
+    &.active,
     &:hover,
     &:focus {
       &::after {
-        border:0;
-        border-bottom:1px solid darken(@dark_text, 20);
+        border-color:darken(@dark_text, 20);
       }
     }   
 
@@ -478,6 +485,7 @@ button.ui {
       background-color:transparent;
     }
 
+    &.active,
     &:hover,
     &:focus {
       &::after {
@@ -562,7 +570,8 @@ button.ui {
   @fontSize:  @mediumSize,
   @lineHeight: 2rem,
   @padding : 1.0833333rem 1rem 0.9188888rem 1rem,
-  @iconSize : 4rem
+  @iconSize : 4rem,
+  @hoverBorder : 0.25rem
 ){  
 
   @overrides();
@@ -602,10 +611,8 @@ button.ui {
   }
 
   &.transparent::after {
-    bottom:-2px;
-    margin:@padding;
-    margin-right:1rem;
-    margin-left:1rem;
+    border:0;
+    border-bottom:@hoverBorder solid transparent;
   }
 }
 
@@ -645,6 +652,7 @@ button.ui {
     @padding : 0.25rem 1rem;
     @orPadding : 1.5rem;
     @orLineHeight : @h6Lineheight;
+    @hoverBorder: 1px;
 
   }
 };
@@ -658,6 +666,7 @@ button.ui {
     @padding : 0.5rem 1rem;
     @orPadding : 1.5rem;
     @orLineHeight : @h5Lineheight;
+    @hoverBorder: 2px;
 
   }
 };
@@ -672,6 +681,7 @@ button.ui {
     @padding : 1.5rem 1rem;
     @orPadding : 2.5rem;
     @orLineHeight : 3.5rem;
+    @hoverBorder: 0.4rem;
 
   }
 };
@@ -686,7 +696,7 @@ button.ui {
     @padding : 0.5rem 1rem;
     @orPadding : 3rem;
     @orLineHeight : 4rem;
-
+    @hoverBorder: 0.5rem;
   }
 };
 
@@ -705,6 +715,7 @@ button.ui.tiny,
 .ui.tiny.buttons .button, 
 .ui.tiny.button {
   .buttonSizes(@miniVariables);
+
 }
 
 bonaparte-toolbar.tiny > *:first-child .ui.buttons,
@@ -742,6 +753,7 @@ button.ui.big,
 .ui.big.button {
 
   .buttonSizes(@largeVariables);
+
 }
 
 bonaparte-toolbar.large > *:first-child .ui.buttons,
@@ -764,6 +776,7 @@ button.ui.massive,
 .ui.massive.button{
 
   .buttonSizes(@hugeVariables);
+
 }
 
 bonaparte-toolbar.huge > *:first-child .ui.buttons,
