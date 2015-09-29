@@ -2175,7 +2175,6 @@ button.ui {
   display: inline-block;
   margin: 0.5rem 0rem;
   vertical-align: top;
-  /* "baseline" does not align with line grid and "middle" doesn't fit in toolbar */
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2446,8 +2445,19 @@ button.ui.right.labeled.icon,
 }
 .ui.button.transparent::after,
 button.ui.transparent::after {
-  border: 0;
-  border-bottom: 0.25rem solid transparent;
+  display: block;
+  position: relative;
+  border: 0px;
+  border-bottom: 1px solid;
+  top: -1px;
+}
+.ui.button.transparent.disabled::after,
+button.ui.transparent.disabled::after {
+  border: 0px;
+}
+.ui.button.transparent.icon:not(.labeled)::after,
+button.ui.transparent.icon:not(.labeled)::after {
+  border: 0px;
 }
 .ui.button::after,
 button.ui::after {
@@ -2458,7 +2468,7 @@ button.ui:hover,
 .ui.button:focus,
 button.ui:focus {
   background-color: #f5f5f5;
-  color: #f3b300;
+  /*color:lighten(@color_text, 5);*/
 }
 .ui.button:active,
 button.ui:active {
@@ -2486,16 +2496,14 @@ button.ui.inverted:active {
 .ui.button.transparent,
 button.ui.transparent {
   background-color: transparent;
+  /*    &:hover,
+    &:focus {
+      color:lighten(@color_text, 10);
+    }*/
 }
 .ui.button.transparent::after,
 button.ui.transparent::after {
-  border-color: transparent;
-}
-.ui.button.transparent:hover,
-button.ui.transparent:hover,
-.ui.button.transparent:focus,
-button.ui.transparent:focus {
-  color: #ffbf0d;
+  /*border-color:transparent;*/
 }
 .ui.button.transparent:active,
 button.ui.transparent:active {
@@ -2540,17 +2548,16 @@ button.ui.monochrome.inverted:active {
   color: #ffffff;
   background-color: #2b2b2b;
 }
-.ui.button.monochrome.transparent::after,
-button.ui.monochrome.transparent::after {
-  border-color: transparent;
-}
-.ui.button.monochrome.transparent.active::after,
-button.ui.monochrome.transparent.active::after,
-.ui.button.monochrome.transparent:hover::after,
-button.ui.monochrome.transparent:hover::after,
-.ui.button.monochrome.transparent:focus::after,
-button.ui.monochrome.transparent:focus::after {
-  border-color: #000000;
+.ui.button.monochrome.transparent,
+button.ui.monochrome.transparent {
+  /*    &.active,
+    &:hover,
+    &:focus {
+      &::after {
+        border-color:darken(@dark_text, 20);
+      }
+    }   
+*/
 }
 .ui.button.monochrome.transparent:active,
 button.ui.monochrome.transparent:active {
@@ -2564,13 +2571,17 @@ button.ui.monochrome.transparent:active::after {
 button.ui.monochrome.transparent.inverted {
   color: #ffffff;
   background-color: transparent;
+  /*    &.active,
+    &:hover,
+    &:focus {
+      &::after {
+        border-color:lighten(@light_text, 20);
+      }
+    }
+*/
 }
-.ui.button.monochrome.transparent.inverted.active::after,
-button.ui.monochrome.transparent.inverted.active::after,
-.ui.button.monochrome.transparent.inverted:hover::after,
-button.ui.monochrome.transparent.inverted:hover::after,
-.ui.button.monochrome.transparent.inverted:focus::after,
-button.ui.monochrome.transparent.inverted:focus::after {
+.ui.button.monochrome.transparent.inverted::after,
+button.ui.monochrome.transparent.inverted::after {
   border-color: #ffffff;
 }
 .ui.button.monochrome.transparent.inverted:active,
@@ -2580,6 +2591,20 @@ button.ui.monochrome.transparent.inverted:active {
 .ui.button.monochrome.transparent.inverted:active::after,
 button.ui.monochrome.transparent.inverted:active::after {
   border-color: #e6e6e6;
+}
+.ui.button.monochrone.inverted.active,
+button.ui.monochrone.inverted.active {
+  color: #343434;
+}
+.ui.button.monochrone.inverted.active:hover,
+button.ui.monochrone.inverted.active:hover,
+.ui.button.monochrone.inverted.active:focus,
+button.ui.monochrone.inverted.active:focus {
+  color: #000000;
+}
+.ui.button.monochrone.inverted.active:active,
+button.ui.monochrone.inverted.active:active {
+  color: #000000;
 }
 .ui.button.active,
 button.ui.active {
@@ -2598,7 +2623,7 @@ button.ui.active:hover,
 .ui.button.active:focus,
 button.ui.active:focus {
   background-color: #f5f5f5;
-  color: #556cc4;
+  /*color:lighten(@color_text, 5);*/
 }
 .ui.button.active:active,
 button.ui.active:active {
@@ -2626,16 +2651,14 @@ button.ui.active.inverted:active {
 .ui.button.active.transparent,
 button.ui.active.transparent {
   background-color: transparent;
+  /*    &:hover,
+    &:focus {
+      color:lighten(@color_text, 10);
+    }*/
 }
 .ui.button.active.transparent::after,
 button.ui.active.transparent::after {
-  border-color: transparent;
-}
-.ui.button.active.transparent:hover,
-button.ui.active.transparent:hover,
-.ui.button.active.transparent:focus,
-button.ui.active.transparent:focus {
-  color: #687dca;
+  /*border-color:transparent;*/
 }
 .ui.button.active.transparent:active,
 button.ui.active.transparent:active {
@@ -2680,17 +2703,16 @@ button.ui.active.monochrome.inverted:active {
   color: #ffffff;
   background-color: #2b2b2b;
 }
-.ui.button.active.monochrome.transparent::after,
-button.ui.active.monochrome.transparent::after {
-  border-color: transparent;
-}
-.ui.button.active.monochrome.transparent.active::after,
-button.ui.active.monochrome.transparent.active::after,
-.ui.button.active.monochrome.transparent:hover::after,
-button.ui.active.monochrome.transparent:hover::after,
-.ui.button.active.monochrome.transparent:focus::after,
-button.ui.active.monochrome.transparent:focus::after {
-  border-color: #000000;
+.ui.button.active.monochrome.transparent,
+button.ui.active.monochrome.transparent {
+  /*    &.active,
+    &:hover,
+    &:focus {
+      &::after {
+        border-color:darken(@dark_text, 20);
+      }
+    }   
+*/
 }
 .ui.button.active.monochrome.transparent:active,
 button.ui.active.monochrome.transparent:active {
@@ -2704,13 +2726,17 @@ button.ui.active.monochrome.transparent:active::after {
 button.ui.active.monochrome.transparent.inverted {
   color: #ffffff;
   background-color: transparent;
+  /*    &.active,
+    &:hover,
+    &:focus {
+      &::after {
+        border-color:lighten(@light_text, 20);
+      }
+    }
+*/
 }
-.ui.button.active.monochrome.transparent.inverted.active::after,
-button.ui.active.monochrome.transparent.inverted.active::after,
-.ui.button.active.monochrome.transparent.inverted:hover::after,
-button.ui.active.monochrome.transparent.inverted:hover::after,
-.ui.button.active.monochrome.transparent.inverted:focus::after,
-button.ui.active.monochrome.transparent.inverted:focus::after {
+.ui.button.active.monochrome.transparent.inverted::after,
+button.ui.active.monochrome.transparent.inverted::after {
   border-color: #ffffff;
 }
 .ui.button.active.monochrome.transparent.inverted:active,
@@ -2720,6 +2746,59 @@ button.ui.active.monochrome.transparent.inverted:active {
 .ui.button.active.monochrome.transparent.inverted:active::after,
 button.ui.active.monochrome.transparent.inverted:active::after {
   border-color: #e6e6e6;
+}
+.ui.button.active.monochrone.inverted.active,
+button.ui.active.monochrone.inverted.active {
+  color: #343434;
+}
+.ui.button.active.monochrone.inverted.active:hover,
+button.ui.active.monochrone.inverted.active:hover,
+.ui.button.active.monochrone.inverted.active:focus,
+button.ui.active.monochrone.inverted.active:focus {
+  color: #000000;
+}
+.ui.button.active.monochrone.inverted.active:active,
+button.ui.active.monochrone.inverted.active:active {
+  color: #000000;
+}
+.ui.button.active.monochrome.inverted:not(.transparent),
+button.ui.active.monochrome.inverted:not(.transparent) {
+  color: #1a1a1a;
+  background-color: #fafafa;
+}
+.ui.button.active.monochrome.inverted:not(.transparent)::after,
+button.ui.active.monochrome.inverted:not(.transparent)::after {
+  border-color: #f5f5f5;
+}
+.ui.button.active.monochrome.inverted:not(.transparent):hover,
+button.ui.active.monochrome.inverted:not(.transparent):hover,
+.ui.button.active.monochrome.inverted:not(.transparent):focus,
+button.ui.active.monochrome.inverted:not(.transparent):focus {
+  background-color: #f5f5f5;
+  /*color:lighten(@color_text, 5);*/
+}
+.ui.button.active.monochrome.inverted:not(.transparent):active,
+button.ui.active.monochrome.inverted:not(.transparent):active {
+  background-color: #ededed;
+}
+.ui.button.active.monochrome:not(.transparent),
+button.ui.active.monochrome:not(.transparent) {
+  background-color: #262626;
+  color: #ffffff;
+}
+.ui.button.active.monochrome:not(.transparent)::after,
+button.ui.active.monochrome:not(.transparent)::after {
+  border-color: #2b2b2b;
+}
+.ui.button.active.monochrome:not(.transparent):hover,
+button.ui.active.monochrome:not(.transparent):hover,
+.ui.button.active.monochrome:not(.transparent):focus,
+button.ui.active.monochrome:not(.transparent):focus {
+  background-color: #333333;
+}
+.ui.button.active.monochrome:not(.transparent):active,
+button.ui.active.monochrome:not(.transparent):active {
+  background-color: #232323;
 }
 .ui.button.disabled,
 button.ui.disabled {
@@ -2740,7 +2819,7 @@ button.ui.disabled:hover,
 .ui.button.disabled:focus,
 button.ui.disabled:focus {
   background-color: #e6e6e6;
-  color: #737373;
+  /*color:lighten(@color_text, 5);*/
 }
 .ui.button.disabled:active,
 button.ui.disabled:active {
@@ -2768,16 +2847,14 @@ button.ui.disabled.inverted:active {
 .ui.button.disabled.transparent,
 button.ui.disabled.transparent {
   background-color: transparent;
+  /*    &:hover,
+    &:focus {
+      color:lighten(@color_text, 10);
+    }*/
 }
 .ui.button.disabled.transparent::after,
 button.ui.disabled.transparent::after {
-  border-color: transparent;
-}
-.ui.button.disabled.transparent:hover,
-button.ui.disabled.transparent:hover,
-.ui.button.disabled.transparent:focus,
-button.ui.disabled.transparent:focus {
-  color: #808080;
+  /*border-color:transparent;*/
 }
 .ui.button.disabled.transparent:active,
 button.ui.disabled.transparent:active {
@@ -2822,17 +2899,16 @@ button.ui.disabled.monochrome.inverted:active {
   color: #cccccc;
   background-color: #696969;
 }
-.ui.button.disabled.monochrome.transparent::after,
-button.ui.disabled.monochrome.transparent::after {
-  border-color: transparent;
-}
-.ui.button.disabled.monochrome.transparent.active::after,
-button.ui.disabled.monochrome.transparent.active::after,
-.ui.button.disabled.monochrome.transparent:hover::after,
-button.ui.disabled.monochrome.transparent:hover::after,
-.ui.button.disabled.monochrome.transparent:focus::after,
-button.ui.disabled.monochrome.transparent:focus::after {
-  border-color: #333333;
+.ui.button.disabled.monochrome.transparent,
+button.ui.disabled.monochrome.transparent {
+  /*    &.active,
+    &:hover,
+    &:focus {
+      &::after {
+        border-color:darken(@dark_text, 20);
+      }
+    }   
+*/
 }
 .ui.button.disabled.monochrome.transparent:active,
 button.ui.disabled.monochrome.transparent:active {
@@ -2846,14 +2922,18 @@ button.ui.disabled.monochrome.transparent:active::after {
 button.ui.disabled.monochrome.transparent.inverted {
   color: #999999;
   background-color: transparent;
+  /*    &.active,
+    &:hover,
+    &:focus {
+      &::after {
+        border-color:lighten(@light_text, 20);
+      }
+    }
+*/
 }
-.ui.button.disabled.monochrome.transparent.inverted.active::after,
-button.ui.disabled.monochrome.transparent.inverted.active::after,
-.ui.button.disabled.monochrome.transparent.inverted:hover::after,
-button.ui.disabled.monochrome.transparent.inverted:hover::after,
-.ui.button.disabled.monochrome.transparent.inverted:focus::after,
-button.ui.disabled.monochrome.transparent.inverted:focus::after {
-  border-color: #cccccc;
+.ui.button.disabled.monochrome.transparent.inverted::after,
+button.ui.disabled.monochrome.transparent.inverted::after {
+  border-color: #999999;
 }
 .ui.button.disabled.monochrome.transparent.inverted:active,
 button.ui.disabled.monochrome.transparent.inverted:active {
@@ -2862,6 +2942,24 @@ button.ui.disabled.monochrome.transparent.inverted:active {
 .ui.button.disabled.monochrome.transparent.inverted:active::after,
 button.ui.disabled.monochrome.transparent.inverted:active::after {
   border-color: #b3b3b3;
+}
+.ui.button.disabled.monochrone.inverted.active,
+button.ui.disabled.monochrone.inverted.active {
+  color: #808080;
+}
+.ui.button.disabled.monochrone.inverted.active:hover,
+button.ui.disabled.monochrone.inverted.active:hover,
+.ui.button.disabled.monochrone.inverted.active:focus,
+button.ui.disabled.monochrone.inverted.active:focus {
+  color: #333333;
+}
+.ui.button.disabled.monochrone.inverted.active:active,
+button.ui.disabled.monochrone.inverted.active:active {
+  color: #333333;
+}
+.ui.button.disabled.transparent::after,
+button.ui.disabled.transparent::after {
+  border: 0px;
 }
 .ui.buttons {
   display: -webkit-inline-box;
@@ -3094,8 +3192,35 @@ bonaparte-toolbar.tiny > *:first-child .ui.button.transparent::after,
 button.ui.tiny.transparent::after,
 .ui.tiny.buttons .button.transparent::after,
 .ui.tiny.button.transparent::after {
-  border: 0;
-  border-bottom: 1px solid transparent;
+  display: block;
+  position: relative;
+  border: 0px;
+  border-bottom: 1px solid;
+  top: -1px;
+}
+bonaparte-toolbar.mini > *:first-child button.ui.transparent.disabled::after,
+bonaparte-toolbar.mini > *:first-child .ui.button.transparent.disabled::after,
+button.ui.mini.transparent.disabled::after,
+.ui.mini.buttons .button.transparent.disabled::after,
+.ui.mini.button.transparent.disabled::after,
+bonaparte-toolbar.tiny > *:first-child button.ui.transparent.disabled::after,
+bonaparte-toolbar.tiny > *:first-child .ui.button.transparent.disabled::after,
+button.ui.tiny.transparent.disabled::after,
+.ui.tiny.buttons .button.transparent.disabled::after,
+.ui.tiny.button.transparent.disabled::after {
+  border: 0px;
+}
+bonaparte-toolbar.mini > *:first-child button.ui.transparent.icon:not(.labeled)::after,
+bonaparte-toolbar.mini > *:first-child .ui.button.transparent.icon:not(.labeled)::after,
+button.ui.mini.transparent.icon:not(.labeled)::after,
+.ui.mini.buttons .button.transparent.icon:not(.labeled)::after,
+.ui.mini.button.transparent.icon:not(.labeled)::after,
+bonaparte-toolbar.tiny > *:first-child button.ui.transparent.icon:not(.labeled)::after,
+bonaparte-toolbar.tiny > *:first-child .ui.button.transparent.icon:not(.labeled)::after,
+button.ui.tiny.transparent.icon:not(.labeled)::after,
+.ui.tiny.buttons .button.transparent.icon:not(.labeled)::after,
+.ui.tiny.button.transparent.icon:not(.labeled)::after {
+  border: 0px;
 }
 bonaparte-toolbar.tiny > *:first-child .ui.buttons.conditional button.ui:first-child,
 bonaparte-toolbar.mini > *:first-child .ui.buttons.conditional button.ui:first-child,
@@ -3231,8 +3356,25 @@ bonaparte-toolbar.small > *:first-child .ui.button.transparent::after,
 button.ui.small.transparent::after,
 .ui.small.buttons .button.transparent::after,
 .ui.small.button.transparent::after {
-  border: 0;
-  border-bottom: 2px solid transparent;
+  display: block;
+  position: relative;
+  border: 0px;
+  border-bottom: 1px solid;
+  top: -1px;
+}
+bonaparte-toolbar.small > *:first-child button.ui.transparent.disabled::after,
+bonaparte-toolbar.small > *:first-child .ui.button.transparent.disabled::after,
+button.ui.small.transparent.disabled::after,
+.ui.small.buttons .button.transparent.disabled::after,
+.ui.small.button.transparent.disabled::after {
+  border: 0px;
+}
+bonaparte-toolbar.small > *:first-child button.ui.transparent.icon:not(.labeled)::after,
+bonaparte-toolbar.small > *:first-child .ui.button.transparent.icon:not(.labeled)::after,
+button.ui.small.transparent.icon:not(.labeled)::after,
+.ui.small.buttons .button.transparent.icon:not(.labeled)::after,
+.ui.small.button.transparent.icon:not(.labeled)::after {
+  border: 0px;
 }
 bonaparte-toolbar.small > *:first-child .ui.buttons.conditional button.ui:first-child,
 .ui.small.buttons.conditional button.ui:first-child,
@@ -3381,8 +3523,35 @@ bonaparte-toolbar.big > *:first-child .ui.button.transparent::after,
 button.ui.big.transparent::after,
 .ui.big.buttons .button.transparent::after,
 .ui.big.button.transparent::after {
-  border: 0;
-  border-bottom: 0.4rem solid transparent;
+  display: block;
+  position: relative;
+  border: 0px;
+  border-bottom: 1px solid;
+  top: 2px;
+}
+bonaparte-toolbar.large > *:first-child button.ui.transparent.disabled::after,
+bonaparte-toolbar.large > *:first-child .ui.button.transparent.disabled::after,
+button.ui.large.transparent.disabled::after,
+.ui.large.buttons .button.transparent.disabled::after,
+.ui.large.button.transparent.disabled::after,
+bonaparte-toolbar.big > *:first-child button.ui.transparent.disabled::after,
+bonaparte-toolbar.big > *:first-child .ui.button.transparent.disabled::after,
+button.ui.big.transparent.disabled::after,
+.ui.big.buttons .button.transparent.disabled::after,
+.ui.big.button.transparent.disabled::after {
+  border: 0px;
+}
+bonaparte-toolbar.large > *:first-child button.ui.transparent.icon:not(.labeled)::after,
+bonaparte-toolbar.large > *:first-child .ui.button.transparent.icon:not(.labeled)::after,
+button.ui.large.transparent.icon:not(.labeled)::after,
+.ui.large.buttons .button.transparent.icon:not(.labeled)::after,
+.ui.large.button.transparent.icon:not(.labeled)::after,
+bonaparte-toolbar.big > *:first-child button.ui.transparent.icon:not(.labeled)::after,
+bonaparte-toolbar.big > *:first-child .ui.button.transparent.icon:not(.labeled)::after,
+button.ui.big.transparent.icon:not(.labeled)::after,
+.ui.big.buttons .button.transparent.icon:not(.labeled)::after,
+.ui.big.button.transparent.icon:not(.labeled)::after {
+  border: 0px;
 }
 bonaparte-toolbar.large > *:first-child .ui.buttons.conditional button.ui:first-child,
 bonaparte-toolbar.big > *:first-child .ui.buttons.conditional button.ui:first-child,
@@ -3559,8 +3728,35 @@ bonaparte-toolbar.massive > *:first-child .ui.button.transparent::after,
 button.ui.massive.transparent::after,
 .ui.massive.buttons .button.transparent::after,
 .ui.massive.button.transparent::after {
-  border: 0;
-  border-bottom: 0.5rem solid transparent;
+  display: block;
+  position: relative;
+  border: 0px;
+  border-bottom: 1px solid;
+  top: -1rem;
+}
+bonaparte-toolbar.huge > *:first-child button.ui.transparent.disabled::after,
+bonaparte-toolbar.huge > *:first-child .ui.button.transparent.disabled::after,
+button.ui.huge.transparent.disabled::after,
+.ui.huge.buttons .button.transparent.disabled::after,
+.ui.huge.button.transparent.disabled::after,
+bonaparte-toolbar.massive > *:first-child button.ui.transparent.disabled::after,
+bonaparte-toolbar.massive > *:first-child .ui.button.transparent.disabled::after,
+button.ui.massive.transparent.disabled::after,
+.ui.massive.buttons .button.transparent.disabled::after,
+.ui.massive.button.transparent.disabled::after {
+  border: 0px;
+}
+bonaparte-toolbar.huge > *:first-child button.ui.transparent.icon:not(.labeled)::after,
+bonaparte-toolbar.huge > *:first-child .ui.button.transparent.icon:not(.labeled)::after,
+button.ui.huge.transparent.icon:not(.labeled)::after,
+.ui.huge.buttons .button.transparent.icon:not(.labeled)::after,
+.ui.huge.button.transparent.icon:not(.labeled)::after,
+bonaparte-toolbar.massive > *:first-child button.ui.transparent.icon:not(.labeled)::after,
+bonaparte-toolbar.massive > *:first-child .ui.button.transparent.icon:not(.labeled)::after,
+button.ui.massive.transparent.icon:not(.labeled)::after,
+.ui.massive.buttons .button.transparent.icon:not(.labeled)::after,
+.ui.massive.button.transparent.icon:not(.labeled)::after {
+  border: 0px;
 }
 bonaparte-toolbar.huge > *:first-child .ui.buttons.conditional button.ui:first-child,
 bonaparte-toolbar.massive > *:first-child .ui.buttons.conditional button.ui:first-child,

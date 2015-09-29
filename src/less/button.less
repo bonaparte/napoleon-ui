@@ -11,7 +11,7 @@ button.ui {
     position:relative;
     display:inline-block;
     margin:0.5rem 0rem;
-    vertical-align: top; /* "baseline" does not align with line grid and "middle" doesn't fit in toolbar */  
+    vertical-align: top;
     cursor:pointer;
     user-select: none;
     text-align:center;
@@ -208,8 +208,46 @@ button.ui {
       }
     });
 
+    &.monochrome.inverted:not(.transparent) {
+      & {
+        color:@dark_text;
+        background-color:@light_bg;
+      }
+      
+      &::after {
+        border-color:darken(@light_bg, 2);
+      }
+
+      &:hover,
+      &:focus {
+        background-color:darken(@light_bg, 2);
+        /*color:lighten(@color_text, 5);*/
+      }
+
+      &:active {
+        background-color:darken(@light_bg,5);
+      }
+    }
 
 
+    &.monochrome:not(.transparent) {
+      & {
+        background-color: @dark_bg;
+        color:@light_text;
+      }
+      &::after {
+        border-color:lighten(@dark_bg, 2);
+      }
+
+      &:hover,
+      &:focus {
+        background-color:lighten(@dark_bg, 5);
+      }
+
+      &:active {
+        background-color:multiply(@dark_bg, #eee);
+      }
+    } 
   }
 
 
@@ -231,6 +269,11 @@ button.ui {
 
     pointer-events: none;
     cursor:disabled;
+
+
+    &.transparent::after {
+      border:0px;
+    }
   }
 
 }
@@ -368,7 +411,7 @@ button.ui {
     &:hover,
     &:focus {
       background-color:darken(@light_bg, 2);
-      color:lighten(@color_text, 5);
+      /*color:lighten(@color_text, 5);*/
     }
 
     &:active {
@@ -401,13 +444,13 @@ button.ui {
       background-color:transparent;
     }
     &::after {
-      border-color:transparent;
+      /*border-color:transparent;*/
     }
 
-    &:hover,
+/*    &:hover,
     &:focus {
       color:lighten(@color_text, 10);
-    }
+    }*/
 
     &:active {
       color:darken(@color_text, 2);
@@ -425,6 +468,7 @@ button.ui {
     &:active {
       color:darken(@dark_text, 20);
     }
+ 
   }
 
   &.inverted.transparent {
@@ -460,16 +504,16 @@ button.ui {
 
 
     &::after {
-      border-color:transparent;
+
     }
-    &.active,
+/*    &.active,
     &:hover,
     &:focus {
       &::after {
         border-color:darken(@dark_text, 20);
       }
     }   
-
+*/
     &:active {
       color:lighten(darken(@dark_text, 20),50);
       &::after {
@@ -485,14 +529,17 @@ button.ui {
       background-color:transparent;
     }
 
-    &.active,
+    &::after {
+      border-color:@light_text;
+    }
+/*    &.active,
     &:hover,
     &:focus {
       &::after {
         border-color:lighten(@light_text, 20);
       }
     }
-
+*/
     &:active {
       color:darken(lighten(@light_text, 20),10);
       
@@ -502,6 +549,20 @@ button.ui {
     }
   }       
 
+
+  &.monochrone.inverted.active {
+    & {
+      color:lighten(@dark_text, 10);
+    }
+    &:hover,
+    &:focus {
+      color:darken(@dark_text, 20);
+    }
+    &:active {
+      color:darken(@dark_text, 20);
+    }
+ 
+  } 
 
 }
 
@@ -571,7 +632,7 @@ button.ui {
   @lineHeight: 2rem,
   @padding : 1.0833333rem 1rem 0.9188888rem 1rem,
   @iconSize : 4rem,
-  @hoverBorder : 0.25rem
+  @underlineCorrection : -1px
 ){  
 
   @overrides();
@@ -611,8 +672,19 @@ button.ui {
   }
 
   &.transparent::after {
-    border:0;
-    border-bottom:@hoverBorder solid transparent;
+    display:block;
+    position:relative;
+    border:0px;
+    border-bottom:1px solid;
+    top:@underlineCorrection;
+  }  
+
+  &.transparent.disabled::after {
+    border:0px;
+  }
+
+  &.transparent.icon:not(.labeled)::after {
+    border:0px;
   }
 }
 
@@ -652,7 +724,7 @@ button.ui {
     @padding : 0.25rem 1rem;
     @orPadding : 1.5rem;
     @orLineHeight : @h6Lineheight;
-    @hoverBorder: 1px;
+    @underlineCorrection: -1px;
 
   }
 };
@@ -666,7 +738,7 @@ button.ui {
     @padding : 0.5rem 1rem;
     @orPadding : 1.5rem;
     @orLineHeight : @h5Lineheight;
-    @hoverBorder: 2px;
+    @underlineCorrection: -1px;
 
   }
 };
@@ -681,7 +753,7 @@ button.ui {
     @padding : 1.5rem 1rem;
     @orPadding : 2.5rem;
     @orLineHeight : 3.5rem;
-    @hoverBorder: 0.4rem;
+    @underlineCorrection: 2px;
 
   }
 };
@@ -696,7 +768,7 @@ button.ui {
     @padding : 0.5rem 1rem;
     @orPadding : 3rem;
     @orLineHeight : 4rem;
-    @hoverBorder: 0.5rem;
+    @underlineCorrection: -1rem;
   }
 };
 
