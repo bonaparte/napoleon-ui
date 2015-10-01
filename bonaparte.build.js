@@ -46,7 +46,7 @@ require("./SUI/definitions/views/statistic.less");
 require("./SUI/definitions/modules/accordion.less");
 require("./SUI/definitions/modules/checkbox.less");
 require("./SUI/definitions/modules/dimmer.less");
-require("./SUI/definitions/modules/dropdown.less");
+// require("./SUI/definitions/modules/dropdown.less");
 require("./SUI/definitions/modules/embed.less");
 require("./SUI/definitions/modules/modal.less");
 require("./SUI/definitions/modules/nag.less");
@@ -81,3 +81,6 @@ require("./src/less/bonaparte-toolbar.less");
 require("bonaparte-draggable/bonaparte.build");
 
 require("./src/less/bonaparte-content.less");
+
+require("Bonaparte/bonaparte-dropdown/bonaparte.build");
+
