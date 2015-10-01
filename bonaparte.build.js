@@ -82,5 +82,5 @@ require("bonaparte-draggable/bonaparte.build");
 
 require("./src/less/bonaparte-content.less");
 
-require("Bonaparte/bonaparte-dropdown/bonaparte.build");
+require("bonaparte-dropdown/bonaparte.build");
 

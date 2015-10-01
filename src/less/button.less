@@ -27,7 +27,7 @@ button.ui {
     border: 1px solid;
   }  
 
-  & + & {
+  &:not(.marginless) + &:not(.marginless) {
     margin-left:1rem;
   }
 
@@ -608,6 +608,7 @@ button.ui {
   &.vertical {
       display: inline-flex;
       flex-direction: column;
+      margin: 0;
 
       .ui.button,
       button.ui {
@@ -616,7 +617,7 @@ button.ui {
   }
 
 
-  & + & {
+  &:not(.vertical) + & {
     margin-left:1rem;
   }
 

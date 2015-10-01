@@ -2200,10 +2200,10 @@ button.ui::after {
   left: 0;
   border: 1px solid;
 }
-.ui.button + .ui.button,
-.ui.button + button.ui,
-button.ui + .ui.button,
-button.ui + button.ui {
+.ui.button:not(.marginless) + .ui.button:not(.marginless),
+.ui.button:not(.marginless) + button.ui:not(.marginless),
+button.ui:not(.marginless) + .ui.button:not(.marginless),
+button.ui:not(.marginless) + button.ui:not(.marginless) {
   margin-left: 1rem;
 }
 .ui.button.marginless,
@@ -3149,12 +3149,13 @@ button.ui.monochrome.transparent.inverted.disabled:active::after,
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0;
 }
 .ui.buttons.vertical .ui.button,
 .ui.buttons.vertical button.ui {
   display: block;
 }
-.ui.buttons + .ui.buttons {
+.ui.buttons:not(.vertical) + .ui.buttons {
   margin-left: 1rem;
 }
 .ui.buttons.conditional .or {
@@ -56479,3 +56480,56 @@ bonaparte-content {
   position: relative;
   padding: 1rem;
 }
+bonaparte-dropdown {
+  /*DEFINITION*/
+  position: relative;
+  display: inline-block;
+}
+bonaparte-dropdown > :first-child {
+  display: none;
+  position: absolute;
+  z-index: 99;
+}
+bonaparte-dropdown[data-open="true"] > :first-child,
+bonaparte-dropdown[open="true"] > :first-child {
+  display: block;
+}
+bonaparte-dropdown:not([position]) > :first-child,
+bonaparte-dropdown[position=""] > :first-child,
+bonaparte-dropdown[position*="bottom"] > :first-child {
+  top: 100%;
+  bottom: auto;
+}
+bonaparte-dropdown[position*="top"] > :first-child {
+  top: auto;
+  bottom: 100%;
+}
+bonaparte-dropdown[position*="left"] > :first-child {
+  right: 100%;
+  left: auto;
+}
+bonaparte-dropdown[position*="right"] > :first-child {
+  right: auto;
+  left: 100%;
+}
+bonaparte-dropdown[position^="right"][position$="bottom"] > :first-child,
+bonaparte-dropdown[position^="left"][position$="bottom"] > :first-child {
+  top: auto;
+  bottom: 0;
+}
+bonaparte-dropdown[position^="right"][position$="top"] > :first-child,
+bonaparte-dropdown[position^="left"][position$="top"] > :first-child {
+  top: 0;
+  bottom: auto;
+}
+bonaparte-dropdown[position^="top"][position$="right"] > :first-child,
+bonaparte-dropdown[position^="bottom"][position$="right"] > :first-child {
+  right: 0;
+  left: auto;
+}
+bonaparte-dropdown[position^="top"][position$="left"] > :first-child,
+bonaparte-dropdown[position^="bottom"][position$="left"] > :first-child {
+  right: auto;
+  left: 0;
+}
+/*///////////////////////////////////////////////////////////////////////////*/
