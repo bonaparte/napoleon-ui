@@ -56,6 +56,20 @@
         float: right;
       }
 
+      .searchMenu {
+        background-color: #fff;
+        width: 260px;
+        border-top: 2px solid #425cbd;
+      }
+
+      .imageList {
+        background-color: #fff;
+        padding: 1rem;
+        width: 360px;
+        border-top: 2px solid #425cbd;
+        border-right: 2px solid #425cbd;
+      }
+
     </style>
   </head>
   <body class="">
@@ -292,59 +306,68 @@
                         </div>
                         
                         <bonaparte-button class="ui button marginless">
-                          Menu
-                         <i class="more-vert icon right"></i>
-                       </bonaparte-button>
-                      </bonaparte-dropdown><bonaparte-dropdown class="menuExample">
-                        <div class="menu">
-                          <bonaparte-button class="ui button labeled monochrome marginless">
-                            New
-                            <i class="content-copy icon right"></i>
-                          </bonaparte-button>
-                          <bonaparte-button class="ui button labeled monochrome marginless">
-                            Open
-                            <i class="description icon right"></i>
-                          </bonaparte-button>
-                            <bonaparte-dropdown position="right" action="" handler="">
-                                    <div class="menu">
-                                      <bonaparte-button class="ui button labeled monochrome marginless">
-                                        File one
-                                      </bonaparte-button>
-                                      <bonaparte-button class="ui button labeled monochrome marginless">
-                                       File two
-                                      </bonaparte-button>
-                                      <bonaparte-button class="ui button labeled monochrome marginless">
-                                        File three
-                                      </bonaparte-button>
-                                      <bonaparte-button class="ui button labeled monochrome marginless">
-                                        File four
-                                      </bonaparte-button>
-                                    </div>
-                                    
-                                  <bonaparte-button class="ui button monochrome marginless">
-                                   <i class="navigate-next icon right"></i>
-                                    Open Recent
-                                 </bonaparte-button>
-                                </bonaparte-dropdown>
-                          <bonaparte-button class="ui button labeled monochrome marginless">
-                            Label
-                            <i class="local-offer icon right"></i>
-                          </bonaparte-button>
-                          <bonaparte-button class="ui button labeled monochrome marginless">
-                            Exit
-                            <i class="cancel icon right"></i>
-                          </bonaparte-button>                                
-                        </div>
-                        
-                        <bonaparte-button class="ui button marginless">
-                          Menu 2
-                         <i class="more-vert icon right"></i>
+                          Menu 1
+                         <i class="arrow-drop-down icon right"></i>
                        </bonaparte-button>
                       </bonaparte-dropdown><bonaparte-button class="ui button labeled marginless">
-                            Item 3
+                        Item 2
                       </bonaparte-button><bonaparte-button class="ui button labeled marginless">
-                        Item 4
-                      </bonaparte-button> 
+                        Item 3
+                      </bonaparte-button><bonaparte-dropdown class="menuExample" position="top right">
+                        
+                          <bonaparte-dropdown class="menuExample" position="right" handler="input" action="focus, blur">
+                            <div class="imageList">
+                              <div class="ui divided items">
+                                <div class="link item">
+                                  <div class="ui tiny image">
+                                    <img src="images/wireframe/image.png">
+                                  </div>
+                                  <div class="content">
+                                    <a class="header">Content Header</a>
+                                    <div class="description">
+                                      A description which may flow for several lines and give context to the content.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="link item">
+                                  <div class="ui tiny image">
+                                    <img src="images/wireframe/image.png">
+                                  </div>
+                                  <div class="content">
+                                    <a class="header">Content Header</a>
+                                    <div class="description">
+                                      A description which may flow for several lines and give context to the content.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="link item">
+                                  <div class="ui tiny image">
+                                    <img src="images/wireframe/image.png">
+                                  </div>
+                                  <div class="content">
+                                    <a class="header">Content Header</a>
+                                    <div class="description">
+                                      A description which may flow for several lines and give context to the content.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="searchMenu">
+                              <div class="ui form">
+                                <div class="field">
+                                  <input placeholder="Search" type="text">
+                                  <label>Image Search</label>
+                                </div>
+                              </div>
+                            </div>
+                          </bonaparte-dropdown>
+                       
+                        <bonaparte-button class="ui button marginless">
+                          Menu 4
+                         <i class="arrow-drop-up icon right"></i>
+                       </bonaparte-button>
+                      </bonaparte-dropdown>
                  <!-- ######################################################################## -->
 
 
@@ -388,60 +411,69 @@
       &lt;/bonaparte-button&gt;
     &lt;/div&gt;
     &lt;bonaparte-button class="ui button marginless"&gt;
-      Menu
-      &lt;i class="more-vert icon right"&gt;&lt;/i&gt;
+      Menu 1
+      &lt;i class="arrow-drop-down icon right"&gt;&lt;/i&gt;
     &lt;/bonaparte-button&gt;
   &lt;/bonaparte-dropdown&gt;
-  &lt;bonaparte-dropdown class="menuExample"&gt;
-    &lt;div class="menu"&gt;
-      &lt;bonaparte-button class="ui button labeled monochrome marginless"&gt;
-        New
-        &lt;i class="content-copy icon right"&gt;&lt;/i&gt;
-      &lt;/bonaparte-button&gt;
-      &lt;bonaparte-button class="ui button labeled monochrome marginless"&gt;
-        Open
-        &lt;i class="description icon right"&gt;&lt;/i&gt;
-      &lt;/bonaparte-button&gt;
-      &lt;bonaparte-dropdown position="right" action="" handler=""&gt;
-        &lt;div class="menu"&gt;
-          &lt;bonaparte-button class="ui button labeled monochrome marginless"&gt;
-            File one
-          &lt;/bonaparte-button&gt;
-          &lt;bonaparte-button class="ui button labeled monochrome marginless"&gt;
-            File two
-          &lt;/bonaparte-button&gt;
-          &lt;bonaparte-button class="ui button labeled monochrome marginless"&gt;
-            File three
-          &lt;/bonaparte-button&gt;
-          &lt;bonaparte-button class="ui button labeled monochrome marginless"&gt;
-            File four
-          &lt;/bonaparte-button&gt;
-        &lt;/div&gt;
-        &lt;bonaparte-button class="ui button monochrome marginless"&gt;
-          &lt;i class="navigate-next icon right"&gt;&lt;/i&gt;
-          Open Recent
-        &lt;/bonaparte-button&gt;
-      &lt;/bonaparte-dropdown&gt;
-      &lt;bonaparte-button class="ui button labeled monochrome marginless"&gt;
-        Label
-        &lt;i class="local-offer icon right"&gt;&lt;/i&gt;
-      &lt;/bonaparte-button&gt;
-      &lt;bonaparte-button class="ui button labeled monochrome marginless"&gt;
-        Exit
-        &lt;i class="cancel icon right"&gt;&lt;/i&gt;
-      &lt;/bonaparte-button&gt;
-    &lt;/div&gt;
-    &lt;bonaparte-button class="ui button marginless"&gt;
-      Menu 2
-      &lt;i class="more-vert icon right"&gt;&lt;/i&gt;
-    &lt;/bonaparte-button&gt;
-  &lt;/bonaparte-dropdown&gt;
+  &lt;bonaparte-button class="ui button labeled marginless"&gt;
+    Item 2
+  &lt;/bonaparte-button&gt;
   &lt;bonaparte-button class="ui button labeled marginless"&gt;
     Item 3
   &lt;/bonaparte-button&gt;
-  &lt;bonaparte-button class="ui button labeled marginless"&gt;
-    Item 4
-  &lt;/bonaparte-button&gt;
+  &lt;bonaparte-dropdown class="menuExample" position="top right"&gt;
+    &lt;bonaparte-dropdown class="menuExample" position="right" handler="input" action="focus, blur"&gt;
+      &lt;div class="imageList"&gt;
+        &lt;div class="ui divided items"&gt;
+          &lt;div class="link item"&gt;
+            &lt;div class="ui tiny image"&gt;
+              &lt;img src="images/wireframe/image.png"&gt;
+            &lt;/div&gt;
+            &lt;div class="content"&gt;
+              &lt;a class="header"&gt;Content Header&lt;/a&gt;
+              &lt;div class="description"&gt;
+                A description which may flow for several lines and give context to the content.
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="link item"&gt;
+            &lt;div class="ui tiny image"&gt;
+              &lt;img src="images/wireframe/image.png"&gt;
+            &lt;/div&gt;
+            &lt;div class="content"&gt;
+              &lt;a class="header"&gt;Content Header&lt;/a&gt;
+              &lt;div class="description"&gt;
+                A description which may flow for several lines and give context to the content.
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="link item"&gt;
+            &lt;div class="ui tiny image"&gt;
+              &lt;img src="images/wireframe/image.png"&gt;
+            &lt;/div&gt;
+            &lt;div class="content"&gt;
+              &lt;a class="header"&gt;Content Header&lt;/a&gt;
+              &lt;div class="description"&gt;
+                A description which may flow for several lines and give context to the content.
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="searchMenu"&gt;
+        &lt;div class="ui form"&gt;
+          &lt;div class="field"&gt;
+            &lt;input placeholder="Search" type="text"&gt;
+            &lt;label&gt;Image Search&lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/bonaparte-dropdown&gt;
+    &lt;bonaparte-button class="ui button marginless"&gt;
+      Menu 4
+      &lt;i class="arrow-drop-up icon right"&gt;&lt;/i&gt;
+    &lt;/bonaparte-button&gt;
+  &lt;/bonaparte-dropdown&gt;
 </code></pre>
                   </div>
                 </div>
