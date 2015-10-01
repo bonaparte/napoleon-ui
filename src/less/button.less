@@ -11,7 +11,7 @@ button.ui {
     position:relative;
     display:inline-block;
     margin:0.5rem 0rem;
-    vertical-align: top; /* "baseline" does not align with line grid and "middle" doesn't fit in toolbar */  
+    vertical-align: top;
     cursor:pointer;
     user-select: none;
     text-align:center;
@@ -189,51 +189,395 @@ button.ui {
   }
 
   .buttonSizes();
-  .buttonColors();
 
+  /***********************
+    COLORS VARIATIONS
+  ************************/
 
+  & {
+    & {
+      color:@color-interactive;
+      background-color:@color-light-1;
+    }
+    
+    &::after {
+      border-color:darken(@color-light-1, 2);
+    }
 
-  &.active {
+    &:hover,
+    &:focus {
+      background-color:darken(@color-light-1, 2);
+      /*color:lighten(@color-interactive, 5);*/
+    }
 
-    .buttonColors({
-      .variables(){
+    &:active {
+      background-color:darken(@color-light-1,5);
+    }
 
-        @color_bg : @color-active;
-        @light_bg : @color-light-1;
-        @dark_bg : @color-dark-3;
-        @color_text : @color-active;
-        @light_text : @color-text-light;
-        @dark_text : @color-text-dark;
-
+    &.active {
+      & {
+        color:@color-active;
       }
-    });
+    }
 
+    &.disabled {
+      & {
+        color:@color-text-medium-dark;
+        background-color:@color-light-4;
+      }
+      
+      &::after {
+        border-color:darken(@color-light-4, 2);
+      }
 
+      &:hover,
+      &:focus {
+        background-color:darken(@color-light-4, 2);
+        /*color:lighten(@color-interactive, 5);*/
+      }
 
+      &:active {
+        background-color:darken(@color-light-4,5);
+      }
+    }
   }
-
-
 
   &.disabled {
 
-    .buttonColors({
-      .variables(){
-
-        @color_bg : @color-dark-5;
-        @light_bg : @color-light-4;
-        @dark_bg : @color-dark-5;
-        @color_text : @color-text-medium-dark;
-        @light_text : @color-text-medium-light;
-        @dark_text : @color-text-medium-dark;
-
-      }
-    });
-
     pointer-events: none;
     cursor:disabled;
+
+    &.transparent::after {
+      border:0px;
+    }    
   }
 
+
+
+  &.inverted {
+    & {
+      background-color: @color-interactive;
+      color:@color-text-light;
+    }
+    &::after {
+      border-color:lighten(@color-interactive, 2);
+    }
+
+    &:hover,
+    &:focus {
+      background-color:lighten(@color-interactive, 5);
+    }
+
+    &:active {
+      background-color:multiply(@color-interactive, #eee);
+    }
+
+    &.active {
+      & {
+        background-color:@color-active;
+      }
+      &::after {
+        border-color:lighten(@color-active, 2);
+      }
+      &:hover,
+      &:focus {
+        background-color:lighten(@color-active, 5);
+      }
+
+      &:active {
+        background-color:multiply(@color-active, #eee);
+      }
+    }    
+
+    &.disabled {
+      & {
+        background-color: @color-dark-5;
+        color:@color-text-medium-light;
+      }
+      &::after {
+        border-color:lighten(@color-dark-5, 2);
+      }
+
+      &:hover,
+      &:focus {
+        background-color:lighten(@color-dark-5, 5);
+      }
+
+      &:active {
+        background-color:multiply(@color-dark-5, #eee);
+      }
+    }
+
+  }
+
+  &.transparent {
+    & {
+      background-color:transparent !important;
+    }
+
+    &:active {
+      color:darken(@color-interactive, 2);
+    }
+
+    &.active {
+      &:active {
+        color: darken(@color-active, 2);
+      }
+    }
+
+    &.icon:not(.labeled)::after {
+      border:0px;
+    }
+
+    &.disabled {
+      &:active {
+        color:darken(@color-text-medium-dark, 2);
+      }
+
+      &::after {
+        border:0px;
+      }
+    }
+  }
+
+  &.monochrome {
+    & {
+      color:lighten(@color-text-dark, 10);
+    }
+    &:hover,
+    &:focus {
+      color:darken(@color-text-dark, 20);
+    }
+    &:active {
+      color:darken(@color-text-dark, 20);
+    }
+    
+    &.active {
+      & {
+        color:darken(@color-text-light, 5);
+        background-color:@color-dark-3;
+      }      
+      &::after {
+        border-color:lighten(@color-dark-3, 7);
+      }
+
+      &:hover,
+      &:focus {
+        color:lighten(@color-text-light, 20);
+        background-color:lighten(@color-dark-3, 7);
+      }
+
+      &:active {
+        color:lighten(@color-text-light, 20);
+        background-color:lighten(@color-dark-3, 2);
+      }
+    }
+
+    &.disabled {
+      & {
+        color:lighten(@color-text-medium-dark, 10);
+      }
+      &:hover,
+      &:focus {
+        color:darken(@color-text-medium-dark, 20);
+      }
+      &:active {
+        color:darken(@color-text-medium-dark, 20);
+      }
+    }
+  }
+
+
+  &.transparent.inverted {
+
+    &::after {
+      border-color:@color-text-light;
+    }
+
+    &:active {
+      &::after {
+        border-color:@color-interactive;
+      }
+    }
+
+    &.active {
+      &:active {
+        &::after {
+          border-color:@color-active;
+        }
+      }
+    }
+
+    &.disabled {
+      &::after {
+        border-color:@color-text-medium-light;
+      }
+
+      &:active {
+        &::after {
+          border-color:@color-text-medium-dark;
+        }
+      }
+
+    }
+
+  }
+
+
+  &.monochrome.inverted {
+    & {
+      color:darken(@color-text-light, 5);
+      background-color:@color-dark-3;
+    }
+    &::after {
+      border-color:lighten(@color-dark-3, 7);
+    }
+
+    &:hover,
+    &:focus {
+      background-color:lighten(@color-dark-3, 7);
+      color:lighten(@color-text-light, 20);
+    }
+
+    &:active {
+      color:lighten(@color-text-light, 20);
+      background-color:lighten(@color-dark-3, 2);
+    }
+
+    &.active {
+      & {
+        background-color:@color-light-1;
+        color:lighten(@color-text-dark, 10);
+      }
+      &::after {
+        border-color:darken(@color-light-1, 2);
+      }
+      &:hover,
+      &:focus {
+        background-color:darken(@color-light-1, 2);
+        color:darken(@color-text-dark, 20);
+      }
+      &:active {
+        color:darken(@color-text-dark, 20);
+        background-color:darken(@color-light-1,5);
+      }
+    
+    }
+
+    &.disabled {
+      & {
+        color:darken(@color-text-medium-light, 5);
+        background-color:@color-dark-5;
+      }
+      &::after {
+        border-color:lighten(@color-dark-5, 7);
+      }
+
+      &:hover,
+      &:focus {
+        background-color:lighten(@color-dark-5, 7);
+        color:lighten(@color-text-medium-light, 20);
+      }
+
+      &:active {
+        color:lighten(@color-text-medium-light, 20);
+        background-color:lighten(@color-dark-5, 2);
+      }
+
+    }
+  }
+
+
+  &.monochrome.transparent {
+
+    &:active {
+      color:lighten(darken(@color-text-dark, 20),50);
+
+      &::after {
+        border-color:lighten(darken(@color-text-dark, 20),50);
+      }
+    }
+
+    &.active {
+      & {
+        color:@color-text-dark;
+
+      }
+      &::after {
+        border-color:@color-text-dark;
+      }
+
+      &:active {
+        color:lighten(darken(@color-text-dark, 20),50);
+
+        &::after {
+          border-color:lighten(darken(@color-text-dark, 20),50);
+        }
+      }
+
+    }
+
+    &.disabled {
+
+      &:active {
+        color:lighten(darken(@color-text-medium-dark, 20),50);
+
+        &::after {
+          border-color:lighten(darken(@color-text-medium-dark, 20),50);
+        }
+      }
+    }
+  }
+
+
+  &.monochrome.transparent.inverted {
+    & {
+      color:@color-text-light;
+    }
+
+    &:hover,
+    &:focus {
+      color:@color-text-light;
+    }    
+
+    &::after {
+      border-color:@color-text-light;
+    }
+
+    &:active {
+      color:darken(lighten(@color-text-light, 20),10);
+      
+      &::after {
+         border-color:darken(lighten(@color-text-light, 20),10);
+      }
+    }
+
+    &.disabled {
+
+      & {
+        color:@color-text-medium-light;
+      }
+
+      &:hover,
+      &:focus {
+        color:@color-text-medium-light;
+      }    
+
+      &::after {
+        border-color:@color-text-medium-light;
+      }
+
+      &:active {
+        color:darken(lighten(@color-text-medium-light, 20),10);
+        
+        &::after {
+           border-color:darken(lighten(@color-text-medium-light, 20),10);
+        }
+      }
+    }
+  }       
 }
+
 
 .ui.buttons {
 
@@ -253,6 +597,14 @@ button.ui {
     }
   }
 
+    /* Fluid Or */
+  &.fluid .or {
+    width: 0em !important;
+  }
+  &.fluid .or:after {
+    display: none;
+  }
+
   &.vertical {
       display: inline-flex;
       flex-direction: column;
@@ -268,38 +620,6 @@ button.ui {
     margin-left:1rem;
   }
 
-  &.fluid {
-    display:flex;
-    button.ui,
-    .ui.button {
-      &:extend(.ui.button.fluid all);   
-    }
-  }
-
-  &.icon {
-    button.ui,
-    .ui.button {
-      &:extend(.ui.button.icon all);   
-    }
-  }
-
-  &.labeled.icon {
-
-    button.ui,
-    .ui.button {
-      &:extend(.ui.button.labeled.icon all);   
-    }
-
-  } 
-  &.right.labeled.icon {
-
-    button.ui,
-    .ui.button {
-      &:extend(.ui.button.right.labeled.icon all);   
-    }
-
-
-  }
   &.conditional {
 
     .or {
@@ -334,175 +654,211 @@ button.ui {
     display: none;
   }
 
-  .groupSizes(); 
-}
-
-
-.buttonColors(
-  @overrides:{.variables(){}},
-  @color_bg : @color-interactive,
-  @light_bg : @color-light-1,
-  @dark_bg : @color-dark-3,
-  @color_text : @color-interactive,
-  @light_text : @color-text-light,
-  @dark_text : @color-text-dark,
-){
-
-  @overrides();
-  .variables();
-
-  /***********************
-    COLORS VARIATIONS
-  ************************/
-
-  & {
-    & {
-      color:@color_text;
-      background-color:@light_bg;
-    }
-    
-    &::after {
-      border-color:darken(@light_bg, 2);
-    }
-
-    &:hover,
-    &:focus {
-      background-color:darken(@light_bg, 2);
-      color:lighten(@color_text, 5);
-    }
-
-    &:active {
-      background-color:darken(@light_bg,5);
+  &.fluid {
+    display:flex;
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.fluid all);   
     }
   }
 
+  &.icon {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.icon all);   
+    }
+
+    &.transparent:not(.labeled) {
+      button.ui,
+      .ui.button {
+        &::after {
+          border:0px;
+        }
+      }
+    }
+
+  }
+
+  &.labeled.icon {
+
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.labeled.icon all);   
+    }
+
+  } 
+  &.right.labeled.icon {
+
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.right.labeled.icon all);   
+    }
+  }
+
+  &.disabled {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.disabled all); 
+    }
+  }
 
   &.inverted {
-    & {
-      background-color: @color_bg;
-      color:@light_text;
-    }
-    &::after {
-      border-color:lighten(@color_bg, 2);
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.inverted all); 
     }
 
-    &:hover,
-    &:focus {
-      background-color:lighten(@color_bg, 5);
+    &.disabled {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.inverted.disabled all);
+      }
     }
 
-    &:active {
-      background-color:multiply(@color_bg, #eee);
+    &.conditional {
+      .or:before {
+        color:@color-interactive;
+        background-color:@color-light-1;
+      }
     }
   }
+  &.monochrome {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.monochrome all); 
+    }
+
+    &.disabled {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.disabled all);
+      }
+    }
+
+    &.conditional {
+      .or:before {
+        color:@color-text-dark;
+        background-color:@color-light-1;
+      }
+    }
+  }
+
 
   &.transparent {
-    & {
-      background-color:transparent;
-    }
-    &::after {
-      border-color:transparent;
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.transparent all); 
     }
 
-    &:hover,
-    &:focus {
-      color:lighten(@color_text, 10);
+    &.disabled {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.transparent.disabled all);
+      }
     }
 
-    &:active {
-      color:darken(@color_text, 2);
+    &.conditional {
+      .or:before {
+        color:@color-interactive;
+        background-color:transparent !important;
+        border:1px solid @color-interactive;
+      }
     }
   }
 
-  &.monochrome {
-    & {
-      color:lighten(@dark_text, 10);
+
+
+
+  &.transparent.inverted {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.transparent.inverted all);
     }
-    &:hover,
-    &:focus {
-      color:darken(@dark_text, 20);
+
+    &.disabled {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.transparent.inverted.disabled all);
+      }
     }
-    &:active {
-      color:darken(@dark_text, 20);
+
+    &.conditional {
+      .or:before {
+        color:@color-text-light;
+        border:1px solid @color-text-light;
+
+      }
     }
   }
 
-  &.inverted.transparent {
-    & {
-      background:transparent;
-    }
-
-  }
 
   &.monochrome.inverted {
-    & {
-      color:darken(@light_text, 5);
-      background-color:@dark_bg;
-    }
-    &::after {
-      border-color:lighten(@dark_bg, 7);
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.monochrome.inverted all);
     }
 
-    &:hover,
-    &:focus {
-      color:lighten(@light_text, 20);
-      background-color:lighten(@dark_bg, 7);
+    &.disabled {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.inverted.disabled all);
+      }
     }
 
-    &:active {
-      color:lighten(@light_text, 20);
-      background-color:lighten(@dark_bg, 2);
+    &.conditional {
+      .or:before {
+        color:@color-text-light;
+        background-color:@color-dark-3;
+      }
     }
   }
 
 
   &.monochrome.transparent {
-
-
-    &::after {
-      border-color:transparent;
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.monochrome.transparent all);
     }
-    &.active,
-    &:hover,
-    &:focus {
-      &::after {
-        border-color:darken(@dark_text, 20);
-      }
-    }   
 
-    &:active {
-      color:lighten(darken(@dark_text, 20),50);
-      &::after {
-        border-color:lighten(darken(@dark_text, 20),50);
+    &.disabled {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.transparent.disabled all);
       }
     }
 
+    &.conditional {
+      .or:before {
+        color:@color-text-dark;
+        border:1px solid @color-text-dark;
+
+      }
+    }
   }
 
-  &.monochrome.transparent.inverted {
-    & {
-      color:@light_text;
-      background-color:transparent;
+
+  &.inverted.transparent.monochrome {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.monochrome.transparent.inverted all);
     }
 
-    &.active,
-    &:hover,
-    &:focus {
-      &::after {
-        border-color:lighten(@light_text, 20);
+    &.disabled {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.transparent.inverted.disabled all);
       }
     }
 
-    &:active {
-      color:darken(lighten(@light_text, 20),10);
-      
-      &::after {
-         border-color:darken(lighten(@light_text, 20),10);
+    &.conditional {
+      .or:before {
+        color:@color-text-light;
+        border:1px solid @color-text-light;
       }
     }
-  }       
+  }
 
-
+  .groupSizes(); 
 }
 
 /*////////////////////////////////////////////////////////////////////*/
@@ -513,7 +869,10 @@ button.ui {
   @iconSize : 4rem,
   @fontSize : @h5,
   @orLineHeight : 3rem,
-  @orPadding : 2rem
+  @orHeight : 3rem,
+  @orPadding : 2rem,
+  @underlineCorrection : -1px
+
 ){  
 
   @overrides();
@@ -548,14 +907,27 @@ button.ui {
     }
     .or:before {      
       border-radius: @orLineHeight/2;
-      height:@orLineHeight;
-      width:@orLineHeight;
+      height:@orHeight;
+      width:@orHeight;
       margin-left:-@orLineHeight/2;
       margin-top:-@orLineHeight/2;
       line-height:@orLineHeight;
       font-size:@fontSize;
     }
   }
+
+  &.transparent {
+    .ui.button,
+    button.ui {
+      &::after {
+        display:block;
+        position:relative;
+        border:0px;
+        border-bottom:1px solid;
+        top:@underlineCorrection;
+      }
+    }
+  } 
 
 }
 
@@ -571,7 +943,7 @@ button.ui {
   @lineHeight: 2rem,
   @padding : 1.0833333rem 1rem 0.9188888rem 1rem,
   @iconSize : 4rem,
-  @hoverBorder : 0.25rem
+  @underlineCorrection : -1px
 ){  
 
   @overrides();
@@ -611,9 +983,12 @@ button.ui {
   }
 
   &.transparent::after {
-    border:0;
-    border-bottom:@hoverBorder solid transparent;
-  }
+    display:block;
+    position:relative;
+    border:0px;
+    border-bottom:1px solid;
+    top:@underlineCorrection;
+  } 
 }
 
 
@@ -651,8 +1026,9 @@ button.ui {
     @lineHeight: @h6Lineheight;
     @padding : 0.25rem 1rem;
     @orPadding : 1.5rem;
-    @orLineHeight : @h6Lineheight;
-    @hoverBorder: 1px;
+    @orLineHeight : 1.4rem;
+    @orHeight : @h6Lineheight;
+    @underlineCorrection: -1px;
 
   }
 };
@@ -665,8 +1041,9 @@ button.ui {
     @lineHeight: @h5Lineheight;
     @padding : 0.5rem 1rem;
     @orPadding : 1.5rem;
-    @orLineHeight : @h5Lineheight;
-    @hoverBorder: 2px;
+    @orHeight : @h5Lineheight;
+    @orLineHeight : 1.9rem;
+    @underlineCorrection: -1px;
 
   }
 };
@@ -681,7 +1058,8 @@ button.ui {
     @padding : 1.5rem 1rem;
     @orPadding : 2.5rem;
     @orLineHeight : 3.5rem;
-    @hoverBorder: 0.4rem;
+    @orHeight : 3.5rem;
+    @underlineCorrection: 2px;
 
   }
 };
@@ -695,8 +1073,9 @@ button.ui {
     @lineHeight: @h2Lineheight;
     @padding : 0.5rem 1rem;
     @orPadding : 3rem;
-    @orLineHeight : 4rem;
-    @hoverBorder: 0.5rem;
+    @orLineHeight : 3.9rem;
+    @orHeight : 4rem;
+    @underlineCorrection: -1rem;
   }
 };
 
