@@ -3969,8 +3969,7 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
           flex-direction: row;
   padding: 0;
   margin: 0.5rem 0rem;
-  vertical-align: middle;
-  /* "baseline" does not align with line grid */
+  vertical-align: top;
   /* Fluid Or */
   /* Fluid Or */
 }
@@ -3999,13 +3998,12 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0;
 }
 .ui.buttons.vertical .ui.button,
 .ui.buttons.vertical button.ui {
   display: block;
 }
-.ui.buttons:not(.vertical) + .ui.buttons {
+.ui.buttons + .ui.buttons {
   margin-left: 1rem;
 }
 .ui.buttons.conditional .or {
