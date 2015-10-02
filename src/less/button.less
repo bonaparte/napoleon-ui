@@ -17,7 +17,7 @@ button.ui {
     text-align:center;
   }
   
-  &::after {
+  &:after {
     content: '';
     position: absolute;
     top: 0;
@@ -25,11 +25,64 @@ button.ui {
     bottom: 0;
     left: 0;
     border: 1px solid;
+    z-index:1;
   }  
+
+  &:before {
+    content:"";
+    display:none;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    border:0px;
+    z-index:2;
+    border-style:solid;
+    border-color:@color-text-medium-light;
+  } 
 
   & + & {
     margin-left:1rem;
   }
+
+
+  &.toggle,
+  &.toggle-top,
+  &.toggle-right,
+  &.toggle-bottom,
+  &.toggle-left {
+
+    &.active,
+    &:hover,
+    &:focus {
+      &:before {
+        display:block;
+      }
+    }
+  }
+
+  &.toggle:before,
+  &.toggle-bottom:before {
+    border-width:0px;
+    border-bottom-width:3px; 
+  }
+
+  &.toggle-top:before {
+    border-width:0px;
+    border-top-width:3px; 
+  }
+
+  &.toggle-left:before {
+    border-width:0px;
+    border-left-width:3px; 
+  }
+
+  &.toggle-right:before {
+    border-width:0px;
+    border-right-width:3px; 
+  }
+
 
   &.marginless {
     margin:0;
@@ -53,7 +106,7 @@ button.ui {
   }
 
   &.labeled.icon {
-    &.fluid {
+    & {
       text-align:left;
     }
 
@@ -65,7 +118,7 @@ button.ui {
   }
 
   &.right.labeled.icon {
-    &.fluid {
+    & {
       text-align:right;
     }
 
@@ -200,7 +253,7 @@ button.ui {
       background-color:@color-light-1;
     }
     
-    &::after {
+    &:after {
       border-color:darken(@color-light-1, 2);
     }
 
@@ -220,13 +273,26 @@ button.ui {
       }
     }
 
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left {
+      &:before {
+        border-color:@color-text-medium-light;
+      }
+      &.active:before {
+        border-color:@color-active;
+      }
+    }
+
     &.disabled {
       & {
         color:@color-text-medium-dark;
         background-color:@color-light-4;
       }
       
-      &::after {
+      &:after {
         border-color:darken(@color-light-4, 2);
       }
 
@@ -247,7 +313,7 @@ button.ui {
     pointer-events: none;
     cursor:disabled;
 
-    &.transparent::after {
+    &.transparent:after {
       border:0px;
     }    
   }
@@ -259,7 +325,7 @@ button.ui {
       background-color: @color-interactive;
       color:@color-text-light;
     }
-    &::after {
+    &:after {
       border-color:lighten(@color-interactive, 2);
     }
 
@@ -272,11 +338,24 @@ button.ui {
       background-color:multiply(@color-interactive, #eee);
     }
 
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left {
+      &:before {
+        border-color:@color-text-medium-light;
+      }
+      &.active:before {
+        border-color:@color-light-1;
+      }
+    }
+
     &.active {
       & {
         background-color:@color-active;
       }
-      &::after {
+      &:after {
         border-color:lighten(@color-active, 2);
       }
       &:hover,
@@ -294,7 +373,7 @@ button.ui {
         background-color: @color-dark-5;
         color:@color-text-medium-light;
       }
-      &::after {
+      &:after {
         border-color:lighten(@color-dark-5, 2);
       }
 
@@ -324,17 +403,47 @@ button.ui {
         color: darken(@color-active, 2);
       }
     }
+    
+    &:after {
+      display:block;
+      position:relative;
+      border:0px;
+      border-bottom:1px solid;
+    }
 
-    &.icon:not(.labeled)::after {
+    &.toggle:after,
+    &.toggle-top:after,
+    &.toggle-right:after,
+    &.toggle-bottom:after,
+    &.toggle-left:after {
+      display:none;
+    }
+
+    &.icon:not(.labeled):after {
       border:0px;
     }
+
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left {
+      &:before {
+        border-color:@color-text-medium-light;
+      }
+      &.active:before {
+        border-color:@color-active;
+      }
+    }
+
 
     &.disabled {
       &:active {
         color:darken(@color-text-medium-dark, 2);
       }
 
-      &::after {
+      &:after {
         border:0px;
       }
     }
@@ -351,13 +460,27 @@ button.ui {
     &:active {
       color:darken(@color-text-dark, 20);
     }
-    
+
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left {
+      &:before {
+        border-color:@color-text-medium-light;
+      }
+      &.active:before {
+        border-color:@color-light-1;
+      }
+    }
+
     &.active {
       & {
         color:darken(@color-text-light, 5);
         background-color:@color-dark-3;
       }      
-      &::after {
+      &:after {
         border-color:lighten(@color-dark-3, 7);
       }
 
@@ -390,31 +513,46 @@ button.ui {
 
   &.transparent.inverted {
 
-    &::after {
+    &:after {
       border-color:@color-text-light;
     }
 
     &:active {
-      &::after {
+      &:after {
         border-color:@color-interactive;
       }
     }
 
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left {
+      &:before {
+        border-color:@color-text-medium-light;
+      }
+      &.active:before {
+        border-color:@color-light-1;
+      }
+    }
+
+
     &.active {
       &:active {
-        &::after {
+        &:after {
           border-color:@color-active;
         }
       }
     }
 
     &.disabled {
-      &::after {
+      &:after {
         border-color:@color-text-medium-light;
       }
 
       &:active {
-        &::after {
+        &:after {
           border-color:@color-text-medium-dark;
         }
       }
@@ -429,7 +567,7 @@ button.ui {
       color:darken(@color-text-light, 5);
       background-color:@color-dark-3;
     }
-    &::after {
+    &:after {
       border-color:lighten(@color-dark-3, 7);
     }
 
@@ -444,12 +582,26 @@ button.ui {
       background-color:lighten(@color-dark-3, 2);
     }
 
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left {
+      &:before {
+        border-color:@color-text-medium-dark;
+      }
+      &.active:before {
+        border-color:@color-dark-3;
+      }
+    }
+
     &.active {
       & {
         background-color:@color-light-1;
         color:lighten(@color-text-dark, 10);
       }
-      &::after {
+      &:after {
         border-color:darken(@color-light-1, 2);
       }
       &:hover,
@@ -469,7 +621,7 @@ button.ui {
         color:darken(@color-text-medium-light, 5);
         background-color:@color-dark-5;
       }
-      &::after {
+      &:after {
         border-color:lighten(@color-dark-5, 7);
       }
 
@@ -493,24 +645,39 @@ button.ui {
     &:active {
       color:lighten(darken(@color-text-dark, 20),50);
 
-      &::after {
+      &:after {
         border-color:lighten(darken(@color-text-dark, 20),50);
       }
     }
+
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left {
+      &:before {
+        border-color:@color-text-medium-dark;
+      }
+      &.active:before {
+        border-color:@color-dark-3;
+      }
+    }
+
 
     &.active {
       & {
         color:@color-text-dark;
 
       }
-      &::after {
+      &:after {
         border-color:@color-text-dark;
       }
 
       &:active {
         color:lighten(darken(@color-text-dark, 20),50);
 
-        &::after {
+        &:after {
           border-color:lighten(darken(@color-text-dark, 20),50);
         }
       }
@@ -522,7 +689,7 @@ button.ui {
       &:active {
         color:lighten(darken(@color-text-medium-dark, 20),50);
 
-        &::after {
+        &:after {
           border-color:lighten(darken(@color-text-medium-dark, 20),50);
         }
       }
@@ -540,15 +707,28 @@ button.ui {
       color:@color-text-light;
     }    
 
-    &::after {
+    &:after {
       border-color:@color-text-light;
     }
 
     &:active {
       color:darken(lighten(@color-text-light, 20),10);
       
-      &::after {
+      &:after {
          border-color:darken(lighten(@color-text-light, 20),10);
+      }
+    }
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left {
+      &:before {
+        border-color:@color-text-medium-light;
+      }
+      &.active:before {
+        border-color:@color-light-1;
       }
     }
 
@@ -563,14 +743,14 @@ button.ui {
         color:@color-text-medium-light;
       }    
 
-      &::after {
+      &:after {
         border-color:@color-text-medium-light;
       }
 
       &:active {
         color:darken(lighten(@color-text-medium-light, 20),10);
         
-        &::after {
+        &:after {
            border-color:darken(lighten(@color-text-medium-light, 20),10);
         }
       }
@@ -646,6 +826,55 @@ button.ui {
   }
 
 
+  &.toggle-top {
+
+    .ui.button,
+    button.ui {
+      &:extend(.ui.button.toggle-top all);
+    }
+  }
+  &.toggle-right {
+
+    .ui.button,
+    button.ui {
+      &:extend(.ui.button.toggle-right all);
+    }
+  }
+
+  &.conditional,
+  &.toggle,
+  &.toggle-bottom {
+
+    .ui.button,
+    button.ui {
+      &:extend(.ui.button.toggle all);
+    }
+  }
+
+  &.toggle-left {
+
+    .ui.button,
+    button.ui {
+      &:extend(.ui.button.toggle-left all);
+    }
+  }
+  &.conditional {
+
+    .ui.button,
+    button.ui {
+
+      &:first-child {
+        &:extend(.ui.button.toggle-left all);
+      }
+      
+      &:last-child {
+        &:extend(.ui.button.toggle-right all);
+      }
+    }
+  }
+
+
+
     /* Fluid Or */
   &.fluid .or {
     width: 0em !important;
@@ -671,7 +900,7 @@ button.ui {
     &.transparent:not(.labeled) {
       button.ui,
       .ui.button {
-        &::after {
+        &:after {
           border:0px;
         }
       }
@@ -708,6 +937,18 @@ button.ui {
       &:extend(.ui.button.inverted all); 
     }
 
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left,
+    &.conditional {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.inverted.toggle all);
+      }
+    }
+
     &.disabled {
       button.ui,
       .ui.button {
@@ -728,6 +969,18 @@ button.ui {
       &:extend(.ui.button.monochrome all); 
     }
 
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left,
+    &.conditional {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.toggle all);
+      }
+    }
+
     &.disabled {
       button.ui,
       .ui.button {
@@ -737,8 +990,8 @@ button.ui {
 
     &.conditional {
       .or:before {
-        color:@color-text-dark;
-        background-color:@color-light-1;
+        color:@color-text-light;
+        background-color:@color-dark-3;
       }
     }
   }
@@ -750,6 +1003,18 @@ button.ui {
       &:extend(.ui.button.transparent all); 
     }
 
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left,
+    &.conditional {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.transparent.toggle all);
+      }
+    }
+    
     &.disabled {
       button.ui,
       .ui.button {
@@ -775,6 +1040,18 @@ button.ui {
       &:extend(.ui.button.transparent.inverted all);
     }
 
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left,
+    &.conditional {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.transparent.inverted.toggle all);
+      }
+    }
+
     &.disabled {
       button.ui,
       .ui.button {
@@ -797,6 +1074,17 @@ button.ui {
     .ui.button {
       &:extend(.ui.button.monochrome.inverted all);
     }
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left,
+    &.conditional {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.inverted.toggle all);
+      }
+    }
 
     &.disabled {
       button.ui,
@@ -804,11 +1092,10 @@ button.ui {
         &:extend(.ui.button.monochrome.inverted.disabled all);
       }
     }
-
     &.conditional {
       .or:before {
-        color:@color-text-light;
-        background-color:@color-dark-3;
+        color:@color-text-dark;
+        background-color:@color-light-1;
       }
     }
   }
@@ -818,6 +1105,18 @@ button.ui {
     button.ui,
     .ui.button {
       &:extend(.ui.button.monochrome.transparent all);
+    }
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left,
+    &.conditional {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.transparent.toggle all);
+      }
     }
 
     &.disabled {
@@ -841,6 +1140,18 @@ button.ui {
     button.ui,
     .ui.button {
       &:extend(.ui.button.monochrome.transparent.inverted all);
+    }
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left,
+    &.conditional {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.transparent.inverted.toggle all);
+      }
     }
 
     &.disabled {
@@ -871,7 +1182,8 @@ button.ui {
   @orLineHeight : 3rem,
   @orHeight : 3rem,
   @orPadding : 2rem,
-  @underlineCorrection : -1px
+  @underlineCorrection : -1px,
+  @toggleLine : 3px
 
 ){  
 
@@ -884,18 +1196,15 @@ button.ui {
     button.ui,
     .ui.button {
 
-      &:first-child,
       &:first-child {
         padding-right:@orPadding;
       }
 
-      &:not(:first-child):not(:last-child),
       &:not(:first-child):not(:last-child) {
         padding-left:@orPadding;
         padding-right:@orPadding;
       }
   
-      &:last-child,
       &:last-child {
         padding-left:@orPadding;
       }
@@ -919,15 +1228,100 @@ button.ui {
   &.transparent {
     .ui.button,
     button.ui {
-      &::after {
-        display:block;
-        position:relative;
-        border:0px;
-        border-bottom:1px solid;
+      &:after {
         top:@underlineCorrection;
       }
     }
+
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.conditional,
+    &.toggle-bottom,
+    &.toggle-left {
+      .ui.button,
+      button.ui {
+        &:after {
+          display:none;
+        }
+      }
+    }
   } 
+
+  &.toggle-top {
+    .ui.button,
+    button.ui {
+      &:before {
+        margin:0px;
+        margin-top:-@toggleLine;
+        border-width:0px;
+        border-top-width:@toggleLine;
+      }
+    }
+  }
+
+  &.toggle-right {
+    .ui.button,
+    button.ui {
+      &:before {
+        margin:0px;
+        margin-right:-@toggleLine;
+        border-width:0px;
+        border-right-width:@toggleLine;
+      }
+    }
+  }
+
+  &.toggle,
+  &.conditional,
+  &.toggle-bottom {
+    .ui.button,
+    button.ui {
+      &:before {
+        margin:0px;
+        margin-bottom:-@toggleLine;
+        border-width:0px;
+        border-bottom-width:@toggleLine;
+      }
+    }
+  }
+
+  &.toggle-left {
+    .ui.button,
+    button.ui {
+      &:before {
+        margin:0px;
+        margin-left:-@toggleLine;
+        border-width:0px;
+        border-left-width:@toggleLine;
+      }
+    }
+  }
+
+  &.conditional {
+    .ui.button,
+    button.ui {
+
+      &:first-child {
+        &:before {
+          margin:0px;
+          margin-left:-@toggleLine;
+          border-width:0px;
+          border-left-width:@toggleLine;
+        }
+      }
+      
+      &:last-child {
+        &:before {
+          margin:0px;
+          margin-right:-@toggleLine;
+          border-width:0px;
+          border-right-width:@toggleLine;
+        }
+      }
+    }
+  }
 
 }
 
@@ -943,7 +1337,8 @@ button.ui {
   @lineHeight: 2rem,
   @padding : 1.0833333rem 1rem 0.9188888rem 1rem,
   @iconSize : 4rem,
-  @underlineCorrection : -1px
+  @underlineCorrection : -1px,
+  @toggleLine : 3px
 ){  
 
   @overrides();
@@ -982,13 +1377,39 @@ button.ui {
     padding-right:@iconSize+1em;
   }
 
-  &.transparent::after {
-    display:block;
-    position:relative;
-    border:0px;
-    border-bottom:1px solid;
+  &.transparent:after {
     top:@underlineCorrection;
   } 
+
+  &.toggle-top:before {
+    margin:0px;
+    margin-top:-@toggleLine;
+    border-width:0px;
+    border-top-width:@toggleLine;
+  }
+
+  &.toggle-right:before {
+    margin:0px;
+    margin-right:-@toggleLine;
+    border-width:0px;
+    border-right-width:@toggleLine;
+  }
+
+  &.toggle:before,
+  &.toggle-bottom:before {
+    margin:0px;
+    margin-bottom:-@toggleLine;
+    border-width:0px;
+    border-bottom-width:@toggleLine;
+  }
+
+  &.toggle-left:before {
+    margin:0px;
+    margin-left:-@toggleLine;
+    border-width:0px;
+    border-left-width:@toggleLine;
+  }
+
 }
 
 
@@ -1029,6 +1450,7 @@ button.ui {
     @orLineHeight : 1.4rem;
     @orHeight : @h6Lineheight;
     @underlineCorrection: -1px;
+    @toggleLine: 1px;
 
   }
 };
@@ -1044,6 +1466,7 @@ button.ui {
     @orHeight : @h5Lineheight;
     @orLineHeight : 1.9rem;
     @underlineCorrection: -1px;
+    @toggleLine: 2px;
 
   }
 };
@@ -1060,6 +1483,7 @@ button.ui {
     @orLineHeight : 3.5rem;
     @orHeight : 3.5rem;
     @underlineCorrection: 2px;
+    @toggleLine: 4px;
 
   }
 };
@@ -1076,6 +1500,7 @@ button.ui {
     @orLineHeight : 3.9rem;
     @orHeight : 4rem;
     @underlineCorrection: -1rem;
+    @toggleLine: 6px;
   }
 };
 
