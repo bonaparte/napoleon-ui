@@ -785,20 +785,30 @@ button.ui {
     display: none;
   }
 
-  &.vertical {
-      display: inline-flex;
-      flex-direction: column;
-
-      .ui.button,
-      button.ui {
-        display:block;
-      }
-  }
-
 
   & + & {
     margin-left:1rem;
   }
+
+  &.vertical {
+    display: inline-flex;
+    flex-direction: column;
+    margin:0;
+
+    .ui.button,
+    button.ui {
+      display:block;
+    }
+
+    & + & {
+      margin-top:1rem;
+    }  
+  }
+
+  &.marginless {
+    margin:0px;
+  }
+ 
 
   &.conditional {
 

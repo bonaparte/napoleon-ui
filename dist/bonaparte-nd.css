@@ -3988,6 +3988,9 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
 .ui.buttons.fluid .or:after {
   display: none;
 }
+.ui.buttons + .ui.buttons {
+  margin-left: 1rem;
+}
 .ui.buttons.vertical {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3998,13 +4001,17 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0;
 }
 .ui.buttons.vertical .ui.button,
 .ui.buttons.vertical button.ui {
   display: block;
 }
-.ui.buttons + .ui.buttons {
-  margin-left: 1rem;
+.ui.buttons.vertical + .ui.buttons.vertical {
+  margin-top: 1rem;
+}
+.ui.buttons.marginless {
+  margin: 0px;
 }
 .ui.buttons.conditional .or {
   position: relative;
