@@ -1487,8 +1487,6 @@ body,
 body > bonaparte-toolbar {
   height: 100%;
 }
-/*Import Fonts*/
-/*@import url("@{assetsPath}/site/fonts/wsj-fonts.css"); */
 p {
   font-weight: 400;
   padding: 0 0 0.5rem 0;
@@ -1718,7 +1716,11 @@ button.ui.toggle-right:before,
   border-right-width: 3px;
 }
 .ui.button.marginless,
-button.ui.marginless {
+button.ui.marginless,
+.ui.button + .ui.button.marginless,
+.ui.button + button.ui.marginless,
+button.ui + .ui.button.marginless,
+button.ui + button.ui.marginless {
   margin: 0;
 }
 .ui.button.fluid,
