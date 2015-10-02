@@ -11,6 +11,7 @@
     "bonaparte-sidebar" :"git+https://git@github.dowjones.net/bonaparte/bonaparte-sidebar.git#gh-pages",
     "bonaparte-toolbar" :"git+https://git@github.dowjones.net/bonaparte/bonaparte-toolbar.git#gh-pages",
     "bonaparte-draggable" :"git+https://git@github.dowjones.net/bonaparte/bonaparte-draggable.git#gh-pages",
+    "bonaparte-dropdown" :"git+https://git@github.dowjones.net/bonaparte/bonaparte-dropdown.git#gh-pages",
     "mousetrap" : "^1.5.3"
   },
   
