@@ -1,70 +1,142 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
   <head>
-    <link rel="stylesheet" type="text/css" href="../dist/SUI/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="../dist/webpacked.css">
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="image_src" type="image/jpeg" href="images/logo.png" />
+    <!-- Site Properities -->
+    <meta name="generator" content="DocPad v6.78.1" />
+    <title>Examples | Bonaparte</title>
+    <meta name="description" content="Examples of all user interface elements" />
+    <meta name="keywords" content="html5, ui, library, framework, javascript" />
 
-
-
-    <script src="../dist/webpacked.js"></script>
-
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="../dist/SUI/semantic.min.js"></script>  
-    <script>
-     
-      document.createElement("bonaparte-panel").bonaparte.mixin(function(){
-        this.sayHello = function(){
-          alert("hello");
-        }
-      });
-
-
-      $(function(){
-       $('.ui.dropdown')
-          .dropdown()
-        ;
- 
-
-      });
-    </script>
+    <script src="../dist/bonaparte-nd.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" type="text/css" class="ui" href="../dist/bonaparte-nd.css">
 
     <style>  
-      body, html {
-        position:relative;
-        margin:0;
-        padding:0;
-        height:100%;
-        background-color: blue;
+      .example {
+        width: 100%;
+        height: 20rem;
+        overflow: hidden;
+        margin-top: 0.5rem;
+        border: 1px solid #999;
+        position: relative;
       }
 
-      body > bonaparte-toolbar {
-        height:100%;
+      .example > bonaparte-toolbar {
+        height: 100%
+      }
+
+      .example >  bonaparte-toolbar > :nth-child(2) {
+        background: #ddd ;
       }
 
 
+      bonaparte-panel[data-position~="left"], bonaparte-panel[position~="left"],
+      bonaparte-panel[data-position~="right"], bonaparte-panel[position~="right"] {
+        width: 200px;
+      }
+      bonaparte-panel[data-position~="top"], bonaparte-panel[position~="top"],
+      bonaparte-panel[data-position~="bottom"], bonaparte-panel[position~="bottom"] {
+        height: 100px;
+      }
     </style>
 
   </head>
-  <body>
-
-
-
-
-        
-    <bonaparte-toolbar display="cover" id="toolbar"  data-sidebar="left" data-cornerstone="top left" open="false">  
-
-      <aside>
-        <div class="buttons">
-          <bonaparte-button class="ui icon button" target="#left" target-open="true" action="click" bubbles="false"><i class="shop icon left"></i></bonaparte-button>
+  <body class="">
+    <bonaparte-toolbar id="toolbar" data-sidebar="top" data-cornerstone="top left" open="false">  
+      <aside class="dark">
+        <div>
+          <div class="header"><a href="./">Bonaparte</a> : panel Examples</div>
         </div>
+        <div class="buttons">
+          <div class="header"><a href="https://github.dowjones.net/bonaparte/bonaparte-panel"><i class="github icon"></i> Dowjones Github</a></div>
+        </div>
+
       </aside>
+      <bonaparte-scroll scrollbar="visible" resize="true">
+        <bonaparte-content>
+
+          <div class="pusher">
+            <div class="full height">
+              <div class="article">
+                <div class="main demo ui container">
+                  <div class="ui active tab" data-tab="elements">
+                    <h4 class="ui dividing header">About</h4>
+                      <p>panel</p>
+        <h4 class="ui dividing header">Example</h4>
+                    <div class="example">
+                     <!-- ######################################################################## -->
 
 
-      <div class="content">    
-          <bonaparte-panel id="left" position="left"></bonaparte-panel>
-      </div>
+<bonaparte-panel id="interactiveExample" position="left"></bonaparte-panel>
+
+
+                  </div>
+
+  
+          <bonaparte-button class="ui icon button" target="#interactiveExample" target-open="true" action="click" bubbles="false"><i class="shop icon left"></i> Open Panel</bonaparte-button>
+
+
+          <bonaparte-button class="ui icon button" target="#interactiveExample" target-open="false" action="click" bubbles="false"><i class="shop icon left"></i> Close Panel</bonaparte-button>
+
+
+          <bonaparte-button class="ui icon button" target="#interactiveExample" target-open="true" toggle="true" action="click" bubbles="false"><i class="shop icon left"></i> Toggle Panel</bonaparte-button>
+
+
+
+             <h4 class="ui dividing header">Attributes</h4>
+
+                    <div class="ui two column stackable grid">
+                      <div class="column">
+
+                        <h5 class="ui dividing header">Position</h5>
+                        <p>
+                         <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-panel#interactiveExample, .code_position"
+                            toggle="true" target-position="">Default 
+                          </bonaparte-button>
+                         <br />
+                          <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-panel#interactiveExample, .code_position"
+                            target-position="top">Top 
+                          </bonaparte-button>
+            
+                          <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-panel#interactiveExample, .code_position"
+                            toggle="true" target-position="right">Right
+                          </bonaparte-button>
+    
+                         <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-panel#interactiveExample, .code_position"
+                            toggle="true" target-position="bottom">Bottom 
+                          </bonaparte-button>
+               
+                          <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-panel#interactiveExample, .code_position"
+                            toggle="true" target-position="left">Left
+                          </bonaparte-button>
+                        </p>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </bonaparte-content>
+      </bonaparte-scroll>
     </bonaparte-toolbar>
-
-
+  </body>
+</html>
 
   </body>
 </html> 

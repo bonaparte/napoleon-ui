@@ -79,9 +79,11 @@ require("./src/less/bonaparte-sidebar.less");
 require("bonaparte-toolbar").register();
 require("./src/less/bonaparte-toolbar.less");
 
-require("bonaparte-draggable/bonaparte.build");
+// require("bonaparte-draggable/bonaparte.build");
+require("../../bonaparte/bonaparte-draggable/bonaparte.build");
 
 require("./src/less/bonaparte-content.less");
 
 require("bonaparte-dropdown/bonaparte.build");
+// require("../../bonaparted/bonaparte-dropdown/bonaparte.build");
 

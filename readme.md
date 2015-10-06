@@ -55,6 +55,8 @@ This makes bonaparte and the bonaparte Semantic UI theme available in your proje
   - [< bonaparte-sidebar >](https://github.dowjones.net/bonaparte/bonaparte-sidebar)
   - [< bonaparte-panel >](https://github.dowjones.net/bonaparte/bonaparte-panel)
   - [< bonaparte-toolbar >](https://github.dowjones.net/bonaparte/bonaparte-toolbar)
+  - [< bonaparte-dragable >](https://github.dowjones.net/bonaparte/bonaparte-dragable)
+  - [< bonaparte-dropdown >](https://github.dowjones.net/bonaparte/bonaparte-dropdown)
 
 ## Development
 
