@@ -16,7 +16,24 @@
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <link rel="stylesheet" type="text/css" class="ui" href="../dist/bonaparte-nd.css">
 
+
     <style>  
+
+      pre {
+        background-color: #fff;
+        display: block;
+        font-size: 1.1rem;
+      }
+      code .code_position:not([position=""]):after {
+        color: red;
+        content: " position=\"" attr(position) "\"";
+      }
+
+      code .code_open:not([open=""]):after {
+        color: red;
+        content: " open=\"" attr(open) "\"";
+      }
+
       .example {
         width: 100%;
         height: 20rem;
@@ -60,33 +77,18 @@
       <bonaparte-scroll scrollbar="visible" resize="true">
         <bonaparte-content>
 
-          <div class="pusher">
-            <div class="full height">
-              <div class="article">
                 <div class="main demo ui container">
-                  <div class="ui active tab" data-tab="elements">
                     <h4 class="ui dividing header">About</h4>
-                      <p>panel</p>
-        <h4 class="ui dividing header">Example</h4>
+                      <p>A panel is a temporary UI element that slides in from one side. It automatically attaches itself to its next positioned parent element. There can only be one panel open at a time and opening another panel or clicking outside of it will close the current panel. (For a permanent sidebar, use the <a href="./sidebar.html">sidebar</a> tag)</p>
+                    <h4 class="ui dividing header">Example</h4>
                     <div class="example">
                      <!-- ######################################################################## -->
 
 
-<bonaparte-panel id="interactiveExample" position="left"></bonaparte-panel>
+                      <bonaparte-panel id="interactiveExample" open="" position=""></bonaparte-panel>
 
 
                   </div>
-
-  
-          <bonaparte-button class="ui icon button" target="#interactiveExample" target-open="true" action="click" bubbles="false"><i class="shop icon left"></i> Open Panel</bonaparte-button>
-
-
-          <bonaparte-button class="ui icon button" target="#interactiveExample" target-open="false" action="click" bubbles="false"><i class="shop icon left"></i> Close Panel</bonaparte-button>
-
-
-          <bonaparte-button class="ui icon button" target="#interactiveExample" target-open="true" toggle="open" action="click" bubbles="false"><i class="shop icon left"></i> Toggle Panel</bonaparte-button>
-
-
 
              <h4 class="ui dividing header">Attributes</h4>
 
@@ -125,13 +127,42 @@
                             toggle="true" target-position="left">Left
                           </bonaparte-button>
                         </p>
+                      </div>                      <div class="column">
+
+                        <h5 class="ui dividing header">Open</h5>
+                        <p>
+                     
+
+                          <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-panel#interactiveExample, .code_open"
+                            target-open="">Default 
+                          </bonaparte-button>
+                          <br />
+                          <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-panel#interactiveExample, .code_open"
+                            target-open="true">True 
+                          </bonaparte-button>
+                     
+                          <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-panel#interactiveExample, .code_open"
+                            target-open="false">False 
+                          </bonaparte-button>
+                        </p>
                       </div>
-                      </div>
-                  </div>
-                </div>
+                     
               </div>
-            </div>
+              <h4 class="ui dividing header">Code</h4>
+<pre class="prettyprint"><code>  &lt;bonaparte-panel<span class="code_position" position=""></span><span class="code_open" open=""></span>&gt; 
+    ...
+  &lt;/bonaparte-panel&gt;
+</code></pre>
+         
+
           </div>
+            </div>
         </bonaparte-content>
       </bonaparte-scroll>
     </bonaparte-toolbar>

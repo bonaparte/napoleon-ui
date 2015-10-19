@@ -8,7 +8,7 @@
     <link rel="image_src" type="image/jpeg" href="images/logo.png" />
     <!-- Site Properities -->
     <meta name="generator" content="DocPad v6.78.1" />
-    <title>Sidebar | Bonaparte</title>
+    <title>Panels | Bonaparte</title>
     <meta name="description" content="Examples of all user interface elements" />
     <meta name="keywords" content="html5, ui, library, framework, javascript" />
 
@@ -16,15 +16,55 @@
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <link rel="stylesheet" type="text/css" class="ui" href="../dist/bonaparte-nd.css">
 
+
     <style>  
+
+      pre {
+        background-color: #fff;
+        display: block;
+        font-size: 1.1rem;
+      }
+      code .code_position:not([position=""]):after {
+        color: red;
+        content: " position=\"" attr(position) "\"";
+      }
+
+      code .code_open:not([open=""]):after {
+        color: red;
+        content: " open=\"" attr(open) "\"";
+      }
+
       .example {
         width: 100%;
         height: 20rem;
         overflow: hidden;
         margin-top: 0.5rem;
         border: 1px solid #999;
+        position: relative;
       }
 
+      .example > bonaparte-toolbar {
+        height: 100%
+      }
+
+      .example >  bonaparte-toolbar > :nth-child(2) {
+        background: #ddd ;
+      }
+
+      bonaparte-sidebar {
+        width: 100%;
+        height: 100%;
+      }
+
+
+/*      bonaparte-sidebar[data-position~="left"], bonaparte-sidebar[position~="left"],
+      bonaparte-sidebar[data-position~="right"], bonaparte-sidebar[position~="right"] {
+        width: 200px;
+      }
+      bonaparte-sidebar[data-position~="top"], bonaparte-sidebar[position~="top"],
+      bonaparte-sidebar[data-position~="bottom"], bonaparte-sidebar[position~="bottom"] {
+        height: 100px;
+      }*/
     </style>
 
   </head>
@@ -32,7 +72,7 @@
     <bonaparte-toolbar id="toolbar" data-sidebar="top" data-cornerstone="top left" open="false">  
       <aside class="dark">
         <div>
-          <div class="header"><a href="./">Bonaparte</a> : sidebar Examples</div>
+          <div class="header"><a href="./">Bonaparte</a> : panel Examples</div>
         </div>
         <div class="buttons">
           <div class="header"><a href="https://github.dowjones.net/bonaparte/bonaparte-sidebar"><i class="github icon"></i> Dowjones Github</a></div>
@@ -42,43 +82,96 @@
       <bonaparte-scroll scrollbar="visible" resize="true">
         <bonaparte-content>
 
-          <div class="pusher">
-            <div class="full height">
-              <div class="article">
                 <div class="main demo ui container">
-                  <div class="ui active tab" data-tab="elements">
                     <h4 class="ui dividing header">About</h4>
-                      <p>TODO : Sidebar example</p>
+                      <p></p>
                     <h4 class="ui dividing header">Example</h4>
                     <div class="example">
                      <!-- ######################################################################## -->
-  
 
-                     <!-- ######################################################################## -->
-                    </div>
 
-                    <h4 class="ui dividing header">Attributes</h4>
+                    <bonaparte-sidebar id="interactiveExample" open="" position="">
+                      <div>Side bar</div>
+                      <div>Content bar</div>
+                    </bonaparte-sidebar>
+
+
+                  </div>
+
+             <h4 class="ui dividing header">Attributes</h4>
+
                     <div class="ui two column stackable grid">
                       <div class="column">
-                        <h5 class="ui dividing header">Attribute one</h5>
-                         <p class="small"><em>Optional</em> - <code>[type]</code> - Default <code>true</code>, Attribute description</p>
-                         <p>
-                          <bonaparte-button class="ui button small" action="click" target="bonaparte-draggable#sortable, .code_updatedom" toggle="true" target-updatedom="">Default </bonaparte-button>
+
+                        <h5 class="ui dividing header">Position</h5>
+                        <p>
+                         <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_position"
+                            toggle="true" target-position="">Default 
+                          </bonaparte-button>
+                         <br />
+                          <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_position"
+                            target-position="top">Top 
+                          </bonaparte-button>
+            
+                          <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_position"
+                            toggle="true" target-position="right">Right
+                          </bonaparte-button>
+    
+                         <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_position"
+                            toggle="true" target-position="bottom">Bottom 
+                          </bonaparte-button>
+               
+                          <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_position"
+                            toggle="true" target-position="left">Left
+                          </bonaparte-button>
                         </p>
                       </div>
                       <div class="column">
-                        <h5 class="ui dividing header">Attribute two</h5>
-                         <p class="small"><em>Optional</em> - <code>[type]</code> - Default <code>true</code>, Attribute description</p>
-                         <p>
-                          <bonaparte-button class="ui button small" action="click" target="bonaparte-draggable#sortable, .code_updatedom" toggle="true" target-updatedom="">Default </bonaparte-button>
+
+                        <h5 class="ui dividing header">Open</h5>
+                        <p>
+                     
+
+                          <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_open"
+                            target-open="">Default 
+                          </bonaparte-button>
+                          <br />
+                          <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_open"
+                            target-open="true">True 
+                          </bonaparte-button>
+                     
+                          <bonaparte-button
+                            class="ui button small"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_open"
+                            target-open="false">False 
+                          </bonaparte-button>
                         </p>
                       </div>
-                    </div>
-                  </div>
-                </div>
+                     
               </div>
-            </div>
+              <h4 class="ui dividing header">Code</h4>
+<pre class="prettyprint"><code>  &lt;bonaparte-sidebar<span class="code_position" position=""></span><span class="code_open" open=""></span>&gt; 
+    ...
+  &lt;/bonaparte-sidebar&gt;
+</code></pre>
+         
+
           </div>
+            </div>
         </bonaparte-content>
       </bonaparte-scroll>
     </bonaparte-toolbar>

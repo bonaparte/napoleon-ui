@@ -22,20 +22,32 @@ bonaparte-panel {
   }
   /*ACTIVE BORDER*/
 
+  &:not([data-position]),
+  &:not([position]),
+  &[data-position=""],
+  &[position=""],
   &[data-position~="left"],
   &[position~="left"] {
-    border-right:@border-width  solid @border-color;
+    border-width: 0 @border-width 0 0;
+    border-color: @border-color;
+    border-style: solid;
   }
   &[data-position~="right"],
   &[position~="right"] {
-    border-left:@border-width  solid @border-color;
+    border-width: 0 0 0 @border-width;
+    border-color: @border-color;
+    border-style: solid;
   }
   &[data-position~="bottom"],
   &[position~="bottom"] {
-    border-top:@border-width  solid @border-color;
+    border-width: @border-width 0 0 0;
+    border-color: @border-color;
+    border-style: solid;
   }
   &[data-position~="top"],
   &[position~="top"] {
-    border-bottom:@border-width  solid @border-color;
+    border-width: 0 0 @border-width 0;
+    border-color: @border-color;
+    border-style: solid;
   }
 }
