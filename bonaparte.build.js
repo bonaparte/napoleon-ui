@@ -18,7 +18,7 @@ require("./SUI/definitions/elements/header.less");
 require("./SUI/definitions/elements/icon.less");
 // require("./SUI/definitions/elements/image.less");
 require("./SUI/definitions/elements/input.less");
-// require("./SUI/definitions/elements/label.less");
+require("./SUI/definitions/elements/label.less");
 // require("./SUI/definitions/elements/list.less");
 // require("./SUI/definitions/elements/loader.less");
 // require("./SUI/definitions/elements/rail.less");
@@ -32,7 +32,7 @@ require("./SUI/definitions/collections/form.less");
 require("./SUI/definitions/collections/grid.less");
 // require("./SUI/definitions/collections/menu.less");
 // require("./SUI/definitions/collections/message.less");
-// require("./SUI/definitions/collections/table.less");
+require("./SUI/definitions/collections/table.less");
 
 
 /* Views */
