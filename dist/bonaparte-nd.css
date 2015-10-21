@@ -20461,101 +20461,6 @@ i.icon.zerply:before {
 /*******************************
          Theme Overrides
 *******************************/
-bonaparte-panel {
-  display: none;
-  position: absolute;
-  border: 0;
-  overflow: hidden;
-  z-index: 60;
-  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
-          transition: transform 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
-}
-bonaparte-panel[data-open="true"],
-bonaparte-panel[open="true"] {
-  z-index: 70;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-}
-bonaparte-panel:not([data-position]),
-bonaparte-panel:not([position]),
-bonaparte-panel[data-position=""],
-bonaparte-panel[position=""],
-bonaparte-panel[data-position~="left"],
-bonaparte-panel[position~="left"] {
-  display: block;
-  height: 100%;
-  top: 0px;
-  border: 0;
-  width: 10rem;
-  right: 100%;
-}
-bonaparte-panel:not([data-position])[data-open="true"],
-bonaparte-panel:not([position])[data-open="true"],
-bonaparte-panel[data-position=""][data-open="true"],
-bonaparte-panel[position=""][data-open="true"],
-bonaparte-panel[data-position~="left"][data-open="true"],
-bonaparte-panel[position~="left"][data-open="true"],
-bonaparte-panel:not([data-position])[open="true"],
-bonaparte-panel:not([position])[open="true"],
-bonaparte-panel[data-position=""][open="true"],
-bonaparte-panel[position=""][open="true"],
-bonaparte-panel[data-position~="left"][open="true"],
-bonaparte-panel[position~="left"][open="true"] {
-  -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-          transform: translateX(100%);
-}
-bonaparte-panel[data-position~="right"],
-bonaparte-panel[position~="right"] {
-  display: block;
-  height: 100%;
-  top: 0px;
-  width: 10rem;
-  left: 100%;
-}
-bonaparte-panel[data-position~="right"][data-open="true"],
-bonaparte-panel[position~="right"][data-open="true"],
-bonaparte-panel[data-position~="right"][open="true"],
-bonaparte-panel[position~="right"][open="true"] {
-  -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-bonaparte-panel[data-position~="top"],
-bonaparte-panel[position~="top"] {
-  display: block;
-  width: 100%;
-  left: 0px;
-  top: auto;
-  height: 10rem;
-  bottom: 100%;
-}
-bonaparte-panel[data-position~="top"][data-open="true"],
-bonaparte-panel[position~="top"][data-open="true"],
-bonaparte-panel[data-position~="top"][open="true"],
-bonaparte-panel[position~="top"][open="true"] {
-  -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-          transform: translateY(100%);
-}
-bonaparte-panel[data-position~="bottom"],
-bonaparte-panel[position~="bottom"] {
-  display: block;
-  width: 100%;
-  bottom: 0px;
-  left: 0px;
-  height: 10rem;
-  top: 100%;
-}
-bonaparte-panel[data-position~="bottom"][data-open="true"],
-bonaparte-panel[position~="bottom"][data-open="true"],
-bonaparte-panel[data-position~="bottom"][open="true"],
-bonaparte-panel[position~="bottom"][open="true"] {
-  -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-          transform: translateY(-100%);
-}
-/*///////////////////////////////////////////////////////////////////////////*/
 /*============================
        Global Variables
 ==============================*/
@@ -20584,10 +20489,6 @@ bonaparte-panel[open="true"] {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
-bonaparte-panel:not([data-position]),
-bonaparte-panel:not([position]),
-bonaparte-panel[data-position=""],
-bonaparte-panel[position=""],
 bonaparte-panel[data-position~="left"],
 bonaparte-panel[position~="left"] {
   display: block;
@@ -20597,16 +20498,8 @@ bonaparte-panel[position~="left"] {
   width: 10rem;
   right: 100%;
 }
-bonaparte-panel:not([data-position])[data-open="true"],
-bonaparte-panel:not([position])[data-open="true"],
-bonaparte-panel[data-position=""][data-open="true"],
-bonaparte-panel[position=""][data-open="true"],
 bonaparte-panel[data-position~="left"][data-open="true"],
 bonaparte-panel[position~="left"][data-open="true"],
-bonaparte-panel:not([data-position])[open="true"],
-bonaparte-panel:not([position])[open="true"],
-bonaparte-panel[data-position=""][open="true"],
-bonaparte-panel[position=""][open="true"],
 bonaparte-panel[data-position~="left"][open="true"],
 bonaparte-panel[position~="left"][open="true"] {
   -webkit-transform: translateX(100%);
@@ -20634,7 +20527,6 @@ bonaparte-panel[position~="top"] {
   display: block;
   width: 100%;
   left: 0px;
-  top: atuo;
   height: 10rem;
   bottom: 100%;
 }
@@ -20683,10 +20575,6 @@ bonaparte-panel[open="true"] {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
-bonaparte-panel:not([data-position]),
-bonaparte-panel:not([position]),
-bonaparte-panel[data-position=""],
-bonaparte-panel[position=""],
 bonaparte-panel[data-position~="left"],
 bonaparte-panel[position~="left"] {
   display: block;
@@ -20696,16 +20584,8 @@ bonaparte-panel[position~="left"] {
   width: 400px;
   right: 100%;
 }
-bonaparte-panel:not([data-position])[data-open="true"],
-bonaparte-panel:not([position])[data-open="true"],
-bonaparte-panel[data-position=""][data-open="true"],
-bonaparte-panel[position=""][data-open="true"],
 bonaparte-panel[data-position~="left"][data-open="true"],
 bonaparte-panel[position~="left"][data-open="true"],
-bonaparte-panel:not([data-position])[open="true"],
-bonaparte-panel:not([position])[open="true"],
-bonaparte-panel[data-position=""][open="true"],
-bonaparte-panel[position=""][open="true"],
 bonaparte-panel[data-position~="left"][open="true"],
 bonaparte-panel[position~="left"][open="true"] {
   -webkit-transform: translateX(100%);
@@ -20733,7 +20613,6 @@ bonaparte-panel[position~="top"] {
   display: block;
   width: 100%;
   left: 0px;
-  top: atuo;
   height: 400px;
   bottom: 100%;
 }
@@ -21035,70 +20914,70 @@ bonaparte-sidebar > :nth-child(2) {
   height: auto;
   width: auto;
 }
-bonaparte-sidebar[data-sidebar="left"],
-bonaparte-sidebar[sidebar="left"] {
+bonaparte-sidebar[data-position="left"],
+bonaparte-sidebar[position="left"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
 }
-bonaparte-sidebar[data-sidebar="right"],
-bonaparte-sidebar[sidebar="right"] {
+bonaparte-sidebar[data-position="right"],
+bonaparte-sidebar[position="right"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-bonaparte-sidebar[data-sidebar="top"],
-bonaparte-sidebar[sidebar="top"] {
+bonaparte-sidebar[data-position="top"],
+bonaparte-sidebar[position="top"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-bonaparte-sidebar[data-sidebar="bottom"],
-bonaparte-sidebar[sidebar="bottom"] {
+bonaparte-sidebar[data-position="bottom"],
+bonaparte-sidebar[position="bottom"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
-bonaparte-sidebar[data-sidebar="left"] > :nth-child(1),
-bonaparte-sidebar[sidebar="left"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="right"] > :nth-child(1),
-bonaparte-sidebar[sidebar="right"] > :nth-child(1) {
+bonaparte-sidebar[data-position="left"] > :nth-child(1),
+bonaparte-sidebar[position="left"] > :nth-child(1),
+bonaparte-sidebar[data-position="right"] > :nth-child(1),
+bonaparte-sidebar[position="right"] > :nth-child(1) {
   max-width: 0px;
-  min-width: 10rem;
+  min-width: 300px;
 }
-bonaparte-sidebar[data-sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="right"][open="false"] > :nth-child(1) {
+bonaparte-sidebar[data-position="left"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[position="left"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="right"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="left"][open="false"] > :nth-child(1),
+bonaparte-sidebar[position="left"][open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="right"][open="false"] > :nth-child(1),
+bonaparte-sidebar[position="right"][open="false"] > :nth-child(1) {
   min-width: 0rem;
 }
-bonaparte-sidebar[data-sidebar="top"] > :nth-child(1),
-bonaparte-sidebar[sidebar="top"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-sidebar[sidebar="bottom"] > :nth-child(1) {
+bonaparte-sidebar[data-position="top"] > :nth-child(1),
+bonaparte-sidebar[position="top"] > :nth-child(1),
+bonaparte-sidebar[data-position="bottom"] > :nth-child(1),
+bonaparte-sidebar[position="bottom"] > :nth-child(1) {
   max-height: 0px;
-  min-height: 10rem;
+  min-height: 300px;
 }
-bonaparte-sidebar[data-sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="bottom"][open="false"] > :nth-child(1) {
+bonaparte-sidebar[data-position="top"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[position="top"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="top"][open="false"] > :nth-child(1),
+bonaparte-sidebar[position="top"][open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="bottom"][open="false"] > :nth-child(1),
+bonaparte-sidebar[position="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
 }
 /*///////////////////////////////////////////////////////////////////////////*/
@@ -21134,70 +21013,70 @@ bonaparte-sidebar > :nth-child(2) {
   height: auto;
   width: auto;
 }
-bonaparte-sidebar[data-sidebar="left"],
-bonaparte-sidebar[sidebar="left"] {
+bonaparte-sidebar[data-position="left"],
+bonaparte-sidebar[position="left"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
 }
-bonaparte-sidebar[data-sidebar="right"],
-bonaparte-sidebar[sidebar="right"] {
+bonaparte-sidebar[data-position="right"],
+bonaparte-sidebar[position="right"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-bonaparte-sidebar[data-sidebar="top"],
-bonaparte-sidebar[sidebar="top"] {
+bonaparte-sidebar[data-position="top"],
+bonaparte-sidebar[position="top"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-bonaparte-sidebar[data-sidebar="bottom"],
-bonaparte-sidebar[sidebar="bottom"] {
+bonaparte-sidebar[data-position="bottom"],
+bonaparte-sidebar[position="bottom"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
-bonaparte-sidebar[data-sidebar="left"] > :nth-child(1),
-bonaparte-sidebar[sidebar="left"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="right"] > :nth-child(1),
-bonaparte-sidebar[sidebar="right"] > :nth-child(1) {
+bonaparte-sidebar[data-position="left"] > :nth-child(1),
+bonaparte-sidebar[position="left"] > :nth-child(1),
+bonaparte-sidebar[data-position="right"] > :nth-child(1),
+bonaparte-sidebar[position="right"] > :nth-child(1) {
   max-width: 0px;
-  min-width: 10rem;
+  min-width: 300px;
 }
-bonaparte-sidebar[data-sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="right"][open="false"] > :nth-child(1) {
+bonaparte-sidebar[data-position="left"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[position="left"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="right"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="left"][open="false"] > :nth-child(1),
+bonaparte-sidebar[position="left"][open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="right"][open="false"] > :nth-child(1),
+bonaparte-sidebar[position="right"][open="false"] > :nth-child(1) {
   min-width: 0rem;
 }
-bonaparte-sidebar[data-sidebar="top"] > :nth-child(1),
-bonaparte-sidebar[sidebar="top"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-sidebar[sidebar="bottom"] > :nth-child(1) {
+bonaparte-sidebar[data-position="top"] > :nth-child(1),
+bonaparte-sidebar[position="top"] > :nth-child(1),
+bonaparte-sidebar[data-position="bottom"] > :nth-child(1),
+bonaparte-sidebar[position="bottom"] > :nth-child(1) {
   max-height: 0px;
-  min-height: 10rem;
+  min-height: 300px;
 }
-bonaparte-sidebar[data-sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="bottom"][open="false"] > :nth-child(1) {
+bonaparte-sidebar[data-position="top"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[position="top"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="top"][open="false"] > :nth-child(1),
+bonaparte-sidebar[position="top"][open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="bottom"][open="false"] > :nth-child(1),
+bonaparte-sidebar[position="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
 }
 bonaparte-sidebar > :nth-child(1) {
@@ -21247,70 +21126,70 @@ bonaparte-sidebar > :nth-child(2) {
   height: auto;
   width: auto;
 }
-bonaparte-sidebar[data-sidebar="left"],
-bonaparte-sidebar[sidebar="left"] {
+bonaparte-sidebar[data-position="left"],
+bonaparte-sidebar[position="left"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
 }
-bonaparte-sidebar[data-sidebar="right"],
-bonaparte-sidebar[sidebar="right"] {
+bonaparte-sidebar[data-position="right"],
+bonaparte-sidebar[position="right"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-bonaparte-sidebar[data-sidebar="top"],
-bonaparte-sidebar[sidebar="top"] {
+bonaparte-sidebar[data-position="top"],
+bonaparte-sidebar[position="top"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-bonaparte-sidebar[data-sidebar="bottom"],
-bonaparte-sidebar[sidebar="bottom"] {
+bonaparte-sidebar[data-position="bottom"],
+bonaparte-sidebar[position="bottom"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
-bonaparte-sidebar[data-sidebar="left"] > :nth-child(1),
-bonaparte-sidebar[sidebar="left"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="right"] > :nth-child(1),
-bonaparte-sidebar[sidebar="right"] > :nth-child(1) {
+bonaparte-sidebar[data-position="left"] > :nth-child(1),
+bonaparte-sidebar[position="left"] > :nth-child(1),
+bonaparte-sidebar[data-position="right"] > :nth-child(1),
+bonaparte-sidebar[position="right"] > :nth-child(1) {
   max-width: 0px;
-  min-width: 10rem;
+  min-width: 300px;
 }
-bonaparte-sidebar[data-sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="right"][open="false"] > :nth-child(1) {
+bonaparte-sidebar[data-position="left"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[position="left"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="right"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="left"][open="false"] > :nth-child(1),
+bonaparte-sidebar[position="left"][open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="right"][open="false"] > :nth-child(1),
+bonaparte-sidebar[position="right"][open="false"] > :nth-child(1) {
   min-width: 0rem;
 }
-bonaparte-sidebar[data-sidebar="top"] > :nth-child(1),
-bonaparte-sidebar[sidebar="top"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-sidebar[sidebar="bottom"] > :nth-child(1) {
+bonaparte-sidebar[data-position="top"] > :nth-child(1),
+bonaparte-sidebar[position="top"] > :nth-child(1),
+bonaparte-sidebar[data-position="bottom"] > :nth-child(1),
+bonaparte-sidebar[position="bottom"] > :nth-child(1) {
   max-height: 0px;
-  min-height: 10rem;
+  min-height: 300px;
 }
-bonaparte-sidebar[data-sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-sidebar[data-sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-sidebar[sidebar="bottom"][open="false"] > :nth-child(1) {
+bonaparte-sidebar[data-position="top"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[position="top"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="top"][open="false"] > :nth-child(1),
+bonaparte-sidebar[position="top"][open="false"] > :nth-child(1),
+bonaparte-sidebar[data-position="bottom"][open="false"] > :nth-child(1),
+bonaparte-sidebar[position="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
 }
 /*///////////////////////////////////////////////////////////////////////////*/
@@ -21343,108 +21222,108 @@ bonaparte-toolbar > :nth-child(2) {
   height: auto;
   width: auto;
 }
-bonaparte-toolbar[data-sidebar="left"],
-bonaparte-toolbar[sidebar="left"] {
+bonaparte-toolbar[data-position="left"],
+bonaparte-toolbar[position="left"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
 }
-bonaparte-toolbar[data-sidebar="right"],
-bonaparte-toolbar[sidebar="right"] {
+bonaparte-toolbar[data-position="right"],
+bonaparte-toolbar[position="right"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-bonaparte-toolbar[data-sidebar="top"],
-bonaparte-toolbar[sidebar="top"] {
+bonaparte-toolbar[data-position="top"],
+bonaparte-toolbar[position="top"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-bonaparte-toolbar[data-sidebar="bottom"],
-bonaparte-toolbar[sidebar="bottom"] {
+bonaparte-toolbar[data-position="bottom"],
+bonaparte-toolbar[position="bottom"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
-bonaparte-toolbar[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar[sidebar="right"] > :nth-child(1) {
+bonaparte-toolbar[data-position="left"] > :nth-child(1),
+bonaparte-toolbar[position="left"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"] > :nth-child(1),
+bonaparte-toolbar[position="right"] > :nth-child(1) {
   max-width: 0px;
-  min-width: 10rem;
+  min-width: 300px;
 }
-bonaparte-toolbar[data-sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="right"][open="false"] > :nth-child(1) {
+bonaparte-toolbar[data-position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[data-position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar[position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"][open="false"] > :nth-child(1),
+bonaparte-toolbar[position="right"][open="false"] > :nth-child(1) {
   min-width: 0rem;
 }
-bonaparte-toolbar[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar[sidebar="bottom"] > :nth-child(1) {
+bonaparte-toolbar[data-position="top"] > :nth-child(1),
+bonaparte-toolbar[position="top"] > :nth-child(1),
+bonaparte-toolbar[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar[position="bottom"] > :nth-child(1) {
   max-height: 0px;
-  min-height: 10rem;
+  min-height: 300px;
 }
-bonaparte-toolbar[data-sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="bottom"][open="false"] > :nth-child(1) {
+bonaparte-toolbar[data-position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[data-position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[data-position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar[position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar[data-position="bottom"][open="false"] > :nth-child(1),
+bonaparte-toolbar[position="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
 }
-bonaparte-toolbar[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar[sidebar="bottom"] > :nth-child(1) {
+bonaparte-toolbar[data-position="top"] > :nth-child(1),
+bonaparte-toolbar[position="top"] > :nth-child(1),
+bonaparte-toolbar[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar[position="bottom"] > :nth-child(1) {
   min-height: 0rem;
 }
-bonaparte-toolbar[data-sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar[sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar[data-sidebar="bottom"] > :nth-child(1) *,
-bonaparte-toolbar[sidebar="bottom"] > :nth-child(1) * {
+bonaparte-toolbar[data-position="top"] > :nth-child(1) *,
+bonaparte-toolbar[position="top"] > :nth-child(1) *,
+bonaparte-toolbar[data-position="bottom"] > :nth-child(1) *,
+bonaparte-toolbar[position="bottom"] > :nth-child(1) * {
   white-space: nowrap;
 }
-bonaparte-toolbar[data-sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="bottom"][open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="bottom"][open="true"] > :nth-child(1) {
+bonaparte-toolbar[data-position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar[position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
-bonaparte-toolbar[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar[sidebar="right"] > :nth-child(1) {
+bonaparte-toolbar[data-position="left"] > :nth-child(1),
+bonaparte-toolbar[position="left"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"] > :nth-child(1),
+bonaparte-toolbar[position="right"] > :nth-child(1) {
   min-width: 0rem;
 }
-bonaparte-toolbar[data-sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="right"][open="true"] > :nth-child(1) {
+bonaparte-toolbar[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar[position="right"][open="true"] > :nth-child(1) {
   min-width: 10rem;
 }
 /*///////////////////////////////////////////////////////////////////////////*/
@@ -21481,108 +21360,108 @@ bonaparte-toolbar > :nth-child(2) {
   height: auto;
   width: auto;
 }
-bonaparte-toolbar[data-sidebar="left"],
-bonaparte-toolbar[sidebar="left"] {
+bonaparte-toolbar[data-position="left"],
+bonaparte-toolbar[position="left"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
 }
-bonaparte-toolbar[data-sidebar="right"],
-bonaparte-toolbar[sidebar="right"] {
+bonaparte-toolbar[data-position="right"],
+bonaparte-toolbar[position="right"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-bonaparte-toolbar[data-sidebar="top"],
-bonaparte-toolbar[sidebar="top"] {
+bonaparte-toolbar[data-position="top"],
+bonaparte-toolbar[position="top"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-bonaparte-toolbar[data-sidebar="bottom"],
-bonaparte-toolbar[sidebar="bottom"] {
+bonaparte-toolbar[data-position="bottom"],
+bonaparte-toolbar[position="bottom"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
-bonaparte-toolbar[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar[sidebar="right"] > :nth-child(1) {
+bonaparte-toolbar[data-position="left"] > :nth-child(1),
+bonaparte-toolbar[position="left"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"] > :nth-child(1),
+bonaparte-toolbar[position="right"] > :nth-child(1) {
   max-width: 0px;
   min-width: 20rem;
 }
-bonaparte-toolbar[data-sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="right"][open="false"] > :nth-child(1) {
+bonaparte-toolbar[data-position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[data-position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar[position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"][open="false"] > :nth-child(1),
+bonaparte-toolbar[position="right"][open="false"] > :nth-child(1) {
   min-width: 4rem;
 }
-bonaparte-toolbar[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar[sidebar="bottom"] > :nth-child(1) {
+bonaparte-toolbar[data-position="top"] > :nth-child(1),
+bonaparte-toolbar[position="top"] > :nth-child(1),
+bonaparte-toolbar[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar[position="bottom"] > :nth-child(1) {
   max-height: 0px;
   min-height: 20rem;
 }
-bonaparte-toolbar[data-sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-toolbar[sidebar="bottom"][open="false"] > :nth-child(1) {
+bonaparte-toolbar[data-position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[data-position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar[data-position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar[position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar[data-position="bottom"][open="false"] > :nth-child(1),
+bonaparte-toolbar[position="bottom"][open="false"] > :nth-child(1) {
   min-height: 4rem;
 }
-bonaparte-toolbar[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar[sidebar="bottom"] > :nth-child(1) {
+bonaparte-toolbar[data-position="top"] > :nth-child(1),
+bonaparte-toolbar[position="top"] > :nth-child(1),
+bonaparte-toolbar[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar[position="bottom"] > :nth-child(1) {
   min-height: 4rem;
 }
-bonaparte-toolbar[data-sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar[sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar[data-sidebar="bottom"] > :nth-child(1) *,
-bonaparte-toolbar[sidebar="bottom"] > :nth-child(1) * {
+bonaparte-toolbar[data-position="top"] > :nth-child(1) *,
+bonaparte-toolbar[position="top"] > :nth-child(1) *,
+bonaparte-toolbar[data-position="bottom"] > :nth-child(1) *,
+bonaparte-toolbar[position="bottom"] > :nth-child(1) * {
   white-space: nowrap;
 }
-bonaparte-toolbar[data-sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="bottom"][open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="bottom"][open="true"] > :nth-child(1) {
+bonaparte-toolbar[data-position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar[position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 20rem;
 }
-bonaparte-toolbar[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar[sidebar="right"] > :nth-child(1) {
+bonaparte-toolbar[data-position="left"] > :nth-child(1),
+bonaparte-toolbar[position="left"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"] > :nth-child(1),
+bonaparte-toolbar[position="right"] > :nth-child(1) {
   min-width: 4rem;
 }
-bonaparte-toolbar[data-sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar[sidebar="right"][open="true"] > :nth-child(1) {
+bonaparte-toolbar[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar[position="right"][open="true"] > :nth-child(1) {
   min-width: 20rem;
 }
 bonaparte-toolbar > cornerstone-bonaparte {
@@ -21642,33 +21521,33 @@ bonaparte-toolbar > .inverted > * {
   background-color: transparent;
   color: #ffffff;
 }
-bonaparte-toolbar[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar[sidebar="right"] > :nth-child(1) {
+bonaparte-toolbar[data-position="left"] > :nth-child(1),
+bonaparte-toolbar[position="left"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"] > :nth-child(1),
+bonaparte-toolbar[position="right"] > :nth-child(1) {
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
 }
-bonaparte-toolbar[data-sidebar="left"] > :nth-child(1) > * > *,
-bonaparte-toolbar[sidebar="left"] > :nth-child(1) > * > *,
-bonaparte-toolbar[data-sidebar="right"] > :nth-child(1) > * > *,
-bonaparte-toolbar[sidebar="right"] > :nth-child(1) > * > * {
+bonaparte-toolbar[data-position="left"] > :nth-child(1) > * > *,
+bonaparte-toolbar[position="left"] > :nth-child(1) > * > *,
+bonaparte-toolbar[data-position="right"] > :nth-child(1) > * > *,
+bonaparte-toolbar[position="right"] > :nth-child(1) > * > * {
   display: block;
   white-space: nowrap;
 }
-bonaparte-toolbar[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar[sidebar="bottom"] > :nth-child(1) {
+bonaparte-toolbar[data-position="top"] > :nth-child(1),
+bonaparte-toolbar[position="top"] > :nth-child(1),
+bonaparte-toolbar[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar[position="bottom"] > :nth-child(1) {
   -webkit-flex-flow: row;
       -ms-flex-flow: row;
           flex-flow: row;
 }
-bonaparte-toolbar[data-sidebar="top"] > :nth-child(1) > * > *,
-bonaparte-toolbar[sidebar="top"] > :nth-child(1) > * > *,
-bonaparte-toolbar[data-sidebar="bottom"] > :nth-child(1) > * > *,
-bonaparte-toolbar[sidebar="bottom"] > :nth-child(1) > * > * {
+bonaparte-toolbar[data-position="top"] > :nth-child(1) > * > *,
+bonaparte-toolbar[position="top"] > :nth-child(1) > * > *,
+bonaparte-toolbar[data-position="bottom"] > :nth-child(1) > * > *,
+bonaparte-toolbar[position="bottom"] > :nth-child(1) > * > * {
   display: inline-block;
   white-space: nowrap;
 }
@@ -21704,168 +21583,168 @@ bonaparte-toolbar.mini > :nth-child(2) {
   height: auto;
   width: auto;
 }
-bonaparte-toolbar.tiny[data-sidebar="left"],
-bonaparte-toolbar.mini[data-sidebar="left"],
-bonaparte-toolbar.tiny[sidebar="left"],
-bonaparte-toolbar.mini[sidebar="left"] {
+bonaparte-toolbar.tiny[data-position="left"],
+bonaparte-toolbar.mini[data-position="left"],
+bonaparte-toolbar.tiny[position="left"],
+bonaparte-toolbar.mini[position="left"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
 }
-bonaparte-toolbar.tiny[data-sidebar="right"],
-bonaparte-toolbar.mini[data-sidebar="right"],
-bonaparte-toolbar.tiny[sidebar="right"],
-bonaparte-toolbar.mini[sidebar="right"] {
+bonaparte-toolbar.tiny[data-position="right"],
+bonaparte-toolbar.mini[data-position="right"],
+bonaparte-toolbar.tiny[position="right"],
+bonaparte-toolbar.mini[position="right"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-bonaparte-toolbar.tiny[data-sidebar="top"],
-bonaparte-toolbar.mini[data-sidebar="top"],
-bonaparte-toolbar.tiny[sidebar="top"],
-bonaparte-toolbar.mini[sidebar="top"] {
+bonaparte-toolbar.tiny[data-position="top"],
+bonaparte-toolbar.mini[data-position="top"],
+bonaparte-toolbar.tiny[position="top"],
+bonaparte-toolbar.mini[position="top"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-bonaparte-toolbar.tiny[data-sidebar="bottom"],
-bonaparte-toolbar.mini[data-sidebar="bottom"],
-bonaparte-toolbar.tiny[sidebar="bottom"],
-bonaparte-toolbar.mini[sidebar="bottom"] {
+bonaparte-toolbar.tiny[data-position="bottom"],
+bonaparte-toolbar.mini[data-position="bottom"],
+bonaparte-toolbar.tiny[position="bottom"],
+bonaparte-toolbar.mini[position="bottom"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
-bonaparte-toolbar.tiny[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="right"] > :nth-child(1) {
+bonaparte-toolbar.tiny[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="left"] > :nth-child(1),
+bonaparte-toolbar.mini[position="left"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="right"] > :nth-child(1),
+bonaparte-toolbar.mini[position="right"] > :nth-child(1) {
   max-width: 0px;
-  min-width: 10rem;
+  min-width: 300px;
 }
-bonaparte-toolbar.tiny[data-sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="right"][open="false"] > :nth-child(1) {
+bonaparte-toolbar.tiny[data-position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="right"][open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="right"][open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="right"][open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[position="right"][open="false"] > :nth-child(1) {
   min-width: 2rem;
 }
-bonaparte-toolbar.tiny[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="bottom"] > :nth-child(1) {
+bonaparte-toolbar.tiny[data-position="top"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="top"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="top"] > :nth-child(1),
+bonaparte-toolbar.mini[position="top"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="bottom"] > :nth-child(1),
+bonaparte-toolbar.mini[position="bottom"] > :nth-child(1) {
   max-height: 0px;
-  min-height: 10rem;
+  min-height: 300px;
 }
-bonaparte-toolbar.tiny[data-sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="bottom"][open="false"] > :nth-child(1) {
+bonaparte-toolbar.tiny[data-position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="bottom"][open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="bottom"][open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="bottom"][open="false"] > :nth-child(1),
+bonaparte-toolbar.mini[position="bottom"][open="false"] > :nth-child(1) {
   min-height: 2rem;
 }
-bonaparte-toolbar.tiny[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="bottom"] > :nth-child(1) {
+bonaparte-toolbar.tiny[data-position="top"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="top"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="top"] > :nth-child(1),
+bonaparte-toolbar.mini[position="top"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="bottom"] > :nth-child(1),
+bonaparte-toolbar.mini[position="bottom"] > :nth-child(1) {
   min-height: 2rem;
 }
-bonaparte-toolbar.tiny[data-sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar.mini[data-sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar.tiny[sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar.mini[sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar.tiny[data-sidebar="bottom"] > :nth-child(1) *,
-bonaparte-toolbar.mini[data-sidebar="bottom"] > :nth-child(1) *,
-bonaparte-toolbar.tiny[sidebar="bottom"] > :nth-child(1) *,
-bonaparte-toolbar.mini[sidebar="bottom"] > :nth-child(1) * {
+bonaparte-toolbar.tiny[data-position="top"] > :nth-child(1) *,
+bonaparte-toolbar.mini[data-position="top"] > :nth-child(1) *,
+bonaparte-toolbar.tiny[position="top"] > :nth-child(1) *,
+bonaparte-toolbar.mini[position="top"] > :nth-child(1) *,
+bonaparte-toolbar.tiny[data-position="bottom"] > :nth-child(1) *,
+bonaparte-toolbar.mini[data-position="bottom"] > :nth-child(1) *,
+bonaparte-toolbar.tiny[position="bottom"] > :nth-child(1) *,
+bonaparte-toolbar.mini[position="bottom"] > :nth-child(1) * {
   white-space: nowrap;
 }
-bonaparte-toolbar.tiny[data-sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="bottom"][open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="bottom"][open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="bottom"][open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="bottom"][open="true"] > :nth-child(1) {
+bonaparte-toolbar.tiny[data-position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
-bonaparte-toolbar.tiny[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="right"] > :nth-child(1) {
+bonaparte-toolbar.tiny[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="left"] > :nth-child(1),
+bonaparte-toolbar.mini[position="left"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="right"] > :nth-child(1),
+bonaparte-toolbar.mini[position="right"] > :nth-child(1) {
   min-width: 2rem;
 }
-bonaparte-toolbar.tiny[data-sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-sidebar="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[data-sidebar="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[sidebar="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[sidebar="right"][open="true"] > :nth-child(1) {
+bonaparte-toolbar.tiny[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[position="right"][open="true"] > :nth-child(1) {
   min-width: 10rem;
 }
 /*////////////////////////////////*/
@@ -21897,108 +21776,108 @@ bonaparte-toolbar.small > :nth-child(2) {
   height: auto;
   width: auto;
 }
-bonaparte-toolbar.small[data-sidebar="left"],
-bonaparte-toolbar.small[sidebar="left"] {
+bonaparte-toolbar.small[data-position="left"],
+bonaparte-toolbar.small[position="left"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
 }
-bonaparte-toolbar.small[data-sidebar="right"],
-bonaparte-toolbar.small[sidebar="right"] {
+bonaparte-toolbar.small[data-position="right"],
+bonaparte-toolbar.small[position="right"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-bonaparte-toolbar.small[data-sidebar="top"],
-bonaparte-toolbar.small[sidebar="top"] {
+bonaparte-toolbar.small[data-position="top"],
+bonaparte-toolbar.small[position="top"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-bonaparte-toolbar.small[data-sidebar="bottom"],
-bonaparte-toolbar.small[sidebar="bottom"] {
+bonaparte-toolbar.small[data-position="bottom"],
+bonaparte-toolbar.small[position="bottom"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
-bonaparte-toolbar.small[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="right"] > :nth-child(1) {
+bonaparte-toolbar.small[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.small[position="left"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.small[position="right"] > :nth-child(1) {
   max-width: 0px;
-  min-width: 10rem;
+  min-width: 300px;
 }
-bonaparte-toolbar.small[data-sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="right"][open="false"] > :nth-child(1) {
+bonaparte-toolbar.small[data-position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.small[position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.small[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar.small[position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="right"][open="false"] > :nth-child(1),
+bonaparte-toolbar.small[position="right"][open="false"] > :nth-child(1) {
   min-width: 3rem;
 }
-bonaparte-toolbar.small[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="bottom"] > :nth-child(1) {
+bonaparte-toolbar.small[data-position="top"] > :nth-child(1),
+bonaparte-toolbar.small[position="top"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar.small[position="bottom"] > :nth-child(1) {
   max-height: 0px;
-  min-height: 10rem;
+  min-height: 300px;
 }
-bonaparte-toolbar.small[data-sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="bottom"][open="false"] > :nth-child(1) {
+bonaparte-toolbar.small[data-position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.small[position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.small[position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar.small[position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="bottom"][open="false"] > :nth-child(1),
+bonaparte-toolbar.small[position="bottom"][open="false"] > :nth-child(1) {
   min-height: 3rem;
 }
-bonaparte-toolbar.small[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="bottom"] > :nth-child(1) {
+bonaparte-toolbar.small[data-position="top"] > :nth-child(1),
+bonaparte-toolbar.small[position="top"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar.small[position="bottom"] > :nth-child(1) {
   min-height: 3rem;
 }
-bonaparte-toolbar.small[data-sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar.small[sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar.small[data-sidebar="bottom"] > :nth-child(1) *,
-bonaparte-toolbar.small[sidebar="bottom"] > :nth-child(1) * {
+bonaparte-toolbar.small[data-position="top"] > :nth-child(1) *,
+bonaparte-toolbar.small[position="top"] > :nth-child(1) *,
+bonaparte-toolbar.small[data-position="bottom"] > :nth-child(1) *,
+bonaparte-toolbar.small[position="bottom"] > :nth-child(1) * {
   white-space: nowrap;
 }
-bonaparte-toolbar.small[data-sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="bottom"][open="true"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="bottom"][open="true"] > :nth-child(1) {
+bonaparte-toolbar.small[data-position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
-bonaparte-toolbar.small[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="right"] > :nth-child(1) {
+bonaparte-toolbar.small[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.small[position="left"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.small[position="right"] > :nth-child(1) {
   min-width: 3rem;
 }
-bonaparte-toolbar.small[data-sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.small[data-sidebar="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.small[sidebar="right"][open="true"] > :nth-child(1) {
+bonaparte-toolbar.small[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[position="right"][open="true"] > :nth-child(1) {
   min-width: 10rem;
 }
 /*////////////////////////////////*/
@@ -22033,168 +21912,168 @@ bonaparte-toolbar.big > :nth-child(2) {
   height: auto;
   width: auto;
 }
-bonaparte-toolbar.large[data-sidebar="left"],
-bonaparte-toolbar.big[data-sidebar="left"],
-bonaparte-toolbar.large[sidebar="left"],
-bonaparte-toolbar.big[sidebar="left"] {
+bonaparte-toolbar.large[data-position="left"],
+bonaparte-toolbar.big[data-position="left"],
+bonaparte-toolbar.large[position="left"],
+bonaparte-toolbar.big[position="left"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
 }
-bonaparte-toolbar.large[data-sidebar="right"],
-bonaparte-toolbar.big[data-sidebar="right"],
-bonaparte-toolbar.large[sidebar="right"],
-bonaparte-toolbar.big[sidebar="right"] {
+bonaparte-toolbar.large[data-position="right"],
+bonaparte-toolbar.big[data-position="right"],
+bonaparte-toolbar.large[position="right"],
+bonaparte-toolbar.big[position="right"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-bonaparte-toolbar.large[data-sidebar="top"],
-bonaparte-toolbar.big[data-sidebar="top"],
-bonaparte-toolbar.large[sidebar="top"],
-bonaparte-toolbar.big[sidebar="top"] {
+bonaparte-toolbar.large[data-position="top"],
+bonaparte-toolbar.big[data-position="top"],
+bonaparte-toolbar.large[position="top"],
+bonaparte-toolbar.big[position="top"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-bonaparte-toolbar.large[data-sidebar="bottom"],
-bonaparte-toolbar.big[data-sidebar="bottom"],
-bonaparte-toolbar.large[sidebar="bottom"],
-bonaparte-toolbar.big[sidebar="bottom"] {
+bonaparte-toolbar.large[data-position="bottom"],
+bonaparte-toolbar.big[data-position="bottom"],
+bonaparte-toolbar.large[position="bottom"],
+bonaparte-toolbar.big[position="bottom"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
-bonaparte-toolbar.large[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="right"] > :nth-child(1) {
+bonaparte-toolbar.large[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.large[position="left"] > :nth-child(1),
+bonaparte-toolbar.big[position="left"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.large[position="right"] > :nth-child(1),
+bonaparte-toolbar.big[position="right"] > :nth-child(1) {
   max-width: 0px;
-  min-width: 10rem;
+  min-width: 300px;
 }
-bonaparte-toolbar.large[data-sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="right"][open="false"] > :nth-child(1) {
+bonaparte-toolbar.large[data-position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.large[position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.big[position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.large[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.big[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar.large[position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar.big[position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="right"][open="false"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="right"][open="false"] > :nth-child(1),
+bonaparte-toolbar.large[position="right"][open="false"] > :nth-child(1),
+bonaparte-toolbar.big[position="right"][open="false"] > :nth-child(1) {
   min-width: 5rem;
 }
-bonaparte-toolbar.large[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="bottom"] > :nth-child(1) {
+bonaparte-toolbar.large[data-position="top"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="top"] > :nth-child(1),
+bonaparte-toolbar.large[position="top"] > :nth-child(1),
+bonaparte-toolbar.big[position="top"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar.large[position="bottom"] > :nth-child(1),
+bonaparte-toolbar.big[position="bottom"] > :nth-child(1) {
   max-height: 0px;
-  min-height: 10rem;
+  min-height: 300px;
 }
-bonaparte-toolbar.large[data-sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="bottom"][open="false"] > :nth-child(1) {
+bonaparte-toolbar.large[data-position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.large[position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.big[position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.large[position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.big[position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar.large[position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar.big[position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="bottom"][open="false"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="bottom"][open="false"] > :nth-child(1),
+bonaparte-toolbar.large[position="bottom"][open="false"] > :nth-child(1),
+bonaparte-toolbar.big[position="bottom"][open="false"] > :nth-child(1) {
   min-height: 5rem;
 }
-bonaparte-toolbar.large[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="bottom"] > :nth-child(1) {
+bonaparte-toolbar.large[data-position="top"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="top"] > :nth-child(1),
+bonaparte-toolbar.large[position="top"] > :nth-child(1),
+bonaparte-toolbar.big[position="top"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar.large[position="bottom"] > :nth-child(1),
+bonaparte-toolbar.big[position="bottom"] > :nth-child(1) {
   min-height: 5rem;
 }
-bonaparte-toolbar.large[data-sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar.big[data-sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar.large[sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar.big[sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar.large[data-sidebar="bottom"] > :nth-child(1) *,
-bonaparte-toolbar.big[data-sidebar="bottom"] > :nth-child(1) *,
-bonaparte-toolbar.large[sidebar="bottom"] > :nth-child(1) *,
-bonaparte-toolbar.big[sidebar="bottom"] > :nth-child(1) * {
+bonaparte-toolbar.large[data-position="top"] > :nth-child(1) *,
+bonaparte-toolbar.big[data-position="top"] > :nth-child(1) *,
+bonaparte-toolbar.large[position="top"] > :nth-child(1) *,
+bonaparte-toolbar.big[position="top"] > :nth-child(1) *,
+bonaparte-toolbar.large[data-position="bottom"] > :nth-child(1) *,
+bonaparte-toolbar.big[data-position="bottom"] > :nth-child(1) *,
+bonaparte-toolbar.large[position="bottom"] > :nth-child(1) *,
+bonaparte-toolbar.big[position="bottom"] > :nth-child(1) * {
   white-space: nowrap;
 }
-bonaparte-toolbar.large[data-sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="bottom"][open="true"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="bottom"][open="true"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="bottom"][open="true"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="bottom"][open="true"] > :nth-child(1) {
+bonaparte-toolbar.large[data-position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[position="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
-bonaparte-toolbar.large[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="right"] > :nth-child(1) {
+bonaparte-toolbar.large[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.large[position="left"] > :nth-child(1),
+bonaparte-toolbar.big[position="left"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.large[position="right"] > :nth-child(1),
+bonaparte-toolbar.big[position="right"] > :nth-child(1) {
   min-width: 5rem;
 }
-bonaparte-toolbar.large[data-sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.large[data-sidebar="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.big[data-sidebar="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.large[sidebar="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.big[sidebar="right"][open="true"] > :nth-child(1) {
+bonaparte-toolbar.large[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[position="right"][open="true"] > :nth-child(1) {
   min-width: 10rem;
 }
 /*////////////////////////////////*/
@@ -22229,168 +22108,168 @@ bonaparte-toolbar.massive > :nth-child(2) {
   height: auto;
   width: auto;
 }
-bonaparte-toolbar.huge[data-sidebar="left"],
-bonaparte-toolbar.massive[data-sidebar="left"],
-bonaparte-toolbar.huge[sidebar="left"],
-bonaparte-toolbar.massive[sidebar="left"] {
+bonaparte-toolbar.huge[data-position="left"],
+bonaparte-toolbar.massive[data-position="left"],
+bonaparte-toolbar.huge[position="left"],
+bonaparte-toolbar.massive[position="left"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
 }
-bonaparte-toolbar.huge[data-sidebar="right"],
-bonaparte-toolbar.massive[data-sidebar="right"],
-bonaparte-toolbar.huge[sidebar="right"],
-bonaparte-toolbar.massive[sidebar="right"] {
+bonaparte-toolbar.huge[data-position="right"],
+bonaparte-toolbar.massive[data-position="right"],
+bonaparte-toolbar.huge[position="right"],
+bonaparte-toolbar.massive[position="right"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-bonaparte-toolbar.huge[data-sidebar="top"],
-bonaparte-toolbar.massive[data-sidebar="top"],
-bonaparte-toolbar.huge[sidebar="top"],
-bonaparte-toolbar.massive[sidebar="top"] {
+bonaparte-toolbar.huge[data-position="top"],
+bonaparte-toolbar.massive[data-position="top"],
+bonaparte-toolbar.huge[position="top"],
+bonaparte-toolbar.massive[position="top"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-bonaparte-toolbar.huge[data-sidebar="bottom"],
-bonaparte-toolbar.massive[data-sidebar="bottom"],
-bonaparte-toolbar.huge[sidebar="bottom"],
-bonaparte-toolbar.massive[sidebar="bottom"] {
+bonaparte-toolbar.huge[data-position="bottom"],
+bonaparte-toolbar.massive[data-position="bottom"],
+bonaparte-toolbar.huge[position="bottom"],
+bonaparte-toolbar.massive[position="bottom"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
-bonaparte-toolbar.huge[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="right"] > :nth-child(1) {
+bonaparte-toolbar.huge[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.huge[position="left"] > :nth-child(1),
+bonaparte-toolbar.massive[position="left"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.huge[position="right"] > :nth-child(1),
+bonaparte-toolbar.massive[position="right"] > :nth-child(1) {
   max-width: 0px;
-  min-width: 10rem;
+  min-width: 300px;
 }
-bonaparte-toolbar.huge[data-sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="left"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="right"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="left"][open="false"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="right"][open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="right"][open="false"] > :nth-child(1) {
+bonaparte-toolbar.huge[data-position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.huge[position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[position="left"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.huge[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar.huge[position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[position="left"][open="false"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="right"][open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="right"][open="false"] > :nth-child(1),
+bonaparte-toolbar.huge[position="right"][open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[position="right"][open="false"] > :nth-child(1) {
   min-width: 6rem;
 }
-bonaparte-toolbar.huge[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="bottom"] > :nth-child(1) {
+bonaparte-toolbar.huge[data-position="top"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="top"] > :nth-child(1),
+bonaparte-toolbar.huge[position="top"] > :nth-child(1),
+bonaparte-toolbar.massive[position="top"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar.huge[position="bottom"] > :nth-child(1),
+bonaparte-toolbar.massive[position="bottom"] > :nth-child(1) {
   max-height: 0px;
-  min-height: 10rem;
+  min-height: 300px;
 }
-bonaparte-toolbar.huge[data-sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="top"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="bottom"][data-open="false"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="top"][open="false"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="bottom"][open="false"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="bottom"][open="false"] > :nth-child(1) {
+bonaparte-toolbar.huge[data-position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.huge[position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[position="top"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.huge[position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[position="bottom"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar.huge[position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[position="top"][open="false"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="bottom"][open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="bottom"][open="false"] > :nth-child(1),
+bonaparte-toolbar.huge[position="bottom"][open="false"] > :nth-child(1),
+bonaparte-toolbar.massive[position="bottom"][open="false"] > :nth-child(1) {
   min-height: 6rem;
 }
-bonaparte-toolbar.huge[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="top"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="bottom"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="bottom"] > :nth-child(1) {
+bonaparte-toolbar.huge[data-position="top"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="top"] > :nth-child(1),
+bonaparte-toolbar.huge[position="top"] > :nth-child(1),
+bonaparte-toolbar.massive[position="top"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="bottom"] > :nth-child(1),
+bonaparte-toolbar.huge[position="bottom"] > :nth-child(1),
+bonaparte-toolbar.massive[position="bottom"] > :nth-child(1) {
   min-height: 6rem;
 }
-bonaparte-toolbar.huge[data-sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar.massive[data-sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar.huge[sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar.massive[sidebar="top"] > :nth-child(1) *,
-bonaparte-toolbar.huge[data-sidebar="bottom"] > :nth-child(1) *,
-bonaparte-toolbar.massive[data-sidebar="bottom"] > :nth-child(1) *,
-bonaparte-toolbar.huge[sidebar="bottom"] > :nth-child(1) *,
-bonaparte-toolbar.massive[sidebar="bottom"] > :nth-child(1) * {
+bonaparte-toolbar.huge[data-position="top"] > :nth-child(1) *,
+bonaparte-toolbar.massive[data-position="top"] > :nth-child(1) *,
+bonaparte-toolbar.huge[position="top"] > :nth-child(1) *,
+bonaparte-toolbar.massive[position="top"] > :nth-child(1) *,
+bonaparte-toolbar.huge[data-position="bottom"] > :nth-child(1) *,
+bonaparte-toolbar.massive[data-position="bottom"] > :nth-child(1) *,
+bonaparte-toolbar.huge[position="bottom"] > :nth-child(1) *,
+bonaparte-toolbar.massive[position="bottom"] > :nth-child(1) * {
   white-space: nowrap;
 }
-bonaparte-toolbar.huge[data-sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="top"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="bottom"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="top"][open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="bottom"][open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="bottom"][open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="bottom"][open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="bottom"][open="true"] > :nth-child(1) {
+bonaparte-toolbar.huge[data-position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[position="top"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[position="bottom"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[position="top"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[position="bottom"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
-bonaparte-toolbar.huge[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="left"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="right"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="right"] > :nth-child(1) {
+bonaparte-toolbar.huge[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.huge[position="left"] > :nth-child(1),
+bonaparte-toolbar.massive[position="left"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.huge[position="right"] > :nth-child(1),
+bonaparte-toolbar.massive[position="right"] > :nth-child(1) {
   min-width: 6rem;
 }
-bonaparte-toolbar.huge[data-sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[data-sidebar="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[data-sidebar="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[sidebar="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[sidebar="right"][open="true"] > :nth-child(1) {
+bonaparte-toolbar.huge[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[position="right"][open="true"] > :nth-child(1) {
   min-width: 10rem;
 }
 /*////////////////////////////////*/
