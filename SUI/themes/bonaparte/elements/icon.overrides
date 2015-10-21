@@ -844,175 +844,102 @@ i.icon.youtube-searched-for:before { content: "\e8fa"; }
 i.icon.zoom-in:before { content: "\e8ff"; }
 i.icon.zoom-out:before { content: "\e900"; }
 
-i.icon.twitter, 
-i.icon.facebook, 
-i.icon.google, 
-i.icon.pinterest, 
-i.icon.foursquare, 
-i.icon.yahoo, 
-i.icon.skype, 
-i.icon.yelp, 
-i.icon.feedburner, 
-i.icon.linkedin, 
-i.icon.viadeo, 
-i.icon.xing, 
-i.icon.myspace, 
-i.icon.soundcloud, 
-i.icon.spotify, 
-i.icon.grooveshark, 
-i.icon.lastfm, 
-i.icon.youtube, 
-i.icon.vimeo, 
-i.icon.dailymotion, 
-i.icon.vine, 
-i.icon.flickr, 
-i.icon._500px, 
-i.icon.instagram, 
-i.icon.wordpress, 
-i.icon.tumblr, 
-i.icon.blogger, 
-i.icon.technorati, 
-i.icon.reddit, 
-i.icon.dribbble, 
-i.icon.stumbleupon, 
-i.icon.digg, 
-i.icon.envato, 
-i.icon.behance, 
-i.icon.delicious, 
-i.icon.deviantart, 
-i.icon.forrst, 
-i.icon.play, 
-i.icon.zerply, 
-i.icon.wikipedia, 
-i.icon.apple, 
-i.icon.flattr, 
-i.icon.github, 
-i.icon.chimein, 
-i.icon.friendfeed, 
-i.icon.newsvine, 
-i.icon.identica, 
-i.icon.bebo, 
-i.icon.zynga, 
-i.icon.steam, 
-i.icon.xbox, 
-i.icon.windows, 
-i.icon.outlook, 
-i.icon.coderwall, 
-i.icon.tripadvisor, 
-i.icon.appnet, 
-i.icon.goodreads, 
-i.icon.tripit, 
-i.icon.lanyrd, 
-i.icon.slideshare, 
-i.icon.buffer, 
-i.icon.rss, 
-i.icon.vkontakte, 
-i.icon.disqus, 
-i.icon.houzz, 
-i.icon.mail, 
-i.icon.patreon, 
-i.icon.paypal, 
-i.icon.playstation, 
-i.icon.smugmug, 
-i.icon.swarm, 
-i.icon.triplej, 
-i.icon.yammer, 
-i.icon.stackoverflow, 
-i.icon.drupal, 
-i.icon.odnoklassniki, 
-i.icon.android, 
-i.icon.meetup, 
-i.icon.persona, 
-i.icon.amazon, 
-i.icon.ello, 
-i.icon.mixcloud, 
-i.icon._8tracks, 
-i.icon.twitch, 
-i.icon.airbnb, 
-i.icon.pocket { font-family: @socFontName; }
-i.icon.twitter:before { content: "a"; }
-i.icon.facebook:before { content: "b"; }
-i.icon.google:before { content: "c"; }
-i.icon.pinterest:before { content: "d"; }
-i.icon.foursquare:before { content: "e"; }
-i.icon.yahoo:before { content: "f"; }
-i.icon.skype:before { content: "g"; }
-i.icon.yelp:before { content: "h"; }
-i.icon.feedburner:before { content: "i"; }
-i.icon.linkedin:before { content: "j"; }
-i.icon.viadeo:before { content: "k"; }
-i.icon.xing:before { content: "l"; }
-i.icon.myspace:before { content: "m"; }
-i.icon.soundcloud:before { content: "n"; }
-i.icon.spotify:before { content: "o"; }
-i.icon.grooveshark:before { content: "p"; }
-i.icon.lastfm:before { content: "q"; }
-i.icon.youtube:before { content: "r"; }
-i.icon.vimeo:before { content: "s"; }
-i.icon.dailymotion:before { content: "t"; }
-i.icon.vine:before { content: "u"; }
-i.icon.flickr:before { content: "v"; }
-i.icon._500px:before { content: "w"; }
-i.icon.instagram:before { content: "x"; }
-i.icon.wordpress:before { content: "y"; }
-i.icon.tumblr:before { content: "z"; }
-i.icon.blogger:before { content: "A"; }
-i.icon.technorati:before { content: "B"; }
-i.icon.reddit:before { content: "C"; }
-i.icon.dribbble:before { content: "D"; }
-i.icon.stumbleupon:before { content: "E"; }
-i.icon.digg:before { content: "F"; }
-i.icon.envato:before { content: "G"; }
-i.icon.behance:before { content: "H"; }
-i.icon.delicious:before { content: "I"; }
-i.icon.deviantart:before { content: "J"; }
-i.icon.forrst:before { content: "K"; }
-i.icon.play:before { content: "L"; }
-i.icon.zerply:before { content: "M"; }
-i.icon.wikipedia:before { content: "N"; }
-i.icon.apple:before { content: "O"; }
-i.icon.flattr:before { content: "P"; }
-i.icon.github:before { content: "Q"; }
-i.icon.chimein:before { content: "R"; }
-i.icon.friendfeed:before { content: "S"; }
-i.icon.newsvine:before { content: "T"; }
-i.icon.identica:before { content: "U"; }
-i.icon.bebo:before { content: "V"; }
-i.icon.zynga:before { content: "W"; }
-i.icon.steam:before { content: "X"; }
-i.icon.xbox:before { content: "Y"; }
-i.icon.windows:before { content: "Z"; }
-i.icon.outlook:before { content: "1"; }
-i.icon.coderwall:before { content: "2"; }
-i.icon.tripadvisor:before { content: "3"; }
-i.icon.appnet:before { content: "4"; }
-i.icon.goodreads:before { content: "5"; }
-i.icon.tripit:before { content: "6"; }
-i.icon.lanyrd:before { content: "7"; }
-i.icon.slideshare:before { content: "8"; }
-i.icon.buffer:before { content: "9"; }
-i.icon.rss:before { content: ","; }
-i.icon.vkontakte:before { content: ";"; }
-i.icon.disqus:before { content: ":"; }
-i.icon.houzz:before { content: "+"; }
-i.icon.mail:before { content: "@"; }
-i.icon.patreon:before { content: "="; }
-i.icon.paypal:before { content: "-"; }
-i.icon.playstation:before { content: "^"; }
-i.icon.smugmug:before { content: "¨"; }
-i.icon.swarm:before { content: "$"; }
-i.icon.triplej:before { content: "*"; }
-i.icon.yammer:before { content: "&"; }
-i.icon.stackoverflow:before { content: "("; }
-i.icon.drupal:before { content: "#"; }
-i.icon.odnoklassniki:before { content: "."; }
-i.icon.android:before { content: "_"; }
-i.icon.meetup:before { content: "]"; }
-i.icon.persona:before { content: ")"; }
-i.icon.amazon:before { content: "£"; }
-i.icon.ello:before { content: "'"; }
-i.icon.mixcloud:before { content: "\""; }
-i.icon._8tracks:before { content: "}"; }
-i.icon.twitch:before { content: "{"; }
-i.icon.airbnb:before { content: "/"; }
-i.icon.pocket:before { content: "?"; }
+i.icon.renren:before { font-family: @socFontName; content: "\52"; }
+i.icon.qq:before { font-family: @socFontName; content: "\5b"; }
+i.icon.baidu:before { font-family: @socFontName; content: "\bf"; }
+i.icon.douban:before { font-family: @socFontName; content: "\5c"; }
+i.icon.weibo:before { font-family: @socFontName; content: "\b1"; }
+i.icon.snapchat:before { font-family: @socFontName; content: "\60"; }
+i.icon.ravelry:before { font-family: @socFontName; content: "\b0"; }
+i.icon.periscope:before { font-family: @socFontName; content: "\30"; }
+i.icon.angellist:before { font-family: @socFontName; content: "\20ac"; }
+i.icon.istock:before { font-family: @socFontName; content: "\25"; }
+i.icon.modelmayhem:before { font-family: @socFontName; content: "\21"; }
+i.icon.icq:before { font-family: @socFontName; content: "\a7"; }
+i.icon.storehouse:before { font-family: @socFontName; content: "\3e"; }
+i.icon.whatsapp:before { font-family: @socFontName; content: "\3c"; }
+i.icon.pocket:before { font-family: @socFontName; content: "\3f"; }
+i.icon.airbnb:before { font-family: @socFontName; content: "\2f"; }
+i.icon.twitch:before { font-family: @socFontName; content: "\7b"; }
+i.icon.ello:before { font-family: @socFontName; content: "\27"; }
+i.icon._8tracks:before { font-family: @socFontName; content: "\7d"; }
+i.icon.amazon:before { font-family: @socFontName; content: "\a3"; }
+i.icon.mixcloud:before { font-family: @socFontName; content: "\22"; }
+i.icon.meetup:before { font-family: @socFontName; content: "\5d"; }
+i.icon.persona:before { font-family: @socFontName; content: "\29"; }
+i.icon.android:before { font-family: @socFontName; content: "\5f"; }
+i.icon.odnoklassniki:before { font-family: @socFontName; content: "\2e"; }
+i.icon.github:before { font-family: @socFontName; content: "\51"; }
+i.icon.drupal:before { font-family: @socFontName; content: "\23"; }
+i.icon.appnet:before { font-family: @socFontName; content: "\34"; }
+i.icon.buffer:before { font-family: @socFontName; content: "\39"; }
+i.icon.goodreads:before { font-family: @socFontName; content: "\35"; }
+i.icon.houzz:before { font-family: @socFontName; content: "\2b"; }
+i.icon.mail:before { font-family: @socFontName; content: "\40"; }
+i.icon.patreon:before { font-family: @socFontName; content: "\3d"; }
+i.icon.paypal:before { font-family: @socFontName; content: "\2d"; }
+i.icon.playstation:before { font-family: @socFontName; content: "\5e"; }
+i.icon.rss:before { font-family: @socFontName; content: "\2c"; }
+i.icon.slideshare:before { font-family: @socFontName; content: "\38"; }
+i.icon.smugmug:before { font-family: @socFontName; content: "\a8"; }
+i.icon.swarm:before { font-family: @socFontName; content: "\24"; }
+i.icon.triplej:before { font-family: @socFontName; content: "\2a"; }
+i.icon.vkontakte:before { font-family: @socFontName; content: "\3b"; }
+i.icon.yammer:before { font-family: @socFontName; content: "\26"; }
+i.icon.coderwall:before { font-family: @socFontName; content: "\32"; }
+i.icon.dailymotion:before { font-family: @socFontName; content: "\74"; }
+i.icon.envato:before { font-family: @socFontName; content: "\47"; }
+i.icon.feedburner:before { font-family: @socFontName; content: "\69"; }
+i.icon.flattr:before { font-family: @socFontName; content: "\50"; }
+i.icon.foursquare:before { font-family: @socFontName; content: "\65"; }
+i.icon.friendfeed:before { font-family: @socFontName; content: "\53"; }
+i.icon.identica:before { font-family: @socFontName; content: "\55"; }
+i.icon.lanyrd:before { font-family: @socFontName; content: "\37"; }
+i.icon.disqus:before { font-family: @socFontName; content: "\3a"; }
+i.icon.newsvine:before { font-family: @socFontName; content: "\54"; }
+i.icon.outlook:before { font-family: @socFontName; content: "\31"; }
+i.icon.skype:before { font-family: @socFontName; content: "\67"; }
+i.icon.stackoverflow:before { font-family: @socFontName; content: "\28"; }
+i.icon.steam:before { font-family: @socFontName; content: "\58"; }
+i.icon.tripadvisor:before { font-family: @socFontName; content: "\33"; }
+i.icon.tripit:before { font-family: @socFontName; content: "\36"; }
+i.icon.vimeo:before { font-family: @socFontName; content: "\73"; }
+i.icon.vine:before { font-family: @socFontName; content: "\75"; }
+i.icon.wikipedia:before { font-family: @socFontName; content: "\4e"; }
+i.icon.windows:before { font-family: @socFontName; content: "\5a"; }
+i.icon.wordpress:before { font-family: @socFontName; content: "\79"; }
+i.icon.xbox:before { font-family: @socFontName; content: "\59"; }
+i.icon.yahoo:before { font-family: @socFontName; content: "\66"; }
+i.icon.yelp:before { font-family: @socFontName; content: "\68"; }
+i.icon.youtube:before { font-family: @socFontName; content: "\72"; }
+i.icon.zynga:before { font-family: @socFontName; content: "\57"; }
+i.icon._500px:before { font-family: @socFontName; content: "\77"; }
+i.icon.apple:before { font-family: @socFontName; content: "\4f"; }
+i.icon.bebo:before { font-family: @socFontName; content: "\56"; }
+i.icon.behance:before { font-family: @socFontName; content: "\48"; }
+i.icon.blogger:before { font-family: @socFontName; content: "\41"; }
+i.icon.delicious:before { font-family: @socFontName; content: "\49"; }
+i.icon.deviantart:before { font-family: @socFontName; content: "\4a"; }
+i.icon.digg:before { font-family: @socFontName; content: "\46"; }
+i.icon.dribbble:before { font-family: @socFontName; content: "\44"; }
+i.icon.facebook:before { font-family: @socFontName; content: "\62"; }
+i.icon.flickr:before { font-family: @socFontName; content: "\76"; }
+i.icon.forrst:before { font-family: @socFontName; content: "\4b"; }
+i.icon.google:before { font-family: @socFontName; content: "\63"; }
+i.icon.grooveshark:before { font-family: @socFontName; content: "\70"; }
+i.icon.instagram:before { font-family: @socFontName; content: "\78"; }
+i.icon.lastfm:before { font-family: @socFontName; content: "\71"; }
+i.icon.linkedin:before { font-family: @socFontName; content: "\6a"; }
+i.icon.myspace:before { font-family: @socFontName; content: "\6d"; }
+i.icon.pinterest:before { font-family: @socFontName; content: "\64"; }
+i.icon.play:before { font-family: @socFontName; content: "\4c"; }
+i.icon.reddit:before { font-family: @socFontName; content: "\43"; }
+i.icon.soundcloud:before { font-family: @socFontName; content: "\6e"; }
+i.icon.spotify:before { font-family: @socFontName; content: "\6f"; }
+i.icon.stumbleupon:before { font-family: @socFontName; content: "\45"; }
+i.icon.technorati:before { font-family: @socFontName; content: "\42"; }
+i.icon.tumblr:before { font-family: @socFontName; content: "\7a"; }
+i.icon.twitter:before { font-family: @socFontName; content: "\61"; }
+i.icon.viadeo:before { font-family: @socFontName; content: "\6b"; }
+i.icon.xing:before { font-family: @socFontName; content: "\6c"; }
+i.icon.zerply:before { font-family: @socFontName; content: "\4d"; }

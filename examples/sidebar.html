@@ -8,7 +8,7 @@
     <link rel="image_src" type="image/jpeg" href="images/logo.png" />
     <!-- Site Properities -->
     <meta name="generator" content="DocPad v6.78.1" />
-    <title>Panel | Bonaparte</title>
+    <title>Sidebar | Bonaparte</title>
     <meta name="description" content="Examples of all user interface elements" />
     <meta name="keywords" content="html5, ui, library, framework, javascript" />
 
@@ -51,15 +51,20 @@
         background: #ddd ;
       }
 
+      bonaparte-sidebar {
+        width: 100%;
+        height: 100%;
+      }
 
-      bonaparte-panel[data-position~="left"], bonaparte-panel[position~="left"],
-      bonaparte-panel[data-position~="right"], bonaparte-panel[position~="right"] {
+
+/*      bonaparte-sidebar[data-position~="left"], bonaparte-sidebar[position~="left"],
+      bonaparte-sidebar[data-position~="right"], bonaparte-sidebar[position~="right"] {
         width: 200px;
       }
-      bonaparte-panel[data-position~="top"], bonaparte-panel[position~="top"],
-      bonaparte-panel[data-position~="bottom"], bonaparte-panel[position~="bottom"] {
+      bonaparte-sidebar[data-position~="top"], bonaparte-sidebar[position~="top"],
+      bonaparte-sidebar[data-position~="bottom"], bonaparte-sidebar[position~="bottom"] {
         height: 100px;
-      }
+      }*/
     </style>
 
   </head>
@@ -67,10 +72,10 @@
     <bonaparte-toolbar id="toolbar" position="top" open="false">  
       <aside class="dark">
         <div>
-          <div class="header"><a href="./">Bonaparte</a> : panel Examples</div>
+          <div class="header"><a href="./">Bonaparte</a> : Sidebar Examples</div>
         </div>
         <div class="buttons">
-          <div class="header"><a href="https://github.dowjones.net/bonaparte/bonaparte-panel"><i class="github icon"></i> Dowjones Github</a></div>
+          <div class="header"><a href="https://github.dowjones.net/bonaparte/bonaparte-sidebar"><i class="github icon"></i> Dowjones Github</a></div>
         </div>
 
       </aside>
@@ -79,13 +84,16 @@
 
                 <div class="main demo ui container">
                     <h4 class="ui dividing header">About</h4>
-                      <p>A panel is a temporary UI element that slides in from one side. It automatically attaches itself to its next positioned parent element. There can only be one panel open at a time and opening another panel or clicking outside of it will close the current panel. (For a permanent sidebar, use the <a href="./sidebar.html">sidebar</a> tag)</p>
+                      <p></p>
                     <h4 class="ui dividing header">Example</h4>
                     <div class="example">
                      <!-- ######################################################################## -->
 
 
-                      <bonaparte-panel id="example" open="" position=""></bonaparte-panel>
+                    <bonaparte-sidebar id="interactiveExample" open="" position="">
+                      <div>Side bar</div>
+                      <div>Content bar</div>
+                    </bonaparte-sidebar>
 
 
                   </div>
@@ -99,35 +107,36 @@
                         <p>
                          <bonaparte-button
                             class="ui button small"
-                            action="click" target="bonaparte-panel#example, .code_position"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_position"
                             toggle="true" target-position="">Default 
                           </bonaparte-button>
                          <br />
                           <bonaparte-button
                             class="ui button small"
-                            action="click" target="bonaparte-panel#example, .code_position"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_position"
                             target-position="top">Top 
                           </bonaparte-button>
             
                           <bonaparte-button
                             class="ui button small"
-                            action="click" target="bonaparte-panel#example, .code_position"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_position"
                             toggle="true" target-position="right">Right
                           </bonaparte-button>
     
                          <bonaparte-button
                             class="ui button small"
-                            action="click" target="bonaparte-panel#example, .code_position"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_position"
                             toggle="true" target-position="bottom">Bottom 
                           </bonaparte-button>
                
                           <bonaparte-button
                             class="ui button small"
-                            action="click" target="bonaparte-panel#example, .code_position"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_position"
                             toggle="true" target-position="left">Left
                           </bonaparte-button>
                         </p>
-                      </div>                      <div class="column">
+                      </div>
+                      <div class="column">
 
                         <h5 class="ui dividing header">Open</h5>
                         <p>
@@ -135,19 +144,19 @@
 
                           <bonaparte-button
                             class="ui button small"
-                            action="click" target="bonaparte-panel#example, .code_open"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_open"
                             target-open="">Default 
                           </bonaparte-button>
                           <br />
                           <bonaparte-button
                             class="ui button small"
-                            action="click" target="bonaparte-panel#example, .code_open"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_open"
                             target-open="true">True 
                           </bonaparte-button>
                      
                           <bonaparte-button
                             class="ui button small"
-                            action="click" target="bonaparte-panel#example, .code_open"
+                            action="click" target="bonaparte-sidebar#interactiveExample, .code_open"
                             target-open="false">False 
                           </bonaparte-button>
                         </p>
@@ -155,9 +164,9 @@
                      
               </div>
               <h4 class="ui dividing header">Code</h4>
-<pre class="prettyprint"><code>  &lt;bonaparte-panel<span class="code_position" position=""></span><span class="code_open" open=""></span>&gt; 
+<pre class="prettyprint"><code>  &lt;bonaparte-sidebar<span class="code_position" position=""></span><span class="code_open" open=""></span>&gt; 
     ...
-  &lt;/bonaparte-panel&gt;
+  &lt;/bonaparte-sidebar&gt;
 </code></pre>
          
 

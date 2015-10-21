@@ -18,20 +18,6 @@
 
     <style type="text/css">
 
-      div.example {text-align: center; margin-top: 1.5rem;}
-      h4.ui.dividing.header {margin-bottom: 0.5rem;}
-      p.small {font-size: 1.2rem; line-height: 1.4rem;}
-
-      bonaparte-dropdown div.menu {
-        width: 200px;
-      }
-
-      bonaparte-dropdown div.menu bonaparte-button.ui.button {
-        width: 200px;
-        display: block;
-        text-align: left;
-      }
-
       pre {
         background-color: #fff;
         display: block;
@@ -52,6 +38,23 @@
         content: " handler=\"" attr(handler) "\"";
       }
 
+
+      div.example {text-align: center; margin-top: 1.5rem;}
+      h4.ui.dividing.header {margin-bottom: 0.5rem;}
+      p.small {font-size: 1.2rem; line-height: 1.4rem;}
+
+      bonaparte-dropdown div.menu {
+        width: 200px;
+      }
+
+      bonaparte-dropdown div.menu bonaparte-button.ui.button {
+        width: 200px;
+        display: block;
+        text-align: left;
+      }
+
+
+
       .menuExample i.icon.right {
         float: right;
       }
@@ -70,13 +73,20 @@
         border-right: 2px solid #425cbd;
       }
 
+      .link.item img {
+        width: 100%;
+      }
+
     </style>
   </head>
   <body class="">
-    <bonaparte-toolbar id="toolbar" data-sidebar="top" data-cornerstone="top left" open="false">  
+    <bonaparte-toolbar id="toolbar" position="top" open="false">  
       <aside class="dark">
         <div>
-          <div class="header">Bonaparte Dropdowns</div>
+          <div class="header"><a href="./">Bonaparte</a> : Dropdowns Examples</div>
+        </div>
+        <div class="buttons">
+          <div class="header"><a href="https://github.dowjones.net/bonaparte/bonaparte-dropdown"><i class="github icon"></i> Dowjones Github</a></div>
         </div>
 
       </aside>
@@ -123,11 +133,12 @@
                  <!-- ######################################################################## -->
         
                   </div>
+              <h4 class="ui dividing header">Attributes</h4>
 
                     <div class="ui two column stackable grid">
                       <div class="column">
 
-                        <h4 class="ui dividing header">Position</h4>
+                        <h5 class="ui dividing header">Position</h5>
                         <p>
                          <bonaparte-button
                             class="ui button small"
@@ -202,40 +213,40 @@
                       </div>
                       <div class="column">
 
-                        <h4 class="ui dividing header">Action</h4>
+                        <h5 class="ui dividing header">Action</h5>
                         <p>
                          <bonaparte-button
                             class="ui button small"
-                            action="click" target="bonaparte-dropdown#interactiveExample, .code_action, .code_handler"
+                            action="click" target="bonaparte-dropdown#interactiveExample, .code_action"
                             toggle="true" target-action="">Default 
                           </bonaparte-button>
                          <bonaparte-button
                             class="ui button small"
-                            action="click" target="bonaparte-dropdown#interactiveExample, .code_action, .code_handler"
+                            action="click" target="bonaparte-dropdown#interactiveExample, .code_action"
                             toggle="true" target-action="mouseover">mouseover 
                           </bonaparte-button>
                          <bonaparte-button
                             class="ui button small"
-                            action="click" target="bonaparte-dropdown#interactiveExample, .code_action, .code_handler"
+                            action="click" target="bonaparte-dropdown#interactiveExample, .code_action"
                             toggle="true" target-action="mouseenter">mouseenter 
                           </bonaparte-button>
                     <!--      <bonaparte-button
                             class="ui button small"
-                            action="click" target="bonaparte-dropdown#interactiveExample, .code_action, .code_handler"
+                            action="click" target="bonaparte-dropdown#interactiveExample, .code_action"
                             toggle="true" target-action="mouseenter, mouseout">mouseenter, mouseout 
                           </bonaparte-button> -->
                        </p>
-                         <h4 class="ui dividing header">Handler</h4>
+                         <h5 class="ui dividing header">Handler</h5>
                          <p class="small"><em>Note: if the handler override is not a child of the default handler, the override is not applyed.</em></p>
                          <p>
                          <bonaparte-button
                             class="ui button small"
-                            action="click" target="bonaparte-dropdown#interactiveExample, .code_action, .code_handler"
+                            action="click" target="bonaparte-dropdown#interactiveExample, .code_handler"
                             toggle="true" target-handler="">Default 
                           </bonaparte-button>
                           <bonaparte-button
                             class="ui button small"
-                            action="click" target="bonaparte-dropdown#interactiveExample, .code_action, .code_handler"
+                            action="click" target="bonaparte-dropdown#interactiveExample, .code_handler"
                             toggle="true" target-handler="i.icon">i.icon
                           </bonaparte-button>
 
@@ -315,7 +326,7 @@
                         Item 3
                       </bonaparte-button><bonaparte-dropdown class="menuExample" position="top right">
                         
-                          <bonaparte-dropdown class="menuExample" position="right" handler="input" action="focus, blur">
+                          <bonaparte-dropdown class="menuExample" position="right" handler="input" action="focus">
                             <div class="imageList">
                               <div class="ui divided items">
                                 <div class="link item">

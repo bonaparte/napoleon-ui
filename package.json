@@ -37,9 +37,9 @@
   },
 
   "scripts": {
-    "build" : "webpack",
-    "prod" : "webpack -p",
-    "watch" : "webpack --progress --colors --watch"
+    "build" : "webpack --optimize-dedupe",
+    "prod" : "webpack -p --optimize-dedupe",
+    "watch" : "webpack --progress --colors --watch --optimize-dedupe"
   },
 
   "engines": {

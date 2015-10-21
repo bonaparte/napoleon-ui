@@ -65,6 +65,7 @@ require("./SUI/definitions/collections/table.less");
 // Bonaparte //////////////////////////////////////////////////////////////////
 
 require("bonaparte-panel").register();
+
 require("./src/less/bonaparte-panel.less");
 
 require("bonaparte-scroll").register();
