@@ -10,7 +10,7 @@ button.ui {
   & {
     position:relative;
     display:inline-block;
-    margin:0.5rem 0rem;
+    /*margin:0.5rem 0rem;*/
     vertical-align: top;
     cursor:pointer;
     user-select: none;
@@ -42,10 +42,10 @@ button.ui {
     border-color:@color-text-medium-light;
   } 
 
-  & + & {
+/*  & + & {
     margin-left:1rem;
   }
-
+*/
 
   &.toggle,
   &.toggle-top,
@@ -84,19 +84,21 @@ button.ui {
   }
 
 
-  &.marginless,
-  & + &.marginless {
-    margin:0;
-  }
-
   &.fluid {
     display:block;
-    text-align:center;
   }
 
   &.fluid + &.fluid {
       margin:0.5rem 0;
   }
+
+
+/*  &.marginless,
+  & + &.marginless,
+  &.marginless + &.marginless {
+    margin:0;
+  }
+*/
 
   &.icon {
     text-align:center;
@@ -108,7 +110,7 @@ button.ui {
 
   &.labeled.icon {
     & {
-      text-align:left;
+      text-align:right;
     }
 
     > i.icon {
@@ -120,7 +122,7 @@ button.ui {
 
   &.right.labeled.icon {
     & {
-      text-align:right;
+      text-align:left;
     }
 
     > i.icon {
@@ -395,9 +397,9 @@ button.ui {
       background-color:transparent !important;
     }
 
-    &:active {
+/*    &:active {
       color:darken(@color-interactive, 2);
-    }
+    }*/
 
     &.active {
       &:active {
@@ -406,11 +408,14 @@ button.ui {
     }
     
     &:after {
+      border:0px;
+    }
+/*    &:after {
       display:block;
       position:relative;
       border:0px;
       border-bottom:1px solid;
-    }
+    }*/
 
     &.toggle:after,
     &.toggle-top:after,
@@ -514,7 +519,7 @@ button.ui {
 
   &.transparent.inverted {
 
-    &:after {
+/*    &:after {
       border-color:@color-text-light;
     }
 
@@ -523,7 +528,7 @@ button.ui {
         border-color:@color-interactive;
       }
     }
-
+*/
 
     &.toggle,
     &.toggle-top,
@@ -646,9 +651,9 @@ button.ui {
     &:active {
       color:lighten(darken(@color-text-dark, 20),50);
 
-      &:after {
+/*      &:after {
         border-color:lighten(darken(@color-text-dark, 20),50);
-      }
+      }*/
     }
 
 
@@ -708,16 +713,16 @@ button.ui {
       color:@color-text-light;
     }    
 
-    &:after {
+/*    &:after {
       border-color:@color-text-light;
     }
-
+*/
     &:active {
       color:darken(lighten(@color-text-light, 20),10);
       
-      &:after {
+/*      &:after {
          border-color:darken(lighten(@color-text-light, 20),10);
-      }
+      }*/
     }
 
     &.toggle,
@@ -766,7 +771,7 @@ button.ui {
     display: inline-flex;
     flex-direction: row;
     padding:0;
-    margin:0.5rem 0rem;
+    /*margin:0.5rem 0rem;*/
     vertical-align: top;
 
 
@@ -786,10 +791,10 @@ button.ui {
     display: none;
   }
 
-
+/*
   & + & {
     margin-left:1rem;
-  }
+  }*/
 
   &.vertical {
     display: inline-flex;
@@ -799,11 +804,16 @@ button.ui {
     .ui.button,
     button.ui {
       display:block;
+      text-align:left;
+
+      &.icon {
+        text-align:center;
+      }
     }
 
-    & + & {
+/*    & + & {
       margin-top:1rem;
-    }  
+    }  */
   }
 
   &.marginless {
@@ -908,14 +918,14 @@ button.ui {
       &:extend(.ui.button.icon all);   
     }
 
-    &.transparent:not(.labeled) {
+/*    &.transparent:not(.labeled) {
       button.ui,
       .ui.button {
         &:after {
           border:0px;
         }
       }
-    }
+    }*/
 
   }
 
@@ -1200,7 +1210,15 @@ button.ui {
 
   @overrides();
   .variables();
+ 
+  &.icon {
 
+    .button.ui,
+    button.ui {
+      min-width:@iconSize;  
+      min-height:@iconSize;
+    }
+  }
 
   &.conditional {
 
@@ -1209,6 +1227,12 @@ button.ui {
 
       &:first-child {
         padding-right:@orPadding;
+        &:before {
+          margin:0px;
+          margin-left:-@toggleLine;
+          border-width:0px;
+          border-left-width:@toggleLine;
+        }
       }
 
       &:not(:first-child):not(:last-child) {
@@ -1218,6 +1242,12 @@ button.ui {
   
       &:last-child {
         padding-left:@orPadding;
+        &:before {
+          margin:0px;
+          margin-right:-@toggleLine;
+          border-width:0px;
+          border-right-width:@toggleLine;
+        }
       }
     }
 
@@ -1236,7 +1266,7 @@ button.ui {
     }
   }
 
-  &.transparent {
+/*  &.transparent {
     .ui.button,
     button.ui {
       &:after {
@@ -1258,7 +1288,7 @@ button.ui {
         }
       }
     }
-  } 
+  } */
 
   &.toggle-top {
     .ui.button,
@@ -1309,31 +1339,6 @@ button.ui {
       }
     }
   }
-
-  &.conditional {
-    .ui.button,
-    button.ui {
-
-      &:first-child {
-        &:before {
-          margin:0px;
-          margin-left:-@toggleLine;
-          border-width:0px;
-          border-left-width:@toggleLine;
-        }
-      }
-      
-      &:last-child {
-        &:before {
-          margin:0px;
-          margin-right:-@toggleLine;
-          border-width:0px;
-          border-right-width:@toggleLine;
-        }
-      }
-    }
-  }
-
 }
 
 
@@ -1359,10 +1364,12 @@ button.ui {
     font-size:@fontSize;
     line-height:@lineHeight;
     padding:@padding;
+  }
+
+  &.icon {
     min-width:@iconSize;  
     min-height:@iconSize;
   }
-
 
   &.animated {
    .hidden.content {
@@ -1388,10 +1395,10 @@ button.ui {
     padding-right:@iconSize+1em;
   }
 
-  &.transparent:after {
+/*  &.transparent:after {
     top:@underlineCorrection;
   } 
-
+*/
   &.toggle-top:before {
     margin:0px;
     margin-top:-@toggleLine;
@@ -1489,7 +1496,7 @@ button.ui {
     @iconSize : 5rem;
     @fontSize:  @largeSize;
     @lineHeight: @h5Lineheight;
-    @padding : 1.5rem 1rem;
+    @padding : 1.5rem 1.25rem;
     @orPadding : 2.5rem;
     @orLineHeight : 3.5rem;
     @orHeight : 3.5rem;
@@ -1506,7 +1513,7 @@ button.ui {
     @iconSize : 6rem;
     @fontSize:  @hugeSize;
     @lineHeight: @h2Lineheight;
-    @padding : 0.5rem 1rem;
+    @padding : 0.5rem 1.5rem;
     @orPadding : 3rem;
     @orLineHeight : 3.9rem;
     @orHeight : 4rem;
@@ -1521,14 +1528,17 @@ button.ui {
 
 bonaparte-toolbar.mini > *:first-child button.ui,
 bonaparte-toolbar.mini > *:first-child .ui.button,
+.ui.mini.buttons button.ui, 
+.ui.mini.buttons .ui.button, 
 button.ui.mini,
-.ui.mini.buttons .button, 
-.ui.mini.button,
+.ui.button.mini,
 bonaparte-toolbar.tiny > *:first-child button.ui,
 bonaparte-toolbar.tiny > *:first-child .ui.button,
+.ui.tiny.buttons button.ui, 
+.ui.tiny.buttons .ui.button, 
 button.ui.tiny,
-.ui.tiny.buttons .button, 
-.ui.tiny.button {
+.ui.button.tiny {
+
   .buttonSizes(@miniVariables);
 
 }
@@ -1537,34 +1547,42 @@ bonaparte-toolbar.tiny > *:first-child .ui.buttons,
 bonaparte-toolbar.mini > *:first-child .ui.buttons,
 .ui.tiny.buttons,
 .ui.mini.buttons {
+
   .groupSizes(@miniVariables);
+
 }
 
 
 bonaparte-toolbar.small > *:first-child button.ui,
 bonaparte-toolbar.small > *:first-child .ui.button,
+.ui.small.buttons button.ui, 
+.ui.small.buttons .ui.button, 
 button.ui.small,
-.ui.small.buttons .button, 
-.ui.small.button {
+.ui.button.small {
 
   .buttonSizes(@smallVariables);
+
 }
 
 bonaparte-toolbar.small > *:first-child .ui.buttons,
 .ui.small.buttons {
+
   .groupSizes(@smallVariables);
+
 }
 
 
 bonaparte-toolbar.large > *:first-child button.ui,
 bonaparte-toolbar.large > *:first-child .ui.button,
+.ui.large.buttons button.ui, 
+.ui.large.buttons .ui.button, 
 button.ui.large,
-.ui.large.buttons .button, 
 .ui.large.button,
 bonaparte-toolbar.big > *:first-child button.ui,
 bonaparte-toolbar.big > *:first-child .ui.button,
+.ui.big.buttons button.ui, 
+.ui.big.buttons .ui.button, 
 button.ui.big,
-.ui.big.buttons .button, 
 .ui.big.button {
 
   .buttonSizes(@largeVariables);
@@ -1575,20 +1593,23 @@ bonaparte-toolbar.large > *:first-child .ui.buttons,
 bonaparte-toolbar.big > *:first-child .ui.buttons,
 .ui.large.buttons,
 .ui.big.buttons {
+
   .groupSizes(@largeVariables);
 }
 
 
 bonaparte-toolbar.huge > *:first-child button.ui,
 bonaparte-toolbar.huge > *:first-child .ui.button,
+.ui.huge.buttons button.ui, 
+.ui.huge.buttons .ui.button, 
 button.ui.huge,
-.ui.huge.buttons .button, 
 .ui.huge.button,
 bonaparte-toolbar.massive > *:first-child button.ui,
 bonaparte-toolbar.massive > *:first-child .ui.button,
+.ui.massive.buttons button.ui, 
+.ui.massive.buttons .ui.button, 
 button.ui.massive,
-.ui.massive.buttons .button, 
-.ui.massive.button{
+.ui.button.massive {
 
   .buttonSizes(@hugeVariables);
 
@@ -1598,7 +1619,9 @@ bonaparte-toolbar.huge > *:first-child .ui.buttons,
 bonaparte-toolbar.massive > *:first-child .ui.buttons,
 .ui.huge.buttons,
 .ui.massive.buttons {
+
   .groupSizes(@hugeVariables);
+
 }
 
 /*////////////////////////////////////////////////////////////////////*/
