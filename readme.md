@@ -8,7 +8,7 @@
 
 ## About
 
-Bonaparte-ND is a [Bonaparte](https://github.dowjones.net/bonaparte/bonaparte) build with a custom [Semantic UI](http://semantic-ui.com) theme developed for editorial tools at Dow Jones.
+Bonaparte-ND is a [Bonaparte](https://github.com/bonaparte/bonaparte) build with a custom [Semantic UI](http://semantic-ui.com) theme developed for editorial tools at Dow Jones.
 
 ## To Look At
 
@@ -50,13 +50,13 @@ This makes bonaparte and the bonaparte Semantic UI theme available in your proje
 
 ## Included Bonaparte Components
 
-  - [< bonaparte-button >](https://github.dowjones.net/bonaparte/bonaparte-button)
-  - [< bonaparte-scroll >](https://github.dowjones.net/bonaparte/bonaparte-scroll)
-  - [< bonaparte-sidebar >](https://github.dowjones.net/bonaparte/bonaparte-sidebar)
-  - [< bonaparte-panel >](https://github.dowjones.net/bonaparte/bonaparte-panel)
-  - [< bonaparte-toolbar >](https://github.dowjones.net/bonaparte/bonaparte-toolbar)
-  - [< bonaparte-dragable >](https://github.dowjones.net/bonaparte/bonaparte-dragable)
-  - [< bonaparte-dropdown >](https://github.dowjones.net/bonaparte/bonaparte-dropdown)
+  - [< bonaparte-button >](https://github.com/bonaparte/bonaparte-button)
+  - [< bonaparte-scroll >](https://github.com/bonaparte/bonaparte-scroll)
+  - [< bonaparte-sidebar >](https://github.com/bonaparte/bonaparte-sidebar)
+  - [< bonaparte-panel >](https://github.com/bonaparte/bonaparte-panel)
+  - [< bonaparte-toolbar >](https://github.com/bonaparte/bonaparte-toolbar)
+  - [< bonaparte-dragable >](https://github.com/bonaparte/bonaparte-dragable)
+  - [< bonaparte-dropdown >](https://github.com/bonaparte/bonaparte-dropdown)
 
 ## Development
 
