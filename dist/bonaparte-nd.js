@@ -2966,7 +2966,7 @@
 	function dropdown(tag) {
 
 	  tag.addEventListener("bonaparte.tag.attributeChanged", update);
-	  bp.tag.DOMReady(initialise());
+	  bp.tag.DOMReady(initialise);
 	  
 
 	  function update (data) {
@@ -3100,7 +3100,6 @@
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	var objct = __webpack_require__(82);
-	// var easing = require("./easing");
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
