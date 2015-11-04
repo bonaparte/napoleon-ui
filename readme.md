@@ -1,4 +1,4 @@
-# Bonaparte-ND
+# Dow Jones Bonaparte
 
 - [About](#about)
 - [Basic Use](#basic-use)
