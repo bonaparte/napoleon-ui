@@ -1,34 +1,18 @@
-# Bonaparte-ND
+# Dow Jones Bonaparte
 
 - [About](#about)
 - [Basic Use](#basic-use)
-- [To Look At](#to-look-at)
+- [Examples](#examples)
 - [Included Bonaparte Components](#included-bonaparte-components)
 - [Development](#development)
 
 ## About
 
-Bonaparte-ND is a [Bonaparte](https://github.com/bonaparte/bonaparte) build with a custom [Semantic UI](http://semantic-ui.com) theme developed for editorial tools at Dow Jones.
+This is a [Bonaparte](https://github.com/bonaparte/bonaparte) build with a custom [Semantic UI](http://semantic-ui.com) theme developed for editorial tools at Dow Jones.
 
-## To Look At
+## Examples
 
-__Examples:__
-
-[Kitchen-Sink](http://dowjones.github.io/bonaparte/examples/kitchen-sink.html)
-<br>
-[Toolbar](http://dowjones.github.io/bonaparte/examples/toolbar.html)
-
-
-__Designs:__
-
-[Bonaparte Styles](http://dowjones.github.io/bonaparte/designs/Bonaparte%20v0.2.pdf)
-<br>
-[Narrator](http://dowjones.github.io/bonaparte/designs/Narrator%20UI%20v0.1.pdf)
-<br>
-[Narrator (Toolbars)](http://dowjones.github.io/bonaparte/designs/Narrator%20UI%20v0.1%20-%20toolbars.pdf)
-<br>
-[Xavier](http://dowjones.github.io/bonaparte/designs/Xavier%20UI%20v0.2.pdf)
-
+http://dowjones.github.io/bonaparte/examples/
 
 ## Basic Use
 
