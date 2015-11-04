@@ -2,7 +2,7 @@
 
 - [About](#about)
 - [Basic Use](#basic-use)
-- [To Look At](#to-look-at)
+- [Examples](#examples)
 - [Included Bonaparte Components](#included-bonaparte-components)
 - [Development](#development)
 
@@ -10,7 +10,7 @@
 
 Bonaparte-ND is a [Bonaparte](https://github.com/bonaparte/bonaparte) build with a custom [Semantic UI](http://semantic-ui.com) theme developed for editorial tools at Dow Jones.
 
-## To Look At
+## Examples
 
 http://dowjones.github.io/bonaparte/examples/
 
