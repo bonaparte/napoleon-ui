@@ -36,8 +36,8 @@ __Designs:__
 - Include files: 
 
   ```
-  ./dist/bonaparte-nd.css
-  ./dist/bonaparte-nd.js
+  ./dist/dj-bonaparte.css
+  ./dist/dj-bonaparte.js
   ```
   
   And if necessary:
