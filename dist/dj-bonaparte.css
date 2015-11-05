@@ -384,1151 +384,6 @@ input[type="password"] {
   -moz-appearance: none;
   /* mobile firefox too! */
 }
-/*!
- * # Semantic UI - Site
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Copyright 2015 Contributors
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
-/*******************************
-            Theme
-*******************************/
-/*
-
-████████╗██╗  ██╗███████╗███╗   ███╗███████╗███████╗
-╚══██╔══╝██║  ██║██╔════╝████╗ ████║██╔════╝██╔════╝
-   ██║   ███████║█████╗  ██╔████╔██║█████╗  ███████╗
-   ██║   ██╔══██║██╔══╝  ██║╚██╔╝██║██╔══╝  ╚════██║
-   ██║   ██║  ██║███████╗██║ ╚═╝ ██║███████╗███████║
-   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝╚══════╝
-
-*/
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Global */
-/* Elements */
-/* Collections */
-/* Modules */
-/* Views */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*******************************
-         Site Settings
-*******************************/
-/*-------------------
-       Fonts
---------------------*/
-/*-------------------
-      Base Sizes
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/*-------------------
-    Border Radius
---------------------*/
-/* See Power-user section below
-   for explanation of @px variables
-*/
-/*-------------------
-    Brand Colors
---------------------*/
-/*--------------
-  Page Heading
----------------*/
-/*--------------
-   Form Input
----------------*/
-/* This adjusts the default form input across all elements */
-/* Line Height Default For Inputs in Browser */
-/*-------------------
-    Focused Input
---------------------*/
-/* Used on inputs, textarea etc */
-/* Used on dropdowns, other larger blocks */
-/*-------------------
-        Sizes
---------------------*/
-/*
-  Sizes are all expressed in terms of 14px/em (default em)
-  This ensures these "ratios" remain constant despite changes in EM
-*/
-/*-------------------
-        Page
---------------------*/
-/*-------------------
-      Paragraph
---------------------*/
-/*-------------------
-       Links
---------------------*/
-/*-------------------
-  Highlighted Text
---------------------*/
-/*-------------------
-       Loader
---------------------*/
-/*-------------------
-        Grid
---------------------*/
-/*-------------------
-     Transitions
---------------------*/
-/*-------------------
-     Breakpoints
---------------------*/
-/*-------------------
-      Site Colors
---------------------*/
-/*---  Colors  ---*/
-/*---  Light Colors  ---*/
-/*---   Neutrals  ---*/
-/*--- Colored Backgrounds ---*/
-/*--- Colored Headers ---*/
-/*--- Colored Text ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-       Accents
---------------------*/
-/* Differentiating Neutrals */
-/* Differentiating Layers */
-/*******************************
-           Power-User
-*******************************/
-/*-------------------
-    Emotive Colors
---------------------*/
-/* Positive */
-/* Negative */
-/* Info */
-/* Warning */
-/*-------------------
-        Paths
---------------------*/
-/* For source only. Modified in gulp for dist */
-/*-------------------
-       Em Sizes
---------------------*/
-/*
-  This rounds @size values to the closest pixel then expresses that value in (r)em.
-  This ensures all size values round to exact pixels
-*/
-/* em */
-/* rem */
-/*-------------------
-  Exact Pixel Values
---------------------*/
-/*
-  These are used to specify exact pixel values in em
-  for things like borders that remain constantly
-  sized as emSize adjusts
-
-  Since there are many more sizes than names for sizes,
-  these are named by their original pixel values.
-
-*/
-/*-------------------
-       Icons
---------------------*/
-/* Maximum Glyph Width of Icon */
-/*-------------------
-     Neutral Text
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-      Borders
---------------------*/
-/*-------------------
-    Derived Values
---------------------*/
-/* Loaders Position Offset */
-/* Rendered Scrollbar Width */
-/* Maximum Single Character Glyph Width, aka Capital "W" */
-/* Used to match floats with text */
-/* Header Spacing */
-/* Minimum Mobile Width */
-/* Positive / Negative Dupes */
-/* Responsive */
-/* Columns */
-/*******************************
-             States
-*******************************/
-/*-------------------
-      Disabled
---------------------*/
-/*-------------------
-        Hover
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Focus
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-    Down (:active)
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Active
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/* Packaged site.variables */
-/*============================
-       Global Variables
-==============================*/
-/*-------------------
-       Colors
---------------------*/
-/* FONTS */
-/*82px*/
-/*44px*/
-/*26px*/
-/*21px*/
-/*16px*/
-/*11px*/
-/*-------------------
-       Fonts
---------------------*/
-/*******************************
-         Site Settings
-*******************************/
-/*-------------------
-       Fonts
---------------------*/
-/*
-@googleFontName    : @fontName;
-
-@googleFontSizes   : '400,700,400italic,700italic';
-@googleSubset      : 'latin';
-
-@googleProtocol    : 'https://';
-@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
-*/
-/*-------------------
-      Base Sizes
---------------------*/
-/*-------------------
-    Border Radius
---------------------*/
-/* 4px @ default em */
-/*-------------------
-    Brand Colors
---------------------*/
-/*--------------
-  Page Heading
----------------*/
-/*@headerFontWeight : 400;
-@headerLineHeight : 1.17073em;*/
-/*-------------------
-        Sizes
---------------------*/
-/*
-  To have sizing resolve to a specified pixel values adjust
-  the numerator to the desired font size and the denominator
-  to the base em size
-*/
-/*-------------------
-        Page
---------------------*/
-/*-------------------
-      Paragraph
---------------------*/
-/*-------------------
-       Links
---------------------*/
-/*-------------------
-  Highlighted Text
---------------------*/
-/*-------------------
-       Loader
---------------------*/
-/*-------------------
-        Grid
---------------------*/
-/*-------------------
-     Transitions
---------------------*/
-/*-------------------
-     Breakpoints
---------------------*/
-/*-------------------
-      Site Colors
---------------------*/
-/*---  Colors  ---*/
-/*---  Light Colors  ---*/
-/*---   Neutrals  ---*/
-/*--- Colored Backgrounds ---*/
-/*--- Colored Headers ---*/
-/*--- Colored Text ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-       Accents
---------------------*/
-/* Differentiating Neutrals */
-/* Differentiating Layers */
-/*******************************
-           Power-User
-*******************************/
-/*-------------------
-    Emotive Colors
---------------------*/
-/* Positive */
-/* Negative */
-/* Info */
-/* Warning */
-/*-------------------
-        Paths
---------------------*/
-/* For source only. Modified in gulp for dist */
-/*-------------------
-       Em Sizes
---------------------*/
-/* Exact pixel values expressed in em */
-/*-------------------
-       Icons
---------------------*/
-/* Maximum Glyph Width of Icon */
-/*-------------------
-     Neutral Text
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-      Borders
---------------------*/
-/*-------------------
-    Element Focus
---------------------*/
-/*-------------------
-    Derived Values
---------------------*/
-/* Line Height Default For Inputs in Browser */
-/* Rendered Scrollbar Width */
-/* Maximum Single Character Glyph Width, aka Capital "W" */
-/* Used to match floats with text */
-/* Header Spacing */
-/* Minimum Mobile Width */
-/* Positive / Negative Dupes */
-/* Responsive */
-/* Columns */
-/*******************************
-             States
-*******************************/
-/*-------------------
-      Disabled
---------------------*/
-/*-------------------
-        Hover
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Focus
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-    Down (:active)
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Active
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/* Component's site.variables */
-/*============================
-       Global Variables
-==============================*/
-/*-------------------
-       Colors
---------------------*/
-/* FONTS */
-/*82px*/
-/*44px*/
-/*26px*/
-/*21px*/
-/*16px*/
-/*11px*/
-/*-------------------
-       Fonts
---------------------*/
-/*******************************
-         Site Settings
-*******************************/
-/*-------------------
-       Fonts
---------------------*/
-/*
-@googleFontName    : @fontName;
-
-@googleFontSizes   : '400,700,400italic,700italic';
-@googleSubset      : 'latin';
-
-@googleProtocol    : 'https://';
-@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
-*/
-/*-------------------
-      Base Sizes
---------------------*/
-/*-------------------
-    Border Radius
---------------------*/
-/* 4px @ default em */
-/*-------------------
-    Brand Colors
---------------------*/
-/*--------------
-  Page Heading
----------------*/
-/*@headerFontWeight : 400;
-@headerLineHeight : 1.17073em;*/
-/*-------------------
-        Sizes
---------------------*/
-/*
-  To have sizing resolve to a specified pixel values adjust
-  the numerator to the desired font size and the denominator
-  to the base em size
-*/
-/*-------------------
-        Page
---------------------*/
-/*-------------------
-      Paragraph
---------------------*/
-/*-------------------
-       Links
---------------------*/
-/*-------------------
-  Highlighted Text
---------------------*/
-/*-------------------
-       Loader
---------------------*/
-/*-------------------
-        Grid
---------------------*/
-/*-------------------
-     Transitions
---------------------*/
-/*-------------------
-     Breakpoints
---------------------*/
-/*-------------------
-      Site Colors
---------------------*/
-/*---  Colors  ---*/
-/*---  Light Colors  ---*/
-/*---   Neutrals  ---*/
-/*--- Colored Backgrounds ---*/
-/*--- Colored Headers ---*/
-/*--- Colored Text ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-       Accents
---------------------*/
-/* Differentiating Neutrals */
-/* Differentiating Layers */
-/*******************************
-           Power-User
-*******************************/
-/*-------------------
-    Emotive Colors
---------------------*/
-/* Positive */
-/* Negative */
-/* Info */
-/* Warning */
-/*-------------------
-        Paths
---------------------*/
-/* For source only. Modified in gulp for dist */
-/*-------------------
-       Em Sizes
---------------------*/
-/* Exact pixel values expressed in em */
-/*-------------------
-       Icons
---------------------*/
-/* Maximum Glyph Width of Icon */
-/*-------------------
-     Neutral Text
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-      Borders
---------------------*/
-/*-------------------
-    Element Focus
---------------------*/
-/*-------------------
-    Derived Values
---------------------*/
-/* Line Height Default For Inputs in Browser */
-/* Rendered Scrollbar Width */
-/* Maximum Single Character Glyph Width, aka Capital "W" */
-/* Used to match floats with text */
-/* Header Spacing */
-/* Minimum Mobile Width */
-/* Positive / Negative Dupes */
-/* Responsive */
-/* Columns */
-/*******************************
-             States
-*******************************/
-/*-------------------
-      Disabled
---------------------*/
-/*-------------------
-        Hover
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Focus
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-    Down (:active)
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Active
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/* Site theme site.variables */
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/*******************************
-         Site Settings
-*******************************/
-/*-------------------
-       Fonts
---------------------*/
-/*-------------------
-      Base Sizes
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/*-------------------
-    Border Radius
---------------------*/
-/* See Power-user section below
-   for explanation of @px variables
-*/
-/*-------------------
-    Brand Colors
---------------------*/
-/*--------------
-  Page Heading
----------------*/
-/*--------------
-   Form Input
----------------*/
-/* This adjusts the default form input across all elements */
-/* Line Height Default For Inputs in Browser */
-/*-------------------
-    Focused Input
---------------------*/
-/* Used on inputs, textarea etc */
-/* Used on dropdowns, other larger blocks */
-/*-------------------
-        Sizes
---------------------*/
-/*
-  Sizes are all expressed in terms of 14px/em (default em)
-  This ensures these "ratios" remain constant despite changes in EM
-*/
-/*-------------------
-        Page
---------------------*/
-/*-------------------
-      Paragraph
---------------------*/
-/*-------------------
-       Links
---------------------*/
-/*-------------------
-  Highlighted Text
---------------------*/
-/*-------------------
-       Loader
---------------------*/
-/*-------------------
-        Grid
---------------------*/
-/*-------------------
-     Transitions
---------------------*/
-/*-------------------
-     Breakpoints
---------------------*/
-/*-------------------
-      Site Colors
---------------------*/
-/*---  Colors  ---*/
-/*---  Light Colors  ---*/
-/*---   Neutrals  ---*/
-/*--- Colored Backgrounds ---*/
-/*--- Colored Headers ---*/
-/*--- Colored Text ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-       Accents
---------------------*/
-/* Differentiating Neutrals */
-/* Differentiating Layers */
-/*******************************
-           Power-User
-*******************************/
-/*-------------------
-    Emotive Colors
---------------------*/
-/* Positive */
-/* Negative */
-/* Info */
-/* Warning */
-/*-------------------
-        Paths
---------------------*/
-/* For source only. Modified in gulp for dist */
-/*-------------------
-       Em Sizes
---------------------*/
-/*
-  This rounds @size values to the closest pixel then expresses that value in (r)em.
-  This ensures all size values round to exact pixels
-*/
-/* em */
-/* rem */
-/*-------------------
-  Exact Pixel Values
---------------------*/
-/*
-  These are used to specify exact pixel values in em
-  for things like borders that remain constantly
-  sized as emSize adjusts
-
-  Since there are many more sizes than names for sizes,
-  these are named by their original pixel values.
-
-*/
-/*-------------------
-       Icons
---------------------*/
-/* Maximum Glyph Width of Icon */
-/*-------------------
-     Neutral Text
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-      Borders
---------------------*/
-/*-------------------
-    Derived Values
---------------------*/
-/* Loaders Position Offset */
-/* Rendered Scrollbar Width */
-/* Maximum Single Character Glyph Width, aka Capital "W" */
-/* Used to match floats with text */
-/* Header Spacing */
-/* Minimum Mobile Width */
-/* Positive / Negative Dupes */
-/* Responsive */
-/* Columns */
-/*******************************
-             States
-*******************************/
-/*-------------------
-      Disabled
---------------------*/
-/*-------------------
-        Hover
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Focus
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-    Down (:active)
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Active
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/* Packaged Theme */
-/*============================
-       Global Variables
-==============================*/
-/*-------------------
-       Colors
---------------------*/
-/* FONTS */
-/*82px*/
-/*44px*/
-/*26px*/
-/*21px*/
-/*16px*/
-/*11px*/
-/*-------------------
-       Fonts
---------------------*/
-/*******************************
-         Site Settings
-*******************************/
-/*-------------------
-       Fonts
---------------------*/
-/*
-@googleFontName    : @fontName;
-
-@googleFontSizes   : '400,700,400italic,700italic';
-@googleSubset      : 'latin';
-
-@googleProtocol    : 'https://';
-@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
-*/
-/*-------------------
-      Base Sizes
---------------------*/
-/*-------------------
-    Border Radius
---------------------*/
-/* 4px @ default em */
-/*-------------------
-    Brand Colors
---------------------*/
-/*--------------
-  Page Heading
----------------*/
-/*@headerFontWeight : 400;
-@headerLineHeight : 1.17073em;*/
-/*-------------------
-        Sizes
---------------------*/
-/*
-  To have sizing resolve to a specified pixel values adjust
-  the numerator to the desired font size and the denominator
-  to the base em size
-*/
-/*-------------------
-        Page
---------------------*/
-/*-------------------
-      Paragraph
---------------------*/
-/*-------------------
-       Links
---------------------*/
-/*-------------------
-  Highlighted Text
---------------------*/
-/*-------------------
-       Loader
---------------------*/
-/*-------------------
-        Grid
---------------------*/
-/*-------------------
-     Transitions
---------------------*/
-/*-------------------
-     Breakpoints
---------------------*/
-/*-------------------
-      Site Colors
---------------------*/
-/*---  Colors  ---*/
-/*---  Light Colors  ---*/
-/*---   Neutrals  ---*/
-/*--- Colored Backgrounds ---*/
-/*--- Colored Headers ---*/
-/*--- Colored Text ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-       Accents
---------------------*/
-/* Differentiating Neutrals */
-/* Differentiating Layers */
-/*******************************
-           Power-User
-*******************************/
-/*-------------------
-    Emotive Colors
---------------------*/
-/* Positive */
-/* Negative */
-/* Info */
-/* Warning */
-/*-------------------
-        Paths
---------------------*/
-/* For source only. Modified in gulp for dist */
-/*-------------------
-       Em Sizes
---------------------*/
-/* Exact pixel values expressed in em */
-/*-------------------
-       Icons
---------------------*/
-/* Maximum Glyph Width of Icon */
-/*-------------------
-     Neutral Text
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-      Borders
---------------------*/
-/*-------------------
-    Element Focus
---------------------*/
-/*-------------------
-    Derived Values
---------------------*/
-/* Line Height Default For Inputs in Browser */
-/* Rendered Scrollbar Width */
-/* Maximum Single Character Glyph Width, aka Capital "W" */
-/* Used to match floats with text */
-/* Header Spacing */
-/* Minimum Mobile Width */
-/* Positive / Negative Dupes */
-/* Responsive */
-/* Columns */
-/*******************************
-             States
-*******************************/
-/*-------------------
-      Disabled
---------------------*/
-/*-------------------
-        Hover
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Focus
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-    Down (:active)
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Active
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/* Site Theme */
-/*******************************
-             Mix-ins
-*******************************/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-/*******************************
-             Page
-*******************************/
-html,
-body {
-  height: 100%;
-}
-html {
-  font-size: 12px;
-}
-body {
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-  min-width: 320px;
-  background: #FAFAFA;
-  font-family: 'Whitney SSm', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 1.333333rem;
-  line-height: 2rem;
-  color: #1A1A1A;
-  font-smoothing: false;
-}
-/*******************************
-             Headers
-*******************************/
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Whitney SSm', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  line-height: 1.2857em;
-  margin: calc(2rem -  0.14285em ) 0em 1rem;
-  font-weight: bold;
-  padding: 0em;
-}
-h1 {
-  min-height: 1rem;
-  font-size: 6.83333rem;
-}
-h2 {
-  font-size: 3.66667rem;
-}
-h3 {
-  font-size: 2.16667rem;
-}
-h4 {
-  font-size: 1.75rem;
-}
-h5 {
-  font-size: 1.33333rem;
-}
-h1:first-child,
-h2:first-child,
-h3:first-child,
-h4:first-child,
-h5:first-child {
-  margin-top: 0em;
-}
-h1:last-child,
-h2:last-child,
-h3:last-child,
-h4:last-child,
-h5:last-child {
-  margin-bottom: 0em;
-}
-/*******************************
-             Text
-*******************************/
-p {
-  margin: 0.5rem 1rem 0 0.9166667rem;
-  line-height: 2rem;
-}
-p:first-child {
-  margin-top: 0em;
-}
-p:last-child {
-  margin-bottom: 0em;
-}
-/*-------------------
-        Links
---------------------*/
-a {
-  color: #D9A000;
-  text-decoration: none;
-}
-a:hover {
-  color: #c08d00;
-  text-decoration: none;
-}
-/*******************************
-          Highlighting
-*******************************/
-/* Site */
-::-webkit-selection {
-  background-color: #425CBD;
-  color: #FFFFFF;
-}
-::-moz-selection {
-  background-color: #425CBD;
-  color: #FFFFFF;
-}
-::selection {
-  background-color: #425CBD;
-  color: #FFFFFF;
-}
-/* Form */
-textarea::-webkit-selection,
-input::-webkit-selection {
-  background-color: rgba(100, 100, 100, 0.4);
-  color: #1A1A1A;
-}
-textarea::-moz-selection,
-input::-moz-selection {
-  background-color: rgba(100, 100, 100, 0.4);
-  color: #1A1A1A;
-}
-textarea::selection,
-input::selection {
-  background-color: rgba(100, 100, 100, 0.4);
-  color: #1A1A1A;
-}
-/*******************************
-        Global Overrides
-*******************************/
-html,
-body {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-body,
-body > bonaparte-toolbar {
-  height: 100%;
-}
-p {
-  font-weight: 400;
-  padding: 0 0 0.5rem 0;
-}
-p.small.text {
-  margin: 0rem 1rem 0rem 0.9166667rem;
-}
-small,
-.small.text {
-  font-weight: 400;
-  font-size: 0.91667rem;
-  line-height: 1.5rem;
-  padding: 0.3333333rem 0 0.1666667rem 0;
-}
-b,
-strong {
-  font-weight: 700;
-}
-.ui.block {
-  box-sizing: border-box;
-}
-.ui.block .header {
-  background: #F5F5F5;
-  padding: 1rem 1rem;
-  margin: 0;
-  box-shadow: none;
-  border-bottom: 1px solid #F0F0F0;
-  text-transform: uppercase;
-  box-sizing: border-box;
-}
-.ui.block .header i.icon {
-  margin-right: 1rem;
-}
-.ui.block .header .button {
-  margin: 0 1rem;
-}
-.ui.block .header .button.right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 1rem;
-}
 /*============================
        Global Variables
 ==============================*/
@@ -5566,12 +4421,26 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -5584,6 +4453,8 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -5607,6 +4478,8 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -5616,6 +4489,8 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -5746,12 +4621,26 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -5764,6 +4653,8 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -5787,6 +4678,8 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -5796,6 +4689,8 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -6319,12 +5214,26 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -6337,6 +5246,8 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -6360,6 +5271,8 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -6369,6 +5282,8 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -6499,12 +5414,26 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -6517,6 +5446,8 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -6540,6 +5471,8 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -6549,6 +5482,8 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -7226,12 +6161,26 @@ h6.ui.horizontal.divider {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -7244,6 +6193,8 @@ h6.ui.horizontal.divider {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -7267,6 +6218,8 @@ h6.ui.horizontal.divider {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -7276,6 +6229,8 @@ h6.ui.horizontal.divider {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -7406,12 +6361,26 @@ h6.ui.horizontal.divider {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -7424,6 +6393,8 @@ h6.ui.horizontal.divider {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -7447,6 +6418,8 @@ h6.ui.horizontal.divider {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -7456,6 +6429,8 @@ h6.ui.horizontal.divider {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -8846,12 +7821,26 @@ i.flag.zimbabwe:before {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -8864,6 +7853,8 @@ i.flag.zimbabwe:before {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -8887,6 +7878,8 @@ i.flag.zimbabwe:before {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -8896,6 +7889,8 @@ i.flag.zimbabwe:before {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -9026,12 +8021,26 @@ i.flag.zimbabwe:before {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -9044,6 +8053,8 @@ i.flag.zimbabwe:before {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -9067,6 +8078,8 @@ i.flag.zimbabwe:before {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -9076,6 +8089,8 @@ i.flag.zimbabwe:before {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -9264,11 +8279,11 @@ i.flag.zimbabwe:before {
   border: none;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   padding: 0em 0em;
-  font-family: 'Whitney SSm', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
   line-height: 1.2857em;
   text-transform: none;
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
 }
 .ui.header:first-child {
   margin-top: -0.14285em;
@@ -10287,12 +9302,26 @@ h6.ui.dividing.header:after {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -10305,6 +9334,8 @@ h6.ui.dividing.header:after {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -10328,6 +9359,8 @@ h6.ui.dividing.header:after {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -10337,6 +9370,8 @@ h6.ui.dividing.header:after {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -10467,12 +9502,26 @@ h6.ui.dividing.header:after {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -10485,6 +9534,8 @@ h6.ui.dividing.header:after {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -10508,6 +9559,8 @@ h6.ui.dividing.header:after {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -10517,6 +9570,8 @@ h6.ui.dividing.header:after {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -14158,12 +13213,26 @@ i.icon.zerply:before {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -14176,6 +13245,8 @@ i.icon.zerply:before {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -14199,6 +13270,8 @@ i.icon.zerply:before {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -14208,6 +13281,8 @@ i.icon.zerply:before {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -14338,12 +13413,26 @@ i.icon.zerply:before {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -14356,6 +13445,8 @@ i.icon.zerply:before {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -14379,6 +13470,8 @@ i.icon.zerply:before {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -14388,6 +13481,8 @@ i.icon.zerply:before {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -14580,7 +13675,7 @@ i.icon.zerply:before {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
 }
 .ui.input input {
   margin: 0em;
@@ -14597,7 +13692,7 @@ i.icon.zerply:before {
   padding: 0.67861em 1em;
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
   border-radius: 0em;
   -webkit-transition: background-color 50ms ease-out, box-shadow 50ms ease-out, border-color 50ms ease-out;
           transition: background-color 50ms ease-out, box-shadow 50ms ease-out, border-color 50ms ease-out;
@@ -14636,7 +13731,7 @@ i.icon.zerply:before {
 .ui.input.down input {
   border-color: rgba(0, 0, 0, 0.3);
   background: #FAFAFA;
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
   box-shadow: none;
 }
 /*--------------------
@@ -14683,15 +13778,15 @@ i.icon.zerply:before {
 }
 .ui.input.focus input::-webkit-input-placeholder,
 .ui.input input:focus::-webkit-input-placeholder {
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
 }
 .ui.input.focus input::-moz-placeholder,
 .ui.input input:focus::-moz-placeholder {
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
 }
 .ui.input.focus input::-ms-input-placeholder,
 .ui.input input:focus::-ms-input-placeholder {
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
 }
 /*--------------------
         Error
@@ -15256,12 +14351,26 @@ i.icon.zerply:before {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -15274,6 +14383,8 @@ i.icon.zerply:before {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -15297,6 +14408,8 @@ i.icon.zerply:before {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -15306,6 +14419,8 @@ i.icon.zerply:before {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -15436,12 +14551,26 @@ i.icon.zerply:before {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -15454,6 +14583,8 @@ i.icon.zerply:before {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -15477,6 +14608,8 @@ i.icon.zerply:before {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -15486,6 +14619,8 @@ i.icon.zerply:before {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -16607,7 +15742,7 @@ a.ui.basic.black.label:hover {
 .ui.basic.label {
   background: none #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
   box-shadow: none;
 }
 /* Link */
@@ -17078,12 +16213,26 @@ a.ui.basic.label:hover {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -17096,6 +16245,8 @@ a.ui.basic.label:hover {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -17119,6 +16270,8 @@ a.ui.basic.label:hover {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -17128,6 +16281,8 @@ a.ui.basic.label:hover {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -17258,12 +16413,26 @@ a.ui.basic.label:hover {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -17276,6 +16445,8 @@ a.ui.basic.label:hover {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -17299,6 +16470,8 @@ a.ui.basic.label:hover {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -17308,6 +16481,8 @@ a.ui.basic.label:hover {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -18068,7 +17243,7 @@ a.ui.basic.label:hover {
 }
 /* Nested */
 .ui.inverted.segment .segment {
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
 }
 .ui.inverted.segment .inverted.segment {
   color: rgba(255, 255, 255, 0.9);
@@ -18391,12 +17566,26 @@ a.ui.basic.label:hover {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -18409,6 +17598,8 @@ a.ui.basic.label:hover {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -18432,6 +17623,8 @@ a.ui.basic.label:hover {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -18441,6 +17634,8 @@ a.ui.basic.label:hover {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -18571,12 +17766,26 @@ a.ui.basic.label:hover {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -18589,6 +17798,8 @@ a.ui.basic.label:hover {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -18612,6 +17823,8 @@ a.ui.basic.label:hover {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -18621,6 +17834,8 @@ a.ui.basic.label:hover {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -18877,7 +18092,7 @@ a.ui.basic.label:hover {
 .ui.form .field > label {
   display: block;
   margin: 0em 0em 0.2857rem 0em;
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
   font-size: 0.9285em;
   font-weight: bold;
   text-transform: none;
@@ -18926,7 +18141,7 @@ a.ui.basic.label:hover {
   font-size: 1em;
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
   border-radius: 0em;
   box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: color 50ms ease-out, border-color 50ms ease-out;
@@ -18941,7 +18156,7 @@ a.ui.basic.label:hover {
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
   outline: none;
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
   border-radius: 0em;
   box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: color 50ms ease-out, border-color 50ms ease-out;
@@ -18977,7 +18192,7 @@ a.ui.basic.label:hover {
   border-radius: 0em;
   box-shadow: 0em 0em 0em 0em transparent inset;
   padding: 0.62em 1em;
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
   -webkit-transition: color 50ms ease-out, border-color 50ms ease-out;
           transition: color 50ms ease-out, border-color 50ms ease-out;
 }
@@ -19103,22 +18318,22 @@ a.ui.basic.label:hover {
 ---------------------*/
 /* browsers require these rules separate */
 .ui.form ::-webkit-input-placeholder {
-  color: #a6a6a6;
+  color: rgba(140, 140, 140, 0.87);
 }
 .ui.form ::-ms-input-placeholder {
-  color: #a6a6a6;
+  color: rgba(140, 140, 140, 0.87);
 }
 .ui.form ::-moz-placeholder {
-  color: #a6a6a6;
+  color: rgba(140, 140, 140, 0.87);
 }
 .ui.form :focus::-webkit-input-placeholder {
-  color: #737373;
+  color: rgba(89, 89, 89, 0.87);
 }
 .ui.form :focus::-ms-input-placeholder {
-  color: #737373;
+  color: rgba(89, 89, 89, 0.87);
 }
 .ui.form :focus::-moz-placeholder {
-  color: #737373;
+  color: rgba(89, 89, 89, 0.87);
 }
 /* Error Placeholder */
 .ui.form .error ::-webkit-input-placeholder {
@@ -19471,7 +18686,7 @@ a.ui.basic.label:hover {
 .ui.inverted.form input[type="url"] {
   background: #FFFFFF;
   border-color: rgba(255, 255, 255, 0.1);
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
   box-shadow: none;
 }
 /*--------------------
@@ -19487,7 +18702,7 @@ a.ui.basic.label:hover {
 }
 .ui.form .grouped.fields > label {
   margin: 0em 0em 0.2857rem 0em;
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
   font-size: 0.9285em;
   font-weight: bold;
   text-transform: none;
@@ -19717,7 +18932,7 @@ a.ui.basic.label:hover {
   vertical-align: baseline;
   font-size: 0.9285em;
   font-weight: bold;
-  color: #1A1A1A;
+  color: rgba(0, 0, 0, 0.87);
   text-transform: none;
 }
 /* Grouped Inline Label */
@@ -20229,12 +19444,26 @@ a.ui.basic.label:hover {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -20247,6 +19476,8 @@ a.ui.basic.label:hover {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -20270,6 +19501,8 @@ a.ui.basic.label:hover {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -20279,6 +19512,8 @@ a.ui.basic.label:hover {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -22782,12 +22017,26 @@ a.ui.basic.label:hover {
 /*-------------------
        Fonts
 --------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
 /*******************************
          Site Settings
 *******************************/
 /*-------------------
        Fonts
 --------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
 /*
 @googleFontName    : @fontName;
 
@@ -22800,6 +22049,8 @@ a.ui.basic.label:hover {
 /*-------------------
       Base Sizes
 --------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 /*-------------------
     Border Radius
 --------------------*/
@@ -22823,6 +22074,8 @@ a.ui.basic.label:hover {
 /*-------------------
         Page
 --------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 /*-------------------
       Paragraph
 --------------------*/
@@ -22832,6 +22085,8 @@ a.ui.basic.label:hover {
 /*-------------------
   Highlighted Text
 --------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 /*-------------------
        Loader
 --------------------*/
@@ -25040,6 +24295,9 @@ bonaparte-toolbar[position="right"][open="true"] > :nth-child(1) {
   min-width: 10rem;
 }
 /*///////////////////////////////////////////////////////////////////////////*/
+body > bonaparte-toolbar {
+  height: 100%;
+}
 /*SIZES*/
 bonaparte-toolbar {
   /*////////////////////////////////*/
