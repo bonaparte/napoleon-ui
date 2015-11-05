@@ -1,16 +1,17 @@
+@import "./variables.less";
+
 html, body {
   position:relative;
   padding: 0;
   margin: 0;
+  height:100%;
 }
 
 html {
-  height:100%;
   font-size: @emSize;
 }
 
 body {
-  min-height:100%;
   font-family: @pageFont;
   font-size: @fontSize;
   line-height: @lineHeight;
@@ -80,8 +81,8 @@ a:hover {
 input::-webkit-selection,
 textarea::-moz-selection,
 input::-moz-selection,
-*/textarea::selection,
+*//*textarea::selection,
 input::selection {
   background-color: @inputHighlightBackground;
   color: @inputHighlightColor;
-}
+}*/

@@ -397,6 +397,139 @@ input[type="password"] {
 /*21px*/
 /*16px*/
 /*11px*/
+html,
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+html {
+  font-size: 12px;
+}
+body {
+  font-family: 'Whitney SSm', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1.333333rem;
+  line-height: 2rem;
+  color: #1A1A1A;
+  font-smoothing: false;
+}
+img {
+  width: 100%;
+}
+p {
+  margin: 0.5rem 1rem 0 0.9166667rem;
+  line-height: 2rem;
+  font-weight: 400;
+  padding: 0 0 0.5rem 0;
+}
+p.small.text {
+  margin: 0rem 1rem 0rem 0.9166667rem;
+}
+small,
+.small.text {
+  font-weight: 400;
+  font-size: 0.91667rem;
+  line-height: 1.5rem;
+  padding: 0.3333333rem 0 0.1666667rem 0;
+}
+small b,
+.small.text b,
+small strong,
+.small.text strong {
+  font-weight: 600;
+}
+b,
+strong {
+  font-weight: 700;
+}
+/*-------------------
+        Links
+--------------------*/
+a {
+  color: #D9A000;
+  text-decoration: none;
+}
+a:hover {
+  color: #E2BF3D;
+  text-decoration: underline;
+}
+/*******************************
+          Highlighting
+*******************************/
+/* Site */
+/*::-webkit-selection,
+::-moz-selection,
+*/
+::-moz-selection {
+  background-color: #425CBD;
+  color: #FFFFFF;
+}
+::selection {
+  background-color: #425CBD;
+  color: #FFFFFF;
+}
+/* Form */
+/*textarea::-webkit-selection,
+input::-webkit-selection,
+textarea::-moz-selection,
+input::-moz-selection,
+*/
+/*textarea::selection,
+input::selection {
+  background-color: @inputHighlightBackground;
+  color: @inputHighlightColor;
+}*/
+/*============================
+       Global Variables
+==============================*/
+/*-------------------
+       Colors
+--------------------*/
+/* FONTS */
+/*82px*/
+/*44px*/
+/*26px*/
+/*21px*/
+/*16px*/
+/*11px*/
+.ui.block {
+  box-sizing: border-box;
+}
+.ui.block .header {
+  background: #F5F5F5;
+  padding: 1rem 1rem;
+  margin: 0;
+  box-shadow: none;
+  border-bottom: 1px solid #F0F0F0;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+.ui.block .header i.icon {
+  margin-right: 1rem;
+}
+.ui.block .header .button {
+  margin: 0 1rem;
+}
+.ui.block .header .button.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+}
+/*============================
+       Global Variables
+==============================*/
+/*-------------------
+       Colors
+--------------------*/
+/* FONTS */
+/*82px*/
+/*44px*/
+/*26px*/
+/*21px*/
+/*16px*/
+/*11px*/
 .ui.button,
 button.ui {
   /***********************
@@ -412,6 +545,8 @@ button.ui {
       -ms-user-select: none;
           user-select: none;
   text-align: center;
+  border: 0px;
+  outline: 0px;
   /*  & + & {
     margin-left:1rem;
   }
@@ -1148,15 +1283,24 @@ button.ui.transparent,
 .ui.buttons.transparent button.ui,
 .ui.buttons.transparent .ui.button {
   background-color: transparent !important;
-  /*    &:active {
-      color:darken(@color-interactive, 2);
-    }*/
   /*    &:after {
       display:block;
       position:relative;
       border:0px;
       border-bottom:1px solid;
     }*/
+}
+.ui.button.transparent:hover,
+button.ui.transparent:hover,
+.ui.buttons.transparent button.ui:hover,
+.ui.buttons.transparent .ui.button:hover {
+  text-decoration: underline;
+}
+.ui.button.transparent:hover i.icon,
+button.ui.transparent:hover i.icon,
+.ui.buttons.transparent button.ui:hover i.icon,
+.ui.buttons.transparent .ui.button:hover i.icon {
+  text-decoration: none;
 }
 .ui.button.transparent.active:active,
 button.ui.transparent.active:active,
