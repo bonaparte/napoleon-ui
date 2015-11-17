@@ -747,28 +747,34 @@ button.ui.icon > i.icon,
 button.ui.labeled.icon,
 .ui.buttons.labeled.icon button.ui,
 .ui.buttons.labeled.icon .ui.button {
-  text-align: right;
+  text-align: left;
+  overflow: hidden;
+  padding-left: 0rem;
+  padding-right: 1rem;
 }
 .ui.button.labeled.icon > i.icon,
 button.ui.labeled.icon > i.icon,
 .ui.buttons.labeled.icon button.ui > i.icon,
 .ui.buttons.labeled.icon .ui.button > i.icon {
-  position: absolute;
-  left: 0px;
-  right: auto;
+  float: left;
+  margin-left: 0rem;
+  margin-right: 1rem;
 }
 .ui.button.right.labeled.icon,
 button.ui.right.labeled.icon,
 .ui.buttons.right.labeled.icon button.ui,
 .ui.buttons.right.labeled.icon .ui.button {
-  text-align: left;
+  text-align: right;
+  padding-right: 0rem;
+  padding-left: 1rem;
 }
 .ui.button.right.labeled.icon > i.icon,
 button.ui.right.labeled.icon > i.icon,
 .ui.buttons.right.labeled.icon button.ui > i.icon,
 .ui.buttons.right.labeled.icon .ui.button > i.icon {
-  left: auto;
-  right: 0;
+  float: right;
+  margin-left: 1rem;
+  margin-right: 0rem;
 }
 .ui.button > i.icon,
 button.ui > i.icon {
@@ -930,25 +936,11 @@ button.ui.animated .hidden.content {
   height: 4rem;
   margin-top: -2rem;
 }
-.ui.button.labeled.icon,
-button.ui.labeled.icon,
-.ui.buttons.labeled.icon button.ui,
-.ui.buttons.labeled.icon .ui.button {
-  padding-left: 5rem;
-  padding-right: 1rem;
-}
 .ui.button.labeled.icon > .icon,
 button.ui.labeled.icon > .icon,
 .ui.buttons.labeled.icon button.ui > .icon,
 .ui.buttons.labeled.icon .ui.button > .icon {
   width: 4rem;
-}
-.ui.button.right.labeled.icon,
-button.ui.right.labeled.icon,
-.ui.buttons.right.labeled.icon button.ui,
-.ui.buttons.right.labeled.icon .ui.button {
-  padding-left: 1rem;
-  padding-right: 5rem;
 }
 .ui.button.toggle-top:before,
 button.ui.toggle-top:before,
@@ -2660,29 +2652,6 @@ button.ui.tiny.animated .hidden.content,
   height: 2rem;
   margin-top: -1rem;
 }
-bonaparte-toolbar.mini > *:first-child button.ui.labeled.icon,
-bonaparte-toolbar.mini > *:first-child .ui.button.labeled.icon,
-.ui.mini.buttons button.ui.labeled.icon,
-.ui.mini.buttons .ui.button.labeled.icon,
-button.ui.mini.labeled.icon,
-.ui.button.mini.labeled.icon,
-bonaparte-toolbar.tiny > *:first-child button.ui.labeled.icon,
-bonaparte-toolbar.tiny > *:first-child .ui.button.labeled.icon,
-.ui.tiny.buttons button.ui.labeled.icon,
-.ui.tiny.buttons .ui.button.labeled.icon,
-button.ui.tiny.labeled.icon,
-.ui.button.tiny.labeled.icon,
-bonaparte-toolbar.mini > *:first-child .ui.buttons.labeled.icon button.ui,
-.ui.mini.buttons .ui.buttons.labeled.icon button.ui,
-bonaparte-toolbar.tiny > *:first-child .ui.buttons.labeled.icon button.ui,
-.ui.tiny.buttons .ui.buttons.labeled.icon button.ui,
-bonaparte-toolbar.mini > *:first-child .ui.buttons.labeled.icon .ui.button,
-.ui.mini.buttons .ui.buttons.labeled.icon .ui.button,
-bonaparte-toolbar.tiny > *:first-child .ui.buttons.labeled.icon .ui.button,
-.ui.tiny.buttons .ui.buttons.labeled.icon .ui.button {
-  padding-left: 3rem;
-  padding-right: 1rem;
-}
 bonaparte-toolbar.mini > *:first-child button.ui.labeled.icon > .icon,
 bonaparte-toolbar.mini > *:first-child .ui.button.labeled.icon > .icon,
 .ui.mini.buttons button.ui.labeled.icon > .icon,
@@ -2704,29 +2673,6 @@ bonaparte-toolbar.mini > *:first-child .ui.buttons.labeled.icon .ui.button > .ic
 bonaparte-toolbar.tiny > *:first-child .ui.buttons.labeled.icon .ui.button > .icon,
 .ui.tiny.buttons .ui.buttons.labeled.icon .ui.button > .icon {
   width: 2rem;
-}
-bonaparte-toolbar.mini > *:first-child button.ui.right.labeled.icon,
-bonaparte-toolbar.mini > *:first-child .ui.button.right.labeled.icon,
-.ui.mini.buttons button.ui.right.labeled.icon,
-.ui.mini.buttons .ui.button.right.labeled.icon,
-button.ui.mini.right.labeled.icon,
-.ui.button.mini.right.labeled.icon,
-bonaparte-toolbar.tiny > *:first-child button.ui.right.labeled.icon,
-bonaparte-toolbar.tiny > *:first-child .ui.button.right.labeled.icon,
-.ui.tiny.buttons button.ui.right.labeled.icon,
-.ui.tiny.buttons .ui.button.right.labeled.icon,
-button.ui.tiny.right.labeled.icon,
-.ui.button.tiny.right.labeled.icon,
-bonaparte-toolbar.mini > *:first-child .ui.buttons.right.labeled.icon button.ui,
-.ui.mini.buttons .ui.buttons.right.labeled.icon button.ui,
-bonaparte-toolbar.tiny > *:first-child .ui.buttons.right.labeled.icon button.ui,
-.ui.tiny.buttons .ui.buttons.right.labeled.icon button.ui,
-bonaparte-toolbar.mini > *:first-child .ui.buttons.right.labeled.icon .ui.button,
-.ui.mini.buttons .ui.buttons.right.labeled.icon .ui.button,
-bonaparte-toolbar.tiny > *:first-child .ui.buttons.right.labeled.icon .ui.button,
-.ui.tiny.buttons .ui.buttons.right.labeled.icon .ui.button {
-  padding-left: 1rem;
-  padding-right: 3rem;
 }
 bonaparte-toolbar.mini > *:first-child button.ui.toggle-top:before,
 bonaparte-toolbar.mini > *:first-child .ui.button.toggle-top:before,
@@ -3106,19 +3052,6 @@ button.ui.small.animated .hidden.content,
   height: 3rem;
   margin-top: -1.5rem;
 }
-bonaparte-toolbar.small > *:first-child button.ui.labeled.icon,
-bonaparte-toolbar.small > *:first-child .ui.button.labeled.icon,
-.ui.small.buttons button.ui.labeled.icon,
-.ui.small.buttons .ui.button.labeled.icon,
-button.ui.small.labeled.icon,
-.ui.button.small.labeled.icon,
-bonaparte-toolbar.small > *:first-child .ui.buttons.labeled.icon button.ui,
-.ui.small.buttons .ui.buttons.labeled.icon button.ui,
-bonaparte-toolbar.small > *:first-child .ui.buttons.labeled.icon .ui.button,
-.ui.small.buttons .ui.buttons.labeled.icon .ui.button {
-  padding-left: 4rem;
-  padding-right: 1rem;
-}
 bonaparte-toolbar.small > *:first-child button.ui.labeled.icon > .icon,
 bonaparte-toolbar.small > *:first-child .ui.button.labeled.icon > .icon,
 .ui.small.buttons button.ui.labeled.icon > .icon,
@@ -3130,19 +3063,6 @@ bonaparte-toolbar.small > *:first-child .ui.buttons.labeled.icon button.ui > .ic
 bonaparte-toolbar.small > *:first-child .ui.buttons.labeled.icon .ui.button > .icon,
 .ui.small.buttons .ui.buttons.labeled.icon .ui.button > .icon {
   width: 3rem;
-}
-bonaparte-toolbar.small > *:first-child button.ui.right.labeled.icon,
-bonaparte-toolbar.small > *:first-child .ui.button.right.labeled.icon,
-.ui.small.buttons button.ui.right.labeled.icon,
-.ui.small.buttons .ui.button.right.labeled.icon,
-button.ui.small.right.labeled.icon,
-.ui.button.small.right.labeled.icon,
-bonaparte-toolbar.small > *:first-child .ui.buttons.right.labeled.icon button.ui,
-.ui.small.buttons .ui.buttons.right.labeled.icon button.ui,
-bonaparte-toolbar.small > *:first-child .ui.buttons.right.labeled.icon .ui.button,
-.ui.small.buttons .ui.buttons.right.labeled.icon .ui.button {
-  padding-left: 1rem;
-  padding-right: 4rem;
 }
 bonaparte-toolbar.small > *:first-child button.ui.toggle-top:before,
 bonaparte-toolbar.small > *:first-child .ui.button.toggle-top:before,
@@ -3440,29 +3360,6 @@ button.ui.big.animated .hidden.content,
   height: 5rem;
   margin-top: -2.5rem;
 }
-bonaparte-toolbar.large > *:first-child button.ui.labeled.icon,
-bonaparte-toolbar.large > *:first-child .ui.button.labeled.icon,
-.ui.large.buttons button.ui.labeled.icon,
-.ui.large.buttons .ui.button.labeled.icon,
-button.ui.large.labeled.icon,
-.ui.large.button.labeled.icon,
-bonaparte-toolbar.big > *:first-child button.ui.labeled.icon,
-bonaparte-toolbar.big > *:first-child .ui.button.labeled.icon,
-.ui.big.buttons button.ui.labeled.icon,
-.ui.big.buttons .ui.button.labeled.icon,
-button.ui.big.labeled.icon,
-.ui.big.button.labeled.icon,
-bonaparte-toolbar.large > *:first-child .ui.buttons.labeled.icon button.ui,
-.ui.large.buttons .ui.buttons.labeled.icon button.ui,
-bonaparte-toolbar.big > *:first-child .ui.buttons.labeled.icon button.ui,
-.ui.big.buttons .ui.buttons.labeled.icon button.ui,
-bonaparte-toolbar.large > *:first-child .ui.buttons.labeled.icon .ui.button,
-.ui.large.buttons .ui.buttons.labeled.icon .ui.button,
-bonaparte-toolbar.big > *:first-child .ui.buttons.labeled.icon .ui.button,
-.ui.big.buttons .ui.buttons.labeled.icon .ui.button {
-  padding-left: 6rem;
-  padding-right: 1rem;
-}
 bonaparte-toolbar.large > *:first-child button.ui.labeled.icon > .icon,
 bonaparte-toolbar.large > *:first-child .ui.button.labeled.icon > .icon,
 .ui.large.buttons button.ui.labeled.icon > .icon,
@@ -3484,29 +3381,6 @@ bonaparte-toolbar.large > *:first-child .ui.buttons.labeled.icon .ui.button > .i
 bonaparte-toolbar.big > *:first-child .ui.buttons.labeled.icon .ui.button > .icon,
 .ui.big.buttons .ui.buttons.labeled.icon .ui.button > .icon {
   width: 5rem;
-}
-bonaparte-toolbar.large > *:first-child button.ui.right.labeled.icon,
-bonaparte-toolbar.large > *:first-child .ui.button.right.labeled.icon,
-.ui.large.buttons button.ui.right.labeled.icon,
-.ui.large.buttons .ui.button.right.labeled.icon,
-button.ui.large.right.labeled.icon,
-.ui.large.button.right.labeled.icon,
-bonaparte-toolbar.big > *:first-child button.ui.right.labeled.icon,
-bonaparte-toolbar.big > *:first-child .ui.button.right.labeled.icon,
-.ui.big.buttons button.ui.right.labeled.icon,
-.ui.big.buttons .ui.button.right.labeled.icon,
-button.ui.big.right.labeled.icon,
-.ui.big.button.right.labeled.icon,
-bonaparte-toolbar.large > *:first-child .ui.buttons.right.labeled.icon button.ui,
-.ui.large.buttons .ui.buttons.right.labeled.icon button.ui,
-bonaparte-toolbar.big > *:first-child .ui.buttons.right.labeled.icon button.ui,
-.ui.big.buttons .ui.buttons.right.labeled.icon button.ui,
-bonaparte-toolbar.large > *:first-child .ui.buttons.right.labeled.icon .ui.button,
-.ui.large.buttons .ui.buttons.right.labeled.icon .ui.button,
-bonaparte-toolbar.big > *:first-child .ui.buttons.right.labeled.icon .ui.button,
-.ui.big.buttons .ui.buttons.right.labeled.icon .ui.button {
-  padding-left: 1rem;
-  padding-right: 6rem;
 }
 bonaparte-toolbar.large > *:first-child button.ui.toggle-top:before,
 bonaparte-toolbar.large > *:first-child .ui.button.toggle-top:before,
@@ -3920,29 +3794,6 @@ button.ui.massive.animated .hidden.content,
   height: 6rem;
   margin-top: -3rem;
 }
-bonaparte-toolbar.huge > *:first-child button.ui.labeled.icon,
-bonaparte-toolbar.huge > *:first-child .ui.button.labeled.icon,
-.ui.huge.buttons button.ui.labeled.icon,
-.ui.huge.buttons .ui.button.labeled.icon,
-button.ui.huge.labeled.icon,
-.ui.huge.button.labeled.icon,
-bonaparte-toolbar.massive > *:first-child button.ui.labeled.icon,
-bonaparte-toolbar.massive > *:first-child .ui.button.labeled.icon,
-.ui.massive.buttons button.ui.labeled.icon,
-.ui.massive.buttons .ui.button.labeled.icon,
-button.ui.massive.labeled.icon,
-.ui.button.massive.labeled.icon,
-bonaparte-toolbar.huge > *:first-child .ui.buttons.labeled.icon button.ui,
-.ui.huge.buttons .ui.buttons.labeled.icon button.ui,
-bonaparte-toolbar.massive > *:first-child .ui.buttons.labeled.icon button.ui,
-.ui.massive.buttons .ui.buttons.labeled.icon button.ui,
-bonaparte-toolbar.huge > *:first-child .ui.buttons.labeled.icon .ui.button,
-.ui.huge.buttons .ui.buttons.labeled.icon .ui.button,
-bonaparte-toolbar.massive > *:first-child .ui.buttons.labeled.icon .ui.button,
-.ui.massive.buttons .ui.buttons.labeled.icon .ui.button {
-  padding-left: 7rem;
-  padding-right: 1rem;
-}
 bonaparte-toolbar.huge > *:first-child button.ui.labeled.icon > .icon,
 bonaparte-toolbar.huge > *:first-child .ui.button.labeled.icon > .icon,
 .ui.huge.buttons button.ui.labeled.icon > .icon,
@@ -3964,29 +3815,6 @@ bonaparte-toolbar.huge > *:first-child .ui.buttons.labeled.icon .ui.button > .ic
 bonaparte-toolbar.massive > *:first-child .ui.buttons.labeled.icon .ui.button > .icon,
 .ui.massive.buttons .ui.buttons.labeled.icon .ui.button > .icon {
   width: 6rem;
-}
-bonaparte-toolbar.huge > *:first-child button.ui.right.labeled.icon,
-bonaparte-toolbar.huge > *:first-child .ui.button.right.labeled.icon,
-.ui.huge.buttons button.ui.right.labeled.icon,
-.ui.huge.buttons .ui.button.right.labeled.icon,
-button.ui.huge.right.labeled.icon,
-.ui.huge.button.right.labeled.icon,
-bonaparte-toolbar.massive > *:first-child button.ui.right.labeled.icon,
-bonaparte-toolbar.massive > *:first-child .ui.button.right.labeled.icon,
-.ui.massive.buttons button.ui.right.labeled.icon,
-.ui.massive.buttons .ui.button.right.labeled.icon,
-button.ui.massive.right.labeled.icon,
-.ui.button.massive.right.labeled.icon,
-bonaparte-toolbar.huge > *:first-child .ui.buttons.right.labeled.icon button.ui,
-.ui.huge.buttons .ui.buttons.right.labeled.icon button.ui,
-bonaparte-toolbar.massive > *:first-child .ui.buttons.right.labeled.icon button.ui,
-.ui.massive.buttons .ui.buttons.right.labeled.icon button.ui,
-bonaparte-toolbar.huge > *:first-child .ui.buttons.right.labeled.icon .ui.button,
-.ui.huge.buttons .ui.buttons.right.labeled.icon .ui.button,
-bonaparte-toolbar.massive > *:first-child .ui.buttons.right.labeled.icon .ui.button,
-.ui.massive.buttons .ui.buttons.right.labeled.icon .ui.button {
-  padding-left: 1rem;
-  padding-right: 7rem;
 }
 bonaparte-toolbar.huge > *:first-child button.ui.toggle-top:before,
 bonaparte-toolbar.huge > *:first-child .ui.button.toggle-top:before,
