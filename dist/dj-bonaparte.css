@@ -751,7 +751,7 @@ button.ui.labeled.icon,
   overflow: hidden;
   padding-left: 0rem;
   padding-right: 1rem;
-  direction: rtl;
+  direction: ltr;
 }
 .ui.button.labeled.icon > i.icon,
 button.ui.labeled.icon > i.icon,
@@ -768,7 +768,7 @@ button.ui.right.labeled.icon,
   text-align: right;
   padding-right: 0rem;
   padding-left: 1rem;
-  direction: ltr;
+  direction: rtl;
 }
 .ui.button.right.labeled.icon > i.icon,
 button.ui.right.labeled.icon > i.icon,
