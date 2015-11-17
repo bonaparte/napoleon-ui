@@ -112,24 +112,30 @@ button.ui {
 
   &.labeled.icon {
     & {
-      text-align:right;
+      text-align:left;
+      overflow:hidden;
+      padding-left:0rem;
+      padding-right:1rem;
     }
 
     > i.icon {
-      position:absolute;
-      left:0px;
-      right:auto;
+      float:left;
+      margin-left:0rem;
+      margin-right:1rem;
     }
   }
 
   &.right.labeled.icon {
     & {
-      text-align:left;
+      text-align:right;
+      padding-right:0rem;
+      padding-left:1rem;
     }
 
     > i.icon {
-      left: auto;
-      right: 0;
+      float:right;
+      margin-left:1rem;
+      margin-right:0rem;
     }
   }
 
@@ -1387,17 +1393,9 @@ button.ui {
 
 
   &.labeled.icon {
-    padding-left:@iconSize+1em;
-    padding-right:1rem;
-
     > .icon {
       width:@iconSize;
     }
-  }
-
-  &.right.labeled.icon {
-    padding-left:1rem;
-    padding-right:@iconSize+1em;
   }
 
 /*  &.transparent:after {
