@@ -11,6 +11,7 @@
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -629,6 +630,7 @@ input[type="password"] {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -809,6 +811,7 @@ input[type="password"] {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -1173,6 +1176,7 @@ input[type="password"] {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -1433,11 +1437,11 @@ p:last-child {
         Links
 --------------------*/
 a {
-  color: #D9A000;
+  color: #B50008;
   text-decoration: none;
 }
 a:hover {
-  color: #c08d00;
+  color: #9c0007;
   text-decoration: none;
 }
 /*******************************
@@ -1542,6 +1546,7 @@ strong {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 .ui.button,
 button.ui {
   /***********************
@@ -1577,7 +1582,7 @@ button.ui {
   /***********************
     COLORS VARIATIONS
   ************************/
-  color: #D9A000;
+  color: #B50008;
   background-color: #FAFAFA;
 }
 .ui.button:after,
@@ -2128,14 +2133,14 @@ button.ui.disabled.transparent:after,
 button.ui.inverted,
 .ui.buttons.inverted button.ui,
 .ui.buttons.inverted .ui.button {
-  background-color: #D9A000;
+  background-color: #B50008;
   color: #FFFFFF;
 }
 .ui.button.inverted:after,
 button.ui.inverted:after,
 .ui.buttons.inverted button.ui:after,
 .ui.buttons.inverted .ui.button:after {
-  border-color: #e3a800;
+  border-color: #bf0008;
 }
 .ui.button.inverted:hover,
 button.ui.inverted:hover,
@@ -2145,13 +2150,13 @@ button.ui.inverted:focus,
 .ui.buttons.inverted button.ui:focus,
 .ui.buttons.inverted .ui.button:hover,
 .ui.buttons.inverted .ui.button:focus {
-  background-color: #f3b300;
+  background-color: #cf0009;
 }
 .ui.button.inverted:active,
 button.ui.inverted:active,
 .ui.buttons.inverted button.ui:active,
 .ui.buttons.inverted .ui.button:active {
-  background-color: #cb9500;
+  background-color: #a90007;
 }
 .ui.button.inverted.toggle:before,
 button.ui.inverted.toggle:before,
@@ -3416,7 +3421,7 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
   top: 50%;
   left: 50%;
   color: #FFFFFF;
-  background-color: #D9A000;
+  background-color: #B50008;
 }
 .ui.buttons.conditional .or[data-text]:before {
   content: attr(data-text);
@@ -3444,7 +3449,7 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
     }*/
 }
 .ui.buttons.inverted.conditional .or:before {
-  color: #D9A000;
+  color: #B50008;
   background-color: #FAFAFA;
 }
 .ui.buttons.monochrome.conditional .or:before {
@@ -3452,9 +3457,9 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
   background-color: #262626;
 }
 .ui.buttons.transparent.conditional .or:before {
-  color: #D9A000;
+  color: #B50008;
   background-color: transparent !important;
-  border: 1px solid #D9A000;
+  border: 1px solid #B50008;
 }
 .ui.buttons.transparent.inverted.conditional .or:before {
   color: #FFFFFF;
@@ -5563,6 +5568,7 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -5743,6 +5749,7 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -6316,6 +6323,7 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -6496,6 +6504,7 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -7223,6 +7232,7 @@ h6.ui.horizontal.divider {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -7403,6 +7413,7 @@ h6.ui.horizontal.divider {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -8843,6 +8854,7 @@ i.flag.zimbabwe:before {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -9023,6 +9035,7 @@ i.flag.zimbabwe:before {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -10284,6 +10297,7 @@ h6.ui.dividing.header:after {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -10464,6 +10478,7 @@ h6.ui.dividing.header:after {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -14155,6 +14170,7 @@ i.icon.zerply:before {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -14335,6 +14351,7 @@ i.icon.zerply:before {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -15253,6 +15270,7 @@ i.icon.zerply:before {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -15433,6 +15451,7 @@ i.icon.zerply:before {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -16614,7 +16633,7 @@ a.ui.basic.black.label:hover {
 a.ui.basic.label:hover {
   text-decoration: none;
   background: none #FFFFFF;
-  color: #c08d00;
+  color: #9c0007;
   box-shadow: 1px solid rgba(34, 36, 38, 0.15);
   box-shadow: none;
 }
@@ -17075,6 +17094,7 @@ a.ui.basic.label:hover {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -17255,6 +17275,7 @@ a.ui.basic.label:hover {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -18388,6 +18409,7 @@ a.ui.basic.label:hover {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -18568,6 +18590,7 @@ a.ui.basic.label:hover {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -19912,7 +19935,7 @@ a.ui.basic.label:hover {
   line-height: 4rem;
   width: 4rem;
   text-align: center;
-  color: #D9A000;
+  color: #B50008;
   border-radius: 0;
   top: 0;
   right: 0;
@@ -20226,6 +20249,7 @@ a.ui.basic.label:hover {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -22779,6 +22803,7 @@ a.ui.basic.label:hover {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 /*-------------------
        Fonts
 --------------------*/
@@ -24169,6 +24194,105 @@ a.ui.basic.label:hover {
 .ui.large.table {
   font-size: 1.1em;
 }
+/*--------------
+     Toggle
+---------------*/
+.ui.toggle.checkbox {
+  min-height: 1.5rem;
+  position: relative;
+}
+/* Input */
+.ui.toggle.checkbox input {
+  width: 3.5rem;
+  height: 1.5rem;
+  visibility: hidden;
+  position: absolute;
+}
+/* Label */
+.ui.toggle.checkbox .box,
+.ui.toggle.checkbox label {
+  min-height: 1.5rem;
+  padding-left: 4.5rem;
+  color: #1A1A1A;
+}
+.ui.toggle.checkbox label {
+  padding-top: 0.15em;
+  text-indent: 4.5rem;
+}
+/* Switch */
+.ui.toggle.checkbox .box:before,
+.ui.toggle.checkbox label:before {
+  display: block;
+  position: absolute;
+  content: '';
+  z-index: 1;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  border: none;
+  top: 0rem;
+  background: rgba(0, 0, 0, 0.05);
+  width: 3.5rem;
+  height: 1.5rem;
+  border-radius: 500rem;
+}
+/* Handle */
+.ui.toggle.checkbox .box:after,
+.ui.toggle.checkbox label:after {
+  background: #fff -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: #fff linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  position: absolute;
+  content: '' !important;
+  opacity: 1;
+  z-index: 2;
+  border: none;
+  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 0rem;
+  left: 0em;
+  border-radius: 500rem;
+  -webkit-transition: background 0.3s ease-out, left 0.3s ease-out;
+          transition: background 0.3s ease-out, left 0.3s ease-out;
+}
+.ui.toggle.checkbox input ~ .box:after,
+.ui.toggle.checkbox input ~ label:after {
+  left: -0.05rem;
+}
+/* Focus */
+.ui.toggle.checkbox input:focus ~ .box:before,
+.ui.toggle.checkbox input:focus ~ label:before {
+  background-color: rgba(0, 0, 0, 0.15);
+  border: none;
+}
+/* Hover */
+.ui.toggle.checkbox .box:hover::before,
+.ui.toggle.checkbox label:hover::before {
+  background-color: rgba(0, 0, 0, 0.15);
+  border: none;
+}
+/* Active */
+.ui.toggle.checkbox input:checked ~ .box,
+.ui.toggle.checkbox input:checked ~ label {
+  color: rgba(0, 0, 0, 0.95) !important;
+}
+.ui.toggle.checkbox input:checked ~ .box:before,
+.ui.toggle.checkbox input:checked ~ label:before {
+  background-color: #B50008 !important;
+}
+.ui.toggle.checkbox input:checked ~ .box:after,
+.ui.toggle.checkbox input:checked ~ label:after {
+  left: 2.15rem;
+}
+/* Active Focus */
+.ui.toggle.checkbox input:focus:checked ~ .box,
+.ui.toggle.checkbox input:focus:checked ~ label {
+  color: rgba(0, 0, 0, 0.95) !important;
+}
+.ui.toggle.checkbox input:focus:checked ~ .box:before,
+.ui.toggle.checkbox input:focus:checked ~ label:before {
+  background-color: #8c0006 !important;
+}
 /*============================
        Global Variables
 ==============================*/
@@ -24182,6 +24306,7 @@ a.ui.basic.label:hover {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 bonaparte-panel {
   display: none;
   position: absolute;
@@ -24390,12 +24515,13 @@ bonaparte-panel[position~="top"] {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 bonaparte-scroll {
   /* 
     Inspired by: nanoScrollerJS
     https://github.com/jamesflorentino/nanoScrollerJS
   */
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -24469,7 +24595,7 @@ bonaparte-scroll {
     Inspired by: nanoScrollerJS
     https://github.com/jamesflorentino/nanoScrollerJS
   */
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -24551,6 +24677,7 @@ bonaparte-scroll[data-scrollbar~="visible"] > .scrollbar {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 bonaparte-button {
   display: inline-block;
 }
@@ -24559,7 +24686,7 @@ bonaparte-button {
   display: inline-block;
 }
 bonaparte-button.ui.button.labeled.icon {
-  color: #D9A000;
+  color: #B50008;
 }
 bonaparte-button.ui.button.labeled.icon.monochrome {
   color: #1A1A1A;
@@ -24596,6 +24723,7 @@ bonaparte-button.ui.button.labeled.icon.toggle.active:after {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 bonaparte-sidebar {
   /*DEFINITION*/
   position: relative;
@@ -24811,6 +24939,7 @@ bonaparte-sidebar[position="bottom"][open="false"] > :nth-child(1) {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 bonaparte-sidebar {
   /*DEFINITION*/
   position: relative;
@@ -25178,7 +25307,7 @@ bonaparte-toolbar[position="right"][open="true"] > :nth-child(1) {
   min-width: 20rem;
 }
 bonaparte-toolbar > cornerstone-bonaparte {
-  background-color: #D9A000;
+  background-color: #B50008;
   color: #FFFFFF;
   display: -webkit-box;
   display: -webkit-flex;
@@ -25999,6 +26128,7 @@ bonaparte-toolbar.massive[position="right"][open="true"] > :nth-child(1) {
 /*21px*/
 /*16px*/
 /*11px*/
+/* Toggle */
 bonaparte-content {
   display: block;
   position: relative;
