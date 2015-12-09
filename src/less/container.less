@@ -1,0 +1,80 @@
+@import "./variables.less";
+
+.ui.container {
+  display: block;
+  max-width: 100%;
+  padding:1rem;
+  margin:0px auto;
+}
+
+/* Mobile */
+@media only screen and (max-width: (@tabletBreakpoint - 1px)) {
+  .ui.container {
+    width: @mobileWidth !important;
+ /*   margin-left: @mobileGutter !important;
+    margin-right: @mobileGutter !important;
+*/  }
+/*  .ui.grid.container {
+    width: @mobileGridWidth !important;
+  }
+  .ui.relaxed.grid.container {
+    width: @mobileRelaxedGridWidth !important;
+  }
+  .ui.very.relaxed.grid.container {
+    width: @mobileVeryRelaxedGridWidth !important;
+  }*/
+}
+
+/* Tablet */
+@media only screen and (min-width: @tabletBreakpoint) and (max-width: (@smallMonitorBreakpoint - 1px)) {
+  .ui.container {
+    width: @tabletWidth;
+/*    margin-left: @tabletGutter !important;
+    margin-right: @tabletGutter !important;
+*/  }
+/*  .ui.grid.container {
+    width: @tabletGridWidth !important;
+  }
+  .ui.relaxed.grid.container {
+    width: @tabletRelaxedGridWidth !important;
+  }
+  .ui.very.relaxed.grid.container {
+    width: @tabletVeryRelaxedGridWidth !important;
+  }*/
+}
+
+/* Small Monitor */
+@media only screen and (min-width: @smallMonitorBreakpoint) and (max-width: (@largeMonitorBreakpoint - 1px)) {
+  .ui.container {
+    width: @smallMonitorWidth;
+/*    margin-left: @smallMonitorGutter !important;
+    margin-right: @smallMonitorGutter !important;
+*/  }
+/*  .ui.grid.container {
+    width: @smallMonitorGridWidth !important;
+  }
+  .ui.relaxed.grid.container {
+    width: @smallMonitorRelaxedGridWidth !important;
+  }
+  .ui.very.relaxed.grid.container {
+    width: @smallMonitorVeryRelaxedGridWidth !important;
+  }*/
+}
+
+/* Large Monitor */
+@media only screen and (min-width: @largeMonitorBreakpoint) {
+  .ui.container {
+    width: @largeMonitorWidth;
+/*    margin-left: @largeMonitorGutter !important;
+    margin-right: @largeMonitorGutter !important;
+*/  }
+/*  .ui.grid.container {
+    width: @largeMonitorGridWidth !important;
+  }
+  .ui.relaxed.grid.container {
+    width: @largeMonitorRelaxedGridWidth !important;
+  }
+  .ui.very.relaxed.grid.container {
+    width: @largeMonitorVeryRelaxedGridWidth !important;
+  }*/
+}

@@ -1,5 +1,6 @@
 @import "./variables.less";
 
+
 .ui.button,
 button.ui {
   /***********************
@@ -558,6 +559,10 @@ button.ui {
 
 
     &.active {
+      & {
+        color:@color-active;
+      }    
+
       &:active {
         &:after {
           border-color:@color-active;
