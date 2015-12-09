@@ -5,12 +5,15 @@
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -391,12 +394,15 @@ input[type="password"] {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 html,
 body {
   position: relative;
@@ -415,7 +421,7 @@ body {
   font-smoothing: false;
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 p {
   margin: 0.5rem 1rem 0 0.9166667rem;
@@ -487,12 +493,15 @@ input::selection {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 .ui.block {
   box-sizing: border-box;
 }
@@ -524,12 +533,15 @@ input::selection {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 .ui.button,
 button.ui {
   /***********************
@@ -1687,6 +1699,14 @@ button.ui.transparent.inverted.toggle-left.active:before,
 .ui.buttons.transparent.inverted.toggle-left .ui.button.active:before,
 .ui.buttons.transparent.inverted.conditional .ui.button.active:before {
   border-color: #FAFAFA;
+}
+.ui.button.transparent.inverted.active,
+button.ui.transparent.inverted.active,
+.ui.buttons.transparent button.ui.inverted.active,
+.ui.buttons.transparent .ui.button.inverted.active,
+.ui.buttons.transparent.inverted button.ui.active,
+.ui.buttons.transparent.inverted .ui.button.active {
+  color: #425CBD;
 }
 .ui.button.transparent.inverted.active:active:after,
 button.ui.transparent.inverted.active:active:after,
@@ -4147,238 +4167,6 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 }
 /*////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
-/*!
- * # Semantic UI - Container
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Copyright 2015 Contributors
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
-/*******************************
-            Theme
-*******************************/
-/*
-
-████████╗██╗  ██╗███████╗███╗   ███╗███████╗███████╗
-╚══██╔══╝██║  ██║██╔════╝████╗ ████║██╔════╝██╔════╝
-   ██║   ███████║█████╗  ██╔████╔██║█████╗  ███████╗
-   ██║   ██╔══██║██╔══╝  ██║╚██╔╝██║██╔══╝  ╚════██║
-   ██║   ██║  ██║███████╗██║ ╚═╝ ██║███████╗███████║
-   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝╚══════╝
-
-*/
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Global */
-/* Elements */
-/* Collections */
-/* Modules */
-/* Views */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*******************************
-         Site Settings
-*******************************/
-/*-------------------
-       Fonts
---------------------*/
-/*-------------------
-      Base Sizes
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/*-------------------
-    Border Radius
---------------------*/
-/* See Power-user section below
-   for explanation of @px variables
-*/
-/*-------------------
-    Brand Colors
---------------------*/
-/*--------------
-  Page Heading
----------------*/
-/*--------------
-   Form Input
----------------*/
-/* This adjusts the default form input across all elements */
-/* Line Height Default For Inputs in Browser */
-/*-------------------
-    Focused Input
---------------------*/
-/* Used on inputs, textarea etc */
-/* Used on dropdowns, other larger blocks */
-/*-------------------
-        Sizes
---------------------*/
-/*
-  Sizes are all expressed in terms of 14px/em (default em)
-  This ensures these "ratios" remain constant despite changes in EM
-*/
-/*-------------------
-        Page
---------------------*/
-/*-------------------
-      Paragraph
---------------------*/
-/*-------------------
-       Links
---------------------*/
-/*-------------------
-  Highlighted Text
---------------------*/
-/*-------------------
-       Loader
---------------------*/
-/*-------------------
-        Grid
---------------------*/
-/*-------------------
-     Transitions
---------------------*/
-/*-------------------
-     Breakpoints
---------------------*/
-/*-------------------
-      Site Colors
---------------------*/
-/*---  Colors  ---*/
-/*---  Light Colors  ---*/
-/*---   Neutrals  ---*/
-/*--- Colored Backgrounds ---*/
-/*--- Colored Headers ---*/
-/*--- Colored Text ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-       Accents
---------------------*/
-/* Differentiating Neutrals */
-/* Differentiating Layers */
-/*******************************
-           Power-User
-*******************************/
-/*-------------------
-    Emotive Colors
---------------------*/
-/* Positive */
-/* Negative */
-/* Info */
-/* Warning */
-/*-------------------
-        Paths
---------------------*/
-/* For source only. Modified in gulp for dist */
-/*-------------------
-       Em Sizes
---------------------*/
-/*
-  This rounds @size values to the closest pixel then expresses that value in (r)em.
-  This ensures all size values round to exact pixels
-*/
-/* em */
-/* rem */
-/*-------------------
-  Exact Pixel Values
---------------------*/
-/*
-  These are used to specify exact pixel values in em
-  for things like borders that remain constantly
-  sized as emSize adjusts
-
-  Since there are many more sizes than names for sizes,
-  these are named by their original pixel values.
-
-*/
-/*-------------------
-       Icons
---------------------*/
-/* Maximum Glyph Width of Icon */
-/*-------------------
-     Neutral Text
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-      Borders
---------------------*/
-/*-------------------
-    Derived Values
---------------------*/
-/* Loaders Position Offset */
-/* Rendered Scrollbar Width */
-/* Maximum Single Character Glyph Width, aka Capital "W" */
-/* Used to match floats with text */
-/* Header Spacing */
-/* Minimum Mobile Width */
-/* Positive / Negative Dupes */
-/* Responsive */
-/* Columns */
-/*******************************
-             States
-*******************************/
-/*-------------------
-      Disabled
---------------------*/
-/*-------------------
-        Hover
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Focus
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-    Down (:active)
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Active
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/* Packaged site.variables */
 /*============================
        Global Variables
 ==============================*/
@@ -4386,559 +4174,92 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
-/*-------------------
-       Fonts
---------------------*/
-/*
-@text-light : 300;
-@text-book : 400;
-@text-medium: 500;
-@text-semibold : 600; 
-@text-bold : 700;
-@text-black : 800;
-
-*/
-/*******************************
-         Site Settings
-*******************************/
-/*-------------------
-       Fonts
---------------------*/
-/*@fontName          : 'Whitney SSm';*/
-/*@fontSmoothing     : false;*/
-/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
-/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
-/*@importGoogleFonts : false;*/
-/*
-@googleFontName    : @fontName;
-
-@googleFontSizes   : '400,700,400italic,700italic';
-@googleSubset      : 'latin';
-
-@googleProtocol    : 'https://';
-@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
-*/
-/*-------------------
-      Base Sizes
---------------------*/
-/*@emSize   : 12px;*/
-/*@fontSize : 1.333333rem;*/
-/*-------------------
-    Border Radius
---------------------*/
-/* 4px @ default em */
-/*-------------------
-    Brand Colors
---------------------*/
-/*--------------
-  Page Heading
----------------*/
-/*@headerFontWeight : 400;
-@headerLineHeight : 1.17073em;*/
-/*-------------------
-        Sizes
---------------------*/
-/*
-  To have sizing resolve to a specified pixel values adjust
-  the numerator to the desired font size and the denominator
-  to the base em size
-*/
-/*-------------------
-        Page
---------------------*/
-/*@lineHeight          : 2rem;*/
-/*@textColor           : @color-text-dark;*/
-/*-------------------
-      Paragraph
---------------------*/
-/*-------------------
-       Links
---------------------*/
-/*-------------------
-  Highlighted Text
---------------------*/
-/*@highlightBackground      : @color-active;*/
-/*@highlightColor           : @color-text-light;*/
-/*-------------------
-       Loader
---------------------*/
-/*-------------------
-        Grid
---------------------*/
-/*-------------------
-     Transitions
---------------------*/
-/*-------------------
-     Breakpoints
---------------------*/
-/*-------------------
-      Site Colors
---------------------*/
-/*---  Colors  ---*/
-/*---  Light Colors  ---*/
-/*---   Neutrals  ---*/
-/*--- Colored Backgrounds ---*/
-/*--- Colored Headers ---*/
-/*--- Colored Text ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-       Accents
---------------------*/
-/* Differentiating Neutrals */
-/* Differentiating Layers */
-/*******************************
-           Power-User
-*******************************/
-/*-------------------
-    Emotive Colors
---------------------*/
-/* Positive */
-/* Negative */
-/* Info */
-/* Warning */
-/*-------------------
-        Paths
---------------------*/
-/* For source only. Modified in gulp for dist */
-/*-------------------
-       Em Sizes
---------------------*/
-/* Exact pixel values expressed in em */
-/*-------------------
-       Icons
---------------------*/
-/* Maximum Glyph Width of Icon */
-/*-------------------
-     Neutral Text
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-      Borders
---------------------*/
-/*-------------------
-    Element Focus
---------------------*/
-/*-------------------
-    Derived Values
---------------------*/
-/* Line Height Default For Inputs in Browser */
-/* Rendered Scrollbar Width */
-/* Maximum Single Character Glyph Width, aka Capital "W" */
-/* Used to match floats with text */
-/* Header Spacing */
-/* Minimum Mobile Width */
-/* Positive / Negative Dupes */
-/* Responsive */
-/* Columns */
-/*******************************
-             States
-*******************************/
-/*-------------------
-      Disabled
---------------------*/
-/*-------------------
-        Hover
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Focus
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-    Down (:active)
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Active
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/* Component's site.variables */
-/*============================
-       Global Variables
-==============================*/
-/*-------------------
-       Colors
---------------------*/
-/* FONTS */
-/*82px*/
-/*44px*/
-/*26px*/
-/*21px*/
-/*16px*/
-/*11px*/
-/*-------------------
-       Fonts
---------------------*/
-/*
-@text-light : 300;
-@text-book : 400;
-@text-medium: 500;
-@text-semibold : 600; 
-@text-bold : 700;
-@text-black : 800;
-
-*/
-/*******************************
-         Site Settings
-*******************************/
-/*-------------------
-       Fonts
---------------------*/
-/*@fontName          : 'Whitney SSm';*/
-/*@fontSmoothing     : false;*/
-/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
-/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
-/*@importGoogleFonts : false;*/
-/*
-@googleFontName    : @fontName;
-
-@googleFontSizes   : '400,700,400italic,700italic';
-@googleSubset      : 'latin';
-
-@googleProtocol    : 'https://';
-@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
-*/
-/*-------------------
-      Base Sizes
---------------------*/
-/*@emSize   : 12px;*/
-/*@fontSize : 1.333333rem;*/
-/*-------------------
-    Border Radius
---------------------*/
-/* 4px @ default em */
-/*-------------------
-    Brand Colors
---------------------*/
-/*--------------
-  Page Heading
----------------*/
-/*@headerFontWeight : 400;
-@headerLineHeight : 1.17073em;*/
-/*-------------------
-        Sizes
---------------------*/
-/*
-  To have sizing resolve to a specified pixel values adjust
-  the numerator to the desired font size and the denominator
-  to the base em size
-*/
-/*-------------------
-        Page
---------------------*/
-/*@lineHeight          : 2rem;*/
-/*@textColor           : @color-text-dark;*/
-/*-------------------
-      Paragraph
---------------------*/
-/*-------------------
-       Links
---------------------*/
-/*-------------------
-  Highlighted Text
---------------------*/
-/*@highlightBackground      : @color-active;*/
-/*@highlightColor           : @color-text-light;*/
-/*-------------------
-       Loader
---------------------*/
-/*-------------------
-        Grid
---------------------*/
-/*-------------------
-     Transitions
---------------------*/
-/*-------------------
-     Breakpoints
---------------------*/
-/*-------------------
-      Site Colors
---------------------*/
-/*---  Colors  ---*/
-/*---  Light Colors  ---*/
-/*---   Neutrals  ---*/
-/*--- Colored Backgrounds ---*/
-/*--- Colored Headers ---*/
-/*--- Colored Text ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-       Accents
---------------------*/
-/* Differentiating Neutrals */
-/* Differentiating Layers */
-/*******************************
-           Power-User
-*******************************/
-/*-------------------
-    Emotive Colors
---------------------*/
-/* Positive */
-/* Negative */
-/* Info */
-/* Warning */
-/*-------------------
-        Paths
---------------------*/
-/* For source only. Modified in gulp for dist */
-/*-------------------
-       Em Sizes
---------------------*/
-/* Exact pixel values expressed in em */
-/*-------------------
-       Icons
---------------------*/
-/* Maximum Glyph Width of Icon */
-/*-------------------
-     Neutral Text
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-      Borders
---------------------*/
-/*-------------------
-    Element Focus
---------------------*/
-/*-------------------
-    Derived Values
---------------------*/
-/* Line Height Default For Inputs in Browser */
-/* Rendered Scrollbar Width */
-/* Maximum Single Character Glyph Width, aka Capital "W" */
-/* Used to match floats with text */
-/* Header Spacing */
-/* Minimum Mobile Width */
-/* Positive / Negative Dupes */
-/* Responsive */
-/* Columns */
-/*******************************
-             States
-*******************************/
-/*-------------------
-      Disabled
---------------------*/
-/*-------------------
-        Hover
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Focus
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-    Down (:active)
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Active
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/* Site theme site.variables */
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/*******************************
-            Container
-*******************************/
-/*-------------------
-       Element
---------------------*/
-/* Minimum Gutter is used to determine  the maximum container width for a given device */
-/* Devices */
-/* Coupling (Add Negative Margin to container size) */
-/*-------------------
-       Types
---------------------*/
-/* Text */
-/* Packaged Theme */
-/*******************************
-            Container
-*******************************/
-/*-------------------
-       Element
---------------------*/
-/* Devices */
-/* Coupling (Add Negative Margin to container size) */
-/*-------------------
-       Types
---------------------*/
-/* Text */
-/* Site Theme */
-/*******************************
-             Mix-ins
-*******************************/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-/*******************************
-            Container
-*******************************/
-/* All Sizes */
+/*14px*/
+/* CONTAINER */
 .ui.container {
   display: block;
-  max-width: 100% !important;
+  max-width: 100%;
+  padding: 1rem;
+  margin: 0px auto;
 }
 /* Mobile */
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 767px) {
   .ui.container {
     width: auto !important;
-    margin-left: 1rem !important;
-    margin-right: 1rem !important;
+    /*   margin-left: @mobileGutter !important;
+    margin-right: @mobileGutter !important;
+*/
   }
-  .ui.grid.container {
-    width: auto !important;
+  /*  .ui.grid.container {
+    width: @mobileGridWidth !important;
   }
   .ui.relaxed.grid.container {
-    width: auto !important;
+    width: @mobileRelaxedGridWidth !important;
   }
   .ui.very.relaxed.grid.container {
-    width: auto !important;
-  }
+    width: @mobileVeryRelaxedGridWidth !important;
+  }*/
 }
 /* Tablet */
-@media only screen and (min-width: 781px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 987px) {
   .ui.container {
     width: 752px;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    /*    margin-left: @tabletGutter !important;
+    margin-right: @tabletGutter !important;
+*/
   }
-  .ui.grid.container {
-    width: calc( 752px  +  2rem ) !important;
+  /*  .ui.grid.container {
+    width: @tabletGridWidth !important;
   }
   .ui.relaxed.grid.container {
-    width: calc( 752px  +  3rem ) !important;
+    width: @tabletRelaxedGridWidth !important;
   }
   .ui.very.relaxed.grid.container {
-    width: calc( 752px  +  5rem ) !important;
-  }
+    width: @tabletVeryRelaxedGridWidth !important;
+  }*/
 }
 /* Small Monitor */
-@media only screen and (min-width: 992px) and (max-width: 1227px) {
+@media only screen and (min-width: 988px) and (max-width: 1227px) {
   .ui.container {
-    width: 954.5px;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    width: 960px;
+    /*    margin-left: @smallMonitorGutter !important;
+    margin-right: @smallMonitorGutter !important;
+*/
   }
-  .ui.grid.container {
-    width: calc( 954.5px  +  2rem ) !important;
+  /*  .ui.grid.container {
+    width: @smallMonitorGridWidth !important;
   }
   .ui.relaxed.grid.container {
-    width: calc( 954.5px  +  3rem ) !important;
+    width: @smallMonitorRelaxedGridWidth !important;
   }
   .ui.very.relaxed.grid.container {
-    width: calc( 954.5px  +  5rem ) !important;
-  }
+    width: @smallMonitorVeryRelaxedGridWidth !important;
+  }*/
 }
 /* Large Monitor */
 @media only screen and (min-width: 1228px) {
   .ui.container {
     width: 1200px;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    /*    margin-left: @largeMonitorGutter !important;
+    margin-right: @largeMonitorGutter !important;
+*/
   }
-  .ui.grid.container {
-    width: calc( 1200px  +  2rem ) !important;
+  /*  .ui.grid.container {
+    width: @largeMonitorGridWidth !important;
   }
   .ui.relaxed.grid.container {
-    width: calc( 1200px  +  3rem ) !important;
+    width: @largeMonitorRelaxedGridWidth !important;
   }
   .ui.very.relaxed.grid.container {
-    width: calc( 1200px  +  5rem ) !important;
-  }
-}
-/*******************************
-             Types
-*******************************/
-/* Text Container */
-.ui.text.container {
-  font-family: 'Whitney SSm', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  max-width: 700px !important;
-  line-height: 2rem;
-}
-.ui.text.container {
-  font-size: 1.333333rem;
-}
-/* Fluid */
-.ui.fluid.container {
-  width: 100%;
-}
-/*******************************
-           Variations
-*******************************/
-.ui[class*="left aligned"].container {
-  text-align: left;
-}
-.ui[class*="center aligned"].container {
-  text-align: center;
-}
-.ui[class*="right aligned"].container {
-  text-align: right;
-}
-.ui.justified.container {
-  text-align: justify;
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
-}
-/*******************************
-         Theme Overrides
-*******************************/
-.grid .ui.container {
-  background-image: url(images/grid-06ede3263745a358ff57e943a6ffc96f.png);
-}
-.ui.container {
-  padding: 0px 1rem;
+    width: @largeMonitorVeryRelaxedGridWidth !important;
+  }*/
 }
 /*!
  * # Semantic UI - Divider
@@ -5179,12 +4500,15 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -5379,12 +4703,15 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -5888,6 +5215,1501 @@ h6.ui.horizontal.divider {
   }
 }
 /*!
+ * # Semantic UI - Header
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2015 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/*******************************
+            Theme
+*******************************/
+/*
+
+████████╗██╗  ██╗███████╗███╗   ███╗███████╗███████╗
+╚══██╔══╝██║  ██║██╔════╝████╗ ████║██╔════╝██╔════╝
+   ██║   ███████║█████╗  ██╔████╔██║█████╗  ███████╗
+   ██║   ██╔══██║██╔══╝  ██║╚██╔╝██║██╔══╝  ╚════██║
+   ██║   ██║  ██║███████╗██║ ╚═╝ ██║███████╗███████║
+   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝╚══════╝
+
+*/
+/*******************************
+        Theme Selection
+*******************************/
+/* To override a theme for an individual element
+   specify theme name below
+*/
+/* Global */
+/* Elements */
+/* Collections */
+/* Modules */
+/* Views */
+/*******************************
+            Folders
+*******************************/
+/* Path to theme packages */
+/* Path to site override folder */
+/*******************************
+         Import Theme
+*******************************/
+/*******************************
+        Import Directives
+*******************************/
+/*------------------
+       Theme
+-------------------*/
+/*--------------------
+   Site Variables
+---------------------*/
+/* Default site.variables */
+/*******************************
+         Site Settings
+*******************************/
+/*-------------------
+       Fonts
+--------------------*/
+/*-------------------
+      Base Sizes
+--------------------*/
+/* This is the single variable that controls them all */
+/* The size of page text  */
+/*-------------------
+    Border Radius
+--------------------*/
+/* See Power-user section below
+   for explanation of @px variables
+*/
+/*-------------------
+    Brand Colors
+--------------------*/
+/*--------------
+  Page Heading
+---------------*/
+/*--------------
+   Form Input
+---------------*/
+/* This adjusts the default form input across all elements */
+/* Line Height Default For Inputs in Browser */
+/*-------------------
+    Focused Input
+--------------------*/
+/* Used on inputs, textarea etc */
+/* Used on dropdowns, other larger blocks */
+/*-------------------
+        Sizes
+--------------------*/
+/*
+  Sizes are all expressed in terms of 14px/em (default em)
+  This ensures these "ratios" remain constant despite changes in EM
+*/
+/*-------------------
+        Page
+--------------------*/
+/*-------------------
+      Paragraph
+--------------------*/
+/*-------------------
+       Links
+--------------------*/
+/*-------------------
+  Highlighted Text
+--------------------*/
+/*-------------------
+       Loader
+--------------------*/
+/*-------------------
+        Grid
+--------------------*/
+/*-------------------
+     Transitions
+--------------------*/
+/*-------------------
+     Breakpoints
+--------------------*/
+/*-------------------
+      Site Colors
+--------------------*/
+/*---  Colors  ---*/
+/*---  Light Colors  ---*/
+/*---   Neutrals  ---*/
+/*--- Colored Backgrounds ---*/
+/*--- Colored Headers ---*/
+/*--- Colored Text ---*/
+/*-------------------
+     Alpha Colors
+--------------------*/
+/*-------------------
+       Accents
+--------------------*/
+/* Differentiating Neutrals */
+/* Differentiating Layers */
+/*******************************
+           Power-User
+*******************************/
+/*-------------------
+    Emotive Colors
+--------------------*/
+/* Positive */
+/* Negative */
+/* Info */
+/* Warning */
+/*-------------------
+        Paths
+--------------------*/
+/* For source only. Modified in gulp for dist */
+/*-------------------
+       Em Sizes
+--------------------*/
+/*
+  This rounds @size values to the closest pixel then expresses that value in (r)em.
+  This ensures all size values round to exact pixels
+*/
+/* em */
+/* rem */
+/*-------------------
+  Exact Pixel Values
+--------------------*/
+/*
+  These are used to specify exact pixel values in em
+  for things like borders that remain constantly
+  sized as emSize adjusts
+
+  Since there are many more sizes than names for sizes,
+  these are named by their original pixel values.
+
+*/
+/*-------------------
+       Icons
+--------------------*/
+/* Maximum Glyph Width of Icon */
+/*-------------------
+     Neutral Text
+--------------------*/
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+      Borders
+--------------------*/
+/*-------------------
+    Derived Values
+--------------------*/
+/* Loaders Position Offset */
+/* Rendered Scrollbar Width */
+/* Maximum Single Character Glyph Width, aka Capital "W" */
+/* Used to match floats with text */
+/* Header Spacing */
+/* Minimum Mobile Width */
+/* Positive / Negative Dupes */
+/* Responsive */
+/* Columns */
+/*******************************
+             States
+*******************************/
+/*-------------------
+      Disabled
+--------------------*/
+/*-------------------
+        Hover
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/*-------------------
+        Focus
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/*-------------------
+    Down (:active)
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/*-------------------
+        Active
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/* Packaged site.variables */
+/*============================
+       Global Variables
+==============================*/
+/*-------------------
+       Colors
+--------------------*/
+/* FONTS */
+/*16px*/
+/*82px*/
+/*44px*/
+/*26px*/
+/*21px*/
+/*16px*/
+/*11px*/
+/*14px*/
+/* CONTAINER */
+/*-------------------
+       Fonts
+--------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
+/*******************************
+         Site Settings
+*******************************/
+/*-------------------
+       Fonts
+--------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
+/*
+@googleFontName    : @fontName;
+
+@googleFontSizes   : '400,700,400italic,700italic';
+@googleSubset      : 'latin';
+
+@googleProtocol    : 'https://';
+@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
+*/
+/*-------------------
+      Base Sizes
+--------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
+/*-------------------
+    Border Radius
+--------------------*/
+/* 4px @ default em */
+/*-------------------
+    Brand Colors
+--------------------*/
+/*--------------
+  Page Heading
+---------------*/
+/*@headerFontWeight : 400;
+@headerLineHeight : 1.17073em;*/
+/*-------------------
+        Sizes
+--------------------*/
+/*
+  To have sizing resolve to a specified pixel values adjust
+  the numerator to the desired font size and the denominator
+  to the base em size
+*/
+/*-------------------
+        Page
+--------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
+/*-------------------
+      Paragraph
+--------------------*/
+/*-------------------
+       Links
+--------------------*/
+/*-------------------
+  Highlighted Text
+--------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
+/*-------------------
+       Loader
+--------------------*/
+/*-------------------
+        Grid
+--------------------*/
+/*-------------------
+     Transitions
+--------------------*/
+/*-------------------
+     Breakpoints
+--------------------*/
+/*-------------------
+      Site Colors
+--------------------*/
+/*---  Colors  ---*/
+/*---  Light Colors  ---*/
+/*---   Neutrals  ---*/
+/*--- Colored Backgrounds ---*/
+/*--- Colored Headers ---*/
+/*--- Colored Text ---*/
+/*-------------------
+     Alpha Colors
+--------------------*/
+/*-------------------
+       Accents
+--------------------*/
+/* Differentiating Neutrals */
+/* Differentiating Layers */
+/*******************************
+           Power-User
+*******************************/
+/*-------------------
+    Emotive Colors
+--------------------*/
+/* Positive */
+/* Negative */
+/* Info */
+/* Warning */
+/*-------------------
+        Paths
+--------------------*/
+/* For source only. Modified in gulp for dist */
+/*-------------------
+       Em Sizes
+--------------------*/
+/* Exact pixel values expressed in em */
+/*-------------------
+       Icons
+--------------------*/
+/* Maximum Glyph Width of Icon */
+/*-------------------
+     Neutral Text
+--------------------*/
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+      Borders
+--------------------*/
+/*-------------------
+    Element Focus
+--------------------*/
+/*-------------------
+    Derived Values
+--------------------*/
+/* Line Height Default For Inputs in Browser */
+/* Rendered Scrollbar Width */
+/* Maximum Single Character Glyph Width, aka Capital "W" */
+/* Used to match floats with text */
+/* Header Spacing */
+/* Minimum Mobile Width */
+/* Positive / Negative Dupes */
+/* Responsive */
+/* Columns */
+/*******************************
+             States
+*******************************/
+/*-------------------
+      Disabled
+--------------------*/
+/*-------------------
+        Hover
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/*-------------------
+        Focus
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/*-------------------
+    Down (:active)
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/*-------------------
+        Active
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/* Component's site.variables */
+/*============================
+       Global Variables
+==============================*/
+/*-------------------
+       Colors
+--------------------*/
+/* FONTS */
+/*16px*/
+/*82px*/
+/*44px*/
+/*26px*/
+/*21px*/
+/*16px*/
+/*11px*/
+/*14px*/
+/* CONTAINER */
+/*-------------------
+       Fonts
+--------------------*/
+/*
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+*/
+/*******************************
+         Site Settings
+*******************************/
+/*-------------------
+       Fonts
+--------------------*/
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@importGoogleFonts : false;*/
+/*
+@googleFontName    : @fontName;
+
+@googleFontSizes   : '400,700,400italic,700italic';
+@googleSubset      : 'latin';
+
+@googleProtocol    : 'https://';
+@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
+*/
+/*-------------------
+      Base Sizes
+--------------------*/
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
+/*-------------------
+    Border Radius
+--------------------*/
+/* 4px @ default em */
+/*-------------------
+    Brand Colors
+--------------------*/
+/*--------------
+  Page Heading
+---------------*/
+/*@headerFontWeight : 400;
+@headerLineHeight : 1.17073em;*/
+/*-------------------
+        Sizes
+--------------------*/
+/*
+  To have sizing resolve to a specified pixel values adjust
+  the numerator to the desired font size and the denominator
+  to the base em size
+*/
+/*-------------------
+        Page
+--------------------*/
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
+/*-------------------
+      Paragraph
+--------------------*/
+/*-------------------
+       Links
+--------------------*/
+/*-------------------
+  Highlighted Text
+--------------------*/
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
+/*-------------------
+       Loader
+--------------------*/
+/*-------------------
+        Grid
+--------------------*/
+/*-------------------
+     Transitions
+--------------------*/
+/*-------------------
+     Breakpoints
+--------------------*/
+/*-------------------
+      Site Colors
+--------------------*/
+/*---  Colors  ---*/
+/*---  Light Colors  ---*/
+/*---   Neutrals  ---*/
+/*--- Colored Backgrounds ---*/
+/*--- Colored Headers ---*/
+/*--- Colored Text ---*/
+/*-------------------
+     Alpha Colors
+--------------------*/
+/*-------------------
+       Accents
+--------------------*/
+/* Differentiating Neutrals */
+/* Differentiating Layers */
+/*******************************
+           Power-User
+*******************************/
+/*-------------------
+    Emotive Colors
+--------------------*/
+/* Positive */
+/* Negative */
+/* Info */
+/* Warning */
+/*-------------------
+        Paths
+--------------------*/
+/* For source only. Modified in gulp for dist */
+/*-------------------
+       Em Sizes
+--------------------*/
+/* Exact pixel values expressed in em */
+/*-------------------
+       Icons
+--------------------*/
+/* Maximum Glyph Width of Icon */
+/*-------------------
+     Neutral Text
+--------------------*/
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+      Borders
+--------------------*/
+/*-------------------
+    Element Focus
+--------------------*/
+/*-------------------
+    Derived Values
+--------------------*/
+/* Line Height Default For Inputs in Browser */
+/* Rendered Scrollbar Width */
+/* Maximum Single Character Glyph Width, aka Capital "W" */
+/* Used to match floats with text */
+/* Header Spacing */
+/* Minimum Mobile Width */
+/* Positive / Negative Dupes */
+/* Responsive */
+/* Columns */
+/*******************************
+             States
+*******************************/
+/*-------------------
+      Disabled
+--------------------*/
+/*-------------------
+        Hover
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/*-------------------
+        Focus
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/*-------------------
+    Down (:active)
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/*-------------------
+        Active
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/* Site theme site.variables */
+/*-------------------
+ Component Variables
+---------------------*/
+/* Default */
+/*******************************
+            Header
+*******************************/
+/*-------------------
+       Element
+--------------------*/
+/* Sub Heading */
+/* Sub Header */
+/* Icon */
+/* Image */
+/* Label */
+/* Content */
+/* Paragraph after Header */
+/*-------------------
+      Variations
+--------------------*/
+/* Sizing */
+/* Sub Header */
+/* Icon Header */
+/* No Line Height Offset */
+/* Divided */
+/* Block */
+/* Attached */
+/* Inverted */
+/* Floated */
+/* Packaged Theme */
+/*******************************
+            Header
+*******************************/
+/*-------------------
+       Element
+--------------------*/
+/* Sub Heading */
+/* Sub Header */
+/* Icon */
+/* Image */
+/* Label */
+/* Content */
+/* Paragraph after Header */
+/*-------------------
+      Variations
+--------------------*/
+/* Sizing */
+/* Sub Header */
+/* Icon Header */
+/* No Line Height Offset */
+/* Divided */
+/* Block */
+/* Attached */
+/* Inverted */
+/* Floated */
+/* Site Theme */
+/*******************************
+             Mix-ins
+*******************************/
+/*------------------
+       Fonts
+-------------------*/
+/*------------------
+     Overrides
+-------------------*/
+/* End Config */
+/*******************************
+            Header
+*******************************/
+/* Standard */
+.ui.header {
+  border: none;
+  margin: calc(2rem -  0.14285em ) 0em 1rem;
+  padding: 0em 0em;
+  font-family: 'Whitney SSm', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1.2857em;
+  text-transform: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+.ui.header:first-child {
+  margin-top: -0.14285em;
+}
+.ui.header:last-child {
+  margin-bottom: 0em;
+}
+/*--------------
+   Sub Header
+---------------*/
+.ui.header .sub.header {
+  font-weight: normal;
+  padding: 0em;
+  margin: 0em;
+  font-size: 1rem;
+  line-height: 1.2em;
+  color: rgba(0, 0, 0, 0.6);
+}
+/*--------------
+      Icon
+---------------*/
+.ui.header > .icon {
+  display: table-cell;
+  opacity: 1;
+  font-size: 1.5em;
+  padding-top: 0.14285em;
+  vertical-align: middle;
+}
+/* With Text Node */
+.ui.header .icon:only-child {
+  display: inline-block;
+  padding: 0em;
+  margin-right: 0.75rem;
+}
+/*-------------------
+        Image
+--------------------*/
+.ui.header > .image,
+.ui.header > img {
+  display: inline-block;
+  margin-top: 0.14285em;
+  width: 2.5em;
+  height: auto;
+  vertical-align: middle;
+}
+.ui.header > .image:only-child,
+.ui.header > img:only-child {
+  margin-right: 0.75rem;
+}
+/*--------------
+     Content
+---------------*/
+.ui.header .content {
+  display: inline-block;
+  vertical-align: top;
+}
+/* After Image */
+.ui.header > img + .content,
+.ui.header > .image + .content {
+  padding-left: 0.75rem;
+  vertical-align: middle;
+}
+/* After Icon */
+.ui.header > .icon + .content {
+  padding-left: 0.75rem;
+  display: table-cell;
+  vertical-align: middle;
+}
+/*--------------
+ Loose Coupling
+---------------*/
+.ui.header .ui.label {
+  font-size: '';
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+/* Positioning */
+.ui.header + p {
+  margin-top: 0em;
+}
+/*******************************
+            Types
+*******************************/
+/*--------------
+     Page
+---------------*/
+h1.ui.header {
+  font-size: 6.83333rem;
+}
+h2.ui.header {
+  font-size: 3.66667rem;
+}
+h3.ui.header {
+  font-size: 2.16667rem;
+}
+h4.ui.header {
+  font-size: 1.75rem;
+}
+h5.ui.header {
+  font-size: 1.33333rem;
+}
+/* Sub Header */
+h1.ui.header .sub.header {
+  font-size: 1.1428rem;
+}
+h2.ui.header .sub.header {
+  font-size: 1.1428rem;
+}
+h3.ui.header .sub.header {
+  font-size: 1rem;
+}
+h4.ui.header .sub.header {
+  font-size: 1rem;
+}
+h5.ui.header .sub.header {
+  font-size: 0.9285rem;
+}
+/*--------------
+ Content Heading
+---------------*/
+.ui.huge.header {
+  min-height: 1em;
+  font-size: 6.83333em;
+}
+.ui.large.header {
+  font-size: 3.66667em;
+}
+.ui.medium.header {
+  font-size: 2.16667em;
+}
+.ui.small.header {
+  font-size: 1.75em;
+}
+.ui.tiny.header {
+  font-size: 1.33333em;
+}
+/* Sub Header */
+.ui.huge.header .sub.header {
+  font-size: 1.1428rem;
+}
+.ui.large.header .sub.header {
+  font-size: 1.1428rem;
+}
+.ui.header .sub.header {
+  font-size: 1rem;
+}
+.ui.small.header .sub.header {
+  font-size: 1rem;
+}
+.ui.tiny.header .sub.header {
+  font-size: 0.9285rem;
+}
+/*--------------
+   Sub Heading
+---------------*/
+.ui.sub.header {
+  padding: 0em;
+  margin-bottom: 0.16666667rem;
+  font-weight: bold;
+  font-size: 0.91666667em;
+  text-transform: uppercase;
+  color: '';
+}
+.ui.small.sub.header {
+  font-size: 0.91666667em;
+}
+.ui.sub.header {
+  font-size: 0.91666667em;
+}
+.ui.large.sub.header {
+  font-size: 1.16666667em;
+}
+.ui.huge.sub.header {
+  font-size: 1.33333333em;
+}
+/*-------------------
+        Icon
+--------------------*/
+.ui.icon.header {
+  display: inline-block;
+  text-align: center;
+  margin: 2rem 0em 1rem;
+}
+.ui.icon.header:after {
+  content: '';
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+.ui.icon.header:first-child {
+  margin-top: 0em;
+}
+.ui.icon.header .icon {
+  float: none;
+  display: block;
+  width: auto;
+  height: auto;
+  line-height: 1;
+  padding: 0em;
+  font-size: 3em;
+  margin: 0em auto 0.25rem;
+  opacity: 1;
+}
+.ui.icon.header .content {
+  display: block;
+}
+.ui.icon.header .circular.icon {
+  font-size: 2em;
+}
+.ui.icon.header .square.icon {
+  font-size: 2em;
+}
+.ui.block.icon.header .icon {
+  margin-bottom: 0em;
+}
+.ui.icon.header.aligned {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+/*******************************
+            States
+*******************************/
+.ui.disabled.header {
+  opacity: 0.45;
+}
+/*******************************
+           Variations
+*******************************/
+/*-------------------
+      Inverted
+--------------------*/
+.ui.inverted.header {
+  color: #FFFFFF;
+}
+.ui.inverted.header .sub.header {
+  color: rgba(255, 255, 255, 0.8);
+}
+.ui.inverted.attached.header {
+  background: #333333 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: #333333 linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  box-shadow: none;
+  border-color: transparent;
+}
+.ui.inverted.block.header {
+  background: #333333 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: #333333 linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  box-shadow: none;
+}
+.ui.inverted.block.header {
+  border-bottom: none;
+}
+/*-------------------
+       Colors
+--------------------*/
+/*--- Red ---*/
+.ui.red.header {
+  color: #F44336 !important;
+}
+a.ui.red.header:hover {
+  color: #ff2212 !important;
+}
+.ui.red.dividing.header {
+  border-bottom: 2px solid #F44336;
+}
+/* Inverted */
+.ui.inverted.red.header {
+  color: #FF1744 !important;
+}
+a.ui.inverted.red.header:hover {
+  color: #fc0031 !important;
+}
+/*--- Orange ---*/
+.ui.orange.header {
+  color: #FF9800 !important;
+}
+a.ui.orange.header:hover {
+  color: #e68900 !important;
+}
+.ui.orange.dividing.header {
+  border-bottom: 2px solid #FF9800;
+}
+/* Inverted */
+.ui.inverted.orange.header {
+  color: #FF9100 !important;
+}
+a.ui.inverted.orange.header:hover {
+  color: #e68300 !important;
+}
+/*--- Olive ---*/
+.ui.olive.header {
+  color: #B5CC18 !important;
+}
+a.ui.olive.header:hover {
+  color: #a8bf0b !important;
+}
+.ui.olive.dividing.header {
+  border-bottom: 2px solid #B5CC18;
+}
+/* Inverted */
+.ui.inverted.olive.header {
+  color: #D9E778 !important;
+}
+a.ui.inverted.olive.header:hover {
+  color: #daec59 !important;
+}
+/*--- Yellow ---*/
+.ui.yellow.header {
+  color: #FFEB3B !important;
+}
+a.ui.yellow.header:hover {
+  color: #ffe821 !important;
+}
+.ui.yellow.dividing.header {
+  border-bottom: 2px solid #FFEB3B;
+}
+/* Inverted */
+.ui.inverted.yellow.header {
+  color: #FFEA00 !important;
+}
+a.ui.inverted.yellow.header:hover {
+  color: #e6d300 !important;
+}
+/*--- Green ---*/
+.ui.green.header {
+  color: #4CAF50 !important;
+}
+a.ui.green.header:hover {
+  color: #39a83e !important;
+}
+.ui.green.dividing.header {
+  border-bottom: 2px solid #4CAF50;
+}
+/* Inverted */
+.ui.inverted.green.header {
+  color: #00E676 !important;
+}
+a.ui.inverted.green.header:hover {
+  color: #00cd69 !important;
+}
+/*--- Teal ---*/
+.ui.teal.header {
+  color: #1de9b6 !important;
+}
+a.ui.teal.header:hover {
+  color: #09e3ad !important;
+}
+.ui.teal.dividing.header {
+  border-bottom: 2px solid #1de9b6;
+}
+/* Inverted */
+.ui.inverted.teal.header {
+  color: #1DE9B6 !important;
+}
+a.ui.inverted.teal.header:hover {
+  color: #09e3ad !important;
+}
+/*--- Blue ---*/
+.ui.blue.header {
+  color: #2196F3 !important;
+}
+a.ui.blue.header:hover {
+  color: #008cfa !important;
+}
+.ui.blue.dividing.header {
+  border-bottom: 2px solid #2196F3;
+}
+/* Inverted */
+.ui.inverted.blue.header {
+  color: #2979FF !important;
+}
+a.ui.inverted.blue.header:hover {
+  color: #1069ff !important;
+}
+/*--- Violet ---*/
+.ui.violet.header {
+  color: #6435C9 !important;
+}
+a.ui.violet.header:hover {
+  color: #5624c0 !important;
+}
+.ui.violet.dividing.header {
+  border-bottom: 2px solid #6435C9;
+}
+/* Inverted */
+.ui.inverted.violet.header {
+  color: #A291FB !important;
+}
+a.ui.inverted.violet.header:hover {
+  color: #8a73ff !important;
+}
+/*--- Purple ---*/
+.ui.purple.header {
+  color: #9C27B0 !important;
+}
+a.ui.purple.header:hover {
+  color: #9019a5 !important;
+}
+.ui.purple.dividing.header {
+  border-bottom: 2px solid #9C27B0;
+}
+/* Inverted */
+.ui.inverted.purple.header {
+  color: #D500F9 !important;
+}
+a.ui.inverted.purple.header:hover {
+  color: #bf00e0 !important;
+}
+/*--- Pink ---*/
+.ui.pink.header {
+  color: #E91E63 !important;
+}
+a.ui.pink.header:hover {
+  color: #e40954 !important;
+}
+.ui.pink.dividing.header {
+  border-bottom: 2px solid #E91E63;
+}
+/* Inverted */
+.ui.inverted.pink.header {
+  color: #F50057 !important;
+}
+a.ui.inverted.pink.header:hover {
+  color: #dc004e !important;
+}
+/*--- Brown ---*/
+.ui.brown.header {
+  color: #A5673F !important;
+}
+a.ui.brown.header:hover {
+  color: #9d592e !important;
+}
+.ui.brown.dividing.header {
+  border-bottom: 2px solid #A5673F;
+}
+/* Inverted */
+.ui.inverted.brown.header {
+  color: #D67C1C !important;
+}
+a.ui.inverted.brown.header:hover {
+  color: #ca6f0e !important;
+}
+/*--- Grey ---*/
+.ui.grey.header {
+  color: #9E9E9E !important;
+}
+a.ui.grey.header:hover {
+  color: #ababab !important;
+}
+.ui.grey.dividing.header {
+  border-bottom: 2px solid #9E9E9E;
+}
+/* Inverted */
+.ui.inverted.grey.header {
+  color: #DCDDDE !important;
+}
+a.ui.inverted.grey.header:hover {
+  color: #cad0d6 !important;
+}
+/*-------------------
+       Aligned
+--------------------*/
+.ui.left.aligned.header {
+  text-align: left;
+}
+.ui.right.aligned.header {
+  text-align: right;
+}
+.ui.centered.header,
+.ui.center.aligned.header {
+  text-align: center;
+}
+.ui.justified.header {
+  text-align: justify;
+}
+.ui.justified.header:after {
+  display: inline-block;
+  content: '';
+  width: 100%;
+}
+/*-------------------
+       Floated
+--------------------*/
+.ui.floated.header,
+.ui[class*="left floated"].header {
+  float: left;
+  margin-top: 0em;
+  margin-right: 0.5em;
+}
+.ui[class*="right floated"].header {
+  float: right;
+  margin-top: 0em;
+  margin-left: 0.5em;
+}
+/*-------------------
+       Fittted
+--------------------*/
+.ui.fitted.header {
+  padding: 0em;
+}
+/*-------------------
+      Dividing
+--------------------*/
+.ui.dividing.header {
+  padding-bottom: 0;
+  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+}
+.ui.dividing.header .sub.header {
+  padding-bottom: 0;
+}
+.ui.dividing.header .icon {
+  margin-bottom: 0em;
+}
+.ui.inverted.dividing.header {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+/*-------------------
+        Block
+--------------------*/
+.ui.block.header {
+  background: #F3F4F5;
+  padding: 0.75rem 1rem;
+  box-shadow: none;
+  border: 1px solid #D4D4D5;
+  border-radius: 0.3125rem;
+}
+.ui.tiny.block.header {
+  font-size: 1.33333rem;
+}
+.ui.small.block.header {
+  font-size: 1.75rem;
+}
+.ui.block.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  font-size: 2.16667rem;
+}
+.ui.large.block.header {
+  font-size: 3.66667rem;
+}
+.ui.huge.block.header {
+  font-size: 6.83333rem;
+}
+/*-------------------
+       Attached
+--------------------*/
+.ui.attached.header {
+  background: #FFFFFF;
+  padding: 0.75rem 1rem;
+  margin-left: -1px;
+  margin-right: -1px;
+  box-shadow: none;
+  border: 1px solid #D4D4D5;
+}
+.ui.attached.block.header {
+  background: #F3F4F5;
+}
+.ui.attached:not(.top):not(.bottom).header {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  border-top: none;
+  border-radius: 0em;
+}
+.ui.top.attached.header {
+  margin-bottom: 0em;
+  border-radius: 0.3125rem 0.3125rem 0em 0em;
+}
+.ui.bottom.attached.header {
+  margin-top: 0em;
+  border-top: none;
+  border-radius: 0em 0em 0.3125rem 0.3125rem;
+}
+/* Attached Sizes */
+.ui.tiny.attached.header {
+  font-size: 0.91666667em;
+}
+.ui.small.attached.header {
+  font-size: 1.16666667em;
+}
+.ui.attached.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  font-size: 1.33333333em;
+}
+.ui.large.attached.header {
+  font-size: 1.75em;
+}
+.ui.huge.attached.header {
+  font-size: 2.16666667em;
+}
+/*-------------------
+        Sizing
+--------------------*/
+.ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  font-size: 2.16667em;
+}
+/*******************************
+         Theme Overrides
+*******************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Whitney SSm', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+/*Headers*/
+h1,
+.h1,
+h1.ui.header,
+h1.ui.dividing.header,
+h1.ui.horizontal.divider,
+h1.ui.header:first-child {
+  position: relative;
+  font-size: 6.83333rem;
+  font-weight: 300;
+  line-height: 8rem;
+  margin: 2rem 1rem 0rem 0.25rem;
+  padding: 0.5rem 0 1rem 0;
+  letter-spacing: -0.8px;
+  border: 0px;
+}
+h2,
+.h2,
+h2.ui.header,
+h2.ui.dividing.header,
+h2.ui.horizontal.divider,
+h2.ui.header:first-child {
+  position: relative;
+  font-size: 3.66667rem;
+  font-weight: 600;
+  line-height: 5rem;
+  padding: 0.166667rem 0 1.33333rem 0;
+  margin: 2rem 1rem 0rem 0.666667rem;
+  letter-spacing: -0.1px;
+  border: 0px;
+}
+h3,
+.h3,
+h3.ui.header,
+h3.ui.dividing.header,
+h3.ui.horizontal.divider,
+h3.ui.header:first-child {
+  position: relative;
+  font-size: 2.16667rem;
+  font-weight: 700;
+  line-height: 3rem;
+  padding: 0.166667rem 0 0.83333rem 0rem;
+  margin: 2rem 1rem 0 0.833333rem;
+  border: 0px;
+}
+h4,
+.h4,
+h4.ui.header,
+h4.ui.dividing.header,
+h4.ui.horizontal.divider,
+h4.ui.header:first-child {
+  position: relative;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  padding: 0rem 0 0 0;
+  margin: 1.5rem 1rem 0rem 0.833333rem;
+  border: 0px;
+}
+h5,
+.h5,
+h5.ui.header,
+h5.ui.dividing.header,
+h5.ui.horizontal.divider,
+h5.ui.header:first-child {
+  position: relative;
+  font-size: 1.33333rem;
+  font-weight: 700;
+  line-height: 2rem;
+  padding: 0rem 0 0rem 0;
+  margin: 1.5rem 1rem 0 0.91666667rem;
+  border: 0px;
+}
+h6,
+.h6,
+h6.ui.header,
+h6.ui.dividing.header,
+h6.ui.horizontal.divider,
+h6.ui.header:first-child {
+  position: relative;
+  font-size: 0.91667rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  padding: 0rem 0 0.166666rem 0;
+  margin: 1.33333rem 1rem 0 0.91666667rem;
+  letter-spacing: 0.1px;
+  border: 0px;
+}
+.ui.dividing.header:after {
+  position: absolute;
+  display: block;
+  height: 1px;
+  width: auto;
+  content: " ";
+  right: 0rem;
+  background-color: rgba(34, 36, 38, 0.15);
+}
+h1.ui.dividing.header:after {
+  top: 7.9166667rem;
+  left: 0.75rem;
+}
+h2.ui.dividing.header:after {
+  top: 4.9166667rem;
+  left: 0.3333333rem;
+}
+h3.ui.dividing.header:after {
+  top: 2.9166667rem;
+  left: 0.166666667rem;
+}
+h4.ui.dividing.header:after {
+  top: 2.4166667rem;
+  left: 0.166666667rem;
+}
+h5.ui.dividing.header:after {
+  top: 1.9166667rem;
+  left: 0.0833333rem;
+}
+h6.ui.dividing.header:after {
+  top: 1.4166667rem;
+  left: 0.0833333rem;
+}
+.header.divider.horizontal {
+  margin-left: 0;
+  margin-right: 0;
+}
+/*.subheader {
+  font-style: italic;
+}*/
+.h1.subheader {
+  font-weight: 700;
+  font-size: 2.16667rem;
+  line-height: 3rem;
+  margin: -0.8333333rem 1rem 0rem 1rem;
+  padding: 0rem 0rem 0.8333333rem 0rem;
+  letter-spacing: 0.1px;
+  text-indent: -0.06em;
+}
+.h2.subheader {
+  font-weight: 300;
+  font-size: 2.16667rem;
+  line-height: 3rem;
+  margin: -1.3333333rem 1rem 0rem 1rem;
+  padding: 0 0 0.833333333rem 0;
+  letter-spacing: 0px;
+  text-indent: -0.1em;
+}
+.h3.subheader {
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  margin: -0.9166666rem 1rem 0 1rem;
+  padding: 0 0 0.9166666rem 0;
+  letter-spacing: 0px;
+  text-indent: -0.1em;
+}
+.h4.subheader {
+  font-weight: 600;
+  font-size: 0.91667rem;
+  line-height: 1.5rem;
+  margin: -0.25rem 1rem 0rem 1rem;
+  padding: 0 0 0.666666rem 0;
+  letter-spacing: 0.1px;
+  text-indent: -0.07em;
+}
+.h5.subheader,
+.h6.subheader {
+  font-weight: 300;
+  font-size: 0.91667rem;
+  line-height: 1.5rem;
+  margin: -0.1666667rem 1rem 0rem 1rem;
+  padding: 0 0 0.166667rem 0;
+  letter-spacing: 0.1px;
+  text-indent: -0.1em;
+}
+/*!
  * # Semantic UI - Flag
  * http://github.com/semantic-org/semantic-ui/
  *
@@ -6126,12 +6948,15 @@ h6.ui.horizontal.divider {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -6326,12 +7151,15 @@ h6.ui.horizontal.divider {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -7548,1487 +8376,6 @@ i.flag.zimbabwe:before {
   background-position: -108px -390px;
 }
 /*!
- * # Semantic UI - Header
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Copyright 2015 Contributors
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
-/*******************************
-            Theme
-*******************************/
-/*
-
-████████╗██╗  ██╗███████╗███╗   ███╗███████╗███████╗
-╚══██╔══╝██║  ██║██╔════╝████╗ ████║██╔════╝██╔════╝
-   ██║   ███████║█████╗  ██╔████╔██║█████╗  ███████╗
-   ██║   ██╔══██║██╔══╝  ██║╚██╔╝██║██╔══╝  ╚════██║
-   ██║   ██║  ██║███████╗██║ ╚═╝ ██║███████╗███████║
-   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝╚══════╝
-
-*/
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Global */
-/* Elements */
-/* Collections */
-/* Modules */
-/* Views */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*******************************
-         Site Settings
-*******************************/
-/*-------------------
-       Fonts
---------------------*/
-/*-------------------
-      Base Sizes
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/*-------------------
-    Border Radius
---------------------*/
-/* See Power-user section below
-   for explanation of @px variables
-*/
-/*-------------------
-    Brand Colors
---------------------*/
-/*--------------
-  Page Heading
----------------*/
-/*--------------
-   Form Input
----------------*/
-/* This adjusts the default form input across all elements */
-/* Line Height Default For Inputs in Browser */
-/*-------------------
-    Focused Input
---------------------*/
-/* Used on inputs, textarea etc */
-/* Used on dropdowns, other larger blocks */
-/*-------------------
-        Sizes
---------------------*/
-/*
-  Sizes are all expressed in terms of 14px/em (default em)
-  This ensures these "ratios" remain constant despite changes in EM
-*/
-/*-------------------
-        Page
---------------------*/
-/*-------------------
-      Paragraph
---------------------*/
-/*-------------------
-       Links
---------------------*/
-/*-------------------
-  Highlighted Text
---------------------*/
-/*-------------------
-       Loader
---------------------*/
-/*-------------------
-        Grid
---------------------*/
-/*-------------------
-     Transitions
---------------------*/
-/*-------------------
-     Breakpoints
---------------------*/
-/*-------------------
-      Site Colors
---------------------*/
-/*---  Colors  ---*/
-/*---  Light Colors  ---*/
-/*---   Neutrals  ---*/
-/*--- Colored Backgrounds ---*/
-/*--- Colored Headers ---*/
-/*--- Colored Text ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-       Accents
---------------------*/
-/* Differentiating Neutrals */
-/* Differentiating Layers */
-/*******************************
-           Power-User
-*******************************/
-/*-------------------
-    Emotive Colors
---------------------*/
-/* Positive */
-/* Negative */
-/* Info */
-/* Warning */
-/*-------------------
-        Paths
---------------------*/
-/* For source only. Modified in gulp for dist */
-/*-------------------
-       Em Sizes
---------------------*/
-/*
-  This rounds @size values to the closest pixel then expresses that value in (r)em.
-  This ensures all size values round to exact pixels
-*/
-/* em */
-/* rem */
-/*-------------------
-  Exact Pixel Values
---------------------*/
-/*
-  These are used to specify exact pixel values in em
-  for things like borders that remain constantly
-  sized as emSize adjusts
-
-  Since there are many more sizes than names for sizes,
-  these are named by their original pixel values.
-
-*/
-/*-------------------
-       Icons
---------------------*/
-/* Maximum Glyph Width of Icon */
-/*-------------------
-     Neutral Text
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-      Borders
---------------------*/
-/*-------------------
-    Derived Values
---------------------*/
-/* Loaders Position Offset */
-/* Rendered Scrollbar Width */
-/* Maximum Single Character Glyph Width, aka Capital "W" */
-/* Used to match floats with text */
-/* Header Spacing */
-/* Minimum Mobile Width */
-/* Positive / Negative Dupes */
-/* Responsive */
-/* Columns */
-/*******************************
-             States
-*******************************/
-/*-------------------
-      Disabled
---------------------*/
-/*-------------------
-        Hover
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Focus
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-    Down (:active)
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Active
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/* Packaged site.variables */
-/*============================
-       Global Variables
-==============================*/
-/*-------------------
-       Colors
---------------------*/
-/* FONTS */
-/*82px*/
-/*44px*/
-/*26px*/
-/*21px*/
-/*16px*/
-/*11px*/
-/*-------------------
-       Fonts
---------------------*/
-/*
-@text-light : 300;
-@text-book : 400;
-@text-medium: 500;
-@text-semibold : 600; 
-@text-bold : 700;
-@text-black : 800;
-
-*/
-/*******************************
-         Site Settings
-*******************************/
-/*-------------------
-       Fonts
---------------------*/
-/*@fontName          : 'Whitney SSm';*/
-/*@fontSmoothing     : false;*/
-/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
-/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
-/*@importGoogleFonts : false;*/
-/*
-@googleFontName    : @fontName;
-
-@googleFontSizes   : '400,700,400italic,700italic';
-@googleSubset      : 'latin';
-
-@googleProtocol    : 'https://';
-@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
-*/
-/*-------------------
-      Base Sizes
---------------------*/
-/*@emSize   : 12px;*/
-/*@fontSize : 1.333333rem;*/
-/*-------------------
-    Border Radius
---------------------*/
-/* 4px @ default em */
-/*-------------------
-    Brand Colors
---------------------*/
-/*--------------
-  Page Heading
----------------*/
-/*@headerFontWeight : 400;
-@headerLineHeight : 1.17073em;*/
-/*-------------------
-        Sizes
---------------------*/
-/*
-  To have sizing resolve to a specified pixel values adjust
-  the numerator to the desired font size and the denominator
-  to the base em size
-*/
-/*-------------------
-        Page
---------------------*/
-/*@lineHeight          : 2rem;*/
-/*@textColor           : @color-text-dark;*/
-/*-------------------
-      Paragraph
---------------------*/
-/*-------------------
-       Links
---------------------*/
-/*-------------------
-  Highlighted Text
---------------------*/
-/*@highlightBackground      : @color-active;*/
-/*@highlightColor           : @color-text-light;*/
-/*-------------------
-       Loader
---------------------*/
-/*-------------------
-        Grid
---------------------*/
-/*-------------------
-     Transitions
---------------------*/
-/*-------------------
-     Breakpoints
---------------------*/
-/*-------------------
-      Site Colors
---------------------*/
-/*---  Colors  ---*/
-/*---  Light Colors  ---*/
-/*---   Neutrals  ---*/
-/*--- Colored Backgrounds ---*/
-/*--- Colored Headers ---*/
-/*--- Colored Text ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-       Accents
---------------------*/
-/* Differentiating Neutrals */
-/* Differentiating Layers */
-/*******************************
-           Power-User
-*******************************/
-/*-------------------
-    Emotive Colors
---------------------*/
-/* Positive */
-/* Negative */
-/* Info */
-/* Warning */
-/*-------------------
-        Paths
---------------------*/
-/* For source only. Modified in gulp for dist */
-/*-------------------
-       Em Sizes
---------------------*/
-/* Exact pixel values expressed in em */
-/*-------------------
-       Icons
---------------------*/
-/* Maximum Glyph Width of Icon */
-/*-------------------
-     Neutral Text
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-      Borders
---------------------*/
-/*-------------------
-    Element Focus
---------------------*/
-/*-------------------
-    Derived Values
---------------------*/
-/* Line Height Default For Inputs in Browser */
-/* Rendered Scrollbar Width */
-/* Maximum Single Character Glyph Width, aka Capital "W" */
-/* Used to match floats with text */
-/* Header Spacing */
-/* Minimum Mobile Width */
-/* Positive / Negative Dupes */
-/* Responsive */
-/* Columns */
-/*******************************
-             States
-*******************************/
-/*-------------------
-      Disabled
---------------------*/
-/*-------------------
-        Hover
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Focus
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-    Down (:active)
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Active
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/* Component's site.variables */
-/*============================
-       Global Variables
-==============================*/
-/*-------------------
-       Colors
---------------------*/
-/* FONTS */
-/*82px*/
-/*44px*/
-/*26px*/
-/*21px*/
-/*16px*/
-/*11px*/
-/*-------------------
-       Fonts
---------------------*/
-/*
-@text-light : 300;
-@text-book : 400;
-@text-medium: 500;
-@text-semibold : 600; 
-@text-bold : 700;
-@text-black : 800;
-
-*/
-/*******************************
-         Site Settings
-*******************************/
-/*-------------------
-       Fonts
---------------------*/
-/*@fontName          : 'Whitney SSm';*/
-/*@fontSmoothing     : false;*/
-/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
-/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
-/*@importGoogleFonts : false;*/
-/*
-@googleFontName    : @fontName;
-
-@googleFontSizes   : '400,700,400italic,700italic';
-@googleSubset      : 'latin';
-
-@googleProtocol    : 'https://';
-@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
-*/
-/*-------------------
-      Base Sizes
---------------------*/
-/*@emSize   : 12px;*/
-/*@fontSize : 1.333333rem;*/
-/*-------------------
-    Border Radius
---------------------*/
-/* 4px @ default em */
-/*-------------------
-    Brand Colors
---------------------*/
-/*--------------
-  Page Heading
----------------*/
-/*@headerFontWeight : 400;
-@headerLineHeight : 1.17073em;*/
-/*-------------------
-        Sizes
---------------------*/
-/*
-  To have sizing resolve to a specified pixel values adjust
-  the numerator to the desired font size and the denominator
-  to the base em size
-*/
-/*-------------------
-        Page
---------------------*/
-/*@lineHeight          : 2rem;*/
-/*@textColor           : @color-text-dark;*/
-/*-------------------
-      Paragraph
---------------------*/
-/*-------------------
-       Links
---------------------*/
-/*-------------------
-  Highlighted Text
---------------------*/
-/*@highlightBackground      : @color-active;*/
-/*@highlightColor           : @color-text-light;*/
-/*-------------------
-       Loader
---------------------*/
-/*-------------------
-        Grid
---------------------*/
-/*-------------------
-     Transitions
---------------------*/
-/*-------------------
-     Breakpoints
---------------------*/
-/*-------------------
-      Site Colors
---------------------*/
-/*---  Colors  ---*/
-/*---  Light Colors  ---*/
-/*---   Neutrals  ---*/
-/*--- Colored Backgrounds ---*/
-/*--- Colored Headers ---*/
-/*--- Colored Text ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-       Accents
---------------------*/
-/* Differentiating Neutrals */
-/* Differentiating Layers */
-/*******************************
-           Power-User
-*******************************/
-/*-------------------
-    Emotive Colors
---------------------*/
-/* Positive */
-/* Negative */
-/* Info */
-/* Warning */
-/*-------------------
-        Paths
---------------------*/
-/* For source only. Modified in gulp for dist */
-/*-------------------
-       Em Sizes
---------------------*/
-/* Exact pixel values expressed in em */
-/*-------------------
-       Icons
---------------------*/
-/* Maximum Glyph Width of Icon */
-/*-------------------
-     Neutral Text
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-      Borders
---------------------*/
-/*-------------------
-    Element Focus
---------------------*/
-/*-------------------
-    Derived Values
---------------------*/
-/* Line Height Default For Inputs in Browser */
-/* Rendered Scrollbar Width */
-/* Maximum Single Character Glyph Width, aka Capital "W" */
-/* Used to match floats with text */
-/* Header Spacing */
-/* Minimum Mobile Width */
-/* Positive / Negative Dupes */
-/* Responsive */
-/* Columns */
-/*******************************
-             States
-*******************************/
-/*-------------------
-      Disabled
---------------------*/
-/*-------------------
-        Hover
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Focus
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-    Down (:active)
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Active
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/* Site theme site.variables */
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/*******************************
-            Header
-*******************************/
-/*-------------------
-       Element
---------------------*/
-/* Sub Heading */
-/* Sub Header */
-/* Icon */
-/* Image */
-/* Label */
-/* Content */
-/* Paragraph after Header */
-/*-------------------
-      Variations
---------------------*/
-/* Sizing */
-/* Sub Header */
-/* Icon Header */
-/* No Line Height Offset */
-/* Divided */
-/* Block */
-/* Attached */
-/* Inverted */
-/* Floated */
-/* Packaged Theme */
-/*******************************
-            Header
-*******************************/
-/*-------------------
-       Element
---------------------*/
-/* Sub Heading */
-/* Sub Header */
-/* Icon */
-/* Image */
-/* Label */
-/* Content */
-/* Paragraph after Header */
-/*-------------------
-      Variations
---------------------*/
-/* Sizing */
-/* Sub Header */
-/* Icon Header */
-/* No Line Height Offset */
-/* Divided */
-/* Block */
-/* Attached */
-/* Inverted */
-/* Floated */
-/* Site Theme */
-/*******************************
-             Mix-ins
-*******************************/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-/*******************************
-            Header
-*******************************/
-/* Standard */
-.ui.header {
-  border: none;
-  margin: calc(2rem -  0.14285em ) 0em 1rem;
-  padding: 0em 0em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  line-height: 1.2857em;
-  text-transform: none;
-  color: rgba(0, 0, 0, 0.87);
-}
-.ui.header:first-child {
-  margin-top: -0.14285em;
-}
-.ui.header:last-child {
-  margin-bottom: 0em;
-}
-/*--------------
-   Sub Header
----------------*/
-.ui.header .sub.header {
-  font-weight: normal;
-  padding: 0em;
-  margin: 0em;
-  font-size: 1rem;
-  line-height: 1.2em;
-  color: rgba(0, 0, 0, 0.6);
-}
-/*--------------
-      Icon
----------------*/
-.ui.header > .icon {
-  display: table-cell;
-  opacity: 1;
-  font-size: 1.5em;
-  padding-top: 0.14285em;
-  vertical-align: middle;
-}
-/* With Text Node */
-.ui.header .icon:only-child {
-  display: inline-block;
-  padding: 0em;
-  margin-right: 0.75rem;
-}
-/*-------------------
-        Image
---------------------*/
-.ui.header > .image,
-.ui.header > img {
-  display: inline-block;
-  margin-top: 0.14285em;
-  width: 2.5em;
-  height: auto;
-  vertical-align: middle;
-}
-.ui.header > .image:only-child,
-.ui.header > img:only-child {
-  margin-right: 0.75rem;
-}
-/*--------------
-     Content
----------------*/
-.ui.header .content {
-  display: inline-block;
-  vertical-align: top;
-}
-/* After Image */
-.ui.header > img + .content,
-.ui.header > .image + .content {
-  padding-left: 0.75rem;
-  vertical-align: middle;
-}
-/* After Icon */
-.ui.header > .icon + .content {
-  padding-left: 0.75rem;
-  display: table-cell;
-  vertical-align: middle;
-}
-/*--------------
- Loose Coupling
----------------*/
-.ui.header .ui.label {
-  font-size: '';
-  margin-left: 0.5rem;
-  vertical-align: middle;
-}
-/* Positioning */
-.ui.header + p {
-  margin-top: 0em;
-}
-/*******************************
-            Types
-*******************************/
-/*--------------
-     Page
----------------*/
-h1.ui.header {
-  font-size: 6.83333rem;
-}
-h2.ui.header {
-  font-size: 3.66667rem;
-}
-h3.ui.header {
-  font-size: 2.16667rem;
-}
-h4.ui.header {
-  font-size: 1.75rem;
-}
-h5.ui.header {
-  font-size: 1.33333rem;
-}
-/* Sub Header */
-h1.ui.header .sub.header {
-  font-size: 1.1428rem;
-}
-h2.ui.header .sub.header {
-  font-size: 1.1428rem;
-}
-h3.ui.header .sub.header {
-  font-size: 1rem;
-}
-h4.ui.header .sub.header {
-  font-size: 1rem;
-}
-h5.ui.header .sub.header {
-  font-size: 0.9285rem;
-}
-/*--------------
- Content Heading
----------------*/
-.ui.huge.header {
-  min-height: 1em;
-  font-size: 6.83333em;
-}
-.ui.large.header {
-  font-size: 3.66667em;
-}
-.ui.medium.header {
-  font-size: 2.16667em;
-}
-.ui.small.header {
-  font-size: 1.75em;
-}
-.ui.tiny.header {
-  font-size: 1.33333em;
-}
-/* Sub Header */
-.ui.huge.header .sub.header {
-  font-size: 1.1428rem;
-}
-.ui.large.header .sub.header {
-  font-size: 1.1428rem;
-}
-.ui.header .sub.header {
-  font-size: 1rem;
-}
-.ui.small.header .sub.header {
-  font-size: 1rem;
-}
-.ui.tiny.header .sub.header {
-  font-size: 0.9285rem;
-}
-/*--------------
-   Sub Heading
----------------*/
-.ui.sub.header {
-  padding: 0em;
-  margin-bottom: 0.16666667rem;
-  font-weight: bold;
-  font-size: 0.91666667em;
-  text-transform: uppercase;
-  color: '';
-}
-.ui.small.sub.header {
-  font-size: 0.91666667em;
-}
-.ui.sub.header {
-  font-size: 0.91666667em;
-}
-.ui.large.sub.header {
-  font-size: 1.16666667em;
-}
-.ui.huge.sub.header {
-  font-size: 1.33333333em;
-}
-/*-------------------
-        Icon
---------------------*/
-.ui.icon.header {
-  display: inline-block;
-  text-align: center;
-  margin: 2rem 0em 1rem;
-}
-.ui.icon.header:after {
-  content: '';
-  display: block;
-  height: 0px;
-  clear: both;
-  visibility: hidden;
-}
-.ui.icon.header:first-child {
-  margin-top: 0em;
-}
-.ui.icon.header .icon {
-  float: none;
-  display: block;
-  width: auto;
-  height: auto;
-  line-height: 1;
-  padding: 0em;
-  font-size: 3em;
-  margin: 0em auto 0.25rem;
-  opacity: 1;
-}
-.ui.icon.header .content {
-  display: block;
-}
-.ui.icon.header .circular.icon {
-  font-size: 2em;
-}
-.ui.icon.header .square.icon {
-  font-size: 2em;
-}
-.ui.block.icon.header .icon {
-  margin-bottom: 0em;
-}
-.ui.icon.header.aligned {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-/*******************************
-            States
-*******************************/
-.ui.disabled.header {
-  opacity: 0.45;
-}
-/*******************************
-           Variations
-*******************************/
-/*-------------------
-      Inverted
---------------------*/
-.ui.inverted.header {
-  color: #FFFFFF;
-}
-.ui.inverted.header .sub.header {
-  color: rgba(255, 255, 255, 0.8);
-}
-.ui.inverted.attached.header {
-  background: #333333 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  background: #333333 linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  box-shadow: none;
-  border-color: transparent;
-}
-.ui.inverted.block.header {
-  background: #333333 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  background: #333333 linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  box-shadow: none;
-}
-.ui.inverted.block.header {
-  border-bottom: none;
-}
-/*-------------------
-       Colors
---------------------*/
-/*--- Red ---*/
-.ui.red.header {
-  color: #F44336 !important;
-}
-a.ui.red.header:hover {
-  color: #ff2212 !important;
-}
-.ui.red.dividing.header {
-  border-bottom: 2px solid #F44336;
-}
-/* Inverted */
-.ui.inverted.red.header {
-  color: #FF1744 !important;
-}
-a.ui.inverted.red.header:hover {
-  color: #fc0031 !important;
-}
-/*--- Orange ---*/
-.ui.orange.header {
-  color: #FF9800 !important;
-}
-a.ui.orange.header:hover {
-  color: #e68900 !important;
-}
-.ui.orange.dividing.header {
-  border-bottom: 2px solid #FF9800;
-}
-/* Inverted */
-.ui.inverted.orange.header {
-  color: #FF9100 !important;
-}
-a.ui.inverted.orange.header:hover {
-  color: #e68300 !important;
-}
-/*--- Olive ---*/
-.ui.olive.header {
-  color: #B5CC18 !important;
-}
-a.ui.olive.header:hover {
-  color: #a8bf0b !important;
-}
-.ui.olive.dividing.header {
-  border-bottom: 2px solid #B5CC18;
-}
-/* Inverted */
-.ui.inverted.olive.header {
-  color: #D9E778 !important;
-}
-a.ui.inverted.olive.header:hover {
-  color: #daec59 !important;
-}
-/*--- Yellow ---*/
-.ui.yellow.header {
-  color: #FFEB3B !important;
-}
-a.ui.yellow.header:hover {
-  color: #ffe821 !important;
-}
-.ui.yellow.dividing.header {
-  border-bottom: 2px solid #FFEB3B;
-}
-/* Inverted */
-.ui.inverted.yellow.header {
-  color: #FFEA00 !important;
-}
-a.ui.inverted.yellow.header:hover {
-  color: #e6d300 !important;
-}
-/*--- Green ---*/
-.ui.green.header {
-  color: #4CAF50 !important;
-}
-a.ui.green.header:hover {
-  color: #39a83e !important;
-}
-.ui.green.dividing.header {
-  border-bottom: 2px solid #4CAF50;
-}
-/* Inverted */
-.ui.inverted.green.header {
-  color: #00E676 !important;
-}
-a.ui.inverted.green.header:hover {
-  color: #00cd69 !important;
-}
-/*--- Teal ---*/
-.ui.teal.header {
-  color: #1de9b6 !important;
-}
-a.ui.teal.header:hover {
-  color: #09e3ad !important;
-}
-.ui.teal.dividing.header {
-  border-bottom: 2px solid #1de9b6;
-}
-/* Inverted */
-.ui.inverted.teal.header {
-  color: #1DE9B6 !important;
-}
-a.ui.inverted.teal.header:hover {
-  color: #09e3ad !important;
-}
-/*--- Blue ---*/
-.ui.blue.header {
-  color: #2196F3 !important;
-}
-a.ui.blue.header:hover {
-  color: #008cfa !important;
-}
-.ui.blue.dividing.header {
-  border-bottom: 2px solid #2196F3;
-}
-/* Inverted */
-.ui.inverted.blue.header {
-  color: #2979FF !important;
-}
-a.ui.inverted.blue.header:hover {
-  color: #1069ff !important;
-}
-/*--- Violet ---*/
-.ui.violet.header {
-  color: #6435C9 !important;
-}
-a.ui.violet.header:hover {
-  color: #5624c0 !important;
-}
-.ui.violet.dividing.header {
-  border-bottom: 2px solid #6435C9;
-}
-/* Inverted */
-.ui.inverted.violet.header {
-  color: #A291FB !important;
-}
-a.ui.inverted.violet.header:hover {
-  color: #8a73ff !important;
-}
-/*--- Purple ---*/
-.ui.purple.header {
-  color: #9C27B0 !important;
-}
-a.ui.purple.header:hover {
-  color: #9019a5 !important;
-}
-.ui.purple.dividing.header {
-  border-bottom: 2px solid #9C27B0;
-}
-/* Inverted */
-.ui.inverted.purple.header {
-  color: #D500F9 !important;
-}
-a.ui.inverted.purple.header:hover {
-  color: #bf00e0 !important;
-}
-/*--- Pink ---*/
-.ui.pink.header {
-  color: #E91E63 !important;
-}
-a.ui.pink.header:hover {
-  color: #e40954 !important;
-}
-.ui.pink.dividing.header {
-  border-bottom: 2px solid #E91E63;
-}
-/* Inverted */
-.ui.inverted.pink.header {
-  color: #F50057 !important;
-}
-a.ui.inverted.pink.header:hover {
-  color: #dc004e !important;
-}
-/*--- Brown ---*/
-.ui.brown.header {
-  color: #A5673F !important;
-}
-a.ui.brown.header:hover {
-  color: #9d592e !important;
-}
-.ui.brown.dividing.header {
-  border-bottom: 2px solid #A5673F;
-}
-/* Inverted */
-.ui.inverted.brown.header {
-  color: #D67C1C !important;
-}
-a.ui.inverted.brown.header:hover {
-  color: #ca6f0e !important;
-}
-/*--- Grey ---*/
-.ui.grey.header {
-  color: #9E9E9E !important;
-}
-a.ui.grey.header:hover {
-  color: #ababab !important;
-}
-.ui.grey.dividing.header {
-  border-bottom: 2px solid #9E9E9E;
-}
-/* Inverted */
-.ui.inverted.grey.header {
-  color: #DCDDDE !important;
-}
-a.ui.inverted.grey.header:hover {
-  color: #cad0d6 !important;
-}
-/*-------------------
-       Aligned
---------------------*/
-.ui.left.aligned.header {
-  text-align: left;
-}
-.ui.right.aligned.header {
-  text-align: right;
-}
-.ui.centered.header,
-.ui.center.aligned.header {
-  text-align: center;
-}
-.ui.justified.header {
-  text-align: justify;
-}
-.ui.justified.header:after {
-  display: inline-block;
-  content: '';
-  width: 100%;
-}
-/*-------------------
-       Floated
---------------------*/
-.ui.floated.header,
-.ui[class*="left floated"].header {
-  float: left;
-  margin-top: 0em;
-  margin-right: 0.5em;
-}
-.ui[class*="right floated"].header {
-  float: right;
-  margin-top: 0em;
-  margin-left: 0.5em;
-}
-/*-------------------
-       Fittted
---------------------*/
-.ui.fitted.header {
-  padding: 0em;
-}
-/*-------------------
-      Dividing
---------------------*/
-.ui.dividing.header {
-  padding-bottom: 0;
-  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
-}
-.ui.dividing.header .sub.header {
-  padding-bottom: 0;
-}
-.ui.dividing.header .icon {
-  margin-bottom: 0em;
-}
-.ui.inverted.dividing.header {
-  border-bottom-color: rgba(255, 255, 255, 0.1);
-}
-/*-------------------
-        Block
---------------------*/
-.ui.block.header {
-  background: #F3F4F5;
-  padding: 0.75rem 1rem;
-  box-shadow: none;
-  border: 1px solid #D4D4D5;
-  border-radius: 0.3125rem;
-}
-.ui.tiny.block.header {
-  font-size: 1.33333rem;
-}
-.ui.small.block.header {
-  font-size: 1.75rem;
-}
-.ui.block.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 2.16667rem;
-}
-.ui.large.block.header {
-  font-size: 3.66667rem;
-}
-.ui.huge.block.header {
-  font-size: 6.83333rem;
-}
-/*-------------------
-       Attached
---------------------*/
-.ui.attached.header {
-  background: #FFFFFF;
-  padding: 0.75rem 1rem;
-  margin-left: -1px;
-  margin-right: -1px;
-  box-shadow: none;
-  border: 1px solid #D4D4D5;
-}
-.ui.attached.block.header {
-  background: #F3F4F5;
-}
-.ui.attached:not(.top):not(.bottom).header {
-  margin-top: 0em;
-  margin-bottom: 0em;
-  border-top: none;
-  border-radius: 0em;
-}
-.ui.top.attached.header {
-  margin-bottom: 0em;
-  border-radius: 0.3125rem 0.3125rem 0em 0em;
-}
-.ui.bottom.attached.header {
-  margin-top: 0em;
-  border-top: none;
-  border-radius: 0em 0em 0.3125rem 0.3125rem;
-}
-/* Attached Sizes */
-.ui.tiny.attached.header {
-  font-size: 0.91666667em;
-}
-.ui.small.attached.header {
-  font-size: 1.16666667em;
-}
-.ui.attached.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 1.33333333em;
-}
-.ui.large.attached.header {
-  font-size: 1.75em;
-}
-.ui.huge.attached.header {
-  font-size: 2.16666667em;
-}
-/*-------------------
-        Sizing
---------------------*/
-.ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 2.16667em;
-}
-/*******************************
-         Theme Overrides
-*******************************/
-/*Headers*/
-h1,
-.h1,
-h1.ui.header,
-h1.ui.dividing.header,
-h1.ui.horizontal.divider,
-h1.ui.header:first-child {
-  position: relative;
-  font-size: 6.83333rem;
-  font-weight: 300;
-  line-height: 8rem;
-  margin: 2rem 1rem 0rem 0.25rem;
-  padding: 0.5rem 0 1rem 0;
-  letter-spacing: -0.8px;
-  border: 0px;
-}
-h2,
-.h2,
-h2.ui.header,
-h2.ui.dividing.header,
-h2.ui.horizontal.divider,
-h2.ui.header:first-child {
-  position: relative;
-  font-size: 3.66667rem;
-  font-weight: 600;
-  line-height: 5rem;
-  padding: 0.166667rem 0 1.33333rem 0;
-  margin: 2rem 1rem 0rem 0.666667rem;
-  letter-spacing: -0.1px;
-  border: 0px;
-}
-h3,
-.h3,
-h3.ui.header,
-h3.ui.dividing.header,
-h3.ui.horizontal.divider,
-h3.ui.header:first-child {
-  position: relative;
-  font-size: 2.16667rem;
-  font-weight: 700;
-  line-height: 3rem;
-  padding: 0.166667rem 0 0.83333rem 0rem;
-  margin: 2rem 1rem 0 0.833333rem;
-  border: 0px;
-}
-h4,
-.h4,
-h4.ui.header,
-h4.ui.dividing.header,
-h4.ui.horizontal.divider,
-h4.ui.header:first-child {
-  position: relative;
-  font-size: 1.75rem;
-  font-weight: 500;
-  line-height: 2.5rem;
-  padding: 0rem 0 0 0;
-  margin: 1.5rem 1rem 0rem 0.833333rem;
-  border: 0px;
-}
-h5,
-.h5,
-h5.ui.header,
-h5.ui.dividing.header,
-h5.ui.horizontal.divider,
-h5.ui.header:first-child {
-  position: relative;
-  font-size: 1.33333rem;
-  font-weight: 700;
-  line-height: 2rem;
-  padding: 0rem 0 0rem 0;
-  margin: 1.5rem 1rem 0 0.91666667rem;
-  border: 0px;
-}
-h6,
-.h6,
-h6.ui.header,
-h6.ui.dividing.header,
-h6.ui.horizontal.divider,
-h6.ui.header:first-child {
-  position: relative;
-  font-size: 0.91667rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-  padding: 0rem 0 0.166666rem 0;
-  margin: 1.33333rem 1rem 0 0.91666667rem;
-  letter-spacing: 0.1px;
-  border: 0px;
-}
-.ui.dividing.header:after {
-  position: absolute;
-  display: block;
-  height: 1px;
-  width: auto;
-  content: " ";
-  right: 0rem;
-  background-color: rgba(34, 36, 38, 0.15);
-}
-h1.ui.dividing.header:after {
-  top: 7.9166667rem;
-  left: 0.75rem;
-}
-h2.ui.dividing.header:after {
-  top: 4.9166667rem;
-  left: 0.3333333rem;
-}
-h3.ui.dividing.header:after {
-  top: 2.9166667rem;
-  left: 0.166666667rem;
-}
-h4.ui.dividing.header:after {
-  top: 2.4166667rem;
-  left: 0.166666667rem;
-}
-h5.ui.dividing.header:after {
-  top: 1.9166667rem;
-  left: 0.0833333rem;
-}
-h6.ui.dividing.header:after {
-  top: 1.4166667rem;
-  left: 0.0833333rem;
-}
-.header.divider.horizontal {
-  margin-left: 0;
-  margin-right: 0;
-}
-/*.subheader {
-  font-style: italic;
-}*/
-.h1.subheader {
-  font-weight: 700;
-  font-size: 2.16667rem;
-  line-height: 3rem;
-  margin: -0.8333333rem 1rem 0rem 1rem;
-  padding: 0rem 0rem 0.8333333rem 0rem;
-  letter-spacing: 0.1px;
-  text-indent: -0.06em;
-}
-.h2.subheader {
-  font-weight: 300;
-  font-size: 2.16667rem;
-  line-height: 3rem;
-  margin: -1.3333333rem 1rem 0rem 1rem;
-  padding: 0 0 0.833333333rem 0;
-  letter-spacing: 0px;
-  text-indent: -0.1em;
-}
-.h3.subheader {
-  font-weight: 300;
-  font-size: 1.75rem;
-  line-height: 2.5rem;
-  margin: -0.9166666rem 1rem 0 1rem;
-  padding: 0 0 0.9166666rem 0;
-  letter-spacing: 0px;
-  text-indent: -0.1em;
-}
-.h4.subheader {
-  font-weight: 600;
-  font-size: 0.91667rem;
-  line-height: 1.5rem;
-  margin: -0.25rem 1rem 0rem 1rem;
-  padding: 0 0 0.666666rem 0;
-  letter-spacing: 0.1px;
-  text-indent: -0.07em;
-}
-.h5.subheader,
-.h6.subheader {
-  font-weight: 300;
-  font-size: 0.91667rem;
-  line-height: 1.5rem;
-  margin: -0.1666667rem 1rem 0rem 1rem;
-  padding: 0 0 0.166667rem 0;
-  letter-spacing: 0.1px;
-  text-indent: -0.1em;
-}
-/*!
  * # Semantic UI - Icon
  * http://github.com/semantic-org/semantic-ui/
  *
@@ -9267,12 +8614,15 @@ h6.ui.dividing.header:after {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -9467,12 +8817,15 @@ h6.ui.dividing.header:after {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -13178,12 +12531,15 @@ i.icon.zerply:before {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -13378,12 +12734,15 @@ i.icon.zerply:before {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -14316,12 +13675,15 @@ i.icon.zerply:before {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -14516,12 +13878,15 @@ i.icon.zerply:before {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -16178,12 +15543,15 @@ a.ui.basic.label:hover {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -16378,12 +15746,15 @@ a.ui.basic.label:hover {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -17531,12 +16902,15 @@ a.ui.basic.label:hover {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -17731,12 +17105,15 @@ a.ui.basic.label:hover {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -19409,12 +18786,15 @@ a.ui.basic.label:hover {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -21982,12 +21362,15 @@ a.ui.basic.label:hover {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 /*-------------------
        Fonts
 --------------------*/
@@ -23405,12 +22788,15 @@ a.ui.basic.label:hover {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 bonaparte-panel {
   display: none;
   position: absolute;
@@ -23426,6 +22812,7 @@ bonaparte-panel[open="true"] {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
+bonaparte-panel,
 bonaparte-panel[data-position~="left"],
 bonaparte-panel[position~="left"] {
   display: block;
@@ -23435,8 +22822,10 @@ bonaparte-panel[position~="left"] {
   width: 10rem;
   right: 100%;
 }
+bonaparte-panel[data-open="true"],
 bonaparte-panel[data-position~="left"][data-open="true"],
 bonaparte-panel[position~="left"][data-open="true"],
+bonaparte-panel[open="true"],
 bonaparte-panel[data-position~="left"][open="true"],
 bonaparte-panel[position~="left"][open="true"] {
   -webkit-transform: translateX(100%);
@@ -23512,6 +22901,7 @@ bonaparte-panel[open="true"] {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
+bonaparte-panel,
 bonaparte-panel[data-position~="left"],
 bonaparte-panel[position~="left"] {
   display: block;
@@ -23521,8 +22911,10 @@ bonaparte-panel[position~="left"] {
   width: 400px;
   right: 100%;
 }
+bonaparte-panel[data-open="true"],
 bonaparte-panel[data-position~="left"][data-open="true"],
 bonaparte-panel[position~="left"][data-open="true"],
+bonaparte-panel[open="true"],
 bonaparte-panel[data-position~="left"][open="true"],
 bonaparte-panel[position~="left"][open="true"] {
   -webkit-transform: translateX(100%);
@@ -23613,18 +23005,21 @@ bonaparte-panel[position~="top"] {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 bonaparte-scroll {
   /* 
     Inspired by: nanoScrollerJS
     https://github.com/jamesflorentino/nanoScrollerJS
   */
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -23698,7 +23093,7 @@ bonaparte-scroll {
     Inspired by: nanoScrollerJS
     https://github.com/jamesflorentino/nanoScrollerJS
   */
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -23774,43 +23169,49 @@ bonaparte-scroll[data-scrollbar~="visible"] > .scrollbar {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 bonaparte-button {
   display: inline-block;
 }
 /*///////////////////////////////////////////////////////////////////////////*/
 bonaparte-button {
   display: inline-block;
-}
-bonaparte-button.ui.button.labeled.icon {
-  color: #D9A000;
-}
-bonaparte-button.ui.button.labeled.icon.monochrome {
-  color: #1A1A1A;
-}
-bonaparte-button.ui.button.labeled.icon.active {
-  color: #FFFFFF;
-  background-color: #425CBD;
-}
-bonaparte-button.ui.button.labeled.icon.toggle.active {
-  background-color: #FFFFFF;
-  color: #425CBD;
-}
-bonaparte-button.ui.button.labeled.icon.toggle.active:after {
-  border-width: 0 3px 0 0;
-  border-style: solid;
-  border-color: #425CBD;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: ' ';
+  /* &.ui.button.labeled.icon {
+    color:@color-interactive;
+
+	  &.monochrome {
+	  	color: @color-dark-2;
+	  }
+
+	  &.active {
+	    color:@color-light-0;
+	    background-color:@color-active;
+	  }
+	  &.toggle.active {
+	    background-color: @color-light-0;
+	    color: @color-active;
+
+			&:after {
+			  border-width: 0 3px 0 0;
+				border-style: solid;
+				border-color: @color-active;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				content: ' ';
+			}
+	  }
+	}*/
 }
 /*============================
        Global Variables
@@ -23819,12 +23220,15 @@ bonaparte-button.ui.button.labeled.icon.toggle.active:after {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 bonaparte-sidebar {
   /*DEFINITION*/
   position: relative;
@@ -23832,6 +23236,7 @@ bonaparte-sidebar {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
 }
@@ -23929,19 +23334,15 @@ bonaparte-sidebar {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
   /*////////////////////////////////*/
-  /*  background-color:red;
-
-  > :nth-child(1){
-    background-color:teal;
+  /*  > side-bonaparte:nth-child(2) {
+  > toolbar-bonaparte:nth-child(2) {
+    padding:0px;
   }
-
-  > :nth-child(2){
-    background-color:tomato;
-  }
-*/
+  */
 }
 bonaparte-sidebar > :nth-child(1) {
   position: relative;
@@ -24027,6 +23428,9 @@ bonaparte-sidebar[data-position="bottom"][open="false"] > :nth-child(1),
 bonaparte-sidebar[position="bottom"][open="false"] > :nth-child(1) {
   min-height: 0rem;
 }
+bonaparte-sidebar > :nth-child(2) {
+  padding: 1rem;
+}
 /*============================
        Global Variables
 ==============================*/
@@ -24034,12 +23438,15 @@ bonaparte-sidebar[position="bottom"][open="false"] > :nth-child(1) {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 bonaparte-sidebar {
   /*DEFINITION*/
   position: relative;
@@ -24047,6 +23454,7 @@ bonaparte-sidebar {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
 }
@@ -24068,6 +23476,7 @@ bonaparte-sidebar > :nth-child(2) {
   height: auto;
   width: auto;
 }
+bonaparte-sidebar:not([data-position]):not([position]),
 bonaparte-sidebar[data-position="left"],
 bonaparte-sidebar[position="left"] {
   -webkit-box-orient: horizontal;
@@ -24100,6 +23509,7 @@ bonaparte-sidebar[position="bottom"] {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
+bonaparte-sidebar:not([data-position]):not([position]) > :nth-child(1),
 bonaparte-sidebar[data-position="left"] > :nth-child(1),
 bonaparte-sidebar[position="left"] > :nth-child(1),
 bonaparte-sidebar[data-position="right"] > :nth-child(1),
@@ -24107,10 +23517,12 @@ bonaparte-sidebar[position="right"] > :nth-child(1) {
   max-width: 0px;
   min-width: 300px;
 }
+bonaparte-sidebar:not([data-position]):not([position])[data-open="false"] > :nth-child(1),
 bonaparte-sidebar[data-position="left"][data-open="false"] > :nth-child(1),
 bonaparte-sidebar[position="left"][data-open="false"] > :nth-child(1),
 bonaparte-sidebar[data-position="right"][data-open="false"] > :nth-child(1),
 bonaparte-sidebar[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-sidebar:not([data-position]):not([position])[open="false"] > :nth-child(1),
 bonaparte-sidebar[data-position="left"][open="false"] > :nth-child(1),
 bonaparte-sidebar[position="left"][open="false"] > :nth-child(1),
 bonaparte-sidebar[data-position="right"][open="false"] > :nth-child(1),
@@ -24143,6 +23555,7 @@ bonaparte-toolbar {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
 }
@@ -24164,6 +23577,7 @@ bonaparte-toolbar > :nth-child(2) {
   height: auto;
   width: auto;
 }
+bonaparte-toolbar:not([data-position]):not([position]),
 bonaparte-toolbar[data-position="left"],
 bonaparte-toolbar[position="left"] {
   -webkit-box-orient: horizontal;
@@ -24196,6 +23610,7 @@ bonaparte-toolbar[position="bottom"] {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
+bonaparte-toolbar:not([data-position]):not([position]) > :nth-child(1),
 bonaparte-toolbar[data-position="left"] > :nth-child(1),
 bonaparte-toolbar[position="left"] > :nth-child(1),
 bonaparte-toolbar[data-position="right"] > :nth-child(1),
@@ -24203,10 +23618,12 @@ bonaparte-toolbar[position="right"] > :nth-child(1) {
   max-width: 0px;
   min-width: 300px;
 }
+bonaparte-toolbar:not([data-position]):not([position])[data-open="false"] > :nth-child(1),
 bonaparte-toolbar[data-position="left"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar[position="left"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar[data-position="right"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar:not([data-position]):not([position])[open="false"] > :nth-child(1),
 bonaparte-toolbar[data-position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar[position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar[data-position="right"][open="false"] > :nth-child(1),
@@ -24252,16 +23669,19 @@ bonaparte-toolbar[data-position="bottom"][open="true"] > :nth-child(1),
 bonaparte-toolbar[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
+bonaparte-toolbar:not([data-position]):not([position]) > :nth-child(1),
 bonaparte-toolbar[data-position="left"] > :nth-child(1),
 bonaparte-toolbar[position="left"] > :nth-child(1),
 bonaparte-toolbar[data-position="right"] > :nth-child(1),
 bonaparte-toolbar[position="right"] > :nth-child(1) {
   min-width: 0rem;
 }
+bonaparte-toolbar:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
 bonaparte-toolbar[data-position="left"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar[position="left"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar[data-position="right"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar:not([data-position]):not([position])[open="true"] > :nth-child(1),
 bonaparte-toolbar[data-position="left"][open="true"] > :nth-child(1),
 bonaparte-toolbar[position="left"][open="true"] > :nth-child(1),
 bonaparte-toolbar[data-position="right"][open="true"] > :nth-child(1),
@@ -24281,10 +23701,14 @@ bonaparte-toolbar {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
   /*////////////////////////////////*/
-  font-weight: 100;
+  /*  > side-bonaparte:nth-child(2) {
+  > toolbar-bonaparte:nth-child(2) {
+    padding:0px;
+  }*/
   /*BUTTON GROUPS*/
 }
 bonaparte-toolbar > :nth-child(1) {
@@ -24305,6 +23729,7 @@ bonaparte-toolbar > :nth-child(2) {
   height: auto;
   width: auto;
 }
+bonaparte-toolbar:not([data-position]):not([position]),
 bonaparte-toolbar[data-position="left"],
 bonaparte-toolbar[position="left"] {
   -webkit-box-orient: horizontal;
@@ -24337,6 +23762,7 @@ bonaparte-toolbar[position="bottom"] {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
+bonaparte-toolbar:not([data-position]):not([position]) > :nth-child(1),
 bonaparte-toolbar[data-position="left"] > :nth-child(1),
 bonaparte-toolbar[position="left"] > :nth-child(1),
 bonaparte-toolbar[data-position="right"] > :nth-child(1),
@@ -24344,10 +23770,12 @@ bonaparte-toolbar[position="right"] > :nth-child(1) {
   max-width: 0px;
   min-width: 20rem;
 }
+bonaparte-toolbar:not([data-position]):not([position])[data-open="false"] > :nth-child(1),
 bonaparte-toolbar[data-position="left"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar[position="left"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar[data-position="right"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar:not([data-position]):not([position])[open="false"] > :nth-child(1),
 bonaparte-toolbar[data-position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar[position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar[data-position="right"][open="false"] > :nth-child(1),
@@ -24393,40 +23821,28 @@ bonaparte-toolbar[data-position="bottom"][open="true"] > :nth-child(1),
 bonaparte-toolbar[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 20rem;
 }
+bonaparte-toolbar:not([data-position]):not([position]) > :nth-child(1),
 bonaparte-toolbar[data-position="left"] > :nth-child(1),
 bonaparte-toolbar[position="left"] > :nth-child(1),
 bonaparte-toolbar[data-position="right"] > :nth-child(1),
 bonaparte-toolbar[position="right"] > :nth-child(1) {
   min-width: 4rem;
 }
+bonaparte-toolbar:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
 bonaparte-toolbar[data-position="left"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar[position="left"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar[data-position="right"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar:not([data-position]):not([position])[open="true"] > :nth-child(1),
 bonaparte-toolbar[data-position="left"][open="true"] > :nth-child(1),
 bonaparte-toolbar[position="left"][open="true"] > :nth-child(1),
 bonaparte-toolbar[data-position="right"][open="true"] > :nth-child(1),
 bonaparte-toolbar[position="right"][open="true"] > :nth-child(1) {
   min-width: 20rem;
 }
-bonaparte-toolbar > cornerstone-bonaparte {
-  background-color: #D9A000;
-  color: #FFFFFF;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 bonaparte-toolbar > :nth-child(2) {
   background-color: #F0F0F0;
+  padding: 1rem;
 }
 bonaparte-toolbar > :nth-child(1) {
   background-color: #F5F5F5;
@@ -24441,15 +23857,16 @@ bonaparte-toolbar > :nth-child(1) {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /*    > * {
+      background-color:transparent !important;
+    }
+*/
 }
 bonaparte-toolbar > :nth-child(1) .header {
   padding: 0 1em 0 2em;
   line-height: 3.1em;
   font-weight: 600;
   text-transform: uppercase;
-}
-bonaparte-toolbar > :nth-child(1) > * {
-  background-color: transparent !important;
 }
 bonaparte-toolbar > :nth-child(1) > *,
 bonaparte-toolbar > :nth-child(1) > * > * {
@@ -24505,6 +23922,7 @@ bonaparte-toolbar.mini {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
 }
@@ -24528,6 +23946,8 @@ bonaparte-toolbar.mini > :nth-child(2) {
   height: auto;
   width: auto;
 }
+bonaparte-toolbar.tiny:not([data-position]):not([position]),
+bonaparte-toolbar.mini:not([data-position]):not([position]),
 bonaparte-toolbar.tiny[data-position="left"],
 bonaparte-toolbar.mini[data-position="left"],
 bonaparte-toolbar.tiny[position="left"],
@@ -24568,6 +23988,8 @@ bonaparte-toolbar.mini[position="bottom"] {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
+bonaparte-toolbar.tiny:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar.mini:not([data-position]):not([position]) > :nth-child(1),
 bonaparte-toolbar.tiny[data-position="left"] > :nth-child(1),
 bonaparte-toolbar.mini[data-position="left"] > :nth-child(1),
 bonaparte-toolbar.tiny[position="left"] > :nth-child(1),
@@ -24579,6 +24001,8 @@ bonaparte-toolbar.mini[position="right"] > :nth-child(1) {
   max-width: 0px;
   min-width: 300px;
 }
+bonaparte-toolbar.tiny:not([data-position]):not([position])[data-open="false"] > :nth-child(1),
+bonaparte-toolbar.mini:not([data-position]):not([position])[data-open="false"] > :nth-child(1),
 bonaparte-toolbar.tiny[data-position="left"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.mini[data-position="left"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.tiny[position="left"][data-open="false"] > :nth-child(1),
@@ -24587,6 +24011,8 @@ bonaparte-toolbar.tiny[data-position="right"][data-open="false"] > :nth-child(1)
 bonaparte-toolbar.mini[data-position="right"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.tiny[position="right"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.mini[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.tiny:not([data-position]):not([position])[open="false"] > :nth-child(1),
+bonaparte-toolbar.mini:not([data-position]):not([position])[open="false"] > :nth-child(1),
 bonaparte-toolbar.tiny[data-position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar.mini[data-position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar.tiny[position="left"][open="false"] > :nth-child(1),
@@ -24664,6 +24090,8 @@ bonaparte-toolbar.tiny[position="bottom"][open="true"] > :nth-child(1),
 bonaparte-toolbar.mini[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
+bonaparte-toolbar.tiny:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar.mini:not([data-position]):not([position]) > :nth-child(1),
 bonaparte-toolbar.tiny[data-position="left"] > :nth-child(1),
 bonaparte-toolbar.mini[data-position="left"] > :nth-child(1),
 bonaparte-toolbar.tiny[position="left"] > :nth-child(1),
@@ -24674,6 +24102,8 @@ bonaparte-toolbar.tiny[position="right"] > :nth-child(1),
 bonaparte-toolbar.mini[position="right"] > :nth-child(1) {
   min-width: 2rem;
 }
+bonaparte-toolbar.tiny:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
 bonaparte-toolbar.tiny[data-position="left"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.mini[data-position="left"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.tiny[position="left"][data-open="true"] > :nth-child(1),
@@ -24682,6 +24112,8 @@ bonaparte-toolbar.tiny[data-position="right"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.mini[data-position="right"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.tiny[position="right"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.mini[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny:not([data-position]):not([position])[open="true"] > :nth-child(1),
+bonaparte-toolbar.mini:not([data-position]):not([position])[open="true"] > :nth-child(1),
 bonaparte-toolbar.tiny[data-position="left"][open="true"] > :nth-child(1),
 bonaparte-toolbar.mini[data-position="left"][open="true"] > :nth-child(1),
 bonaparte-toolbar.tiny[position="left"][open="true"] > :nth-child(1),
@@ -24700,6 +24132,7 @@ bonaparte-toolbar.small {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
 }
@@ -24721,6 +24154,7 @@ bonaparte-toolbar.small > :nth-child(2) {
   height: auto;
   width: auto;
 }
+bonaparte-toolbar.small:not([data-position]):not([position]),
 bonaparte-toolbar.small[data-position="left"],
 bonaparte-toolbar.small[position="left"] {
   -webkit-box-orient: horizontal;
@@ -24753,6 +24187,7 @@ bonaparte-toolbar.small[position="bottom"] {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
+bonaparte-toolbar.small:not([data-position]):not([position]) > :nth-child(1),
 bonaparte-toolbar.small[data-position="left"] > :nth-child(1),
 bonaparte-toolbar.small[position="left"] > :nth-child(1),
 bonaparte-toolbar.small[data-position="right"] > :nth-child(1),
@@ -24760,10 +24195,12 @@ bonaparte-toolbar.small[position="right"] > :nth-child(1) {
   max-width: 0px;
   min-width: 300px;
 }
+bonaparte-toolbar.small:not([data-position]):not([position])[data-open="false"] > :nth-child(1),
 bonaparte-toolbar.small[data-position="left"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.small[position="left"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.small[data-position="right"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.small[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.small:not([data-position]):not([position])[open="false"] > :nth-child(1),
 bonaparte-toolbar.small[data-position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar.small[position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar.small[data-position="right"][open="false"] > :nth-child(1),
@@ -24809,16 +24246,19 @@ bonaparte-toolbar.small[data-position="bottom"][open="true"] > :nth-child(1),
 bonaparte-toolbar.small[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
+bonaparte-toolbar.small:not([data-position]):not([position]) > :nth-child(1),
 bonaparte-toolbar.small[data-position="left"] > :nth-child(1),
 bonaparte-toolbar.small[position="left"] > :nth-child(1),
 bonaparte-toolbar.small[data-position="right"] > :nth-child(1),
 bonaparte-toolbar.small[position="right"] > :nth-child(1) {
   min-width: 3rem;
 }
+bonaparte-toolbar.small:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
 bonaparte-toolbar.small[data-position="left"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.small[position="left"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.small[data-position="right"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.small[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small:not([data-position]):not([position])[open="true"] > :nth-child(1),
 bonaparte-toolbar.small[data-position="left"][open="true"] > :nth-child(1),
 bonaparte-toolbar.small[position="left"][open="true"] > :nth-child(1),
 bonaparte-toolbar.small[data-position="right"][open="true"] > :nth-child(1),
@@ -24834,6 +24274,7 @@ bonaparte-toolbar.big {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
 }
@@ -24857,6 +24298,8 @@ bonaparte-toolbar.big > :nth-child(2) {
   height: auto;
   width: auto;
 }
+bonaparte-toolbar.large:not([data-position]):not([position]),
+bonaparte-toolbar.big:not([data-position]):not([position]),
 bonaparte-toolbar.large[data-position="left"],
 bonaparte-toolbar.big[data-position="left"],
 bonaparte-toolbar.large[position="left"],
@@ -24897,6 +24340,8 @@ bonaparte-toolbar.big[position="bottom"] {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
+bonaparte-toolbar.large:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar.big:not([data-position]):not([position]) > :nth-child(1),
 bonaparte-toolbar.large[data-position="left"] > :nth-child(1),
 bonaparte-toolbar.big[data-position="left"] > :nth-child(1),
 bonaparte-toolbar.large[position="left"] > :nth-child(1),
@@ -24908,6 +24353,8 @@ bonaparte-toolbar.big[position="right"] > :nth-child(1) {
   max-width: 0px;
   min-width: 300px;
 }
+bonaparte-toolbar.large:not([data-position]):not([position])[data-open="false"] > :nth-child(1),
+bonaparte-toolbar.big:not([data-position]):not([position])[data-open="false"] > :nth-child(1),
 bonaparte-toolbar.large[data-position="left"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.big[data-position="left"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.large[position="left"][data-open="false"] > :nth-child(1),
@@ -24916,6 +24363,8 @@ bonaparte-toolbar.large[data-position="right"][data-open="false"] > :nth-child(1
 bonaparte-toolbar.big[data-position="right"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.large[position="right"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.big[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.large:not([data-position]):not([position])[open="false"] > :nth-child(1),
+bonaparte-toolbar.big:not([data-position]):not([position])[open="false"] > :nth-child(1),
 bonaparte-toolbar.large[data-position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar.big[data-position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar.large[position="left"][open="false"] > :nth-child(1),
@@ -24993,6 +24442,8 @@ bonaparte-toolbar.large[position="bottom"][open="true"] > :nth-child(1),
 bonaparte-toolbar.big[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
+bonaparte-toolbar.large:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar.big:not([data-position]):not([position]) > :nth-child(1),
 bonaparte-toolbar.large[data-position="left"] > :nth-child(1),
 bonaparte-toolbar.big[data-position="left"] > :nth-child(1),
 bonaparte-toolbar.large[position="left"] > :nth-child(1),
@@ -25003,6 +24454,8 @@ bonaparte-toolbar.large[position="right"] > :nth-child(1),
 bonaparte-toolbar.big[position="right"] > :nth-child(1) {
   min-width: 5rem;
 }
+bonaparte-toolbar.large:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
 bonaparte-toolbar.large[data-position="left"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.big[data-position="left"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.large[position="left"][data-open="true"] > :nth-child(1),
@@ -25011,6 +24464,8 @@ bonaparte-toolbar.large[data-position="right"][data-open="true"] > :nth-child(1)
 bonaparte-toolbar.big[data-position="right"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.large[position="right"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.big[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large:not([data-position]):not([position])[open="true"] > :nth-child(1),
+bonaparte-toolbar.big:not([data-position]):not([position])[open="true"] > :nth-child(1),
 bonaparte-toolbar.large[data-position="left"][open="true"] > :nth-child(1),
 bonaparte-toolbar.big[data-position="left"][open="true"] > :nth-child(1),
 bonaparte-toolbar.large[position="left"][open="true"] > :nth-child(1),
@@ -25030,6 +24485,7 @@ bonaparte-toolbar.massive {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
 }
@@ -25053,6 +24509,8 @@ bonaparte-toolbar.massive > :nth-child(2) {
   height: auto;
   width: auto;
 }
+bonaparte-toolbar.huge:not([data-position]):not([position]),
+bonaparte-toolbar.massive:not([data-position]):not([position]),
 bonaparte-toolbar.huge[data-position="left"],
 bonaparte-toolbar.massive[data-position="left"],
 bonaparte-toolbar.huge[position="left"],
@@ -25093,6 +24551,8 @@ bonaparte-toolbar.massive[position="bottom"] {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
+bonaparte-toolbar.huge:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar.massive:not([data-position]):not([position]) > :nth-child(1),
 bonaparte-toolbar.huge[data-position="left"] > :nth-child(1),
 bonaparte-toolbar.massive[data-position="left"] > :nth-child(1),
 bonaparte-toolbar.huge[position="left"] > :nth-child(1),
@@ -25104,6 +24564,8 @@ bonaparte-toolbar.massive[position="right"] > :nth-child(1) {
   max-width: 0px;
   min-width: 300px;
 }
+bonaparte-toolbar.huge:not([data-position]):not([position])[data-open="false"] > :nth-child(1),
+bonaparte-toolbar.massive:not([data-position]):not([position])[data-open="false"] > :nth-child(1),
 bonaparte-toolbar.huge[data-position="left"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.massive[data-position="left"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.huge[position="left"][data-open="false"] > :nth-child(1),
@@ -25112,6 +24574,8 @@ bonaparte-toolbar.huge[data-position="right"][data-open="false"] > :nth-child(1)
 bonaparte-toolbar.massive[data-position="right"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.huge[position="right"][data-open="false"] > :nth-child(1),
 bonaparte-toolbar.massive[position="right"][data-open="false"] > :nth-child(1),
+bonaparte-toolbar.huge:not([data-position]):not([position])[open="false"] > :nth-child(1),
+bonaparte-toolbar.massive:not([data-position]):not([position])[open="false"] > :nth-child(1),
 bonaparte-toolbar.huge[data-position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar.massive[data-position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar.huge[position="left"][open="false"] > :nth-child(1),
@@ -25189,6 +24653,8 @@ bonaparte-toolbar.huge[position="bottom"][open="true"] > :nth-child(1),
 bonaparte-toolbar.massive[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
+bonaparte-toolbar.huge:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar.massive:not([data-position]):not([position]) > :nth-child(1),
 bonaparte-toolbar.huge[data-position="left"] > :nth-child(1),
 bonaparte-toolbar.massive[data-position="left"] > :nth-child(1),
 bonaparte-toolbar.huge[position="left"] > :nth-child(1),
@@ -25199,6 +24665,8 @@ bonaparte-toolbar.huge[position="right"] > :nth-child(1),
 bonaparte-toolbar.massive[position="right"] > :nth-child(1) {
   min-width: 6rem;
 }
+bonaparte-toolbar.huge:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
 bonaparte-toolbar.huge[data-position="left"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.massive[data-position="left"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.huge[position="left"][data-open="true"] > :nth-child(1),
@@ -25207,6 +24675,8 @@ bonaparte-toolbar.huge[data-position="right"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.massive[data-position="right"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.huge[position="right"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar.massive[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge:not([data-position]):not([position])[open="true"] > :nth-child(1),
+bonaparte-toolbar.massive:not([data-position]):not([position])[open="true"] > :nth-child(1),
 bonaparte-toolbar.huge[data-position="left"][open="true"] > :nth-child(1),
 bonaparte-toolbar.massive[data-position="left"][open="true"] > :nth-child(1),
 bonaparte-toolbar.huge[position="left"][open="true"] > :nth-child(1),
@@ -25225,12 +24695,15 @@ bonaparte-toolbar.massive[position="right"][open="true"] > :nth-child(1) {
        Colors
 --------------------*/
 /* FONTS */
+/*16px*/
 /*82px*/
 /*44px*/
 /*26px*/
 /*21px*/
 /*16px*/
 /*11px*/
+/*14px*/
+/* CONTAINER */
 bonaparte-content {
   display: block;
   position: relative;
