@@ -17,29 +17,33 @@ body {
   line-height: @lineHeight;
   color: @color-text-dark;
   font-smoothing: @fontSmoothing;
+  background-color:@color-light-3;
 }
 
+.bg-grid {
+  background-image:url("../grid.png");
+}
 
 img {
-  max-width:100%;
+  max-width:100%; 
 }
 
 p {
-  margin: 0.5rem 1rem 0 0.9166667rem;
+  margin: 0.583333rem 1rem 0 0.9166667rem;
   line-height: @lineHeight;
   font-weight: @text-book;    
-  padding:0 0 0.5rem 0;
+  padding:0 0 0.416667rem 0;
 }
 
-p.small.text {
+p.small {
   margin:0rem 1rem 0rem 0.9166667rem; 
 } 
 
-small, .small.text { 
+small, p.small { 
   font-weight:@text-book;
   font-size:0.91667rem;
   line-height:1.5rem;
-  padding:0.3333333rem 0 0.1666667rem 0;
+  padding:0.416666667rem 0 0.08333333rem 0;
 
   b, strong {
     font-weight:@text-semibold;  

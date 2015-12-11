@@ -14,6 +14,7 @@
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -403,6 +404,7 @@ input[type="password"] {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 html,
 body {
   position: relative;
@@ -419,30 +421,34 @@ body {
   line-height: 2rem;
   color: #1A1A1A;
   font-smoothing: false;
+  background-color: #F0F0F0;
+}
+.bg-grid {
+  background-image: url(images/grid-b1414f9940b9709fbc47dfb46bfcdf5d.png);
 }
 img {
   max-width: 100%;
 }
 p {
-  margin: 0.5rem 1rem 0 0.9166667rem;
+  margin: 0.583333rem 1rem 0 0.9166667rem;
   line-height: 2rem;
   font-weight: 400;
-  padding: 0 0 0.5rem 0;
+  padding: 0 0 0.416667rem 0;
 }
-p.small.text {
+p.small {
   margin: 0rem 1rem 0rem 0.9166667rem;
 }
 small,
-.small.text {
+p.small {
   font-weight: 400;
   font-size: 0.91667rem;
   line-height: 1.5rem;
-  padding: 0.3333333rem 0 0.1666667rem 0;
+  padding: 0.416666667rem 0 0.08333333rem 0;
 }
 small b,
-.small.text b,
+p.small b,
 small strong,
-.small.text strong {
+p.small strong {
   font-weight: 600;
 }
 b,
@@ -502,29 +508,205 @@ input::selection {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 .ui.block {
-  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  /*margin:0.5rem 0rem;*/
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  border: 0px;
+  outline: 0px;
+  /*  &.marginless,
+  & + &.marginless,
+  &.marginless + &.marginless {
+    margin:0;
+  }
+*/
+  font-size: 1.33333rem;
+  line-height: 2rem;
+  padding: 1.0833333rem 1rem 0.9188888rem 1rem;
 }
-.ui.block .header {
-  background: #F5F5F5;
+.ui.block.fluid {
+  display: block;
+}
+.ui.block.fluid + .ui.block.fluid {
+  margin: 0.5rem 0;
+}
+.ui.block.icon {
+  text-align: center;
+}
+.ui.block.icon > i.icon {
+  margin: 0px;
+}
+.ui.block.labeled.icon {
+  text-align: left;
+  overflow: hidden;
+  padding-left: 0rem;
+  padding-right: 1rem;
+  direction: ltr;
+}
+.ui.block.labeled.icon > i.icon {
+  float: left;
+  margin-left: 0rem;
+  margin-right: 1rem;
+}
+.ui.block.right.labeled.icon {
+  text-align: right;
+  padding-right: 0rem;
+  padding-left: 1rem;
+  direction: rtl;
+}
+.ui.block.right.labeled.icon > i.icon {
+  float: right;
+  margin-left: 1rem;
+  margin-right: 0rem;
+}
+.ui.block > i.icon {
+  height: auto;
+  margin: 0 1rem 0 0;
+}
+.ui.block > i.icon.right {
+  margin: 0 0 0 1rem;
+}
+.ui.block.icon {
+  min-width: 4rem;
+  min-height: 4rem;
+}
+.ui.block.labeled.icon > .icon {
+  width: 4rem;
+}
+/*.ui.block .header {
+  background: @color-light-2;
   padding: 1rem 1rem;
   margin: 0;
   box-shadow: none;
-  border-bottom: 1px solid #F0F0F0;
+  border-bottom: 1px solid @color-light-3;
   text-transform: uppercase;
   box-sizing: border-box;
 }
+
 .ui.block .header i.icon {
   margin-right: 1rem;
 }
+
 .ui.block .header .button {
   margin: 0 1rem;
 }
+
 .ui.block .header .button.right {
   position: absolute;
   top: 0;
   right: 0;
   margin: 1rem;
+}
+
+*/
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+bonaparte-toolbar > :first-child .ui.block,
+bonaparte-toolbar.tiny > :first-child .ui.block,
+.ui.block.mini,
+.ui.block.tiny {
+  font-size: 0.91667rem;
+  line-height: 1.5rem;
+  padding: 0.25rem 1rem;
+}
+bonaparte-toolbar > :first-child .ui.block.icon,
+bonaparte-toolbar.tiny > :first-child .ui.block.icon,
+.ui.block.mini.icon,
+.ui.block.tiny.icon {
+  min-width: 2rem;
+  min-height: 2rem;
+}
+bonaparte-toolbar > :first-child .ui.block.labeled.icon > .icon,
+bonaparte-toolbar.tiny > :first-child .ui.block.labeled.icon > .icon,
+.ui.block.mini.labeled.icon > .icon,
+.ui.block.tiny.labeled.icon > .icon {
+  width: 2rem;
+}
+bonaparte-toolbar.mini > :first-child .ui.block,
+bonaparte-toolbar.tiny > :first-child .ui.block,
+.ui.block.mini,
+.ui.block.tiny {
+  font-size: 0.91667rem;
+  line-height: 1.5rem;
+  padding: 0.25rem 1rem;
+}
+bonaparte-toolbar.mini > :first-child .ui.block.icon,
+bonaparte-toolbar.tiny > :first-child .ui.block.icon,
+.ui.block.mini.icon,
+.ui.block.tiny.icon {
+  min-width: 2rem;
+  min-height: 2rem;
+}
+bonaparte-toolbar.mini > :first-child .ui.block.labeled.icon > .icon,
+bonaparte-toolbar.tiny > :first-child .ui.block.labeled.icon > .icon,
+.ui.block.mini.labeled.icon > .icon,
+.ui.block.tiny.labeled.icon > .icon {
+  width: 2rem;
+}
+bonaparte-toolbar.small > :first-child .ui.block,
+.ui.block.small {
+  font-size: 1.16666667rem;
+  line-height: 2rem;
+  padding: 0.5rem 1rem;
+}
+bonaparte-toolbar.small > :first-child .ui.block.icon,
+.ui.block.small.icon {
+  min-width: 3rem;
+  min-height: 3rem;
+}
+bonaparte-toolbar.small > :first-child .ui.block.labeled.icon > .icon,
+.ui.block.small.labeled.icon > .icon {
+  width: 3rem;
+}
+bonaparte-toolbar.large > :first-child .ui.block,
+bonaparte-toolbar.big > :first-child .ui.block,
+.ui.block.large,
+.ui.block.big {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  padding: 1.5rem 1.25rem;
+}
+bonaparte-toolbar.large > :first-child .ui.block.icon,
+bonaparte-toolbar.big > :first-child .ui.block.icon,
+.ui.block.large.icon,
+.ui.block.big.icon {
+  min-width: 5rem;
+  min-height: 5rem;
+}
+bonaparte-toolbar.large > :first-child .ui.block.labeled.icon > .icon,
+bonaparte-toolbar.big > :first-child .ui.block.labeled.icon > .icon,
+.ui.block.large.labeled.icon > .icon,
+.ui.block.big.labeled.icon > .icon {
+  width: 5rem;
+}
+bonaparte-toolbar.huge > :first-child .ui.block,
+bonaparte-toolbar.massive > :first-child .ui.block,
+.ui.block.huge,
+.ui.block.massive {
+  font-size: 2.16667rem;
+  line-height: 5rem;
+  padding: 0.5rem 1.5rem;
+}
+bonaparte-toolbar.huge > :first-child .ui.block.icon,
+bonaparte-toolbar.massive > :first-child .ui.block.icon,
+.ui.block.huge.icon,
+.ui.block.massive.icon {
+  min-width: 6rem;
+  min-height: 6rem;
+}
+bonaparte-toolbar.huge > :first-child .ui.block.labeled.icon > .icon,
+bonaparte-toolbar.massive > :first-child .ui.block.labeled.icon > .icon,
+.ui.block.huge.labeled.icon > .icon,
+.ui.block.massive.labeled.icon > .icon {
+  width: 6rem;
 }
 /*============================
        Global Variables
@@ -542,6 +724,206 @@ input::selection {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
+.ui.block {
+  position: relative;
+  display: inline-block;
+  /*margin:0.5rem 0rem;*/
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  border: 0px;
+  outline: 0px;
+  /*  &.marginless,
+  & + &.marginless,
+  &.marginless + &.marginless {
+    margin:0;
+  }
+*/
+  font-size: 1.33333rem;
+  line-height: 2rem;
+  padding: 1.0833333rem 1rem 0.9188888rem 1rem;
+}
+.ui.block.fluid {
+  display: block;
+}
+.ui.block.fluid + .ui.block.fluid {
+  margin: 0.5rem 0;
+}
+.ui.block.icon {
+  text-align: center;
+}
+.ui.block.icon > i.icon {
+  margin: 0px;
+}
+.ui.block.labeled.icon {
+  text-align: left;
+  overflow: hidden;
+  padding-left: 0rem;
+  padding-right: 1rem;
+  direction: ltr;
+}
+.ui.block.labeled.icon > i.icon {
+  float: left;
+  margin-left: 0rem;
+  margin-right: 1rem;
+}
+.ui.block.right.labeled.icon {
+  text-align: right;
+  padding-right: 0rem;
+  padding-left: 1rem;
+  direction: rtl;
+}
+.ui.block.right.labeled.icon > i.icon {
+  float: right;
+  margin-left: 1rem;
+  margin-right: 0rem;
+}
+.ui.block > i.icon {
+  height: auto;
+  margin: 0 1rem 0 0;
+}
+.ui.block > i.icon.right {
+  margin: 0 0 0 1rem;
+}
+.ui.block.icon {
+  min-width: 4rem;
+  min-height: 4rem;
+}
+.ui.block.labeled.icon > .icon {
+  width: 4rem;
+}
+/*.ui.block .header {
+  background: @color-light-2;
+  padding: 1rem 1rem;
+  margin: 0;
+  box-shadow: none;
+  border-bottom: 1px solid @color-light-3;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.ui.block .header i.icon {
+  margin-right: 1rem;
+}
+
+.ui.block .header .button {
+  margin: 0 1rem;
+}
+
+.ui.block .header .button.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+}
+
+*/
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+bonaparte-toolbar > :first-child .ui.block,
+bonaparte-toolbar.tiny > :first-child .ui.block,
+.ui.block.mini,
+.ui.block.tiny {
+  font-size: 0.91667rem;
+  line-height: 1.5rem;
+  padding: 0.25rem 1rem;
+}
+bonaparte-toolbar > :first-child .ui.block.icon,
+bonaparte-toolbar.tiny > :first-child .ui.block.icon,
+.ui.block.mini.icon,
+.ui.block.tiny.icon {
+  min-width: 2rem;
+  min-height: 2rem;
+}
+bonaparte-toolbar > :first-child .ui.block.labeled.icon > .icon,
+bonaparte-toolbar.tiny > :first-child .ui.block.labeled.icon > .icon,
+.ui.block.mini.labeled.icon > .icon,
+.ui.block.tiny.labeled.icon > .icon {
+  width: 2rem;
+}
+bonaparte-toolbar.mini > :first-child .ui.block,
+bonaparte-toolbar.tiny > :first-child .ui.block,
+.ui.block.mini,
+.ui.block.tiny {
+  font-size: 0.91667rem;
+  line-height: 1.5rem;
+  padding: 0.25rem 1rem;
+}
+bonaparte-toolbar.mini > :first-child .ui.block.icon,
+bonaparte-toolbar.tiny > :first-child .ui.block.icon,
+.ui.block.mini.icon,
+.ui.block.tiny.icon {
+  min-width: 2rem;
+  min-height: 2rem;
+}
+bonaparte-toolbar.mini > :first-child .ui.block.labeled.icon > .icon,
+bonaparte-toolbar.tiny > :first-child .ui.block.labeled.icon > .icon,
+.ui.block.mini.labeled.icon > .icon,
+.ui.block.tiny.labeled.icon > .icon {
+  width: 2rem;
+}
+bonaparte-toolbar.small > :first-child .ui.block,
+.ui.block.small {
+  font-size: 1.16666667rem;
+  line-height: 2rem;
+  padding: 0.5rem 1rem;
+}
+bonaparte-toolbar.small > :first-child .ui.block.icon,
+.ui.block.small.icon {
+  min-width: 3rem;
+  min-height: 3rem;
+}
+bonaparte-toolbar.small > :first-child .ui.block.labeled.icon > .icon,
+.ui.block.small.labeled.icon > .icon {
+  width: 3rem;
+}
+bonaparte-toolbar.large > :first-child .ui.block,
+bonaparte-toolbar.big > :first-child .ui.block,
+.ui.block.large,
+.ui.block.big {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  padding: 1.5rem 1.25rem;
+}
+bonaparte-toolbar.large > :first-child .ui.block.icon,
+bonaparte-toolbar.big > :first-child .ui.block.icon,
+.ui.block.large.icon,
+.ui.block.big.icon {
+  min-width: 5rem;
+  min-height: 5rem;
+}
+bonaparte-toolbar.large > :first-child .ui.block.labeled.icon > .icon,
+bonaparte-toolbar.big > :first-child .ui.block.labeled.icon > .icon,
+.ui.block.large.labeled.icon > .icon,
+.ui.block.big.labeled.icon > .icon {
+  width: 5rem;
+}
+bonaparte-toolbar.huge > :first-child .ui.block,
+bonaparte-toolbar.massive > :first-child .ui.block,
+.ui.block.huge,
+.ui.block.massive {
+  font-size: 2.16667rem;
+  line-height: 5rem;
+  padding: 0.5rem 1.5rem;
+}
+bonaparte-toolbar.huge > :first-child .ui.block.icon,
+bonaparte-toolbar.massive > :first-child .ui.block.icon,
+.ui.block.huge.icon,
+.ui.block.massive.icon {
+  min-width: 6rem;
+  min-height: 6rem;
+}
+bonaparte-toolbar.huge > :first-child .ui.block.labeled.icon > .icon,
+bonaparte-toolbar.massive > :first-child .ui.block.labeled.icon > .icon,
+.ui.block.huge.labeled.icon > .icon,
+.ui.block.massive.labeled.icon > .icon {
+  width: 6rem;
+}
 .ui.button,
 button.ui {
   /***********************
@@ -559,19 +941,22 @@ button.ui {
   text-align: center;
   border: 0px;
   outline: 0px;
-  /*  & + & {
-    margin-left:1rem;
-  }
-*/
   /*  &.marginless,
   & + &.marginless,
   &.marginless + &.marginless {
     margin:0;
   }
 */
+  /*  & + & {
+    margin-left:1rem;
+  }
+*/
   /*-------------------
          Animated
   --------------------*/
+  font-size: 1.33333rem;
+  line-height: 2rem;
+  padding: 1.0833333rem 1rem 0.9188888rem 1rem;
   /*  &.transparent:after {
     top:@underlineCorrection;
   } 
@@ -581,6 +966,80 @@ button.ui {
   ************************/
   color: #D9A000;
   background-color: #FAFAFA;
+}
+.ui.button.fluid,
+button.ui.fluid,
+.ui.buttons.fluid button.ui,
+.ui.buttons.fluid .ui.button {
+  display: block;
+}
+.ui.button.fluid + .ui.button.fluid,
+.ui.button.fluid + button.ui.fluid,
+button.ui.fluid + .ui.button.fluid,
+button.ui.fluid + button.ui.fluid,
+.ui.buttons.fluid button.ui + .ui.buttons.fluid button.ui,
+.ui.buttons.fluid button.ui + button.ui.fluid,
+button.ui.fluid + .ui.buttons.fluid button.ui,
+.ui.buttons.fluid .ui.button + .ui.buttons.fluid .ui.button,
+.ui.buttons.fluid .ui.button + button.ui.fluid,
+button.ui.fluid + .ui.buttons.fluid .ui.button {
+  margin: 0.5rem 0;
+}
+.ui.button.icon,
+button.ui.icon,
+.ui.buttons.icon button.ui,
+.ui.buttons.icon .ui.button {
+  text-align: center;
+}
+.ui.button.icon > i.icon,
+button.ui.icon > i.icon,
+.ui.buttons.icon button.ui > i.icon,
+.ui.buttons.icon .ui.button > i.icon {
+  margin: 0px;
+}
+.ui.button.labeled.icon,
+button.ui.labeled.icon,
+.ui.buttons.labeled.icon button.ui,
+.ui.buttons.labeled.icon .ui.button {
+  text-align: left;
+  overflow: hidden;
+  padding-left: 0rem;
+  padding-right: 1rem;
+  direction: ltr;
+}
+.ui.button.labeled.icon > i.icon,
+button.ui.labeled.icon > i.icon,
+.ui.buttons.labeled.icon button.ui > i.icon,
+.ui.buttons.labeled.icon .ui.button > i.icon {
+  float: left;
+  margin-left: 0rem;
+  margin-right: 1rem;
+}
+.ui.button.right.labeled.icon,
+button.ui.right.labeled.icon,
+.ui.buttons.right.labeled.icon button.ui,
+.ui.buttons.right.labeled.icon .ui.button {
+  text-align: right;
+  padding-right: 0rem;
+  padding-left: 1rem;
+  direction: rtl;
+}
+.ui.button.right.labeled.icon > i.icon,
+button.ui.right.labeled.icon > i.icon,
+.ui.buttons.right.labeled.icon button.ui > i.icon,
+.ui.buttons.right.labeled.icon .ui.button > i.icon {
+  float: right;
+  margin-left: 1rem;
+  margin-right: 0rem;
+}
+.ui.button > i.icon,
+button.ui > i.icon {
+  height: auto;
+  margin: 0 1rem 0 0;
+}
+.ui.button > i.icon.right,
+button.ui > i.icon.right {
+  margin: 0 0 0 1rem;
 }
 .ui.button:after,
 button.ui:after {
@@ -725,80 +1184,6 @@ button.ui.toggle-right:before,
   border-width: 0px;
   border-right-width: 3px;
 }
-.ui.button.fluid,
-button.ui.fluid,
-.ui.buttons.fluid button.ui,
-.ui.buttons.fluid .ui.button {
-  display: block;
-}
-.ui.button.fluid + .ui.button.fluid,
-.ui.button.fluid + button.ui.fluid,
-button.ui.fluid + .ui.button.fluid,
-button.ui.fluid + button.ui.fluid,
-.ui.buttons.fluid button.ui + .ui.buttons.fluid button.ui,
-.ui.buttons.fluid button.ui + button.ui.fluid,
-button.ui.fluid + .ui.buttons.fluid button.ui,
-.ui.buttons.fluid .ui.button + .ui.buttons.fluid .ui.button,
-.ui.buttons.fluid .ui.button + button.ui.fluid,
-button.ui.fluid + .ui.buttons.fluid .ui.button {
-  margin: 0.5rem 0;
-}
-.ui.button.icon,
-button.ui.icon,
-.ui.buttons.icon button.ui,
-.ui.buttons.icon .ui.button {
-  text-align: center;
-}
-.ui.button.icon > i.icon,
-button.ui.icon > i.icon,
-.ui.buttons.icon button.ui > i.icon,
-.ui.buttons.icon .ui.button > i.icon {
-  margin: 0px;
-}
-.ui.button.labeled.icon,
-button.ui.labeled.icon,
-.ui.buttons.labeled.icon button.ui,
-.ui.buttons.labeled.icon .ui.button {
-  text-align: left;
-  overflow: hidden;
-  padding-left: 0rem;
-  padding-right: 1rem;
-  direction: ltr;
-}
-.ui.button.labeled.icon > i.icon,
-button.ui.labeled.icon > i.icon,
-.ui.buttons.labeled.icon button.ui > i.icon,
-.ui.buttons.labeled.icon .ui.button > i.icon {
-  float: left;
-  margin-left: 0rem;
-  margin-right: 1rem;
-}
-.ui.button.right.labeled.icon,
-button.ui.right.labeled.icon,
-.ui.buttons.right.labeled.icon button.ui,
-.ui.buttons.right.labeled.icon .ui.button {
-  text-align: right;
-  padding-right: 0rem;
-  padding-left: 1rem;
-  direction: rtl;
-}
-.ui.button.right.labeled.icon > i.icon,
-button.ui.right.labeled.icon > i.icon,
-.ui.buttons.right.labeled.icon button.ui > i.icon,
-.ui.buttons.right.labeled.icon .ui.button > i.icon {
-  float: right;
-  margin-left: 1rem;
-  margin-right: 0rem;
-}
-.ui.button > i.icon,
-button.ui > i.icon {
-  height: auto;
-  margin: 0 1rem 0 0;
-}
-.ui.button > i.icon.right,
-button.ui > i.icon.right {
-  margin: 0 0 0 1rem;
-}
 .ui.button.animated,
 button.ui.animated {
   position: relative;
@@ -928,14 +1313,6 @@ button.ui.animated.fade:hover .hidden.content {
       -ms-transform: scale(1);
           transform: scale(1);
 }
-.ui.button,
-button.ui,
-.ui.button .hidden.content,
-button.ui .hidden.content {
-  font-size: 1.33333rem;
-  line-height: 2rem;
-  padding: 1.0833333rem 1rem 0.9188888rem 1rem;
-}
 .ui.button.icon,
 button.ui.icon,
 .ui.buttons.icon button.ui,
@@ -943,27 +1320,30 @@ button.ui.icon,
   min-width: 4rem;
   min-height: 4rem;
 }
-.ui.button.animated .hidden.content,
-button.ui.animated .hidden.content {
-  position: absolute;
-  font-size: 1em;
-  height: 4rem;
-  margin-top: -2rem;
-}
 .ui.button.labeled.icon > .icon,
 button.ui.labeled.icon > .icon,
 .ui.buttons.labeled.icon button.ui > .icon,
 .ui.buttons.labeled.icon .ui.button > .icon {
   width: 4rem;
 }
+.ui.button.animated .hidden.content,
+button.ui.animated .hidden.content {
+  font-size: 1.33333rem;
+  line-height: 2rem;
+  padding: 1.0833333rem 1rem 0.9188888rem 1rem;
+  position: absolute;
+  font-size: 1em;
+  height: 4rem;
+  margin-top: -2rem;
+}
 .ui.button.toggle-top:before,
 button.ui.toggle-top:before,
 .ui.buttons.toggle-top .ui.button:before,
 .ui.buttons.toggle-top button.ui:before {
   margin: 0px;
-  margin-top: -3px;
+  margin-top: -3p;
   border-width: 0px;
-  border-top-width: 3px;
+  border-top-width: 3p;
 }
 .ui.button.toggle-right:before,
 button.ui.toggle-right:before,
@@ -972,9 +1352,9 @@ button.ui.toggle-right:before,
 .ui.buttons.conditional .ui.button:last-child:before,
 .ui.buttons.conditional button.ui:last-child:before {
   margin: 0px;
-  margin-right: -3px;
+  margin-right: -3p;
   border-width: 0px;
-  border-right-width: 3px;
+  border-right-width: 3p;
 }
 .ui.button.toggle:before,
 button.ui.toggle:before,
@@ -987,9 +1367,9 @@ button.ui.toggle-bottom:before,
 .ui.buttons.toggle button.ui:before,
 .ui.buttons.toggle-bottom button.ui:before {
   margin: 0px;
-  margin-bottom: -3px;
+  margin-bottom: -3p;
   border-width: 0px;
-  border-bottom-width: 3px;
+  border-bottom-width: 3p;
 }
 .ui.button.toggle-left:before,
 button.ui.toggle-left:before,
@@ -998,9 +1378,9 @@ button.ui.toggle-left:before,
 .ui.buttons.conditional .ui.button:first-child:before,
 .ui.buttons.conditional button.ui:first-child:before {
   margin: 0px;
-  margin-left: -3px;
+  margin-left: -3p;
   border-width: 0px;
-  border-left-width: 3px;
+  border-left-width: 3p;
 }
 .ui.button:after,
 button.ui:after {
@@ -2497,9 +2877,9 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
 .ui.buttons.conditional button.ui:first-child:before,
 .ui.buttons.conditional .ui.button:first-child:before {
   margin: 0px;
-  margin-left: -3px;
+  margin-left: -3p;
   border-width: 0px;
-  border-left-width: 3px;
+  border-left-width: 3p;
 }
 .ui.buttons.conditional button.ui:not(:first-child):not(:last-child),
 .ui.buttons.conditional .ui.button:not(:first-child):not(:last-child) {
@@ -2513,9 +2893,9 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
 .ui.buttons.conditional button.ui:last-child:before,
 .ui.buttons.conditional .ui.button:last-child:before {
   margin: 0px;
-  margin-right: -3px;
+  margin-right: -3p;
   border-width: 0px;
-  border-right-width: 3px;
+  border-right-width: 3p;
 }
 .ui.buttons.conditional .or {
   height: 4rem;
@@ -2533,16 +2913,16 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
 .ui.buttons.toggle-top .ui.button:before,
 .ui.buttons.toggle-top button.ui:before {
   margin: 0px;
-  margin-top: -3px;
+  margin-top: -3p;
   border-width: 0px;
-  border-top-width: 3px;
+  border-top-width: 3p;
 }
 .ui.buttons.toggle-right .ui.button:before,
 .ui.buttons.toggle-right button.ui:before {
   margin: 0px;
-  margin-right: -3px;
+  margin-right: -3p;
   border-width: 0px;
-  border-right-width: 3px;
+  border-right-width: 3p;
 }
 .ui.buttons.toggle .ui.button:before,
 .ui.buttons.conditional .ui.button:before,
@@ -2551,16 +2931,16 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
 .ui.buttons.conditional button.ui:before,
 .ui.buttons.toggle-bottom button.ui:before {
   margin: 0px;
-  margin-bottom: -3px;
+  margin-bottom: -3p;
   border-width: 0px;
-  border-bottom-width: 3px;
+  border-bottom-width: 3p;
 }
 .ui.buttons.toggle-left .ui.button:before,
 .ui.buttons.toggle-left button.ui:before {
   margin: 0px;
-  margin-left: -3px;
+  margin-left: -3p;
   border-width: 0px;
-  border-left-width: 3px;
+  border-left-width: 3p;
 }
 /*////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
@@ -2588,7 +2968,6 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
 /*////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
-/*////////////////////////////////////////////////////////////////////*/
 bonaparte-toolbar.mini > *:first-child button.ui,
 bonaparte-toolbar.mini > *:first-child .ui.button,
 .ui.mini.buttons button.ui,
@@ -2601,38 +2980,13 @@ bonaparte-toolbar.tiny > *:first-child .ui.button,
 .ui.tiny.buttons .ui.button,
 button.ui.tiny,
 .ui.button.tiny {
+  font-size: 0.91667rem;
+  line-height: 1.5rem;
+  padding: 0.25rem 1rem;
   /*  &.transparent:after {
     top:@underlineCorrection;
   } 
 */
-}
-bonaparte-toolbar.mini > *:first-child button.ui,
-bonaparte-toolbar.mini > *:first-child .ui.button,
-.ui.mini.buttons button.ui,
-.ui.mini.buttons .ui.button,
-button.ui.mini,
-.ui.button.mini,
-bonaparte-toolbar.tiny > *:first-child button.ui,
-bonaparte-toolbar.tiny > *:first-child .ui.button,
-.ui.tiny.buttons button.ui,
-.ui.tiny.buttons .ui.button,
-button.ui.tiny,
-.ui.button.tiny,
-bonaparte-toolbar.mini > *:first-child button.ui .hidden.content,
-bonaparte-toolbar.mini > *:first-child .ui.button .hidden.content,
-.ui.mini.buttons button.ui .hidden.content,
-.ui.mini.buttons .ui.button .hidden.content,
-button.ui.mini .hidden.content,
-.ui.button.mini .hidden.content,
-bonaparte-toolbar.tiny > *:first-child button.ui .hidden.content,
-bonaparte-toolbar.tiny > *:first-child .ui.button .hidden.content,
-.ui.tiny.buttons button.ui .hidden.content,
-.ui.tiny.buttons .ui.button .hidden.content,
-button.ui.tiny .hidden.content,
-.ui.button.tiny .hidden.content {
-  font-size: 0.91667rem;
-  line-height: 1.5rem;
-  padding: 0.25rem 1rem;
 }
 bonaparte-toolbar.mini > *:first-child button.ui.icon,
 bonaparte-toolbar.mini > *:first-child .ui.button.icon,
@@ -2657,23 +3011,6 @@ bonaparte-toolbar.tiny > *:first-child .ui.buttons.icon .ui.button,
   min-width: 2rem;
   min-height: 2rem;
 }
-bonaparte-toolbar.mini > *:first-child button.ui.animated .hidden.content,
-bonaparte-toolbar.mini > *:first-child .ui.button.animated .hidden.content,
-.ui.mini.buttons button.ui.animated .hidden.content,
-.ui.mini.buttons .ui.button.animated .hidden.content,
-button.ui.mini.animated .hidden.content,
-.ui.button.mini.animated .hidden.content,
-bonaparte-toolbar.tiny > *:first-child button.ui.animated .hidden.content,
-bonaparte-toolbar.tiny > *:first-child .ui.button.animated .hidden.content,
-.ui.tiny.buttons button.ui.animated .hidden.content,
-.ui.tiny.buttons .ui.button.animated .hidden.content,
-button.ui.tiny.animated .hidden.content,
-.ui.button.tiny.animated .hidden.content {
-  position: absolute;
-  font-size: 1em;
-  height: 2rem;
-  margin-top: -1rem;
-}
 bonaparte-toolbar.mini > *:first-child button.ui.labeled.icon > .icon,
 bonaparte-toolbar.mini > *:first-child .ui.button.labeled.icon > .icon,
 .ui.mini.buttons button.ui.labeled.icon > .icon,
@@ -2695,6 +3032,26 @@ bonaparte-toolbar.mini > *:first-child .ui.buttons.labeled.icon .ui.button > .ic
 bonaparte-toolbar.tiny > *:first-child .ui.buttons.labeled.icon .ui.button > .icon,
 .ui.tiny.buttons .ui.buttons.labeled.icon .ui.button > .icon {
   width: 2rem;
+}
+bonaparte-toolbar.mini > *:first-child button.ui.animated .hidden.content,
+bonaparte-toolbar.mini > *:first-child .ui.button.animated .hidden.content,
+.ui.mini.buttons button.ui.animated .hidden.content,
+.ui.mini.buttons .ui.button.animated .hidden.content,
+button.ui.mini.animated .hidden.content,
+.ui.button.mini.animated .hidden.content,
+bonaparte-toolbar.tiny > *:first-child button.ui.animated .hidden.content,
+bonaparte-toolbar.tiny > *:first-child .ui.button.animated .hidden.content,
+.ui.tiny.buttons button.ui.animated .hidden.content,
+.ui.tiny.buttons .ui.button.animated .hidden.content,
+button.ui.tiny.animated .hidden.content,
+.ui.button.tiny.animated .hidden.content {
+  font-size: 0.91667rem;
+  line-height: 1.5rem;
+  padding: 0.25rem 1rem;
+  position: absolute;
+  font-size: 1em;
+  height: 2rem;
+  margin-top: -1rem;
 }
 bonaparte-toolbar.mini > *:first-child button.ui.toggle-top:before,
 bonaparte-toolbar.mini > *:first-child .ui.button.toggle-top:before,
@@ -3029,26 +3386,13 @@ bonaparte-toolbar.small > *:first-child .ui.button,
 .ui.small.buttons .ui.button,
 button.ui.small,
 .ui.button.small {
+  font-size: 1.16666667rem;
+  line-height: 2rem;
+  padding: 0.5rem 1rem;
   /*  &.transparent:after {
     top:@underlineCorrection;
   } 
 */
-}
-bonaparte-toolbar.small > *:first-child button.ui,
-bonaparte-toolbar.small > *:first-child .ui.button,
-.ui.small.buttons button.ui,
-.ui.small.buttons .ui.button,
-button.ui.small,
-.ui.button.small,
-bonaparte-toolbar.small > *:first-child button.ui .hidden.content,
-bonaparte-toolbar.small > *:first-child .ui.button .hidden.content,
-.ui.small.buttons button.ui .hidden.content,
-.ui.small.buttons .ui.button .hidden.content,
-button.ui.small .hidden.content,
-.ui.button.small .hidden.content {
-  font-size: 1.16666667rem;
-  line-height: 2rem;
-  padding: 0.5rem 1rem;
 }
 bonaparte-toolbar.small > *:first-child button.ui.icon,
 bonaparte-toolbar.small > *:first-child .ui.button.icon,
@@ -3063,17 +3407,6 @@ bonaparte-toolbar.small > *:first-child .ui.buttons.icon .ui.button,
   min-width: 3rem;
   min-height: 3rem;
 }
-bonaparte-toolbar.small > *:first-child button.ui.animated .hidden.content,
-bonaparte-toolbar.small > *:first-child .ui.button.animated .hidden.content,
-.ui.small.buttons button.ui.animated .hidden.content,
-.ui.small.buttons .ui.button.animated .hidden.content,
-button.ui.small.animated .hidden.content,
-.ui.button.small.animated .hidden.content {
-  position: absolute;
-  font-size: 1em;
-  height: 3rem;
-  margin-top: -1.5rem;
-}
 bonaparte-toolbar.small > *:first-child button.ui.labeled.icon > .icon,
 bonaparte-toolbar.small > *:first-child .ui.button.labeled.icon > .icon,
 .ui.small.buttons button.ui.labeled.icon > .icon,
@@ -3085,6 +3418,20 @@ bonaparte-toolbar.small > *:first-child .ui.buttons.labeled.icon button.ui > .ic
 bonaparte-toolbar.small > *:first-child .ui.buttons.labeled.icon .ui.button > .icon,
 .ui.small.buttons .ui.buttons.labeled.icon .ui.button > .icon {
   width: 3rem;
+}
+bonaparte-toolbar.small > *:first-child button.ui.animated .hidden.content,
+bonaparte-toolbar.small > *:first-child .ui.button.animated .hidden.content,
+.ui.small.buttons button.ui.animated .hidden.content,
+.ui.small.buttons .ui.button.animated .hidden.content,
+button.ui.small.animated .hidden.content,
+.ui.button.small.animated .hidden.content {
+  font-size: 1.16666667rem;
+  line-height: 2rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  font-size: 1em;
+  height: 3rem;
+  margin-top: -1.5rem;
 }
 bonaparte-toolbar.small > *:first-child button.ui.toggle-top:before,
 bonaparte-toolbar.small > *:first-child .ui.button.toggle-top:before,
@@ -3309,38 +3656,13 @@ bonaparte-toolbar.big > *:first-child .ui.button,
 .ui.big.buttons .ui.button,
 button.ui.big,
 .ui.big.button {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  padding: 1.5rem 1.25rem;
   /*  &.transparent:after {
     top:@underlineCorrection;
   } 
 */
-}
-bonaparte-toolbar.large > *:first-child button.ui,
-bonaparte-toolbar.large > *:first-child .ui.button,
-.ui.large.buttons button.ui,
-.ui.large.buttons .ui.button,
-button.ui.large,
-.ui.large.button,
-bonaparte-toolbar.big > *:first-child button.ui,
-bonaparte-toolbar.big > *:first-child .ui.button,
-.ui.big.buttons button.ui,
-.ui.big.buttons .ui.button,
-button.ui.big,
-.ui.big.button,
-bonaparte-toolbar.large > *:first-child button.ui .hidden.content,
-bonaparte-toolbar.large > *:first-child .ui.button .hidden.content,
-.ui.large.buttons button.ui .hidden.content,
-.ui.large.buttons .ui.button .hidden.content,
-button.ui.large .hidden.content,
-.ui.large.button .hidden.content,
-bonaparte-toolbar.big > *:first-child button.ui .hidden.content,
-bonaparte-toolbar.big > *:first-child .ui.button .hidden.content,
-.ui.big.buttons button.ui .hidden.content,
-.ui.big.buttons .ui.button .hidden.content,
-button.ui.big .hidden.content,
-.ui.big.button .hidden.content {
-  font-size: 1.75rem;
-  line-height: 2rem;
-  padding: 1.5rem 1.25rem;
 }
 bonaparte-toolbar.large > *:first-child button.ui.icon,
 bonaparte-toolbar.large > *:first-child .ui.button.icon,
@@ -3365,23 +3687,6 @@ bonaparte-toolbar.big > *:first-child .ui.buttons.icon .ui.button,
   min-width: 5rem;
   min-height: 5rem;
 }
-bonaparte-toolbar.large > *:first-child button.ui.animated .hidden.content,
-bonaparte-toolbar.large > *:first-child .ui.button.animated .hidden.content,
-.ui.large.buttons button.ui.animated .hidden.content,
-.ui.large.buttons .ui.button.animated .hidden.content,
-button.ui.large.animated .hidden.content,
-.ui.large.button.animated .hidden.content,
-bonaparte-toolbar.big > *:first-child button.ui.animated .hidden.content,
-bonaparte-toolbar.big > *:first-child .ui.button.animated .hidden.content,
-.ui.big.buttons button.ui.animated .hidden.content,
-.ui.big.buttons .ui.button.animated .hidden.content,
-button.ui.big.animated .hidden.content,
-.ui.big.button.animated .hidden.content {
-  position: absolute;
-  font-size: 1em;
-  height: 5rem;
-  margin-top: -2.5rem;
-}
 bonaparte-toolbar.large > *:first-child button.ui.labeled.icon > .icon,
 bonaparte-toolbar.large > *:first-child .ui.button.labeled.icon > .icon,
 .ui.large.buttons button.ui.labeled.icon > .icon,
@@ -3403,6 +3708,26 @@ bonaparte-toolbar.large > *:first-child .ui.buttons.labeled.icon .ui.button > .i
 bonaparte-toolbar.big > *:first-child .ui.buttons.labeled.icon .ui.button > .icon,
 .ui.big.buttons .ui.buttons.labeled.icon .ui.button > .icon {
   width: 5rem;
+}
+bonaparte-toolbar.large > *:first-child button.ui.animated .hidden.content,
+bonaparte-toolbar.large > *:first-child .ui.button.animated .hidden.content,
+.ui.large.buttons button.ui.animated .hidden.content,
+.ui.large.buttons .ui.button.animated .hidden.content,
+button.ui.large.animated .hidden.content,
+.ui.large.button.animated .hidden.content,
+bonaparte-toolbar.big > *:first-child button.ui.animated .hidden.content,
+bonaparte-toolbar.big > *:first-child .ui.button.animated .hidden.content,
+.ui.big.buttons button.ui.animated .hidden.content,
+.ui.big.buttons .ui.button.animated .hidden.content,
+button.ui.big.animated .hidden.content,
+.ui.big.button.animated .hidden.content {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  padding: 1.5rem 1.25rem;
+  position: absolute;
+  font-size: 1em;
+  height: 5rem;
+  margin-top: -2.5rem;
 }
 bonaparte-toolbar.large > *:first-child button.ui.toggle-top:before,
 bonaparte-toolbar.large > *:first-child .ui.button.toggle-top:before,
@@ -3743,38 +4068,13 @@ bonaparte-toolbar.massive > *:first-child .ui.button,
 .ui.massive.buttons .ui.button,
 button.ui.massive,
 .ui.button.massive {
+  font-size: 2.16667rem;
+  line-height: 5rem;
+  padding: 0.5rem 1.5rem;
   /*  &.transparent:after {
     top:@underlineCorrection;
   } 
 */
-}
-bonaparte-toolbar.huge > *:first-child button.ui,
-bonaparte-toolbar.huge > *:first-child .ui.button,
-.ui.huge.buttons button.ui,
-.ui.huge.buttons .ui.button,
-button.ui.huge,
-.ui.huge.button,
-bonaparte-toolbar.massive > *:first-child button.ui,
-bonaparte-toolbar.massive > *:first-child .ui.button,
-.ui.massive.buttons button.ui,
-.ui.massive.buttons .ui.button,
-button.ui.massive,
-.ui.button.massive,
-bonaparte-toolbar.huge > *:first-child button.ui .hidden.content,
-bonaparte-toolbar.huge > *:first-child .ui.button .hidden.content,
-.ui.huge.buttons button.ui .hidden.content,
-.ui.huge.buttons .ui.button .hidden.content,
-button.ui.huge .hidden.content,
-.ui.huge.button .hidden.content,
-bonaparte-toolbar.massive > *:first-child button.ui .hidden.content,
-bonaparte-toolbar.massive > *:first-child .ui.button .hidden.content,
-.ui.massive.buttons button.ui .hidden.content,
-.ui.massive.buttons .ui.button .hidden.content,
-button.ui.massive .hidden.content,
-.ui.button.massive .hidden.content {
-  font-size: 2.16667rem;
-  line-height: 5rem;
-  padding: 0.5rem 1.5rem;
 }
 bonaparte-toolbar.huge > *:first-child button.ui.icon,
 bonaparte-toolbar.huge > *:first-child .ui.button.icon,
@@ -3799,23 +4099,6 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.icon .ui.button,
   min-width: 6rem;
   min-height: 6rem;
 }
-bonaparte-toolbar.huge > *:first-child button.ui.animated .hidden.content,
-bonaparte-toolbar.huge > *:first-child .ui.button.animated .hidden.content,
-.ui.huge.buttons button.ui.animated .hidden.content,
-.ui.huge.buttons .ui.button.animated .hidden.content,
-button.ui.huge.animated .hidden.content,
-.ui.huge.button.animated .hidden.content,
-bonaparte-toolbar.massive > *:first-child button.ui.animated .hidden.content,
-bonaparte-toolbar.massive > *:first-child .ui.button.animated .hidden.content,
-.ui.massive.buttons button.ui.animated .hidden.content,
-.ui.massive.buttons .ui.button.animated .hidden.content,
-button.ui.massive.animated .hidden.content,
-.ui.button.massive.animated .hidden.content {
-  position: absolute;
-  font-size: 1em;
-  height: 6rem;
-  margin-top: -3rem;
-}
 bonaparte-toolbar.huge > *:first-child button.ui.labeled.icon > .icon,
 bonaparte-toolbar.huge > *:first-child .ui.button.labeled.icon > .icon,
 .ui.huge.buttons button.ui.labeled.icon > .icon,
@@ -3837,6 +4120,26 @@ bonaparte-toolbar.huge > *:first-child .ui.buttons.labeled.icon .ui.button > .ic
 bonaparte-toolbar.massive > *:first-child .ui.buttons.labeled.icon .ui.button > .icon,
 .ui.massive.buttons .ui.buttons.labeled.icon .ui.button > .icon {
   width: 6rem;
+}
+bonaparte-toolbar.huge > *:first-child button.ui.animated .hidden.content,
+bonaparte-toolbar.huge > *:first-child .ui.button.animated .hidden.content,
+.ui.huge.buttons button.ui.animated .hidden.content,
+.ui.huge.buttons .ui.button.animated .hidden.content,
+button.ui.huge.animated .hidden.content,
+.ui.huge.button.animated .hidden.content,
+bonaparte-toolbar.massive > *:first-child button.ui.animated .hidden.content,
+bonaparte-toolbar.massive > *:first-child .ui.button.animated .hidden.content,
+.ui.massive.buttons button.ui.animated .hidden.content,
+.ui.massive.buttons .ui.button.animated .hidden.content,
+button.ui.massive.animated .hidden.content,
+.ui.button.massive.animated .hidden.content {
+  font-size: 2.16667rem;
+  line-height: 5rem;
+  padding: 0.5rem 1.5rem;
+  position: absolute;
+  font-size: 1em;
+  height: 6rem;
+  margin-top: -3rem;
 }
 bonaparte-toolbar.huge > *:first-child button.ui.toggle-top:before,
 bonaparte-toolbar.huge > *:first-child .ui.button.toggle-top:before,
@@ -4183,6 +4486,7 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 .ui.container {
   display: block;
   max-width: 100%;
@@ -4509,6 +4813,7 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -4712,6 +5017,7 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -5214,238 +5520,6 @@ h6.ui.horizontal.divider {
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABaAAAAACCAYAAACuTHuKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1OThBRDY4OUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1OThBRDY4QUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU5OEFENjg3Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU5OEFENjg4Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+VU513gAAADVJREFUeNrs0DENACAQBDBIWLGBJQby/mUcJn5sJXQmOQMAAAAAAJqt+2prAAAAAACg2xdgANk6BEVuJgyMAAAAAElFTkSuQmCC');
   }
 }
-/*!
- * # Semantic UI - Header
- * http://github.com/semantic-org/semantic-ui/
- *
- *
- * Copyright 2015 Contributors
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
-/*******************************
-            Theme
-*******************************/
-/*
-
-████████╗██╗  ██╗███████╗███╗   ███╗███████╗███████╗
-╚══██╔══╝██║  ██║██╔════╝████╗ ████║██╔════╝██╔════╝
-   ██║   ███████║█████╗  ██╔████╔██║█████╗  ███████╗
-   ██║   ██╔══██║██╔══╝  ██║╚██╔╝██║██╔══╝  ╚════██║
-   ██║   ██║  ██║███████╗██║ ╚═╝ ██║███████╗███████║
-   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝╚══════╝
-
-*/
-/*******************************
-        Theme Selection
-*******************************/
-/* To override a theme for an individual element
-   specify theme name below
-*/
-/* Global */
-/* Elements */
-/* Collections */
-/* Modules */
-/* Views */
-/*******************************
-            Folders
-*******************************/
-/* Path to theme packages */
-/* Path to site override folder */
-/*******************************
-         Import Theme
-*******************************/
-/*******************************
-        Import Directives
-*******************************/
-/*------------------
-       Theme
--------------------*/
-/*--------------------
-   Site Variables
----------------------*/
-/* Default site.variables */
-/*******************************
-         Site Settings
-*******************************/
-/*-------------------
-       Fonts
---------------------*/
-/*-------------------
-      Base Sizes
---------------------*/
-/* This is the single variable that controls them all */
-/* The size of page text  */
-/*-------------------
-    Border Radius
---------------------*/
-/* See Power-user section below
-   for explanation of @px variables
-*/
-/*-------------------
-    Brand Colors
---------------------*/
-/*--------------
-  Page Heading
----------------*/
-/*--------------
-   Form Input
----------------*/
-/* This adjusts the default form input across all elements */
-/* Line Height Default For Inputs in Browser */
-/*-------------------
-    Focused Input
---------------------*/
-/* Used on inputs, textarea etc */
-/* Used on dropdowns, other larger blocks */
-/*-------------------
-        Sizes
---------------------*/
-/*
-  Sizes are all expressed in terms of 14px/em (default em)
-  This ensures these "ratios" remain constant despite changes in EM
-*/
-/*-------------------
-        Page
---------------------*/
-/*-------------------
-      Paragraph
---------------------*/
-/*-------------------
-       Links
---------------------*/
-/*-------------------
-  Highlighted Text
---------------------*/
-/*-------------------
-       Loader
---------------------*/
-/*-------------------
-        Grid
---------------------*/
-/*-------------------
-     Transitions
---------------------*/
-/*-------------------
-     Breakpoints
---------------------*/
-/*-------------------
-      Site Colors
---------------------*/
-/*---  Colors  ---*/
-/*---  Light Colors  ---*/
-/*---   Neutrals  ---*/
-/*--- Colored Backgrounds ---*/
-/*--- Colored Headers ---*/
-/*--- Colored Text ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-       Accents
---------------------*/
-/* Differentiating Neutrals */
-/* Differentiating Layers */
-/*******************************
-           Power-User
-*******************************/
-/*-------------------
-    Emotive Colors
---------------------*/
-/* Positive */
-/* Negative */
-/* Info */
-/* Warning */
-/*-------------------
-        Paths
---------------------*/
-/* For source only. Modified in gulp for dist */
-/*-------------------
-       Em Sizes
---------------------*/
-/*
-  This rounds @size values to the closest pixel then expresses that value in (r)em.
-  This ensures all size values round to exact pixels
-*/
-/* em */
-/* rem */
-/*-------------------
-  Exact Pixel Values
---------------------*/
-/*
-  These are used to specify exact pixel values in em
-  for things like borders that remain constantly
-  sized as emSize adjusts
-
-  Since there are many more sizes than names for sizes,
-  these are named by their original pixel values.
-
-*/
-/*-------------------
-       Icons
---------------------*/
-/* Maximum Glyph Width of Icon */
-/*-------------------
-     Neutral Text
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-      Borders
---------------------*/
-/*-------------------
-    Derived Values
---------------------*/
-/* Loaders Position Offset */
-/* Rendered Scrollbar Width */
-/* Maximum Single Character Glyph Width, aka Capital "W" */
-/* Used to match floats with text */
-/* Header Spacing */
-/* Minimum Mobile Width */
-/* Positive / Negative Dupes */
-/* Responsive */
-/* Columns */
-/*******************************
-             States
-*******************************/
-/*-------------------
-      Disabled
---------------------*/
-/*-------------------
-        Hover
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Focus
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-    Down (:active)
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Active
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/* Packaged site.variables */
 /*============================
        Global Variables
 ==============================*/
@@ -5462,1071 +5536,7 @@ h6.ui.horizontal.divider {
 /*11px*/
 /*14px*/
 /* CONTAINER */
-/*-------------------
-       Fonts
---------------------*/
-/*
-@text-light : 300;
-@text-book : 400;
-@text-medium: 500;
-@text-semibold : 600; 
-@text-bold : 700;
-@text-black : 800;
-
-*/
-/*******************************
-         Site Settings
-*******************************/
-/*-------------------
-       Fonts
---------------------*/
-/*@fontName          : 'Whitney SSm';*/
-/*@fontSmoothing     : false;*/
-/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
-/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
-/*@importGoogleFonts : false;*/
-/*
-@googleFontName    : @fontName;
-
-@googleFontSizes   : '400,700,400italic,700italic';
-@googleSubset      : 'latin';
-
-@googleProtocol    : 'https://';
-@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
-*/
-/*-------------------
-      Base Sizes
---------------------*/
-/*@emSize   : 12px;*/
-/*@fontSize : 1.333333rem;*/
-/*-------------------
-    Border Radius
---------------------*/
-/* 4px @ default em */
-/*-------------------
-    Brand Colors
---------------------*/
-/*--------------
-  Page Heading
----------------*/
-/*@headerFontWeight : 400;
-@headerLineHeight : 1.17073em;*/
-/*-------------------
-        Sizes
---------------------*/
-/*
-  To have sizing resolve to a specified pixel values adjust
-  the numerator to the desired font size and the denominator
-  to the base em size
-*/
-/*-------------------
-        Page
---------------------*/
-/*@lineHeight          : 2rem;*/
-/*@textColor           : @color-text-dark;*/
-/*-------------------
-      Paragraph
---------------------*/
-/*-------------------
-       Links
---------------------*/
-/*-------------------
-  Highlighted Text
---------------------*/
-/*@highlightBackground      : @color-active;*/
-/*@highlightColor           : @color-text-light;*/
-/*-------------------
-       Loader
---------------------*/
-/*-------------------
-        Grid
---------------------*/
-/*-------------------
-     Transitions
---------------------*/
-/*-------------------
-     Breakpoints
---------------------*/
-/*-------------------
-      Site Colors
---------------------*/
-/*---  Colors  ---*/
-/*---  Light Colors  ---*/
-/*---   Neutrals  ---*/
-/*--- Colored Backgrounds ---*/
-/*--- Colored Headers ---*/
-/*--- Colored Text ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-       Accents
---------------------*/
-/* Differentiating Neutrals */
-/* Differentiating Layers */
-/*******************************
-           Power-User
-*******************************/
-/*-------------------
-    Emotive Colors
---------------------*/
-/* Positive */
-/* Negative */
-/* Info */
-/* Warning */
-/*-------------------
-        Paths
---------------------*/
-/* For source only. Modified in gulp for dist */
-/*-------------------
-       Em Sizes
---------------------*/
-/* Exact pixel values expressed in em */
-/*-------------------
-       Icons
---------------------*/
-/* Maximum Glyph Width of Icon */
-/*-------------------
-     Neutral Text
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-      Borders
---------------------*/
-/*-------------------
-    Element Focus
---------------------*/
-/*-------------------
-    Derived Values
---------------------*/
-/* Line Height Default For Inputs in Browser */
-/* Rendered Scrollbar Width */
-/* Maximum Single Character Glyph Width, aka Capital "W" */
-/* Used to match floats with text */
-/* Header Spacing */
-/* Minimum Mobile Width */
-/* Positive / Negative Dupes */
-/* Responsive */
-/* Columns */
-/*******************************
-             States
-*******************************/
-/*-------------------
-      Disabled
---------------------*/
-/*-------------------
-        Hover
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Focus
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-    Down (:active)
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Active
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/* Component's site.variables */
-/*============================
-       Global Variables
-==============================*/
-/*-------------------
-       Colors
---------------------*/
-/* FONTS */
-/*16px*/
-/*82px*/
-/*44px*/
-/*26px*/
-/*21px*/
-/*16px*/
-/*11px*/
-/*14px*/
-/* CONTAINER */
-/*-------------------
-       Fonts
---------------------*/
-/*
-@text-light : 300;
-@text-book : 400;
-@text-medium: 500;
-@text-semibold : 600; 
-@text-bold : 700;
-@text-black : 800;
-
-*/
-/*******************************
-         Site Settings
-*******************************/
-/*-------------------
-       Fonts
---------------------*/
-/*@fontName          : 'Whitney SSm';*/
-/*@fontSmoothing     : false;*/
-/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
-/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
-/*@importGoogleFonts : false;*/
-/*
-@googleFontName    : @fontName;
-
-@googleFontSizes   : '400,700,400italic,700italic';
-@googleSubset      : 'latin';
-
-@googleProtocol    : 'https://';
-@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
-*/
-/*-------------------
-      Base Sizes
---------------------*/
-/*@emSize   : 12px;*/
-/*@fontSize : 1.333333rem;*/
-/*-------------------
-    Border Radius
---------------------*/
-/* 4px @ default em */
-/*-------------------
-    Brand Colors
---------------------*/
-/*--------------
-  Page Heading
----------------*/
-/*@headerFontWeight : 400;
-@headerLineHeight : 1.17073em;*/
-/*-------------------
-        Sizes
---------------------*/
-/*
-  To have sizing resolve to a specified pixel values adjust
-  the numerator to the desired font size and the denominator
-  to the base em size
-*/
-/*-------------------
-        Page
---------------------*/
-/*@lineHeight          : 2rem;*/
-/*@textColor           : @color-text-dark;*/
-/*-------------------
-      Paragraph
---------------------*/
-/*-------------------
-       Links
---------------------*/
-/*-------------------
-  Highlighted Text
---------------------*/
-/*@highlightBackground      : @color-active;*/
-/*@highlightColor           : @color-text-light;*/
-/*-------------------
-       Loader
---------------------*/
-/*-------------------
-        Grid
---------------------*/
-/*-------------------
-     Transitions
---------------------*/
-/*-------------------
-     Breakpoints
---------------------*/
-/*-------------------
-      Site Colors
---------------------*/
-/*---  Colors  ---*/
-/*---  Light Colors  ---*/
-/*---   Neutrals  ---*/
-/*--- Colored Backgrounds ---*/
-/*--- Colored Headers ---*/
-/*--- Colored Text ---*/
-/*-------------------
-     Alpha Colors
---------------------*/
-/*-------------------
-       Accents
---------------------*/
-/* Differentiating Neutrals */
-/* Differentiating Layers */
-/*******************************
-           Power-User
-*******************************/
-/*-------------------
-    Emotive Colors
---------------------*/
-/* Positive */
-/* Negative */
-/* Info */
-/* Warning */
-/*-------------------
-        Paths
---------------------*/
-/* For source only. Modified in gulp for dist */
-/*-------------------
-       Em Sizes
---------------------*/
-/* Exact pixel values expressed in em */
-/*-------------------
-       Icons
---------------------*/
-/* Maximum Glyph Width of Icon */
-/*-------------------
-     Neutral Text
---------------------*/
-/*-------------------
-     Brand Colors
---------------------*/
-/*-------------------
-      Borders
---------------------*/
-/*-------------------
-    Element Focus
---------------------*/
-/*-------------------
-    Derived Values
---------------------*/
-/* Line Height Default For Inputs in Browser */
-/* Rendered Scrollbar Width */
-/* Maximum Single Character Glyph Width, aka Capital "W" */
-/* Used to match floats with text */
-/* Header Spacing */
-/* Minimum Mobile Width */
-/* Positive / Negative Dupes */
-/* Responsive */
-/* Columns */
-/*******************************
-             States
-*******************************/
-/*-------------------
-      Disabled
---------------------*/
-/*-------------------
-        Hover
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Focus
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-    Down (:active)
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/*-------------------
-        Active
---------------------*/
-/*---  Colors  ---*/
-/*---  Emotive  ---*/
-/*---  Brand   ---*/
-/*---  Dark Tones  ---*/
-/*---  Light Tones  ---*/
-/* Site theme site.variables */
-/*-------------------
- Component Variables
----------------------*/
-/* Default */
-/*******************************
-            Header
-*******************************/
-/*-------------------
-       Element
---------------------*/
-/* Sub Heading */
-/* Sub Header */
-/* Icon */
-/* Image */
-/* Label */
-/* Content */
-/* Paragraph after Header */
-/*-------------------
-      Variations
---------------------*/
-/* Sizing */
-/* Sub Header */
-/* Icon Header */
-/* No Line Height Offset */
-/* Divided */
-/* Block */
-/* Attached */
-/* Inverted */
-/* Floated */
-/* Packaged Theme */
-/*******************************
-            Header
-*******************************/
-/*-------------------
-       Element
---------------------*/
-/* Sub Heading */
-/* Sub Header */
-/* Icon */
-/* Image */
-/* Label */
-/* Content */
-/* Paragraph after Header */
-/*-------------------
-      Variations
---------------------*/
-/* Sizing */
-/* Sub Header */
-/* Icon Header */
-/* No Line Height Offset */
-/* Divided */
-/* Block */
-/* Attached */
-/* Inverted */
-/* Floated */
-/* Site Theme */
-/*******************************
-             Mix-ins
-*******************************/
-/*------------------
-       Fonts
--------------------*/
-/*------------------
-     Overrides
--------------------*/
-/* End Config */
-/*******************************
-            Header
-*******************************/
-/* Standard */
-.ui.header {
-  border: none;
-  margin: calc(2rem -  0.14285em ) 0em 1rem;
-  padding: 0em 0em;
-  font-family: 'Whitney SSm', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  line-height: 1.2857em;
-  text-transform: none;
-  color: rgba(0, 0, 0, 0.87);
-}
-.ui.header:first-child {
-  margin-top: -0.14285em;
-}
-.ui.header:last-child {
-  margin-bottom: 0em;
-}
-/*--------------
-   Sub Header
----------------*/
-.ui.header .sub.header {
-  font-weight: normal;
-  padding: 0em;
-  margin: 0em;
-  font-size: 1rem;
-  line-height: 1.2em;
-  color: rgba(0, 0, 0, 0.6);
-}
-/*--------------
-      Icon
----------------*/
-.ui.header > .icon {
-  display: table-cell;
-  opacity: 1;
-  font-size: 1.5em;
-  padding-top: 0.14285em;
-  vertical-align: middle;
-}
-/* With Text Node */
-.ui.header .icon:only-child {
-  display: inline-block;
-  padding: 0em;
-  margin-right: 0.75rem;
-}
-/*-------------------
-        Image
---------------------*/
-.ui.header > .image,
-.ui.header > img {
-  display: inline-block;
-  margin-top: 0.14285em;
-  width: 2.5em;
-  height: auto;
-  vertical-align: middle;
-}
-.ui.header > .image:only-child,
-.ui.header > img:only-child {
-  margin-right: 0.75rem;
-}
-/*--------------
-     Content
----------------*/
-.ui.header .content {
-  display: inline-block;
-  vertical-align: top;
-}
-/* After Image */
-.ui.header > img + .content,
-.ui.header > .image + .content {
-  padding-left: 0.75rem;
-  vertical-align: middle;
-}
-/* After Icon */
-.ui.header > .icon + .content {
-  padding-left: 0.75rem;
-  display: table-cell;
-  vertical-align: middle;
-}
-/*--------------
- Loose Coupling
----------------*/
-.ui.header .ui.label {
-  font-size: '';
-  margin-left: 0.5rem;
-  vertical-align: middle;
-}
-/* Positioning */
-.ui.header + p {
-  margin-top: 0em;
-}
-/*******************************
-            Types
-*******************************/
-/*--------------
-     Page
----------------*/
-h1.ui.header {
-  font-size: 6.83333rem;
-}
-h2.ui.header {
-  font-size: 3.66667rem;
-}
-h3.ui.header {
-  font-size: 2.16667rem;
-}
-h4.ui.header {
-  font-size: 1.75rem;
-}
-h5.ui.header {
-  font-size: 1.33333rem;
-}
-/* Sub Header */
-h1.ui.header .sub.header {
-  font-size: 1.1428rem;
-}
-h2.ui.header .sub.header {
-  font-size: 1.1428rem;
-}
-h3.ui.header .sub.header {
-  font-size: 1rem;
-}
-h4.ui.header .sub.header {
-  font-size: 1rem;
-}
-h5.ui.header .sub.header {
-  font-size: 0.9285rem;
-}
-/*--------------
- Content Heading
----------------*/
-.ui.huge.header {
-  min-height: 1em;
-  font-size: 6.83333em;
-}
-.ui.large.header {
-  font-size: 3.66667em;
-}
-.ui.medium.header {
-  font-size: 2.16667em;
-}
-.ui.small.header {
-  font-size: 1.75em;
-}
-.ui.tiny.header {
-  font-size: 1.33333em;
-}
-/* Sub Header */
-.ui.huge.header .sub.header {
-  font-size: 1.1428rem;
-}
-.ui.large.header .sub.header {
-  font-size: 1.1428rem;
-}
-.ui.header .sub.header {
-  font-size: 1rem;
-}
-.ui.small.header .sub.header {
-  font-size: 1rem;
-}
-.ui.tiny.header .sub.header {
-  font-size: 0.9285rem;
-}
-/*--------------
-   Sub Heading
----------------*/
-.ui.sub.header {
-  padding: 0em;
-  margin-bottom: 0.16666667rem;
-  font-weight: bold;
-  font-size: 0.91666667em;
-  text-transform: uppercase;
-  color: '';
-}
-.ui.small.sub.header {
-  font-size: 0.91666667em;
-}
-.ui.sub.header {
-  font-size: 0.91666667em;
-}
-.ui.large.sub.header {
-  font-size: 1.16666667em;
-}
-.ui.huge.sub.header {
-  font-size: 1.33333333em;
-}
-/*-------------------
-        Icon
---------------------*/
-.ui.icon.header {
-  display: inline-block;
-  text-align: center;
-  margin: 2rem 0em 1rem;
-}
-.ui.icon.header:after {
-  content: '';
-  display: block;
-  height: 0px;
-  clear: both;
-  visibility: hidden;
-}
-.ui.icon.header:first-child {
-  margin-top: 0em;
-}
-.ui.icon.header .icon {
-  float: none;
-  display: block;
-  width: auto;
-  height: auto;
-  line-height: 1;
-  padding: 0em;
-  font-size: 3em;
-  margin: 0em auto 0.25rem;
-  opacity: 1;
-}
-.ui.icon.header .content {
-  display: block;
-}
-.ui.icon.header .circular.icon {
-  font-size: 2em;
-}
-.ui.icon.header .square.icon {
-  font-size: 2em;
-}
-.ui.block.icon.header .icon {
-  margin-bottom: 0em;
-}
-.ui.icon.header.aligned {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-/*******************************
-            States
-*******************************/
-.ui.disabled.header {
-  opacity: 0.45;
-}
-/*******************************
-           Variations
-*******************************/
-/*-------------------
-      Inverted
---------------------*/
-.ui.inverted.header {
-  color: #FFFFFF;
-}
-.ui.inverted.header .sub.header {
-  color: rgba(255, 255, 255, 0.8);
-}
-.ui.inverted.attached.header {
-  background: #333333 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  background: #333333 linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  box-shadow: none;
-  border-color: transparent;
-}
-.ui.inverted.block.header {
-  background: #333333 -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  background: #333333 linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  box-shadow: none;
-}
-.ui.inverted.block.header {
-  border-bottom: none;
-}
-/*-------------------
-       Colors
---------------------*/
-/*--- Red ---*/
-.ui.red.header {
-  color: #F44336 !important;
-}
-a.ui.red.header:hover {
-  color: #ff2212 !important;
-}
-.ui.red.dividing.header {
-  border-bottom: 2px solid #F44336;
-}
-/* Inverted */
-.ui.inverted.red.header {
-  color: #FF1744 !important;
-}
-a.ui.inverted.red.header:hover {
-  color: #fc0031 !important;
-}
-/*--- Orange ---*/
-.ui.orange.header {
-  color: #FF9800 !important;
-}
-a.ui.orange.header:hover {
-  color: #e68900 !important;
-}
-.ui.orange.dividing.header {
-  border-bottom: 2px solid #FF9800;
-}
-/* Inverted */
-.ui.inverted.orange.header {
-  color: #FF9100 !important;
-}
-a.ui.inverted.orange.header:hover {
-  color: #e68300 !important;
-}
-/*--- Olive ---*/
-.ui.olive.header {
-  color: #B5CC18 !important;
-}
-a.ui.olive.header:hover {
-  color: #a8bf0b !important;
-}
-.ui.olive.dividing.header {
-  border-bottom: 2px solid #B5CC18;
-}
-/* Inverted */
-.ui.inverted.olive.header {
-  color: #D9E778 !important;
-}
-a.ui.inverted.olive.header:hover {
-  color: #daec59 !important;
-}
-/*--- Yellow ---*/
-.ui.yellow.header {
-  color: #FFEB3B !important;
-}
-a.ui.yellow.header:hover {
-  color: #ffe821 !important;
-}
-.ui.yellow.dividing.header {
-  border-bottom: 2px solid #FFEB3B;
-}
-/* Inverted */
-.ui.inverted.yellow.header {
-  color: #FFEA00 !important;
-}
-a.ui.inverted.yellow.header:hover {
-  color: #e6d300 !important;
-}
-/*--- Green ---*/
-.ui.green.header {
-  color: #4CAF50 !important;
-}
-a.ui.green.header:hover {
-  color: #39a83e !important;
-}
-.ui.green.dividing.header {
-  border-bottom: 2px solid #4CAF50;
-}
-/* Inverted */
-.ui.inverted.green.header {
-  color: #00E676 !important;
-}
-a.ui.inverted.green.header:hover {
-  color: #00cd69 !important;
-}
-/*--- Teal ---*/
-.ui.teal.header {
-  color: #1de9b6 !important;
-}
-a.ui.teal.header:hover {
-  color: #09e3ad !important;
-}
-.ui.teal.dividing.header {
-  border-bottom: 2px solid #1de9b6;
-}
-/* Inverted */
-.ui.inverted.teal.header {
-  color: #1DE9B6 !important;
-}
-a.ui.inverted.teal.header:hover {
-  color: #09e3ad !important;
-}
-/*--- Blue ---*/
-.ui.blue.header {
-  color: #2196F3 !important;
-}
-a.ui.blue.header:hover {
-  color: #008cfa !important;
-}
-.ui.blue.dividing.header {
-  border-bottom: 2px solid #2196F3;
-}
-/* Inverted */
-.ui.inverted.blue.header {
-  color: #2979FF !important;
-}
-a.ui.inverted.blue.header:hover {
-  color: #1069ff !important;
-}
-/*--- Violet ---*/
-.ui.violet.header {
-  color: #6435C9 !important;
-}
-a.ui.violet.header:hover {
-  color: #5624c0 !important;
-}
-.ui.violet.dividing.header {
-  border-bottom: 2px solid #6435C9;
-}
-/* Inverted */
-.ui.inverted.violet.header {
-  color: #A291FB !important;
-}
-a.ui.inverted.violet.header:hover {
-  color: #8a73ff !important;
-}
-/*--- Purple ---*/
-.ui.purple.header {
-  color: #9C27B0 !important;
-}
-a.ui.purple.header:hover {
-  color: #9019a5 !important;
-}
-.ui.purple.dividing.header {
-  border-bottom: 2px solid #9C27B0;
-}
-/* Inverted */
-.ui.inverted.purple.header {
-  color: #D500F9 !important;
-}
-a.ui.inverted.purple.header:hover {
-  color: #bf00e0 !important;
-}
-/*--- Pink ---*/
-.ui.pink.header {
-  color: #E91E63 !important;
-}
-a.ui.pink.header:hover {
-  color: #e40954 !important;
-}
-.ui.pink.dividing.header {
-  border-bottom: 2px solid #E91E63;
-}
-/* Inverted */
-.ui.inverted.pink.header {
-  color: #F50057 !important;
-}
-a.ui.inverted.pink.header:hover {
-  color: #dc004e !important;
-}
-/*--- Brown ---*/
-.ui.brown.header {
-  color: #A5673F !important;
-}
-a.ui.brown.header:hover {
-  color: #9d592e !important;
-}
-.ui.brown.dividing.header {
-  border-bottom: 2px solid #A5673F;
-}
-/* Inverted */
-.ui.inverted.brown.header {
-  color: #D67C1C !important;
-}
-a.ui.inverted.brown.header:hover {
-  color: #ca6f0e !important;
-}
-/*--- Grey ---*/
-.ui.grey.header {
-  color: #9E9E9E !important;
-}
-a.ui.grey.header:hover {
-  color: #ababab !important;
-}
-.ui.grey.dividing.header {
-  border-bottom: 2px solid #9E9E9E;
-}
-/* Inverted */
-.ui.inverted.grey.header {
-  color: #DCDDDE !important;
-}
-a.ui.inverted.grey.header:hover {
-  color: #cad0d6 !important;
-}
-/*-------------------
-       Aligned
---------------------*/
-.ui.left.aligned.header {
-  text-align: left;
-}
-.ui.right.aligned.header {
-  text-align: right;
-}
-.ui.centered.header,
-.ui.center.aligned.header {
-  text-align: center;
-}
-.ui.justified.header {
-  text-align: justify;
-}
-.ui.justified.header:after {
-  display: inline-block;
-  content: '';
-  width: 100%;
-}
-/*-------------------
-       Floated
---------------------*/
-.ui.floated.header,
-.ui[class*="left floated"].header {
-  float: left;
-  margin-top: 0em;
-  margin-right: 0.5em;
-}
-.ui[class*="right floated"].header {
-  float: right;
-  margin-top: 0em;
-  margin-left: 0.5em;
-}
-/*-------------------
-       Fittted
---------------------*/
-.ui.fitted.header {
-  padding: 0em;
-}
-/*-------------------
-      Dividing
---------------------*/
-.ui.dividing.header {
-  padding-bottom: 0;
-  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
-}
-.ui.dividing.header .sub.header {
-  padding-bottom: 0;
-}
-.ui.dividing.header .icon {
-  margin-bottom: 0em;
-}
-.ui.inverted.dividing.header {
-  border-bottom-color: rgba(255, 255, 255, 0.1);
-}
-/*-------------------
-        Block
---------------------*/
-.ui.block.header {
-  background: #F3F4F5;
-  padding: 0.75rem 1rem;
-  box-shadow: none;
-  border: 1px solid #D4D4D5;
-  border-radius: 0.3125rem;
-}
-.ui.tiny.block.header {
-  font-size: 1.33333rem;
-}
-.ui.small.block.header {
-  font-size: 1.75rem;
-}
-.ui.block.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 2.16667rem;
-}
-.ui.large.block.header {
-  font-size: 3.66667rem;
-}
-.ui.huge.block.header {
-  font-size: 6.83333rem;
-}
-/*-------------------
-       Attached
---------------------*/
-.ui.attached.header {
-  background: #FFFFFF;
-  padding: 0.75rem 1rem;
-  margin-left: -1px;
-  margin-right: -1px;
-  box-shadow: none;
-  border: 1px solid #D4D4D5;
-}
-.ui.attached.block.header {
-  background: #F3F4F5;
-}
-.ui.attached:not(.top):not(.bottom).header {
-  margin-top: 0em;
-  margin-bottom: 0em;
-  border-top: none;
-  border-radius: 0em;
-}
-.ui.top.attached.header {
-  margin-bottom: 0em;
-  border-radius: 0.3125rem 0.3125rem 0em 0em;
-}
-.ui.bottom.attached.header {
-  margin-top: 0em;
-  border-top: none;
-  border-radius: 0em 0em 0.3125rem 0.3125rem;
-}
-/* Attached Sizes */
-.ui.tiny.attached.header {
-  font-size: 0.91666667em;
-}
-.ui.small.attached.header {
-  font-size: 1.16666667em;
-}
-.ui.attached.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 1.33333333em;
-}
-.ui.large.attached.header {
-  font-size: 1.75em;
-}
-.ui.huge.attached.header {
-  font-size: 2.16666667em;
-}
-/*-------------------
-        Sizing
---------------------*/
-.ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 2.16667em;
-}
-/*******************************
-         Theme Overrides
-*******************************/
+/* SIZE VARIABLES */
 h1,
 h2,
 h3,
@@ -6547,7 +5557,7 @@ h1.ui.header:first-child {
   font-weight: 300;
   line-height: 8rem;
   margin: 2rem 1rem 0rem 0.25rem;
-  padding: 0.5rem 0 1rem 0;
+  padding: 0.583333rem 0 0.916667rem 0;
   letter-spacing: -0.8px;
   border: 0px;
 }
@@ -6561,7 +5571,7 @@ h2.ui.header:first-child {
   font-size: 3.66667rem;
   font-weight: 600;
   line-height: 5rem;
-  padding: 0.166667rem 0 1.33333rem 0;
+  padding: 0.25rem 0 1.25rem 0;
   margin: 2rem 1rem 0rem 0.666667rem;
   letter-spacing: -0.1px;
   border: 0px;
@@ -6576,7 +5586,7 @@ h3.ui.header:first-child {
   font-size: 2.16667rem;
   font-weight: 700;
   line-height: 3rem;
-  padding: 0.166667rem 0 0.83333rem 0rem;
+  padding: 0.25rem 0 0.75rem 0rem;
   margin: 2rem 1rem 0 0.833333rem;
   border: 0px;
 }
@@ -6618,8 +5628,8 @@ h6.ui.header:first-child {
   font-size: 0.91667rem;
   font-weight: 700;
   line-height: 1.5rem;
-  padding: 0rem 0 0.166666rem 0;
-  margin: 1.33333rem 1rem 0 0.91666667rem;
+  padding: 0rem 0 0.0833333rem 0;
+  margin: 1.4166666rem 1rem 0 0.91666667rem;
   letter-spacing: 0.1px;
   border: 0px;
 }
@@ -6630,7 +5640,7 @@ h6.ui.header:first-child {
   width: auto;
   content: " ";
   right: 0rem;
-  background-color: rgba(34, 36, 38, 0.15);
+  background-color: #666666;
 }
 h1.ui.dividing.header:after {
   top: 7.9166667rem;
@@ -6667,8 +5677,8 @@ h6.ui.dividing.header:after {
   font-weight: 700;
   font-size: 2.16667rem;
   line-height: 3rem;
-  margin: -0.8333333rem 1rem 0rem 1rem;
-  padding: 0rem 0rem 0.8333333rem 0rem;
+  margin: -0.75rem 1rem 0rem 1rem;
+  padding: 0rem 0rem 0.75rem 0rem;
   letter-spacing: 0.1px;
   text-indent: -0.06em;
 }
@@ -6676,8 +5686,8 @@ h6.ui.dividing.header:after {
   font-weight: 300;
   font-size: 2.16667rem;
   line-height: 3rem;
-  margin: -1.3333333rem 1rem 0rem 1rem;
-  padding: 0 0 0.833333333rem 0;
+  margin: -1.25rem 1rem 0rem 1rem;
+  padding: 0 0 0.75rem 0;
   letter-spacing: 0px;
   text-indent: -0.1em;
 }
@@ -6685,8 +5695,8 @@ h6.ui.dividing.header:after {
   font-weight: 300;
   font-size: 1.75rem;
   line-height: 2.5rem;
-  margin: -0.9166666rem 1rem 0 1rem;
-  padding: 0 0 0.9166666rem 0;
+  margin: -0.83333333rem 1rem 0 1rem;
+  padding: 0 0 0.83333333rem 0;
   letter-spacing: 0px;
   text-indent: -0.1em;
 }
@@ -6694,8 +5704,8 @@ h6.ui.dividing.header:after {
   font-weight: 600;
   font-size: 0.91667rem;
   line-height: 1.5rem;
-  margin: -0.25rem 1rem 0rem 1rem;
-  padding: 0 0 0.666666rem 0;
+  margin: -0.08333333rem 1rem 0rem 1rem;
+  padding: 0 0 0.583333rem 0;
   letter-spacing: 0.1px;
   text-indent: -0.07em;
 }
@@ -6704,8 +5714,8 @@ h6.ui.dividing.header:after {
   font-weight: 300;
   font-size: 0.91667rem;
   line-height: 1.5rem;
-  margin: -0.1666667rem 1rem 0rem 1rem;
-  padding: 0 0 0.166667rem 0;
+  margin: -0.08333333rem 1rem 0rem 1rem;
+  padding: 0 0 0.08333333rem 0;
   letter-spacing: 0.1px;
   text-indent: -0.1em;
 }
@@ -6957,6 +5967,7 @@ h6.ui.dividing.header:after {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -7160,6 +6171,7 @@ h6.ui.dividing.header:after {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -8623,6 +7635,7 @@ i.flag.zimbabwe:before {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -8826,6 +7839,7 @@ i.flag.zimbabwe:before {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -12540,6 +11554,7 @@ i.icon.zerply:before {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -12743,6 +11758,7 @@ i.icon.zerply:before {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -13684,6 +12700,7 @@ i.icon.zerply:before {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -13887,6 +12904,7 @@ i.icon.zerply:before {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -15552,6 +14570,7 @@ a.ui.basic.label:hover {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -15755,6 +14774,7 @@ a.ui.basic.label:hover {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -16911,6 +15931,7 @@ a.ui.basic.label:hover {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -17114,6 +16135,7 @@ a.ui.basic.label:hover {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -18795,6 +17817,7 @@ a.ui.basic.label:hover {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -21371,6 +20394,7 @@ a.ui.basic.label:hover {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 /*-------------------
        Fonts
 --------------------*/
@@ -22797,6 +21821,7 @@ a.ui.basic.label:hover {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 bonaparte-panel {
   display: none;
   position: absolute;
@@ -23014,6 +22039,7 @@ bonaparte-panel[position~="top"] {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 bonaparte-scroll {
   /* 
     Inspired by: nanoScrollerJS
@@ -23178,6 +22204,7 @@ bonaparte-scroll[data-scrollbar~="visible"] > .scrollbar {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 bonaparte-button {
   display: inline-block;
 }
@@ -23229,6 +22256,7 @@ bonaparte-button {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 bonaparte-sidebar {
   /*DEFINITION*/
   position: relative;
@@ -23447,6 +22475,7 @@ bonaparte-sidebar > :nth-child(2) {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 bonaparte-sidebar {
   /*DEFINITION*/
   position: relative;
@@ -23841,7 +22870,6 @@ bonaparte-toolbar[position="right"][open="true"] > :nth-child(1) {
   min-width: 20rem;
 }
 bonaparte-toolbar > :nth-child(2) {
-  background-color: #F0F0F0;
   padding: 1rem;
 }
 bonaparte-toolbar > :nth-child(1) {
@@ -24704,6 +23732,7 @@ bonaparte-toolbar.massive[position="right"][open="true"] > :nth-child(1) {
 /*11px*/
 /*14px*/
 /* CONTAINER */
+/* SIZE VARIABLES */
 bonaparte-content {
   display: block;
   position: relative;
