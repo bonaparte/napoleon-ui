@@ -1,10 +1,95 @@
 @import "./variables.less";
  
 .ui.block {
-    box-sizing: border-box;
+
+
+  & {
+    position:relative;
+    display:inline-block;
+    /*margin:0.5rem 0rem;*/
+    vertical-align: top;
+    cursor:pointer;
+    user-select: none;
+    text-align:center;
+    border:0px;
+    outline:0px;
+  }
+
+
+
+
+  &.fluid {
+    display:block;
+  }
+
+  &.fluid + &.fluid {
+      margin:0.5rem 0;
+  }
+
+
+/*  &.marginless,
+  & + &.marginless,
+  &.marginless + &.marginless {
+    margin:0;
+  }
+*/
+
+  &.icon {
+    text-align:center;
+
+    > i.icon {
+      margin:0px;
+    }  
+  }
+
+  &.labeled.icon {
+    & {
+      text-align:left;
+      overflow:hidden;
+      padding-left:0rem;
+      padding-right:1rem;
+      direction:ltr;
+    }
+
+    > i.icon {
+      float:left;
+      margin-left:0rem;
+      margin-right:1rem;
+    }
+  }
+
+  &.right.labeled.icon {
+    & {
+      text-align:right;
+      padding-right:0rem;
+      padding-left:1rem;
+      direction:rtl;
+    }
+
+    > i.icon {
+      float:right;
+      margin-left:1rem;
+      margin-right:0rem;
+    }
+  }
+
+  > i.icon {
+    height:auto;
+    margin:0 1rem 0 0;
+  }  
+  > i.icon.right {
+    margin:0 0 0 1rem;
+  }
+  
+
+
+
+
+
+  .sizes(@normalVariables);  
 }
 
-.ui.block .header {
+/*.ui.block .header {
   background: @color-light-2;
   padding: 1rem 1rem;
   margin: 0;
@@ -29,3 +114,69 @@
   margin: 1rem;
 }
 
+*/
+
+.sizes(
+  @overrides:{.variables(){}},
+  @fontSize:  @mediumSize,
+  @lineHeight: 2rem,
+  @padding : 1.0833333rem 1rem 0.9188888rem 1rem,
+  @iconSize : 4rem
+){  
+
+  @overrides();
+  .variables();
+
+  & {
+    font-size:@fontSize;
+    line-height:@lineHeight;
+    padding:@padding;
+  }
+
+  &.icon {
+    min-width:@iconSize;  
+    min-height:@iconSize;
+  }
+
+  &.labeled.icon {
+    > .icon {
+      width:@iconSize;
+    }
+  }
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+
+bonaparte-toolbar > :first-child .ui.block,
+bonaparte-toolbar.tiny > :first-child .ui.block,
+.ui.block.mini,
+.ui.block.tiny {
+  .sizes(@miniVariables);
+}
+
+bonaparte-toolbar.mini > :first-child .ui.block,
+bonaparte-toolbar.tiny > :first-child .ui.block,
+.ui.block.mini,
+.ui.block.tiny {
+  .sizes(@miniVariables);
+}
+
+bonaparte-toolbar.small > :first-child .ui.block,
+.ui.block.small {
+  .sizes(@smallVariables);
+}
+
+bonaparte-toolbar.large > :first-child .ui.block,
+bonaparte-toolbar.big > :first-child .ui.block,
+.ui.block.large,
+.ui.block.big {
+  .sizes(@largeVariables);
+}
+
+bonaparte-toolbar.huge > :first-child .ui.block,
+bonaparte-toolbar.massive > :first-child .ui.block,
+.ui.block.huge,
+.ui.block.massive {
+  .sizes(@hugeVariables);
+}
