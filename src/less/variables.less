@@ -26,17 +26,23 @@
 @color-text-medium-dark: #666666;
 @color-text-medium-light : #999999;
 
-@color-interactive : #B50008; //#D9A000;
-@color-interactive-light : #940208; //#E2BF3D; 
+@color-interactive : ##D9A000;
+@color-interactive-light : ##E2BF3D; 
 
 @color-active : #425CBD;
 @color-active-light : #6683ED;
 
+@highlightBackground      : @color-active;
+@highlightColor           : @color-text-light;
+
 /* FONTS */
 
-@emSize   : 12px;
-@fontSize : 1.333333rem;
-
+@emSize           : 12px;
+@pageFont         : 'Whitney SSm', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@headerFont       : 'Whitney SSm', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@fontSize         : 1.333333rem; /*16px*/
+@lineHeight       : 2rem;
+@fontSmoothing    : false;
 
 @h1               : 6.83333rem; /*82px*/
 @h2               : 3.66667rem; /*44px*/
@@ -55,16 +61,121 @@
 
 @miniSize        : @h6;
 @tinySize        : @h6;
-@smallSize       : 1.1666666667rem;
+@smallSize       : 1.1666666667rem; /*14px*/
 @mediumSize      : @h5;
 @largeSize       : @h4;
 @bigSize         : @h4;
 @hugeSize        : @h3;
 @massiveSize     : @h3;
 
+@text-light : 300;
+@text-book : 400;
+@text-medium: 500;
+@text-semibold : 600; 
+@text-bold : 700;
+@text-black : 800;
+
+
+/* CONTAINER */
+
+@mobileWidth: auto;
+@mobileBreakpoint : 320px;
+@mobileGutter: 1rem;
+
+@tabletWidth: 752px;
+@tabletBreakpoint : 768px;
+@tabletGutter: auto;
+
+@smallMonitorBreakpoint: 988px;
+@smallMonitorWidth: 960px;
+@smallMonitorGutter: auto;
+
+@largeMonitorWidth: 1200px;
+@largeMonitorBreakpoint: 1228px;
+@largeMonitorGutter: auto;
+
+/* SIZE VARIABLES */
+
+
+@miniVariables : {
+  .variables(){
+
+    @iconSize : 2rem;
+    @fontSize:  @h6;
+    @lineHeight: @h6Lineheight;
+    @padding : 0.25rem 1rem;
+    @orPadding : 1.5rem;
+    @orLineHeight : 1.4rem;
+    @orHeight : @h6Lineheight;
+    @underlineCorrection: -1px;
+    @toggleLine: 1px;
+
+  }
+};
+
+@smallVariables : {
+  .variables(){
+
+    @iconSize : 3rem;
+    @fontSize:  @smallSize;
+    @lineHeight: @h5Lineheight;
+    @padding : 0.5rem 1rem;
+    @orPadding : 1.5rem;
+    @orHeight : @h5Lineheight;
+    @orLineHeight : 1.9rem;
+    @underlineCorrection: -1px;
+    @toggleLine: 2px;
+
+  }
+};
+
+@normalVariables : {
+  .variables(){
+
+    @iconSize : 4rem;
+    @fontSize:  @mediumSize;
+    @lineHeight: 2rem;
+    @padding : 1.0833333rem 1rem 0.9188888rem 1rem;
+    @orPadding : 2rem;
+    @orLineHeight : 3rem;
+    @orHeight : 3rem;
+    @underlineCorrection : -1px;
+    @toggleLine : 3p;
+
+  }
+};
+
+@largeVariables : {
+  .variables(){
+
+    @iconSize : 5rem;
+    @fontSize:  @largeSize;
+    @lineHeight: @h5Lineheight;
+    @padding : 1.5rem 1.25rem;
+    @orPadding : 2.5rem;
+    @orLineHeight : 3.5rem;
+    @orHeight : 3.5rem;
+    @underlineCorrection: 2px;
+    @toggleLine: 4px;
+
+  }
+};
+
+@hugeVariables : {
+  .variables(){
+    @iconSize : 6rem;
+    @fontSize:  @hugeSize;
+    @lineHeight: @h2Lineheight;
+    @padding : 0.5rem 1.5rem;
+    @orPadding : 3rem;
+    @orLineHeight : 3.9rem;
+    @orHeight : 4rem;
+    @underlineCorrection: -1rem;
+    @toggleLine: 6px;
+  }
+};
 
 
 /* Toggle */
 
 @toggleHeight : 1.5rem;
-

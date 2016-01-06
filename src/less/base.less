@@ -1,6 +1,10 @@
-html,
-body {
-  height: 100%;
+@import "./variables.less";
+
+html, body {
+  position:relative;
+  padding: 0;
+  margin: 0;
+  height:100%;
 }
 
 html {
@@ -8,85 +12,46 @@ html {
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
-  overflow-x: @pageOverflowX;
-  min-width: @pageMinWidth;
-  background: @pageBackground;
   font-family: @pageFont;
   font-size: @fontSize;
   line-height: @lineHeight;
-  color: @textColor;
+  color: @color-text-dark;
   font-smoothing: @fontSmoothing;
+  background-color:@color-light-3;
 }
 
-
-
-/*******************************
-             Headers
-*******************************/
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: @headerFont;
-  line-height: @headerLineHeight;
-  margin: @headerMargin;
-  font-weight: @headerFontWeight;
-  padding: 0em;
-}
-
-h1 {
-  min-height: 1rem;
-  font-size: @h1;
-}
-h2 {
-  font-size: @h2;
-}
-h3 {
-  font-size: @h3;
-}
-h4 {
-  font-size: @h4;
-}
-h5 {
-  font-size: @h5;
-}
-
-h1:first-child,
-h2:first-child,
-h3:first-child,
-h4:first-child,
-h5:first-child {
-  margin-top: 0em;
-}
-
-h1:last-child,
-h2:last-child,
-h3:last-child,
-h4:last-child,
-h5:last-child {
-  margin-bottom: 0em;
+.bg-grid {
+  background-image:url("../grid.png");
 }
 
 img {
-  width:100%;
+  max-width:100%; 
 }
-/*******************************
-             Text
-*******************************/
 
 p {
-  margin: @paragraphMargin;
-  line-height: @paragraphLineHeight;
+  margin: 0.583333rem 1rem 0 0.9166667rem;
+  line-height: @lineHeight;
+  font-weight: @text-book;    
+  padding:0 0 0.416667rem 0;
 }
-p:first-child {
-  margin-top: 0em;
+
+p.small {
+  margin:0rem 1rem 0rem 0.9166667rem; 
+} 
+
+small, p.small { 
+  font-weight:@text-book;
+  font-size:0.91667rem;
+  line-height:1.5rem;
+  padding:0.416666667rem 0 0.08333333rem 0;
+
+  b, strong {
+    font-weight:@text-semibold;  
+  }
 }
-p:last-child {
-  margin-bottom: 0em;
+
+b, strong {
+  font-weight:@text-bold;  
 }
 
 /*-------------------
@@ -94,12 +59,12 @@ p:last-child {
 --------------------*/
 
 a {
-  color: @linkColor;
-  text-decoration: @linkUnderline;
+  color: @color-interactive;
+  text-decoration: none;
 }
 a:hover {
-  color: @linkHoverColor;
-  text-decoration: @linkHoverUnderline;
+  color: @color-interactive-light;
+  text-decoration: underline;
 }
 
 
@@ -108,100 +73,20 @@ a:hover {
 *******************************/
 
 /* Site */
-::-webkit-selection {
-  background-color: @highlightBackground;
-  color: @highlightColor;
-}
-::-moz-selection {
-  background-color: @highlightBackground;
-  color: @highlightColor;
-}
-::selection {
+/*::-webkit-selection,
+::-moz-selection,
+*/::selection {
   background-color: @highlightBackground;
   color: @highlightColor;
 }
 
 /* Form */
-textarea::-webkit-selection,
-input::-webkit-selection {
-  background-color: @inputHighlightBackground;
-  color: @inputHighlightColor;
-}
+/*textarea::-webkit-selection,
+input::-webkit-selection,
 textarea::-moz-selection,
-input::-moz-selection {
-  background-color: @inputHighlightBackground;
-  color: @inputHighlightColor;
-}
-textarea::selection,
+input::-moz-selection,
+*//*textarea::selection,
 input::selection {
   background-color: @inputHighlightBackground;
   color: @inputHighlightColor;
-}
-
-
-/*******************************
-        Global Overrides
-*******************************/
-
-html, body {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-body,
-body > bonaparte-toolbar {
-  height:100%;
-}
-
-p {
-  font-weight: @text-book;    
-  padding:0 0 0.5rem 0;
-}
-
-p.small.text {
-  margin:0rem 1rem 0rem 0.9166667rem; 
-} 
-
-small, .small.text { 
-  font-weight:@text-book;
-  font-size:0.91667rem;
-  line-height:1.5rem;
-  padding:0.3333333rem 0 0.1666667rem 0;
-}
-
-b, strong {
-  font-weight:@text-bold;  
-}
- 
-.ui.block {
-    box-sizing: border-box;
-}
-
-.ui.block .header {
-  background: @color-light-2;
-  padding: 1rem 1rem;
-  margin: 0;
-  box-shadow: none;
-  border-bottom: 1px solid @color-light-3;
-  text-transform: uppercase;
-  box-sizing: border-box;
-}
-
-.ui.block .header i.icon {
-  margin-right: 1rem;
-}
-
-.ui.block .header .button {
-  margin: 0 1rem;
-}
-
-.ui.block .header .button.right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 1rem;
-}
-
+}*/

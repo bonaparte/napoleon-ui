@@ -4,7 +4,7 @@
 /*-------------------
        Fonts
 --------------------*/
-
+/*
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
@@ -12,7 +12,7 @@
 @text-bold : 700;
 @text-black : 800;
 
-
+*/
 /*******************************
          Site Settings
 *******************************/
@@ -21,13 +21,13 @@
        Fonts
 --------------------*/
 
-@fontName          : 'Whitney SSm';
-@fontSmoothing     : false;
+/*@fontName          : 'Whitney SSm';*/
+/*@fontSmoothing     : false;*/
 
-@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+/*@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+/*@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
 
-@importGoogleFonts : false;
+/*@importGoogleFonts : false;*/
  
 /*
 @googleFontName    : @fontName;
@@ -42,8 +42,8 @@
       Base Sizes
 --------------------*/
 
-// @emSize   : 12px;
-// @fontSize : 1.333333rem;
+/*@emSize   : 12px;*/
+/*@fontSize : 1.333333rem;*/
 
 /*-------------------
     Border Radius
@@ -111,8 +111,8 @@
 @pageBackground      : @color-light-1;
 @pageOverflowX       : hidden;
 
-@lineHeight          : 2rem;
-@textColor           : @color-text-dark;
+/*@lineHeight          : 2rem;*/
+/*@textColor           : @color-text-dark;*/
 
 /*-------------------
       Paragraph
@@ -133,8 +133,8 @@
   Highlighted Text
 --------------------*/
 
-@highlightBackground      : @color-active;
-@highlightColor           : @color-text-light;
+/*@highlightBackground      : @color-active;*/
+/*@highlightColor           : @color-text-light;*/
 
 @inputHighlightBackground : rgba(100, 100, 100, 0.4);
 @inputHighlightColor      : @textColor;

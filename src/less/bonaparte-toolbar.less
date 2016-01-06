@@ -1,9 +1,13 @@
 @import "./variables.less";
 @import "~bonaparte-toolbar/bonaparte.less";
 
+
+body > bonaparte-toolbar {
+  height:100%;
+}
+
 /*SIZES*/
 bonaparte-toolbar {
-
 
 /*////////////////////////////////*/  
   .bonaparte-toolbar({
@@ -15,22 +19,14 @@ bonaparte-toolbar {
   });
 /*////////////////////////////////*/  
 
-  font-weight: 100;
-
-
-
-  > cornerstone-bonaparte {  
-    background-color:@color-interactive;
-    color:@color-light-0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   > :nth-child(2){
-    background-color:@color-light-3;
+    padding: 1rem;
   }
 
+/*  > side-bonaparte:nth-child(2) {
+  > toolbar-bonaparte:nth-child(2) {
+    padding:0px;
+  }*/
 
   /*BUTTON GROUPS*/
 
@@ -47,10 +43,10 @@ bonaparte-toolbar {
       text-transform: uppercase;
     }
 
-    > * {
+/*    > * {
       background-color:transparent !important;
     }
-
+*/
     > *,
     > * > * {
       margin:0px;
@@ -120,6 +116,7 @@ bonaparte-toolbar.mini {
   });
 
 }
+
 /*////////////////////////////////*/  
 
 bonaparte-toolbar.small {  
@@ -131,6 +128,7 @@ bonaparte-toolbar.small {
   });
 
 }
+
 /*////////////////////////////////*/  
 
 bonaparte-toolbar.large,
@@ -143,6 +141,7 @@ bonaparte-toolbar.big {
   });
 
 }
+
 /*////////////////////////////////*/  
 
 bonaparte-toolbar.huge,
@@ -155,6 +154,7 @@ bonaparte-toolbar.massive {
   });
 
 }
+
 /*////////////////////////////////*/  
 
 

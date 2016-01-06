@@ -16,6 +16,45 @@
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <link rel="stylesheet" type="text/css" class="ui" href="../dist/dj-bonaparte.css">
 
+        <style>
+        bonaparte-sidebar#messageBar[open="false"] > :nth-child(1) {
+          display: none;
+        }
+
+        bonaparte-sidebar#messageBar:not([open="false"]) > :nth-child(1) {
+          min-height: 150px;
+          color: #D8000C;
+          background-color: #FFBABA;
+        }
+
+        bonaparte-sidebar > :nth-child(2) {
+          background-color: #f0f0f0;
+        }
+
+        bonaparte-sidebar#messageBar > :nth-child(1) div {
+          width: 800px;
+          margin: auto;
+        }
+
+        bonaparte-sidebar#messageBar > :nth-child(1) div h1 {
+          font-size: 3rem;
+          line-height:  3.5rem;
+          margin-top: 0.4em;
+          margin-left: -1.5em;
+        }
+        bonaparte-sidebar#messageBar > :nth-child(1) div p {
+          font-size: 1.5rem;
+          margin: 0 1rem 0rem 0.25rem;
+          padding: 0;
+        }
+        bonaparte-sidebar#messageBar > :nth-child(1) div div.right {
+          text-align: right;
+        }
+        bonaparte-sidebar#messageBar > :nth-child(1) div bonaparte-button, 
+        bonaparte-sidebar#messageBar > :nth-child(1) div a {
+          color: #21759b;
+        }
+        </style>
   </head>
   <body>
     <bonaparte-toolbar id="toolbar" position="top" open="false">  
@@ -27,6 +66,18 @@
       </aside>
       <bonaparte-scroll scrollbar="visible" resize="true">
         <bonaparte-content>
+      <bonaparte-sidebar id="messageBar" position="top" open="true">
+
+        <div>
+          <div>
+            <h1><i class="forward icon"></i>Our examples have moved</h1>
+            <p>We have moved our exaples to a new home at <a href="http://bonaparte.github.io/examples-bonaparte/public/examples/">http://bonaparte.github.io/examples-bonaparte/public/examples/</a>. These examples are out of data and should not be used.</p>
+            <div class="right">
+             <!--  <bonaparte-button class="ui small button" target="#messageBar" action="click" target-open="false"><i class="lock-open icon"></i>Boot Giles</bonaparte-button> -->
+            </div>
+          </div>
+        </div>
+      </bonaparte-sidebar>
           <div class="main demo ui container">
             <h4 class="ui dividing header">About</h4>
             <p>Bonaparte-ND is a <a href="https://github.com/dowjones/bonaparte/">Bonaparte</a> build with a custom <a href="http://semantic-ui.com">Semantic UI</a> theme developed for editorial tools at Dow Jones.</p>

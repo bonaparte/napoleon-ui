@@ -1,4 +1,6 @@
 @import "./variables.less";
+@import "./block.less";
+
 
 .ui.button,
 button.ui {
@@ -15,6 +17,74 @@ button.ui {
     cursor:pointer;
     user-select: none;
     text-align:center;
+    border:0px;
+    outline:0px;
+  }
+
+
+
+
+  &.fluid {
+    display:block;
+  }
+
+  &.fluid + &.fluid {
+      margin:0.5rem 0;
+  }
+
+
+/*  &.marginless,
+  & + &.marginless,
+  &.marginless + &.marginless {
+    margin:0;
+  }
+*/
+
+  &.icon {
+    text-align:center;
+
+    > i.icon {
+      margin:0px;
+    }  
+  }
+
+  &.labeled.icon {
+    & {
+      text-align:left;
+      overflow:hidden;
+      padding-left:0rem;
+      padding-right:1rem;
+      direction:ltr;
+    }
+
+    > i.icon {
+      float:left;
+      margin-left:0rem;
+      margin-right:1rem;
+    }
+  }
+
+  &.right.labeled.icon {
+    & {
+      text-align:right;
+      padding-right:0rem;
+      padding-left:1rem;
+      direction:rtl;
+    }
+
+    > i.icon {
+      float:right;
+      margin-left:1rem;
+      margin-right:0rem;
+    }
+  }
+
+  > i.icon {
+    height:auto;
+    margin:0 1rem 0 0;
+  }  
+  > i.icon.right {
+    margin:0 0 0 1rem;
   }
   
   &:after {
@@ -81,62 +151,6 @@ button.ui {
   &.toggle-right:before {
     border-width:0px;
     border-right-width:3px; 
-  }
-
-
-  &.fluid {
-    display:block;
-  }
-
-  &.fluid + &.fluid {
-      margin:0.5rem 0;
-  }
-
-
-/*  &.marginless,
-  & + &.marginless,
-  &.marginless + &.marginless {
-    margin:0;
-  }
-*/
-
-  &.icon {
-    text-align:center;
-
-    > i.icon {
-      margin:0px;
-    }  
-  }
-
-  &.labeled.icon {
-    & {
-      text-align:right;
-    }
-
-    > i.icon {
-      position:absolute;
-      left:0px;
-      right:auto;
-    }
-  }
-
-  &.right.labeled.icon {
-    & {
-      text-align:left;
-    }
-
-    > i.icon {
-      left: auto;
-      right: 0;
-    }
-  }
-
-  > i.icon {
-    height:auto;
-    margin:0 1rem 0 0;
-  }  
-  > i.icon.right {
-    margin:0 0 0 1rem;
   }
 
   /*-------------------
@@ -244,7 +258,7 @@ button.ui {
 
   }
 
-  .buttonSizes();
+  .buttonSizes(@normalVariables);
 
   /***********************
     COLORS VARIATIONS
@@ -397,9 +411,12 @@ button.ui {
       background-color:transparent !important;
     }
 
-/*    &:active {
-      color:darken(@color-interactive, 2);
-    }*/
+    &:hover {
+      text-decoration:underline;
+      i.icon {
+        text-decoration:none;
+      }
+    }
 
     &.active {
       &:active {
@@ -545,6 +562,10 @@ button.ui {
 
 
     &.active {
+      & {
+        color:@color-active;
+      }    
+
       &:active {
         &:after {
           border-color:@color-active;
@@ -1190,7 +1211,7 @@ button.ui {
     }
   }
 
-  .groupSizes(); 
+  .groupSizes(@normalVariables); 
 }
 
 /*////////////////////////////////////////////////////////////////////*/
@@ -1360,7 +1381,7 @@ button.ui {
   @overrides();
   .variables();
 
-  &, .hidden.content {
+  & {
     font-size:@fontSize;
     line-height:@lineHeight;
     padding:@padding;
@@ -1371,28 +1392,22 @@ button.ui {
     min-height:@iconSize;
   }
 
-  &.animated {
-   .hidden.content {
-     position:absolute;
-     font-size:1em;
-     height:@iconSize;
-     margin-top:-@iconSize/2;
-   }
-  }
-
-
   &.labeled.icon {
-    padding-left:@iconSize+1em;
-    padding-right:1rem;
-
     > .icon {
       width:@iconSize;
     }
   }
 
-  &.right.labeled.icon {
-    padding-left:1rem;
-    padding-right:@iconSize+1em;
+  &.animated {
+   .hidden.content {
+     font-size:@fontSize;
+     line-height:@lineHeight;
+     padding:@padding;
+     position:absolute;
+     font-size:1em;
+     height:@iconSize;
+     margin-top:-@iconSize/2;
+   }
   }
 
 /*  &.transparent:after {
@@ -1457,73 +1472,6 @@ button.ui {
 /*////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
 
-@miniVariables : {
-  .variables(){
-
-    @iconSize : 2rem;
-    @fontSize:  @h6;
-    @lineHeight: @h6Lineheight;
-    @padding : 0.25rem 1rem;
-    @orPadding : 1.5rem;
-    @orLineHeight : 1.4rem;
-    @orHeight : @h6Lineheight;
-    @underlineCorrection: -1px;
-    @toggleLine: 1px;
-
-  }
-};
-
-@smallVariables : {
-  .variables(){
-
-    @iconSize : 3rem;
-    @fontSize:  @smallSize;
-    @lineHeight: @h5Lineheight;
-    @padding : 0.5rem 1rem;
-    @orPadding : 1.5rem;
-    @orHeight : @h5Lineheight;
-    @orLineHeight : 1.9rem;
-    @underlineCorrection: -1px;
-    @toggleLine: 2px;
-
-  }
-};
-
-
-@largeVariables : {
-  .variables(){
-
-    @iconSize : 5rem;
-    @fontSize:  @largeSize;
-    @lineHeight: @h5Lineheight;
-    @padding : 1.5rem 1.25rem;
-    @orPadding : 2.5rem;
-    @orLineHeight : 3.5rem;
-    @orHeight : 3.5rem;
-    @underlineCorrection: 2px;
-    @toggleLine: 4px;
-
-  }
-};
-
-
-@hugeVariables : {
-  .variables(){
-
-    @iconSize : 6rem;
-    @fontSize:  @hugeSize;
-    @lineHeight: @h2Lineheight;
-    @padding : 0.5rem 1.5rem;
-    @orPadding : 3rem;
-    @orLineHeight : 3.9rem;
-    @orHeight : 4rem;
-    @underlineCorrection: -1rem;
-    @toggleLine: 6px;
-  }
-};
-
-
-/*////////////////////////////////////////////////////////////////////*/
 
 
 bonaparte-toolbar.mini > *:first-child button.ui,
