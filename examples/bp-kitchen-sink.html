@@ -31,10 +31,16 @@
             Kitchen-Sink
           </div>
         </div>
+        <div>
+          <bonaparte-button class="ui button small transparent toggle" target="#main" target-class="ui container bg-grid" action="click" toggle="true"><i class="icon grid-on"></i>Grid</bonaparte-button>
+        </div>
       </aside>
       <bonaparte-scroll>
         <div>
-          <div class="ui container bg-grid">
+          <div id="main" class="ui container">
+
+            <h1 class="ui dividing header">Headers</h1>
+
             <div class="ui grid">
               <div class="eight wide column">
                 <h1>Header H1</h1>
@@ -75,7 +81,7 @@
                 <p class="small">More text<br>More text<br>More text</p>
                 <h6>Header H6</h6>
                 <p>Some text <small>small text</small></p>
-                <p class="small">More text<br>More text<br>More text<br>More text<br>More text<br>More text<br>More text<br>More text<br>More text<br>More text<br>More text</p>
+                <p class="small">More text<br>More text<br>More text<br>More text<br>More text<br>More text<br>More text<br>More text<br>More text</p>
               </div>
               <div class="eight wide column">
 
@@ -104,9 +110,330 @@
                 <h6>Header H6</h6>
                 <div class="h6 subheader">Subheader H6</div>
                 <p>Some text<br>Some text <small>small text</small></p>
-                <p class="small">More text<br>More text<br>More text</p>
+                <p class="small">More text</p>
               </div>
             </div>
+
+            <h1 class="ui dividing header">Buttons</h1>
+
+
+            <div class="ui grid">
+              <div class="eight wide column">
+                <h3>Sizes</h3>
+
+                <div class="ui button huge">Huge</div>
+                <div class="ui button large">Large</div>
+                <div class="ui button">Button</div>
+                <div class="ui button small">Small</div>
+                <div class="ui button mini">Mini</div>
+
+                <h3>States</h3>
+
+                <div class="ui button">Button</div>
+                <div class="ui button active">Active</div>
+                <div class="ui button disabled">Disabled</div>
+
+                <h5>Toggle</h5>
+
+                <div class="ui button toggle-top">Toggle Top</div>
+                <div class="ui button toggle-right">Toggle Right</div>
+                <div class="ui button toggle active">Toggle</div>
+                <div class="ui button toggle-left">Toggle Left</div>
+
+              </div>
+              <div class="eight wide column">
+                <h3>Fluid</h3>
+
+                <div class="ui button huge fluid">Huge</div>
+                <div class="ui button large fluid">Large</div>
+                <div class="ui button fluid">Button</div>
+                <div class="ui button small fluid">Small</div>
+                <div class="ui button mini fluid">Mini</div>
+              </div>
+            </div>
+
+            <h3>Variations</h3>
+
+            <div class="ui grid">
+              <div class="two wide column">
+                <p class="small"><b>.ui .button</b></p> 
+              </div>
+              <div class="two wide column">
+                <div class="ui block mini"><b></b></div> 
+              </div>
+              <div class="two wide column">
+                <p class="small"><b>.transparent</b></p> 
+              </div>
+              <div class="two wide column">
+                <p class="small"><b>.inverted</b></p> 
+              </div>
+              <div class="two wide column">
+                <p class="small"><b>.monochrome</b></p> 
+              </div>
+              <div class="two wide column">
+                <p class="small"><b>.inverted .monochrome</b></p> 
+              </div>
+              <div class="two wide column">
+                <p class="small"><b>.transparent .monochrome</b></p> 
+              </div>
+              <div class="two wide column">
+                <p class="small"><b>.transparent .monochrome .inverted</b></p> 
+              </div>
+            </div>            
+            <div class="ui grid">
+              <div class="two wide column">
+                <div class="ui block small"><b></b></div> 
+              </div>
+              <div class="two wide column">
+                <div class="ui button"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui button transparent"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui button inverted">Button<i class="icon settings right"></i></div>
+              </div>
+              <div class="two wide column">
+                <div class="ui button monochrome"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui button inverted monochrome"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui button transparent monochrome"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui button transparent monochrome inverted"><i class="icon settings"></i>Button</div>
+              </div>
+            </div>
+            <div class="ui grid">
+              <div class="two wide column">
+                <p class="small"><b>.labeled .icon</b></p> 
+              </div>
+              <div class="two wide column">
+                <div class="ui labeled icon button "><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui labeled icon button transparent"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui labeled icon button inverted"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui labeled icon button monochrome"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui labeled icon button inverted monochrome"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui labeled icon button  transparent monochrome"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui labeled icon button  transparent monochrome inverted"><i class="icon settings"></i>Button</div>
+              </div>
+            </div>
+            <div class="ui grid">
+              <div class="two wide column">
+                <p class="small"><b>.labeled .icon .right</b></p> 
+              </div>
+              <div class="two wide column">
+                <div class="ui labeled icon button right "><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui labeled icon button right  transparent"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui labeled icon button right  inverted"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui labeled icon button right  monochrome"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui labeled icon button right  inverted monochrome"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui labeled icon button right  transparent monochrome"><i class="icon settings"></i>Button</div>
+              </div>
+              <div class="two wide column">
+                <div class="ui labeled icon button right  transparent monochrome inverted"><i class="icon settings"></i>Button</div>
+              </div>
+            </div>
+            <div class="ui grid">
+              <div class="two wide column">
+                <p class="small"><b>.icon</b></p> 
+              </div>
+              <div class="two wide column">
+                <div class="ui icon button "><i class="icon settings"></i></div>
+              </div>
+              <div class="two wide column">
+                <div class="ui  icon button  transparent"><i class="icon settings"></i></div>
+              </div>
+              <div class="two wide column">
+                <div class="ui  icon button  inverted"><i class="icon settings"></i></div>
+              </div>
+              <div class="two wide column">
+                <div class="ui  icon button  monochrome"><i class="icon settings"></i></div>
+              </div>
+              <div class="two wide column">
+                <div class="ui  icon button  inverted monochrome"><i class="icon settings"></i></div>
+              </div>
+              <div class="two wide column">
+                <div class="ui  icon button  transparent monochrome"><i class="icon settings"></i></div>
+              </div>
+              <div class="two wide column">
+                <div class="ui  icon button  transparent monochrome inverted"><i class="icon settings"></i></div>
+              </div>
+            </div>
+
+            <div class="ui grid">
+              <div class="two wide column">
+                <p class="small"><b>.animated</b></p> 
+              </div>
+              <div class="two wide column">
+                <div class="ui animated button">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated button transparent">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated button inverted">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated button monochrome">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated button inverted monochrome">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated button transparent monochrome">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated button transparent monochrome inverted">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui grid">
+              <div class="two wide column">
+                <p class="small"><b>.animated .vertical</b></p> 
+              </div>
+              <div class="two wide column">
+                <div class="ui animated vertical button">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated vertical button transparent">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated vertical button inverted">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated vertical button monochrome">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated vertical button inverted monochrome">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated vertical button transparent monochrome">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated vertical button transparent monochrome inverted">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui grid">
+              <div class="two wide column">
+                <p class="small"><b>.animated .fade</b></p> 
+              </div>
+              <div class="two wide column">
+                <div class="ui animated fade button">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated fade button transparent">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated fade button inverted">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated fade button monochrome">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated fade button inverted monochrome">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated fade button transparent monochrome">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+              <div class="two wide column">
+                <div class="ui animated fade button transparent monochrome inverted">
+                  <div class="visible content"><i class="icon settings"></i>Button</div>
+                  <div class="hidden content"><i class="icon settings"></i>Hidden</div>
+                </div>
+              </div>
+            </div>
+
+            <h1 class="ui dividing header">Button Groups</h1>
+            <h1 class="ui dividing header">Block</h1>
+            <h1 class="ui dividing header">Segment</h1>
+            <h1 class="ui dividing header">Forms</h1>
+
           </div>
         </div>
         <bonaparte-panel></bonaparte-panel>

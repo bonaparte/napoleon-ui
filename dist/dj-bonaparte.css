@@ -1002,7 +1002,7 @@ button.ui.labeled.icon,
 .ui.buttons.labeled.icon button.ui,
 .ui.buttons.labeled.icon .ui.button {
   text-align: left;
-  overflow: hidden;
+  /*overflow:hidden;*/
   padding-left: 0rem;
   padding-right: 1rem;
   direction: ltr;
@@ -1341,9 +1341,9 @@ button.ui.toggle-top:before,
 .ui.buttons.toggle-top .ui.button:before,
 .ui.buttons.toggle-top button.ui:before {
   margin: 0px;
-  margin-top: -3p;
+  margin-top: -3px;
   border-width: 0px;
-  border-top-width: 3p;
+  border-top-width: 3px;
 }
 .ui.button.toggle-right:before,
 button.ui.toggle-right:before,
@@ -1352,9 +1352,9 @@ button.ui.toggle-right:before,
 .ui.buttons.conditional .ui.button:last-child:before,
 .ui.buttons.conditional button.ui:last-child:before {
   margin: 0px;
-  margin-right: -3p;
+  margin-right: -3px;
   border-width: 0px;
-  border-right-width: 3p;
+  border-right-width: 3px;
 }
 .ui.button.toggle:before,
 button.ui.toggle:before,
@@ -1367,9 +1367,9 @@ button.ui.toggle-bottom:before,
 .ui.buttons.toggle button.ui:before,
 .ui.buttons.toggle-bottom button.ui:before {
   margin: 0px;
-  margin-bottom: -3p;
+  margin-bottom: -3px;
   border-width: 0px;
-  border-bottom-width: 3p;
+  border-bottom-width: 3px;
 }
 .ui.button.toggle-left:before,
 button.ui.toggle-left:before,
@@ -1378,9 +1378,9 @@ button.ui.toggle-left:before,
 .ui.buttons.conditional .ui.button:first-child:before,
 .ui.buttons.conditional button.ui:first-child:before {
   margin: 0px;
-  margin-left: -3p;
+  margin-left: -3px;
   border-width: 0px;
-  border-left-width: 3p;
+  border-left-width: 3px;
 }
 .ui.button:after,
 button.ui:after {
@@ -2877,9 +2877,9 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
 .ui.buttons.conditional button.ui:first-child:before,
 .ui.buttons.conditional .ui.button:first-child:before {
   margin: 0px;
-  margin-left: -3p;
+  margin-left: -3px;
   border-width: 0px;
-  border-left-width: 3p;
+  border-left-width: 3px;
 }
 .ui.buttons.conditional button.ui:not(:first-child):not(:last-child),
 .ui.buttons.conditional .ui.button:not(:first-child):not(:last-child) {
@@ -2893,9 +2893,9 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
 .ui.buttons.conditional button.ui:last-child:before,
 .ui.buttons.conditional .ui.button:last-child:before {
   margin: 0px;
-  margin-right: -3p;
+  margin-right: -3px;
   border-width: 0px;
-  border-right-width: 3p;
+  border-right-width: 3px;
 }
 .ui.buttons.conditional .or {
   height: 4rem;
@@ -2913,16 +2913,16 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
 .ui.buttons.toggle-top .ui.button:before,
 .ui.buttons.toggle-top button.ui:before {
   margin: 0px;
-  margin-top: -3p;
+  margin-top: -3px;
   border-width: 0px;
-  border-top-width: 3p;
+  border-top-width: 3px;
 }
 .ui.buttons.toggle-right .ui.button:before,
 .ui.buttons.toggle-right button.ui:before {
   margin: 0px;
-  margin-right: -3p;
+  margin-right: -3px;
   border-width: 0px;
-  border-right-width: 3p;
+  border-right-width: 3px;
 }
 .ui.buttons.toggle .ui.button:before,
 .ui.buttons.conditional .ui.button:before,
@@ -2931,16 +2931,16 @@ button.ui.monochrome.transparent.inverted.disabled:active:after,
 .ui.buttons.conditional button.ui:before,
 .ui.buttons.toggle-bottom button.ui:before {
   margin: 0px;
-  margin-bottom: -3p;
+  margin-bottom: -3px;
   border-width: 0px;
-  border-bottom-width: 3p;
+  border-bottom-width: 3px;
 }
 .ui.buttons.toggle-left .ui.button:before,
 .ui.buttons.toggle-left button.ui:before {
   margin: 0px;
-  margin-left: -3p;
+  margin-left: -3px;
   border-width: 0px;
-  border-left-width: 3p;
+  border-left-width: 3px;
 }
 /*////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
