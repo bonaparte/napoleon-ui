@@ -12,7 +12,7 @@ This is a [Bonaparte](https://github.com/bonaparte/bonaparte) build with a custo
 
 ## Examples
 
-http://bonaparte.github.io/dowjones-theme/examples/
+http://bonaparte.github.io/examples-bonaparte/public/examples/
 
 ## Basic Use
 
@@ -23,11 +23,7 @@ http://bonaparte.github.io/dowjones-theme/examples/
   ./dist/dj-bonaparte.css
   ./dist/dj-bonaparte.js
   ```
-  
-  And if necessary:
-  ```
-  ./dist/SUI-js/semantic.min.js
-  ```
+
   
 This makes bonaparte and the bonaparte Semantic UI theme available in your project.
 
