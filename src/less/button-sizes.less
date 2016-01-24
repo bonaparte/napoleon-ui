@@ -1,0 +1,77 @@
+.buttonSizes(
+  @overrides:{.variables(){}},
+  @fontSize:  @mediumSize,
+  @lineHeight: 2rem,
+  @padding : 1.0833333rem 1rem 0.9188888rem 1rem,
+  @iconSize : 4rem,
+  @underlineCorrection : -1px,
+  @toggleLine : 3px
+){  
+
+  @overrides();
+  .variables();
+
+
+  & {
+    font-size:@fontSize;
+    line-height:@lineHeight;
+    padding:@padding;
+  }
+
+  &.icon {
+    min-width:@iconSize;  
+    min-height:@iconSize;
+  }
+
+  &.labeled.icon {
+    > .icon {
+      width:@iconSize;
+    }
+  }
+
+  &.animated {
+   .hidden.content {
+     font-size:@fontSize;
+     line-height:@lineHeight;
+     padding:@padding;
+     position:absolute;
+     font-size:1em;
+     height:@iconSize;
+     margin-top:-@iconSize/2;
+   }
+  }
+
+/*  &.transparent:after {
+    top:@underlineCorrection;
+  } 
+*/
+  &.toggle-top:before {
+    margin:0px;
+    margin-top:-@toggleLine;
+    border-width:0px;
+    border-top-width:@toggleLine;
+  }
+
+  &.toggle-right:before {
+    margin:0px;
+    margin-right:-@toggleLine;
+    border-width:0px;
+    border-right-width:@toggleLine;
+  }
+
+  &.toggle:before,
+  &.toggle-bottom:before {
+    margin:0px;
+    margin-bottom:-@toggleLine;
+    border-width:0px;
+    border-bottom-width:@toggleLine;
+  }
+
+  &.toggle-left:before {
+    margin:0px;
+    margin-left:-@toggleLine;
+    border-width:0px;
+    border-left-width:@toggleLine;
+  }
+
+}

@@ -1,0 +1,432 @@
+.buttons(){
+
+/*/////////////////////////////////////////////////////////  */
+  & {
+    display: inline-flex;
+    flex-direction: row;
+    padding:0;
+    /*margin:0.5rem 0rem;*/
+    vertical-align: top;
+
+
+    .ui.button,
+    button.ui {
+      display:inline-block;
+      flex: 1 0 auto;
+      margin:0px;
+    }
+  }
+
+    /* Fluid Or */
+  &.fluid .or {
+    width: 0em !important;
+  }
+  &.fluid .or:after {
+    display: none;
+  }
+
+/*
+  & + & {
+    margin-left:1rem;
+  }*/
+
+  &.vertical {
+    display: inline-flex;
+    flex-direction: column;
+    margin:0;
+
+    .ui.button,
+    button.ui {
+      display:block;
+      text-align:left;
+
+      &.icon {
+        text-align:center;
+      }
+    }
+
+/*    & + & {
+      margin-top:1rem;
+    }  */
+  }
+
+  &.marginless {
+    margin:0px;
+  }
+ 
+
+  &.conditional {
+
+    .or {
+      position: relative;
+      z-index:1000;
+    }
+    .or:before {
+      position: absolute;
+      text-align: center;
+
+      content: "or";
+      top: 50%;
+      left: 50%;
+
+    
+      color:@color-text-light;
+
+      background-color:@color-interactive;
+    }
+    .or[data-text]:before {
+      content: attr(data-text);
+    }
+
+  }
+
+
+  &.toggle-top {
+
+    .ui.button,
+    button.ui {
+      &:extend(.ui.button.toggle-top all);
+    }
+  }
+  &.toggle-right {
+
+    .ui.button,
+    button.ui {
+      &:extend(.ui.button.toggle-right all);
+    }
+  }
+
+  &.conditional,
+  &.toggle,
+  &.toggle-bottom {
+
+    .ui.button,
+    button.ui {
+      &:extend(.ui.button.toggle all);
+    }
+  }
+
+  &.toggle-left {
+
+    .ui.button,
+    button.ui {
+      &:extend(.ui.button.toggle-left all);
+    }
+  }
+  &.conditional {
+
+    .ui.button,
+    button.ui {
+
+      &:first-child {
+        &:extend(.ui.button.toggle-left all);
+      }
+      
+      &:last-child {
+        &:extend(.ui.button.toggle-right all);
+      }
+    }
+  }
+
+
+
+    /* Fluid Or */
+  &.fluid .or {
+    width: 0em !important;
+  }
+  &.fluid .or:after {
+    display: none;
+  }
+
+  &.fluid {
+    display:flex;
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.fluid all);   
+    }
+  }
+
+  &.icon {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.icon all);   
+    }
+
+/*    &.transparent:not(.labeled) {
+      button.ui,
+      .ui.button {
+        &:after {
+          border:0px;
+        }
+      }
+    }*/
+
+  }
+
+  &.labeled.icon {
+
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.labeled.icon all);   
+    }
+
+  } 
+  &.right.labeled.icon {
+
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.right.labeled.icon all);   
+    }
+  }
+
+  &.disabled {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.disabled all); 
+    }
+  }
+
+  &.inverted {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.inverted all); 
+    }
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left,
+    &.conditional {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.inverted.toggle all);
+      }
+    }
+
+    &.disabled {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.inverted.disabled all);
+      }
+    }
+
+    &.conditional {
+      .or:before {
+        color:@color-interactive;
+        background-color:@color-light-1;
+      }
+    }
+  }
+  &.monochrome {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.monochrome all); 
+    }
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left,
+    &.conditional {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.toggle all);
+      }
+    }
+
+    &.disabled {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.disabled all);
+      }
+    }
+
+    &.conditional {
+      .or:before {
+        color:@color-text-light;
+        background-color:@color-dark-3;
+      }
+    }
+  }
+
+
+  &.transparent {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.transparent all); 
+    }
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left,
+    &.conditional {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.transparent.toggle all);
+      }
+    }
+    
+    &.disabled {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.transparent.disabled all);
+      }
+    }
+
+    &.conditional {
+      .or:before {
+        color:@color-interactive;
+        background-color:transparent !important;
+        border:1px solid @color-interactive;
+      }
+    }
+  }
+
+
+
+
+  &.transparent.inverted {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.transparent.inverted all);
+    }
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left,
+    &.conditional {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.transparent.inverted.toggle all);
+      }
+    }
+
+    &.disabled {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.transparent.inverted.disabled all);
+      }
+    }
+
+    &.conditional {
+      .or:before {
+        color:@color-text-light;
+        border:1px solid @color-text-light;
+
+      }
+    }
+  }
+
+
+  &.monochrome.inverted {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.monochrome.inverted all);
+    }
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left,
+    &.conditional {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.inverted.toggle all);
+      }
+    }
+
+    &.disabled {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.inverted.disabled all);
+      }
+    }
+    &.conditional {
+      .or:before {
+        color:@color-text-dark;
+        background-color:@color-light-1;
+      }
+    }
+  }
+
+
+  &.monochrome.transparent {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.monochrome.transparent all);
+    }
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left,
+    &.conditional {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.transparent.toggle all);
+      }
+    }
+
+    &.disabled {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.transparent.disabled all);
+      }
+    }
+
+    &.conditional {
+      .or:before {
+        color:@color-text-dark;
+        border:1px solid @color-text-dark;
+
+      }
+    }
+  }
+
+
+  &.inverted.transparent.monochrome {
+    button.ui,
+    .ui.button {
+      &:extend(.ui.button.monochrome.transparent.inverted all);
+    }
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.toggle-bottom,
+    &.toggle-left,
+    &.conditional {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.transparent.inverted.toggle all);
+      }
+    }
+
+    &.disabled {
+      button.ui,
+      .ui.button {
+        &:extend(.ui.button.monochrome.transparent.inverted.disabled all);
+      }
+    }
+
+    &.conditional {
+      .or:before {
+        color:@color-text-light;
+        border:1px solid @color-text-light;
+      }
+    }
+  }
+
+
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+

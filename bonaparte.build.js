@@ -1,21 +1,33 @@
 require("./src/wsj-fonts.css");
 
-require("./src/less/variables.less");
+
+// Bonaparte //////////////////////////////////////////////////////////////////
+
+
+require("bonaparte-panel/bonaparte.build");
+require("bonaparte-scroll/bonaparte.build");
+require("bonaparte-button/bonaparte.build");
+require("bonaparte-sidebar/bonaparte.build");
+require("bonaparte-toolbar/bonaparte.build");
+require("bonaparte-draggable/bonaparte.build");
+require("bonaparte-dropdown/bonaparte.build");
+
+require("./bonaparte.less");
 
 // SUI ////////////////////////////////////////////////////////////////////////
 
 
-require("./src/less/normalize.less"); // require("./SUI/definitions/globals/reset.less");
-require("./src/less/base.less"); // require("./SUI/definitions/globals/site.less");
-require("./src/less/block.less");
+// require("./src/less/normalize.less"); // require("./SUI/definitions/globals/reset.less");
+// require("./src/less/base.less"); // require("./SUI/definitions/globals/site.less");
+// require("./src/less/block.less");
 
 /* Elements */
 
-require("./src/less/button.less"); // require("./SUI/definitions/elements/button.less");
-require("./src/less/container.less"); // require("./SUI/definitions/elements/container.less");
+// require("./src/less/button.less"); // require("./SUI/definitions/elements/button.less");
+// require("./src/less/container.less"); // require("./SUI/definitions/elements/container.less");
 require("./SUI/definitions/elements/divider.less");
 // require("./SUI/definitions/elements/header.less");
-require("./src/less/header.less");
+// require("./src/less/header.less");
 require("./SUI/definitions/elements/flag.less");
 require("./SUI/definitions/elements/icon.less");
 // require("./SUI/definitions/elements/image.less");
@@ -63,28 +75,4 @@ require("./SUI/definitions/collections/table.less");
 // require("./SUI/definitions/modules/tab.less");
 // require("./SUI/definitions/modules/transition.less");
 
-
-// Bonaparte //////////////////////////////////////////////////////////////////
-
-require("bonaparte-panel").register();
-
-require("./src/less/bonaparte-panel.less");
-
-require("bonaparte-scroll").register();
-require("./src/less/bonaparte-scroll.less");
-
-require("bonaparte-button").register();
-require("./src/less/bonaparte-button.less");
-
-require("bonaparte-sidebar").register();
-require("./src/less/bonaparte-sidebar.less");
-
-require("bonaparte-toolbar").register();
-require("./src/less/bonaparte-toolbar.less");
-
-require("bonaparte-draggable/bonaparte.build");
-
-require("./src/less/bonaparte-content.less");
-
-require("bonaparte-dropdown/bonaparte.build");
 

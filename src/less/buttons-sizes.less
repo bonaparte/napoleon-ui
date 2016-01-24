@@ -1,0 +1,145 @@
+.buttonsSizes(
+  @overrides:{.variables(){}},
+  @iconSize : 4rem,
+  @fontSize : @h5,
+  @orLineHeight : 3rem,
+  @orHeight : 3rem,
+  @orPadding : 2rem,
+  @underlineCorrection : -1px,
+  @toggleLine : 3px
+
+){  
+
+  @overrides();
+  .variables();
+ 
+  &.icon {
+
+    .button.ui,
+    button.ui {
+      min-width:@iconSize;  
+      min-height:@iconSize;
+    }
+  }
+
+  &.conditional {
+
+    button.ui,
+    .ui.button {
+
+      &:first-child {
+        padding-right:@orPadding;
+        &:before {
+          margin:0px;
+          margin-left:-@toggleLine;
+          border-width:0px;
+          border-left-width:@toggleLine;
+        }
+      }
+
+      &:not(:first-child):not(:last-child) {
+        padding-left:@orPadding;
+        padding-right:@orPadding;
+      }
+  
+      &:last-child {
+        padding-left:@orPadding;
+        &:before {
+          margin:0px;
+          margin-right:-@toggleLine;
+          border-width:0px;
+          border-right-width:@toggleLine;
+        }
+      }
+    }
+
+    .or {
+      height:@iconSize;
+      width: @orLineHeight/4;
+    }
+    .or:before {      
+      border-radius: @orLineHeight/2;
+      height:@orHeight;
+      width:@orHeight;
+      margin-left:-@orLineHeight/2;
+      margin-top:-@orLineHeight/2;
+      line-height:@orLineHeight;
+      font-size:@fontSize;
+    }
+  }
+
+/*  &.transparent {
+    .ui.button,
+    button.ui {
+      &:after {
+        top:@underlineCorrection;
+      }
+    }
+
+
+    &.toggle,
+    &.toggle-top,
+    &.toggle-right,
+    &.conditional,
+    &.toggle-bottom,
+    &.toggle-left {
+      .ui.button,
+      button.ui {
+        &:after {
+          display:none;
+        }
+      }
+    }
+  } */
+
+  &.toggle-top {
+    .ui.button,
+    button.ui {
+      &:before {
+        margin:0px;
+        margin-top:-@toggleLine;
+        border-width:0px;
+        border-top-width:@toggleLine;
+      }
+    }
+  }
+
+  &.toggle-right {
+    .ui.button,
+    button.ui {
+      &:before {
+        margin:0px;
+        margin-right:-@toggleLine;
+        border-width:0px;
+        border-right-width:@toggleLine;
+      }
+    }
+  }
+
+  &.toggle,
+  &.conditional,
+  &.toggle-bottom {
+    .ui.button,
+    button.ui {
+      &:before {
+        margin:0px;
+        margin-bottom:-@toggleLine;
+        border-width:0px;
+        border-bottom-width:@toggleLine;
+      }
+    }
+  }
+
+  &.toggle-left {
+    .ui.button,
+    button.ui {
+      &:before {
+        margin:0px;
+        margin-left:-@toggleLine;
+        border-width:0px;
+        border-left-width:@toggleLine;
+      }
+    }
+  }
+
+}
