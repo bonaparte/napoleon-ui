@@ -2,7 +2,9 @@
 
 This is a [Bonaparte](https://github.com/bonaparte/bonaparte) build with a custom [Semantic UI](http://semantic-ui.com) theme developed for editorial tools at Dow Jones.
 
-[Kitchen Sink](http://bonaparte.github.io/theme-dowjones/examples/bp-kitchen-sink.html)
+[Kitchen Sink](http://bonaparte.github.io/theme-dowjones/examples/bp-kitchen-sink.html)<br>
++[Old Kitchen Sink](http://bonaparte.github.io/theme-dowjones/examples/kitchen-sink.html) (will be removed after everything is migrated to new kitchen sink)
+
 
 ## Getting Started
 
