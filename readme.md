@@ -1,52 +1,10 @@
-# Dow Jones Bonaparte
-
-- [About](#about)
-- [Basic Use](#basic-use)
-- [Examples](#examples)
-- [Included Bonaparte Components](#included-bonaparte-components)
-- [Development](#development)
-
-## About
+# Dow Jones Bonaparte Theme
 
 This is a [Bonaparte](https://github.com/bonaparte/bonaparte) build with a custom [Semantic UI](http://semantic-ui.com) theme developed for editorial tools at Dow Jones.
 
-## Examples
+[Kitchen Sink](http://bonaparte.github.io/theme-dowjones/examples/bp-kitchen-sink.html)
 
-http://bonaparte.github.io/examples-bonaparte/public/examples/
+## Getting Started
 
-## Basic Use
-
-- Download / Clone Repository.
-- Include files: 
-
-  ```
-  ./dist/bonaparte.css
-  ./dist/bonaparte.js
-  ```
-
-  
-This makes bonaparte and the bonaparte Semantic UI theme available in your project.
-
-
-## Included Bonaparte Components
-
-  - [< bonaparte-button >](https://github.com/bonaparte/bonaparte-button)
-  - [< bonaparte-scroll >](https://github.com/bonaparte/bonaparte-scroll)
-  - [< bonaparte-sidebar >](https://github.com/bonaparte/bonaparte-sidebar)
-  - [< bonaparte-panel >](https://github.com/bonaparte/bonaparte-panel)
-  - [< bonaparte-toolbar >](https://github.com/bonaparte/bonaparte-toolbar)
-  - [< bonaparte-dragable >](https://github.com/bonaparte/bonaparte-dragable)
-  - [< bonaparte-dropdown >](https://github.com/bonaparte/bonaparte-dropdown)
-
-## Development
-
-For development use the standard Bonaparte build process:
-
-```
-npm run build
-```
-or
-```
-npm run watch
-```
-To rebuild/watch `bonaparte.build.js`
+To get started go to the [starter-build](https://github.com/bonaparte/starter-build) repository.
+Also have a look at the `starter-vanilla` and `starter-react` repositories which use the `starter-build`
