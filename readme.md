@@ -20,8 +20,8 @@ http://bonaparte.github.io/examples-bonaparte/public/examples/
 - Include files: 
 
   ```
-  ./dist/dj-bonaparte.css
-  ./dist/dj-bonaparte.js
+  ./dist/bonaparte.css
+  ./dist/bonaparte.js
   ```
 
   
