@@ -6,5 +6,6 @@ This is a [Bonaparte](https://github.com/bonaparte/bonaparte) build with a custo
 
 ## Getting Started
 
-To get started go to the [starter-build](https://github.com/bonaparte/starter-build) repository.
+To get started see the [starter-build](https://github.com/bonaparte/starter-build) repository.
+
 Also have a look at the `starter-vanilla` and `starter-react` repositories which use the `starter-build`
