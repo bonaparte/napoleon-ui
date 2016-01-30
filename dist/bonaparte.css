@@ -709,7 +709,6 @@ bonaparte-panel:not([data-position]):not([position])[open="true"],
 bonaparte-panel[data-position~="left"][open="true"],
 bonaparte-panel[position~="left"][open="true"] {
   -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
           transform: translateX(100%);
 }
 bonaparte-panel[data-position~="right"],
@@ -726,7 +725,6 @@ bonaparte-panel[position~="right"][data-open="true"],
 bonaparte-panel[data-position~="right"][open="true"],
 bonaparte-panel[position~="right"][open="true"] {
   -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
           transform: translateX(-100%);
 }
 bonaparte-panel[data-position~="top"],
@@ -743,7 +741,6 @@ bonaparte-panel[position~="top"][data-open="true"],
 bonaparte-panel[data-position~="top"][open="true"],
 bonaparte-panel[position~="top"][open="true"] {
   -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
           transform: translateY(100%);
 }
 bonaparte-panel[data-position~="bottom"],
@@ -760,7 +757,6 @@ bonaparte-panel[position~="bottom"][data-open="true"],
 bonaparte-panel[data-position~="bottom"][open="true"],
 bonaparte-panel[position~="bottom"][open="true"] {
   -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
           transform: translateY(-100%);
 }
 /*///////////////////////////////////////////////////////////////////////////*/
@@ -801,7 +797,6 @@ bonaparte-panel:not([data-position]):not([position])[open="true"],
 bonaparte-panel[data-position~="left"][open="true"],
 bonaparte-panel[position~="left"][open="true"] {
   -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
           transform: translateX(100%);
 }
 bonaparte-panel[data-position~="right"],
@@ -818,7 +813,6 @@ bonaparte-panel[position~="right"][data-open="true"],
 bonaparte-panel[data-position~="right"][open="true"],
 bonaparte-panel[position~="right"][open="true"] {
   -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
           transform: translateX(-100%);
 }
 bonaparte-panel[data-position~="top"],
@@ -835,7 +829,6 @@ bonaparte-panel[position~="top"][data-open="true"],
 bonaparte-panel[data-position~="top"][open="true"],
 bonaparte-panel[position~="top"][open="true"] {
   -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
           transform: translateY(100%);
 }
 bonaparte-panel[data-position~="bottom"],
@@ -852,7 +845,6 @@ bonaparte-panel[position~="bottom"][data-open="true"],
 bonaparte-panel[data-position~="bottom"][open="true"],
 bonaparte-panel[position~="bottom"][open="true"] {
   -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
           transform: translateY(-100%);
 }
 bonaparte-panel:not([data-position]),
@@ -905,7 +897,7 @@ bonaparte-sidebar {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px !important;
+  padding: 0 !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
 }
@@ -978,7 +970,7 @@ bonaparte-sidebar[data-position="left"][open="false"] > :nth-child(1),
 bonaparte-sidebar[position="left"][open="false"] > :nth-child(1),
 bonaparte-sidebar[data-position="right"][open="false"] > :nth-child(1),
 bonaparte-sidebar[position="right"][open="false"] > :nth-child(1) {
-  min-width: 0rem;
+  min-width: 0rem !important;
 }
 bonaparte-sidebar[data-position="top"] > :nth-child(1),
 bonaparte-sidebar[position="top"] > :nth-child(1),
@@ -995,7 +987,7 @@ bonaparte-sidebar[data-position="top"][open="false"] > :nth-child(1),
 bonaparte-sidebar[position="top"][open="false"] > :nth-child(1),
 bonaparte-sidebar[data-position="bottom"][open="false"] > :nth-child(1),
 bonaparte-sidebar[position="bottom"][open="false"] > :nth-child(1) {
-  min-height: 0rem;
+  min-height: 0rem !important;
 }
 /*///////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////*/
@@ -1006,7 +998,7 @@ bonaparte-toolbar {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px !important;
+  padding: 0 !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
 }
@@ -1079,7 +1071,7 @@ bonaparte-toolbar[data-position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar[position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar[data-position="right"][open="false"] > :nth-child(1),
 bonaparte-toolbar[position="right"][open="false"] > :nth-child(1) {
-  min-width: 0rem;
+  min-width: 0rem !important;
 }
 bonaparte-toolbar[data-position="top"] > :nth-child(1),
 bonaparte-toolbar[position="top"] > :nth-child(1),
@@ -1096,7 +1088,26 @@ bonaparte-toolbar[data-position="top"][open="false"] > :nth-child(1),
 bonaparte-toolbar[position="top"][open="false"] > :nth-child(1),
 bonaparte-toolbar[data-position="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar[position="bottom"][open="false"] > :nth-child(1) {
-  min-height: 0rem;
+  min-height: 0rem !important;
+}
+bonaparte-toolbar:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar[data-position="left"] > :nth-child(1),
+bonaparte-toolbar[position="left"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"] > :nth-child(1),
+bonaparte-toolbar[position="right"] > :nth-child(1) {
+  min-width: 0rem;
+}
+bonaparte-toolbar:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar:not([data-position]):not([position])[open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar[position="right"][open="true"] > :nth-child(1) {
+  min-width: 10rem;
 }
 bonaparte-toolbar[data-position="top"] > :nth-child(1),
 bonaparte-toolbar[position="top"] > :nth-child(1),
@@ -1120,25 +1131,6 @@ bonaparte-toolbar[data-position="bottom"][open="true"] > :nth-child(1),
 bonaparte-toolbar[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
-bonaparte-toolbar:not([data-position]):not([position]) > :nth-child(1),
-bonaparte-toolbar[data-position="left"] > :nth-child(1),
-bonaparte-toolbar[position="left"] > :nth-child(1),
-bonaparte-toolbar[data-position="right"] > :nth-child(1),
-bonaparte-toolbar[position="right"] > :nth-child(1) {
-  min-width: 0rem;
-}
-bonaparte-toolbar:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
-bonaparte-toolbar[data-position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[data-position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar:not([data-position]):not([position])[open="true"] > :nth-child(1),
-bonaparte-toolbar[data-position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar[position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar[data-position="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar[position="right"][open="true"] > :nth-child(1) {
-  min-width: 10rem;
-}
 /*///////////////////////////////////////////////////////////////////////////*/
 body > bonaparte-toolbar {
   height: 100%;
@@ -1152,7 +1144,7 @@ bonaparte-toolbar {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px !important;
+  padding: 0 !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
   /*////////////////////////////////*/
@@ -1234,7 +1226,7 @@ bonaparte-toolbar[data-position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar[position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar[data-position="right"][open="false"] > :nth-child(1),
 bonaparte-toolbar[position="right"][open="false"] > :nth-child(1) {
-  min-width: 4rem;
+  min-width: 4rem !important;
 }
 bonaparte-toolbar[data-position="top"] > :nth-child(1),
 bonaparte-toolbar[position="top"] > :nth-child(1),
@@ -1251,7 +1243,26 @@ bonaparte-toolbar[data-position="top"][open="false"] > :nth-child(1),
 bonaparte-toolbar[position="top"][open="false"] > :nth-child(1),
 bonaparte-toolbar[data-position="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar[position="bottom"][open="false"] > :nth-child(1) {
-  min-height: 4rem;
+  min-height: 4rem !important;
+}
+bonaparte-toolbar:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar[data-position="left"] > :nth-child(1),
+bonaparte-toolbar[position="left"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"] > :nth-child(1),
+bonaparte-toolbar[position="right"] > :nth-child(1) {
+  min-width: 4rem;
+}
+bonaparte-toolbar:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar:not([data-position]):not([position])[open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar[position="right"][open="true"] > :nth-child(1) {
+  min-width: 20rem;
 }
 bonaparte-toolbar[data-position="top"] > :nth-child(1),
 bonaparte-toolbar[position="top"] > :nth-child(1),
@@ -1274,25 +1285,6 @@ bonaparte-toolbar[position="top"][open="true"] > :nth-child(1),
 bonaparte-toolbar[data-position="bottom"][open="true"] > :nth-child(1),
 bonaparte-toolbar[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 20rem;
-}
-bonaparte-toolbar:not([data-position]):not([position]) > :nth-child(1),
-bonaparte-toolbar[data-position="left"] > :nth-child(1),
-bonaparte-toolbar[position="left"] > :nth-child(1),
-bonaparte-toolbar[data-position="right"] > :nth-child(1),
-bonaparte-toolbar[position="right"] > :nth-child(1) {
-  min-width: 4rem;
-}
-bonaparte-toolbar:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
-bonaparte-toolbar[data-position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[data-position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar[position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar:not([data-position]):not([position])[open="true"] > :nth-child(1),
-bonaparte-toolbar[data-position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar[position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar[data-position="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar[position="right"][open="true"] > :nth-child(1) {
-  min-width: 20rem;
 }
 bonaparte-toolbar > :nth-child(2) {
   padding: 1rem;
@@ -1375,7 +1367,7 @@ bonaparte-toolbar.mini {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px !important;
+  padding: 0 !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
 }
@@ -1474,7 +1466,7 @@ bonaparte-toolbar.tiny[data-position="right"][open="false"] > :nth-child(1),
 bonaparte-toolbar.mini[data-position="right"][open="false"] > :nth-child(1),
 bonaparte-toolbar.tiny[position="right"][open="false"] > :nth-child(1),
 bonaparte-toolbar.mini[position="right"][open="false"] > :nth-child(1) {
-  min-width: 2rem;
+  min-width: 2rem !important;
 }
 bonaparte-toolbar.tiny[data-position="top"] > :nth-child(1),
 bonaparte-toolbar.mini[data-position="top"] > :nth-child(1),
@@ -1503,7 +1495,41 @@ bonaparte-toolbar.tiny[data-position="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar.mini[data-position="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar.tiny[position="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar.mini[position="bottom"][open="false"] > :nth-child(1) {
-  min-height: 2rem;
+  min-height: 2rem !important;
+}
+bonaparte-toolbar.tiny:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar.mini:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="left"] > :nth-child(1),
+bonaparte-toolbar.mini[position="left"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="right"] > :nth-child(1),
+bonaparte-toolbar.mini[position="right"] > :nth-child(1) {
+  min-width: 2rem;
+}
+bonaparte-toolbar.tiny:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny:not([data-position]):not([position])[open="true"] > :nth-child(1),
+bonaparte-toolbar.mini:not([data-position]):not([position])[open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.tiny[position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.mini[position="right"][open="true"] > :nth-child(1) {
+  min-width: 10rem;
 }
 bonaparte-toolbar.tiny[data-position="top"] > :nth-child(1),
 bonaparte-toolbar.mini[data-position="top"] > :nth-child(1),
@@ -1543,40 +1569,6 @@ bonaparte-toolbar.tiny[position="bottom"][open="true"] > :nth-child(1),
 bonaparte-toolbar.mini[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
-bonaparte-toolbar.tiny:not([data-position]):not([position]) > :nth-child(1),
-bonaparte-toolbar.mini:not([data-position]):not([position]) > :nth-child(1),
-bonaparte-toolbar.tiny[data-position="left"] > :nth-child(1),
-bonaparte-toolbar.mini[data-position="left"] > :nth-child(1),
-bonaparte-toolbar.tiny[position="left"] > :nth-child(1),
-bonaparte-toolbar.mini[position="left"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-position="right"] > :nth-child(1),
-bonaparte-toolbar.mini[data-position="right"] > :nth-child(1),
-bonaparte-toolbar.tiny[position="right"] > :nth-child(1),
-bonaparte-toolbar.mini[position="right"] > :nth-child(1) {
-  min-width: 2rem;
-}
-bonaparte-toolbar.tiny:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
-bonaparte-toolbar.mini:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[data-position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[data-position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny:not([data-position]):not([position])[open="true"] > :nth-child(1),
-bonaparte-toolbar.mini:not([data-position]):not([position])[open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[data-position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[data-position="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[data-position="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.tiny[position="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.mini[position="right"][open="true"] > :nth-child(1) {
-  min-width: 10rem;
-}
 /*////////////////////////////////*/
 bonaparte-toolbar.small {
   /*DEFINITION*/
@@ -1585,7 +1577,7 @@ bonaparte-toolbar.small {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px !important;
+  padding: 0 !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
 }
@@ -1658,7 +1650,7 @@ bonaparte-toolbar.small[data-position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar.small[position="left"][open="false"] > :nth-child(1),
 bonaparte-toolbar.small[data-position="right"][open="false"] > :nth-child(1),
 bonaparte-toolbar.small[position="right"][open="false"] > :nth-child(1) {
-  min-width: 3rem;
+  min-width: 3rem !important;
 }
 bonaparte-toolbar.small[data-position="top"] > :nth-child(1),
 bonaparte-toolbar.small[position="top"] > :nth-child(1),
@@ -1675,7 +1667,26 @@ bonaparte-toolbar.small[data-position="top"][open="false"] > :nth-child(1),
 bonaparte-toolbar.small[position="top"][open="false"] > :nth-child(1),
 bonaparte-toolbar.small[data-position="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar.small[position="bottom"][open="false"] > :nth-child(1) {
-  min-height: 3rem;
+  min-height: 3rem !important;
+}
+bonaparte-toolbar.small:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar.small[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.small[position="left"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.small[position="right"] > :nth-child(1) {
+  min-width: 3rem;
+}
+bonaparte-toolbar.small:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.small:not([data-position]):not([position])[open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.small[position="right"][open="true"] > :nth-child(1) {
+  min-width: 10rem;
 }
 bonaparte-toolbar.small[data-position="top"] > :nth-child(1),
 bonaparte-toolbar.small[position="top"] > :nth-child(1),
@@ -1699,25 +1710,6 @@ bonaparte-toolbar.small[data-position="bottom"][open="true"] > :nth-child(1),
 bonaparte-toolbar.small[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
-bonaparte-toolbar.small:not([data-position]):not([position]) > :nth-child(1),
-bonaparte-toolbar.small[data-position="left"] > :nth-child(1),
-bonaparte-toolbar.small[position="left"] > :nth-child(1),
-bonaparte-toolbar.small[data-position="right"] > :nth-child(1),
-bonaparte-toolbar.small[position="right"] > :nth-child(1) {
-  min-width: 3rem;
-}
-bonaparte-toolbar.small:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
-bonaparte-toolbar.small[data-position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.small[position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.small[data-position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.small[position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.small:not([data-position]):not([position])[open="true"] > :nth-child(1),
-bonaparte-toolbar.small[data-position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.small[position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.small[data-position="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.small[position="right"][open="true"] > :nth-child(1) {
-  min-width: 10rem;
-}
 /*////////////////////////////////*/
 bonaparte-toolbar.large,
 bonaparte-toolbar.big {
@@ -1727,7 +1719,7 @@ bonaparte-toolbar.big {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px !important;
+  padding: 0 !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
 }
@@ -1826,7 +1818,7 @@ bonaparte-toolbar.large[data-position="right"][open="false"] > :nth-child(1),
 bonaparte-toolbar.big[data-position="right"][open="false"] > :nth-child(1),
 bonaparte-toolbar.large[position="right"][open="false"] > :nth-child(1),
 bonaparte-toolbar.big[position="right"][open="false"] > :nth-child(1) {
-  min-width: 5rem;
+  min-width: 5rem !important;
 }
 bonaparte-toolbar.large[data-position="top"] > :nth-child(1),
 bonaparte-toolbar.big[data-position="top"] > :nth-child(1),
@@ -1855,7 +1847,41 @@ bonaparte-toolbar.large[data-position="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar.big[data-position="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar.large[position="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar.big[position="bottom"][open="false"] > :nth-child(1) {
-  min-height: 5rem;
+  min-height: 5rem !important;
+}
+bonaparte-toolbar.large:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar.big:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar.large[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.large[position="left"] > :nth-child(1),
+bonaparte-toolbar.big[position="left"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.large[position="right"] > :nth-child(1),
+bonaparte-toolbar.big[position="right"] > :nth-child(1) {
+  min-width: 5rem;
+}
+bonaparte-toolbar.large:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.big[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.large:not([data-position]):not([position])[open="true"] > :nth-child(1),
+bonaparte-toolbar.big:not([data-position]):not([position])[open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.large[position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.big[position="right"][open="true"] > :nth-child(1) {
+  min-width: 10rem;
 }
 bonaparte-toolbar.large[data-position="top"] > :nth-child(1),
 bonaparte-toolbar.big[data-position="top"] > :nth-child(1),
@@ -1895,40 +1921,6 @@ bonaparte-toolbar.large[position="bottom"][open="true"] > :nth-child(1),
 bonaparte-toolbar.big[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
-bonaparte-toolbar.large:not([data-position]):not([position]) > :nth-child(1),
-bonaparte-toolbar.big:not([data-position]):not([position]) > :nth-child(1),
-bonaparte-toolbar.large[data-position="left"] > :nth-child(1),
-bonaparte-toolbar.big[data-position="left"] > :nth-child(1),
-bonaparte-toolbar.large[position="left"] > :nth-child(1),
-bonaparte-toolbar.big[position="left"] > :nth-child(1),
-bonaparte-toolbar.large[data-position="right"] > :nth-child(1),
-bonaparte-toolbar.big[data-position="right"] > :nth-child(1),
-bonaparte-toolbar.large[position="right"] > :nth-child(1),
-bonaparte-toolbar.big[position="right"] > :nth-child(1) {
-  min-width: 5rem;
-}
-bonaparte-toolbar.large:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
-bonaparte-toolbar.big:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
-bonaparte-toolbar.large[data-position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.big[data-position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.large[position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.big[position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.large[data-position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.big[data-position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.large[position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.big[position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.large:not([data-position]):not([position])[open="true"] > :nth-child(1),
-bonaparte-toolbar.big:not([data-position]):not([position])[open="true"] > :nth-child(1),
-bonaparte-toolbar.large[data-position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.big[data-position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.large[position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.big[position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.large[data-position="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.big[data-position="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.large[position="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.big[position="right"][open="true"] > :nth-child(1) {
-  min-width: 10rem;
-}
 /*////////////////////////////////*/
 bonaparte-toolbar.huge,
 bonaparte-toolbar.massive {
@@ -1938,7 +1930,7 @@ bonaparte-toolbar.massive {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px !important;
+  padding: 0 !important;
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
 }
@@ -2037,7 +2029,7 @@ bonaparte-toolbar.huge[data-position="right"][open="false"] > :nth-child(1),
 bonaparte-toolbar.massive[data-position="right"][open="false"] > :nth-child(1),
 bonaparte-toolbar.huge[position="right"][open="false"] > :nth-child(1),
 bonaparte-toolbar.massive[position="right"][open="false"] > :nth-child(1) {
-  min-width: 6rem;
+  min-width: 6rem !important;
 }
 bonaparte-toolbar.huge[data-position="top"] > :nth-child(1),
 bonaparte-toolbar.massive[data-position="top"] > :nth-child(1),
@@ -2066,7 +2058,41 @@ bonaparte-toolbar.huge[data-position="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar.massive[data-position="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar.huge[position="bottom"][open="false"] > :nth-child(1),
 bonaparte-toolbar.massive[position="bottom"][open="false"] > :nth-child(1) {
-  min-height: 6rem;
+  min-height: 6rem !important;
+}
+bonaparte-toolbar.huge:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar.massive:not([data-position]):not([position]) > :nth-child(1),
+bonaparte-toolbar.huge[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="left"] > :nth-child(1),
+bonaparte-toolbar.huge[position="left"] > :nth-child(1),
+bonaparte-toolbar.massive[position="left"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="right"] > :nth-child(1),
+bonaparte-toolbar.huge[position="right"] > :nth-child(1),
+bonaparte-toolbar.massive[position="right"] > :nth-child(1) {
+  min-width: 6rem;
+}
+bonaparte-toolbar.huge:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[position="left"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[position="right"][data-open="true"] > :nth-child(1),
+bonaparte-toolbar.huge:not([data-position]):not([position])[open="true"] > :nth-child(1),
+bonaparte-toolbar.massive:not([data-position]):not([position])[open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[position="left"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[data-position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.huge[position="right"][open="true"] > :nth-child(1),
+bonaparte-toolbar.massive[position="right"][open="true"] > :nth-child(1) {
+  min-width: 10rem;
 }
 bonaparte-toolbar.huge[data-position="top"] > :nth-child(1),
 bonaparte-toolbar.massive[data-position="top"] > :nth-child(1),
@@ -2105,40 +2131,6 @@ bonaparte-toolbar.massive[data-position="bottom"][open="true"] > :nth-child(1),
 bonaparte-toolbar.huge[position="bottom"][open="true"] > :nth-child(1),
 bonaparte-toolbar.massive[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
-}
-bonaparte-toolbar.huge:not([data-position]):not([position]) > :nth-child(1),
-bonaparte-toolbar.massive:not([data-position]):not([position]) > :nth-child(1),
-bonaparte-toolbar.huge[data-position="left"] > :nth-child(1),
-bonaparte-toolbar.massive[data-position="left"] > :nth-child(1),
-bonaparte-toolbar.huge[position="left"] > :nth-child(1),
-bonaparte-toolbar.massive[position="left"] > :nth-child(1),
-bonaparte-toolbar.huge[data-position="right"] > :nth-child(1),
-bonaparte-toolbar.massive[data-position="right"] > :nth-child(1),
-bonaparte-toolbar.huge[position="right"] > :nth-child(1),
-bonaparte-toolbar.massive[position="right"] > :nth-child(1) {
-  min-width: 6rem;
-}
-bonaparte-toolbar.huge:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
-bonaparte-toolbar.massive:not([data-position]):not([position])[data-open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[data-position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[data-position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[position="left"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[data-position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[data-position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[position="right"][data-open="true"] > :nth-child(1),
-bonaparte-toolbar.huge:not([data-position]):not([position])[open="true"] > :nth-child(1),
-bonaparte-toolbar.massive:not([data-position]):not([position])[open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[data-position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[data-position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[position="left"][open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[data-position="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[data-position="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.huge[position="right"][open="true"] > :nth-child(1),
-bonaparte-toolbar.massive[position="right"][open="true"] > :nth-child(1) {
-  min-width: 10rem;
 }
 /*////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
@@ -2542,7 +2534,6 @@ button.ui.animated.vertical .hidden.content {
 .ui.button.animated.vertical .visible.content,
 button.ui.animated.vertical .visible.content {
   -webkit-transform: translateY(0%);
-      -ms-transform: translateY(0%);
           transform: translateY(0%);
   right: auto;
 }
@@ -2557,7 +2548,6 @@ button.ui.animated.vertical:focus .visible.content,
 .ui.button.animated.vertical:hover .visible.content,
 button.ui.animated.vertical:hover .visible.content {
   -webkit-transform: translateY(200%);
-      -ms-transform: translateY(200%);
           transform: translateY(200%);
   right: auto;
 }
@@ -2581,7 +2571,6 @@ button.ui.animated.fade .visible.content {
   right: auto;
   opacity: 1;
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
           transform: scale(1);
 }
 .ui.button.animated.fade .hidden.content,
@@ -2590,7 +2579,6 @@ button.ui.animated.fade .hidden.content {
   left: 0%;
   right: auto;
   -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
           transform: scale(1.5);
 }
 .ui.button.animated.fade:focus .visible.content,
@@ -2601,7 +2589,6 @@ button.ui.animated.fade:hover .visible.content {
   right: auto;
   opacity: 0;
   -webkit-transform: scale(0.75);
-      -ms-transform: scale(0.75);
           transform: scale(0.75);
 }
 .ui.button.animated.fade:focus .hidden.content,
@@ -2612,7 +2599,6 @@ button.ui.animated.fade:hover .hidden.content {
   right: auto;
   opacity: 1;
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
           transform: scale(1);
 }
 .ui.button:after,
@@ -6691,7 +6677,6 @@ bonaparte-toolbar.massive > :first-child .ui.block.labeled.icon > .icon,
   line-height: 0em;
   text-align: center;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 .ui.vertical.divider:before,
@@ -6727,7 +6712,6 @@ bonaparte-toolbar.massive > :first-child .ui.block.labeled.icon > .icon,
     top: 0;
     left: 0;
     -webkit-transform: none;
-        -ms-transform: none;
             transform: none;
   }
   .ui.stackable.grid .ui.vertical.divider:before,
@@ -7674,12 +7658,10 @@ i.circular.inverted.icon {
 i.flipped.icon,
 i.horizontally.flipped.icon {
   -webkit-transform: scale(-1, 1);
-      -ms-transform: scale(-1, 1);
           transform: scale(-1, 1);
 }
 i.vertically.flipped.icon {
   -webkit-transform: scale(1, -1);
-      -ms-transform: scale(1, -1);
           transform: scale(1, -1);
 }
 /*-------------------
@@ -7689,13 +7671,11 @@ i.rotated.icon,
 i.right.rotated.icon,
 i.clockwise.rotated.icon {
   -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 i.left.rotated.icon,
 i.counterclockwise.rotated.icon {
   -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
 /*-------------------
@@ -7945,7 +7925,6 @@ i.icons .icon {
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
-      -ms-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   margin: 0em;
   margin: 0;
@@ -7956,7 +7935,6 @@ i.icons .icon:first-child {
   height: auto;
   vertical-align: top;
   -webkit-transform: none;
-      -ms-transform: none;
           transform: none;
   margin-right: 0.25rem;
 }
@@ -7967,7 +7945,6 @@ i.icons .corner.icon {
   right: 0;
   bottom: 0;
   -webkit-transform: none;
-      -ms-transform: none;
           transform: none;
   font-size: 0.45em;
   text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
@@ -12843,7 +12820,6 @@ a.ui.label {
 .ui.tag.label:before {
   position: absolute;
   -webkit-transform: translateY(-50%) translateX(50%) rotate(-45deg);
-      -ms-transform: translateY(-50%) translateX(50%) rotate(-45deg);
           transform: translateY(-50%) translateX(50%) rotate(-45deg);
   top: 50%;
   right: 100%;
@@ -12980,7 +12956,6 @@ a.ui.label {
 .ui[class*="right ribbon"].label {
   text-align: left;
   -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
           transform: translateX(-100%);
   border-radius: 0em 0em 0em 0em;
 }
@@ -13674,7 +13649,6 @@ a.ui.basic.label:hover {
   position: absolute;
   content: '';
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   background-image: none;
   z-index: 2;
@@ -13692,7 +13666,6 @@ a.ui.basic.label:hover {
 .ui[class*="pointing above"].label:before {
   border-width: 1px 0px 0px 1px;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-      -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
           transform: translateX(-50%) translateY(-50%) rotate(45deg);
   top: 0%;
   left: 50%;
@@ -13709,7 +13682,6 @@ a.ui.basic.label:hover {
   top: auto;
   right: auto;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-      -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
           transform: translateX(-50%) translateY(-50%) rotate(45deg);
   top: 100%;
   left: 50%;
@@ -13722,7 +13694,6 @@ a.ui.basic.label:hover {
 .ui[class*="left pointing"].label:before {
   border-width: 0px 0px 1px 1px;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-      -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
           transform: translateX(-50%) translateY(-50%) rotate(45deg);
   bottom: auto;
   right: auto;
@@ -13737,7 +13708,6 @@ a.ui.basic.label:hover {
 .ui[class*="right pointing"].label:before {
   border-width: 1px 1px 0px 0px;
   -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
-      -ms-transform: translateX(50%) translateY(-50%) rotate(45deg);
           transform: translateX(50%) translateY(-50%) rotate(45deg);
   top: 50%;
   right: 0%;
@@ -14640,7 +14610,6 @@ a.ui.basic.label:hover {
 .ui.piled.segments:before,
 .ui.piled.segment:before {
   -webkit-transform: rotate(-1.2deg);
-      -ms-transform: rotate(-1.2deg);
           transform: rotate(-1.2deg);
   top: 0;
   z-index: -2;
@@ -14648,7 +14617,6 @@ a.ui.basic.label:hover {
 .ui.piled.segments:after,
 .ui.piled.segment:after {
   -webkit-transform: rotate(1.2deg);
-      -ms-transform: rotate(1.2deg);
           transform: rotate(1.2deg);
   top: 0;
   z-index: -1;

@@ -13,7 +13,7 @@
     "bonaparte-dropdown" :"git+https://bonaparte-read:5913bd3907acbcb3e20356f56992024c7213d854@github.com/bonaparte/bonaparte-dropdown.git#gh-pages"
   },
 
-  "main":"bonaparte.build.js",
+  "main":"bonaparte.less",
 
   "devDependencies": {
     "webpack" : "^1.11.0",
@@ -24,8 +24,7 @@
     "node-sass" : "^3.3.2",
     "extract-text-webpack-plugin" : "0.8.2",
     "autoprefixer-loader" : "^2.0.0",
-    "file-loader" : "^0.8.4",
-    "external-css-loader" : "git+https://bonaparte-read:5913bd3907acbcb3e20356f56992024c7213d854@github.com/dowjones/external-css-loader.git#gh-pages"
+    "file-loader" : "^0.8.4"
   },
 
   "scripts": {
