@@ -1,5 +1,3 @@
-@import "./variables.less";
-
 html, body {
   position:relative;
   padding: 0;
@@ -18,36 +16,38 @@ body {
   color: @color-text-dark;
   font-smoothing: @fontSmoothing;
   background-color:@color-light-3;
+  letter-spacing:0.2px;
 }
 
 img {
-  max-width:100%; 
+  max-width:100%;
 }
 
 p {
-  margin: 0.583333rem 1rem 0 0.9166667rem;
+  margin: 0.5rem 1rem 0 0.9166667rem;
   line-height: @lineHeight;
-  font-weight: @text-book;    
-  padding:0 0 0.416667rem 0;
+  font-weight: @text-book;
+  padding:0 0 0.5rem 0;
 }
 
 p.small {
-  margin:0rem 1rem 0rem 0.9166667rem; 
-} 
+  margin:0rem 1rem 0rem 0.9166667rem;
+}
 
-small, p.small { 
+small, p.small {
   font-weight:@text-book;
   font-size:0.91667rem;
   line-height:1.5rem;
+	letter-spacing:0.3px;
   padding:0.416666667rem 0 0.08333333rem 0;
 
   b, strong {
-    font-weight:@text-semibold;  
+    font-weight:@text-semibold;
   }
 }
 
 b, strong {
-  font-weight:@text-bold;  
+  font-weight:@text-bold;
 }
 
 /*-------------------

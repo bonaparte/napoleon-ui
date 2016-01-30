@@ -1,7 +1,7 @@
 {
-  "name": "dowjones-theme",
+  "name": "bonaparte-theme-dowjones",
   "version": "0.0.1",
-  
+
   "dependencies" : {
     "bonaparte" : "git+https://bonaparte-read:5913bd3907acbcb3e20356f56992024c7213d854@github.com/bonaparte/core.git#gh-pages",
     "bonaparte-panel" :"git+https://bonaparte-read:5913bd3907acbcb3e20356f56992024c7213d854@github.com/bonaparte/bonaparte-panel.git#gh-pages",
@@ -12,9 +12,9 @@
     "bonaparte-draggable" :"git+https://bonaparte-read:5913bd3907acbcb3e20356f56992024c7213d854@github.com/bonaparte/bonaparte-draggable.git#gh-pages",
     "bonaparte-dropdown" :"git+https://bonaparte-read:5913bd3907acbcb3e20356f56992024c7213d854@github.com/bonaparte/bonaparte-dropdown.git#gh-pages"
   },
-  
+
   "main":"bonaparte.build.js",
-  
+
   "devDependencies": {
     "webpack" : "^1.11.0",
     "css-loader" : "^0.16.0",

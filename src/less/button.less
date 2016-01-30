@@ -1,4 +1,3 @@
-
 .button(){
 /*/////////////////////////////////////////////////*/
 
@@ -44,7 +43,7 @@
 
     > i.icon {
       margin:0px;
-    }  
+    }
   }
 
   &.labeled.icon {
@@ -81,11 +80,11 @@
   > i.icon {
     height:auto;
     margin:0 1rem 0 0;
-  }  
+  }
   > i.icon.right {
     margin:0 0 0 1rem;
   }
-  
+
   &:after {
     content: '';
     position: absolute;
@@ -95,7 +94,7 @@
     left: 0;
     border: 1px solid;
     z-index:1;
-  }  
+  }
 
   &:before {
     content:"";
@@ -109,7 +108,7 @@
     z-index:2;
     border-style:solid;
     border-color:@color-text-medium-light;
-  } 
+  }
 
 /*  & + & {
     margin-left:1rem;
@@ -134,22 +133,22 @@
   &.toggle:before,
   &.toggle-bottom:before {
     border-width:0px;
-    border-bottom-width:3px; 
+    border-bottom-width:3px;
   }
 
   &.toggle-top:before {
     border-width:0px;
-    border-top-width:3px; 
+    border-top-width:3px;
   }
 
   &.toggle-left:before {
     border-width:0px;
-    border-left-width:3px; 
+    border-left-width:3px;
   }
 
   &.toggle-right:before {
     border-width:0px;
-    border-right-width:3px; 
+    border-right-width:3px;
   }
 
   /*-------------------
@@ -266,7 +265,7 @@
       color:@color-interactive;
       background-color:@color-light-1;
     }
-    
+
     &:after {
       border-color:darken(@color-light-1, 2);
     }
@@ -305,7 +304,7 @@
         color:@color-text-medium-dark;
         background-color:@color-light-4;
       }
-      
+
       &:after {
         border-color:darken(@color-light-4, 2);
       }
@@ -329,7 +328,7 @@
 
     &.transparent:after {
       border:0px;
-    }    
+    }
   }
 
 
@@ -380,7 +379,7 @@
       &:active {
         background-color:multiply(@color-active, #eee);
       }
-    }    
+    }
 
     &.disabled {
       & {
@@ -420,7 +419,7 @@
         color: darken(@color-active, 2);
       }
     }
-    
+
     &:after {
       border:0px;
     }
@@ -499,7 +498,7 @@
       & {
         color:darken(@color-text-light, 5);
         background-color:@color-dark-3;
-      }      
+      }
       &:after {
         border-color:lighten(@color-dark-3, 7);
       }
@@ -561,7 +560,7 @@
     &.active {
       & {
         color:@color-active;
-      }    
+      }
 
       &:active {
         &:after {
@@ -637,7 +636,7 @@
         color:darken(@color-text-dark, 20);
         background-color:darken(@color-light-1,5);
       }
-    
+
     }
 
     &.disabled {
@@ -729,7 +728,7 @@
     &:hover,
     &:focus {
       color:@color-text-light;
-    }    
+    }
 
 /*    &:after {
       border-color:@color-text-light;
@@ -737,7 +736,7 @@
 */
     &:active {
       color:darken(lighten(@color-text-light, 20),10);
-      
+
 /*      &:after {
          border-color:darken(lighten(@color-text-light, 20),10);
       }*/
@@ -765,7 +764,7 @@
       &:hover,
       &:focus {
         color:@color-text-medium-light;
-      }    
+      }
 
       &:after {
         border-color:@color-text-medium-light;
@@ -773,13 +772,12 @@
 
       &:active {
         color:darken(lighten(@color-text-medium-light, 20),10);
-        
+
         &:after {
            border-color:darken(lighten(@color-text-medium-light, 20),10);
         }
       }
     }
-  } 
+  }
 
 }
-

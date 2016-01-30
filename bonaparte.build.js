@@ -1,6 +1,3 @@
-require("./src/wsj-fonts.css");
-
-
 // Bonaparte //////////////////////////////////////////////////////////////////
 
 require("./bonaparte.less");
@@ -19,7 +16,7 @@ require("./bonaparte.less");
 require("./SUI/definitions/elements/divider.less");
 // require("./SUI/definitions/elements/header.less");
 // require("./src/less/header.less");
-require("./SUI/definitions/elements/flag.less");
+// require("./SUI/definitions/elements/flag.less");
 require("./SUI/definitions/elements/icon.less");
 // require("./SUI/definitions/elements/image.less");
 require("./SUI/definitions/elements/input.less");
@@ -65,5 +62,3 @@ require("./SUI/definitions/collections/table.less");
 // require("./SUI/definitions/modules/sticky.less");
 // require("./SUI/definitions/modules/tab.less");
 // require("./SUI/definitions/modules/transition.less");
-
-

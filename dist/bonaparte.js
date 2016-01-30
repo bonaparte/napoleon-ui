@@ -68,12 +68,9 @@
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(50);
-
-
 	// Bonaparte //////////////////////////////////////////////////////////////////
 
-	__webpack_require__(51);
+	__webpack_require__(47);
 
 	// SUI ////////////////////////////////////////////////////////////////////////
 
@@ -86,28 +83,28 @@
 
 	// require("./src/less/button.less"); // require("./SUI/definitions/elements/button.less");
 	// require("./src/less/container.less"); // require("./SUI/definitions/elements/container.less");
-	__webpack_require__(54);
+	__webpack_require__(49);
 	// require("./SUI/definitions/elements/header.less");
 	// require("./src/less/header.less");
-	__webpack_require__(55);
-	__webpack_require__(57);
+	// require("./SUI/definitions/elements/flag.less");
+	__webpack_require__(50);
 	// require("./SUI/definitions/elements/image.less");
-	__webpack_require__(66);
-	__webpack_require__(67);
+	__webpack_require__(59);
+	__webpack_require__(60);
 	// require("./SUI/definitions/elements/list.less");
 	// require("./SUI/definitions/elements/loader.less");
 	// require("./SUI/definitions/elements/rail.less");
 	// require("./SUI/definitions/elements/reveal.less");
-	__webpack_require__(68);
+	__webpack_require__(61);
 	// require("./SUI/definitions/elements/step.less");
 
 	/* Collections */
 	// require("./SUI/definitions/collections/breadcrumb.less");
-	__webpack_require__(69);
-	__webpack_require__(70);
+	__webpack_require__(62);
+	__webpack_require__(63);
 	// require("./SUI/definitions/collections/menu.less");
 	// require("./SUI/definitions/collections/message.less");
-	__webpack_require__(71);
+	__webpack_require__(64);
 
 
 	/* Views */
@@ -137,45 +134,37 @@
 	// require("./SUI/definitions/modules/transition.less");
 
 
-
-
 /***/ },
 
-/***/ 50:
+/***/ 47:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
 
-/***/ 51:
-50,
+/***/ 49:
+47,
 
-/***/ 54:
-50,
+/***/ 50:
+47,
 
-/***/ 55:
-50,
+/***/ 59:
+47,
 
-/***/ 57:
-50,
+/***/ 60:
+47,
 
-/***/ 66:
-50,
+/***/ 61:
+47,
 
-/***/ 67:
-50,
+/***/ 62:
+47,
 
-/***/ 68:
-50,
+/***/ 63:
+47,
 
-/***/ 69:
-50,
-
-/***/ 70:
-50,
-
-/***/ 71:
-50
+/***/ 64:
+47
 
 /******/ })));
