@@ -401,7 +401,7 @@ html {
 }
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 1.333333rem;
+  font-size: 1.3333rem;
   line-height: 2rem;
   color: #1A1A1A;
   font-smoothing: false;
@@ -505,7 +505,7 @@ h2.ui.dividing.header,
 h2.ui.horizontal.divider,
 h2.ui.header:first-child {
   position: relative;
-  font-size: 3.66667rem;
+  font-size: 3.6667rem;
   font-weight: 700;
   line-height: 5rem;
   padding: 0.083333rem 0 1.416667rem 0;
@@ -548,7 +548,7 @@ h5.ui.dividing.header,
 h5.ui.horizontal.divider,
 h5.ui.header:first-child {
   position: relative;
-  font-size: 1.33333rem;
+  font-size: 1.3333rem;
   font-weight: 700;
   line-height: 2rem;
   padding: 0rem 0 0.5rem 0;
@@ -562,7 +562,7 @@ h6.ui.dividing.header,
 h6.ui.horizontal.divider,
 h6.ui.header:first-child {
   position: relative;
-  font-size: 0.91667rem;
+  font-size: 0.916667rem;
   font-weight: 700;
   line-height: 1.5rem;
   padding: 0rem 0 0.583333rem 0;
@@ -639,7 +639,7 @@ h6.ui.dividing.header:after {
 }
 .h4.subheader {
   font-weight: 600;
-  font-size: 0.91667rem;
+  font-size: 0.916667rem;
   line-height: 1.5rem;
   margin: -0.083333rem 1rem 0rem 1rem;
   padding: 0 0 0.583333rem 0;
@@ -649,7 +649,7 @@ h6.ui.dividing.header:after {
 .h5.subheader,
 .h6.subheader {
   font-weight: 300;
-  font-size: 0.91667rem;
+  font-size: 0.916667rem;
   line-height: 1.5rem;
   margin: -0.083333rem 1rem 0rem 1rem;
   padding: 0 0 0.583333rem 0;
@@ -2261,9 +2261,9 @@ button.ui {
   ************************/
   color: #D9A000;
   background-color: #FAFAFA;
-  font-size: 1.33333rem;
+  font-size: 1.3333rem;
   line-height: 2rem;
-  padding: 1.0833333rem 1rem 0.9188888rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   /*  &.transparent:after {
     top:@underlineCorrection;
   } 
@@ -3959,9 +3959,9 @@ button.ui.labeled.icon > .icon,
 }
 .ui.button.animated .hidden.content,
 button.ui.animated .hidden.content {
-  font-size: 1.33333rem;
+  font-size: 1.3333rem;
   line-height: 2rem;
-  padding: 1.0833333rem 1rem 0.9188888rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   position: absolute;
   font-size: 1em;
   height: 4rem;
@@ -4025,7 +4025,7 @@ bonaparte-toolbar.tiny > *:first-child .ui.button,
 .ui.tiny.buttons .ui.button,
 button.ui.tiny,
 .ui.button.tiny {
-  font-size: 0.91667rem;
+  font-size: 0.916667rem;
   line-height: 1.5rem;
   padding: 0.25rem 1rem;
   /*  &.transparent:after {
@@ -4090,7 +4090,7 @@ bonaparte-toolbar.tiny > *:first-child .ui.button.animated .hidden.content,
 .ui.tiny.buttons .ui.button.animated .hidden.content,
 button.ui.tiny.animated .hidden.content,
 .ui.button.tiny.animated .hidden.content {
-  font-size: 0.91667rem;
+  font-size: 0.916667rem;
   line-height: 1.5rem;
   padding: 0.25rem 1rem;
   position: absolute;
@@ -4248,7 +4248,7 @@ bonaparte-toolbar.small > *:first-child .ui.button,
 .ui.small.buttons .ui.button,
 button.ui.small,
 .ui.button.small {
-  font-size: 1.16666667rem;
+  font-size: 1.16667rem;
   line-height: 2rem;
   padding: 0.5rem 1rem;
   /*  &.transparent:after {
@@ -4287,7 +4287,7 @@ bonaparte-toolbar.small > *:first-child .ui.button.animated .hidden.content,
 .ui.small.buttons .ui.button.animated .hidden.content,
 button.ui.small.animated .hidden.content,
 .ui.button.small.animated .hidden.content {
-  font-size: 1.16666667rem;
+  font-size: 1.16667rem;
   line-height: 2rem;
   padding: 0.5rem 1rem;
   position: absolute;
@@ -5038,7 +5038,7 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.conditional button.ui:firs
   margin-left: -1.5rem;
   margin-top: -1.5rem;
   line-height: 3rem;
-  font-size: 1.33333rem;
+  font-size: 1.3333rem;
 }
 .ui.buttons.toggle-top .ui.button:before,
 .ui.buttons.toggle-top button.ui:before {
@@ -5185,7 +5185,7 @@ bonaparte-toolbar.mini > *:first-child .ui.buttons.conditional .or:before,
   margin-left: -0.7rem;
   margin-top: -0.7rem;
   line-height: 1.4rem;
-  font-size: 0.91667rem;
+  font-size: 0.916667rem;
 }
 bonaparte-toolbar.tiny > *:first-child .ui.buttons.toggle-top .ui.button:before,
 bonaparte-toolbar.mini > *:first-child .ui.buttons.toggle-top .ui.button:before,
@@ -5338,7 +5338,7 @@ bonaparte-toolbar.small > *:first-child .ui.buttons.conditional .or:before,
   margin-left: -0.95rem;
   margin-top: -0.95rem;
   line-height: 1.9rem;
-  font-size: 1.16666667rem;
+  font-size: 1.16667rem;
 }
 bonaparte-toolbar.small > *:first-child .ui.buttons.toggle-top .ui.button:before,
 .ui.small.buttons.toggle-top .ui.button:before,
@@ -5773,9 +5773,9 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.toggle-left button.ui:befo
     margin:0;
   }
 */
-  font-size: 1.33333rem;
+  font-size: 1.3333rem;
   line-height: 2rem;
-  padding: 1.0833333rem 1rem 0.9188888rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 .ui.block.fluid {
   display: block;
@@ -5830,7 +5830,7 @@ bonaparte-toolbar > :first-child .ui.block,
 bonaparte-toolbar.tiny > :first-child .ui.block,
 .ui.block.mini,
 .ui.block.tiny {
-  font-size: 0.91667rem;
+  font-size: 0.916667rem;
   line-height: 1.5rem;
   padding: 0.25rem 1rem;
 }
@@ -5851,7 +5851,7 @@ bonaparte-toolbar.mini > :first-child .ui.block,
 bonaparte-toolbar.tiny > :first-child .ui.block,
 .ui.block.mini,
 .ui.block.tiny {
-  font-size: 0.91667rem;
+  font-size: 0.916667rem;
   line-height: 1.5rem;
   padding: 0.25rem 1rem;
 }
@@ -5870,7 +5870,7 @@ bonaparte-toolbar.tiny > :first-child .ui.block.labeled.icon > .icon,
 }
 bonaparte-toolbar.small > :first-child .ui.block,
 .ui.block.small {
-  font-size: 1.16666667rem;
+  font-size: 1.16667rem;
   line-height: 2rem;
   padding: 0.5rem 1rem;
 }
@@ -6822,7 +6822,7 @@ bonaparte-toolbar.massive > :first-child .ui.block.labeled.icon > .icon,
 *******************************/
 .ui.divider,
 .ui.horizontal.divider {
-  font-size: 0.91667rem;
+  font-size: 0.916667rem;
   line-height: 1.5rem;
 }
 .ui.divider > .icon,
@@ -6831,7 +6831,7 @@ bonaparte-toolbar.massive > :first-child .ui.block.labeled.icon > .icon,
 }
 .ui.grid > .ui.vertical.divider,
 .ui.vertical.divider {
-  font-size: 0.91667rem;
+  font-size: 0.916667rem;
 }
 .ui.divider:not(.vertical):not(.horizontal),
 .ui.divider {
@@ -6839,7 +6839,7 @@ bonaparte-toolbar.massive > :first-child .ui.block.labeled.icon > .icon,
   margin: 0px;
   border: 0;
   position: relative;
-  font-size: 0.91667rem;
+  font-size: 0.916667rem;
 }
 /*
 .ui.divider
@@ -16901,7 +16901,7 @@ a.ui.basic.label:hover {
 }
 .ui.form .field > label {
   display: table-header-group;
-  font-size: 0.91667rem;
+  font-size: 0.916667rem;
   font-weight: 600;
   text-indent: 1rem;
   color: #000000;
