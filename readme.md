@@ -1,56 +1,13 @@
-# Dow Jones Bonaparte
+# Dow Jones Bonaparte Theme
 
-- [About](#about)
-- [Basic Use](#basic-use)
-- [Examples](#examples)
-- [Included Bonaparte Components](#included-bonaparte-components)
-- [Development](#development)
+This is a [Semantic UI](http://semantic-ui.com) based theme developed for editorial tools at Dow Jones.
 
-## About
-
-This is a [Bonaparte](https://github.com/bonaparte/bonaparte) build with a custom [Semantic UI](http://semantic-ui.com) theme developed for editorial tools at Dow Jones.
-
-## Examples
-
-http://bonaparte.github.io/dowjones-theme/examples/
-
-## Basic Use
-
-- Download / Clone Repository.
-- Include files: 
-
-  ```
-  ./dist/dj-bonaparte.css
-  ./dist/dj-bonaparte.js
-  ```
-  
-  And if necessary:
-  ```
-  ./dist/SUI-js/semantic.min.js
-  ```
-  
-This makes bonaparte and the bonaparte Semantic UI theme available in your project.
+[Kitchen Sink](http://bonaparte.github.io/theme-dowjones/examples/bp-kitchen-sink.html)<br>
+_[Old Kitchen Sink](http://bonaparte.github.io/theme-dowjones/examples/kitchen-sink.html) (will be removed after everything is migrated to new kitchen sink)_
 
 
-## Included Bonaparte Components
+## Getting Started
 
-  - [< bonaparte-button >](https://github.com/bonaparte/bonaparte-button)
-  - [< bonaparte-scroll >](https://github.com/bonaparte/bonaparte-scroll)
-  - [< bonaparte-sidebar >](https://github.com/bonaparte/bonaparte-sidebar)
-  - [< bonaparte-panel >](https://github.com/bonaparte/bonaparte-panel)
-  - [< bonaparte-toolbar >](https://github.com/bonaparte/bonaparte-toolbar)
-  - [< bonaparte-dragable >](https://github.com/bonaparte/bonaparte-dragable)
-  - [< bonaparte-dropdown >](https://github.com/bonaparte/bonaparte-dropdown)
+To get started see the [starter-build](https://github.com/bonaparte/starter-build) repository.
 
-## Development
-
-For development use the standard Bonaparte build process:
-
-```
-npm run build
-```
-or
-```
-npm run watch
-```
-To rebuild/watch `bonaparte.build.js`
+Also have a look at the `starter-vanilla` and `starter-react` repositories which use the `starter-build`
