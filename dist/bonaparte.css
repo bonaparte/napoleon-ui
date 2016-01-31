@@ -537,7 +537,7 @@ h4.ui.header:first-child {
   font-size: 1.75rem;
   font-weight: 600;
   line-height: 2.5rem;
-  padding: 0.083333rem 0 0.416667rem 0;
+  padding: 0.083333rem 0 0.916667rem 0;
   margin: 2rem 1rem 0rem 0.83333rem;
   border: 0px;
 }
@@ -656,26 +656,6 @@ h6.ui.dividing.header:after {
   letter-spacing: 0.1px;
   text-indent: -0.1em;
 }
-/*@import "./SUI/definitions/elements/divider.less";*/
-/*@import"./SUI/definitions/elements/header.less";*/
-/*@import "./SUI/definitions/elements/flag.less";*/
-/*@import "./SUI/definitions/elements/icon.less";*/
-/*@import "./SUI/definitions/elements/image.less";*/
-/*@import "./SUI/definitions/elements/input.less";*/
-/*@import "./SUI/definitions/elements/label.less";*/
-/*@import "./SUI/definitions/elements/list.less";*/
-/*@import "./SUI/definitions/elements/loader.less";*/
-/*@import "./SUI/definitions/elements/rail.less";*/
-/*@import "./SUI/definitions/elements/reveal.less";*/
-/*@import "./SUI/definitions/elements/segment.less";*/
-/*@import"./SUI/definitions/elements/step.less";*/
-/* Collections */
-/*@import "./SUI/definitions/collections/breadcrumb.less";*/
-/*@import "./SUI/definitions/collections/form.less";*/
-/*@import "./SUI/definitions/collections/grid.less";*/
-/*@import "./SUI/definitions/collections/menu.less";*/
-/*@import "./SUI/definitions/collections/message.less";*/
-/*@import "./SUI/definitions/collections/table.less";*/
 bonaparte-panel {
   display: none;
   position: absolute;
