@@ -1,4 +1,4 @@
-# Dow Jones Bonaparte Theme
+# Napoleon Bonaparte Theme
 
 This is a [Semantic UI](http://semantic-ui.com) inspired theme developed for editorial tools at Dow Jones.
 
