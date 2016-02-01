@@ -408,84 +408,91 @@ body {
   background-color: #F0F0F0;
   letter-spacing: 0.2px;
 }
-img {
+:not(.not-napoleon) {
+  /*-------------------
+	        Links
+	--------------------*/
+  /*******************************
+	          Highlighting
+	*******************************/
+  /* Site */
+  /*::-webkit-selection,
+	::-moz-selection,
+	*/
+  /* Form */
+  /*textarea::-webkit-selection,
+	input::-webkit-selection,
+	textarea::-moz-selection,
+	input::-moz-selection,
+	*/
+  /*textarea::selection,
+	input::selection {
+	  background-color: @inputHighlightBackground;
+	  color: @inputHighlightColor;
+	}*/
+}
+:not(.not-napoleon) img {
   max-width: 100%;
 }
-p {
+:not(.not-napoleon) p {
   margin: 0.5rem 1rem 0 0.9166667rem;
   line-height: 2rem;
   font-weight: 400;
   padding: 0 0 0.5rem 0;
 }
-p.small {
+:not(.not-napoleon) p.small {
   margin: 0rem 1rem 0rem 0.9166667rem;
 }
-small,
-p.small {
+:not(.not-napoleon) small,
+:not(.not-napoleon) p.small {
   font-weight: 400;
   font-size: 0.91667rem;
   line-height: 1.5rem;
   letter-spacing: 0.3px;
   padding: 0.416666667rem 0 0.08333333rem 0;
 }
-small b,
-p.small b,
-small strong,
-p.small strong {
+:not(.not-napoleon) small b,
+:not(.not-napoleon) p.small b,
+:not(.not-napoleon) small strong,
+:not(.not-napoleon) p.small strong {
   font-weight: 600;
 }
-b,
-strong {
+:not(.not-napoleon) b,
+:not(.not-napoleon) strong {
   font-weight: 700;
 }
-/*-------------------
-        Links
---------------------*/
-a {
+:not(.not-napoleon) a {
   color: #D9A000;
   text-decoration: none;
 }
-a:hover {
+:not(.not-napoleon) a:hover {
   color: #E2BF3D;
   text-decoration: underline;
 }
-/*******************************
-          Highlighting
-*******************************/
-/* Site */
-/*::-webkit-selection,
-::-moz-selection,
-*/
-::-moz-selection {
+:not(.not-napoleon) ::-moz-selection {
   background-color: #425CBD;
   color: #FFFFFF;
 }
-::selection {
+:not(.not-napoleon) ::selection {
   background-color: #425CBD;
   color: #FFFFFF;
 }
-/* Form */
-/*textarea::-webkit-selection,
-input::-webkit-selection,
-textarea::-moz-selection,
-input::-moz-selection,
-*/
-/*textarea::selection,
-input::selection {
-  background-color: @inputHighlightBackground;
-  color: @inputHighlightColor;
-}*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.ui.h1,
+h1.ui,
+.ui.h2,
+h2.ui,
+.ui.h3,
+h3.ui,
+.ui.h4,
+h4.ui,
+.ui.h5,
+h5.ui,
+.ui.h6,
+h6.ui {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 /*Headers*/
-h1,
-.h1,
+.ui.h1,
 h1.ui.header,
 h1.ui.dividing.header,
 h1.ui.horizontal.divider,
@@ -498,8 +505,7 @@ h1.ui.header:first-child {
   padding: 0.3333rem 0 2.16667rem 0;
   border: 0px;
 }
-h2,
-.h2,
+.ui.h2,
 h2.ui.header,
 h2.ui.dividing.header,
 h2.ui.horizontal.divider,
@@ -513,8 +519,7 @@ h2.ui.header:first-child {
   letter-spacing: -0.1px;
   border: 0px;
 }
-h3,
-.h3,
+.ui.h3,
 h3.ui.header,
 h3.ui.dividing.header,
 h3.ui.horizontal.divider,
@@ -527,8 +532,7 @@ h3.ui.header:first-child {
   margin: 2.5rem 1rem 0 0.83333rem;
   border: 0px;
 }
-h4,
-.h4,
+.ui.h4,
 h4.ui.header,
 h4.ui.dividing.header,
 h4.ui.horizontal.divider,
@@ -541,8 +545,7 @@ h4.ui.header:first-child {
   margin: 2rem 1rem 0rem 0.83333rem;
   border: 0px;
 }
-h5,
-.h5,
+.ui.h5,
 h5.ui.header,
 h5.ui.dividing.header,
 h5.ui.horizontal.divider,
@@ -555,8 +558,7 @@ h5.ui.header:first-child {
   margin: 2rem 1rem 0 0.916667rem;
   border: 0px;
 }
-h6,
-.h6,
+.ui.h6,
 h6.ui.header,
 h6.ui.dividing.header,
 h6.ui.horizontal.divider,
@@ -610,7 +612,7 @@ h6.ui.dividing.header:after {
 /*.subheader {
   font-style: italic;
 }*/
-.h1.subheader {
+.ui.h1.subheader {
   font-weight: 700;
   font-size: 2.16667rem;
   line-height: 3rem;
@@ -619,7 +621,7 @@ h6.ui.dividing.header:after {
   letter-spacing: 0.1px;
   text-indent: -0.06em;
 }
-.h2.subheader {
+.ui.h2.subheader {
   font-weight: 300;
   font-size: 2.16667rem;
   line-height: 3rem;
@@ -628,7 +630,7 @@ h6.ui.dividing.header:after {
   letter-spacing: 0px;
   text-indent: -0.1em;
 }
-.h3.subheader {
+.ui.h3.subheader {
   font-weight: 300;
   font-size: 1.75rem;
   line-height: 2.5rem;
@@ -637,7 +639,7 @@ h6.ui.dividing.header:after {
   letter-spacing: 0px;
   text-indent: -0.1em;
 }
-.h4.subheader {
+.ui.h4.subheader {
   font-weight: 600;
   font-size: 0.916667rem;
   line-height: 1.5rem;
@@ -646,8 +648,8 @@ h6.ui.dividing.header:after {
   letter-spacing: 0.1px;
   text-indent: -0.07em;
 }
-.h5.subheader,
-.h6.subheader {
+.ui.h5.subheader,
+.ui.h6.subheader {
   font-weight: 300;
   font-size: 0.916667rem;
   line-height: 1.5rem;
