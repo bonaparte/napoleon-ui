@@ -1,25 +1,28 @@
 .ui.h1,
-h1,
+.napoleon h1,
 .ui.h2,
-h2,
+.napoleon h2,
 .ui.h3,
-h3,
+.napoleon h3,
 .ui.h4,
-h4,
+.napoleon h4,
 .ui.h5,
-h5,
+.napoleon h5,
 .ui.h6,
-h6 {
+.napoleon h6 {
   font-family: @pageFont;
 }
 
 /*Headers*/
-h1,
-.ui.h1,
-h1.ui.header,
+.napoleon h1,
+h1.ui,
+.h1.ui,
+.napoleon h1.dividing.header,
 h1.ui.dividing.header,
+.h1.ui.dividing.header,
+.napoleon h1.horizontal.divider,
 h1.ui.horizontal.divider,
-h1.ui.header:first-child {
+.h1.ui.horizontal.divider {
   position:relative;
   font-size : @h1;
   font-weight:@text-light;
@@ -31,12 +34,15 @@ h1.ui.header:first-child {
 }
 
 
-h2,
-.ui.h2,
-h2.ui.header,
+.napoleon h2,
+h2.ui,
+.h2.ui,
+.napoleon h2.dividing.header,
 h2.ui.dividing.header,
+.h2.ui.dividing.header,
+.napoleon h2.horizontal.divider,
 h2.ui.horizontal.divider,
-h2.ui.header:first-child {
+.h2.ui.horizontal.divider {
   position:relative;
   font-size : @h2;
   font-weight:@text-bold;
@@ -47,12 +53,15 @@ h2.ui.header:first-child {
   border:0px;
 }
 
-h3,
-.ui.h3,
-h3.ui.header,
+.napoleon h3,
+h3.ui,
+.h3.ui,
+.napoleon h3.dividing.header,
 h3.ui.dividing.header,
+.h3.ui.dividing.header,
+.napoleon h3.horizontal.divider,
 h3.ui.horizontal.divider,
-h3.ui.header:first-child {
+.h3.ui.horizontal.divider {
   position:relative;
   font-size : @h3;
   font-weight:@text-bold;
@@ -62,12 +71,15 @@ h3.ui.header:first-child {
   border:0px;
 }
 
-h4,
-.ui.h4,
-h4.ui.header,
+.napoleon h4,
+h4.ui,
+.h4.ui,
+.napoleon h4.dividing.header,
 h4.ui.dividing.header,
+.h4.ui.dividing.header,
+.napoleon h4.horizontal.divider,
 h4.ui.horizontal.divider,
-h4.ui.header:first-child {
+.h4.ui.horizontal.divider {
   position:relative;
   font-size : @h4;
   font-weight:@text-semibold;
@@ -77,12 +89,15 @@ h4.ui.header:first-child {
   border:0px;
 }
 
-h5,
-.ui.h5,
-h5.ui.header,
+.napoleon h5,
+h5.ui,
+.h5.ui,
+.napoleon h5.dividing.header,
 h5.ui.dividing.header,
+.h5.ui.dividing.header,
+.napoleon h5.horizontal.divider,
 h5.ui.horizontal.divider,
-h5.ui.header:first-child {
+.h5.ui.horizontal.divider {
   position:relative;
   font-size : @h5;
   font-weight:@text-bold;
@@ -92,12 +107,15 @@ h5.ui.header:first-child {
   border:0px;
 }
 
-h6,
-.ui.h6,
-h6.ui.header,
+.napoleon h6,
+h6.ui,
+.h6.ui,
+.napoleon h6.dividing.header,
 h6.ui.dividing.header,
+.h6.ui.dividing.header,
+.napoleon h6.horizontal.divider,
 h6.ui.horizontal.divider,
-h6.ui.header:first-child {
+.h6.ui.horizontal.divider {
   position:relative;
   font-size:@h6;
   font-weight:@text-bold;
@@ -107,7 +125,8 @@ h6.ui.header:first-child {
   letter-spacing:0.1px;
   border:0px;
 }
-.ui.dividing.header:after {
+.ui.dividing.header:after,
+.napoleon .dividing.header:after {
   position:absolute;
   display:block;
   height:1px;
@@ -119,7 +138,7 @@ h6.ui.header:first-child {
 
 h1.ui.dividing.header:after {
   top:@h1Lineheight - 0.083333rem;
-  left:0.75rem;
+  left:0.6667rem;
 }
 h2.ui.dividing.header:after {
   top:@h2Lineheight - 0.083333rem;

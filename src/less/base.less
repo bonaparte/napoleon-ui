@@ -9,7 +9,7 @@ html {
   font-size: @emSize;
 }
 
-body {
+.napoleon {
   font-family: @pageFont;
   font-size: @fontSize;
   line-height: @lineHeight;
@@ -19,72 +19,79 @@ body {
   letter-spacing:0.2px;
 }
 
-html :not(.not-napoleon) {
-	img {
-	  max-width:100%;
-	}
-
-	p {
-	  margin: 0.5rem 1rem 0 0.9166667rem;
-	  line-height: @lineHeight;
-	  font-weight: @text-book;
-	  padding:0 0 0.5rem 0;
-	}
-
-	p.small {
-	  margin:0rem 1rem 0rem 0.9166667rem;
-	}
-
-	small, p.small {
-	  font-weight:@text-book;
-	  font-size:0.91667rem;
-	  line-height:1.5rem;
-		letter-spacing:0.3px;
-	  padding:0.416666667rem 0 0.08333333rem 0;
-
-	  b, strong {
-	    font-weight:@text-semibold;
-	  }
-	}
-
-	b, strong {
-	  font-weight:@text-bold;
-	}
-
-	/*-------------------
-	        Links
-	--------------------*/
-
-	a {
-	  color: @color-interactive;
-	  text-decoration: none;
-	}
-	a:hover {
-	  color: @color-interactive-light;
-	  text-decoration: underline;
-	}
-
-
-	/*******************************
-	          Highlighting
-	*******************************/
-
-	/* Site */
-	/*::-webkit-selection,
-	::-moz-selection,
-	*/::selection {
-	  background-color: @highlightBackground;
-	  color: @highlightColor;
-	}
-
-	/* Form */
-	/*textarea::-webkit-selection,
-	input::-webkit-selection,
-	textarea::-moz-selection,
-	input::-moz-selection,
-	*//*textarea::selection,
-	input::selection {
-	  background-color: @inputHighlightBackground;
-	  color: @inputHighlightColor;
-	}*/
+.napoleon img,
+img.ui {
+  max-width:100%;
 }
+
+.napoleon p,
+p.ui {
+  margin: 0.5rem 1rem 0 0.9166667rem;
+  line-height: @lineHeight;
+  font-weight: @text-book;
+  padding:0 0 0.5rem 0;
+}
+
+.napoleon p.small,
+p.ui.small {
+  margin:0rem 1rem 0rem 0.9166667rem;
+}
+
+.napoleon small,
+.napoleon p.small,
+small.ui,
+p.ui.small, {
+  font-weight:@text-book;
+  font-size:0.91667rem;
+  line-height:1.5rem;
+	letter-spacing:0.3px;
+  padding:0.416666667rem 0 0.08333333rem 0;
+
+  b, strong {
+    font-weight:@text-semibold;
+  }
+}
+
+.napoleon b,
+.napoleon strong {
+  font-weight:@text-bold;
+}
+
+/*-------------------
+        Links
+--------------------*/
+
+.napoleon a,
+a.ui {
+  color: @color-interactive;
+  text-decoration: none;
+}
+.napoleon a:hover,
+a.ui:hover {
+  color: @color-interactive-light;
+  text-decoration: underline;
+}
+
+
+/*******************************
+          Highlighting
+*******************************/
+
+/* Site */
+/*::-webkit-selection,
+::-moz-selection,
+*/::selection {
+  background-color: @highlightBackground;
+  color: @highlightColor;
+}
+
+/* Form */
+/*textarea::-webkit-selection,
+input::-webkit-selection,
+textarea::-moz-selection,
+input::-moz-selection,
+*//*textarea::selection,
+input::selection {
+  background-color: @inputHighlightBackground;
+  color: @inputHighlightColor;
+}*/
