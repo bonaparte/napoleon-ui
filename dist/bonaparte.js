@@ -70,7 +70,7 @@
 
 	// Bonaparte //////////////////////////////////////////////////////////////////
 
-	__webpack_require__(47);
+	__webpack_require__(48);
 
 	// SUI ////////////////////////////////////////////////////////////////////////
 
@@ -83,28 +83,28 @@
 
 	// require("./src/less/button.less"); // require("./SUI/definitions/elements/button.less");
 	// require("./src/less/container.less"); // require("./SUI/definitions/elements/container.less");
-	__webpack_require__(49);
+	__webpack_require__(50);
 	// require("./SUI/definitions/elements/header.less");
 	// require("./src/less/header.less");
 	// require("./SUI/definitions/elements/flag.less");
-	__webpack_require__(50);
+	__webpack_require__(51);
 	// require("./SUI/definitions/elements/image.less");
-	__webpack_require__(59);
 	__webpack_require__(60);
+	__webpack_require__(61);
 	// require("./SUI/definitions/elements/list.less");
 	// require("./SUI/definitions/elements/loader.less");
 	// require("./SUI/definitions/elements/rail.less");
 	// require("./SUI/definitions/elements/reveal.less");
-	__webpack_require__(61);
+	__webpack_require__(62);
 	// require("./SUI/definitions/elements/step.less");
 
 	/* Collections */
 	// require("./SUI/definitions/collections/breadcrumb.less");
-	__webpack_require__(62);
 	__webpack_require__(63);
+	__webpack_require__(64);
 	// require("./SUI/definitions/collections/menu.less");
 	// require("./SUI/definitions/collections/message.less");
-	__webpack_require__(64);
+	__webpack_require__(65);
 
 
 	/* Views */
@@ -136,35 +136,35 @@
 
 /***/ },
 
-/***/ 47:
+/***/ 48:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
 
-/***/ 49:
-47,
-
 /***/ 50:
-47,
+48,
 
-/***/ 59:
-47,
+/***/ 51:
+48,
 
 /***/ 60:
-47,
+48,
 
 /***/ 61:
-47,
+48,
 
 /***/ 62:
-47,
+48,
 
 /***/ 63:
-47,
+48,
 
 /***/ 64:
-47
+48,
+
+/***/ 65:
+48
 
 /******/ })));

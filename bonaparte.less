@@ -9,6 +9,7 @@
 @import "./src/less/bonaparte-panel.less";
 @import "./src/less/bonaparte-sidebar.less";
 @import "./src/less/bonaparte-toolbar.less";
+@import "./src/less/dj.less";
 
 /*////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
@@ -159,17 +160,10 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons,
 @import "./src/less/block.less";
 @import "./src/less/block-sizes.less";
 
+// bonaparte-toolbar > :first-child .ui.block,
 .ui.block {
 	.block();
 	.blockSizes(@normalVariables);
-}
-
-
-bonaparte-toolbar > :first-child .ui.block,
-bonaparte-toolbar.tiny > :first-child .ui.block,
-.ui.block.mini,
-.ui.block.tiny {
-  .blockSizes(@miniVariables);
 }
 
 bonaparte-toolbar.mini > :first-child .ui.block,
