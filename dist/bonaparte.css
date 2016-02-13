@@ -698,13 +698,9 @@ bonaparte-panel {
   overflow: hidden;
   z-index: 60;
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
-          transition: transform 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
-}
-bonaparte-panel[data-open="true"],
-bonaparte-panel[open="true"] {
-  z-index: 70;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transition: -webkit-transform 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
+  transition: transform 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
+  transition: transform 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), -webkit-transform 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
 }
 bonaparte-panel:not([data-position]):not([position]),
 bonaparte-panel[data-position~="left"],
@@ -717,15 +713,6 @@ bonaparte-panel[position~="left"] {
   right: 100%;
   left: auto;
 }
-bonaparte-panel:not([data-position]):not([position])[data-open="true"],
-bonaparte-panel[data-position~="left"][data-open="true"],
-bonaparte-panel[position~="left"][data-open="true"],
-bonaparte-panel:not([data-position]):not([position])[open="true"],
-bonaparte-panel[data-position~="left"][open="true"],
-bonaparte-panel[position~="left"][open="true"] {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-}
 bonaparte-panel[data-position~="right"],
 bonaparte-panel[position~="right"] {
   display: block;
@@ -734,13 +721,6 @@ bonaparte-panel[position~="right"] {
   width: 10rem;
   left: 100%;
   right: auto;
-}
-bonaparte-panel[data-position~="right"][data-open="true"],
-bonaparte-panel[position~="right"][data-open="true"],
-bonaparte-panel[data-position~="right"][open="true"],
-bonaparte-panel[position~="right"][open="true"] {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
 }
 bonaparte-panel[data-position~="top"],
 bonaparte-panel[position~="top"] {
@@ -751,13 +731,6 @@ bonaparte-panel[position~="top"] {
   bottom: 100%;
   top: auto;
 }
-bonaparte-panel[data-position~="top"][data-open="true"],
-bonaparte-panel[position~="top"][data-open="true"],
-bonaparte-panel[data-position~="top"][open="true"],
-bonaparte-panel[position~="top"][open="true"] {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-}
 bonaparte-panel[data-position~="bottom"],
 bonaparte-panel[position~="bottom"] {
   display: block;
@@ -766,13 +739,6 @@ bonaparte-panel[position~="bottom"] {
   left: 0px;
   height: 10rem;
   top: 100%;
-}
-bonaparte-panel[data-position~="bottom"][data-open="true"],
-bonaparte-panel[position~="bottom"][data-open="true"],
-bonaparte-panel[data-position~="bottom"][open="true"],
-bonaparte-panel[position~="bottom"][open="true"] {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
 }
 /*///////////////////////////////////////////////////////////////////////////*/
 bonaparte-panel {
@@ -783,7 +749,9 @@ bonaparte-panel {
   overflow: hidden;
   z-index: 60;
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
-          transition: transform 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
+  transition: -webkit-transform 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
+  transition: transform 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
+  transition: transform 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), -webkit-transform 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
   /*////////////////////////////////////////////////////////////////////*/
   background-color: #ffffff;
   /*ACTIVE BORDER*/
@@ -922,7 +890,7 @@ bonaparte-sidebar > :nth-child(1) {
   height: auto;
   width: auto;
   -webkit-transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
-          transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
+  transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
 }
 bonaparte-sidebar > :nth-child(2) {
   position: relative;
@@ -1017,57 +985,6 @@ bonaparte-toolbar {
   /*SIDEBAR POSITION*/
   /*SIDEBAR STATE*/
 }
-bonaparte-toolbar > :nth-child(1) {
-  position: relative;
-  z-index: 50;
-  height: auto;
-  width: auto;
-  -webkit-transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
-          transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
-}
-bonaparte-toolbar > :nth-child(2) {
-  position: relative;
-  z-index: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 auto;
-      -ms-flex: 1 auto;
-          flex: 1 auto;
-  height: auto;
-  width: auto;
-}
-bonaparte-toolbar:not([data-position]):not([position]),
-bonaparte-toolbar[data-position="left"],
-bonaparte-toolbar[position="left"] {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-bonaparte-toolbar[data-position="right"],
-bonaparte-toolbar[position="right"] {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-bonaparte-toolbar[data-position="top"],
-bonaparte-toolbar[position="top"] {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-bonaparte-toolbar[data-position="bottom"],
-bonaparte-toolbar[position="bottom"] {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-  -webkit-flex-direction: column-reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-}
 bonaparte-toolbar:not([data-position]):not([position]) > :nth-child(1),
 bonaparte-toolbar[data-position="left"] > :nth-child(1),
 bonaparte-toolbar[position="left"] > :nth-child(1),
@@ -1130,12 +1047,6 @@ bonaparte-toolbar[data-position="bottom"] > :nth-child(1),
 bonaparte-toolbar[position="bottom"] > :nth-child(1) {
   min-height: 0rem;
 }
-bonaparte-toolbar[data-position="top"] > :nth-child(1) *,
-bonaparte-toolbar[position="top"] > :nth-child(1) *,
-bonaparte-toolbar[data-position="bottom"] > :nth-child(1) *,
-bonaparte-toolbar[position="bottom"] > :nth-child(1) * {
-  white-space: nowrap;
-}
 bonaparte-toolbar[data-position="top"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar[position="top"][data-open="true"] > :nth-child(1),
 bonaparte-toolbar[data-position="bottom"][data-open="true"] > :nth-child(1),
@@ -1178,7 +1089,7 @@ bonaparte-toolbar > :nth-child(1) {
   height: auto;
   width: auto;
   -webkit-transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
-          transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
+  transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
 }
 bonaparte-toolbar > :nth-child(2) {
   position: relative;
@@ -1393,7 +1304,7 @@ bonaparte-toolbar.mini > :nth-child(1) {
   height: auto;
   width: auto;
   -webkit-transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
-          transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
+  transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
 }
 bonaparte-toolbar.tiny > :nth-child(2),
 bonaparte-toolbar.mini > :nth-child(2) {
@@ -1602,7 +1513,7 @@ bonaparte-toolbar.small > :nth-child(1) {
   height: auto;
   width: auto;
   -webkit-transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
-          transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
+  transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
 }
 bonaparte-toolbar.small > :nth-child(2) {
   position: relative;
@@ -1745,7 +1656,7 @@ bonaparte-toolbar.big > :nth-child(1) {
   height: auto;
   width: auto;
   -webkit-transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
-          transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
+  transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
 }
 bonaparte-toolbar.large > :nth-child(2),
 bonaparte-toolbar.big > :nth-child(2) {
@@ -1956,7 +1867,7 @@ bonaparte-toolbar.massive > :nth-child(1) {
   height: auto;
   width: auto;
   -webkit-transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
-          transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
+  transition: min-width 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98), min-height 500ms cubic-bezier(0.12, 0.38, 0.4, 0.98);
 }
 bonaparte-toolbar.huge > :nth-child(2),
 bonaparte-toolbar.massive > :nth-child(2) {
@@ -2148,10 +2059,6 @@ bonaparte-toolbar.massive[position="bottom"][open="true"] > :nth-child(1) {
   min-height: 10rem;
 }
 /*////////////////////////////////*/
-bonaparte-toolbar.dj-masthead > :nth-child(1) {
-  background-color: #0c2a31;
-  color: #FFFFFF;
-}
 /*////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////*/
@@ -2517,7 +2424,7 @@ button.ui.animated .visible.content,
 .ui.button.animated .hidden.content,
 button.ui.animated .hidden.content {
   -webkit-transition: right 0.3s ease;
-          transition: right 0.3s ease;
+  transition: right 0.3s ease;
   top: 50%;
   left: auto;
   right: -100%;
@@ -2554,7 +2461,9 @@ button.ui.animated.vertical .visible.content,
 .ui.button.animated.vertical .hidden.content,
 button.ui.animated.vertical .hidden.content {
   -webkit-transition: top 0.3s ease, -webkit-transform 0.3s ease;
-          transition: top 0.3s ease, transform 0.3s ease;
+  transition: top 0.3s ease, -webkit-transform 0.3s ease;
+  transition: top 0.3s ease, transform 0.3s ease;
+  transition: top 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .ui.button.animated.vertical .visible.content,
 button.ui.animated.vertical .visible.content {
@@ -2588,7 +2497,9 @@ button.ui.animated.fade .visible.content,
 .ui.button.animated.fade .hidden.content,
 button.ui.animated.fade .hidden.content {
   -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
-          transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .ui.button.animated.fade .visible.content,
 button.ui.animated.fade .visible.content {
@@ -4903,12 +4814,6 @@ bonaparte-toolbar.massive > *:first-child .ui.buttons.conditional button.ui:firs
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   margin: 0px;
-}
-.ui.buttons.fluid .or {
-  width: 0em !important;
-}
-.ui.buttons.fluid .or:after {
-  display: none;
 }
 .ui.buttons.vertical {
   display: -webkit-inline-box;
@@ -7631,7 +7536,7 @@ i.link.icon {
   cursor: pointer;
   opacity: 0.8;
   -webkit-transition: opacity 50ms ease-out;
-          transition: opacity 50ms ease-out;
+  transition: opacity 50ms ease-out;
 }
 i.link.icon:hover {
   opacity: 1 !important;
@@ -11513,7 +11418,7 @@ i.icon.zerply:before {
   color: rgba(0, 0, 0, 0.87);
   border-radius: 0em;
   -webkit-transition: background-color 50ms ease-out, box-shadow 50ms ease-out, border-color 50ms ease-out;
-          transition: background-color 50ms ease-out, box-shadow 50ms ease-out, border-color 50ms ease-out;
+  transition: background-color 50ms ease-out, box-shadow 50ms ease-out, border-color 50ms ease-out;
   box-shadow: none;
 }
 /*--------------------
@@ -11691,7 +11596,7 @@ i.icon.zerply:before {
   opacity: 0.5;
   border-radius: 0em 0em 0em 0em;
   -webkit-transition: opacity 0.3s ease-out;
-          transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 .ui.icon.input > i.icon:not(.link) {
   pointer-events: none;
@@ -12680,7 +12585,7 @@ i.icon.zerply:before {
   border: 0px solid transparent;
   border-radius: 0em;
   -webkit-transition: background 50ms ease-out;
-          transition: background 50ms ease-out;
+  transition: background 50ms ease-out;
 }
 .ui.label:first-child {
   margin-left: 0em;
@@ -12698,7 +12603,7 @@ a.ui.label {
   color: inherit;
   opacity: 0.5;
   -webkit-transition: 50ms opacity ease-out;
-          transition: 50ms opacity ease-out;
+  transition: 50ms opacity ease-out;
 }
 .ui.label > a:hover {
   opacity: 1;
@@ -12734,7 +12639,7 @@ a.ui.label {
   font-size: 1.16666667em;
   opacity: 0.5;
   -webkit-transition: background 50ms ease-out;
-          transition: background 50ms ease-out;
+  transition: background 50ms ease-out;
 }
 .ui.label > .delete.icon:hover {
   opacity: 1;
@@ -12813,7 +12718,7 @@ a.ui.label {
   padding-right: 1.5em;
   border-radius: 0em 0em 0em 0em;
   -webkit-transition: background 50ms ease-out;
-          transition: background 50ms ease-out;
+  transition: background 50ms ease-out;
 }
 .ui.tag.labels .label:before,
 .ui.tag.label:before {
@@ -12828,7 +12733,7 @@ a.ui.label {
   width: 1.56em;
   height: 1.56em;
   -webkit-transition: background 50ms ease-out;
-          transition: background 50ms ease-out;
+  transition: background 50ms ease-out;
 }
 .ui.tag.labels .label:after,
 .ui.tag.label:after {
@@ -12858,7 +12763,7 @@ a.ui.label {
   height: 4em;
   z-index: 1;
   -webkit-transition: border-color 50ms ease-out;
-          transition: border-color 50ms ease-out;
+  transition: border-color 50ms ease-out;
 }
 /* Icon Label */
 .ui.corner.label {
@@ -12879,7 +12784,7 @@ a.ui.label {
   border-left: 0em solid transparent;
   border-right-color: inherit;
   -webkit-transition: border-color 50ms ease-out;
-          transition: border-color 50ms ease-out;
+  transition: border-color 50ms ease-out;
 }
 .ui.corner.label .icon {
   cursor: default;
@@ -13654,7 +13559,7 @@ a.ui.basic.label:hover {
   width: 0.6em;
   height: 0.6em;
   -webkit-transition: background 50ms ease-out;
-          transition: background 50ms ease-out;
+  transition: background 50ms ease-out;
 }
 /*--- Above ---*/
 .ui.pointing.label,
@@ -14848,7 +14753,7 @@ a.ui.basic.label:hover {
   text-shadow: none !important;
   color: transparent !important;
   -webkit-transition: all 0s linear;
-          transition: all 0s linear;
+  transition: all 0s linear;
 }
 .ui.loading.segment:before {
   position: absolute;
@@ -15978,7 +15883,7 @@ a.ui.basic.label:hover {
   border-radius: 0em;
   box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: color 50ms ease-out, border-color 50ms ease-out;
-          transition: color 50ms ease-out, border-color 50ms ease-out;
+  transition: color 50ms ease-out, border-color 50ms ease-out;
 }
 /* Text Area */
 .ui.form textarea {
@@ -15993,7 +15898,7 @@ a.ui.basic.label:hover {
   border-radius: 0em;
   box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: color 50ms ease-out, border-color 50ms ease-out;
-          transition: color 50ms ease-out, border-color 50ms ease-out;
+  transition: color 50ms ease-out, border-color 50ms ease-out;
   font-size: 1em;
   line-height: 1.2857;
   resize: vertical;
@@ -16027,7 +15932,7 @@ a.ui.basic.label:hover {
   padding: 0.62em 1em;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: color 50ms ease-out, border-color 50ms ease-out;
-          transition: color 50ms ease-out, border-color 50ms ease-out;
+  transition: color 50ms ease-out, border-color 50ms ease-out;
 }
 /*--------------------
        Dropdown
@@ -16411,7 +16316,7 @@ a.ui.basic.label:hover {
   text-shadow: none !important;
   color: transparent !important;
   -webkit-transition: all 0s linear;
-          transition: all 0s linear;
+  transition: all 0s linear;
   z-index: 100;
 }
 .ui.loading.form:before {
@@ -16746,6 +16651,7 @@ a.ui.basic.label:hover {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
+              -ms-grid-row-align: center;
           align-items: center;
 }
 .ui.form .inline.fields .field {
@@ -20351,7 +20257,7 @@ a.ui.basic.label:hover {
 .ui.table th,
 .ui.table td {
   -webkit-transition: background 0.1s ease, color 0.1s ease;
-          transition: background 0.1s ease, color 0.1s ease;
+  transition: background 0.1s ease, color 0.1s ease;
 }
 /* Headers */
 .ui.table thead {
@@ -20813,10 +20719,6 @@ a.ui.basic.label:hover {
 /*--------------
    Single Line
 ---------------*/
-.ui.table[class*="single line"],
-.ui.table [class*="single line"] {
-  white-space: nowrap;
-}
 .ui.table[class*="single line"],
 .ui.table [class*="single line"] {
   white-space: nowrap;
