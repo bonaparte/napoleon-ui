@@ -1,5 +1,7 @@
 #Napoleon Bonaparte Theme
 
+[![npm version](https://badge.fury.io/js/bonaparte-theme-napoleon.svg)](http://badge.fury.io/js/bonaparte-theme-napoleon)
+
 Napoleon is a [Semantic UI](http://semantic-ui.com/) inspired theme developed for editorial tools at Dow Jones.
 
 Like common front end frameworks Napoleon provides a set of CSS classes to style HTML elements.
