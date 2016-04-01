@@ -1,11 +1,15 @@
 {
   "name": "bonaparte-theme-napoleon",
-  "version": "0.0.3",
+  "version": "0.0.4",
 	"description" : "Bonaparte Theme",
 	"author": {
 		"name" : "Philipp Adrian",
 		"email" : "hello@philippadrian.com"
 	},
+  "contributors": [{
+      "name" : "Peran Osborn",
+      "email" : "peranosborn@gmail.com"
+  }],
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/bonaparte/theme-napoleon.git"
