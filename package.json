@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/bonaparte/bonaparte-theme-napoleon.git"
+		"url": "https://github.com/bonaparte/theme-napoleon.git"
 	},
 
   "dependencies" : {
