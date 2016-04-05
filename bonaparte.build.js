@@ -47,7 +47,7 @@ require("./SUI/definitions/collections/table.less");
 
 /* Modules */
 // require("./SUI/definitions/modules/accordion.less");
-// require("./SUI/definitions/modules/checkbox.less");
+require("./SUI/definitions/modules/checkbox.less");
 // require("./SUI/definitions/modules/dimmer.less");
 // require("./SUI/definitions/modules/dropdown.less");
 // require("./SUI/definitions/modules/embed.less");

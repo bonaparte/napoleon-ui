@@ -570,6 +570,31 @@
   background-color: @toggleOnFocusLaneColor !important;
 }
 
+
+
+.ui.toggle.checkbox.rigth label {
+    padding-left:0;
+    padding-right:4em;
+}
+
+.ui.checkbox.rigth input,
+.ui.toggle.checkbox.rigth label:before {
+    left:auto;
+    right:0;
+}
+
+.ui.toggle.checkbox.rigth label:after {
+    left:auto;
+    right:1.75em;
+    transition: @checkboxTransition;
+}
+
+.ui.toggle.checkbox.rigth input:checked + label:after {
+    left:auto;
+    right:0.5em;
+    transition: @checkboxTransition;
+}
+
 /*******************************
             Variations
 *******************************/
