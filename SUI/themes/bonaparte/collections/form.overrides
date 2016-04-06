@@ -12,7 +12,7 @@
 }
 
 .ui.form .field {
-  width: 100%; 
+  width: 100%;
 }
 
 .ui.form .fields.inline .ui.radio.checkbox {
@@ -40,10 +40,10 @@
   font-size: 1.3rem;
   color: @color-dark-2;
   outline: none;
-  display: table-row-group; 
+  display: table-row-group;
 }
 
-.ui.form .field > label {
+.ui.form .field:not(.checkbox) > label {
   display: table-header-group;
   font-size: @tinySize;
   font-weight: @text-semibold;
@@ -218,4 +218,3 @@
 .ui.form .ui.checkbox:not(.toggle):not(.slider):hover label:after {
     background-color: @color-light-3;
 }
-

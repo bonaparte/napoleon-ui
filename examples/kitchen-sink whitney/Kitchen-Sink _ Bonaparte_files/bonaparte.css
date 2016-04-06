@@ -1324,7 +1324,7 @@ bonaparte-toolbar > :nth-child(1) {
 */
   /*    > * > * {
       &:extend(bonaparte-button);
-    }    
+    }
     > * > .active {
       &:extend(bonaparte-button.active);
     }*/
@@ -2268,7 +2268,7 @@ button.ui {
   padding: 1.0833333rem 1rem 0.9188888rem 1rem;
   /*  &.transparent:after {
     top:@underlineCorrection;
-  } 
+  }
 */
 }
 .ui.button.fluid,
@@ -4032,7 +4032,7 @@ button.ui.tiny,
   padding: 0.25rem 1rem;
   /*  &.transparent:after {
     top:@underlineCorrection;
-  } 
+  }
 */
 }
 bonaparte-toolbar.mini > *:first-child button.ui.icon,
@@ -4255,7 +4255,7 @@ button.ui.small,
   padding: 0.5rem 1rem;
   /*  &.transparent:after {
     top:@underlineCorrection;
-  } 
+  }
 */
 }
 bonaparte-toolbar.small > *:first-child button.ui.icon,
@@ -4396,7 +4396,7 @@ button.ui.big,
   padding: 1.5rem 1.25rem;
   /*  &.transparent:after {
     top:@underlineCorrection;
-  } 
+  }
 */
 }
 bonaparte-toolbar.large > *:first-child button.ui.icon,
@@ -4625,7 +4625,7 @@ button.ui.massive,
   padding: 0.5rem 1.5rem;
   /*  &.transparent:after {
     top:@underlineCorrection;
-  } 
+  }
 */
 }
 bonaparte-toolbar.huge > *:first-child button.ui.icon,
@@ -6183,7 +6183,7 @@ bonaparte-toolbar.massive > :first-child .ui.block.labeled.icon > .icon,
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -6387,7 +6387,7 @@ bonaparte-toolbar.massive > :first-child .ui.block.labeled.icon > .icon,
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -7138,7 +7138,7 @@ h6.ui.horizontal.divider {
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -7342,7 +7342,7 @@ h6.ui.horizontal.divider {
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -8806,7 +8806,7 @@ i.flag.zimbabwe:before {
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -9010,7 +9010,7 @@ i.flag.zimbabwe:before {
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -12725,7 +12725,7 @@ i.icon.zerply:before {
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -12929,7 +12929,7 @@ i.icon.zerply:before {
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -13871,7 +13871,7 @@ i.icon.zerply:before {
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -14075,7 +14075,7 @@ i.icon.zerply:before {
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -15741,7 +15741,7 @@ a.ui.basic.label:hover {
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -15945,7 +15945,7 @@ a.ui.basic.label:hover {
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -17102,7 +17102,7 @@ a.ui.basic.label:hover {
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -17306,7 +17306,7 @@ a.ui.basic.label:hover {
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -18569,7 +18569,7 @@ a.ui.basic.label:hover {
   outline: none;
   display: table-row-group;
 }
-.ui.form .field > label {
+.ui.form .field:not(.rigth) > label {
   display: table-header-group;
   font-size: 0.91667rem;
   font-weight: 600;
@@ -18988,7 +18988,7 @@ a.ui.basic.label:hover {
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
@@ -21565,7 +21565,7 @@ a.ui.basic.label:hover {
 @text-light : 300;
 @text-book : 400;
 @text-medium: 500;
-@text-semibold : 600; 
+@text-semibold : 600;
 @text-bold : 700;
 @text-black : 800;
 
