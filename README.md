@@ -1,6 +1,6 @@
 #Napoleon Bonaparte Theme
 
-[![npm version](https://badge.fury.io/js/bonaparte-theme-napoleon.svg)](http://badge.fury.io/js/bonaparte-theme-napoleon)
+[![npm version](https://badge.fury.io/js/napoleon-ui.svg)](http://badge.fury.io/js/napoleon-ui)
 
 Napoleon is a [Semantic UI](http://semantic-ui.com/) inspired theme developed for editorial tools at Dow Jones.
 
@@ -9,7 +9,7 @@ Like common front end frameworks Napoleon provides a set of CSS classes to style
 In addition to the traditional HTML elements, Napoleon also defines styles and classes for Bonaparte components.
 
 #### Examples
-* [Kitchen Sink](http://bonaparte.github.io/theme-napoleon/examples/kitchen-sink.html)
+* [Kitchen Sink](http://bonaparte.github.io/napoleon-ui/examples/kitchen-sink.html)
 * [Starter App](http://bonaparte.github.io/starter-vanilla/)
 
 ## Main Features
@@ -20,7 +20,7 @@ All elements and text styled with Napoleon align on a baseline grid. This allows
 
 The baseline grid is defined as `1rem`. Napoleon defines `1rem` as `12px` by default.
 
-> Toggle the grid in the top right corner in the [kitchen sink](http://bonaparte.github.io/theme-napoleon/examples/kitchen-sink.html).
+> Toggle the grid in the top right corner in the [kitchen sink](http://bonaparte.github.io/napoleon-ui/examples/kitchen-sink.html).
 
 #### Namespaced
 

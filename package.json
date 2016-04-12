@@ -1,5 +1,5 @@
 {
-  "name": "bonaparte-theme-napoleon",
+  "name": "napoleon-ui",
   "version": "0.0.7",
 	"description" : "Bonaparte Theme",
 	"author": {
@@ -12,7 +12,7 @@
   }],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/bonaparte/theme-napoleon.git"
+		"url": "https://github.com/bonaparte/napoleon-ui.git"
 	},
 
   "dependencies" : {
@@ -44,6 +44,7 @@
     "watch" : "webpack --progress --colors --watch"
   },
 	"keywords": [
+		"napoleon",
     "bonaparte",
 		"bonaparte-theme",
 		"ux",
