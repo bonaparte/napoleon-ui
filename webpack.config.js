@@ -1,1 +1,1 @@
-module.exports = require("bonaparte/webpack.config");
+module.exports = require("bonaparte-core/webpack.config");
