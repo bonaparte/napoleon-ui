@@ -1,6 +1,6 @@
 {
   "name": "napoleon-ui",
-  "version": "0.0.8",
+  "version": "0.0.9",
 	"description" : "Bonaparte Theme",
 	"author": {
 		"name" : "Philipp Adrian",
@@ -16,10 +16,10 @@
 	},
 
   "dependencies" : {
-    "bonaparte-core" : "^0.0.20",
-		"bonaparte-panel" : "^0.0.20",
-		"bonaparte-sidebar" : "^0.0.20",
-		"bonaparte-toolbar" : "^0.0.20"
+    "bonaparte-core" : "^0.0.23",
+		"bonaparte-panel" : "^0.0.23",
+		"bonaparte-sidebar" : "^0.0.23",
+		"bonaparte-toolbar" : "^0.0.23"
   },
 
   "main":"bonaparte.build.js",
